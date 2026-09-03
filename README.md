@@ -1,37 +1,49 @@
 # claude-skills
 
-Account skill library for Claude Code — the personal skills and namespaced
-commands installed on the Claude account, kept in version control so they can be
-restored on any machine.
+Account skill library for Claude Code — 151 skills and 27 namespaced commands,
+kept in version control so they load in every session on this repo and can be
+restored anywhere else.
 
 Imported from the `claude-skills-2026-09-03` export.
 
-## Contents
+## Layout
 
-| Path | Installs to | Count |
+| Path | Purpose |
+|---|---|
+| `.claude/skills/` | 151 skills — **auto-loaded** in any Claude Code session on this repo |
+| `.claude/commands/` | 27 commands in 8 namespaces — auto-loaded, invoked as `/namespace:command` |
+| `plugins/` | reference copies of 3 plugin bundles (install via the plugin system) |
+| `install.sh` | copy skills into `~/.claude` for use outside this repo |
+| `package-for-upload.sh` | build per-skill zips for uploading to your claude.ai account |
+| `INVENTORY.md` | full list with descriptions |
+
+## Where skills load from, and what survives a new chat
+
+Claude Code reads skills from three places. They differ in what persists:
+
+| Location | Scope | Survives a new chat? |
 |---|---|---|
-| `skills/` | `~/.claude/skills/` | 151 skills |
-| `commands/` | `~/.claude/commands/` | 27 commands in 8 namespaces |
-| `plugins/` | *(reference only — install as plugins)* | 3 plugins, 19 skills |
+| `.claude/skills/` in a repo | sessions on that repo | **Yes** — it's committed |
+| `~/.claude/skills/` | all sessions on that machine | Only if `~/.claude` persists. On Claude Code **web**, the container is ephemeral, so **no** |
+| `~/.claude/skills/synced/` | every chat, every device | **Yes** — synced from your claude.ai account |
 
-`INVENTORY.md` has the full list with descriptions.
+This repo keeps skills in `.claude/skills/` for that reason. A web session gets a
+fresh container each time and a fresh clone of the repo — anything written to
+`~/.claude` is gone, but anything committed here comes back.
 
-## Install
+### Using these skills in new chats
 
-```bash
-git clone https://github.com/amritpal-tech/claude-skills.git
-cd claude-skills
-./install.sh
-```
-
-Then restart Claude Code. Skills load from `~/.claude/skills/<name>/SKILL.md`;
-commands are invoked as `/<namespace>:<command>`.
-
-To install somewhere other than `~/.claude`:
-
-```bash
-CLAUDE_DIR=/some/path ./install.sh
-```
+- **Sessions on this repo** — nothing to do. They load automatically.
+- **Sessions on another repo** — copy `.claude/skills/` into that repo, or add
+  this repo as a second source for the session.
+- **Every chat, everywhere (including claude.ai)** — upload to your account:
+  ```bash
+  ./package-for-upload.sh          # writes dist/<skill>.zip x151
+  ```
+  Then claude.ai → Settings → Capabilities → Skills → Upload skill. Account
+  skills sync down to `~/.claude/skills/synced/` on every device.
+- **A local (non-web) machine** — `./install.sh` writes into `~/.claude`, which
+  persists there.
 
 ## Command namespaces
 
@@ -41,7 +53,7 @@ CLAUDE_DIR=/some/path ./install.sh
 ## Plugin skills
 
 `plugins/` holds reference copies of three plugin bundles. Do not copy them into
-`~/.claude/skills/` — they are managed by the plugin system and several of their
+a skills directory — they are managed by the plugin system, and several of their
 skills (`docx`, `pdf`, `pptx`, `xlsx`, `skill-creator`) would collide with skills
 Claude already syncs to the account. Install them as plugins instead:
 
@@ -51,16 +63,12 @@ Claude already syncs to the account. Install them as plugins instead:
 
 ## Notes
 
-- **`skills/design` shadows the built-in `design` skill.** Claude Code ships a
-  `design` skill (the Claude Design canvas editor). The personal `design` skill
-  here uses the same name and takes precedence once installed. Rename the
-  directory and its frontmatter `name:` if you want the built-in back.
-- **Duplicate-looking pairs are intentional.** Several skills exist in both a
-  short and a long form (`ads`/`paid-ads`, `emails`/`email-sequence`,
-  `cro`/`page-cro`, `competitors`/`competitor-alternatives`, and others). Both
-  were installed on the source account and both are kept here.
+- **`design` shadows a built-in.** Claude Code ships a `design` skill (the Claude
+  Design canvas editor). The personal `design` skill here uses the same name and
+  takes precedence. Rename the directory and its frontmatter `name:` to get the
+  built-in back.
+- **Duplicate-looking pairs are intentional.** Several skills exist in both short
+  and long form (`ads`/`paid-ads`, `emails`/`email-sequence`, `cro`/`page-cro`,
+  `competitors`/`competitor-alternatives`). Both were on the source account.
 - **Built-in skills are not included.** `artifact-design`, `code-review`,
-  `dataviz`, `simplify`, `loop`, and friends ship inside the Claude Code binary
-  and reappear on their own.
-- `~/.claude/skills/synced/` is the account sync directory. `install.sh` writes
-  alongside it and never modifies it.
+  `dataviz`, `simplify`, `loop` and friends ship inside the Claude Code binary.
