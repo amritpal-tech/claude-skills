@@ -1,0 +1,203 @@
+/* ==========================================================================
+   DevCommX design tokens — Brand Book v3.1 · 2026
+   Canonical source: ~/devcommx-brand-assets/book/book.css
+   Never hardcode a hex that isn't declared here.
+   ========================================================================== */
+
+:root{
+  /* --- Primary ---------------------------------------------------------- */
+  --dcx-blue:      #2F5BFF;   /* key idea · action · CTA */
+  --dcx-ink:       #0C0F1A;   /* dark surface · body text */
+  --dcx-white:     #FFFFFF;   /* base · clarity · space */
+  --dcx-mist:      #EEF1F8;   /* panels · quiet fills */
+
+  /* --- Signal (meaning only) -------------------------------------------- */
+  --dcx-red:       #FF3B1F;   /* old rule · myth · risk */
+  --dcx-green:     #1F8F3A;   /* the win · proof */
+  --dcx-mint:      #7EE692;   /* positive metric on dark */
+  --dcx-sky:       #8CB0FF;   /* soft highlight · accent */
+
+  /* --- Support ---------------------------------------------------------- */
+  --dcx-surface:   #181B25;
+  --dcx-charcoal:  #333333;
+  --dcx-muted:     #5A6173;
+  --dcx-hair:      #E2E6F0;
+
+  /* --- Logo mark only — NOT UI colours ---------------------------------- */
+  --dcx-logo-navy: #213065;
+  --dcx-logo-red:  #D22B27;
+
+  /* --- Blue ramp -------------------------------------------------------- */
+  --dcx-blue-50:  #EDF1FF; --dcx-blue-100: #C7D4FF; --dcx-blue-200: #8CB0FF;
+  --dcx-blue-300: #5C86FF; --dcx-blue-500: #2F5BFF; --dcx-blue-700: #2145C7;
+  --dcx-blue-900: #152C80;
+
+  /* --- Red ramp --------------------------------------------------------- */
+  --dcx-red-50:  #FFECE8; --dcx-red-100: #FFC9BE; --dcx-red-200: #FF9583;
+  --dcx-red-300: #FF6449; --dcx-red-500: #FF3B1F; --dcx-red-700: #C42711;
+  --dcx-red-900: #7E170A;
+
+  /* --- Green ramp ------------------------------------------------------- */
+  --dcx-green-50:  #E7F6EC; --dcx-green-100: #BEE7C9; --dcx-green-200: #7ECF93;
+  --dcx-green-300: #3FA65C; --dcx-green-500: #1F8F3A; --dcx-green-700: #166E2C;
+  --dcx-green-900: #0D461C;
+
+  /* --- Neutral ramp ----------------------------------------------------- */
+  --dcx-n-50:  #F5F6FA; --dcx-n-100: #E2E6F0; --dcx-n-200: #C3C8D6;
+  --dcx-n-400: #5A6173; --dcx-n-600: #333333; --dcx-n-800: #181B25;
+  --dcx-n-900: #0C0F1A;
+
+  /* --- Type ------------------------------------------------------------- */
+  --dcx-font-display: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --dcx-font-body:    "Inter", "Helvetica Neue", Arial, sans-serif;
+  --dcx-font-mono:    "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* --- Spacing (4/8pt base) --------------------------------------------- */
+  --dcx-s1: 4px;  --dcx-s2: 8px;  --dcx-s3: 12px; --dcx-s4: 16px;
+  --dcx-s5: 24px; --dcx-s6: 32px; --dcx-s7: 48px; --dcx-s8: 64px;
+
+  /* --- Structure -------------------------------------------------------- */
+  --dcx-radius-control: 9px;    /* buttons, inputs — one radius everywhere */
+  --dcx-radius-card:    12px;   /* cards: 8–12px */
+  --dcx-hairline:       .5px;
+  --dcx-grid-cols:      12;
+  --dcx-grid-gutter:    6px;
+  --dcx-page-margin:    15mm;
+
+  /* --- Diagonal hatch — the logo D texture, accent only ------------------ */
+  --dcx-hatch-navy: repeating-linear-gradient(
+      45deg, rgba(33,48,101,.10) 0 1px, transparent 1px 7px);
+  --dcx-hatch-white: repeating-linear-gradient(
+      45deg, rgba(255,255,255,.07) 0 1px, transparent 1px 7px);
+  --dcx-hatch-blue: repeating-linear-gradient(
+      45deg, rgba(47,91,255,.12) 0 1px, transparent 1px 7px);
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+.dcx           { font-family: var(--dcx-font-body); color: var(--dcx-ink);
+                 background: var(--dcx-white); -webkit-font-smoothing: antialiased; }
+.dcx--ink      { background: var(--dcx-ink);  color: var(--dcx-white); }
+.dcx--mist     { background: var(--dcx-mist); color: var(--dcx-ink); }
+.dcx--blue     { background: var(--dcx-blue); color: var(--dcx-white); }
+.dcx--red      { background: var(--dcx-red);  color: var(--dcx-white); }
+/* One hero background per surface. Never stack two. */
+
+/* ==========================================================================
+   Type scale
+   ========================================================================== */
+
+.dcx-display { font: 800 clamp(34px, 5.4vw, 70px)/1.04 var(--dcx-font-display);
+               letter-spacing: -.025em; }                     /* sentence case */
+.dcx-h2      { font: 800 24px/1.2 var(--dcx-font-display);
+               letter-spacing: -.02em; }
+.dcx-eyebrow { font: 600 10px/1 var(--dcx-font-display);
+               letter-spacing: .14em; text-transform: uppercase;
+               color: var(--dcx-blue); }
+.dcx-body    { font: 400 13px/1.62 var(--dcx-font-body); letter-spacing: 0; }
+.dcx-lead    { font: 500 15px/1.6  var(--dcx-font-body); }
+.dcx-label   { font: 500 10px/1.4 var(--dcx-font-mono); letter-spacing: .06em; }
+.dcx-footer  { font: 400 9px/1.4  var(--dcx-font-mono); letter-spacing: .04em;
+               color: var(--dcx-muted); }
+.dcx-num     { font-family: var(--dcx-font-mono); font-variant-numeric: tabular-nums; }
+
+.dcx-key     { color: var(--dcx-blue); }   /* the one key idea — never body copy */
+.dcx-risk    { color: var(--dcx-red); }    /* myth · old rule · risk */
+.dcx-win     { color: var(--dcx-green); }  /* the win · proof */
+.dcx--ink .dcx-win { color: var(--dcx-mint); }  /* positive metric on dark */
+
+.dcx-link    { color: var(--dcx-blue); text-decoration: underline;
+               text-decoration-thickness: .5px; text-underline-offset: 3px; }
+/* Underline belongs to links and nothing else. */
+
+/* ==========================================================================
+   The six devices
+   ========================================================================== */
+
+/* 01 · Ghost numeral — oversized, faint, top-right */
+.dcx-ghost   { position: absolute; top: 12px; right: 24px; z-index: 0;
+               font: 800 150px/.8 var(--dcx-font-display); letter-spacing: -.04em;
+               color: var(--dcx-blue); opacity: .08; pointer-events: none; }
+.dcx--ink .dcx-ghost { color: var(--dcx-white); opacity: .06; }
+
+/* 03 · Diagonal hatch — accent only, fades in from ONE corner */
+.dcx-hatch   { background-image: var(--dcx-hatch-navy);
+               -webkit-mask-image: linear-gradient(225deg, #000 0%, transparent 62%);
+               mask-image: linear-gradient(225deg, #000 0%, transparent 62%); }
+.dcx--ink .dcx-hatch { background-image: var(--dcx-hatch-white); }
+
+/* 04 · Hairline & footer */
+.dcx-rule    { border: 0; border-top: var(--dcx-hairline) solid var(--dcx-hair);
+               margin: var(--dcx-s5) 0; }
+.dcx--ink .dcx-rule { border-top-color: rgba(255,255,255,.14); }
+.dcx-pagefoot{ display: flex; justify-content: space-between; align-items: baseline;
+               font: 400 9px/1.4 var(--dcx-font-mono); color: var(--dcx-muted);
+               border-top: var(--dcx-hairline) solid var(--dcx-hair);
+               padding-top: var(--dcx-s3); }
+
+/* 06 · Card system — 8–12px radius, hairline border, NO shadow */
+.dcx-card    { background: var(--dcx-white); border: var(--dcx-hairline) solid var(--dcx-hair);
+               border-radius: var(--dcx-radius-card); padding: var(--dcx-s5);
+               box-shadow: none; }
+.dcx-card--tint  { background: var(--dcx-mist); border-color: transparent; }
+.dcx-card--blue  { border-left: 3px solid var(--dcx-blue); }
+.dcx-card--red   { border-left: 3px solid var(--dcx-red); }
+.dcx-card--green { border-left: 3px solid var(--dcx-green); }
+.dcx--ink .dcx-card { background: var(--dcx-surface); border-color: rgba(255,255,255,.10); }
+
+/* ==========================================================================
+   Interface kit — one radius, one weight, no shadow
+   ========================================================================== */
+
+.dcx-btn        { display: inline-flex; align-items: center; justify-content: center;
+                  gap: var(--dcx-s2); padding: 13px 22px;
+                  border-radius: var(--dcx-radius-control); border: 0;
+                  font: 600 13px/1 var(--dcx-font-body); cursor: pointer;
+                  box-shadow: none; text-decoration: none; }
+.dcx-btn--primary   { background: var(--dcx-blue); color: var(--dcx-white); }
+.dcx-btn--destructive{ background: var(--dcx-red); color: var(--dcx-white); }
+.dcx-btn--secondary { background: var(--dcx-mist); color: var(--dcx-ink); }
+.dcx-btn--ghost     { background: transparent; color: var(--dcx-ink);
+                      border: var(--dcx-hairline) solid var(--dcx-hair); }
+
+.dcx-pill       { display: inline-flex; align-items: center; gap: 6px;
+                  padding: 6px 12px; border-radius: 999px;
+                  font: 500 10px/1 var(--dcx-font-mono); letter-spacing: .04em;
+                  border: var(--dcx-hairline) solid var(--dcx-hair); color: var(--dcx-ink); }
+.dcx-pill--blue { background: var(--dcx-blue); color: var(--dcx-white); border-color: transparent; }
+.dcx-pill--offer{ background: var(--dcx-blue-50); color: var(--dcx-blue-700); border-color: transparent; }
+.dcx-pill--flag { background: var(--dcx-green-50); color: var(--dcx-green-700); border-color: transparent; }
+
+.dcx-field      { display: block; width: 100%; padding: 12px 14px;
+                  border-radius: var(--dcx-radius-control);
+                  border: var(--dcx-hairline) solid var(--dcx-hair);
+                  font: 400 13px/1.4 var(--dcx-font-body); color: var(--dcx-ink);
+                  background: var(--dcx-white); }
+.dcx-field::placeholder { color: var(--dcx-muted); }
+.dcx-field:focus{ outline: 0; border: 1.5px solid var(--dcx-blue); }
+.dcx-fieldlabel { display: block; margin-bottom: 6px;
+                  font: 500 11px/1 var(--dcx-font-body); color: var(--dcx-ink); }
+
+/* Stat tile — one number per tile, mono, nothing competes with it */
+.dcx-stat       { border: var(--dcx-hairline) solid var(--dcx-hair);
+                  border-radius: var(--dcx-radius-card); padding: var(--dcx-s4); }
+.dcx-stat__n    { font: 500 30px/1 var(--dcx-font-mono);
+                  font-variant-numeric: tabular-nums; letter-spacing: -.02em; }
+.dcx-stat__cap  { margin-top: 8px; font: 400 11px/1.45 var(--dcx-font-body);
+                  color: var(--dcx-muted); }
+
+/* Icons — monoline, 24px grid, 1.5px stroke, round joins */
+.dcx-icon       { width: 24px; height: 24px; fill: none; stroke: currentColor;
+                  stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+.dcx-page   { position: relative; padding: var(--dcx-page-margin); overflow: hidden; }
+.dcx-grid   { display: grid; grid-template-columns: repeat(var(--dcx-grid-cols), 1fr);
+              gap: var(--dcx-grid-gutter); }
+.dcx-low    { display: flex; flex-direction: column; justify-content: flex-end;
+              min-height: 62vh; }   /* anchor content low; top band stays air */

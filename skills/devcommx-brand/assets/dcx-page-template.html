@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DevCommX — page template</title>
+
+<!--
+  DevCommX starter scaffold — Brand Book v3.1
+  Three surfaces wired with the six devices. Delete what you don't need.
+  Tokens: ../assets/dcx-tokens.css (inlined below for portability to PDF).
+  Rule reminders live in comments — read them before you edit.
+-->
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ---- paste the contents of dcx-tokens.css here, or link it ---- */
+</style>
+<link rel="stylesheet" href="dcx-tokens.css">
+
+<style>
+  *{box-sizing:border-box} body{margin:0;background:var(--dcx-n-50)}
+  .sheet{width:210mm;min-height:297mm;margin:24px auto;position:relative;overflow:hidden}
+  @media print{ body{background:#fff} .sheet{margin:0;page-break-after:always} }
+</style>
+</head>
+
+<body class="dcx">
+
+<!-- ======================================================================
+     SHEET 1 · LIGHT — the default surface.
+     One hero colour: blue. Everything else ink + white.
+     ====================================================================== -->
+<section class="sheet dcx dcx-page">
+  <div class="dcx-ghost">01</div>                    <!-- device 01 · ghost numeral -->
+
+  <p class="dcx-eyebrow">OUTBOUND GTM FOR B2B SAAS</p>  <!-- device 02 · eyebrow -->
+
+  <div class="dcx-low">
+    <!-- Display headline: SENTENCE CASE. The turn goes blue — never underlined. -->
+    <h1 class="dcx-display" style="max-width:16ch;margin:0 0 var(--dcx-s4)">
+      Nine ways to grow. <span class="dcx-key">One simple plan.</span>
+    </h1>
+
+    <p class="dcx-body" style="max-width:60ch;color:var(--dcx-n-400);margin:0 0 var(--dcx-s5)">
+      Your pipeline is thin and the channels aren't converting. We run all nine
+      go-to-market motions as one system, with outbound as the wedge — operated
+      end to end by an agentic AI SDR.
+    </p>
+
+    <!-- One action. Never two competing CTAs. -->
+    <div style="display:flex;gap:var(--dcx-s3);align-items:center;margin-bottom:var(--dcx-s5)">
+      <a class="dcx-btn dcx-btn--primary" href="#">Get your free GTM Audit</a>
+      <a class="dcx-link" href="#" style="font-weight:600">See the nine motions →</a>
+    </div>
+
+    <!-- Proof strip: mono, real numbers only. -->
+    <p class="dcx-label" style="color:var(--dcx-muted);margin:0 0 var(--dcx-s6)">
+      <span class="dcx-win">●</span>
+      Blog impressions <span class="dcx-num">14.9k → 97.2k</span> month over month
+      &nbsp;·&nbsp; Built founder-to-founder
+    </p>
+
+    <!-- Card system: plain / tint / accent. 12px radius, hairline, no shadow. -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--dcx-s3)">
+      <div class="dcx-card dcx-card--blue">
+        <p class="dcx-label" style="color:var(--dcx-muted);margin:0 0 8px">THE ANSWER</p>
+        <p class="dcx-body" style="margin:0"><strong>Nine motions, one system.</strong>
+          Blue marks the idea and the action — nothing else.</p>
+      </div>
+      <div class="dcx-card dcx-card--red">
+        <p class="dcx-label" style="color:var(--dcx-muted);margin:0 0 8px">THE OLD RULE</p>
+        <p class="dcx-body" style="margin:0">Red is the myth or the risk. It is never decoration.</p>
+      </div>
+      <div class="dcx-card dcx-card--green">
+        <p class="dcx-label" style="color:var(--dcx-muted);margin:0 0 8px">THE WIN</p>
+        <p class="dcx-body" style="margin:0">Green carries proof. Label anything illustrative.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="dcx-pagefoot" style="margin-top:var(--dcx-s6)">   <!-- device 04 -->
+    <span><strong>DevCommX</strong> · Outbound GTM for B2B SaaS</span><span>01</span>
+  </div>
+</section>
+
+
+<!-- ======================================================================
+     SHEET 2 · INK — dark surface. Hatch enters from ONE corner only.
+     Positive metrics switch to mint on dark.
+     ====================================================================== -->
+<section class="sheet dcx dcx--ink dcx-page">
+  <div class="dcx-hatch" style="position:absolute;inset:0"></div>   <!-- device 03 -->
+  <div class="dcx-ghost">02</div>
+
+  <p class="dcx-eyebrow" style="color:var(--dcx-sky);position:relative">PROOF OVER POLISH</p>
+
+  <div class="dcx-low" style="position:relative">
+    <h2 class="dcx-display" style="max-width:18ch;margin:0 0 var(--dcx-s5)">
+      One motion is <span class="dcx-risk">one point of failure.</span>
+    </h2>
+
+    <!-- Stat tiles: one number per tile, mono + tabular, nothing competes. -->
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:var(--dcx-s3)">
+      <div class="dcx-card dcx-stat">
+        <div class="dcx-stat__n">9</div>
+        <p class="dcx-stat__cap">GTM motions, run as one agentic system</p>
+      </div>
+      <div class="dcx-card dcx-stat">
+        <div class="dcx-stat__n dcx-key">14.9k</div>
+        <p class="dcx-stat__cap">Blog impressions, prior month</p>
+      </div>
+      <div class="dcx-card dcx-stat">
+        <div class="dcx-stat__n dcx-win">97.2k ↑</div>
+        <p class="dcx-stat__cap">Blog impressions, this month — real proof</p>
+      </div>
+      <div class="dcx-card dcx-stat">
+        <div class="dcx-stat__n dcx-risk">0</div>
+        <p class="dcx-stat__cap">Meetings booked in 4 months — the pain that started DevCommX</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="dcx-pagefoot" style="margin-top:var(--dcx-s6);color:rgba(255,255,255,.55)">
+    <span><strong>DevCommX</strong> · Brand Guidelines</span><span>02</span>
+  </div>
+</section>
+
+
+<!-- ======================================================================
+     SHEET 3 · CLOSE — one hero colour, one offer. Red closes; blue acts.
+     ====================================================================== -->
+<section class="sheet dcx dcx--red dcx-page">
+  <div class="dcx-low">
+    <p class="dcx-eyebrow" style="color:rgba(255,255,255,.8)">YOUR MOVE</p>
+    <h2 class="dcx-display" style="max-width:15ch;margin:var(--dcx-s3) 0 var(--dcx-s5)">
+      See which motions your pipeline is missing.
+    </h2>
+    <!-- One clear offer, not a hard sell. Every asset lands on the same capture path. -->
+    <a class="dcx-btn dcx-btn--ghost"
+       style="color:#fff;border-color:rgba(255,255,255,.6);align-self:flex-start">
+       GET YOUR FREE GTM AUDIT
+    </a>
+  </div>
+  <div class="dcx-pagefoot" style="margin-top:var(--dcx-s6);
+       border-top-color:rgba(255,255,255,.3);color:rgba(255,255,255,.8)">
+    <span>Free audit + plan</span><span>03</span>
+  </div>
+</section>
+
+</body>
+</html>
