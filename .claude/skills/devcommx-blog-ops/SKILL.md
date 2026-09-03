@@ -41,6 +41,7 @@ whole spec.
 | [references/internal-links.md](references/internal-links.md) | Choosing internal links, before drafting anything |
 | [references/validation-rubric.md](references/validation-rubric.md) | Scoring drafts, building a workbook |
 | [references/pipeline.md](references/pipeline.md) | Running a whole batch start to finish |
+| [references/schema-dates.md](references/schema-dates.md) | Anything touching schema, dates, or the two schema locations |
 | [references/gotchas.md](references/gotchas.md) | **Always.** These are failures that already shipped. |
 | [references/visuals.md](references/visuals.md) | Adding figures, heroes, screenshots |
 | [references/state.md](references/state.md) | Picking up where the last session stopped |
@@ -71,7 +72,9 @@ managed campaign. The only sanctioned proof point is **"40+ qualified demos in
 3. **Webflow CMS writes must be sequential.** Parallel creates double-create items and
    cross-wire responses. Drafting can fan out; writing never does.
 4. **No em dashes or en dashes anywhere** in any field, prose or References list.
-5. **Internal links must be curl-verified 200 before use.** The CMS slug list includes
+5. **Schema lives in TWO places** per blog: the `schema-markup` field and a JSON-LD
+   script inside `post-body`. They drift. Fix both, and store bare JSON in the field.
+6. **Internal links must be curl-verified 200 before use.** The CMS slug list includes
    unpublished drafts, so "exists in the CMS" does not mean "resolves on the site."
 
 ---
@@ -100,6 +103,8 @@ Run from the repo root. All are dependency-light (`openpyxl` only for the workbo
 | `scripts/score_findings.py` | Weighted score and verdict from a validation findings JSON. The agents mislabel verdicts, always recompute. |
 | `scripts/build_workbook.py` | Findings JSONs to a colour-coded multi-tab `.xlsx`. |
 | `scripts/check_links.sh` | Curl-verify internal link targets return 200. |
+| `scripts/fix_schema_dates.py` | Compute and verify schema date corrections across both schema locations. |
+| `scripts/apply_schema_date_fix.py` | Apply that fix straight against the Webflow API, with backup, read-back and publish. |
 | `scripts/excel_helpers.py` | openpyxl styling helpers used by `build_workbook.py`. |
 
 ```bash
