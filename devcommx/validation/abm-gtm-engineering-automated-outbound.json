@@ -1,0 +1,128 @@
+{
+  "slug": "abm-gtm-engineering-automated-outbound",
+  "title": "ABM + GTM Engineering: How to Automate Account-Based Outbound at Scale",
+  "words": 1700,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Deep practitioner architecture, but the two external stats are paraphrased and not inline-linked at the point of claim.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Sources", "criterion": "Stat Accuracy & Source Quality",
+         "finding": "The two data claims are soft-attributed and not inline-linked where they appear. '6sense's Buyer Experience Report shows buyers now complete a large majority of their evaluation before they ever contact a vendor' names the source in prose but the link sits only in the Further Reading list, and 'Industry research consistently puts the B2B buying group at roughly ten people' attributes to unnamed 'industry research' (Gartner appears only in Further Reading). No hard figure is quoted with a clickable inline citation at the point of claim.", "score": 3, "max": 5},
+        {"category": "Depth", "criterion": "Practitioner Depth",
+         "finding": "Strong deployment-level detail: 'turning raw signals into a scored, deduplicated event stream', 'weigh them, avoid double-triggering', and the split 'deterministic where it must be and probabilistic where it helps' with suppression/timing/routing 'hard-coded' and drafting 'model-generated inside guardrails, then validated before it ships'. This reads as real implementation knowledge, not a surface summary.", "score": 5, "max": 5},
+        {"category": "Attribution", "criterion": "Data Attribution",
+         "finding": "The four-layer table (Layer / What it does / What it replaces / Cost of skipping) is a conceptual framework with no cited source, which is acceptable, but quantified assertions like 'built signal-based outbound infrastructure for more than 40 B2B teams' and 'automation has doubled SDR opportunity creation' are bare first-party claims with no data reference. The measurement section lists three metrics with no benchmark source.", "score": 3, "max": 5},
+        {"category": "Technical", "criterion": "Technical Accuracy",
+         "finding": "Tool and concept usage is correct: 'Enrichment tooling like Clay ... pulling role, seniority, and contact data into a structured committee record' is an accurate description of Clay's role. Buying-committee roles (economic buyer, technical evaluator, end user, procurement/security with veto power) are described correctly. No incorrect 2026 features or pricing claims are made.", "score": 4, "max": 5},
+        {"category": "Completeness", "criterion": "Completeness",
+         "finding": "Every H2 promise is delivered: 'Why Traditional ABM Stalls' (cadence/ownership/scale problems), each of the four layer H2s, 'A Full Tier-1 Account Journey' (Day 0 to Meeting booked), and 'Measurement' (three named account-level metrics). The four-layer table promise is fully expanded in the four dedicated layer sections. No H2 is left unfulfilled.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Keyword coverage, FAQ, table, and 11 internal links are all strong; external citations sit only in Further Reading rather than inline.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Keywords", "criterion": "Primary Keyword Targeting",
+         "finding": "'account-based outbound' and 'ABM' appear in the H1 ('How to Automate Account-Based Outbound at Scale'), meta-title ('ABM Automation: Account-Based Outbound at Scale'), slug (abm-gtm-engineering-automated-outbound), multiple H2s ('The Four-Layer Automated ABM Stack'), the opening line, and four of six FAQ questions. Coverage is thorough and natural.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQ / People Also Ask",
+         "finding": "Six FAQs target genuine high-intent PAA queries: 'What is engineering-led ABM?', 'How is automated ABM different from traditional ABM?', 'How many stakeholders are in a B2B buying committee?', and 'Which metrics measure account-based outbound performance?'. These map to real search questions, not filler.", "score": 5, "max": 5},
+        {"category": "Tables", "criterion": "Comparison / Featured Snippet Tables",
+         "finding": "One clean four-column table (Layer / What it does / What it replaces / Cost of skipping it) is well structured for snippet extraction, wrapped in an overflow-x scroll container. It is comparison-shaped and extractable, though a single table limits snippet surface area versus a post with multiple.", "score": 4, "max": 5},
+        {"category": "Links", "criterion": "Internal & External Link Structure",
+         "finding": "Eleven inline internal links with descriptive anchors ('AI-powered ICP scoring calibrated to win rate', 'real-time sales signals and B2B lead scoring', 'Clay data enrichment fields and integrations guide') build a strong topic cluster. Three external authority links (6sense, Gartner, Demandbase) exist but only in the Further Reading list, not woven inline beside the claims they support.", "score": 4, "max": 5},
+        {"category": "Technical", "criterion": "Technical SEO",
+         "finding": "Meta-title 'ABM Automation: Account-Based Outbound at Scale' is ~48 characters and the meta-description ~150 characters, both within limits. JSON-LD schema is present with BlogPosting + FAQPage, and the H1 matches the 'name' field. All technical basics are met.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.20,
+      "flag": "Highly extractable definitions and structure; stays distinct from the strategy sibling but softly-quantified stats limit citable authority.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Definitions", "criterion": "Direct Definitions",
+         "finding": "Clean extractable definitions open the piece and the FAQ: 'Engineering-led ABM replaces the campaign with a continuously running system' and 'Engineering-led ABM replaces one-off campaigns with a continuously running system ... The unit of work is an always-on pipeline, not a campaign flight.' Core concepts are stated in quotable, standalone sentences.", "score": 5, "max": 5},
+        {"category": "Structure", "criterion": "Structured Data for AI Parsing",
+         "finding": "Multiple parseable structures: the four-layer comparison table, an explicitly numbered four-layer framework, a bulleted signal taxonomy (hiring/technographic/engagement/company-event), a Day-0-to-Meeting-booked sequence, and six FAQ pairs. An LLM can extract the layers and the journey cleanly.", "score": 5, "max": 5},
+        {"category": "Statistics", "criterion": "Statistical Authority",
+         "finding": "Claims are attributable to named sources but stated softly rather than as crisp citable figures: '6sense's Buyer Experience Report shows buyers now complete a large majority of their evaluation' and 'roughly ten people' for the buying group (Gartner unnamed at the point of claim). An LLM can attribute loosely to 6sense/Gartner but has no hard percentage or exact stat to lift.", "score": 3, "max": 5},
+        {"category": "Entity", "criterion": "Entity Association",
+         "finding": "DevCommX and the author are explicitly bound to the niche: 'We have built signal-based outbound infrastructure for more than 40 B2B teams', the schema author 'Sumit Nautiyal, VP of Revenue Operations & GTM Engineering, DevCommX', and the closing 'DevCommX builds autonomous, signal-based account-based outbound systems that your team owns'. Entity-to-topic association is strong.", "score": 5, "max": 5},
+        {"category": "Distinctiveness", "criterion": "GEO Distinctiveness",
+         "finding": "The post deliberately fences itself off from the live sibling /blogs/abm-campaign-strategy-signal-based-targeting: 'If you want the strategy-level view of how signal-based targeting differs from list-based ABM, we cover that in our guide ... This article is the engineering companion.' It targets the engineering/architecture query cluster (four-layer stack, orchestration, deterministic vs probabilistic) rather than strategy/targeting, so cannibalisation risk is actively managed, though the shared ABM+signals vocabulary leaves some residual topical overlap.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Owned-infrastructure narrative and CTA are excellent; no pricing or value-cost framing beyond a single retainer aside.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Differentiation", "criterion": "Differentiation Narrative",
+         "finding": "The owned-system, signal-based model is articulated sharply: 'systems that your team owns, not a managed campaign that ends when the retainer does' and the framing 'the difference between an agentic GTM system built by real engineering and a marketing campaign with better targeting.' The always-on-pipeline-vs-campaign thesis runs through the whole piece.", "score": 5, "max": 5},
+        {"category": "Proof", "criterion": "Proof Metrics & Evidence",
+         "finding": "Concrete proof is present but uses adjacent framing rather than the sanctioned '40+ demos in ~6 weeks': 'built signal-based outbound infrastructure for more than 40 B2B teams' and 'automation has doubled SDR opportunity creation'. The tier-1 journey is explicitly hedged as illustrative ('No client numbers are invented here'), so the outcome claims are directional, not a hard metric.", "score": 4, "max": 5},
+        {"category": "Pricing", "criterion": "Pricing Transparency",
+         "finding": "There is no pricing or cost-of-service framing. The only value/economic reference is the throwaway 'a managed campaign that ends when the retainer does' and the 'Cost of skipping it' table column, which describes operational risk, not price. No investment level, ROI, or value-for-money discussion appears.", "score": 2, "max": 5},
+        {"category": "CTA", "criterion": "CTA Quality",
+         "finding": "The CTA is specific and conversion-oriented: a dedicated 'Book an Enterprise ABM Architecture Review' H2 linking to /contact-us with a concrete promise, 'we will walk your account list, signal coverage, and committee mapping together.' It names the deliverable rather than a generic 'get in touch'.", "score": 5, "max": 5},
+        {"category": "Differentiation", "criterion": "Content Differentiation",
+         "finding": "The post fills a distinct library slot as the self-described 'engineering companion' to the strategy sibling, and interlinks to eight other distinct DevCommX guides (ICP scoring, signal monitoring, Clay, human-in-the-loop, GTM engineering stack) without duplicating them. It occupies the enterprise account-based-outbound architecture position.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Excellent heading logic, scannability and flow; no in-body images per draft convention holds Visual Elements to 2.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Headings", "criterion": "Heading Architecture",
+         "finding": "Logical progression: a single H1, ten H2s (problem, shifts, the stack, four layers, journey, measurement, CTA), then H3 for 'Further Reading' and 'FAQ' with H4 per FAQ question. No levels are skipped and the four layer H2s mirror the four table rows in order.", "score": 5, "max": 5},
+        {"category": "Visuals", "criterion": "Visual Elements",
+         "finding": "There are no in-body images, diagrams, charts, or infographics; only the OG image (imresizer-DevCommX-Blog-OG.png) in schema/og-image. One HTML comparison table provides the sole visual break in an otherwise text-only body, which per calibration caps this criterion low.", "score": 2, "max": 5},
+        {"category": "Scannability", "criterion": "Scannability",
+         "finding": "Strong skim support: a crisp opening hook ('Engineering-led ABM replaces the campaign with a continuously running system'), bold lead-ins on every key point ('Timing offsets.', 'Channel variation.', 'Message differentiation.'), a signal-type bullet list, the four-layer table, and a bolded Day-0/Day-1/Day-8 journey structure.", "score": 5, "max": 5},
+        {"category": "Readability", "criterion": "Reading Level & Flow",
+         "finding": "Complexity fits a technical revenue-ops audience and transitions are natural ('Once you know which accounts matter, the system watches them continuously. This is the layer that fixes the cadence problem.'). Concepts are unpacked before jargon is used; there is no unexplained-acronym dump.", "score": 5, "max": 5},
+        {"category": "Length", "criterion": "Content Length & Density",
+         "finding": "At roughly 1,700 words (14-minute read field) the length suits an architecture deep-dive, and each of the four layers earns its own section without padding. The tier-1 journey adds concrete narrative rather than filler, and no section repeats another.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Complete @graph with BlogPosting + FAQPage and exact FAQ match; only flaw is a Person author whose url points to the company LinkedIn page.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Article", "criterion": "Article Type Completeness",
+         "finding": "The BlogPosting node carries headline, description, url, datePublished (2026-07-01), dateModified, keywords, image ImageObject, author, publisher, and mainEntityOfPage. Every core Article field is populated with real values, and the keywords string lists six on-topic terms.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQPage Structure",
+         "finding": "The FAQPage node has six entries, each a @type Question with an acceptedAnswer of @type Answer and full text, exceeding the 3+ minimum. Questions match the six body FAQ H4s exactly ('What is engineering-led ABM?', 'Does automated ABM remove the human from outreach?').", "score": 5, "max": 5},
+        {"category": "Alignment", "criterion": "Schema-to-Content Alignment",
+         "finding": "The schema description ('a four-layer automation stack for account-based outbound, from win-rate account selection to orchestrated multi-threaded committee outreach') accurately mirrors the article, keywords match the body themes, and each acceptedAnswer.text is a verbatim copy of the corresponding body FAQ answer. Alignment is exact.", "score": 5, "max": 5},
+        {"category": "Graph", "criterion": "@graph Implementation",
+         "finding": "A proper @graph array holds two nodes, each with a distinct fragment @id: BlogPosting at '#article' and FAQPage at '#faq', both under the canonical URL. mainEntityOfPage references the WebPage @id. The graph is correctly structured.", "score": 5, "max": 5},
+        {"category": "RichResult", "criterion": "Rich Result Eligibility",
+         "finding": "image is an ImageObject with url plus width 1200 and height 630, publisher is an Organization with a logo ImageObject, and dateModified is present, so rich-result requirements are met. The only defect is the author: @type Person 'Sumit Nautiyal' whose url points to https://www.linkedin.com/company/devcommx, a company page rather than a person profile.", "score": 4, "max": 5}
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Move the 6sense and Gartner citations inline to the sentences they support (and add a hard figure, e.g. the exact 6sense percentage and Gartner's specific committee-size number) instead of leaving them only in the Further Reading list, to lift Stat Accuracy and Statistical Authority.",
+    "2. Add at least one in-body visual, a diagram of the four-layer stack or a timeline of the Day-0-to-meeting journey, since the post currently has zero in-body images and Visual Elements is capped at 2/5.",
+    "3. Add a short value/economics framing paragraph (owned-system vs recurring managed-campaign retainer cost, or ROI of reclaimed rep capacity) to address the missing Pricing Transparency, currently 2/5.",
+    "4. Fix the schema author.url to a Person LinkedIn profile for Sumit Nautiyal rather than the company page, so the Person entity resolves correctly for rich results.",
+    "5. Tighten the tier-1 proof by aligning to the sanctioned '40+ qualified demos in ~6 weeks' framing where a real metric can be cited, rather than the softer 'doubled SDR opportunity creation'."
+  ]
+}

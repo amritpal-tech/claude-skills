@@ -1,0 +1,96 @@
+{
+  "slug": "hire-gtm-engineer-vs-agency-build-vs-buy",
+  "title": "Should You Hire a GTM Engineer or a GTM Engineering Agency? The Build-vs-Buy Analysis for 2026",
+  "words": 2683,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Strong practitioner depth, but every quantitative claim (62 days to fill, 1.25-1.4x load, cost-per-hire $8-12k) is a bare assertion with no inline source.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Sources", "criterion": "Stat Accuracy & Source Quality", "finding": "Named external authorities exist (Glassdoor, Apollo, 'Maja Voje: The 2026 State of GTM Engineering') but they sit in a 'Further Reading' list, not attached to the claims they support. Load-bearing figures like 'average around 62 days to fill', 'roughly 1.25 to 1.4 times base', and 'cost per hire for technical roles commonly runs 8,000 to 12,000 dollars' carry no inline citation, so a reader cannot verify them. Only the salary band ('median near 135,000 dollars') links out, and it links to DevCommX's own salary post rather than a primary source.", "score": 3, "max": 5},
+        {"category": "Depth", "criterion": "Practitioner Depth", "finding": "The post demonstrates real deployment knowledge, naming the actual failure surface: 'every Clay table, webhook, API key, enrichment credential, and undocumented workflow' and enrichment providers 'like ZoomInfo, Apollo, or Cognism at 1,000 to 3,000 dollars a month'. The key-person-risk section ('the systems keep firing, but nobody on the team can safely change a field, rotate a key, or debug a broken sync') reads like lived operational experience, not a surface summary.", "score": 4, "max": 5},
+        {"category": "Attribution", "criterion": "Data Attribution", "finding": "The central comparison table asserts '62 days to fill', '30 to 90 days of ramp', and 'roughly 6,000 to 12,000 dollars a month' with no source column or footnote. Every figure in the body is stated as fact ('Engineering roles average around 62 days to fill') without an identified origin, making the metrics bare assertions rather than attributed data.", "score": 3, "max": 5},
+        {"category": "Technical", "criterion": "Technical Accuracy", "finding": "Tool names and 2026 economics are correct and current: Clay, ZoomInfo/Apollo/Cognism enrichment at '1,000 to 3,000 dollars a month', agency retainers 'roughly 3,000 to 15,000 dollars a month' with 'one-off infrastructure builds often quoted at 15,000 to 50,000 dollars'. These bands are plausible and internally consistent (retainer midpoint $6-12k reused in table and FAQ).", "score": 4, "max": 5},
+        {"category": "Completeness", "criterion": "Completeness", "finding": "Every H2 promise is delivered: 'Real cost math' produces loaded in-house vs agency figures, 'Time-to-productivity for each' gives the two-hand vs one-hand clock, 'What happens when the in-house hire leaves' covers key-person risk, and 'The hybrid model most teams actually land on' delivers the buy-then-build sequence. No section is a stub.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Primary keyword well-distributed and interlinking is strong (9 internal links); meta description runs 190 chars, slightly over the ~160 snippet cap.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Keyword", "criterion": "Primary Keyword Targeting", "finding": "The 'hire GTM engineer vs agency / build-vs-buy' target appears in the slug, meta-title ('Hire GTM Engineer vs Agency: 2026 Build-vs-Buy'), H2s ('The build-vs-buy decision, framed', 'Real cost math: fully loaded in-house vs an agency engagement'), body, and FAQ ('Is it cheaper to hire a GTM engineer or use a GTM engineering agency?'). Coverage is thorough across all zones.", "score": 4, "max": 5},
+        {"category": "FAQ", "criterion": "FAQ / People Also Ask", "finding": "Six FAQ items map to genuine high-intent PAA queries: 'Is it cheaper to hire a GTM engineer or use a GTM engineering agency?', 'How long until each option produces pipeline?', 'What is the biggest risk of hiring a GTM engineer in-house?', and 'Do we own the GTM systems if we use an agency?'. Each answer is a self-contained 4-6 sentence response, not a teaser.", "score": 4, "max": 5},
+        {"category": "Tables", "criterion": "Comparison / Featured Snippet Tables", "finding": "A clean six-row comparison table (Cost profile, Time to first pipeline, Key-person risk, Coverage and breadth, Context and continuity, Best fit) contrasts 'In-house GTM engineer' vs 'GTM engineering agency' with a proper thead/tbody and scroll wrapper, well structured for featured-snippet extraction.", "score": 4, "max": 5},
+        {"category": "Links", "criterion": "Internal & External Link Structure", "finding": "Nine internal links use descriptive anchors ('how to hire a GTM engineer', 'GTM engineer salary breakdown', 'best GTM engineering agencies', 'AI SDR buy versus build framework', 'DevCommX GTM engineering'), giving strong topical interlinking. External citations exist but are corralled in a 'Further Reading' list rather than placed inline next to the stats they back.", "score": 4, "max": 5},
+        {"category": "Technical", "criterion": "Technical SEO", "finding": "Schema is present (BlogPosting + FAQPage), meta-title is 46 chars (within limit), and H1 derives from the 'name' field. The meta-description is 190 characters, over the ~160-char threshold where Google truncates, which is the one technical gap.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.20,
+      "flag": "Highly extractable definitions and structured comparisons; weakened only because key stats are not tied to named sources an LLM can attribute.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Definitions", "criterion": "Direct Definitions", "finding": "The lead paragraph is a clean extractable answer: 'Hiring an in-house GTM engineer makes sense when the need is permanent, the team is large enough to keep the role busy, and you already have an engineering culture' while 'A GTM engineering agency wins when you need pipeline fast, need breadth... or want senior operators building on day one'. This is a directly liftable definitional contrast an AI can quote verbatim.", "score": 4, "max": 5},
+        {"category": "Structure", "criterion": "Structured Data for AI Parsing", "finding": "The post offers a two-column comparison table, a six-item FAQ, bolded decision conditions ('The need is permanent and full-time', 'You already have an engineering culture', 'The scope is knowable and stable'), and a named hybrid sequence ('buy then build'), all of which parse cleanly into machine-extractable structure.", "score": 4, "max": 5},
+        {"category": "Statistics", "criterion": "Statistical Authority", "finding": "Sources are named in aggregate (Glassdoor, Apollo, Maja Voje) but not bound to specific figures, so an LLM cannot attribute '62 days to fill' or '1.25 to 1.4 times base' to a citable origin. The most citable claim ('40 or more qualified demos in roughly six weeks') is DevCommX's own, which helps entity association more than independent statistical authority.", "score": 3, "max": 5},
+        {"category": "Entity", "criterion": "Entity Association", "finding": "DevCommX and its author are explicitly welded to the topic: 'We build this infrastructure for B2B teams every week', 'In our own engagements, systems that trigger on real buying signals... can reach 40 or more qualified demos in roughly six weeks', and 'It is exactly how we structure engagements at DevCommX GTM engineering'. Schema names Sumit Nautiyal, 'VP of Revenue Operations & GTM Engineering, DevCommX'.", "score": 4, "max": 5},
+        {"category": "Distinctiveness", "criterion": "GEO Distinctiveness", "finding": "The post targets a distinct build-vs-buy/decision query cluster and actively firewalls itself from siblings, deferring the hiring mechanics ('read how to hire a GTM engineer'), the definition ('start with what a GTM engineer is'), and vendor selection ('our roundup of the best GTM engineering agencies'). The only overlap risk is the salary band, which it reuses from the gtm-engineer-salary post, but reframes as loaded cost rather than pay data, so cannibalisation risk is low.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Owned-infrastructure differentiation is articulated exceptionally well, and this post is unusually pricing-transparent for the library.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Differentiation", "criterion": "Differentiation Narrative", "finding": "The owned-infrastructure, signal-based model is the spine of the piece: 'the client must own the infrastructure, accounts, data, and automations, not rent them back from the agency. That is the difference between a build partner and a managed campaign' and 'what we build, you keep', plus 'systems that trigger on real buying signals rather than static lists'. This is the DevCommX thesis stated precisely.", "score": 5, "max": 5},
+        {"category": "Proof", "criterion": "Proof Metrics & Evidence", "finding": "The sanctioned proof framing appears cleanly: 'In our own engagements, systems that trigger on real buying signals... can reach 40 or more qualified demos in roughly six weeks, because the build starts on day one instead of day ninety'. It is the only DevCommX outcome cited, so proof is present but singular.", "score": 4, "max": 5},
+        {"category": "Pricing", "criterion": "Pricing Transparency", "finding": "Unusually transparent for the library: it quotes agency retainers 'roughly 3,000 to 15,000 dollars a month, with most established operators between 6,000 and 12,000', project builds 'quoted at 15,000 to 50,000 dollars', and a fully-loaded in-house figure 'well north of 200,000 dollars'. Value framing ('Per unit of shipped, working system in year one, it is usually cheaper') is explicit rather than dodged.", "score": 4, "max": 5},
+        {"category": "CTA", "criterion": "CTA Quality", "finding": "The CTA is specific and conversion-oriented: 'Book a GTM strategy call and we will map the build-vs-buy math to your team, your stack, and your pipeline targets', tied to a concrete offer ('start with an agency build to get pipeline fast, keep the option to bring it in-house once it is proven').", "score": 4, "max": 5},
+        {"category": "Differentiation", "criterion": "Content Differentiation", "finding": "The post fills a clear, un-duplicated slot: the build-vs-buy decision layer that sits above the hiring, salary, and agency-selection posts it links to, and complements the AI-SDR buy-vs-build framework without repeating it. It is a distinct entry in the GTM-engineer content cluster.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Clean heading hierarchy and strong prose flow, but zero in-body images (only the OG image) caps Visual Elements, and the body leans on dense paragraphs over bullets.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Headings", "criterion": "Heading Architecture", "finding": "Levels are logical with no skips: the H1 (name field) leads to eight topical H2s ('The build-vs-buy decision, framed' through 'Build This With DevCommX, Then Own It'), then H3s for 'Further Reading' and 'FAQ', with six H4 questions nested correctly under the FAQ H3.", "score": 4, "max": 5},
+        {"category": "Visuals", "criterion": "Visual Elements", "finding": "There are no in-body images, diagrams, or charts, only the single HTML comparison table; the only image asset is the OG/social image referenced in schema. For a 2,683-word decision guide this is thin visual support and cannot score above the calibrated ceiling.", "score": 2, "max": 5},
+        {"category": "Scannability", "criterion": "Scannability", "finding": "A one-paragraph hook opens strong, subheads segment the argument, the comparison table anchors the core decision, and bolded lead-ins ('The in-house clock has two hands.', 'Speed:', 'No ramp:', 'Breadth:') aid skimming. The one weakness is that the body is almost entirely prose paragraphs; the only bulleted list is 'Further Reading', so pure skim readers have few in-body lists to grab.", "score": 4, "max": 5},
+        {"category": "Readability", "criterion": "Reading Level & Flow", "finding": "Complexity fits an operator/founder audience and transitions are natural ('One clarification before the numbers', 'Put the pieces together and year one fully loaded...'). The tone is direct without a jargon dump; specialized terms (deliverability, LLMO, RevOps) are used in context, not stacked.", "score": 4, "max": 5},
+        {"category": "Length", "criterion": "Content Length & Density", "finding": "At roughly 2,683 words the length suits a build-vs-buy decision guide, and density is high with little padding; each section adds a new variable (cost, time, risk, in-house case, agency case, hybrid) rather than restating. The 12-minute reading-time field is consistent with the count.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Complete, well-aligned @graph with BlogPosting + FAQPage; only minor gap is that nested nodes (author, publisher, Question) lack their own @id.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Article", "criterion": "Article Type Completeness", "finding": "The BlogPosting node carries headline, description, url, datePublished ('2026-07-01'), dateModified, keywords ('hire GTM engineer, GTM engineering agency, GTM engineer vs agency, outsourced vs in-house GTM engineer, GTM engineer cost'), author, publisher, image, and mainEntityOfPage. Nothing required is missing.", "score": 5, "max": 5},
+        {"category": "FAQPage", "criterion": "FAQPage Structure", "finding": "The FAQPage node holds all six questions as @type Question with a properly nested acceptedAnswer of @type Answer and a full text value, well above the 3-question minimum.", "score": 5, "max": 5},
+        {"category": "Alignment", "criterion": "Schema-to-Content Alignment", "finding": "The six FAQ answers in the schema match the body FAQ text verbatim (e.g. the key-person-risk answer 'One person holds every Clay table, webhook, enrichment key, and undocumented workflow in their head' is identical in both), and the schema description and keywords track the article's build-vs-buy subject accurately.", "score": 5, "max": 5},
+        {"category": "Graph", "criterion": "@graph Implementation", "finding": "An @graph array wraps both nodes and each top-level node has an @id ('...#article' and '...#faq'). The gap: nested objects (author, publisher, and the six Question nodes) carry no @id, so the graph is not fully addressable node-by-node.", "score": 4, "max": 5},
+        {"category": "RichResult", "criterion": "Rich Result Eligibility", "finding": "Rich-result signals are all present: image is an ImageObject with url plus width 1200 and height 630, publisher is an Organization with name/url/logo, and dateModified ('2026-07-01') is set alongside datePublished.", "score": 5, "max": 5}
+      ]
+    }
+  ],
+  "top_fixes": [
+    "Move external sources inline: attach Glassdoor, Apollo, and Maja Voje's '2026 State of GTM Engineering' directly to the specific stats they back ('62 days to fill', '1.25 to 1.4 times base', 'cost per hire 8,000 to 12,000 dollars') instead of parking them all in Further Reading. This lifts Stat Accuracy, Data Attribution, and Statistical Authority in one pass.",
+    "Add at least one in-body visual (a cost-stack diagram or a time-to-pipeline timeline) to break the visual ceiling; the post is 2,683 words with only a single table and no images.",
+    "Trim the meta-description from 190 to under ~160 characters so it is not truncated in SERPs, and add @id to the nested author, publisher, and Question schema nodes to make the @graph fully addressable."
+  ]
+}

@@ -1,0 +1,281 @@
+{
+  "slug": "multi-agent-ai-sdr-system-architecture",
+  "title": "Multi-Agent AI SDR Architecture: The Researcher, Writer, and Sequencer Pattern",
+  "words": 2504,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Every hard statistic in the post is attributed to an anonymous 'Research from 2026' / 'Studies' with zero inline links or named sources.",
+      "flag_type": "critical",
+      "criteria": [
+        {
+          "category": "Sources",
+          "criterion": "Stat Accuracy & Source Quality",
+          "finding": "The two load-bearing statistics are both unsourced: 'Research from 2026 on production multi-agent systems found that ... end-to-end success can land between 20 and 40 percent' and 'Studies of production multi-agent systems in 2026 reported end-to-end failure rates between 41 and 86.7 percent'. Neither has an inline link, a named institution, or a paper title, and the body contains zero external hyperlinks at the point of any claim (the only 3 external links sit in a 'Further Reading' list at the end, pointing at crewai.com, the LangGraph docs root, and a generic Gartner article, none of which support the 41-86.7 percent figure).",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Depth",
+          "criterion": "Practitioner Depth",
+          "finding": "There are genuine operator signals: 'the Sequencer needs hard deterministic guardrails around its probabilistic decisions', 'An agent that can schedule freely will happily burn a domain', and the framing that 'Shallow personalization is a design symptom, not a prompt problem'. But for a post titled 'architecture' there is not a single implementation artifact: no sample research-brief JSON, no confidence-score threshold value, no example prompt, no state/handoff schema, and no named orchestration stack beyond a passing mention of Clay and 11x. It reads as an informed conceptual map rather than a system someone has shipped.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Attribution",
+          "criterion": "Data Attribution",
+          "finding": "The one table (Agent / Job / Input / Output / Failure mode, 4 rows) is presented as fact with no source line and is never labelled as DevCommX's own framework, so an LLM or reader cannot tell whether it is proprietary or industry-standard. The '14 distinct failure modes' and 'over 1,600 execution traces' figures are given as 'One widely cited analysis' with no citation at all, and the '92 percent accuracy' document-analyzer example is a bare assertion with no benchmark named.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical Accuracy",
+          "finding": "Tool characterizations are correct for 2026: 'CrewAI popularized the role-based crew of researcher, writer, and reviewer' and 'LangGraph gives you graph-based control flow' are both accurate, and Clay is correctly placed as the enrichment layer 'underneath' the Researcher. The risk sits in the unverifiable specifics: 'Platforms like 11x, which rebuilt their SDR product on a hierarchical multi-agent design' carries no link or date, and the 'over 1,600 execution traces' count is materially larger than the trace counts in the published multi-agent failure-taxonomy work the 41-86.7 percent range comes from, so the number reads inflated.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Completeness",
+          "criterion": "Completeness",
+          "finding": "All 9 H2 promises are delivered in the body: the single-agent failure case, the three-agent table, one dedicated section each for Researcher, Writer, and Sequencer, the human correction layer, the LangGraph/CrewAI contrast, the runtime loop, and the CTA. The one unkept promise is external to the H2s: the meta-description sells 'a human correction layer that keeps reply rates real' and the post never gives a single reply-rate number or benchmark anywhere in 2,504 words.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Keyword and meta hygiene are clean, but the exact phrase 'multi-agent AI SDR system architecture' appears in zero of the 9 H2s and no statistic carries an inline external citation.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Keywords",
+          "criterion": "Primary Keyword Targeting",
+          "finding": "The exact phrase 'multi-agent AI SDR system architecture' opens the first sentence in bold, owns the slug, the meta-title ('Multi-Agent AI SDR System Architecture Explained'), and FAQ question 1 ('What is a multi-agent AI SDR system architecture?'). The gap is heading coverage: none of the 9 H2s contain the phrase or even 'AI SDR' -- they are all narrative ('The Researcher Agent', 'Why This Is Not Just LangGraph or CrewAI', 'How the Pieces Run Together'), and the H1 drops the word 'System' entirely.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQ / People Also Ask",
+          "finding": "Six H4 questions, and four of them are plausible high-intent PAA phrasings: 'Why not use a single AI agent for outbound?', 'How is this different from LangGraph or CrewAI?', 'Why do multi-agent outbound systems fail?', and 'What does the human correction layer actually do?'. The sixth, 'Can my team own this system instead of renting a managed campaign?', is a sales-framed question no one types into Google and burns an FAQ slot that could have captured a real query such as 'what agents does an AI SDR need'.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Tables",
+          "criterion": "Comparison / Featured Snippet Tables",
+          "finding": "One well-built table with a proper thead and 4 rows (Researcher, Writer, Sequencer, Human correction layer) mapping Job / Input / Output / Failure mode -- clean, parallel cell text like 'Hallucinated or stale facts that poison every downstream step'. It is 5 columns wide, which is above the 3-4 column range Google reliably lifts into a snippet, and it is the only table in a 2,504-word post, so the Researcher/Writer/Sequencer sections themselves have no extractable comparison block.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Links",
+          "criterion": "Internal & External Link Structure",
+          "finding": "Four internal links, all with descriptive anchors and all resolving to slugs that exist in the live library (agentic-gtm-ai-agents-gtm-engineering, b2b-buying-signals-guide-signal-based-prospecting, human-in-the-loop-ai-sdr-orchestration, hybrid-ai-sdr-model-account-split), plus a /contact CTA. External linking is the weakness: all 3 external links are parked in a trailing 'Further Reading' <ul> and point at homepages/doc roots (crewai.com, langchain-ai.github.io/langgraph/), so not one statistic in the body is inline-cited.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical SEO",
+          "finding": "Meta-title is 48 characters and meta-description 159 characters, both inside limits; the schema-markup field parses as valid JSON-LD with an @graph; the slug is clean; and there is correctly no <h1> inside post-body since Webflow renders the 'name' field as H1. Deduction is CTR-side: 'Multi-Agent AI SDR System Architecture Explained' ends on the generic word 'Explained' with no differentiator, number, or brand hook, which is the exact pattern behind the site's known low click-through problem.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.20,
+      "flag": "Definition and structure are excellent, but no statistic names a source, so an LLM can lift the framework and has nothing to attribute back.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Definitions",
+          "criterion": "Direct Definitions",
+          "finding": "The opening paragraph is a model extractable definition: 'A multi-agent AI SDR system architecture splits outbound work across specialized agents instead of forcing one model to do everything', immediately followed by a one-clause definition of each of the four components ('a Researcher agent that gathers and structures account intelligence...'). Each agent section then re-states its contract in a single sentence, e.g. 'The Sequencer decides what happens across time' and 'The Researcher's contract is strict: pull only from sources you can cite'.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Structure",
+          "criterion": "Structured Data for AI Parsing",
+          "finding": "Strong parse surface: a 4-row/5-column agent table, a 6-question FAQ in H4s mirrored in FAQPage schema, and bolded micro-headers inside sections ('What it pulls.', 'Why it is separate.', 'The output is structured, not freeform.', 'Deliverability is a first-class concern.'). What is missing is any numbered framework -- the runtime loop in 'How the Pieces Run Together' is written as a prose chain ('A signal fires. The Researcher builds a cited brief...') rather than an <ol>, and the only <ul> in the entire body is the 3-item Further Reading list.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Authority",
+          "criterion": "Statistical Authority",
+          "finding": "Every quantitative claim is orphaned from a citable entity: 'Research from 2026 on production multi-agent systems found...', 'Studies of production multi-agent systems in 2026 reported end-to-end failure rates between 41 and 86.7 percent', and 'One widely cited analysis of over 1,600 execution traces catalogued 14 distinct failure modes'. No university, lab, vendor, or paper is named anywhere, so an LLM quoting the 41-86.7 percent range has no attributable source and will cite the original research if it can find it, not this page.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Entity",
+          "criterion": "Entity Association",
+          "finding": "DevCommX is bound to the topic three times in-body, including a first-person claim of production use: 'At DevCommX we build autonomous, signal-based systems that clients own, and the architecture below is the one we deploy in production', plus 'DevCommX builds autonomous, signal-based AI SDR systems on the Researcher, Writer, Sequencer, and human-correction pattern above'. The author entity is weaker: Sumit Nautiyal appears only in fieldData and schema, never in the prose, so there is no in-text E-E-A-T sentence tying the named practitioner to the architecture.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Distinctiveness",
+          "criterion": "GEO Distinctiveness",
+          "finding": "The 'Researcher / Writer / Sequencer + correction layer' framing is a distinct query cluster against the 30+ existing ai-sdr slugs, none of which target architecture (closest are ai-sdr-buy-vs-build-decision-framework and definitive-guide-to-ai-sdrs). Two sections do brush siblings: the whole 'Human Correction Layer Is Not Optional' H2 overlaps human-in-the-loop-ai-sdr-orchestration, and the FAQ 'Why do multi-agent outbound systems fail?' overlaps why-ai-sdr-implementations-fail -- mitigated but not eliminated by the outbound link to the former and no link at all to the latter.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Ownership narrative is the strongest part of the post; there is zero cost or budget framing anywhere in 2,504 words.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Differentiation",
+          "criterion": "Differentiation Narrative",
+          "finding": "The owned-infrastructure model is stated explicitly and repeatedly: 'Everything the client keeps: the prompts, the rules, the enrichment logic, the trigger definitions' and 'unlike a managed campaign where the vendor owns the machine and you rent the output. That ownership is the whole point.' The signal-based half is equally clear -- 'The Researcher is triggered by a signal, not a static list' and 'they trigger on real buying signals instead of blasting a static list' -- and the 'Why This Is Not Just LangGraph or CrewAI' H2 turns the positioning into a competitive argument rather than a slogan.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Proof",
+          "criterion": "Proof Metrics & Evidence",
+          "finding": "The sanctioned framing appears correctly hedged three times: 'more than 40 qualified demos in around six weeks' in the runtime section, in the CTA ('clients typically go from setup to more than 40 qualified demos in around six weeks'), and in FAQ 6. That is the only client outcome in the post -- no reply rate, no meetings-per-inbox, no before/after, and no anonymised client example, which is conspicuous given the meta-description promises a layer 'that keeps reply rates real'.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Pricing",
+          "criterion": "Pricing Transparency",
+          "finding": "No cost, budget, retainer, per-meeting, or build-vs-buy economics appear anywhere in the post. The only money-adjacent phrases are rhetorical -- 'what a burned domain costs' and 'an output you cannot see into' -- neither of which gives a reader a number or even a range. A post arguing for owning infrastructure over renting a managed campaign is the natural place for at least a directional cost comparison, and it is entirely absent.",
+          "score": 1,
+          "max": 5
+        },
+        {
+          "category": "CTA",
+          "criterion": "CTA Quality",
+          "finding": "The closing CTA is specific and scoped rather than generic: 'If you want this architecture mapped to your own pipeline, your triggers, your ICP, and your deliverability setup, book a GTM strategy call and we will scope it with you.' It links to https://www.devcommx.com/contact rather than a direct calendar booking URL, and it is the only CTA in the piece -- there is no mid-article offer after the high-intent 'Human Correction Layer' or 'Why This Is Not Just LangGraph or CrewAI' sections.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Differentiation",
+          "criterion": "Content Differentiation",
+          "finding": "This is the only architecture/design-pattern post in a library of 30+ AI SDR entries that are otherwise about pricing, ROI, vendor comparison, and role questions (ai-sdr-pricing, ai-sdr-vs-human-sdr, best-ai-sdr-platforms), so it fills a real technical-credibility slot and gives the four linked posts a hub to point at. It stops short of being the definitive pillar because it carries no diagram, no reference implementation, and no named stack the reader could actually assemble.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "An architecture post with four agents and a handoff loop ships with zero diagrams and only one table.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Headings",
+          "criterion": "Heading Architecture",
+          "finding": "Clean descent with no skipped levels: no <h1> in post-body (correct, since Webflow renders the 'name' field as H1), 9 H2s, then H3 'Further Reading' and H3 'FAQ' with 6 H4 questions nested under the FAQ H3. The only inconsistency is that 'FAQ' is demoted to H3 while every other top-level section is an H2, which slightly under-weights the highest-value AEO block on the page.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Visuals",
+          "criterion": "Visual Elements",
+          "finding": "There are zero images, diagrams, charts, or embeds in post-body -- the only asset is the shared og-image (imresizer-DevCommX-Blog-OG.png), which is reused across the whole blog and never appears in the article. The single visual element is the 4-row agent table. For a post whose entire thesis is a handoff chain (signal to Researcher to Writer to Sequencer to human, with feedback into the agents), the absence of one flow diagram is the largest single readability gap in the draft.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Scannability",
+          "criterion": "Scannability",
+          "finding": "The opening paragraph works as a standalone answer box, the 9 H2s are self-explaining ('The Human Correction Layer Is Not Optional'), and bolded run-in headers break up the long sections ('What it pulls.', 'Where teams get this wrong.', 'What to review, and what to automate.'). Against that, the body contains exactly one bulleted list (the 3-item Further Reading) and no numbered steps, so sections like 'The Sequencer Agent' and 'How the Pieces Run Together' are solid blocks of 90-130 word paragraphs a skimmer will bounce off.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Readability",
+          "criterion": "Reading Level & Flow",
+          "finding": "Prose is tight and transitions land without connective filler -- 'It is not LangGraph with a sales coat of paint', 'It works in a demo with three prospects. It collapses at volume', 'The orchestration is fine. The outcome is not.' Jargon is introduced before it is used (confidence scores, deterministic guardrails, inbox rotation) rather than dumped. A few sentences run long and abstract, notably the compound-error passage stacking 'a document analyzer at 92 percent accuracy, an extractor that rarely hallucinates, a reasoning step that usually gets it right' into one clause chain.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Length",
+          "criterion": "Content Length & Density",
+          "finding": "2,504 words against a declared 11-minute read time is roughly right for a pattern explainer, and each of the four agents gets proportional treatment rather than padding. The one redundancy is the 40-demos proof, which is stated in near-identical wording in 'How the Pieces Run Together' ('going from setup to more than 40 qualified demos in around six weeks because they trigger on real buying signals') and then again in the very next section, the CTA -- two consecutive sections repeating the same claim.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Schema is the strongest dimension -- all 6 FAQ answers match the body verbatim -- but the publisher logo is the OG banner and author.url points at a company page, not the person.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Article",
+          "criterion": "Article Type Completeness",
+          "finding": "The BlogPosting node carries every required property: headline matching the post name exactly, description, url, datePublished and dateModified (2026-07-01), a 5-term keywords string ('multi-agent ai sdr system architecture, researcher writer sequencer agent, ai sdr agent, human in the loop outbound, agentic gtm'), an author Person with jobTitle 'VP of Revenue Operations & GTM Engineering, DevCommX', publisher, image, and mainEntityOfPage. Only optional enrichments (wordCount, articleSection, inLanguage) are absent.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQPage Structure",
+          "finding": "Six entries in mainEntity, well above the 3-question threshold, each correctly shaped as @type Question with a name and an acceptedAnswer of @type Answer with a text property -- verified programmatically across all six, including 'Why do multi-agent outbound systems fail?' and 'Can my team own this system instead of renting a managed campaign?'. Answer lengths (roughly 45-70 words) sit in the range Google will render.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Alignment",
+          "criterion": "Schema-to-Content Alignment",
+          "finding": "All 6 schema question names and all 6 acceptedAnswer.text values are byte-identical to the body H4s and their following paragraphs (checked by string comparison after tag-stripping). The headline matches fieldData name exactly and the keywords map to real body content (Researcher/Writer/Sequencer, human-in-the-loop, agentic GTM). Only nit: the schema description begins 'A multi-agent AI SDR system architecture mapped to outbound' while meta-description begins 'Multi-agent AI SDR system architecture mapped to outbound' -- a one-word divergence, otherwise identical.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Graph",
+          "criterion": "@graph Implementation",
+          "finding": "A proper @graph array with two nodes, each carrying a distinct @id: '...multi-agent-ai-sdr-system-architecture#article' and '...#faq'. The nodes are not linked to each other, though -- the FAQPage has no isPartOf or mainEntityOfPage pointing back to #article, there is no WebPage or BreadcrumbList node, and author/publisher/image are inline objects with no @id, so nothing in the graph is reusable or cross-referenced.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Rich Results",
+          "criterion": "Rich Result Eligibility",
+          "finding": "The basics are there: image is an ImageObject with explicit width 1200 and height 630, publisher is an Organization with a url, and dateModified is present. Three eligibility weaknesses: publisher.logo reuses the identical 1200x630 OG banner URL as the logo (Google expects a distinct logo image), author.url is 'https://www.linkedin.com/company/devcommx' -- a company page attached to a Person named Sumit Nautiyal, which is a mismatched entity signal -- and dateModified is set equal to datePublished at 2026-07-01, giving no freshness signal.",
+          "score": 3,
+          "max": 5
+        }
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Name the sources for the two failure-rate statistics. Replace 'Studies of production multi-agent systems in 2026 reported end-to-end failure rates between 41 and 86.7 percent' and 'One widely cited analysis of over 1,600 execution traces catalogued 14 distinct failure modes' with the actual paper/institution and an inline external link, and verify the 1,600-trace count against the source before publishing -- it appears inflated. Same for the '20 and 40 percent' compound-error claim.",
+    "2. Add a flow diagram of the architecture. The post describes a handoff chain (signal to Researcher to Writer to Sequencer, with low-confidence branches into the human layer and corrections feeding back into the agents) and ships with zero in-body visuals; one SVG or image of that loop fixes the weakest criterion in the draft and gives the piece a linkable asset.",
+    "3. Deliver on the meta-description promise of 'keeps reply rates real' by adding at least one reply-rate or quality benchmark, or rewrite the meta-description. Right now the phrase sets an expectation the 2,504-word body never pays off with a single number.",
+    "4. Add cost or economics framing. A post whose central argument is owning the stack instead of renting a managed campaign has no budget, retainer, or cost-per-meeting comparison at all -- even a directional build-vs-rent cost paragraph (linking to ai-sdr-system-cost or ai-sdr-pricing) would close the weakest brand criterion.",
+    "5. Work the primary keyword into headings and fix the FAQ level. None of the 9 H2s contain 'multi-agent AI SDR' -- retitle at least two (e.g. 'The Three-Agent Pattern, Mapped to Outbound' to 'The Multi-Agent AI SDR Pattern, Mapped to Outbound') -- and promote 'FAQ' from H3 to H2 so the AEO block sits at top level.",
+    "6. Repair the schema entity signals: point author.url at Sumit Nautiyal's personal LinkedIn rather than https://www.linkedin.com/company/devcommx, swap publisher.logo off the 1200x630 OG banner onto a real logo asset, and add isPartOf/mainEntityOfPage from the #faq node back to #article.",
+    "7. De-duplicate the 40-demos proof. It appears in near-identical wording in two consecutive sections ('How the Pieces Run Together' and 'Build This With DevCommX') plus FAQ 6; cut the first instance and let the CTA carry it.",
+    "8. Convert the runtime loop in 'How the Pieces Run Together' from prose into a numbered <ol>, and swap the sales-framed FAQ ('Can my team own this system instead of renting a managed campaign?') for a genuine PAA query such as 'What agents does an AI SDR system need?'."
+  ]
+}

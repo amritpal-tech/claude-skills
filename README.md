@@ -10,8 +10,9 @@ Imported from the `claude-skills-2026-09-03` export.
 
 | Path | Purpose |
 |---|---|
-| `.claude/skills/` | 151 skills — **auto-loaded** in any Claude Code session on this repo |
-| `.claude/commands/` | 27 commands in 8 namespaces — auto-loaded, invoked as `/namespace:command` |
+| `.claude/skills/` | 152 skills — **auto-loaded** in any Claude Code session on this repo |
+| `.claude/commands/` | 35 commands in 9 namespaces — auto-loaded, invoked as `/namespace:command` |
+| `devcommx/` | working corpus for the DevCommX blog operation (53 drafts, validation findings, workbooks) |
 | `plugins/` | reference copies of 3 plugin bundles (install via the plugin system) |
 | `install.sh` | copy skills into `~/.claude` for use outside this repo |
 | `package-for-upload.sh` | build per-skill zips for uploading to your claude.ai account |
@@ -48,7 +49,28 @@ fresh container each time and a fresh clone of the repo — anything written to
 ## Command namespaces
 
 `design-ops`, `design-research`, `design-systems`, `designer-toolkit`,
-`interaction-design`, `prototyping-testing`, `ui-design`, `ux-strategy`
+`devcommx`, `interaction-design`, `prototyping-testing`, `ui-design`, `ux-strategy`
+
+## DevCommX blog operations
+
+The account's live blog program has a full knowledgebase in this repo:
+
+- **`.claude/skills/devcommx-blog-ops/`** — the operating manual. Webflow collection IDs
+  and field schema, the draft spec, the 6-dimension validation rubric, the batch
+  pipeline, the internal-link liveness protocol, and the gotchas that already cost
+  rework once. Plus working scripts: a hard-rules draft gate, the weighted scorer, the
+  workbook builder, and a link checker.
+- **`.claude/commands/devcommx/`** — `/devcommx:blog-batch`, `blog-draft`,
+  `blog-validate`, `blog-push`, `blog-audit`, `blog-status`, `blog-figures`,
+  `blog-review-doc`.
+- **`devcommx/`** — the corpus: 53 drafts, 53 validation findings, 4 workbooks, the slug
+  inventory, and the original session handoff verbatim.
+
+Companion skills already in the library: `devcommx-brand` (visual system) and
+`devcommx-keyword-governance` (the keyword filter that runs before any brief).
+
+The blog program needs the **Webflow MCP connector authorized on the account** —
+nothing in the push, audit or status flow works without it.
 
 ## Plugin skills
 

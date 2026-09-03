@@ -1,0 +1,126 @@
+{
+  "slug": "revenue-operations-consulting-guide-mid-market",
+  "title": "Revenue Operations Consulting for Mid-Market SaaS: What It Is, What It Delivers, and When You Need It",
+  "words": 2416,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Depth is strong, but the two headline stats (Gartner, Forrester) are never inline-linked at the claim",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Sources", "criterion": "Stat Accuracy & Source Quality",
+         "finding": "The two load-bearing stats are unlinked at the point of claim. 'Gartner projects that by 2026 the majority of the highest-growth companies will run a formal RevOps model' has no inline citation, and 'Forrester research links aligning people, process, and technology... to 36 percent more revenue growth and up to 28 percent more profitability' is likewise a bare assertion in-body. Gartner and Forrester appear only as generic 'Further Reading' links at the bottom, not anchored to the sentences that need them.", "score": 3, "max": 5},
+        {"category": "Depth", "criterion": "Practitioner Depth",
+         "finding": "Demonstrates real build knowledge, not summary. The deliverables section names concrete work: redesigning 'the object model, the stage definitions, and the automation logic', a forecast 'grounded in real stage conversion data and pipeline hygiene', and routing rebuilt 'so leads reach the right rep in seconds, with clear SLAs and fallbacks'. This reads like someone who has done the rebuild.", "score": 4, "max": 5},
+        {"category": "Attribution", "criterion": "Data Attribution",
+         "finding": "The pricing table carries no source column or footnote; the only attribution is the prose hedge 'The ranges below are drawn from public 2026 benchmarks' with MergeYourData buried in Further Reading rather than cited on the table. Every dollar figure ($10,000-$25,000, $3,000-$15,000/mo, $200-$400/hr) is a bare assertion at the point of use.", "score": 3, "max": 5},
+        {"category": "Technical", "criterion": "Technical Accuracy",
+         "finding": "Tool and market references are correct for 2026: Salesforce and HubSpot named as the deep-work platforms, fractional leader framed as 'roughly 30 to 50 percent of a full-time VP', in-house hire at '$100,000 to $150,000 or more'. No incorrect product features, limits, or pricing claims detected.", "score": 4, "max": 5},
+        {"category": "Completeness", "criterion": "Completeness",
+         "finding": "Every H2 promise is delivered. The intro pledges 'what the discipline is, what a consultant actually delivers, what it costs, and the exact signs that you need one' and each is fulfilled by a matching section, including the engagement-cost table and the '$5M and $50M ARR' timing signals. No dangling promises.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Primary keyword and FAQ targeting are excellent; external citations are not inline",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Keyword", "criterion": "Primary Keyword Targeting",
+         "finding": "'Revenue operations consulting' is placed cleanly across all surfaces: meta-title 'Revenue Operations Consulting for Mid-Market SaaS', slug 'revenue-operations-consulting-guide-mid-market', H2 'What Revenue Operations Consulting Actually Is', the opening bolded sentence, and FAQ 'What is revenue operations consulting?'. Secondary 'RevOps consultant' is worked in naturally throughout.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQ / People Also Ask",
+         "finding": "Six FAQs map directly to high-intent PAA queries: 'What is revenue operations consulting?', 'How much does revenue operations consulting cost?', 'When does a mid-market SaaS company need RevOps consulting?', and 'Is RevOps consulting better than hiring in-house?'. These are the exact commercial-intent questions a buyer types.", "score": 5, "max": 5},
+        {"category": "Tables", "criterion": "Comparison / Featured Snippet Tables",
+         "finding": "The engagement-model table is a clean four-column comparison (Engagement model / What it is / Typical public range (2026) / Best for) with four rows, well structured for snippet extraction. It is wrapped in heavy inline styles and an overflow-x div, but the semantic thead/tbody structure is intact and extractable.", "score": 4, "max": 5},
+        {"category": "Links", "criterion": "Internal & External Link Structure",
+         "finding": "Eight internal links with varied descriptive anchors ('GTM engineering stack', 'tech stack consolidation playbook', 'true cost of outbound across AI, agency, and in-house', two service links to /revenue-operations) plus three external authorities. Weakness: the three external links (Gartner, Forrester, MergeYourData) sit only in a Further Reading block, never inline at the stat they support.", "score": 4, "max": 5},
+        {"category": "Technical", "criterion": "Technical SEO",
+         "finding": "Schema is present (BlogPosting + FAQPage), meta-title 'Revenue Operations Consulting for Mid-Market SaaS' is ~44 chars (ideal), and H1 matches the article name. Meta-description runs ~163 chars, marginally over the ~160 snippet limit and at risk of truncation.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.20,
+      "flag": "Strong extractable definitions and named-source stats; some overlap with the in-house sibling in one section",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Definitions", "criterion": "Direct Definitions",
+         "finding": "Clean extractable definition opens the piece: 'Revenue operations consulting is an engagement where an outside specialist diagnoses and rebuilds the systems, data, and processes that connect your sales, marketing, and customer success teams.' The FAQ restates it in a self-contained form an LLM can lift verbatim.", "score": 5, "max": 5},
+        {"category": "Structure", "criterion": "Structured Data for AI Parsing",
+         "finding": "Multiple parseable structures: the four-row pricing table, the FAQPage, and bolded deliverable/problem lead-ins ('Systems and CRM architecture.', 'Data hygiene and enrichment.', 'Forecasts that miss and nobody knows why.'). One gap: deliverables and problems use bolded run-in paragraphs rather than true <ul>/<ol>, slightly weaker for list extraction.", "score": 4, "max": 5},
+        {"category": "Authority", "criterion": "Statistical Authority",
+         "finding": "Claims are attributed to citable named sources: 'Gartner projects that by 2026...' and 'Forrester research links aligned revenue operations to 36 percent more revenue growth and up to 28 percent more profitability'. An LLM can attribute these to Gartner and Forrester; the missing inline URLs cost verifiability but not citability.", "score": 4, "max": 5},
+        {"category": "Entity", "criterion": "Entity Association",
+         "finding": "DevCommX and the author are explicitly tied to the topic: 'We build and run this infrastructure for B2B teams every week', 'the model we run at DevCommX through our revenue operations practice', authored by Sumit Nautiyal, VP of Revenue Operations & GTM Engineering. Clear entity-to-niche binding.", "score": 4, "max": 5},
+        {"category": "Distinctiveness", "criterion": "GEO Distinctiveness",
+         "finding": "As the category pillar it holds a distinct broad-guide query cluster (what-it-is / delivers / cost / when) versus the narrower hiring-decision siblings. The one risk is the H2 'RevOps Consulting vs Hiring In-House vs a Fractional Leader', which brushes against revops-agency-vs-in-house-first-hire; it is mitigated by being one section of a wide guide and by linking out rather than fully resolving the hiring decision.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Owned-infrastructure narrative and 40+ demos proof both present; unusually strong pricing transparency for the library",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Differentiation", "criterion": "Differentiation Narrative",
+         "finding": "The owned-infrastructure model is stated sharply: 'DevCommX builds autonomous, signal-based revenue systems that your team owns, not a managed campaign you rent' and 'The best engagements leave your team more capable, not more dependent'. This is the core DevCommX position articulated verbatim.", "score": 5, "max": 5},
+        {"category": "Proof", "criterion": "Proof Metrics & Evidence",
+         "finding": "The sanctioned proof framing appears exactly: 'Clients typically go from setup to 40+ qualified demos within about 6 weeks once the plumbing is right.' It is the single proof point in the piece, well placed in the closing CTA section but not reinforced elsewhere.", "score": 4, "max": 5},
+        {"category": "Pricing", "criterion": "Pricing Transparency",
+         "finding": "Unusually transparent for the library: a full pricing table with concrete ranges ($10,000-$25,000 projects, $3,000-$15,000/mo retainers, $200-$400/hr advisory) plus a dedicated cost FAQ and an ROI section. DevCommX's own fee is not disclosed, but market-cost and value framing is thoroughly present.", "score": 4, "max": 5},
+        {"category": "CTA", "criterion": "CTA Quality",
+         "finding": "Specific, conversion-oriented close: 'Explore our revenue operations practice, then book a GTM strategy call to map the right build to your pipeline', with the CTA anchored to /contact-us. Concrete next step rather than a vague 'contact us'.", "score": 4, "max": 5},
+        {"category": "Differentiation", "criterion": "Content Differentiation",
+         "finding": "Fills the pillar slot in the RevOps cluster: a broad buyer-education guide that hubs to the tactical siblings (tech-stack consolidation, true cost of outbound, repeatable outbound pipeline). Distinct role versus the hiring-decision and firm-selection posts it anchors.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Well-organized prose but NO in-body images or diagrams; deliverables use bold run-ins instead of bullet lists",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Headings", "criterion": "Heading Architecture",
+         "finding": "Logical hierarchy with no skipped levels: single H1 (article name), eight topical H2s, then H3 'Further Reading' and H3 'FAQ' with six H4 question headings nested under the FAQ. Clean H1>H2>H3>H4 descent.", "score": 4, "max": 5},
+        {"category": "Visuals", "criterion": "Visual Elements",
+         "finding": "Zero in-body images, diagrams, charts, or infographics; the body contains 0 <img> tags and only an OG image in fieldData. The single engagement-model table is the lone visual asset, so a topic that invites a cost-comparison graphic or a decision flowchart is carried entirely by text.", "score": 2, "max": 5},
+        {"category": "Scannability", "criterion": "Scannability",
+         "finding": "Skimmable via a strong opening hook, descriptive H2s, bolded run-in labels for each deliverable and problem, and the comparison table. Weakness: apart from the Further Reading <ul>, there are no bullet lists, so the deliverables and signals read as dense paragraph blocks rather than scannable lists.", "score": 4, "max": 5},
+        {"category": "Readability", "criterion": "Reading Level & Flow",
+         "finding": "Complexity is appropriate for a buyer audience with natural transitions ('The distinction that matters is build versus advice', 'The counter-signal matters too'). Prose is confident and jargon is explained ('the plumbing behind revenue') rather than dumped.", "score": 4, "max": 5},
+        {"category": "Length", "criterion": "Content Length & Density",
+         "finding": "2,416 words is right for a category pillar covering definition, deliverables, problems, pricing, timing, comparison, and ROI. Density is high with little padding; the reading-time field states '11' minutes, consistent with the count.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Complete BlogPosting + FAQPage in @graph with exact FAQ-to-body match; author/publisher nodes lack @id",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Article", "criterion": "Article Type Completeness",
+         "finding": "BlogPosting node is complete: headline, description, url, datePublished '2026-07-01', dateModified, keywords (five terms), image ImageObject, author Person, publisher Organization, and mainEntityOfPage. Nothing material missing.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQPage Structure",
+         "finding": "FAQPage carries six entries, each a @type Question with an acceptedAnswer of @type Answer and a populated text field. Well over the 3+ minimum and correctly typed throughout.", "score": 5, "max": 5},
+        {"category": "Alignment", "criterion": "Schema-to-Content Alignment",
+         "finding": "The six schema FAQ answers match the body FAQ text verbatim (e.g., the ROI answer's 'Forrester research links aligned revenue operations to 36 percent more revenue growth and up to 28 percent more profitability' is identical in both). Schema keywords and description mirror the article's actual focus.", "score": 5, "max": 5},
+        {"category": "Graph", "criterion": "@graph Implementation",
+         "finding": "Uses a proper @graph array with @id on both top-level nodes (#article and #faq). Minor gap: the nested author Person and publisher Organization nodes have no @id, so cross-node references are not fully linkable.", "score": 4, "max": 5},
+        {"category": "RichResult", "criterion": "Rich Result Eligibility",
+         "finding": "Rich-result signals are all present: image as ImageObject with url/width 1200/height 630, publisher Organization with a logo ImageObject, and dateModified alongside datePublished. Eligible for article and FAQ rich results.", "score": 5, "max": 5}
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Inline-link the Gartner and Forrester stats at the point of claim (currently only in Further Reading), and add a source citation to the pricing table (MergeYourData 2026 benchmarks) so the dollar ranges are attributed, not bare assertions.",
+    "2. Add at least one in-body visual (a cost-comparison chart or a build-vs-run decision flowchart) since the body has zero <img> tags, and convert the deliverables and 'signs you need one' sections from bold run-in paragraphs into true bullet lists for scannability and AI list extraction.",
+    "3. Trim the meta-description from ~163 to under 160 characters to avoid SERP truncation, and de-risk overlap with the revops-agency-vs-in-house sibling by keeping the 'vs Hiring In-House' section high-level and deferring the full decision to that post."
+  ]
+}

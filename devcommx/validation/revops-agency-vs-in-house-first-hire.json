@@ -1,0 +1,128 @@
+{
+  "slug": "revops-agency-vs-in-house-first-hire",
+  "title": "RevOps Agency vs. In-House: Why Most B2B SaaS Companies Get the First Hire Wrong",
+  "words": 2896,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Two of three core numbers (Clientell $129K salary, MergeYourData $3-8K/mo) are inline-linked to named 2026 sources; ARR/rep thresholds are asserted without citation.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Sources", "criterion": "Stat Accuracy & Source Quality",
+         "finding": "The $129K base salary and $160K-200K fully-loaded figure are attributed inline to 'Clientell's 2026 RevOps compensation data', and the $3,000-8,000/mo agency range is attributed to '2026 RevOps agency pricing benchmarks from MergeYourData'. Both are real, dated, named sources with working anchor links. The load-bearing decision thresholds ('5 to 15 million dollars in ARR with 10 or more reps') carry no source and read as practitioner judgment.", "score": 4, "max": 5},
+        {"category": "Depth", "criterion": "Practitioner Depth",
+         "finding": "Goes well past summary: it specifies the 'project then retainer pattern', that a '4,000 to 7,000 dollars per month' retainer 'typically buys 15 to 25 hours of senior work' with a concrete task list (CRM ownership, KPI/reporting framework, pipeline hygiene, lead routing), and prices full rebuilds at '40,000 to 200,000 dollars'. The two-failure-mode framing (junior-too-early vs senior-with-nothing-to-lead) and the agency-first-then-in-house sequencing reflect real deployment knowledge.", "score": 4, "max": 5},
+        {"category": "Attribution", "criterion": "Data Attribution",
+         "finding": "The decision table's dollar figures (129K base, 160K-200K loaded, 3,000-8,000/mo) are sourced in the surrounding body prose, but the table itself carries no source row or citation column, so a reader scanning only the table sees bare assertions. The 'Time to value' and 'Breadth of expertise' rows are qualitative claims with no attribution.", "score": 3, "max": 5},
+        {"category": "Technical", "criterion": "Technical Accuracy",
+         "finding": "The 2026-dated compensation and retainer figures are internally consistent and plausible for the year ($129K base, $3-8K/mo foundational, up to $15K+ heavier scope). No tool names, feature limits, or pricing SKUs are cited that could be stale, so there is little surface for factual error; the numbers align between body, table, and FAQ.", "score": 4, "max": 5},
+        {"category": "Completeness", "criterion": "Completeness",
+         "finding": "Every H2 promise is delivered: 'The specific mistake most companies make' covers both errors, 'The decision framework' delivers the four-factor table, 'When in-house is the right call' and 'When an agency wins' each give explicit signal lists, 'What a RevOps agency engagement actually looks like' details the retainer scope, and 'The hybrid model' resolves the versus framing. No H2 is left as a stub.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Primary keyword 'RevOps agency vs in-house' sits in title, slug, meta, and FAQ; meta-title is very short (~36 chars) and leaves snippet budget unused.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Keyword", "criterion": "Primary Keyword Targeting",
+         "finding": "'RevOps agency vs in-house' appears in the H1 name, the slug (revops-agency-vs-in-house-first-hire), meta-title, meta-description, and FAQ Q1/Q3. Body opens on the intent ('a RevOps agency or fractional team is the right first move, not a full time in house hire'). H2s use natural variants ('When in-house is the right call', 'When an agency wins') rather than the exact phrase, which is fine but slightly dilutes exact-match density in headings.", "score": 4, "max": 5},
+        {"category": "FAQ", "criterion": "FAQ / People Also Ask",
+         "finding": "Six genuinely high-intent PAA-style questions: 'Should my first RevOps hire be an agency or an in-house employee?', 'When should a B2B SaaS company hire a full-time RevOps person?', 'How much does a RevOps agency cost compared to an in-house hire?', plus the common-mistake, engagement-shape, and both-at-once questions. These map cleanly to real search queries around the decision.", "score": 4, "max": 5},
+        {"category": "Tables", "criterion": "Comparison / Featured Snippet Tables",
+         "finding": "A clean 3-column, 6-row comparison table (Factor / RevOps Agency-Fractional / In-House Hire) covering company stage, system maturity, budget, time to value, breadth, and best fit. It is well-structured for snippet extraction, though the inline styling and wrapper div add markup a parser must strip.", "score": 4, "max": 5},
+        {"category": "Links", "criterion": "Internal & External Link Structure",
+         "finding": "Five internal links with relevant anchors (true-cost-of-outbound comparison, gtm-engineer-salary, tech-stack-consolidation-revops-playbook, ai-sdr-buy-vs-build-decision-framework, revenue-operations service page) plus three inline external citations (Clientell, MergeYourData) and a Further Reading list adding Landbase. Anchor text is descriptive rather than 'click here'.", "score": 4, "max": 5},
+        {"category": "Technical", "criterion": "Technical SEO",
+         "finding": "Valid @graph JSON-LD with BlogPosting + FAQPage is present. Meta-description ('RevOps agency vs in-house: the first RevOps hire most B2B SaaS companies get wrong...') is a strong ~185-char length. The meta-title 'RevOps Agency vs In-House: First Hire' is only ~36 characters and wastes roughly half the ~60-char SERP budget it could use for secondary terms.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.20,
+      "flag": "Strong extractable answer-first opener plus named-source statistics; stays distinct from the sibling 'how-to-choose-revops-consulting-firm' post by targeting the buy-vs-build decision rather than firm selection.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Definitions", "criterion": "Direct Definitions",
+         "finding": "The first paragraph is a self-contained extractable answer: 'a RevOps agency or fractional team is the right first move, not a full time in house hire... bring RevOps in house once you cross roughly 5 to 15 million dollars in ARR with 10 or more reps and a permanent, daily operations workload.' This is exactly the kind of bounded, quotable statement an LLM lifts as a direct answer.", "score": 4, "max": 5},
+        {"category": "Structure", "criterion": "Structured Data for AI Parsing",
+         "finding": "Multiple AI-parseable structures: the four-factor comparison table, six-question FAQPage in both body and schema, a named four-factor framework (stage, system maturity, budget, timeline), and bolded signal lists ('The clearest in house signals:'). This gives an LLM discrete, addressable chunks to cite.", "score": 4, "max": 5},
+        {"category": "Authority", "criterion": "Statistical Authority",
+         "finding": "Every hard number is tied to a nameable source an LLM can attribute: Clientell for the $129K/$160K-200K salary, MergeYourData for the $3,000-8,000/mo agency benchmark, and Landbase in Further Reading. This makes the statistical claims safely citable rather than orphaned figures.", "score": 4, "max": 5},
+        {"category": "Entity", "criterion": "Entity Association",
+         "finding": "DevCommX is explicitly bound to the topic ('We build these systems at DevCommX', 'At DevCommX the principle is that clients own the infrastructure') and author Sumit Nautiyal is set as 'VP of Revenue Operations & GTM Engineering, DevCommX' in schema, tying a named person and org to the RevOps-hiring entity cluster.", "score": 4, "max": 5},
+        {"category": "Distinctiveness", "criterion": "GEO Distinctiveness",
+         "finding": "Targets the buy-vs-build / first-hire decision query cluster ('agency vs in-house', 'when to hire RevOps'), which is a different stage from the sibling 'how-to-choose-revops-consulting-firm-mid-market-saas' (firm-selection / vendor-evaluation intent). The overlap is limited to the 'what an engagement looks like' section; the core intent stays distinct, so cannibalisation risk is low but not zero.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Owned-infrastructure differentiator and the sanctioned '40+ demos in ~6 weeks' proof are both present, and the post is unusually pricing-transparent for a DevCommX draft.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Differentiation", "criterion": "Differentiation Narrative",
+         "finding": "The owned-infrastructure model is articulated cleanly: 'clients own the infrastructure, not a campaign we rent back to them... The system we build lives in your CRM, warehouse, and tooling, documented so your team can run it whether we stay or not.' The signal-based framing also lands in the CTA ('signal based revenue operations infrastructure your team owns end to end').", "score": 4, "max": 5},
+        {"category": "Proof", "criterion": "Proof Metrics & Evidence",
+         "finding": "The sanctioned proof appears verbatim in framing: 'taken clients from setup to more than 40 qualified demos in about six weeks, because the engine runs on real signals, not manual effort.' It is a single instance rather than layered evidence, but it is the correct approved metric used correctly.", "score": 4, "max": 5},
+        {"category": "Pricing", "criterion": "Pricing Transparency",
+         "finding": "Unusually strong for these drafts: concrete value framing throughout, including '3,000 to 8,000 dollars per month for foundational scope', a '4,000 to 7,000 dollars per month' retainer buying '15 to 25 hours of senior work', and '40,000 to 200,000 dollars' project pricing against a '160,000 to 200,000 dollar' loaded hire. It cites market ranges rather than DevCommX's own rate card, so it stops just short of full first-party price disclosure.", "score": 4, "max": 5},
+        {"category": "CTA", "criterion": "CTA Quality",
+         "finding": "The closing CTA is specific and conversion-oriented: 'explore our revenue operations service and book a GTM strategy call to map the right first move to your pipeline', linking both the /revenue-operations page and /contact-us. It names the next action rather than a generic 'learn more'.", "score": 4, "max": 5},
+        {"category": "Differentiation", "criterion": "Content Differentiation",
+         "finding": "Fills a distinct library slot, the 'first RevOps hire: agency vs in-house' decision, complementing rather than duplicating the linked true-cost-of-outbound, gtm-engineer-salary, and tech-stack-consolidation posts it references. It occupies the RevOps-org-design angle not covered by the outbound-focused pieces.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Clean heading hierarchy and strong scannability, but no in-body images or diagrams (only one table and the OG image) caps Visual Elements.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Headings", "criterion": "Heading Architecture",
+         "finding": "Logical descent with no skipped levels: H1 (the post name) into eight H2 section headings, into H3 for 'Further Reading' and 'FAQ', into H4 for each of the six FAQ questions. The H2 sequence (mistake, why high-stakes, framework, in-house, agency, engagement, hybrid, CTA) reads as a coherent argument.", "score": 4, "max": 5},
+        {"category": "Visuals", "criterion": "Visual Elements",
+         "finding": "There are no in-body images, diagrams, charts, or infographics; the only visual asset is the shared OG image in schema plus one HTML comparison table. The table adds real scannable value, but the body is otherwise an unbroken run of prose over ~2,900 words, which is the expected 2/5 ceiling for these image-less drafts.", "score": 2, "max": 5},
+        {"category": "Scannability", "criterion": "Scannability",
+         "finding": "Good skim support: an answer-first bold hook, descriptive H2 subheads, bolded lead-ins ('The trap in both cases is the same:', 'Time is the hidden variable.', 'The clearest in house signals:'), the comparison table, and a bulleted Further Reading list plus FAQ. A skim reader can extract the decision without reading every paragraph.", "score": 4, "max": 5},
+        {"category": "Readability", "criterion": "Reading Level & Flow",
+         "finding": "Prose is fluent with natural transitions ('Notice the framework does not once ask which is cheaper', 'Here is the resolution most scaling companies arrive at'). Sentences are conversational and mostly avoid jargon dumps; the few technical terms (data model, lead routing, KPI framework) are explained in context.", "score": 4, "max": 5},
+        {"category": "Length", "criterion": "Content Length & Density",
+         "finding": "At 2,896 words with a 13-minute stated reading time, length suits a decision-guide topic with a framework, two decision-side sections, engagement detail, and a six-question FAQ. Density is high with little filler, though a couple of sections restate the two-mistake framing more than once.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Complete @graph with BlogPosting + FAQPage; FAQ schema text matches the body FAQ verbatim and all rich-result properties are present.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Article", "criterion": "Article Type Completeness",
+         "finding": "The BlogPosting node carries headline, description, url, datePublished (2026-07-01), dateModified, keywords, image ImageObject, author Person with jobTitle, publisher Organization, and mainEntityOfPage. Every expected Article field is populated, matching the visible title and meta-description.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQPage Structure",
+         "finding": "The FAQPage node holds six mainEntity items, each a proper @type Question with an acceptedAnswer of @type Answer and a text value, well above the 3-question minimum. Question names match the six H4 questions in the body.", "score": 5, "max": 5},
+        {"category": "Alignment", "criterion": "Schema-to-Content Alignment",
+         "finding": "The FAQ answer text in schema matches the body FAQ verbatim (e.g. the agency-cost answer '3,000 to 8,000 dollars per month for foundational scope... 129,000 dollars in base salary in 2026' is identical in both). The schema description equals the meta-description and keywords ('RevOps agency vs in-house, first RevOps hire, RevOps agency cost') reflect the actual article.", "score": 5, "max": 5},
+        {"category": "Graph", "criterion": "@graph Implementation",
+         "finding": "Uses a proper @graph array with two top-level nodes each carrying a distinct @id (#article and #faq). Nested author, publisher, image, and mainEntityOfPage objects are typed but not separately @id-referenced, which is valid though not fully normalized as linked entities.", "score": 4, "max": 5},
+        {"category": "RichResult", "criterion": "Rich Result Eligibility",
+         "finding": "Rich-result requirements are met: image is an ImageObject with url plus width 1200 and height 630, publisher is an Organization with name, url, and logo ImageObject, and dateModified is present alongside datePublished. This satisfies Google's Article and FAQ rich-result eligibility fields.", "score": 5, "max": 5}
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Add at least one in-body visual (a decision flowchart of the agency-first-then-in-house sequence, or a simple ARR/rep-count threshold diagram) to lift Visual Elements above the current 2/5 image-less ceiling.",
+    "2. Attribute the comparison table directly: add a source line or footnote under it citing Clientell and MergeYourData so the dollar figures are not bare assertions when the table is read or extracted in isolation.",
+    "3. Expand the meta-title from the ~36-char 'RevOps Agency vs In-House: First Hire' toward the ~60-char budget (e.g. add 'for B2B SaaS' or a cost cue) to capture secondary query terms and use the full SERP width.",
+    "4. Source the load-bearing decision thresholds (the '5 to 15 million dollars in ARR with 10+ reps' trigger) or explicitly frame them as DevCommX practitioner heuristics to remove the one unsourced quantitative claim.",
+    "5. Tighten the sibling-overlap risk with the 'how-to-choose-revops-consulting-firm' post by trimming or cross-linking the 'What a RevOps agency engagement actually looks like' section so the two posts stay on separate query stages."
+  ]
+}

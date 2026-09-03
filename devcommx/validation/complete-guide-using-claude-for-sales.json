@@ -1,0 +1,127 @@
+{
+  "slug": "complete-guide-using-claude-for-sales",
+  "title": "A Complete Guide to Using Claude for Sales (Plus 9 Must-Have Claude Skills)",
+  "words": 1620,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Strong practitioner depth and accurate 2026 tooling, but almost entirely qualitative with no verifiable statistics beyond the first-party 40+ demos claim.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Sources", "criterion": "Stat Accuracy & Source Quality",
+         "finding": "The guide carries no hard statistics to verify; its factual claims are capability assertions like Claude's 'longer context window and structured-output reliability' pointed at the Anthropic Claude overview, and a Gartner 'AI in sales' link. Credible inline sources are present, but there are no data points (percentages, benchmarks, study figures) for an LLM or reader to check, which caps this on a data-quality axis.", "score": 3, "max": 5},
+        {"category": "Depth", "criterion": "Practitioner Depth",
+         "finding": "This reads from real deployment: it names the prompt anatomy ('a role... the inputs... a task... an output format'), the failure modes ('thin inputs produce generic output', teams that 'skip the approval gate and let unreviewed copy send, which burns domains and trust'), and a concrete 'four-step start' sequence. It clearly demonstrates operator knowledge rather than a surface summary.", "score": 4, "max": 5},
+        {"category": "Attribution", "criterion": "Data Attribution",
+         "finding": "The nine-skill table is DevCommX's own recommendation and is presented as such, which is fine, but the only quantitative claim, '40+ qualified demos in around six weeks', is a bare first-party assertion with no methodology or link. There are no third-party-sourced metrics anywhere in the body.", "score": 3, "max": 5},
+        {"category": "Technical", "criterion": "Technical Accuracy",
+         "finding": "Tool and feature references are correct for 2026: Claude as 'Anthropic's model family', Agent Skills as 'packaged, reusable set of instructions and reference files that Claude loads when a task matches', and the Model Context Protocol as 'the open standard that lets Claude read from your CRM'. All three map accurately to shipped Anthropic concepts.", "score": 4, "max": 5},
+        {"category": "Completeness", "criterion": "Completeness",
+         "finding": "Every H2 promise is delivered: the '9 must-have Claude skills' H2 yields a full nine-row table plus prose notes on all nine, 'Claude sales prompts vs Claude skills' is resolved, 'How to wire Claude into a real sales process' gives the three-part data/gate/sequence answer, and the 'four-step start' is fully enumerated. No section is left as a stub.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Textbook keyword targeting, dense internal linking, snippet-ready table and complete meta/schema make this the strongest dimension.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Keywords", "criterion": "Primary Keyword Targeting",
+         "finding": "'Claude for sales' appears in the title, meta-title ('Claude for Sales: 9 Must-Have Claude Skills Guide'), meta-description, slug, H1, four H2s ('What Claude for sales actually does', 'Where Claude for sales breaks', 'A four-step start with Claude for sales', 'Build your Claude sales system'), the body, and the FAQ. Secondary terms 'Claude sales prompts' and 'Claude skills' are also targeted in their own H2. Coverage is comprehensive.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQ / People Also Ask",
+         "finding": "Six FAQs map to genuine high-intent PAA queries: 'What is Claude for sales?', 'Can Claude write cold emails and sequences?', and 'Does using Claude for sales replace SDRs?'. These are real buyer questions, not padding, and each gets a tight extractable answer.", "score": 4, "max": 5},
+        {"category": "Tables", "criterion": "Comparison / Featured Snippet Tables",
+         "finding": "The nine-skill table uses a clean three-column structure (skill / 'What it does' / 'Best for') wrapped in an overflow-x container, which is well-formatted for snippet extraction. It is a list-of-features table rather than a head-to-head comparison, so it serves snippet capture but not the comparison-grid pattern.", "score": 4, "max": 5},
+        {"category": "Links", "criterion": "Internal & External Link Structure",
+         "finding": "Internal linking is dense and relevant: companion 'how we use Claude in our sales pipeline workflows', 'autonomous AI SDR system', 'contextual outreach playbook', 'engineered GTM pipeline', 'B2B outbound automation guide', and 'ICP scoring approach', all with descriptive anchors. External citations to Anthropic prompt docs, Anthropic Skills, MCP, and Gartner, plus dedicated Further Reading and References sections. Excellent structure.", "score": 5, "max": 5},
+        {"category": "Technical", "criterion": "Technical SEO",
+         "finding": "Schema (@graph BlogPosting + FAQPage) is present, the meta-title is ~47 characters and the meta-description ~165 characters, both within limits, and the article name serves as a clean H1 with a keyword-led slug. No technical gaps.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.20,
+      "flag": "Highly extractable definitions and strong entity association; the weak link is statistical authority since claims are qualitative rather than named-source data.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Definitions", "criterion": "Direct Definitions",
+         "finding": "The piece leads with a bolded extractable definition, 'Claude for sales means using Anthropic's Claude models to run the repetitive, judgment-heavy work behind a pipeline', and defines the core sub-concept: 'A Claude skill is a packaged, reusable set of instructions and reference files that Claude loads when a task matches'. The FAQ restates these cleanly. Ideal for AI answer extraction.", "score": 5, "max": 5},
+        {"category": "Structure", "criterion": "Structured Data for AI Parsing",
+         "finding": "The body offers a nine-row labelled table, an explicitly numbered four-step start, a numbered set of failure modes, six FAQ Q&As, and bulleted reference lists. This is a rich, machine-parseable structure, though most reasoning still sits in prose paragraphs rather than lists.", "score": 4, "max": 5},
+        {"category": "Authority", "criterion": "Statistical Authority",
+         "finding": "There are almost no claims attributable to a named external source with a citable figure. Gartner and Anthropic are linked as capability references, not as sources of quotable statistics, and the lone number ('40+ qualified demos in around six weeks') is self-reported. The References section aids provenance but supplies no data an LLM could cite as a statistic.", "score": 3, "max": 5},
+        {"category": "Entity", "criterion": "Entity Association",
+         "finding": "DevCommX is explicitly bound to the topic: 'At DevCommX we run a Claude cluster inside our own go-to-market motion, so this guide is written from the operator seat', reinforced by author Sumit Nautiyal (VP of Revenue Operations & GTM Engineering) in schema and the closing 'DevCommX builds autonomous, signal-based AI SDR' framing. The brand-to-niche tie is unambiguous.", "score": 5, "max": 5},
+        {"category": "Distinctiveness", "criterion": "GEO Distinctiveness",
+         "finding": "The post deliberately carves a distinct cluster from its live siblings: it links the operator case study 'how we use Claude in our sales pipeline workflows' and states 'This article is the how-to', and it points at 'claude-code-gtm-engineers' as the engineering angle. It owns the 'Claude for sales / Claude skills / Claude sales prompts' how-to query set. Some topical overlap with the operator post remains, but the framing is separated on purpose, so cannibalisation risk is modest rather than acute.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Owned-infrastructure/signal-based narrative and sanctioned proof metric are clearly present; pricing/value framing is the honest gap.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Differentiation", "criterion": "Differentiation Narrative",
+         "finding": "The owned-infrastructure, signal-based model is stated directly: 'DevCommX builds autonomous, signal-based AI SDR and GTM-engineering systems that your team owns, with Claude skills wired into your real data and a human approval gate on every send... because the systems trigger on real buying signals, not static lists'. This is the core DevCommX position, articulated verbatim.", "score": 5, "max": 5},
+        {"category": "Proof", "criterion": "Proof Metrics & Evidence",
+         "finding": "The sanctioned proof framing appears intact: 'We take teams from setup to 40+ qualified demos in around six weeks'. It is the only concrete outcome cited, with no supporting case detail, but it is the approved metric used correctly.", "score": 4, "max": 5},
+        {"category": "Pricing", "criterion": "Pricing Transparency",
+         "finding": "No cost, package, or pricing figure appears anywhere. There is light value framing, 'A research skill that saves twenty minutes per account only matters if that time turns into more relevant, better-timed reach', and a measure-by-pipeline argument, but no economic or price transparency, consistent with most posts in the library.", "score": 2, "max": 5},
+        {"category": "CTA", "criterion": "CTA Quality",
+         "finding": "The closing CTA is specific and conversion-oriented, tied directly to the content: 'Book a GTM strategy call to map these nine skills to your pipeline', linking to the contact page. It converts the article's payload into a clear next action.", "score": 4, "max": 5},
+        {"category": "Differentiation", "criterion": "Content Differentiation",
+         "finding": "The post fills a distinct library slot as the practitioner how-to and skills catalogue, explicitly differentiated from the operator case study and the Claude-Code-for-GTM-engineers piece it links. It is not a duplicate of an existing DevCommX asset.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Clean heading architecture and strong scannability, but no in-body visuals beyond the OG image caps this dimension.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Headings", "criterion": "Heading Architecture",
+         "finding": "The hierarchy is logical: the article name is H1, seven topical H2s carry the body, and H3s ('Further Reading', 'References', 'FAQ') with H4 FAQ questions sit beneath. No levels are skipped. Content H2s do not use H3 subheads, but none are needed for the length.", "score": 4, "max": 5},
+        {"category": "Visuals", "criterion": "Visual Elements",
+         "finding": "There are no in-body images, diagrams, charts, or infographics; the only image is the OG/social card referenced in schema. The nine-skill HTML table is the sole visual break in an otherwise text-only body, so this scores low per the no-image reality of the draft.", "score": 2, "max": 5},
+        {"category": "Scannability", "criterion": "Scannability",
+         "finding": "Skim-reading is well supported: a clear opening hook, a scannable nine-row table, bolded skill call-outs ('Skill 4, reply handling, is the quiet time-saver'), a numbered four-step sequence, and short paragraphs. A reader can extract the spine without reading every line.", "score": 4, "max": 5},
+        {"category": "Readability", "criterion": "Reading Level & Flow",
+         "finding": "Prose flows naturally with earned transitions ('The other shift is from prompts to skills', 'Notice the pattern across all nine') and appropriate complexity for a RevOps audience. Terms like MCP and Agent Skills are defined in-line rather than dumped, so there is no jargon wall.", "score": 4, "max": 5},
+        {"category": "Length", "criterion": "Content Length & Density",
+         "finding": "At roughly 1,600 words the length fits a how-to guide with a nine-item catalogue, and the density is high with little padding, every paragraph advancing a distinct point. The 11-minute reading-time field overstates it, but the body itself is appropriately sized.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Complete, well-formed @graph with BlogPosting + FAQPage; FAQ schema text matches the body FAQ exactly and rich-result fields are all present.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Article", "criterion": "Article Type Completeness",
+         "finding": "The BlogPosting node carries headline, description, url, datePublished, dateModified, keywords, image, author (Person with jobTitle), publisher, and mainEntityOfPage. Every core Article field is populated, nothing is left blank.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQPage Structure",
+         "finding": "The FAQPage node holds six mainEntity items, each with @type Question, a name, and acceptedAnswer of @type Answer with full text. That is well above the 3-question threshold and structurally correct.", "score": 5, "max": 5},
+        {"category": "Alignment", "criterion": "Schema-to-Content Alignment",
+         "finding": "Schema keywords ('Claude for sales, Claude sales prompts, Claude skills sales, AI prompts for sales') and description match the article's targeting, and the six schema FAQ answers are verbatim copies of the body FAQ text, e.g. 'Claude for sales is the practice of using Anthropic's Claude models...' appears identically in both. Alignment is exact.", "score": 5, "max": 5},
+        {"category": "Graph", "criterion": "@graph Implementation",
+         "finding": "A proper @graph array wraps two nodes, each with a distinct @id ('#article' and '#faq'), and mainEntityOfPage carries its own @id. The graph structure is implemented correctly.", "score": 5, "max": 5},
+        {"category": "RichResult", "criterion": "Rich Result Eligibility",
+         "finding": "The image is a full ImageObject with url plus width 1200 and height 630, the publisher is an Organization with a logo ImageObject, and dateModified is present alongside datePublished. All rich-result eligibility fields are satisfied.", "score": 5, "max": 5}
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Add at least one in-body visual (a skill-to-funnel-stage diagram or a workflow chain graphic for research to personalization to sequence to triage) to lift Visual Elements above the no-image 2/5 floor.",
+    "2. Inject 2-3 named-source statistics with citable figures (a Gartner or Anthropic data point, or a specific first-party metric with methodology) to raise Statistical Authority and Data Attribution beyond qualitative assertion.",
+    "3. Add a lightweight value/pricing frame (e.g. hours saved per rep per week or an engagement-model range) so Pricing Transparency is not left at 2/5.",
+    "4. Sharpen sibling-post differentiation with a one-line 'when to read which' note distinguishing this how-to from the operator case study and the Claude-Code-for-GTM-engineers post to fully de-risk cannibalisation."
+  ]
+}

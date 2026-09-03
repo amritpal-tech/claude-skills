@@ -1,0 +1,126 @@
+{
+  "slug": "best-b2b-lead-generation-company-2026",
+  "title": "Best B2B Lead Generation Company in 2026: How to Choose (and Top Options)",
+  "words": 2462,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Strong practitioner depth and completeness, but nearly every hard claim is self-attributed (the 40-demo benchmark) with no inline external stat backing.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Sources", "criterion": "Stat Accuracy & Source Quality",
+         "finding": "The only quantified claim is the sanctioned framing 'setup to 40 or more qualified demos in roughly six weeks', which is self-attributed to DevCommX with no independent source. The Gartner, Forrester, HBR and McKinsey entries in References are generic topic hubs (e.g. 'supports the provider-type and evaluation-criteria framing') rather than inline links backing a specific number, so no key claim in the body is anchored to a citable external stat.", "score": 3, "max": 5},
+        {"category": "Depth", "criterion": "Practitioner Depth",
+         "finding": "The post demonstrates real deployment knowledge: it names the concrete components of an owned system ('the enrichment logic, the sequences, the sending domains, the signal detection') and treats deliverability as a build layer ('Ask about domain setup, warmup, and authentication before you ask about volume'). The shelfware failure mode and the capacity ceiling of agencies are described the way an operator would frame them.", "score": 4, "max": 5},
+        {"category": "Attribution", "criterion": "Data Attribution",
+         "finding": "The three-type comparison table is an unsourced opinion/framing matrix (e.g. 'Usually nothing, the motion leaves with them'), which is acceptable for a category comparison but carries no attribution. The one metric that appears, the 40-demo benchmark, is labelled as 'Our own benchmark', so it is attributed but only to the author, not to any external dataset.", "score": 3, "max": 5},
+        {"category": "Technical", "criterion": "Technical Accuracy",
+         "finding": "The post stays deliberately abstract about tooling ('the enrichment and data platforms, the intent-data providers, and the workflow tools that connect them') and names no specific 2026 products, pricing, or feature limits, so there is nothing factually incorrect. The tradeoff is that it avoids verifiable specifics; the category descriptions and cost models (retainer, per seat, build fee plus run cost) are accurate for 2026.", "score": 4, "max": 5},
+        {"category": "Completeness", "criterion": "Completeness",
+         "finding": "Every H2 promise is delivered: the 'Selection Criteria First' section lists all seven numbered criteria, 'The Three Types' section is followed by a dedicated H2 for each type, 'Top Options by Category' names options for all three buckets, and 'A Four-Step Evaluation' delivers exactly four steps. No promised section is stubbed or missing.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Textbook keyword targeting, snippet-ready table, and rich internal linking; SEO is the strongest surface of the post.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Keyword", "criterion": "Primary Keyword Targeting",
+         "finding": "'Best B2B lead generation company' appears in the H1 name, meta-title ('Best B2B Lead Generation Company 2026: How to Choose'), the slug, the opening sentence, two H2s ('What Makes the Best B2B Lead Generation Company', 'How to Choose the Best B2B Lead Generation Company'), and the first FAQ question. Coverage across every SEO surface is complete without keyword stuffing.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQ / People Also Ask",
+         "finding": "The six FAQ questions map directly to high-intent PAA queries: 'What is the best B2B lead generation company in 2026?', 'How do I evaluate top lead gen companies without biased rankings?', 'What is the difference between a lead gen agency, software, and an AI SDR system?', plus cost and speed questions. Each is a genuine buyer query, not a manufactured prompt.", "score": 5, "max": 5},
+        {"category": "Tables", "criterion": "Comparison / Featured Snippet Tables",
+         "finding": "A single well-structured comparison table pits Agency vs Software vs AI SDR System across seven labelled rows (What you buy, Who runs it, What you own after, Time to first meetings, Cost model, Best when, Main risk). It is wrapped in an overflow-x scroll container and cleanly formatted, so it is extractable as a comparison snippet. It uses inline styles rather than a plain semantic table, a minor extraction risk.", "score": 4, "max": 5},
+        {"category": "Links", "criterion": "Internal & External Link Structure",
+         "finding": "The post carries 21 links: roughly a dozen descriptive internal anchors to sibling posts (e.g. 'best AI SDR agencies', 'best GTM engineering agencies', 'AI SDR pricing', 'RevOps automation tools guide') and external authority links to Gartner, Forrester, HBR and McKinsey in Further Reading plus a dedicated References list. Anchor text is contextual and relevant throughout.", "score": 5, "max": 5},
+        {"category": "Technical", "criterion": "Technical SEO",
+         "finding": "Both BlogPosting and FAQPage schema are present, the meta-title is ~51 characters and the meta-description ~157 characters (both within display limits), and the H1 is carried by the name field with a correct H2/H3/H4 hierarchy. All core technical SEO requirements are met.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.20,
+      "flag": "Highly extractable definitions and structure with strong entity association; the gap is statistical authority, since no external named source backs a specific number.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Definitions", "criterion": "Direct Definitions",
+         "finding": "Each provider type opens with a bolded, self-contained definitional sentence an LLM can lift verbatim: 'A B2B lead generation agency runs the outbound motion for you as a managed service', 'Lead generation software is a tool your own team operates', and 'An AI SDR system is a built pipeline engine that runs outbound autonomously and that you keep'. These are ideal extractable definitions.", "score": 5, "max": 5},
+        {"category": "Structure", "criterion": "Structured Data for AI Parsing",
+         "finding": "The body offers multiple parseable structures: a seven-row comparison table, a numbered seven-criteria scorecard, a numbered four-step evaluation, a category-by-category options list, and a six-item FAQ. This density of lists, tables and numbered frameworks is highly favourable to AI extraction.", "score": 5, "max": 5},
+        {"category": "Statistics", "criterion": "Statistical Authority",
+         "finding": "The References section adds Gartner, Forrester, HBR and McKinsey links, which is more citation scaffolding than most drafts carry, but each is a generic 'supports the framing' hub rather than a source for a specific figure. The one concrete statistic ('40 or more qualified demos in about six weeks') is attributable only to DevCommX itself, so an LLM has no named third-party number to cite from this post.", "score": 3, "max": 5},
+        {"category": "Entity", "criterion": "Entity Association",
+         "finding": "DevCommX is explicitly tied to the owned AI SDR category ('This is the category DevCommX works in, so treat that as disclosure') and author Sumit Nautiyal is bound in schema as 'VP of Revenue Operations & GTM Engineering, DevCommX'. The niche (autonomous, signal-based outbound and RevOps) is named repeatedly and consistently.", "score": 5, "max": 5},
+        {"category": "Distinctiveness", "criterion": "GEO Distinctiveness",
+         "finding": "The self-inclusion listicle is handled honestly: the intro states plainly 'DevCommX builds B2B lead generation systems, and yes, we are on the shortlist', and repeatedly flags 'disclosure, not a neutral verdict'. It targets the umbrella query 'best B2B lead generation company' and defers narrower clusters to siblings by linking out to 'best AI SDR agencies' and 'best GTM engineering agencies', which limits but does not fully eliminate overlap with those posts.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "The owned-infrastructure, signal-based narrative is articulated cleanly with a strong CTA; proof rests on a single repeated benchmark.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Differentiation", "criterion": "Differentiation Narrative",
+         "finding": "The owned-infrastructure model is the spine of the post: 'clients own the infrastructure rather than rent a campaign', and the AI SDR type is framed as combining 'the hands-off speed of an agency with the ownership of software' with 'no black box'. Criterion 2 ('Do you own the infrastructure when it ends?') elevates ownership to the category's defining fork.", "score": 5, "max": 5},
+        {"category": "Proof", "criterion": "Proof Metrics & Evidence",
+         "finding": "The sanctioned proof framing 'setup to 40 or more qualified demos in roughly six weeks' appears three times (criteria section, top-options section, and the closing CTA). It is the only concrete outcome cited; there is no second proof point, client name, or win-rate figure, so evidence is credible but thin.", "score": 4, "max": 5},
+        {"category": "Pricing", "criterion": "Pricing Transparency",
+         "finding": "Cost framing is present without hard numbers: the table's 'Cost model' row and the FAQ 'How much do B2B lead generation companies cost in 2026?' lay out retainer/per-meeting, per-seat/usage, and 'build fee plus a lean run cost you control', and the post reframes the comparison as 'total cost to a qualified meeting'. This is more value framing than most posts carry but stops short of actual price ranges.", "score": 3, "max": 5},
+        {"category": "CTA", "criterion": "CTA Quality",
+         "finding": "The dedicated 'Work With DevCommX' section closes with a specific, conversion-oriented CTA to 'book a GTM strategy call' plus links to the AI SDR and GTM engineering service pages, and gates it on qualification ('If you have scored the category and an owned system fits your bottleneck'). Clear and non-generic.", "score": 5, "max": 5},
+        {"category": "Differentiation", "criterion": "Content Differentiation",
+         "finding": "The post fills a distinct umbrella slot ('best B2B lead generation company') above the more specialised sibling posts it links to ('best AI SDR agencies', 'best GTM engineering agencies'), positioning itself as the top-of-funnel category chooser. The transparency angle differentiates it from generic self-ranking listicles.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Clean heading hierarchy, highly scannable, strong flow; the only real weakness is zero in-body images.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Headings", "criterion": "Heading Architecture",
+         "finding": "The hierarchy runs cleanly from the H1 name through eight H2s to H3s for 'Further Reading', 'References' and 'FAQ', with the six FAQ questions as H4s under the FAQ H3. No heading level is skipped and every section title maps to delivered content.", "score": 5, "max": 5},
+        {"category": "Visuals", "criterion": "Visual Elements",
+         "finding": "There are zero in-body images, diagrams, charts or infographics (0 <img> tags); the only imagery is the OG image referenced in schema. The single comparison table is the sole visual/structural break in an otherwise text-only body, so per the calibration this cannot score above the low range.", "score": 2, "max": 5},
+        {"category": "Scannability", "criterion": "Scannability",
+         "finding": "The post is built for skimming: an opening TL;DR paragraph, bolded numbered lead-ins for all seven criteria ('1. Do they generate demand or just harvest it?'), bolded definition sentences per type, a comparison table, bolded four-step markers, and an FAQ. A skim reader can extract the argument from bold text and headings alone.", "score": 5, "max": 5},
+        {"category": "Flow", "criterion": "Reading Level & Flow",
+         "finding": "The prose is conversational and transitions logically from criteria to types to options to a decision framework, using plain-language framing like 'spam with a CRM' and 'shelfware'. Complexity is appropriate for a B2B buyer and there is no jargon dump.", "score": 5, "max": 5},
+        {"category": "Length", "criterion": "Content Length & Density",
+         "finding": "At roughly 2,462 words the length suits a category-comparison buying guide. It is mostly dense, though the 40-demo benchmark and the ownership argument are restated across several sections, a mild redundancy rather than filler padding.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Complete, well-formed @graph with BlogPosting and FAQPage; FAQ schema text matches the body verbatim.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Article", "criterion": "Article Type Completeness",
+         "finding": "The BlogPosting node carries headline, description, url, datePublished (2026-07-01), dateModified, keywords, image, author (Person with jobTitle), publisher, and mainEntityOfPage. Every expected Article field is present and populated.", "score": 5, "max": 5},
+        {"category": "FAQPage", "criterion": "FAQPage Structure",
+         "finding": "The FAQPage node lists all six questions as @type Question, each with an acceptedAnswer of @type Answer and a text value, well above the 3+ minimum. The structure is valid for rich results.", "score": 5, "max": 5},
+        {"category": "Alignment", "criterion": "Schema-to-Content Alignment",
+         "finding": "The six schema FAQ answers match the body FAQ text verbatim (e.g. the cost answer's 'total cost to a qualified meeting, including the internal time each model demands' is identical in both), and the schema keywords ('best B2B lead generation company, top lead gen companies... AI SDR system') mirror the article's targeting. Full alignment between schema and rendered content.", "score": 5, "max": 5},
+        {"category": "Graph", "criterion": "@graph Implementation",
+         "finding": "Schema uses a proper @graph array containing two nodes, each with a distinct @id (#article and #faq), and mainEntityOfPage cross-references the WebPage @id. The graph structure is correctly implemented.", "score": 5, "max": 5},
+        {"category": "RichResult", "criterion": "Rich Result Eligibility",
+         "finding": "The image is a full ImageObject with url plus width 1200 and height 630, the publisher is an Organization with a logo ImageObject, and dateModified is present alongside datePublished. All rich-result eligibility signals are satisfied.", "score": 5, "max": 5}
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Add at least one in-body visual (a diagnostic decision-tree diagram for the four-step evaluation, or a bar/comparison graphic of the three provider types) to lift Visual Elements above 2/5.",
+    "2. Attach a specific external statistic to a named source inline (e.g. a Gartner or Forrester figure on outbound conversion or intent-data adoption) rather than leaving Gartner/Forrester/HBR/McKinsey as generic 'supports the framing' hub links, to raise Statistical Authority and Source Quality.",
+    "3. Add a second proof point beyond the repeated '40+ demos in ~6 weeks' benchmark (a win-rate, reply-rate, or reference outcome) and introduce indicative price ranges in the cost FAQ to strengthen Proof Metrics and Pricing Transparency."
+  ]
+}

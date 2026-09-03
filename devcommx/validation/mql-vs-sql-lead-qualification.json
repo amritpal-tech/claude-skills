@@ -1,0 +1,128 @@
+{
+  "slug": "mql-vs-sql-lead-qualification",
+  "title": "MQL vs SQL: How to Define, Handoff, and Qualify Leads",
+  "words": 2491,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Strong practitioner depth, but no inline-linked sources next to any claim; all external citations are grouped at the foot.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Sources", "criterion": "Stat Accuracy & Source Quality",
+         "finding": "Claims such as 'lead value decays sharply with time' and 'the biggest drop is between MQL and SAL' are asserted with no inline citation; every external source (HubSpot, Gartner, HBR, Salesforce) is parked in a bottom References/Further Reading block rather than linked at the point of claim. The post makes few hard statistics, so accuracy risk is low, but the sourcing model is deferred rather than inline.", "score": 3, "max": 5},
+        {"category": "Depth", "criterion": "Practitioner Depth",
+         "finding": "Demonstrates real deployment knowledge: it breaks the SLA into three concrete parts (acceptance criteria, response time, feedback loop with reason codes), surfaces the often-skipped SAL stage, and separates fit vs intent families with BANT positioned correctly as an SQL-stage checklist. The line 'We build outbound and qualification infrastructure for B2B teams every week' is backed by operational specifics, not slogans.", "score": 4, "max": 5},
+        {"category": "Attribution", "criterion": "Data Attribution",
+         "finding": "The 6-row comparison table is the author's own framework and carries no source, which is acceptable for a conceptual matrix, but there are no data-backed metrics anywhere: 'Teams that close this loop see MQL-to-SQL conversion climb over time' is a bare directional assertion with no figure or source. The only concrete number, '40+ qualified demos within about 6 weeks', is DevCommX's own proof framing.", "score": 3, "max": 5},
+        {"category": "Technical", "criterion": "Technical Accuracy",
+         "finding": "All concepts are correct for 2026: MQL, SQL, SAL, SLA, ICP and BANT (budget, authority, need, timing) are expanded and used accurately, and the five-stage progression 'lead, marketing qualified lead, sales accepted lead, sales qualified lead, opportunity' is standard. No tool names, pricing, or feature limits are asserted that could be stale or wrong.", "score": 4, "max": 5},
+        {"category": "Completeness", "criterion": "Completeness",
+         "finding": "Every H2 promise is delivered: definitions, the at-a-glance comparison table, the handoff SLA section, the lead qualification stages, MQL/SQL criteria, the signal-based critique, and the replacement model all appear in full. No H2 is left as a stub or unfulfilled promise.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Textbook keyword and snippet execution: primary term in title/slug/H2s/FAQ, six PAA-style questions, a clean comparison table, and dense internal linking.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Keywords", "criterion": "Primary Keyword Targeting",
+         "finding": "'MQL vs SQL' appears in the H1, meta-title, slug (mql-vs-sql-lead-qualification), multiple H2s ('MQL vs SQL: The Core Differences at a Glance', 'Why the MQL vs SQL Model Leaks'), the opening bold sentence, and the FAQ ('What is the difference between MQL vs SQL?'). Secondary terms 'MQL SQL definition', 'lead qualification stages', and 'MQL to SQL handoff' are also headed and used.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQ / People Also Ask",
+         "finding": "Six FAQs map to genuine high-intent PAA queries: 'What does MQL and SQL stand for?', 'How does the MQL to SQL handoff work?', 'What are the lead qualification stages?', 'Is the MQL model dead?', and 'How do you qualify a lead as an SQL?'. Each answer is self-contained and directly responsive.", "score": 5, "max": 5},
+        {"category": "Tables", "criterion": "Comparison / Featured Snippet Tables",
+         "finding": "A clean six-row comparison table contrasts MQL vs SQL across labelled dimensions (Who qualifies it, Qualifying test, Typical trigger, What it means, What it commits, Owned funnel stage) with a header row, making it directly extractable for a featured snippet. The rows are terse and parallel.", "score": 5, "max": 5},
+        {"category": "Links", "criterion": "Internal & External Link Structure",
+         "finding": "Six internal blog links use descriptive anchors ('how to identify buying signals in outbound', 'speed-to-lead and B2B follow-up', 'the sales velocity formula for B2B', 'AI-powered ICP scoring calibrated to win rate') plus a contact CTA; externally it cites HubSpot, Gartner, HBR and Salesforce in a References block and three in Further Reading. Well interlinked into the Sales-Ops hub.", "score": 5, "max": 5},
+        {"category": "Technical", "criterion": "Technical SEO",
+         "finding": "Schema is present (BlogPosting + FAQPage in @graph) and the H1 matches the name field. The meta-description ('MQL vs SQL explained: clear definitions, the handoff criteria that stop leads leaking, and how signal-based qualification is replacing the classic MQL-to-SQL funnel.') runs ~163 characters, slightly over the ~155-160 recommendation and at risk of truncation; meta-title length is fine.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.20,
+      "flag": "Highly extractable definitions and entity association; weak point is statistical authority, since named sources carry no quotable figures.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Definitions", "criterion": "Direct Definitions",
+         "finding": "Both core concepts get clean, bolded, extractable definitions an LLM can lift verbatim: 'A marketing qualified lead (MQL) is a lead whose engagement behavior meets a threshold marketing has set' and 'A sales qualified lead (SQL) is a lead that a salesperson, or an automated qualification layer acting on the same criteria, has examined and accepted as a real opportunity.' SAL and 'opportunity' are also defined in line.", "score": 5, "max": 5},
+        {"category": "Structure", "criterion": "Structured Data for AI Parsing",
+         "finding": "The article combines a labelled comparison table, an enumerated SLA breakdown ('First, the acceptance criteria... Second, the response time... Third, the feedback loop'), a named five-stage sequence, and a six-item FAQ block, giving an AI parser multiple structured extraction targets.", "score": 5, "max": 5},
+        {"category": "Authority", "criterion": "Statistical Authority",
+         "finding": "The References section names HubSpot, Gartner, HBR ('The Short Life of Online Sales Leads') and Salesforce, but no numeric, attributable statistic is quoted in the body: the well-known HBR five-minute response finding is alluded to as 'lead value decays sharply with time' yet never cited as a figure an LLM could attribute. Sources are named but not converted into citable data points.", "score": 3, "max": 5},
+        {"category": "Entity", "criterion": "Entity Association",
+         "finding": "DevCommX and the author are explicitly bound to the topic: 'We build outbound and qualification infrastructure for B2B teams every week, and the MQL to SQL handoff is the single most common place we find revenue leaking', plus the schema author node 'Sumit Nautiyal, VP of Revenue Operations & GTM Engineering, DevCommX' and a closing product section on signal-based qualification systems.", "score": 5, "max": 5},
+        {"category": "Distinctiveness", "criterion": "GEO Distinctiveness",
+         "finding": "The post owns the definitional/handoff query cluster ('MQL vs SQL', 'MQL SQL definition', 'lead qualification stages') and structurally defers the deeper signal arguments to siblings it links (identify-buying-signals, intent-data-buying-signals, real-time-sales-signals), so it avoids most cannibalisation against the HubSpot-dominated SERP. Residual overlap: two H2s ('Why the MQL vs SQL Model Leaks', 'Signal-Based Qualification: Replacing the Funnel') re-argue the signal thesis those sibling posts also own.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Owned-infrastructure narrative and the sanctioned 40+ demos proof are both present; no pricing or cost framing beyond own-vs-rent.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Differentiation", "criterion": "Differentiation Narrative",
+         "finding": "The owned, signal-based model is stated directly: 'DevCommX builds autonomous, signal-based AI SDR and qualification systems that your team owns, not a managed campaign you rent' and 'real-time buying-signal detection that qualifies accounts on intent instead of form fills'. The whole signal-based critique reinforces the differentiation.", "score": 5, "max": 5},
+        {"category": "Proof", "criterion": "Proof Metrics & Evidence",
+         "finding": "The sanctioned proof framing is used cleanly: 'Clients typically go from setup to 40+ qualified demos within about 6 weeks, because the system triggers on real buying signals, not static lists.' It is the only concrete outcome cited, so evidence is present but single-point.", "score": 4, "max": 5},
+        {"category": "Pricing", "criterion": "Pricing Transparency",
+         "finding": "There is value framing ('systems that your team owns, not a managed campaign you rent') but no cost, price, or ROI figure anywhere in the post. Pricing is essentially absent, consistent with most posts in the library.", "score": 2, "max": 5},
+        {"category": "CTA", "criterion": "CTA Quality",
+         "finding": "The CTA is specific and conversion-oriented, tied to the article's exact topic: 'Book a GTM strategy call to map your MQL to SQL handoff and find where your pipeline is leaking.' It links to /contact-us and names the outcome rather than a generic 'contact us'.", "score": 5, "max": 5},
+        {"category": "Differentiation", "criterion": "Content Differentiation",
+         "finding": "The post fills a distinct definitional-anchor slot in the DevCommX library: it is the MQL-vs-SQL comparison/handoff page that the more tactical siblings (buying signals, intent data, ICP scoring, speed-to-lead) link back into, giving it a clear hub role rather than duplicating them.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Logical heading architecture and one strong table, but no in-body images/diagrams and SLA/stages are delivered as prose rather than bullets.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Headings", "criterion": "Heading Architecture",
+         "finding": "The hierarchy is logical with no skipped levels: one H1, eight topical H2s, then H3 section headers (Further Reading, References, FAQ) with six H4 question headings nested under the FAQ H3. Flow runs definition to comparison to handoff to stages to criteria to critique to product.", "score": 4, "max": 5},
+        {"category": "Visuals", "criterion": "Visual Elements",
+         "finding": "There are zero in-body images, diagrams, charts or infographics; only an OG image in schema. The single HTML comparison table is the sole visual/structured break in a ~2,491-word wall of prose, so a funnel-stages diagram or SLA graphic is missing where the content clearly invites one.", "score": 2, "max": 5},
+        {"category": "Scannability", "criterion": "Scannability",
+         "finding": "Bolded key terms (marketing qualified lead, SLA, sales accepted lead) and the comparison table aid skimming, and the hook is sharp ('The handoff between them is where most pipeline quietly leaks'). However the SLA's three parts and the five qualification stages are written as inline prose ('First... Second... Third...') rather than bullet lists, reducing skimmability.", "score": 4, "max": 5},
+        {"category": "Readability", "criterion": "Reading Level & Flow",
+         "finding": "Prose is clear and well-paced, defines jargon before using it (SAL, BANT), and uses natural transitions ('Here is the uncomfortable part.', 'Practically, this does not require throwing away the MQL and SQL vocabulary'). No jargon dump; reading level suits an operator audience.", "score": 4, "max": 5},
+        {"category": "Length", "criterion": "Content Length & Density",
+         "finding": "At ~2,491 words the length is appropriate for a definitional-plus-critique comparison topic and there is little filler; each section adds a distinct idea. Density is slightly high in places because supporting points are prose rather than lists, but there is no obvious padding.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Complete BlogPosting + FAQPage in @graph, FAQ text matches the body verbatim, rich-result fields all present; nested author/publisher nodes lack @id.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Article", "criterion": "Article Type Completeness",
+         "finding": "The BlogPosting node carries headline, description, url, datePublished (2026-07-01), dateModified, keywords, image, author, publisher and mainEntityOfPage. All required Article fields are populated with real values, not placeholders.", "score": 5, "max": 5},
+        {"category": "FAQPage", "criterion": "FAQPage Structure",
+         "finding": "The FAQPage node has a mainEntity array of six items, each a @type Question with name and an acceptedAnswer of @type Answer carrying full text. Six questions comfortably clears the 3+ requirement.", "score": 5, "max": 5},
+        {"category": "Alignment", "criterion": "Schema-to-Content Alignment",
+         "finding": "All six schema FAQ answers match the body FAQ text verbatim (e.g. the 'What is the difference between MQL vs SQL?' answer is identical in schema and body), and the schema keywords ('MQL vs SQL, MQL SQL definition, lead qualification stages...') and description mirror the article's actual coverage.", "score": 5, "max": 5},
+        {"category": "Graph", "criterion": "@graph Implementation",
+         "finding": "A proper @graph array holds two nodes, each with a distinct @id (#article and #faq). However the nested author (Person), publisher (Organization) and image (ImageObject) nodes carry no @id, so entity re-use across the graph is not fully wired.", "score": 4, "max": 5},
+        {"category": "RichResult", "criterion": "Rich Result Eligibility",
+         "finding": "Rich-result prerequisites are met: image is an ImageObject with url plus width 1200 and height 630, publisher is an Organization with a logo ImageObject, and dateModified is present alongside datePublished. Eligible for article and FAQ rich results.", "score": 5, "max": 5}
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Add at least one in-body visual (a funnel-stages diagram showing lead -> MQL -> SAL -> SQL -> opportunity, or an SLA graphic) to lift Visual Elements above 2/5 and break up the ~2,491-word prose run.",
+    "2. Convert deferred citations into inline statistical authority: quote the HBR 'Short Life of Online Sales Leads' response-time figure at the point where the post says 'lead value decays sharply with time', so an LLM has an attributable stat to cite.",
+    "3. Reformat the SLA's three components and the five lead qualification stages as bullet or numbered lists instead of inline 'First/Second/Third' prose, improving scannability and snippet extraction.",
+    "4. Trim the meta-description from ~163 to under 160 characters to avoid SERP truncation.",
+    "5. Sharpen GEO distinctiveness by tightening the two signal-based H2s so they frame MQL vs SQL specifically and defer more explicitly to the intent-data and buying-signals sibling posts, reducing overlap."
+  ]
+}

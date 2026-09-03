@@ -1,0 +1,281 @@
+{
+  "slug": "optimize-pricing-pages-for-ai-search",
+  "title": "How to Optimize Your Pricing Page to Get Cited by AI Search",
+  "words": 2692,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Only two statistics in 2,692 words: the Gartner 25% claim is never inline-linked and the 94% B2B buyer figure is attributed only to \"surveys now report\".",
+      "flag_type": "critical",
+      "criteria": [
+        {
+          "category": "Sources",
+          "criterion": "Stat Accuracy & Source Quality",
+          "finding": "The body makes exactly two statistical claims and neither is inline-linked at the point of assertion: \"Gartner projects that traditional search engine volume will fall roughly 25 percent by 2026\" and \"surveys now report that around 94 percent of B2B buyers use generative AI somewhere in their purchase process\". The Gartner press release URL exists only in the trailing \"Further Reading\" list, so a reader (or a model) parsing the claim sentence sees no citation; the 94 percent figure names no survey, no vendor, and no year at all, and it is repeated unsourced inside FAQ answer 4.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Depth",
+          "criterion": "Practitioner Depth",
+          "finding": "There are genuine implementation details a non-practitioner would miss: \"use UnitPriceSpecification with a billingDuration\", \"an AggregateOffer can hold the low and high price\", \"Set priceCurrency to USD, EUR, or GBP as a code\", and the concrete test \"view the page source, or fetch it with the JavaScript disabled\". But the post contains zero code: a full H2 titled \"Add Pricing Schema: Offer, PriceSpecification, and SoftwareApplication\" describes markup in prose for four paragraphs and never shows a single JSON-LD block or a sample HTML pricing table, so the reader cannot copy anything.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Attribution",
+          "criterion": "Data Attribution",
+          "finding": "The one table in the article (\"Human-Only Pricing Page\" vs \"AI-Extractable Pricing Page\") is entirely qualitative: cells read \"Rendered by a JavaScript slider or baked into an image\" and \"Skips the page or quotes a stale, wrong number\", with no measured extraction rates, no test sample, and no source line. Assertions such as \"a price rendered by a client-side slider may never appear in the text the model sees\" and \"the model reaches for the next pricing page in its context\" are stated as fact with no crawl test, no citation, and no DevCommX data behind them.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Accuracy",
+          "criterion": "Technical Accuracy",
+          "finding": "The schema.org guidance is correct for 2026: preferring priceSpecification over a bare price attribute, UnitPriceSpecification plus billingDuration for subscriptions, AggregateOffer for multi-plan pages, and ISO 4217 codes are all accurate, as is naming both \"Google's Rich Results Test and the Schema Markup Validator\". One claim is stale: the FAQ section says mirroring Q&A into FAQPage data makes the block \"eligible for rich results\", but Google restricted FAQ rich results to government and health sites in 2023, so for a SaaS pricing page FAQPage no longer produces a rich result even though it still aids extraction.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Completeness",
+          "criterion": "Completeness",
+          "finding": "Seven of nine H2s deliver what they promise, but the schema H2 names \"SoftwareApplication\" in its title and then only mentions it once in passing (\"wrap the product in SoftwareApplication or Product\") without showing the nesting of Product to Offer to PriceSpecification that the section is built around. \"Test What AI Actually Says About Your Price\" likewise tells the reader to \"Prompt ChatGPT, Perplexity, Claude, and Google AI Mode with your buyers' real questions\" but supplies no prompt list, no scoring sheet, and no re-test cadence beyond \"a few weeks later\".",
+          "score": 3,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Strong keyword coverage, meta lengths and FAQ; the weak point is that all three external citations sit in a \"Further Reading\" list with none inline in the prose.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Keywords",
+          "criterion": "Primary Keyword Targeting",
+          "finding": "The head term is placed consistently: slug \"optimize-pricing-pages-for-ai-search\", meta-title \"How to Optimize Pricing Pages for AI Search\", H1/name \"How to Optimize Your Pricing Page to Get Cited by AI Search\", the opening bolded sentence \"To optimize a pricing page for AI search, make every price machine-extractable\", and FAQ question 1 \"How do I optimize a pricing page for AI search?\". No H2 carries the exact phrase, though two carry close variants (\"Build Extractable Pricing Tables, Not Clever Layouts\", \"Get Your Pricing Cited by AI Search With DevCommX\").",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQ / People Also Ask",
+          "finding": "Six H4 questions are phrased the way buyers actually type them: \"Should I show real prices if my pricing is Contact Sales?\", \"Does pricing page schema markup actually help AI cite you?\", \"What is the difference between SEO and AEO for a pricing page?\", and \"How do I know if AI models are quoting my pricing correctly?\". Each answer opens with a direct verdict (\"Yes.\", \"Give a range even if you will not publish an exact number.\", \"Ask them.\") before elaborating, which is exactly the shape a PAA or AI answer box lifts.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Tables",
+          "criterion": "Comparison / Featured Snippet Tables",
+          "finding": "The single table uses a proper thead/tbody with three labelled columns (Element, Human-Only Pricing Page, AI-Extractable Pricing Page) and six clean comparison rows (Price display, Tier labels, Structured data, Enterprise tier, Cost questions, What AI does with it), which is well shaped for snippet extraction. It is qualitative only, though: no prices, percentages, or effort/impact numbers, so it cannot win a numeric snippet, and it is wrapped in a Webflow rich-text embed div with inline styles rather than a plain table.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Links",
+          "criterion": "Internal & External Link Structure",
+          "finding": "Three internal links use descriptive anchors and all resolve to slugs that exist in the live library: \"LLMO playbook for optimizing content for LLMs\", \"how to get cited by ChatGPT\", and \"AI SDR pricing breakdown\", plus a /contact CTA. The failure is external citation placement: all three outbound links (Gartner, schema.org/PriceSpecification, Google Search Central Product docs) appear only in the \"Further Reading\" ul, so 33 body paragraphs contain zero outbound citations, and the free \"AI Visibility Checker\" is named twice as a CTA with no href at all.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical SEO",
+          "finding": "Meta-title is 43 characters and meta-description is 157 characters, both inside display limits, and the description front-loads the keyword: \"How to optimize pricing pages for AI search: build extractable tables, plain-language tiers, and Offer schema\". The post-body correctly contains no stray H1 (the CMS name field supplies it at 59 characters), the schema-markup field holds valid parseable JSON-LD, and the canonical URL in blog-list matches the schema url exactly.",
+          "score": 5,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.2,
+      "flag": "Excellent direct-answer opening and a genuinely uncontested query cluster, undercut by only two weakly-sourced stats and zero bulleted or numbered lists in the body.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Definitions",
+          "criterion": "Direct Definitions",
+          "finding": "The article opens with a self-contained extractable answer in bold: \"To optimize a pricing page for AI search, make every price machine-extractable\", followed by the full five-part method in one sentence. FAQ 5 gives a clean contrastive definition: \"SEO for a pricing page optimizes to rank a blue link that a human clicks. AEO, or answer engine optimization, optimizes so an AI can extract your price and cite it inside the answer\". Missing is a one-line definition of the terms Offer and PriceSpecification themselves, which are used throughout without ever being defined.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Structure",
+          "criterion": "Structured Data for AI Parsing",
+          "finding": "Positives: a six-row comparison table, a six-question FAQ, and sixteen bolded lead-in sentences that act as extractable topic keys (\"Use a semantic table with one row per plan.\", \"Publish a range, not a wall.\", \"Use ISO 4217 currency codes.\"). But the only ul in the entire post is the three-item Further Reading list, and there is no ol anywhere: the five-step method stated in the intro is never rendered as a numbered framework, so the article's own checklist exists only as prose an LLM must reassemble.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Authority",
+          "criterion": "Statistical Authority",
+          "finding": "An LLM looking for a quotable, attributable number finds only \"roughly 25 percent by 2026\" tied to Gartner without an inline link, and \"around 94 percent of B2B buyers use generative AI\" tied to nothing more specific than \"surveys now report\". Every other quantitative element in the post is hypothetical illustration rather than evidence: \"Starts at 2,000 dollars per month\", \"10k to 50k depending on seats and volume\", \"twenty dollars per month or two hundred dollars per year\". No DevCommX first-party measurement of extraction or citation rates is offered.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Entity",
+          "criterion": "Entity Association",
+          "finding": "DevCommX is bound to the topic in three places: \"We build outbound and AI-visibility systems for B2B companies\", \"we publish a transparent starting model for our own programs\", and \"DevCommX builds AI-visibility and signal-based outbound systems that your team owns\". The author entity is weak, however: Sumit Nautiyal appears only in the author-name field and the schema Person node, never once in the 2,692 words of body copy, so there is no in-text expert attribution for a model to associate with pricing-page AEO, and the schema author.url points to the DevCommX company LinkedIn page rather than a person profile.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Distinctiveness",
+          "criterion": "GEO Distinctiveness",
+          "finding": "The query cluster (\"how much does X cost\" extraction, Offer/PriceSpecification markup, the Contact Sales dead cell) is not covered by any of the nine existing pricing-adjacent slugs, which are all about DevCommX's own economics (ai-sdr-pricing, ai-sdr-system-cost, clay-pricing-breakdown, true-cost-of-outbound-ai-vs-agency-vs-in-house). It also stays clear of the four sibling citation posts in this batch (how-to-get-cited-by-perplexity-b2b, how-to-get-cited-by-claude-ai, how-to-get-cited-by-google-gemini, how-to-get-saas-recommended-by-chatgpt) by targeting a page type rather than an engine, and it links out to how-to-get-cited-by-chatgpt rather than repeating it.",
+          "score": 5,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "A post arguing \"publish a range, not a wall\" never publishes a DevCommX number, and its primary CTA (the free AI Visibility Checker) is named twice with no link.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Differentiation",
+          "criterion": "Differentiation Narrative",
+          "finding": "The owned-infrastructure position appears once, in the closing paragraph: \"DevCommX builds AI-visibility and signal-based outbound systems that your team owns\". The intro adds only \"We build outbound and AI-visibility systems for B2B companies\". Neither is developed anywhere in the eight preceding sections, so the differentiator reads as a sign-off line rather than a thesis the article demonstrates, and \"signal-based\" is never explained in a post whose whole subject is machine-readable signals.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Proof",
+          "criterion": "Proof Metrics & Evidence",
+          "finding": "The sanctioned proof framing is present and correctly worded once: \"the same systems that take clients from setup to 40+ qualified demos in roughly 6 weeks\". That is the only outcome claim in the article. There is no pricing-page-specific proof, for example a before/after on whether an assistant began quoting a client's price correctly after schema was shipped, which is the exact evidence this topic invites and which the closing loop (\"re-run the prompts a few weeks later, and watch the answers correct\") promises but never demonstrates.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Pricing",
+          "criterion": "Pricing Transparency",
+          "finding": "The article gestures at transparency without practising it: \"This is exactly why we publish a transparent starting model for our own programs rather than hiding everything\" hands the reader off to /blogs/ai-sdr-pricing instead of stating a figure. Every number in the piece is illustrative and belongs to a hypothetical vendor (\"Starts at 2,000 dollars per month\", \"enterprise plans typically run 10k to 50k\"). For a post whose central argument is \"Publish a range, not a wall\", the absence of a DevCommX band is a self-undermining gap.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "CTA",
+          "criterion": "CTA Quality",
+          "finding": "The closing CTA is specific and conversion-oriented: \"Book a GTM strategy call\" linking to https://www.devcommx.com/contact, with a reason to click (\"to map your pricing page and your whole funnel\"). The lead-magnet CTA is broken, however: \"Run our free AI Visibility Checker\" appears twice, in the final section and again in FAQ 6, and neither instance is hyperlinked, so the highest-intent, lowest-friction offer in the article is unclickable.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Differentiation",
+          "criterion": "Content Differentiation",
+          "finding": "This is the only asset in the 149-slug library addressing the pricing page as an AEO surface; the closest neighbours are ai-sdr-pricing and clay-pricing-breakdown (DevCommX's own economics) and how-to-optimize-content-for-llms-llmo-playbook (general LLMO), both of which it links to rather than duplicates. The framing \"Pricing-page AEO is a brand-new 2026 sub-niche with almost no incumbents\" accurately describes the slot it fills.",
+          "score": 5,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Zero in-body images or diagrams and zero bullet lists in the body; 33 paragraphs carry the entire article with only one table for relief.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Headings",
+          "criterion": "Heading Architecture",
+          "finding": "Nine H2s progress logically from problem (\"Why AI Now Answers How Much Does X Cost by Lifting Your Pricing Page\") through the comparison table, four tactic sections, the \"Contact Us Trap\", measurement, and the CTA, with no skipped levels: H2 then H3 then H4 only. The one flaw is placement: \"Further Reading\" and \"FAQ\" are H3s that fall under the H2 \"Get Your Pricing Cited by AI Search With DevCommX\", making the FAQ block a semantic child of the sales CTA rather than a top-level section.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Visuals",
+          "criterion": "Visual Elements",
+          "finding": "The body contains zero img tags, zero diagrams, zero charts, and zero code blocks across 18,416 characters of HTML; the only non-text element is the single Human-Only vs AI-Extractable comparison table. The only image asset attached anywhere is the shared OG file (imresizer-DevCommX-Blog-OG.png), which never renders in-article. A post about markup and page structure is the ideal candidate for an annotated screenshot of a Rich Results Test pass or a before/after view-source, and has neither.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Scannability",
+          "criterion": "Scannability",
+          "finding": "The bolded lead-in convention works well: sixteen strong tags open tactic paragraphs with imperatives like \"Keep the price in the initial HTML, not a later fetch.\" and \"Validate before you ship, and keep it current.\", giving a skimmer a usable spine. Against that, the body has no bullet list at all (the only ul is Further Reading), so multi-item enumerations stay buried in prose, for example \"Is there a free trial, is it per seat or flat, are there usage overages, what does onboarding cost\", which is a four-item list written as one sentence.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Readability",
+          "criterion": "Reading Level & Flow",
+          "finding": "The register is right for a GTM/marketing reader and transitions are natural (\"Extractable numbers are half the job.\"), but the draft's blanket avoidance of quotation marks and currency symbols creates repeated ambiguity: \"read twenty dollars per month or two hundred dollars per year as words\", \"a page that says only Contact Sales\", \"A vague it depends means you never published a range\". Several comma splices compound this, for example \"This bypasses visual parsing entirely, the price arrives as structured data the model can trust\" and \"A range also pre-qualifies, the people who bounce at the bottom of your band were never going to close\".",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Length",
+          "criterion": "Content Length & Density",
+          "finding": "At 2,692 words with a stated 12-minute reading time, the length suits a tactical how-to and there is little padding: each of the four tactic H2s carries three or four distinct, non-overlapping instructions. Some redundancy exists between the intro summary, the closing section, and FAQ 1, which restate the same five-item method almost verbatim (\"extractable tables, plain-language tiers, Offer and PriceSpecification schema, a pricing FAQ, and a real enterprise range\"), though that repetition is defensible as AEO reinforcement.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "FAQ text matches the body word-for-word across all six questions, but the graph has only two nodes and the publisher logo reuses the 1200x630 OG image.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Article",
+          "criterion": "Article Type Completeness",
+          "finding": "The BlogPosting node carries headline (\"How to Optimize Your Pricing Page to Get Cited by AI Search\"), a 232-character description, url, datePublished and dateModified (both 2026-07-01), a seven-phrase keywords string, image, author, publisher, and mainEntityOfPage. Gaps are minor: no wordCount, articleSection, or inLanguage, and the author Person node's url is https://www.linkedin.com/company/devcommx, a company page standing in for Sumit Nautiyal's personal profile.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQPage Structure",
+          "finding": "The FAQPage node holds six mainEntity items, double the three-question minimum, and every one uses @type Question with a name and a nested acceptedAnswer of @type Answer carrying a text property. Answers are substantive rather than stubs, running 60 to 90 words each, for example the full \"Yes. Offer and PriceSpecification schema hand the model a direct data feed...\" answer, and the node has its own @id ending in #faq.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Alignment",
+          "criterion": "Schema-to-Content Alignment",
+          "finding": "Programmatic comparison of the six body H4/paragraph pairs against the six schema Question/Answer nodes returned an exact string match on all twelve values, question and answer alike, with no drift. The keywords string also tracks the article: \"pricing page aeo\", \"offer pricespecification\", and \"extractable pricing tables\" each correspond to real H2 sections, and the schema description names the same five deliverables the body teaches.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Graph",
+          "criterion": "@graph Implementation",
+          "finding": "An @graph array is used with a single @context and both nodes carry a distinct @id (#article and #faq). It is thin, though: only two nodes, with no WebPage, WebSite, BreadcrumbList, or Organization node defined separately. mainEntityOfPage points to a WebPage @id of https://www.devcommx.com/blogs/optimize-pricing-pages-for-ai-search that is declared inline rather than as a graph node, and the author and publisher objects have no @id, so nothing in the graph is reusable or cross-referenced.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Rich Results",
+          "criterion": "Rich Result Eligibility",
+          "finding": "image is a proper ImageObject with url plus width 1200 and height 630, publisher is an Organization with name, url and a logo ImageObject, and dateModified is present. Two problems: the publisher logo url is the identical 1200x630 blog OG file (imresizer-DevCommX-Blog-OG.png) rather than a real logo asset, which fails Google's logo guidance; and dateModified is identical to datePublished, giving no freshness signal. Most pointedly, an article that instructs readers to ship Offer and PriceSpecification markup ships none of its own.",
+          "score": 3,
+          "max": 5
+        }
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Fix the sourcing: inline-link the Gartner press release directly on the sentence \"Gartner projects that traditional search engine volume will fall roughly 25 percent by 2026\", and either name and link the actual survey behind \"around 94 percent of B2B buyers use generative AI\" (it appears unsourced twice, in the body and in FAQ 4) or cut the figure.",
+    "2. Add real code to the schema section: a copy-pasteable JSON-LD block showing SoftwareApplication wrapping an Offer with a nested UnitPriceSpecification (price, priceCurrency USD, billingDuration), plus a matching sample HTML pricing table, since the H2 promises SoftwareApplication and the body never shows it.",
+    "3. Hyperlink the free AI Visibility Checker in both places it is named (closing section and FAQ 6) - it is currently the only CTA with no href, while \"Book a GTM strategy call\" correctly links to /contact.",
+    "4. Practise the article's own advice: publish a concrete DevCommX price band in \"The Contact Us Trap\" section instead of only linking to /blogs/ai-sdr-pricing, so the post is not arguing \"Publish a range, not a wall\" while showing only hypothetical 2,000-dollar and 10k-to-50k figures.",
+    "5. Break prose into extractable structure: convert the intro's five-part method into a numbered ol, and turn buried enumerations such as \"Is there a free trial, is it per seat or flat, are there usage overages, what does onboarding cost\" into bullets - the body currently has zero lists apart from Further Reading.",
+    "6. Add at least two in-body visuals (an annotated view-source before/after showing a price hidden by a JS slider vs rendered as table text, and a Rich Results Test pass screenshot) - the body has zero img tags and only one table.",
+    "7. Correct the stale claim that mirroring the FAQ into FAQPage schema makes the block \"eligible for rich results\"; FAQ rich results have been limited to government and health sites since 2023, so reframe the benefit as extraction and AI citation rather than SERP rich results.",
+    "8. Strengthen entity signals: name Sumit Nautiyal and his VP of Revenue Operations & GTM Engineering role once in the body (he currently appears only in metadata), point schema author.url at a personal LinkedIn profile rather than the company page, and replace the publisher logo url, which currently reuses the 1200x630 blog OG image, with a real logo asset."
+  ]
+}

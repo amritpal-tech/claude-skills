@@ -1,0 +1,127 @@
+{
+  "slug": "why-lead-generation-campaigns-fail",
+  "title": "Why Most Lead Generation Campaigns Fail Before They Even Start",
+  "words": 2227,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Strong practitioner depth, but every quantitative claim is qualitative and no source is linked inline; the four references sit unlinked at the foot with no figures attached.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Sources", "criterion": "Stat Accuracy & Source Quality",
+         "finding": "The credible sources (Gartner, Think with Google, HBR, HubSpot) are named only in a bottom References list, never inline. Claims that should carry a number stay vague: 'the odds of connecting fall sharply with every hour of delay' and 'reply rates on signal-based sends run so far ahead of list blasts' cite no figure and link to nothing at the point of assertion.", "score": 2, "max": 5},
+        {"category": "Depth", "criterion": "Practitioner Depth",
+         "finding": "Real deployment mechanics are present: 'verify every email, enrich the company and role from a live source, dedupe against your CRM, and suppress anyone who already bounced or unsubscribed, all before the first send' and 'instant routing to an owner, a defined multi-touch cadence for non-responders, reminders and confirmations that cut no-shows'. This reads like someone who has built the system, not a summary.", "score": 4, "max": 5},
+        {"category": "Attribution", "criterion": "Data Attribution",
+         "finding": "The 'Mistake, Consequence, Fix' table is entirely conceptual assertion with no source column, e.g. 'Bad list and stale data -> Bounces, spam complaints, domain reputation damage'. No metric anywhere in the body is attributed to a named study; the References only gesture at topics ('on response-time decay') without a citable statistic.", "score": 2, "max": 5},
+        {"category": "Technical", "criterion": "Technical Accuracy",
+         "finding": "Nothing is factually wrong: the mechanics of deliverability ('Bounces and spam complaints tell inbox providers your domain is a risk'), spam traps, and signal types (new hire, funding round, competitor churn) are all accurate for 2026. However the post names no actual tools, features, or limits, so accuracy is real but untested against specifics.", "score": 4, "max": 5},
+        {"category": "Completeness", "criterion": "Completeness",
+         "finding": "Every H2 promise is delivered. Each of the five mistake headings pairs a diagnosis with a concrete fix, the at-a-glance table previews all five, and the 'Fix the Setup Before You Fix the Copy' section closes the loop with an ordered audit. No promised section is left as a stub.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Excellent keyword and link coverage: primary term threads title, H2, body, FAQ and slug; five internal anchors and three external citations; snippet-ready table.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Keyword", "criterion": "Primary Keyword Targeting",
+         "finding": "'Why lead generation fails' is placed in the H1, the first H2 ('Why Lead Generation Fails: The Setup Decides the Outcome'), the bolded opening line, the FAQ ('Why do most lead generation campaigns fail?'), and the slug why-lead-generation-campaigns-fail. Variants like 'lead gen campaigns fail' recur naturally through the body.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQ / People Also Ask",
+         "finding": "Six genuine high-intent PAA queries are answered, e.g. 'What is the most common lead generation mistake?', 'Why do B2B lead gen campaigns fail even with good copy?', and 'What is the difference between a static list and a buying signal?'. Each answer is self-contained and directly responsive.", "score": 5, "max": 5},
+        {"category": "Snippet", "criterion": "Comparison / Featured Snippet Tables",
+         "finding": "The three-column HTML table (Pre-launch mistake | Consequence in pipeline | The fix before you spend) is clean, header-rowed, and extractable for a featured snippet. It uses inline styles rather than semantic classes, but the structure is snippet-friendly.", "score": 4, "max": 5},
+        {"category": "Links", "criterion": "Internal & External Link Structure",
+         "finding": "Five relevant internal links are woven in with descriptive anchors (buying signals guide, AI-powered ICP scoring, cold email benchmarks, contextual outreach playbook, repeatable outbound pipeline), plus three authoritative external links (Gartner, Think with Google, HBR) in a dedicated Further Reading block.", "score": 5, "max": 5},
+        {"category": "Technical", "criterion": "Technical SEO",
+         "finding": "Schema is present, the H1 is correct, meta-description is ~155 chars (within range), and the meta-title 'Why Lead Generation Campaigns Fail' is a short but valid 34 chars, leaving pixel room unused but nothing broken.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.20,
+      "flag": "Clean definitions and strong entity association, but no citable numeric authority, and the folded lead-generation-mistakes keywords create real cannibalisation risk against a dedicated mistakes post.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Definitions", "criterion": "Direct Definitions",
+         "finding": "Several crisp, extractable definitions exist: 'A signal is an observable event that suggests an account is moving: a relevant new hire, a funding round...', 'A list is not a target audience, it is a snapshot', and 'A weak offer is any message that is about the sender rather than the buyer'. An LLM can lift these verbatim.", "score": 4, "max": 5},
+        {"category": "Structure", "criterion": "Structured Data for AI Parsing",
+         "finding": "The content is well-parsed: a labelled Mistake 1-5 framework, a three-column table, a six-item FAQ, and clear bolded topic sentences ('Data quality is a pre-launch gate, not a cleanup task.'). Bulleted lists in the body are absent (only reference lists), leaving some density in prose.", "score": 4, "max": 5},
+        {"category": "Authority", "criterion": "Statistical Authority",
+         "finding": "The References section names four citable authorities (Gartner, Think with Google, HBR, HubSpot), which credits the citation work, but not one is tied to a specific number an LLM could attribute. There is no 'X% of buyers' or 'response rates fall Y% after an hour' figure sourced anywhere, so the claims remain assertions rather than citable statistics.", "score": 3, "max": 5},
+        {"category": "Entity", "criterion": "Entity Association",
+         "finding": "DevCommX is explicitly bound to the topic ('At DevCommX we build signal-based outbound systems for a living') and the author Sumit Nautiyal, VP of Revenue Operations & GTM Engineering, is named in schema, tying the person, the org, and the outbound niche together clearly.", "score": 5, "max": 5},
+        {"category": "Distinctiveness", "criterion": "GEO Distinctiveness",
+         "finding": "The 'before they even start / pre-launch setup' framing is a genuinely distinct angle, but the post folds the generic mistakes cluster into its own keywords ('lead generation mistakes', 'B2B lead gen mistakes' in schema and meta) and even titles a section 'Lead Generation Mistakes at a Glance', which overlaps a standalone lead-gen-mistakes post and risks self-cannibalisation on that query.", "score": 3, "max": 5}
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Owned-infrastructure narrative and the sanctioned 40+ demos proof land clearly, with a specific CTA; only pricing/value framing is thin.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Differentiation", "criterion": "Differentiation Narrative",
+         "finding": "The owned-infrastructure model is stated outright: 'DevCommX builds autonomous, signal-based AI SDR and GTM engineering systems that your team owns outright, not a managed campaign you rent.' The signal-based vs static-list contrast runs through the whole piece as the differentiator.", "score": 5, "max": 5},
+        {"category": "Proof", "criterion": "Proof Metrics & Evidence",
+         "finding": "The sanctioned proof framing appears twice and in context: 'from setup to 40 or more qualified demos in roughly six weeks, because the systems trigger on real buying signals rather than static lists', tying the metric to the mechanism rather than dropping it as a bare boast.", "score": 5, "max": 5},
+        {"category": "Pricing", "criterion": "Pricing Transparency",
+         "finding": "No cost or price figure appears. The nearest value framing is the 'own outright, not a managed campaign you rent' contrast, which implies ownership economics but never quantifies cost, budget, or ROI, so pricing transparency is largely absent.", "score": 2, "max": 5},
+        {"category": "CTA", "criterion": "CTA Quality",
+         "finding": "The closing CTA is specific and conversion-oriented: 'Book a GTM strategy call to pressure-test your lead generation before you spend another budget on it,' linked to /contact-us and framed around the reader's exact pain (wasted spend).", "score": 5, "max": 5},
+        {"category": "Differentiation", "criterion": "Content Differentiation",
+         "finding": "The piece fills a distinct diagnostic slot (pre-launch failure audit) and cross-links five sibling posts as the deeper how-to companions, positioning itself as the top-of-funnel diagnosis rather than duplicating the tactical guides it points to.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Clean heading hierarchy and excellent narrative flow at strong length; only in-body visuals are missing (one table, no images).",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Headings", "criterion": "Heading Architecture",
+         "finding": "The hierarchy is clean: a single H1, eight topical H2s (the setup thesis, the table, Mistakes 1-5, two closers), and H3/H4 for Further Reading, References, and the FAQ questions. No heading level is skipped.", "score": 5, "max": 5},
+        {"category": "Visuals", "criterion": "Visual Elements",
+         "finding": "There is exactly one visual, the styled HTML comparison table; there are no in-body images, diagrams, charts, or infographics, only the OG image referenced in schema. Per the no-images baseline this is at the low end.", "score": 2, "max": 5},
+        {"category": "Scannability", "criterion": "Scannability",
+         "finding": "A bolded hook opens the piece, each mistake carries a bolded lead sentence ('The first reason lead generation fails is a definition problem.'), and the table plus FAQ aid skimming. It leans heavily on prose paragraphs with no body bullet lists, so mid-section skimming relies on the bold sentences alone.", "score": 4, "max": 5},
+        {"category": "Flow", "criterion": "Reading Level & Flow",
+         "finding": "Transitions are natural and cumulative: 'Assume the ICP is sharp. The next place campaigns die is the data,' and 'Suppose everything upstream is right... The campaign can still fail on the offer.' The compounding-multipliers metaphor carries the reader through without a jargon dump.", "score": 5, "max": 5},
+        {"category": "Length", "criterion": "Content Length & Density",
+         "finding": "At roughly 2,200 words for a five-part diagnostic with a table and FAQ, the length fits the topic and stays dense; each paragraph advances the argument with no visible padding or repetition beyond the deliberate two mentions of the demos proof.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Complete, well-formed @graph with BlogPosting + FAQPage; FAQ text matches the body exactly and all rich-result fields are present.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Article", "criterion": "Article Type Completeness",
+         "finding": "The BlogPosting node carries headline, description, url, datePublished (2026-07-01), dateModified, keywords, image, author, publisher, and mainEntityOfPage. All core Article fields are populated; author.url points to the company LinkedIn rather than a personal profile, a minor inconsistency for a Person entity.", "score": 4, "max": 5},
+        {"category": "FAQPage", "criterion": "FAQPage Structure",
+         "finding": "The FAQPage node lists six Question entries, each with @type Question and an acceptedAnswer of @type Answer containing text, comfortably exceeding the 3-question minimum and mirroring the six body FAQ headings.", "score": 5, "max": 5},
+        {"category": "Alignment", "criterion": "Schema-to-Content Alignment",
+         "finding": "Schema keywords ('why lead generation fails, lead generation mistakes...') and description match the article's topic, and each FAQ acceptedAnswer.text is a verbatim match to the corresponding body FAQ paragraph (e.g. the 'static list vs buying signal' answer is identical in both).", "score": 5, "max": 5},
+        {"category": "Graph", "criterion": "@graph Implementation",
+         "finding": "The markup uses a proper @graph array with two nodes, each given a distinct @id (#article and #faq), enabling clean entity referencing rather than two disconnected script blocks.", "score": 5, "max": 5},
+        {"category": "RichResult", "criterion": "Rich Result Eligibility",
+         "finding": "The image is a full ImageObject with url, width 1200 and height 630, publisher is an Organization with logo, and dateModified is present, satisfying the standard rich-result eligibility fields.", "score": 5, "max": 5}
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Convert the bottom-of-page References into inline citations with actual figures, e.g. attach a specific HubSpot speed-to-lead statistic to 'the odds of connecting fall sharply' and a Gartner/HBR number to the ICP and data-quality claims, so both Stat Accuracy and GEO Statistical Authority earn their sources.",
+    "2. Resolve the cannibalisation risk with a dedicated 'lead generation mistakes' post: narrow this post's schema/meta keywords and the 'Mistakes at a Glance' heading to the pre-launch/before-you-start angle, and canonicalise the generic-mistakes query to whichever post owns it.",
+    "3. Add at least one in-body visual (a compounding-multipliers diagram or a signal-vs-static-list graphic) to lift Visual Elements above the no-image baseline, and add a source column or footnote to the Mistake/Consequence/Fix table.",
+    "4. Add a brief value or cost frame in the closing CTA section (even a qualitative ownership-vs-retainer economics line) to strengthen Pricing Transparency, and point author.url in the schema to a personal profile for the Person entity."
+  ]
+}

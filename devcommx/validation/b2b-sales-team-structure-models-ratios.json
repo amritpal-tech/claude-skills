@@ -1,0 +1,126 @@
+{
+  "slug": "b2b-sales-team-structure-models-ratios",
+  "title": "How to Structure a B2B Sales Team: Models, Ratios, and When to Scale",
+  "words": 2571,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Strong practitioner reasoning, but benchmark numbers are never inline-cited to their named sources.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Sources", "criterion": "Stat Accuracy & Source Quality",
+         "finding": "The load-bearing numbers, a fully ramped SDR books 'roughly 10 to 15 qualified meetings a month', an AE runs 'about 25 to 40 first meetings a month', and span of control is 'one sales manager per 5 to 8 reps', are asserted with no inline link. The named sources (HBR, Bridge Group) sit only in a bottom References block that says Bridge Group 'supports the meetings-per-SDR, SDR-to-AE ratio, and ramp benchmarks used throughout', which is credible sourcing but not tied to any specific figure at the point of claim.", "score": 3, "max": 5},
+        {"category": "Depth", "criterion": "Practitioner Depth",
+         "finding": "This reads as real deployment knowledge, not a summary: it frames the ratio as 'a simple flow-balance problem', explains why 4-to-1 'tanks show rates and demoralizes SDRs whose meetings go stale', and sequences hires by ARR with a concrete failure mode ('Premature specialization here is the most common structural mistake early teams make'). The signal-based section correctly reframes the ratio as a function of who does prospecting.", "score": 4, "max": 5},
+        {"category": "Attribution", "criterion": "Data Attribution",
+         "finding": "The comparison table (Island/Assembly line/Pod across scale, weakness, best stage) and the ARR-to-role mapping carry no source column or footnote; claims like the pod suiting '$5M and up, multi-segment' are the author's assertion. The References list backs the models generally (Predictable Revenue for the assembly line) but no metric in the table is individually attributed.", "score": 3, "max": 5},
+        {"category": "Technical", "criterion": "Technical Accuracy",
+         "finding": "Attribution of the assembly-line model to 'Aaron Ross in Predictable Revenue' is correct, and the role definitions (SDR, AE, sales engineer, CS/AM, RevOps) are used accurately. No tool names, pricing, or feature limits are cited that could be stale for 2026, so there is little surface for factual error.", "score": 4, "max": 5},
+        {"category": "Completeness", "criterion": "Completeness",
+         "finding": "Every H2 promise is delivered: the three models are each defined, the compare table follows, the SDR-to-AE ratio is justified with the flow math, the when-to-add-each-role section maps roles to ARR bands, the signal-based section explains ratio compression, and the choose-your-structure section closes with four diagnostic questions. No H2 is left as a stub.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Keyword, FAQ, table, and internal linking are all strong; only inline external citation is missing.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Keyword", "criterion": "Primary Keyword Targeting",
+         "finding": "The primary phrase saturates every required slot: title and H1 'How to Structure a B2B Sales Team', slug 'b2b-sales-team-structure-models-ratios', H2s 'The three B2B sales team structure models' and 'How to choose your B2B sales team structure', body opener 'To structure a B2B sales team', and the first FAQ 'How do you structure a B2B sales team?'.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQ / People Also Ask",
+         "finding": "Six FAQs map cleanly onto real high-intent PAA queries: 'What is a good SDR to AE ratio?', 'When should I hire my first SDR?', 'How many reps should one sales manager have?', and 'How does automation change sales team structure?'. Each answers concisely in the first sentence.", "score": 5, "max": 5},
+        {"category": "Snippet", "criterion": "Comparison / Featured Snippet Tables",
+         "finding": "A clean five-column HTML table (Model, How it works, Scales by, Main weakness, Best stage) compares Island/Assembly line/Pod with short atomic cells such as 'Pre-seed to first $1M, founder-led' and '$5M and up, multi-segment', which is well formed for featured-snippet and AI extraction.", "score": 5, "max": 5},
+        {"category": "Links", "criterion": "Internal & External Link Structure",
+         "finding": "Six contextual internal links use descriptive anchors ('repeatable outbound pipeline without a large sales team', 'definitive guide to AI SDRs', 'sales velocity formula', 'sales capacity planning for how many SDRs'). External authority links (HBR, Gartner, Bridge Group) exist but are corralled into Further Reading/References blocks rather than cited inline at the claim, so external anchoring is one notch below internal.", "score": 4, "max": 5},
+        {"category": "Technical", "criterion": "Technical SEO",
+         "finding": "Meta title 'How to Structure a B2B Sales Team: Models & Ratios' is ~52 chars and the meta description ~155 chars, both within range; a valid @graph with BlogPosting + FAQPage is present, and the H1 (name field) is singular and keyword-aligned.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.20,
+      "flag": "Highly extractable definitions and a distinct query cluster; weakened only by uncited inline statistics.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Definitions", "criterion": "Direct Definitions",
+         "finding": "Each concept has a clean extractable definition an LLM can lift verbatim: 'The island. Every rep is a full-cycle seller who prospects, qualifies, demos, and closes their own deals', 'A pod is a small self-contained unit, typically one or two SDRs, an AE, and a shared sales engineer', and 'The workhorse answer for most B2B outbound teams is 2 to 3 SDRs per AE'.", "score": 5, "max": 5},
+        {"category": "Structure", "criterion": "Structured Data for AI Parsing",
+         "finding": "The post gives AI parsers a comparison table, a six-item FAQ, and bolded decision lead-ins ('Is the motion actually repeatable yet?', 'Where is the bottleneck?'). It stops short of an explicit numbered framework or ordered list, relying on bold paragraph headers instead, which is slightly less machine-clean than a true enumerated list.", "score": 4, "max": 5},
+        {"category": "Authority", "criterion": "Statistical Authority",
+         "finding": "The citable numbers (10-15 meetings per SDR, 25-40 AE first meetings, 5-8 span of control, 2-3 SDR-to-AE) are named-source-backable, and the References section explicitly credits Bridge Group and HBR for them, but because no number is linked at the point it appears, an LLM extracting a stat gets no adjacent attribution to reproduce.", "score": 3, "max": 5},
+        {"category": "Entity", "criterion": "Entity Association",
+         "finding": "DevCommX and the author are tied to the topic: 'It is written from how we build outbound at DevCommX', the schema names 'Sumit Nautiyal, VP of Revenue Operations & GTM Engineering, DevCommX', and the signal-based section anchors the brand to outbound automation. The author's schema url points to the company page rather than a personal profile, a minor entity weakening.", "score": 4, "max": 5},
+        {"category": "Distinctiveness", "criterion": "GEO Distinctiveness",
+         "finding": "The post owns the 'how to structure / which model / what ratio' cluster and deliberately defers headcount math to its sibling, linking out to 'sales capacity planning for how many SDRs you need' rather than duplicating it, so it does not cannibalise the capacity-planning post. Overlap risk exists only on the 'when to add each role' section, which it keeps qualitative and stage-based rather than numeric.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Owned-infrastructure narrative, sanctioned proof metric, and a specific CTA are all present.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Differentiation", "criterion": "Differentiation Narrative",
+         "finding": "The owned, signal-based model is stated plainly: 'DevCommX builds autonomous, signal-based AI SDR systems that your team owns, not a managed campaign you rent', reinforced upstream by the section explaining how a signal-based system compresses the SDR-to-AE ratio 'to 1 to 1 or invert entirely'.", "score": 5, "max": 5},
+        {"category": "Proof", "criterion": "Proof Metrics & Evidence",
+         "finding": "The sanctioned proof framing appears verbatim: 'Our clients typically go from setup to 40+ qualified demos in about 6 weeks because the system triggers on real buying signals instead of static lists.' It is the single outcome metric; no additional client evidence or before/after figures are offered.", "score": 4, "max": 5},
+        {"category": "Pricing", "criterion": "Pricing Transparency",
+         "finding": "There is value framing but no numbers: 'comparing an AI SDR to a human SDR purely on salary misses the point. The real question is capacity per dollar and how fast that capacity comes online.' Cost is discussed conceptually (removing 'the next two SDR hires') but no price or dollar figure is disclosed.", "score": 3, "max": 5},
+        {"category": "CTA", "criterion": "CTA Quality",
+         "finding": "The CTA is specific and conversion-oriented with a dual path: 'See how the AI SDR system works, then book a GTM strategy call to map the right structure and ratios to your pipeline', both anchored to real DevCommX URLs (/ai-sdr and /contact-us).", "score": 5, "max": 5},
+        {"category": "Differentiation", "criterion": "Content Differentiation",
+         "finding": "This fills a genuinely distinct slot: an org-design / team-structure piece in a library otherwise weighted toward AI SDR product posts, and it links out to six of them rather than repeating their arguments, so it acts as a hub that routes to the AI-SDR content.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Clean heading tree and prose, but zero in-body images or diagrams cap the visual score.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Headings", "criterion": "Heading Architecture",
+         "finding": "The hierarchy is clean and unskipped: one H1, seven topical H2s (models, compare, ratio, scaling, signal-based, choose, CTA), then H3s for Further Reading, References, and FAQ, with FAQ questions as H4s underneath. No level is jumped.", "score": 5, "max": 5},
+        {"category": "Visuals", "criterion": "Visual Elements",
+         "finding": "There are no in-body images, diagrams, charts, or infographics, only the generic OG image referenced in schema. The lone visual asset is the one comparison table, which lifts this marginally above a text wall but leaves a topic (evolution island to assembly line to pod, ARR-staged hiring) that is begging for a diagram entirely unillustrated.", "score": 2, "max": 5},
+        {"category": "Scannability", "criterion": "Scannability",
+         "finding": "Skimmers are served by a bold one-line thesis opener, bolded model names and decision-question lead-ins ('The island.', 'The pod.', 'Where is the bottleneck?'), the table, and the FAQ. Weakness: the body relies on bolded paragraph intros rather than bullet lists, so long sections like the ratio explanation run as dense prose.", "score": 4, "max": 5},
+        {"category": "Flow", "criterion": "Reading Level & Flow",
+         "finding": "Complexity fits a founder/RevOps reader and transitions are natural ('Once you split roles...', 'There is a fourth role the ratio quietly assumes...'). It explains jargon in place (SDR, AE, span of control) rather than dumping terms, keeping the flow readable.", "score": 4, "max": 5},
+        {"category": "Length", "criterion": "Content Length & Density",
+         "finding": "At ~2,571 words the length suits a pillar-style structure guide, and density stays high: each section adds a distinct decision (model choice, ratio math, hiring sequence, automation effect) with little repetition or padding, though the closing 'choose your structure' section lightly restates earlier points.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Complete two-node @graph with exact FAQ-to-body match; only the author URL is imperfect.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Article", "criterion": "Article Type Completeness",
+         "finding": "The BlogPosting node carries headline, description, url, datePublished (2026-07-01), dateModified, keywords, image, author, publisher, and mainEntityOfPage. The only flaw is author.url pointing to 'linkedin.com/company/devcommx' (a company page) rather than a personal profile for the Person node.", "score": 4, "max": 5},
+        {"category": "FAQ", "criterion": "FAQPage Structure",
+         "finding": "The FAQPage node holds six entries, each a proper @type Question with an acceptedAnswer of @type Answer and a text value, comfortably exceeding the three-question minimum.", "score": 5, "max": 5},
+        {"category": "Alignment", "criterion": "Schema-to-Content Alignment",
+         "finding": "The six schema FAQ answers match the body FAQ text word for word (e.g. the SDR-to-AE answer 'The workhorse ratio for most B2B outbound teams is 2 to 3 SDRs per AE...' is identical in both), and the schema keywords ('SDR to AE ratio', 'sales team models', 'when to scale a sales team') reflect the actual article.", "score": 5, "max": 5},
+        {"category": "Graph", "criterion": "@graph Implementation",
+         "finding": "A proper @graph array wraps both nodes, each with a distinct @id ('#article' on the BlogPosting and '#faq' on the FAQPage), and mainEntityOfPage is separately identified, so the entities are cleanly cross-referenceable.", "score": 5, "max": 5},
+        {"category": "RichResult", "criterion": "Rich Result Eligibility",
+         "finding": "Rich-result signals are complete: image is a full ImageObject with url plus width 1200 and height 630, publisher is an Organization with a logo ImageObject, and dateModified is present alongside datePublished.", "score": 5, "max": 5}
+      ]
+    }
+  ],
+  "top_fixes": [
+    "Convert the References block into inline citations: link the specific benchmark numbers (10-15 meetings/SDR, 25-40 AE first meetings, 5-8 span of control, 2-3 SDR-to-AE) to Bridge Group/HBR at the point of claim so both readers and LLMs can attribute them.",
+    "Add at least one in-body visual, ideally a diagram of the island to assembly line to pod evolution or an ARR-staged hiring-sequence graphic, to lift Visual Elements above the current 2/5 text-plus-one-table state.",
+    "Attribute the comparison table and the ARR-to-role mapping with a source line or footnote, and fix the schema author.url to point to Sumit Nautiyal's personal profile rather than the DevCommX company page."
+  ]
+}

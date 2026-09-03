@@ -1,0 +1,97 @@
+{
+  "slug": "lead-quality-vs-quantity-b2b",
+  "title": "Lead Quality vs Quantity: Why More Leads Is the Wrong Goal in 2026",
+  "words": 1550,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Strong practitioner reasoning, but the load-bearing stats are hypothetical or vaguely attributed rather than inline-sourced.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Sources", "criterion": "Stat Accuracy & Source Quality", "finding": "The central arithmetic ('If 1,000 leads a month produce 40 sales qualified leads, your SQL rate is 4 percent') is explicitly hypothetical, not a sourced benchmark. The one external stat, '6 to 10 stakeholders', is unlinked, and the Gartner reference is softened to 'only a small slice of the total buying journey with any individual sales rep' rather than a citable figure. Named sources sit in the References list but are not inline-anchored to the specific claims they support.", "score": 3, "max": 5},
+        {"category": "Depth", "criterion": "Practitioner Depth", "finding": "Demonstrates real deployment knowledge: it names second-order failure modes like 'Bad-fit contacts mark your emails as spam, which hurts deliverability for the good accounts' and 'Reps who are drowning in junk stop trusting the queue and cherry-pick.' The rebalance sequence (redefine metric, score before routing, reallocate saved time, keep a nurture lane) reads as an operator's playbook, not a summary.", "score": 4, "max": 5},
+        {"category": "Attribution", "criterion": "Data Attribution", "finding": "The comparison table is a conceptual quantity-vs-quality model with no source line, which is acceptable for a framework but means no metric in it is attributable. Quantitative assertions like the 4 percent SQL rate and 'A funnel that is 30 percent fake leads' are illustrative figures presented without a data source.", "score": 3, "max": 5},
+        {"category": "Technical", "criterion": "Technical Accuracy", "finding": "Concepts (fit vs intent, cost per SQL, signal triggers like funding rounds and competitor switches) are described correctly and nothing is factually wrong for 2026. The post stays conceptual and names no specific tools, pricing, or feature limits, so there is little surface for technical error but also little concrete verification.", "score": 4, "max": 5},
+        {"category": "Completeness", "criterion": "Completeness", "finding": "Every H2 promise is delivered: 'What Lead Quality Actually Means' defines fit plus intent, 'The Math of Volume' runs the cost-per-SQL argument, 'Fake Leads vs Qualified Sales Opportunities' separates the two explicitly, 'The Signal-Based Fix' details triggers, and 'How to Rebalance' gives a four-step sequence. No section is left as a stub.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Textbook keyword and link execution; primary term saturates title, H2s, slug, body and FAQ without stuffing.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Keyword", "criterion": "Primary Keyword Targeting", "finding": "'Lead quality vs quantity' appears in the H1, meta-title, slug (lead-quality-vs-quantity-b2b), two H2s ('Lead Quality vs Quantity: The Math of Volume', 'How to Rebalance Lead Quality vs Quantity'), the opening sentence, and the first FAQ. Secondary variants 'lead quality B2B' and 'fake leads vs qualified sales opportunities' are also worked in naturally.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQ / People Also Ask", "finding": "Six genuine high-intent PAA-style questions are covered, e.g. 'What is a fake lead versus a qualified sales opportunity?' and 'What metrics show lead quality is improving?' Each answer is concise and directly responsive, matching real search phrasing.", "score": 5, "max": 5},
+        {"category": "Tables", "criterion": "Comparison / Featured Snippet Tables", "finding": "The six-row Quantity-Model vs Quality-Model table (Primary metric, Targeting basis, Rep time, Fake lead exposure, Cost trajectory, Revenue signal) is clean HTML with a header row and is well shaped for snippet extraction. It is inline-styled rather than a semantic responsive component, a minor extraction risk.", "score": 4, "max": 5},
+        {"category": "Links", "criterion": "Internal & External Link Structure", "finding": "Five contextual internal links to sibling posts (identifying buying signals, cold email benchmarks, ICP scoring, real-time sales signals, contextual outreach playbook) use descriptive anchors, plus inline external citations to Gartner and a References list of four authoritative domains (Gartner, McKinsey, HBR, Think with Google) with rel='noopener'.", "score": 5, "max": 5},
+        {"category": "Technical", "criterion": "Technical SEO", "finding": "Valid @graph schema is present, the meta-description ('Lead quality vs quantity: why chasing more leads hurts pipeline...') is a well-formed ~150 characters, and H1 matches the article name. The meta-title 'Lead Quality vs Quantity: The 2026 Goal' is safely under 60 chars but slightly generic versus the fuller H1.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.20,
+      "flag": "Highly extractable definitions and clear entity ties; distinct query cluster despite dense internal linking to sibling posts.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Definitions", "criterion": "Direct Definitions", "finding": "Core concepts get bolded, quotable definitions an LLM can lift verbatim: 'Lead quality is the combination of fit and intent' and 'A fake lead is any record that looks like demand but has none behind it.' The opening paragraph also defines the whole trade-off in one sentence.", "score": 5, "max": 5},
+        {"category": "Structure", "criterion": "Structured Data for AI Parsing", "finding": "Parsing surfaces are plentiful: a labeled comparison table, a six-item FAQ, bulleted fake-lead lists, and a bolded four-step rebalance framework. The framework steps are bold lead-ins rather than an explicit numbered/ordered list, slightly reducing machine ordering clarity.", "score": 4, "max": 5},
+        {"category": "Authority", "criterion": "Statistical Authority", "finding": "A dedicated References section names four citable authorities (Gartner on the B2B buying journey, McKinsey's Multiplier Effect, HBR's New Sales Imperative, Think with Google) that an LLM can attribute. However the in-text claims are paraphrased loosely rather than tied to specific figures, so the authority is present but under-leveraged.", "score": 4, "max": 5},
+        {"category": "Entity", "criterion": "Entity Association", "finding": "DevCommX is explicitly bound to the topic: 'At DevCommX we build signal-based outbound systems for a living' and the schema names author Sumit Nautiyal as 'VP of Revenue Operations & GTM Engineering, DevCommX.' The signal-based fix section ties the brand mechanism directly to the quality-lead thesis.", "score": 5, "max": 5},
+        {"category": "Distinctiveness", "criterion": "GEO Distinctiveness", "finding": "The post owns a distinct query cluster (lead quality vs quantity, fake leads vs qualified opportunities) and folds the fake-leads angle in coherently rather than as a bolt-on. It links to but does not duplicate sibling posts on buying signals, ICP scoring and real-time signals, keeping those as companion pieces; slight overlap risk exists with the signal-based content but framing stays quality-first.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Owned-infrastructure narrative and sanctioned 40+ demos proof are both present; value framing exists but no real pricing.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Differentiation", "criterion": "Differentiation Narrative", "finding": "The owned, autonomous, signal-based model is stated sharply: 'DevCommX builds autonomous, signal-based AI SDR and GTM engineering systems that your team owns outright, not a managed campaign you rent.' Signal-vs-list targeting is contrasted throughout as the core mechanism.", "score": 5, "max": 5},
+        {"category": "Proof", "criterion": "Proof Metrics & Evidence", "finding": "The sanctioned framing appears twice: 'from setup to 40 or more qualified demos in roughly six weeks.' It is tied causally to the method ('because the systems trigger on real buying signals rather than static lists') rather than dropped as a bare boast, though it remains the only concrete outcome cited.", "score": 4, "max": 5},
+        {"category": "Pricing", "criterion": "Pricing Transparency", "finding": "No pricing is disclosed. Value framing is present via cost logic: 'it is cheaper to filter a fake lead with software than to pay a salaried rep to discover it is fake' and the own-versus-rent contrast. This is economic framing, not cost or price transparency.", "score": 3, "max": 5},
+        {"category": "CTA", "criterion": "CTA Quality", "finding": "The close carries a specific, conversion-oriented CTA linked to the contact page: 'Book a GTM strategy call to map signal-based targeting to your pipeline,' preceded by a qualifying hook ('If your lead numbers are up and your bookings are flat, the problem is quality').", "score": 4, "max": 5},
+        {"category": "Differentiation", "criterion": "Content Differentiation", "finding": "The post fills a distinct top-of-funnel strategy slot (the quality-vs-quantity debate and fake-lead disqualification) that complements rather than repeats the library's tactical posts on cold email, ICP scoring and signal monitoring, positioning DevCommX on the strategic framing of the problem.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Clean heading hierarchy and strong scannability, but no in-body images beyond a single table drags Visual Elements down.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Headings", "criterion": "Heading Architecture", "finding": "Levels descend logically with no skips: H1 title, five topical H2s, then H3s for Further Reading, References and FAQ, with H4s for each FAQ question. The structure reads as a coherent outline from definition to math to fix to rebalance to CTA.", "score": 4, "max": 5},
+        {"category": "Visuals", "criterion": "Visual Elements", "finding": "There are no in-body images, diagrams, charts or infographics; the only OG image is metadata. The single quantity-vs-quality HTML table is the lone visual break in an otherwise all-text body, so the visual layer is minimal.", "score": 2, "max": 5},
+        {"category": "Scannability", "criterion": "Scannability", "finding": "Skim-readability is strong: a one-paragraph definitional hook, descriptive H2s, bolded lead-ins on the four rebalance steps, a comparison table, bulleted fake-lead and reference lists, and a Q&A FAQ block. A reader can extract the argument from headings and bold text alone.", "score": 4, "max": 5},
+        {"category": "Flow", "criterion": "Reading Level & Flow", "finding": "Prose flows naturally with clear transitions ('There is a compounding effect too', 'The alternative to more is different') and no jargon dump; terms like fit, intent and cost per SQL are defined before use. Tone is confident and readable for a B2B RevOps audience.", "score": 4, "max": 5},
+        {"category": "Length", "criterion": "Content Length & Density", "finding": "At roughly 1,550 words the length suits the topic, with each section earning its place and no filler padding. The listed 11-minute reading time is somewhat generous for the actual word count but density is high and on-point throughout.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Near-exemplary @graph implementation; BlogPosting and FAQPage complete, aligned and rich-result eligible.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Article", "criterion": "Article Type Completeness", "finding": "The BlogPosting node carries headline, description, url, datePublished ('2026-07-01'), dateModified, keywords, image, a full author Person node, publisher, and mainEntityOfPage. All required Article properties are present and correctly typed.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQPage Structure", "finding": "The FAQPage node holds six entries, each a @type Question with an acceptedAnswer of @type Answer and a populated text field, comfortably exceeding the 3-question minimum.", "score": 5, "max": 5},
+        {"category": "Alignment", "criterion": "Schema-to-Content Alignment", "finding": "The six schema FAQ answer texts match the body FAQ paragraphs verbatim, and the schema keywords ('lead quality vs quantity, quality over quantity leads, fake leads vs qualified opportunities, lead quality B2B') mirror the article's actual focus and headings. Description matches the meta-description.", "score": 5, "max": 5},
+        {"category": "Graph", "criterion": "@graph Implementation", "finding": "A proper @graph array wraps both nodes, each with a distinct @id (#article and #faq), and the BlogPosting's mainEntityOfPage @id ties back to the canonical URL. Clean, deduplicated node structure.", "score": 5, "max": 5},
+        {"category": "RichResult", "criterion": "Rich Result Eligibility", "finding": "Rich-result signals are complete: an ImageObject with url plus width 1200 and height 630, a publisher Organization with name, url and logo ImageObject, and a dateModified present alongside datePublished.", "score": 5, "max": 5}
+      ]
+    }
+  ],
+  "top_fixes": [
+    "Inline-anchor the specific claims to their named sources: link '6 to 10 stakeholders' and the buying-journey claim directly to the Gartner reference, and give the 4 percent SQL-rate arithmetic a sourced benchmark or label it clearly as an illustrative model.",
+    "Add at least one in-body visual beyond the table (a fit-vs-intent quadrant diagram or a cost-per-SQL curve) to lift Visual Elements above 2/5 and reinforce the two-axis definition.",
+    "Convert the four bolded rebalance steps into an explicit ordered list and consider adding a HowTo schema block, improving AI parsing of the sequence and snippet eligibility.",
+    "Tighten the meta-title to include more of the distinctive angle (e.g. reference fake leads or signal-based) so it is less generic than 'The 2026 Goal' while staying under 60 characters."
+  ]
+}

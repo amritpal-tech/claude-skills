@@ -1,0 +1,281 @@
+{
+  "slug": "ai-sdr-for-cybersecurity-companies",
+  "title": "AI SDR for Cybersecurity Companies: Agentic Outbound That CISOs Will Not Ignore",
+  "words": 2731,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Strong practitioner depth, but every headline statistic is attributed to an anonymous source and zero stats are inline-linked.",
+      "flag_type": "critical",
+      "criteria": [
+        {
+          "category": "Sources",
+          "criterion": "Stat Accuracy & Source Quality",
+          "finding": "Every quantitative claim uses an unnamed attribution: \"Published estimates put the volume of cold outreach hitting a typical CISO at somewhere between 300 and 400 attempts per month\", \"Surveys keep putting peer recommendation at the top of the trust hierarchy, with one 2026 figure placing it at 79 percent\", \"Two thirds of CISOs already say aggressive vendor marketing makes it hard to separate genuine innovation from AI washing\", and \"trackers counted dozens of cyber related 8-Ks across the first half of 2026\". Not one of these has an inline link; the only four external links sit in a Further Reading list (SEC, CISA KEV, EC NIS2, Google sender guidelines) and none of them is the source of any of those numbers.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Depth",
+          "criterion": "Practitioner Depth",
+          "finding": "The post specifies things only an operator would know: the account brief schema (\"the triggering event with a source URL and a date, the entity classification, the security stack fingerprint from job posts, the security org chart with tenure\") plus the hard rule \"If any of those fields are empty, the account does not get contacted.\" It also names three concrete approval tiers, routes technical triggers to \"the architect or detection engineering lead\" instead of the CISO, and prescribes suppression for \"accounts in active incident response\" and \"anyone who has asked a peer community about you in the last 30 days\".",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Attribution",
+          "criterion": "Data Attribution",
+          "finding": "The six-row signal table asserts precise timing windows with no source column and no citation anywhere: \"Weeks 6 to 26 after disclosure, not week one\", \"Days 30 to 120 of tenure\", \"6 to 9 months before the enforcement date\", \"30 to 90 days post announcement\". The same applies to the measurement thresholds \"Below 40 percent means your data sources are too thin\" and \"If it is above 90 percent, your threshold is too loose\" and to \"Median CISO tenure sits in the 18 to 26 month range at many organizations\" - all presented as bare assertions rather than sourced or explicitly labelled as DevCommX internal benchmarks.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Accuracy",
+          "criterion": "Technical Accuracy",
+          "finding": "The regulatory and deliverability specifics are correct for 2026: SEC 8-K Item 1.05 with \"within four business days of determining an incident is material\", the voluntary Item 8.01 route, CISA KEV, DORA \"in force since January 2025\", Google and Yahoo bulk sender rules from \"February 2024\", Microsoft's Outlook.com enforcement \"for senders above 5,000 messages a day in May 2025\", and the \"0.3 percent threshold with 0.1 percent as the working target\". The one shaky item is \"NIS2 obligations are landing across EU member states with October 2026 functioning as the practical operational deadline\" - the directive's transposition deadline was October 2024, so this date needs a source or a rewrite.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Coverage",
+          "criterion": "Completeness",
+          "finding": "Eight of the nine H2s fully deliver: the signals H2 produces a six-signal table, \"What To Measure\" produces five named metrics, and \"A Realistic Build Sequence\" produces a week-by-week arc through \"Week six is live send at deliberately low volume\". The gap is \"Message Like A Practitioner, Not A Vendor\", which promises copy craft but ships only one fragment - \"Your 8-K on March 4 flagged lateral movement in a third party environment\" - and a ban list, with no complete example message for any of the six signal types.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Keyword and technical hygiene are clean, but the exact-match phrase never appears in an H2 and there are zero inline external citations.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Keywords",
+          "criterion": "Primary Keyword Targeting",
+          "finding": "The exact phrase \"AI SDR for cybersecurity companies\" opens the first sentence in bold, and appears in the title, slug ai-sdr-for-cybersecurity-companies, meta-title \"AI SDR for Cybersecurity Companies: What Works\", meta-description and FAQ H4 \"What is an AI SDR for cybersecurity companies?\". However it appears only twice in 2,731 words of body copy and in none of the nine H2s - those use \"Security Buyers\", \"Volume Optimized AI SDRs\" and \"The Real Send Math\" instead, so no H2 carries the exact-match head term.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQ / People Also Ask",
+          "finding": "Six H4 questions map to genuine high-intent queries: \"Do AI SDRs actually work when selling to CISOs?\", \"How many emails per day should a cybersecurity AI SDR send?\", \"Is it safe to use AI generated outreach when selling security software?\". Answers are self-contained and lead with the direct response (\"Roughly 30 to 80 fully researched touches per day across a pool of mailboxes, not thousands\"). Missing the two most commercially obvious PAA variants for this cluster - cost/pricing of an AI SDR for a security vendor, and best tools/platforms for cybersecurity outbound.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Snippets",
+          "criterion": "Comparison / Featured Snippet Tables",
+          "finding": "One well-built 6-row table with a clean thead (Signal / Where to detect it / Useful window / Correct first move) inside an overflow-x wrapper, which is a strong snippet and AI-extraction candidate. Extraction is weakened by prose-length cells - \"Silence during response, then a remediation focused note to the architect, never the CISO first\" runs 16 words - and by the fact that this is the only table in a 2,731-word post covering metrics, approval tiers and a six-week build sequence that would each table cleanly.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Links",
+          "criterion": "Internal & External Link Structure",
+          "finding": "Five internal links with descriptive anchors (\"definitive guide to AI SDRs\", \"B2B buying signals guide\", \"event based outbound playbook\", \"B2B email deliverability guide\", \"human in the loop AI SDR orchestration\") and all five resolve to slugs that exist in _existing_slugs.txt. The external side is the weakness: all four outbound links are dumped into a trailing \"Further Reading\" <ul>, so claims like the 300-400 attempts per month figure, the 79 percent peer-trust number and the Microsoft 5,000/day rule carry no inline citation at the point of assertion.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical SEO",
+          "finding": "meta-title is 46 characters and meta-description is 154 characters, both inside safe limits; valid JSON-LD is present in schema-markup; the body correctly contains no H1 (the Webflow template supplies it from name) and starts at H2. One inconsistency: the schema headline reads \"AI SDR for Cybersecurity Companies: Agentic Outbound CISOs Will Not Ignore\" while the CMS name reads \"...Agentic Outbound That CISOs Will Not Ignore\", and the schema description is a third, different string from meta-description.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.2,
+      "flag": "Excellent extractable definition and a genuinely uncontested query cluster, undercut by anonymous stats and frameworks buried in prose instead of lists.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Definitions",
+          "criterion": "Direct Definitions",
+          "finding": "The first paragraph is a textbook extractable definition: \"An AI SDR for cybersecurity companies is an autonomous outbound system that monitors security specific buying signals such as breach disclosures, new CISO hires, compliance deadlines and funding rounds, researches each account before it writes a single line, then sends a small volume of highly credible, evidence backed messages.\" It is reinforced by the bolded thesis \"relevance beats volume\" and restated independently in FAQ 1, giving an LLM two self-contained definitional passages.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Structure",
+          "criterion": "Structured Data for AI Parsing",
+          "finding": "There is one strong parsing asset (the six-signal table) and a valid FAQPage, but the other three frameworks are compressed into prose paragraphs. The five measurement metrics all live inside a single <p> separated only by bold lead-ins (\"Signal to brief conversion... Brief to send conversion... Domain health.\"), the three approval tiers run as one continuous sentence chain (\"Tier one... Tier two... Tier three...\"), and the six-week build sequence is a single narrative paragraph. The entire post contains just one <ul> with four <li>, and that list is the Further Reading block.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Authority",
+          "criterion": "Statistical Authority",
+          "finding": "The citable-entity claims are good: \"SEC Form 8-K Item 1.05\", \"CISA Known Exploited Vulnerabilities catalog\", \"NIS2\", \"DORA, in force since January 2025\", \"the Google and Yahoo bulk sender requirements took effect in February 2024\", \"the 0.3 percent threshold\". The headline statistics an LLM would most want to quote are all orphaned: \"Published estimates put\", \"Surveys keep putting\", \"one 2026 figure placing it at 79 percent\", \"There are more than 5,000 security vendors globally and directories now map north of 8,500 discrete products\" - no named research firm, report or year attached to any of them.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Entity",
+          "criterion": "Entity Association",
+          "finding": "First-person operator framing appears early - \"We build outbound systems for a living, and cybersecurity is the vertical where the standard AI SDR playbook breaks hardest\" - and the closing section ties the brand to the exact niche: \"DevCommX builds autonomous, signal based AI SDR systems that your team owns, including the security specific version described here\". Author Sumit Nautiyal with title \"VP of Revenue Operations & GTM Engineering, DevCommX\" is present in fields and schema. The literal string \"DevCommX\" appears only twice in 2,731 words of body, both in the final CTA section, so entity density across the article itself is thin.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Distinctiveness",
+          "criterion": "GEO Distinctiveness",
+          "finding": "None of the 149 slugs in _existing_slugs.txt covers a cybersecurity or security vertical - the closest are llmo-for-b2b-saas-get-cited-by-ai and saas-gtm-strategy-modern-marketing-revenue - so this claims an uncontested vertical cluster. The sibling pending drafts outbound-sales-for-msps-managed-service-providers and outbound-lead-generation-accounting-advisory-firms target different verticals, and the post explicitly defers the generic mechanics to the linked \"definitive guide to AI SDRs\" rather than re-explaining them, which prevents cannibalisation of the pillar.",
+          "score": 5,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Ownership narrative and the sanctioned 40+ demos proof are both present; pricing or cost framing is entirely absent.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Differentiation",
+          "criterion": "Differentiation Narrative",
+          "finding": "The owned-infrastructure model is stated explicitly twice: \"a system the company owns outright rather than a campaign rented from an agency\" and \"DevCommX builds autonomous, signal based AI SDR systems that your team owns\". The signal-based thesis is the spine of the whole piece, not a bolt-on - \"budget in this category is event driven... They get forced into evaluation by an incident, an auditor, a regulator, a board question or a new leader with a mandate\" - and the build order \"signals first, research second, messaging third, sending last\" restates it operationally.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Proof",
+          "criterion": "Proof Metrics & Evidence",
+          "finding": "The sanctioned framing appears twice and is correctly bounded: \"the same six week arc we use to get clients from a cold start to 40 or more qualified demos\" and \"Clients typically go from setup to 40 or more qualified demos in around six weeks\". What is missing is any cybersecurity-specific evidence - no named or anonymised security-vendor client, no before/after reply rate on a triggered versus static list, and no result attached to the very metric the post itself calls decisive (\"Positive reply rate on triggered accounts versus a static list control\").",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Pricing",
+          "criterion": "Pricing Transparency",
+          "finding": "There is no cost, price band, retainer, build fee or ROI model for the DevCommX engagement anywhere in 2,731 words. The only dollar figure in the article describes the prospect's own deal size - \"On anything above roughly 100,000 dollars in annual contract value, expect a three to nine month evaluation\" - which is buyer context, not vendor pricing. Even soft value framing is limited to \"it spends the saved compute on research depth\", with no cost-per-meeting or budget expectation for the reader.",
+          "score": 1,
+          "max": 5
+        },
+        {
+          "category": "CTA",
+          "criterion": "CTA Quality",
+          "finding": "The close is a dedicated H2 \"Build This With DevCommX\" that restates the specific deliverables (\"regulatory and incident signal monitoring, evidence gated account briefs, human review tiers, and sending infrastructure built to survive a technical audience\") and ends with a concrete action: \"Book a GTM strategy call\" linking to https://www.devcommx.com/contact. It is the only conversion point in the piece - there is no mid-article CTA after the high-intent signals table or the deliverability section, both natural offer moments.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Library Fit",
+          "criterion": "Content Differentiation",
+          "finding": "This is the first vertical-specific AI SDR post in the library - no cybersecurity slug exists among the 149 published - and it fills the \"AI SDR applied to a hostile, high-scrutiny buyer\" slot rather than repeating platform comparisons or ROI math already covered by ai-sdr-pricing, best-ai-sdr-platforms and ai-sdr-roi-calculator-cost-per-meeting. It also functions as a hub, pushing traffic to five existing posts rather than duplicating them.",
+          "score": 5,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Clean prose and heading logic, but zero in-body visuals and heavy reliance on dense bold-led paragraphs instead of lists.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Headings",
+          "criterion": "Heading Architecture",
+          "finding": "Nine H2s progress logically from failure mode to signals to research to messaging to send math to human review to measurement to build sequence to CTA, with no skipped levels and a correct H3 \"FAQ\" over six H4 questions. The one structural oddity is that both H3s (\"Further Reading\" and \"FAQ\") sit after the CTA H2 \"Build This With DevCommX\", which makes the sales section the semantic parent of the FAQ block rather than giving the FAQ its own H2.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Visuals",
+          "criterion": "Visual Elements",
+          "finding": "The body contains zero <img> tags, zero diagrams, zero charts and zero embedded media across 2,731 words - the only visual asset is the shared OG image at 69ce06f820d4562027a83191_imresizer-DevCommX-Blog-OG.png, which is external to the article body. The single HTML table is the only non-text element, and content that is explicitly visual in nature (the signal decay half-life timeline, the three-tier human review gate, the six-week build sequence) is delivered entirely as prose.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Scannability",
+          "criterion": "Scannability",
+          "finding": "The hook is strong (bolded definition plus \"relevance beats volume\") and bold lead-ins carry a lot of the skim load: \"The buyer already did the research.\", \"The committee is technical and slow.\", \"The tells are brutal.\", \"Suppression is a feature, not an afterthought.\" But there is only one <ul> in the entire post and it is Further Reading, so a skimmer hits solid paragraph blocks in the measurement section, where all five metrics are crammed into one <p>, and in the build sequence, which is a single unbroken paragraph covering six weeks.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Readability",
+          "criterion": "Reading Level & Flow",
+          "finding": "The register matches a technical GTM buyer without becoming a jargon dump - regulatory terms are glossed in place (\"classify an account as an essential or important entity and map that to specific control requirements\") and transitions are explicit (\"Two of these deserve extra care\", \"In most verticals, an AI SDR is roughly 20 percent research and 80 percent sending. In cybersecurity, invert it.\"). Sentences are varied, there is no em dash padding, and each section ends on a decision rather than a summary.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Length",
+          "criterion": "Content Length & Density",
+          "finding": "2,731 words against a declared 12-minute reading time is proportionate, and the depth is justified by a topic that spans SEC disclosure timing, NIS2/DORA classification, enrichment decay and sender infrastructure. Density is high with little padding - the closest thing to filler is the restated build sequence, which covers the same six weeks in the \"A Realistic Build Sequence\" H2 and again in FAQ 6 (\"Weeks one and two cover signal sources and account classification...\"), a deliberate FAQ duplication rather than bloat.",
+          "score": 5,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Valid two-node @graph with a verbatim FAQ match; headline drift and a publisher logo reusing the OG image are the remaining defects.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Article",
+          "criterion": "Article Type Completeness",
+          "finding": "The BlogPosting node carries all required properties: headline, description, url, datePublished \"2026-07-01\", dateModified \"2026-07-01\", a seven-term keywords string (\"ai sdr for cybersecurity companies, ai sdr cybersecurity, selling to cisos, signal based prospecting, cybersecurity outbound, agentic outbound, gtm engineering\"), image, author Person \"Sumit Nautiyal\" with jobTitle, publisher and mainEntityOfPage. Nothing required is missing; only optional enrichments like wordCount and articleSection are absent.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQPage Structure",
+          "finding": "The FAQPage node holds six mainEntity items, each a proper @type Question with a name and an acceptedAnswer of @type Answer carrying a plain-text text value - well above the 3-question minimum. Answers are full-length and self-contained, for example \"Roughly 30 to 80 fully researched touches per day across a pool of mailboxes, not thousands. Keep per mailbox volume conservative, run SPF, DKIM and DMARC on dedicated sending domains...\", with no HTML residue or truncation.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Alignment",
+          "criterion": "Schema-to-Content Alignment",
+          "finding": "All six schema FAQ names and all six acceptedAnswer.text values were compared string-for-string against the body H4/paragraph pairs and match exactly, with no drift. Keywords also map to real body content (breach disclosure, CISO hires, NIS2/DORA). The defect is the headline: schema says \"AI SDR for Cybersecurity Companies: Agentic Outbound CISOs Will Not Ignore\" while the CMS name says \"...Agentic Outbound That CISOs Will Not Ignore\" - the word \"That\" is dropped - and the schema description is a third distinct string from the 154-character meta-description.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Graph",
+          "criterion": "@graph Implementation",
+          "finding": "A proper @graph array is used with a single @context, and both nodes are individually addressed: \"@id\": \".../ai-sdr-for-cybersecurity-companies#article\" and \".../ai-sdr-for-cybersecurity-companies#faq\". What is missing is any linkage between them - there is no WebPage node, no BreadcrumbList, no isPartOf or mainEntity reference joining the FAQPage to the article @id, so the two nodes sit in the graph as unconnected islands.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Rich Results",
+          "criterion": "Rich Result Eligibility",
+          "finding": "image is a full ImageObject with url plus width 1200 and height 630, publisher is an Organization with name, url and a logo ImageObject, and dateModified is present. Two eligibility risks: the publisher logo url is the identical 1200x630 OG file (69ce06f820d4562027a83191_imresizer-DevCommX-Blog-OG.png) rather than a genuine logo asset, and author.url points to https://www.linkedin.com/company/devcommx - a company page, not Sumit Nautiyal's person profile - which weakens author entity resolution.",
+          "score": 3,
+          "max": 5
+        }
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Replace the four anonymous statistic attributions with named, inline-linked sources at the point of claim: the \"300 and 400 attempts per month\" CISO outreach figure, the \"79 percent\" peer-recommendation number, the \"Two thirds of CISOs\" AI-washing claim, and the \"more than 5,000 security vendors... north of 8,500 discrete products\" counts. If a number is a DevCommX internal benchmark, label it as such explicitly.",
+    "2. Add a source or timing note to the signal table's window column (\"Weeks 6 to 26 after disclosure\", \"Days 30 to 120 of tenure\", \"6 to 9 months before the enforcement date\") and to the \"Below 40 percent\" / \"above 90 percent\" measurement thresholds, so an LLM or a skeptical CISO can trace where the ranges come from.",
+    "3. Fix the NIS2 date claim - \"October 2026 functioning as the practical operational deadline\" conflicts with the directive's October 2024 transposition deadline. Either cite the specific member-state or supervisory milestone that lands in October 2026, or rewrite to reference the enforcement cycle instead of a single date.",
+    "4. Break the prose-locked frameworks into parseable markup: convert the five measurement metrics from one <p> into a <ul> or table, the three approval tiers into a 3-row table with trigger/reviewer/rule columns, and the six-week build sequence into an ordered list. The post currently has only one <ul> and it is Further Reading.",
+    "5. Add 2-3 in-body visuals - a signal half-life timeline, a diagram of the detect-research-draft-gate-send pipeline, and an account brief schema card. The body currently has zero <img> tags, which caps Visual Elements at 2/5.",
+    "6. Add at least one complete example message under \"Message Like A Practitioner, Not A Vendor\". The section currently ships only the fragment \"Your 8-K on March 4 flagged lateral movement in a third party environment\" and a ban list, with no full send for any of the six signal types.",
+    "7. Sync the schema headline to the CMS name by restoring the dropped word \"That\" (\"Agentic Outbound That CISOs Will Not Ignore\"), swap the publisher logo url off the 1200x630 OG image onto a real logo asset, and point author.url at Sumit Nautiyal's personal LinkedIn instead of linkedin.com/company/devcommx.",
+    "8. Add cost or value framing - even a range for building the security-specific system, or a cost-per-qualified-demo comparison against an SDR hire - since the article currently contains no DevCommX pricing signal at all, and add one mid-article CTA after the signals table."
+  ]
+}

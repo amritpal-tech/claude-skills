@@ -1,0 +1,280 @@
+{
+  "slug": "linkedin-connection-request-limits-2026-safe-outreach",
+  "title": "LinkedIn Connection Request Limits in 2026 (and How to Run Outreach Without Getting Throttled)",
+  "words": 2798,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Practitioner depth is excellent, but every number in the piece is self-asserted: zero inline external citations and an unattributed 'Observed weekly invite ceiling' table.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Sources",
+          "criterion": "Stat Accuracy & Source Quality",
+          "finding": "There are exactly zero inline external citations in the body. All four authoritative sources (LinkedIn Help 'Commercial use limit', 'Prohibited software and extensions', 'Restricted accounts', and 'LinkedIn User Agreement, Section 8.2 Don'ts') are dumped into a 'Further Reading' <ul> at the very end, so the load-bearing claims sit uncited where the reader meets them. The commercial-use paragraph even paraphrases LinkedIn's own help text ('LinkedIn states plainly that it will not tell you how many you have left ... resets at midnight Pacific on the first of each calendar month') without linking the a564226 article that is sitting two paragraphs below.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Depth",
+          "criterion": "Practitioner Depth",
+          "finding": "This reads like someone who has actually broken accounts: 'The window resets seven days after the first invitation in the current cycle, which is why teams that plan around Monday resets keep getting blocked mid week', the four-week ramp (5/8/12/15 a day with a 35 percent acceptance gate before pushing to 20), and 'never change sending volume and sending infrastructure in the same week'. The re-invite lockout detail ('after you withdraw an invitation, you cannot re-invite that person for about three weeks, so do not withdraw anyone you still intend to reach') is the kind of operational trap only a practitioner surfaces.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Attribution",
+          "criterion": "Data Attribution",
+          "finding": "The five-row table is headed 'Observed weekly invite ceiling' but never says observed by whom, across how many accounts, or over what period; the '150 to 200 reported for mature high trust accounts' cell attributes to nobody. Same for the free-account note allowance, hedged as 'widely observed as around five', and the restriction-trigger ranking introduced as 'In order of how often we see them cause damage' with no seat count, sample, or client-data callout behind 'we see'.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Accuracy",
+          "criterion": "Technical Accuracy",
+          "finding": "The 2026-relevant specifics hold up: Sales Navigator at '50 InMail credits a month', 'Free accounts get zero InMail credits', notes 'capped at 300 characters including spaces and line breaks', and the commercial-use reset 'at midnight Pacific on the first of each calendar month' are all correct, and the piece is careful to say LinkedIn 'has never published a hard invitation number'. The weak point is 'Through early 2026 LinkedIn escalated enforcement against several popular LinkedIn automation vendors' — no vendor named, no month, no source, so an unverifiable claim is doing the heaviest lifting in the restrictions section.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Coverage",
+          "criterion": "Completeness",
+          "finding": "All nine H2 promises are paid off in the body: 'What the 2026 Limits Actually Are' delivers the per-account/account-age explanation plus the table, 'Safe Daily Numbers and a Warm Up Ramp That Works' delivers explicit week-one-to-four numbers, 'The Limits That Bite Before the Weekly Cap' delivers four named adjacent limits (pending queue, commercial use, personalized notes, InMail), and 'A Sane Weekly Operating Cadence' delivers a Monday-to-Friday schedule. No stub sections and no unanswered setup from the intro.",
+          "score": 5,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Strong meta/FAQ/table foundation; the gap is exact-match keyword absence from every H2 and the lack of any inline external citation.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Keywords",
+          "criterion": "Primary Keyword Targeting",
+          "finding": "'LinkedIn connection request limits' is in the slug, the H1/name, the meta-title ('LinkedIn Connection Request Limits 2026: Safe Outreach'), the meta-description, and FAQ Q1 ('How many LinkedIn connection requests can I send per week in 2026?'), and the opening line leads with the answer. But the exact phrase 'connection request' appears only 4 times in 2,798 words because the body switches to 'invitation'/'invite' throughout, and not one of the nine H2s carries the exact term — the closest is 'What the 2026 Limits Actually Are'.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQ / People Also Ask",
+          "finding": "Six FAQs, all phrased as genuine PAA queries and all high-intent: 'Does Sales Navigator increase the connection request limit?', 'How many connection requests can I safely send per day?', 'Do pending invitations count against my limit?', 'What acceptance rate do I need to avoid LinkedIn restrictions?'. Answers open with a direct verdict ('Not directly.', 'Yes, indirectly and painfully.') which is ideal snippet shape. Only obvious miss is 'How long does a LinkedIn restriction last?' — the one-to-three-week answer exists in the body but never gets its own FAQ.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Tables",
+          "criterion": "Comparison / Featured Snippet Tables",
+          "finding": "One clean comparison table with proper thead/tbody, four columns ('Account type', 'Observed weekly invite ceiling', 'Sustainable daily pace', 'What actually changes') and five rows spanning new account through post-restriction — genuinely snippet-extractable. It is however buried in a <div data-rt-embed-type='true'> wrapper with fully inline styles and no lead-in sentence or caption introducing it, and it is the only table in a 2,798-word article that has at least two more tabulatable sets (the four restriction triggers, the four growth levers).",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Links",
+          "criterion": "Internal & External Link Structure",
+          "finding": "Three internal links, all with descriptive anchors ('B2B outbound automation guide', 'contextual outreach playbook', 'B2B outbound tool stack') and all three verified against _existing_slugs.txt as live posts, plus one CTA to /contact. The external side is the problem: 4 strong LinkedIn Help/legal URLs exist but 0 of them are inline — every one is parked in the closing 'Further Reading' list, and the two obvious LinkedIn sibling posts (linkedin-outreach-templates-2026, linkedin-sales-strategy-b2b-pipeline) get no internal link at all.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical SEO",
+          "finding": "meta-title is 54 characters and meta-description is 158 characters, both inside limits; schema-markup is present, parses, and uses @graph. Body correctly contains no <h1> (the Webflow template supplies it from name) and starts at H2. Minor structural flaw: 'Further Reading' and 'FAQ' are H3s nested under the final H2 'Build This With DevCommX', so the citation list and the entire FAQ block are markup-children of the CTA section rather than top-level.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.2,
+      "flag": "Definitions and FAQ are citation-ready, but nearly every number is hedged and unattributed ('roughly', 'widely observed', 'reported'), giving an LLM nothing to attribute.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Definitions",
+          "criterion": "Direct Definitions",
+          "finding": "The opening sentence is a clean extractable definition: 'LinkedIn caps connection requests at roughly 100 invitations per rolling seven day window in 2026'. Reinforced by 'The cap is per account, not per subscription.', 'Sales Navigator is a targeting and intelligence product.', and a usable definition of the commercial use limit ('Free accounts get a monthly allowance of people searches and profile views before LinkedIn cuts them off'). Missing crisp one-line definitions for the two concepts the article leans on hardest — 'account health' and 'acceptance rate' are used ~15 times but never defined as terms.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Structure",
+          "criterion": "Structured Data for AI Parsing",
+          "finding": "The table and the six-question FAQ are strong parsing anchors, but the two frameworks in the article are fake lists: the restriction triggers are '<p><strong>1. Prohibited tooling.</strong>' through '4. Session anomalies' as separate paragraphs, and the 'Four levers matter' section is four bolded paragraphs, neither wrapped in <ol> or <ul>. The only real semantic list in the entire post is the 4-item Further Reading <ul>, so <li> count for the whole article is 4.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Statistics",
+          "criterion": "Statistical Authority",
+          "finding": "Almost nothing here is attributable. The core figures are hedged and sourceless: 'a soft ceiling near 100', 'Roughly 100 baseline, 150 to 200 reported', 'widely observed as around five', 'thousands of operators observe consistently'. The only claims an LLM could safely attribute are the User Agreement and commercial-use ones, and because those links live in Further Reading rather than beside the sentence, the association is not machine-obvious. The one first-party stat, '40 or more qualified demos in around six weeks', is brand proof, not topic proof.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Entity",
+          "criterion": "Entity Association",
+          "finding": "DevCommX appears 3 times and is tied to the topic credibly ('We build outbound systems for a living at DevCommX', 'Here is the cadence we install for teams running LinkedIn as part of a broader outbound system', and the closing 'DevCommX builds autonomous, signal based AI SDR and outbound systems'). The author entity is missing from the visible article entirely — 'Sumit Nautiyal' and 'VP of Revenue Operations & GTM Engineering' exist only in the CMS fields and JSON-LD, never in the body, so an LLM extracting the page text finds no named human expert behind the operational claims.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Distinctiveness",
+          "criterion": "GEO Distinctiveness",
+          "finding": "The query cluster is genuinely distinct — platform limits, throttling, warm-up ramps, restrictions — and does not overlap the existing linkedin-outreach-templates-2026 (message copy) or linkedin-sales-strategy-b2b-pipeline (strategy) posts. Residual risk is that the 'Acceptance Rate Is the Real Constraint' and 'How to Grow Pipeline Without Fighting the Cap' sections drift into signal-based prospecting territory already owned by signal-based-prospecting-guide and identify-buying-signals-outbound, and neither of those siblings is linked to disambiguate.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Owned-infrastructure narrative and the 40+ demos proof both land cleanly; no cost or value framing anywhere in 2,798 words.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Differentiation",
+          "criterion": "Differentiation Narrative",
+          "finding": "Explicitly stated in the closing section: 'DevCommX builds autonomous, signal based AI SDR and outbound systems that your team owns outright, not a managed campaign you rent', extended with 'LinkedIn, email, and enrichment firing off the same real buying signals, with account health and acceptance rate instrumented as first class metrics'. The signal-based thesis is also woven into the body rather than bolted on — 'Route by signal, not by list.' and 'Reserve the weekly 100 for accounts showing a real trigger this week: a relevant hire, a funding event, a tech stack change'.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Proof",
+          "criterion": "Proof Metrics & Evidence",
+          "finding": "The sanctioned framing is present and correctly conditioned: 'clients typically go from setup to 40 or more qualified demos in around six weeks'. That is the only proof point in the article though — 'the pattern is consistent' and 'the cadence we install for teams' are asserted with no client count, no named example, and no before/after acceptance-rate figure from an actual deployment, which the topic invites naturally.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Pricing",
+          "criterion": "Pricing Transparency",
+          "finding": "No cost figure appears anywhere. The article repeatedly circles pricing without ever landing on it: 'Paying more does not buy more invites', 'Teams upgrade a dozen reps to Sales Navigator expecting throughput to roughly double', 'which is the real reason most outbound teams need a paid tier' — yet it never states what Sales Navigator costs per seat, never quantifies the wasted spend of that dozen-seat upgrade, and gives no DevCommX engagement or value framing.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "CTA",
+          "criterion": "CTA Quality",
+          "finding": "One specific, conversion-oriented CTA in a dedicated 'Build This With DevCommX' H2 section: 'Book a GTM strategy call' linking to https://www.devcommx.com/contact, preceded by a concrete value statement rather than a generic ask. Weakness is placement only — it is the sole CTA in a 13-minute read, with nothing offered at the natural mid-article exit points after the ramp section or the operating-cadence section.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Differentiation",
+          "criterion": "Content Differentiation",
+          "finding": "Fills a slot the 149-post library does not currently cover: an operational platform-limits reference, distinct from linkedin-outreach-templates-2026 and linkedin-sales-strategy-b2b-pipeline, and it links outward to three existing posts (b2b-outbound-automation-guide, contextual-outreach-playbook-buying-signals-meetings, b2b-outbound-tool-stack) rather than duplicating them. Marginal overlap with multi-channel-outbound-strategy in the 'Make LinkedIn one channel, not the channel' section, which is unlinked.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "No in-body images or diagrams at all — one table is the only visual break across 2,798 words.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Headings",
+          "criterion": "Heading Architecture",
+          "finding": "Nine H2s in a logical progression (limits, Sales Navigator myth, safe numbers, acceptance rate, adjacent limits, restriction triggers, growth levers, cadence, CTA), with two H3s and six H4 FAQ questions and no skipped levels; the missing <h1> in the body is correct because the Webflow template renders the name field as H1. The flaw is nesting: 'Further Reading' (H3) and 'FAQ' (H3) fall under the final H2 'Build This With DevCommX', making the citations and FAQ subsections of the sales pitch.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Visuals",
+          "criterion": "Visual Elements",
+          "finding": "Zero <img> tags in the body — no diagrams, charts, screenshots, or infographics; the only asset is the shared OG image (imresizer-DevCommX-Blog-OG.png), which never renders in-article. The single HTML comparison table is the lone visual break across 2,798 words, and the content is unusually visualisable: the four-week ramp (5/8/12/15 a day) and the acceptance-rate arithmetic (100 invites at 15 percent vs 45 percent) are both begging for a chart.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Scannability",
+          "criterion": "Scannability",
+          "finding": "Strong bolded-lede pattern makes it skimmable — 22 <strong> tags carrying paragraph topic sentences like 'Treat 30 percent as the floor.', 'Route by signal, not by list.', 'The cap is per account, not per subscription.', plus a hard answer in the first sentence and one comparison table. Undercut by the near-total absence of bullets: only 4 <li> exist in the whole article and all 4 are the Further Reading links, so the four restriction triggers and four growth levers read as dense paragraph runs.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Readability",
+          "criterion": "Reading Level & Flow",
+          "finding": "Clean operator prose with real transitions rather than connective filler — 'That single constraint reshapes how any serious outbound team plans LinkedIn', 'The indirect effect is real, though, and it is worth understanding', 'Once you accept that 100 invitations a week is a fixed input, the problem changes shape'. Abstractions are immediately grounded in arithmetic ('At 100 invitations a week and a 15 percent acceptance rate, one seat produces about 15 new connections weekly'), and jargon is explained rather than dumped.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Length",
+          "criterion": "Content Length & Density",
+          "finding": "2,798 words against a declared 13-minute read time (~215 wpm, consistent), which is right for a reference-style limits post that has to cover five account tiers, four adjacent limits, four restriction triggers, and a ramp schedule. Density holds throughout — no restated intro, no filler conclusion; the closing 'That is the entire game. The cap is not the constraint you should be managing. The quality of the 100 is.' is the only rhetorical flourish and it is two lines long.",
+          "score": 5,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Valid @graph with complete BlogPosting and 6 verbatim-matching FAQPage entries; graph is thin (no WebPage/Breadcrumb, no @id on author) and the Person url points at a company page.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Article",
+          "criterion": "Article Type Completeness",
+          "finding": "The BlogPosting node carries every required property: headline matching the name field exactly, description, url, datePublished and dateModified ('2026-07-01'), a six-term keywords string ('linkedin connection request limits 2026 safe, linkedin weekly invitation limit, ... sales navigator connection limit, linkedin account restriction, b2b outbound'), image, author Person with jobTitle, publisher, and mainEntityOfPage. Headline is 94 characters, safely under Google's 110-character truncation.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQPage Structure",
+          "finding": "A separate FAQPage node holds 6 entries — double the 3-question minimum — and every one is correctly typed as @type Question with a name and an acceptedAnswer of @type Answer carrying a text string. Answers are substantive (60 to 80 words each, e.g. the full 'Not directly. Sales Navigator does not come with a documented higher invitation cap...' response) rather than truncated stubs.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Alignment",
+          "criterion": "Schema-to-Content Alignment",
+          "finding": "Programmatic diff of all six schema answers against the body H4/P pairs returns a verbatim match on 6 of 6 — question names and answer text are byte-identical to the rendered FAQ. The schema description ('the roughly 100 per week cap across free, Premium, and Sales Navigator, safe daily numbers, warm up ramps, and what triggers restrictions') accurately mirrors the article's actual sections, and each keyword term (Sales Navigator cap, account restriction, weekly invitation limit) maps to a real H2.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Graph",
+          "criterion": "@graph Implementation",
+          "finding": "@graph is used correctly with two nodes, each carrying a distinct fragment @id ('...#article' and '...#faq'). But the graph is unwired and incomplete: the FAQPage has no isPartOf or mainEntityOfPage pointing back to #article, there is no WebPage, Organization, or BreadcrumbList node to link to, and neither the author Person nor the publisher Organization has an @id, so nothing can be referenced or deduplicated. The author's url is also https://www.linkedin.com/company/devcommx — a company page standing in for the Person entity Sumit Nautiyal.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Rich Results",
+          "criterion": "Rich Result Eligibility",
+          "finding": "The eligibility basics are all present: image is a full ImageObject with explicit width 1200 and height 630, publisher is an Organization with name, url, and a logo ImageObject, and dateModified is set. Two defects: the publisher logo reuses the same 1200x630 OG file ('imresizer-DevCommX-Blog-OG.png') instead of an actual logo asset, which fails Google's logo guidance, and dateModified is identical to datePublished ('2026-07-01') so the post carries no freshness signal.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Move the four LinkedIn sources inline. Link the a564226 Help page directly on 'LinkedIn states plainly that it will not tell you how many you have left', the User Agreement 8.2 link on 'forbids using software, scripts, bots, browser plugins, or extensions', and the a1339724 restricted-accounts page on 'it typically runs one to three weeks' — the Further Reading list currently strands 4 of 4 external citations at the bottom of the page.",
+    "2. Attribute the table. Rename 'Observed weekly invite ceiling' to state the source and sample (e.g. 'Observed across N DevCommX-managed seats, Q1-Q2 2026') and either name the vendors and month behind 'Through early 2026 LinkedIn escalated enforcement against several popular LinkedIn automation vendors' or cite it — right now the single most consequential claim in the restrictions section is unverifiable.",
+    "3. Add two in-body visuals: a ramp chart for the week-1-to-4 schedule (5/8/12/15 invites a day) and a bar comparison of 100 invites at 15 vs 30 vs 45 percent acceptance. The article currently has zero <img> tags and one table across 2,798 words.",
+    "4. Convert the fake lists to real markup. The four restriction triggers ('1. Prohibited tooling' through '4. Session anomalies') and the four growth levers are bolded <p> runs; wrap them in <ol>/<ul> so the article has more than 4 <li> and AI parsers can extract both frameworks.",
+    "5. Name the author in the body and add cost framing. Insert a 'Sumit Nautiyal, VP of Revenue Operations & GTM Engineering at DevCommX' attribution on the operational claims (currently the author exists only in CMS fields and JSON-LD), and quantify the Sales Navigator seat cost behind 'Teams upgrade a dozen reps to Sales Navigator' so Pricing Transparency stops scoring 2/5.",
+    "6. Tighten the schema graph: give the author Person an @id and a real personal profile URL instead of https://www.linkedin.com/company/devcommx, add isPartOf from #faq to #article, add a WebPage/BreadcrumbList node, and swap the publisher logo off the 1200x630 OG image onto a proper logo asset.",
+    "7. Fix heading nesting and add internal links: promote 'Further Reading' and 'FAQ' out of the 'Build This With DevCommX' H2 to top level, and link the sibling posts linkedin-outreach-templates-2026, linkedin-sales-strategy-b2b-pipeline, and multi-channel-outbound-strategy to disambiguate the overlapping sections."
+  ]
+}

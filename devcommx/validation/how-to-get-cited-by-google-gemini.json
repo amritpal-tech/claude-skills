@@ -1,0 +1,279 @@
+{
+  "slug": "how-to-get-cited-by-google-gemini",
+  "title": "How to Get Cited by Google Gemini (Not Just AI Overviews)",
+  "words": 2796,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Technically excellent on Google-Extended and the crawler controls, but the load-bearing citation-count stats (15 / 11 / 7) are attributed only to \"Independent tracking\" with no named source or inline link.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Sources",
+          "criterion": "Stat Accuracy & Source Quality",
+          "finding": "Named-source claims are good where they exist: \"Ahrefs found that only about twelve percent of URLs cited across AI answers rank in Google's top ten\" and \"Ahrefs Brand Radar analysed over fourteen million prompts in June 2026\" (Reddit ~27%, YouTube ~14%, Wikipedia ~13%). But every one of the four external links sits in the Further Reading <ul> at the bottom; there is not a single inline hyperlink attached to a statistic in the body, so a reader cannot verify the Ahrefs figures at the point of claim. Two of the biggest numbers are sourceless: \"Independent tracking makes the gap concrete\" for the 15/11/7 citation counts, and \"Controlled grounding tests through 2026 found... retrieval-to-citation rates close to one hundred percent\".",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Depth",
+          "criterion": "Practitioner Depth",
+          "finding": "This reads like someone who has actually run the audit: \"check CDN-level bot-management rules, because those never show up in the robots.txt file you serve to yourself\", the warning that a \"data-nosnippet attribute wrapped around the paragraph you want quoted removes you from the answer while leaving the blue link untouched\", and the note that Google-CloudVertexBot is owner-requested and has no Search effect. The prompt-panel spec is operationally concrete (\"forty to eighty prompts\", run \"in the Gemini app rather than in Search\", log mentioned / linked / which domains were cited instead). The only weakness is that the first-party claim is a single unquantified sentence: \"We hit this repeatedly while building answer-engine visibility into client GTM systems at DevCommX\" with no client example, before/after, or panel result.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Attribution",
+          "criterion": "Data Attribution",
+          "finding": "The one comparison table asserts \"Roughly 11 links per answer\", \"Roughly 15 links per answer\", and \"Roughly 7 links per answer, skewed to editorial and reference sources\" with no source column, no caption, and no date on the measurement window. The same is true of the user-count figures in the section above it (\"over two billion users a month\", \"crossed a billion monthly users by mid-2026\", \"passed 750 million monthly active users in early 2026\") which are introduced with \"Google says\" only for the first. The hedge \"Trackers disagree on exact figures because prompt panels and geographies differ, so treat the numbers as directional\" is honest but appears three sections later and does not cover the table.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Accuracy",
+          "criterion": "Technical Accuracy",
+          "finding": "The technical core is correct and unusually precise: Google-Extended is described accurately as \"a robots.txt product token, not a crawler\" with \"no dedicated user agent string\", governing training and \"grounding in Gemini Apps and Vertex AI\" while explicitly not affecting \"inclusion or ranking in Google Search\". The eligible-state instruction (\"User-agent: Google-Extended\" followed by \"Disallow:\" with nothing after it) is right, as is the snippet-eligibility dependency and the nosnippet / max-snippet:0 / data-nosnippet trio. The GSC detail is dated to the day: \"added a generative AI performance section on 3 June 2026, with data from 18 May 2026 and no historical backfill\", correctly noting it excludes clicks, CTR, queries and the standalone Gemini app.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Completeness",
+          "criterion": "Completeness",
+          "finding": "The opening promises \"three gates in order\" (indexed, Google-Extended allowed, an extractable passage) and all three get a dedicated H2. \"Own the Sources Gemini Already Trusts\" delivers the three concentrated domains with a specific action each, and \"A Working Order of Operations\" resolves into week one / week two / weeks three onward. No H2 is left as a stub and the FAQ answers a question the body raises but does not otherwise answer directly (\"Why does my page show in AI Overviews but not in the Gemini app?\").",
+          "score": 5,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Meta lengths, FAQ and schema are clean, but all four external citations are dumped in Further Reading and the post never links to the live sibling /blogs/how-to-rank-in-google-ai-overviews despite framing itself against AI Overviews.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Keywords",
+          "criterion": "Primary Keyword Targeting",
+          "finding": "\"how to get cited by google gemini\" is in the slug, the H1/name (\"How to Get Cited by Google Gemini (Not Just AI Overviews)\"), the meta-title (\"How to Get Cited by Google Gemini in 2026\"), the meta-description, and bolded in the opening sentence as \"get cited by Google Gemini\". \"Gemini\" appears 55 times across the body. The gap is H2 coverage: not one of the nine H2s contains the head phrase, they use looser variants (\"Why Ranking Well Is Not Enough for Gemini\", \"How to Write a Page Gemini Will Quote\"), and the exact-match string appears only once in the body.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQ / People Also Ask",
+          "finding": "Six questions, all genuine high-intent PAA shapes rather than invented filler: \"Is Google Gemini the same as AI Overviews?\", \"Does blocking Google-Extended stop my site from appearing in Google Search?\", \"Why does my page show in AI Overviews but not in the Gemini app?\", and \"Can I see Gemini citations in Google Search Console?\". Each answer opens with a one-word or one-clause verdict (\"No.\", \"Not for the Gemini app.\", \"Usually one of three reasons.\") before the explanation, which is the correct snippet shape.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Tables",
+          "criterion": "Comparison / Featured Snippet Tables",
+          "finding": "One table with a proper <thead> and three rows (AI Overviews / AI Mode / Gemini app) across columns Surface, What it is, How the answer is assembled, Citation behaviour, and \"What actually gets you in\", wrapped in a <div style=\"overflow-x:auto;\"> so it survives mobile. Five columns is wide for featured-snippet extraction, which favours three to four, and the cells are long prose rather than terse values (\"Pre-indexed Search results expanded with query fan-out across subtopics\"). It is also the only table in a 2,796-word post: the robots.txt directives and the week one / two / three sequence are both natural table candidates left as prose.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Links",
+          "criterion": "Internal & External Link Structure",
+          "finding": "Three internal links, all resolving to real live slugs and all with descriptive anchors: \"how to get cited by ChatGPT\", \"LLMO playbook for optimising content for LLMs\", and \"measuring LLMO and AI visibility\", plus \"book a GTM strategy call\" to /contact. Four external links exist but every one is parked in the Further Reading list; the Google crawler docs and the Ahrefs most-cited-domains post are never linked at the sentences that cite them. The biggest miss is internal: the post mentions \"AI Overviews\" 21 times and defines itself as \"Not Just AI Overviews\" but never links to the existing live post how-to-rank-in-google-ai-overviews.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical SEO",
+          "finding": "meta-title is 41 characters and meta-description is 157 characters, both comfortably inside limits. The post-body contains zero <h1> tags, which is correct because Webflow renders the \"name\" field as the H1, and the heading run is H2 x 9 then H3 then H4 with no skipped levels. schema-markup is valid JSON containing a two-node @graph, and the canonical url in schema matches the blog-list field value https://www.devcommx.com/blogs/how-to-get-cited-by-google-gemini.",
+          "score": 5,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.20,
+      "flag": "Definitional extractability is excellent and the query cluster is genuinely distinct from the Claude/Perplexity/ChatGPT siblings, but DevCommX is named only twice and the differentiating stats are unattributable.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Definitions",
+          "criterion": "Direct Definitions",
+          "finding": "The very first sentence is a lift-ready definition of the whole topic: a page \"must be indexed by Google, it must leave Google-Extended allowed in robots.txt, and it must contain a passage that answers the question outright without surrounding context\", followed immediately by the disambiguator \"Gemini is not AI Overviews.\" Each surface gets a clean standalone definition (\"AI Overviews is the summary block that appears above the classic ten blue links\", \"The Gemini app is the standalone assistant at gemini.google.com\"), and the trickiest entity is defined in two short sentences: \"Google-Extended is a robots.txt product token, not a crawler. It has no dedicated user agent string.\"",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Structure",
+          "criterion": "Structured Data for AI Parsing",
+          "finding": "There is one comparison table, a six-question FAQ, and consistent bolded lead-ins that function as parseable claim headers (\"One question per H2, answered immediately.\", \"Attach numbers to units and dates.\", \"The audit takes ninety seconds.\", \"Week one, remove the blocks.\"). What is missing is genuine list markup: the body contains exactly one <ul> with four <li>, and those four are the Further Reading external links. The three-gate framework in the intro, the three trusted source types, and the week-by-week order of operations are all enumerable sequences rendered as prose paragraphs instead of an <ol>.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Authority",
+          "criterion": "Statistical Authority",
+          "finding": "Some claims are fully citable by an LLM because the source is named in-sentence: \"Ahrefs Brand Radar analysed over fourteen million prompts in June 2026\" with Reddit ~27 percent, YouTube ~14 percent, Wikipedia ~13 percent, and the repeated \"Google states\" / \"Per Google's crawler documentation\" framings. But the post's single most distinctive datapoint, the 15 / 11 / 7 citations-per-answer split that the entire thesis rests on, is credited only to \"Independent tracking\" and repeated in the table with no attribution at all, and \"Controlled grounding tests through 2026\" has no named lab, tool, or publication behind it.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Entity",
+          "criterion": "Entity Association",
+          "finding": "\"DevCommX\" appears only twice in 2,796 words: once in the intro (\"while building answer-engine visibility into client GTM systems at DevCommX\") and once in the closing CTA (\"DevCommX runs a free AI Visibility Checker\"). Author Sumit Nautiyal and his title exist in the author-name / author-title fields and in the schema Person node, but he is never named in the visible prose, so no lifted passage can bind the expertise to a person. For a post whose own advice is to \"Write the product name, the category, and the company in the same sentence at least once per section\", the article does not follow it.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Distinctiveness",
+          "criterion": "GEO Distinctiveness",
+          "finding": "Judged against its siblings, the query cluster holds up: how-to-get-cited-by-claude-ai is organised around \"The Three Crawlers\" and Anthropic user agents, how-to-get-cited-by-perplexity-b2b around \"Two Crawlers, and Only One of Them Reads Your robots.txt\" and corroboration, and the live how-to-get-cited-by-chatgpt around ChatGPT retrieval, while this post owns material none of them touch: the Google-Extended product token, the three-surface split, the 3 June 2026 GSC generative AI section, and Vertex AI grounding. The real cannibalisation risk is not the sibling engines but the existing live post how-to-rank-in-google-ai-overviews, since \"AI Overviews\" appears 21 times here and the intro and table both explain how AI Overviews assembles answers; this post should link to it and defer on the AI Overviews half rather than re-explaining it. Secondary risk is template sameness, since all four posts run the same H2 skeleton (crawler control, structure a page, third-party sources, measurement, CTA), which makes them look like variants to a model comparing chunks.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Strongest CTA in the batch shape, but the owned-infrastructure differentiator is absent, there is no Gemini-specific proof, and no cost or ROI framing anywhere.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Differentiation",
+          "criterion": "Differentiation Narrative",
+          "finding": "The signal-based positioning gets exactly one subordinate clause, in the final paragraph: \"we build that measurement into the same signal-based GTM systems that take clients from setup to 40+ qualified demos in roughly six weeks\". The core DevCommX differentiator, that clients own the infrastructure rather than renting an agency's stack, never appears in any form. Nothing in the 2,700 words before the CTA explains why an AEO problem is a GTM-engineering problem or what DevCommX builds differently from an SEO agency.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Proof",
+          "criterion": "Proof Metrics & Evidence",
+          "finding": "The sanctioned framing is present and correctly worded once: \"take clients from setup to 40+ qualified demos in roughly six weeks\". But it is bolted onto the CTA and is an outbound metric with no connection to Gemini citations, which is what the reader came for. The topic-relevant proof is a bare assertion, \"We hit this repeatedly while building answer-engine visibility into client GTM systems at DevCommX\", with no count of audits run, no share of client sites found blocking Google-Extended, and no prompt-panel before/after.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Pricing",
+          "criterion": "Pricing Transparency",
+          "finding": "There is no cost, budget, retainer, or ROI figure anywhere in the post. The only value framings are non-monetary: the checker is called \"a free AI Visibility Checker\" and the robots.txt fix is framed as time (\"The audit takes ninety seconds\"). Even the effort estimate in \"Weeks three onward\" is expressed in calendar time with no resourcing or cost attached, so a buyer finishes the post with no sense of what a Gemini visibility engagement costs.",
+          "score": 1,
+          "max": 5
+        },
+        {
+          "category": "CTA",
+          "criterion": "CTA Quality",
+          "finding": "The closing H2 \"See Where You Stand in Gemini Before You Change Anything\" opens by naming the reader's likely state (\"a Google-Extended problem, a rendering problem, or a reference-layer problem, and the three need completely different fixes\"), then offers a specific asset with specific outputs: the free AI Visibility Checker showing \"how the major answer engines currently describe your brand, which pages they pull, and which third-party sources are being cited in your place\". The ask is concrete and topic-matched, \"the Gemini-specific version of that diagnostic, with the robots.txt and grounding audit included\", linked as \"book a GTM strategy call\" to /contact with the promise \"we will run your prompt panel with you\".",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Library Fit",
+          "criterion": "Content Differentiation",
+          "finding": "No live DevCommX post covers Gemini as a named engine; the closest existing slugs are how-to-rank-in-google-ai-overviews, llmo-for-b2b-saas-get-cited-by-ai, and how-to-get-cited-by-chatgpt, none of which address Google-Extended, Vertex AI grounding, or the Gemini app as a distinct surface. It slots cleanly as the Google entry in the per-engine citation series alongside the Claude and Perplexity drafts. The deduction is for the AI Overviews overlap noted above and for reusing the identical section skeleton as its three siblings.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Clean heading run and excellent prose flow at 2,796 words, but zero in-body images or diagrams and only four list items in the entire post.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Headings",
+          "criterion": "Heading Architecture",
+          "finding": "Nine H2s in a logical diagnostic order (surfaces, why ranking is not enough, Google-Extended, eligibility floor, how to write, source layer, measurement, order of operations, CTA), then H3 \"Further Reading\", H3 \"FAQ\", and six H4 questions under it. No level is skipped and there is no <h1> in post-body, which is correct since Webflow renders the name field as H1. Minor inconsistency: the FAQ block sits at H3 with questions at H4 while every other content section is H2, so the FAQ is nested one level deeper than its importance warrants for outline extraction.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Visuals",
+          "criterion": "Visual Elements",
+          "finding": "The post-body contains zero <img> tags, zero diagrams, and zero charts across 20,631 characters of HTML; the only image in the record is the shared og-image (imresizer-DevCommX-Blog-OG.png) which never renders in the article. The single visual asset is the one HTML comparison table. A post built on a three-surface distinction and a week one / two / three sequence is asking for a surface-comparison diagram and a decision flow for the robots.txt audit, and neither exists.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Scannability",
+          "criterion": "Scannability",
+          "finding": "The hook resolves the query in sentence one with the three gates, section leads are bolded so a skimmer gets the argument (\"The audit takes ninety seconds.\", \"What that changes in practice.\", \"Consistency across all of it.\"), and the comparison table lands early at the point of maximum confusion. Against that, the entire post contains one <ul> and four <li>, all of them Further Reading links: the Reddit / YouTube / Wikipedia guidance and the week-by-week plan are bold-led paragraphs where bulleted or numbered lists would halve the scan cost.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Readability",
+          "criterion": "Reading Level & Flow",
+          "finding": "Transitions are argued rather than stitched: \"Read those two sentences together and the trap is obvious\", \"They are correlated, not equivalent\", \"That distinction is the whole reason this post exists\". Technical terms are defined at first use (query fan-out, product token, grounding) so the piece stays readable for a marketing lead while remaining precise for an engineer, and it avoids abstraction with concrete negative examples (\"A React shell that serves a spinner to a crawler is a page with no content\", \"Faster, cheaper, and more accurate are unciteable\").",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Length",
+          "criterion": "Content Length & Density",
+          "finding": "2,796 words against a stated 13-minute reading time, appropriate for a topic that has to cover three surfaces, a robots.txt control, page-level writing rules, a third-party source layer, and measurement. No section restates another and there is no throat-clearing preamble: the answer is in the first sentence and the shortest sections (\"Why Ranking Well Is Not Enough for Gemini\" at three paragraphs, \"A Working Order of Operations\" at three) carry new instructions rather than recap.",
+          "score": 5,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Valid two-node @graph with all six FAQ answers matching the body verbatim; deductions for dateModified equal to datePublished, a company LinkedIn URL on the Person node, and no BreadcrumbList or internode linking.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Article",
+          "criterion": "Article Type Completeness",
+          "finding": "The BlogPosting node carries headline, description, url, datePublished, dateModified, a seven-term keywords string (\"how to get cited by google gemini, gemini seo, google-extended robots.txt, ai overviews vs ai mode, gemini citations, answer engine optimization, grounding with google search\"), image, author, publisher, and mainEntityOfPage. The one defect is the author node: the Person \"Sumit Nautiyal\" is given url https://www.linkedin.com/company/devcommx, an Organization page, which points the Person entity at the company rather than at a personal profile or an author page and weakens the E-E-A-T signal it exists to carry.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "FAQPage",
+          "criterion": "FAQPage Structure",
+          "finding": "The FAQPage node holds six mainEntity items, each a well-formed \"@type\":\"Question\" with a name and an acceptedAnswer of \"@type\":\"Answer\" carrying a text value. Well above the 3-question threshold, and the answer strings are full paragraphs rather than truncated stubs, for example the Search Console answer preserves both dates (\"3 June 2026 with data from 18 May 2026\") inside the schema text.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Alignment",
+          "criterion": "Schema-to-Content Alignment",
+          "finding": "Programmatic comparison confirms all six acceptedAnswer.text values are byte-identical to the corresponding <p> under each H4 in the body, and schema headline equals the name field exactly (\"How to Get Cited by Google Gemini (Not Just AI Overviews)\"). The keywords string maps to content that actually exists (Google-Extended has 16 body mentions, AI Mode 12). The schema description is not identical to meta-description but is an accurate variant of it, describing the same three payloads (surface difference, Google-Extended control, steps to earn citations).",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Graph",
+          "criterion": "@graph Implementation",
+          "finding": "A proper @graph array is used with two nodes, each carrying a distinct fragment @id: \"...#article\" on the BlogPosting and \"...#faq\" on the FAQPage. The nodes are not cross-linked, however: the BlogPosting has no isPartOf or hasPart pointing at #faq, and there is no BreadcrumbList and no standalone WebPage or Organization node with its own @id, so publisher and mainEntityOfPage are inline objects that cannot be referenced or reused elsewhere on the site.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Rich Results",
+          "criterion": "Rich Result Eligibility",
+          "finding": "image is a proper ImageObject with url plus width 1200 and height 630, publisher is an Organization with name, url and a logo ImageObject, and dateModified is present. Two weaknesses: dateModified is \"2026-07-01\", identical to datePublished, so the freshness signal is dead on arrival for a post whose own body stresses recency; and the publisher logo reuses the 1200x630 OG image (imresizer-DevCommX-Blog-OG.png) rather than a dedicated logo asset, and that logo ImageObject carries no width or height.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Name the source for the 15 / 11 / 7 citations-per-answer figures and the ~100% retrieval-to-citation claim, and move the Ahrefs, Google crawler-docs and grounding-docs links inline to the sentences that cite them instead of leaving all four external links in Further Reading; add a source line to the surface comparison table.",
+    "2. Add an internal link to the live /blogs/how-to-rank-in-google-ai-overviews and trim the AI Overviews explanation to a pointer, so this post owns the Gemini-app and Google-Extended cluster instead of re-covering a page that already ranks.",
+    "3. Strengthen brand and entity signal: name Sumit Nautiyal in the body (the Google-Extended audit section is the natural place), state the owned-infrastructure model once, and replace the generic 'We hit this repeatedly' with a quantified in-house datapoint such as how many audited client sites were found disallowing Google-Extended.",
+    "4. Add at least two in-body visuals: a three-surface retrieval diagram (fan-out vs selective grounding) and a robots.txt decision flow for the Google-Extended audit, since the body currently has zero <img> tags.",
+    "5. Convert the prose sequences to real list markup, an <ol> for the week one / two / three order of operations and a <ul> for the Reddit / YouTube / Wikipedia source actions, since the entire post contains only four <li> and they are all Further Reading links.",
+    "6. Fix the schema: set dateModified to the actual publish or review date rather than repeating datePublished, point the author Person url at a personal profile or author page instead of linkedin.com/company/devcommx, use a dedicated square logo asset with width and height, and add a BreadcrumbList plus an isPartOf link from the BlogPosting to the #faq node."
+  ]
+}

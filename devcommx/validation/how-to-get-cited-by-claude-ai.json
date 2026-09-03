@@ -1,0 +1,279 @@
+{
+  "slug": "how-to-get-cited-by-claude-ai",
+  "title": "How to Get Your Brand Cited by Claude: What Anthropic's AI Actually Pulls",
+  "words": 2436,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Crawler mechanics are accurate and practitioner-grade, but every quantitative claim in the post is unsourced and zero external citations appear inline in the body.",
+      "flag_type": "critical",
+      "criteria": [
+        {
+          "category": "Sources",
+          "criterion": "Stat Accuracy & Source Quality",
+          "finding": "The three external links (Anthropic support article, claude.com/crawling/bots.json, Search Engine Land) sit only in a 'Further Reading' <ul> at the very bottom; there is not a single inline external link anywhere in the 2,436-word body, so no claim is linked at the point it is made. The 'Why This Window Matters Now' section asserts Anthropic 'crossed roughly forty-seven billion dollars in annualized revenue in 2026', 'hundreds of millions of monthly active users', and 'by early 2026 Anthropic had captured a majority of enterprise LLM spend' with no citation, no publication named, and no date qualifier - the $47B ARR figure in particular is aggressive enough that it needs a linked source or it becomes a liability.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Depth",
+          "criterion": "Practitioner Depth",
+          "finding": "The diagnostic sequence is genuinely operational: 'grep your server logs for the Claude user-agent strings and check the response codes. If you see 403s, that is your answer', plus verifying allow rules 'against the published IP list' at claude.com/crawling/bots.json, and the correct observation that Cloudflare WAF failures are silent with 'no error in your dashboard'. The verbatim user-agent strings for ClaudeBot and Claude-SearchBot and the note that Anthropic honors 'the Crawl-delay extension' show real doc-level familiarity rather than a rewrite of a press summary.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Attribution",
+          "criterion": "Data Attribution",
+          "finding": "The four-column crawler table states each bot's 'Stated purpose' but never says whose statement it is - no 'Source: Anthropic support documentation, February 2026' row or caption, so an LLM lifting the table has nothing to attribute it to. Two load-bearing claims use placeholder attribution: 'Analyses of Claude citations consistently show that owned domains make up a small minority' and 'Reporting suggests brands with a rich set of structured attributes get cited several times more often' - neither names the analysis, the publisher, the sample, or the multiple.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical Accuracy",
+          "finding": "The bot taxonomy is correct and current: ClaudeBot as the training crawler, Claude-User as the user-initiated live fetcher, Claude-SearchBot for search-quality indexing, plus the honest aside that 'There is also a fourth agent tied to Claude Code'. The independence claim - 'allowing Claude-User and Claude-SearchBot while blocking ClaudeBot is a legitimate stance' - is correct, and the caution that 'an aggressive IP-level block can stop it from ever reading your rules' is a real failure mode. The only accuracy risk is the unverified 2026 revenue and enterprise-share figures.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Coverage",
+          "criterion": "Completeness",
+          "finding": "Eight of nine H2s deliver what they promise, but 'A robots.txt Starting Point You Can Copy' does not give anything copyable - it describes the file in prose ('add <code>User-agent: Claude-User</code> with <code>Allow: /</code>, add <code>User-agent: Claude-SearchBot</code> with <code>Allow: /</code>') instead of a single fenced or <pre> block a reader can paste. The section header explicitly promises a copy artifact and the body substitutes a run-on sentence.",
+          "score": 3,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Keyword placement, meta lengths and schema are clean; the weak point is that all external citations are dumped in a footer list rather than anchored inline.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Keywords",
+          "criterion": "Primary Keyword Targeting",
+          "finding": "The target sits in the slug (how-to-get-cited-by-claude-ai), the meta-title ('How to Get Cited by Claude AI: What It Pulls', 44 chars), the opening sentence in bold ('To <strong>get cited by Claude</strong>'), and an H2 ('How to Structure a Page Claude Will Cite'); 'Claude' appears 101 times and 'Anthropic' 20 times. The gap is the H1/name - 'How to Get Your Brand Cited by Claude: What Anthropic's AI Actually Pulls' - which drops 'AI' and inserts 'Your Brand', so the exact phrase 'cited by Claude AI' never appears in the H1 and the string 'cited by claude' occurs only once in the whole body.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQ / People Also Ask",
+          "finding": "Six H4 questions map to plausible high-intent searches, and two are genuinely differentiated PAA-grade queries: 'Can I let Claude cite me without letting it train on my content?' and 'Why does my brand never appear in Claude answers?'. Missing are the obvious adjacent queries the post is otherwise equipped to answer - 'Does Claude browse the live web?' and 'Does Claude respect robots.txt?' - both of which are covered in the body but never surfaced as an extractable Q.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Tables",
+          "criterion": "Comparison / Featured Snippet Tables",
+          "finding": "One 3-row, 4-column table ('Crawler / Stated purpose / What it controls for you / Common way brands block it by accident') with a real <thead> and short cell values like 'Cloudflare or WAF bot-fight rules that challenge non-browser agents' - clean and snippet-extractable. It loses a point for having no caption or source line and for being wrapped in the Webflow-specific <div data-rt-embed-type='true'> with heavy inline styles rather than a semantic table with a <caption>.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Links",
+          "criterion": "Internal & External Link Structure",
+          "finding": "Three well-chosen internal links with descriptive anchors ('how to get cited by ChatGPT', 'LLMO playbook for optimizing content for LLMs', 'measuring LLMO and AI visibility') plus the /contact CTA. But all three external citations are relegated to a 'Further Reading' list; the Anthropic support doc is never linked from the crawler section that paraphrases it, and the Search Engine Land piece is never linked from the 'In February 2026 Anthropic updated its support documentation' sentence it substantiates. The free AI Visibility Checker is named in the CTA paragraph but is not hyperlinked at all.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical SEO",
+          "finding": "Meta-title is 44 characters and meta-description 154 characters, both inside limits; the JSON-LD @graph is present and valid; heading levels descend H1 to H2 to H3 to H4 with no skips; reading time (11) is consistent with 2,436 words. Minor issue: dateModified equals datePublished ('2026-07-01') in a post that itself argues 'Recent timestamps help in citation selection', so the freshness signal the article recommends is not demonstrated.",
+          "score": 5,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.2,
+      "flag": "Definitions and FAQ are highly extractable, but every statistic is attributed to an unnamed 'analyses' or 'reporting', which is the one thing an LLM cannot cite.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Definitions",
+          "criterion": "Direct Definitions",
+          "finding": "The post opens with a complete, liftable answer in one sentence: 'you need three things at once: your pages must be technically reachable by Anthropic's crawlers (ClaudeBot, Claude-User, and Claude-SearchBot), your facts must be repeated consistently... and each page must lead with a direct, extractable answer under a named author.' Each crawler then gets a one-sentence definition ('Claude-User is the user-initiated fetcher'), and the three metrics are defined inline ('citation rate, the percentage of prompts where Claude cites your actual URL as a source'). This is textbook extractable structure.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Structure",
+          "criterion": "Structured Data for AI Parsing",
+          "finding": "There is one comparison table, a six-question FAQ, and bold run-in labels ('<strong>Do three checks.</strong>', '<strong>Lead with the answer.</strong>', '<strong>Write in questions.</strong>'). But the body contains only one <ul> with three <li>, all in Further Reading - the 'Do three checks' sequence is a single 121-word paragraph running 'First... Second... Third...', and the five page-structure tactics are compressed into two dense paragraphs. Converting those two blocks to real ordered/unordered lists would materially raise chunk-level extractability.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Statistics",
+          "criterion": "Statistical Authority",
+          "finding": "Not one number in the post is attributable. 'Analyses of Claude citations consistently show that owned domains make up a small minority' names no analysis; 'Reporting suggests brands with a rich set of structured attributes get cited several times more often' names no publication and no multiple; and the market block ('roughly forty-seven billion dollars in annualized revenue', 'hundreds of millions of monthly active users', 'a majority of enterprise LLM spend') has no source and spells the figure in words rather than a parseable numeral. An LLM cannot safely quote any of these back with attribution.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Entity",
+          "criterion": "Entity Association",
+          "finding": "DevCommX is bound to the topic early and credibly - 'At DevCommX we build signal-based GTM systems, and AI answer visibility is now part of that pipeline' - and again in the CTA via the free AI Visibility Checker and the '40+ qualified demos in roughly six weeks' framing, six DevCommX mentions total. The gap is the author: Sumit Nautiyal and his 'VP of Revenue Operations & GTM Engineering' title exist only in CMS fields and JSON-LD, never in the body prose, in a post that specifically argues citations require 'a named author' and 'Named authors with real titles'.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Distinctiveness",
+          "criterion": "GEO Distinctiveness",
+          "finding": "Query cluster is genuinely distinct - this is the only post covering Anthropic's ClaudeBot / Claude-User / Claude-SearchBot split, the specific user-agent strings, claude.com/crawling/bots.json, and the allow-citation-block-training posture, none of which appear in the Perplexity, Gemini or ChatGPT siblings (those cover PerplexityBot, Google-Extended, and the recommendation-set problem respectively). The cannibalisation risk is structural rather than topical: all four share a near-identical skeleton ('How to Structure a Page X Will Cite' vs 'How to Structure a Page Perplexity Can Actually Pull' vs 'How to Write a Page Gemini Will Quote'; a Measure section; an audit CTA) and overlapping generic advice about third-party corroboration and freshness, so the middle third of each post reads interchangeably. The post also explicitly links the ChatGPT sibling and frames itself as a 'close cousin', which helps disambiguate. Verdict: distinct enough to publish, but the shared middle sections should be trimmed toward Claude-specific evidence to keep them from competing.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Sanctioned proof and CTA are present but confined to one closing paragraph, the free checker is not even hyperlinked, and there is zero cost or value framing.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Differentiation",
+          "criterion": "Differentiation Narrative",
+          "finding": "The signal-based positioning appears once in the intro ('At DevCommX we build signal-based GTM systems') and the owned-infrastructure principle only as a trailing clause in the CTA ('turn the findings into a plan your team owns'). Nothing in the nine body sections connects the Claude-citation work back to the autonomous, client-owned GTM system thesis, so the post reads as a competent vendor-neutral AEO guide rather than a DevCommX argument.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Proof",
+          "criterion": "Proof Metrics & Evidence",
+          "finding": "The sanctioned framing is used correctly but exactly once, in the final CTA: 'the same signal-based approach we use to take clients from setup to 40+ qualified demos in roughly six weeks, applied to AI answer visibility'. There is no DevCommX-owned data anywhere in the body - no client citation-rate lift, no log sample showing Claude 403s, no before/after from an actual robots.txt fix - despite the post arguing that 'primary data you actually gathered' is what earns citations.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Pricing",
+          "criterion": "Pricing Transparency",
+          "finding": "No cost, budget, retainer, or tooling-price figure appears anywhere in the 2,436 words. The only economic language is the abstract closing pair 'The cost of starting now is low. The cost of waiting is that a competitor becomes the default source', which quantifies nothing. Readers get no sense of what a Claude visibility program or the tracking tooling costs.",
+          "score": 1,
+          "max": 5
+        },
+        {
+          "category": "CTA",
+          "criterion": "CTA Quality",
+          "finding": "The closing H2 'Get Your Claude Visibility Audited' offers a strong two-step: run the free AI Visibility Checker, then 'book a GTM strategy call'. The defect is mechanical - only the /contact link is an actual <a>; 'Run the free checker' is plain text with no URL, so the primary low-friction offer is unclickable. There is also no mid-article CTA across nine sections.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Library Fit",
+          "criterion": "Content Differentiation",
+          "finding": "Fills the Anthropic/Claude slot in the engine-by-engine AEO set and links outward to the ChatGPT, LLMO playbook and LLMO measurement posts, so it slots into an existing cluster rather than floating. It is one of four near-simultaneous engine guides, so its distinct value rests entirely on the crawler-taxonomy material rather than on a different angle or format.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Clean heading ladder and good prose flow, but zero in-body visuals, only three list items in the whole post, and FAQ nested under the CTA section.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Headings",
+          "criterion": "Heading Architecture",
+          "finding": "Nine H2s descend logically from crawler taxonomy to technical fix to third-party sources to page structure to measurement to CTA, with no skipped levels and six H4 FAQ questions under an H3. The flaw is placement: 'Further Reading' and 'FAQ' are H3s, which makes them semantic children of the final H2 'Get Your Claude Visibility Audited' - the FAQ block and citation list are nested inside the sales CTA section rather than sitting as their own H2 peers.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Visuals",
+          "criterion": "Visual Elements",
+          "finding": "The body contains zero <img> tags - the only image asset is the shared OG file (imresizer-DevCommX-Blog-OG.png), which never renders in-article. A topic built entirely on a three-crawler decision tree, robots.txt directives, and a 403-vs-200 log diagnostic is unusually well suited to a decision-flow diagram or an annotated log screenshot, and neither exists. One HTML table is the sole visual break in 2,436 words.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Scannability",
+          "criterion": "Scannability",
+          "finding": "The hook answers the query in the first sentence and bold run-ins ('<strong>Do three checks.</strong>', '<strong>Show your credibility signals.</strong>', '<strong>Keep it fresh.</strong>') give skimmers anchors. Against that, 29 body paragraphs average 76 words with several at 104-121 words, and the entire post contains only three <li> elements (all in Further Reading) - the checklist-shaped content is delivered as prose, so a skim reader gets no bulleted takeaway anywhere.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Readability",
+          "criterion": "Reading Level & Flow",
+          "finding": "Transitions are natural and earned ('Once Claude can read you, the harder truth is...', 'This reframes the work.'), and technical terms are defined on first use rather than dumped - WAF, 403, Crawl-delay and user-agent all arrive with context. Occasional flourish tips into filler, e.g. 'Consistency is not a branding nicety here' and the backlink analogy in the closing section, but the register stays consistent and practitioner-facing throughout.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Length",
+          "criterion": "Content Length & Density",
+          "finding": "2,436 words for a nine-section engine-specific guide is appropriate and the reading-time field (11) matches. Density slips in 'Why This Window Matters Now', where three consecutive paragraphs restate urgency - the market-size paragraph, the 'That gap is the opportunity' paragraph, and the compounding/early-mover paragraph all make the same argument, roughly 250 words that could compress to one.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Technically clean @graph with all six FAQ answers matching the body verbatim; the defects are publisher.logo pointing at the OG image and a keyword ('claude aeo') absent from the article.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Article",
+          "criterion": "Article Type Completeness",
+          "finding": "The BlogPosting node carries headline, description, url, datePublished, dateModified, keywords, image, author, publisher and mainEntityOfPage, with @id 'https://www.devcommx.com/blogs/how-to-get-cited-by-claude-ai#article'. The author is a full Person node with name 'Sumit Nautiyal' and jobTitle 'VP of Revenue Operations & GTM Engineering, DevCommX'; the only weakness is author.url pointing at the DevCommX company LinkedIn rather than a personal profile or author page, which weakens the Person entity.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQPage Structure",
+          "finding": "Six entries in mainEntity, each a proper @type Question with a name and an acceptedAnswer of @type Answer carrying a text value - well above the 3-question floor. Answers are substantive full paragraphs (e.g. the crawler answer runs four sentences ending 'Blocking one does not block the others, because each control is independent.') rather than one-line stubs, and the FAQPage has its own @id ending #faq.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Alignment",
+          "criterion": "Schema-to-Content Alignment",
+          "finding": "All six question strings and all six acceptedAnswer.text values were diffed against the body H4/<p> pairs and match character-for-character, so there is no schema/body divergence risk. The schema description is identical to the meta-description, and the headline matches the CMS name field exactly. One mismatch: the keywords string includes 'claude aeo', but 'AEO' never appears anywhere in the 2,436-word body, so that keyword is unsupported by on-page content.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Graph",
+          "criterion": "@graph Implementation",
+          "finding": "A single @context wraps a two-node @graph, and both nodes are individually addressable - '#article' on the BlogPosting and '#faq' on the FAQPage - with mainEntityOfPage pointing at the canonical page @id. The implementation is correct; it stops short of 5 only because there is no WebPage or Organization node the two entities resolve against, so publisher and mainEntityOfPage are inline objects rather than @id references into the graph.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Rich Results",
+          "criterion": "Rich Result Eligibility",
+          "finding": "image is a proper ImageObject with url plus width 1200 and height 630, publisher is an Organization with name, url and a logo ImageObject, and dateModified is present. Two defects: publisher.logo.url is the same generic blog OG file (imresizer-DevCommX-Blog-OG.png) rather than an actual DevCommX logo asset, which is a Google-documented logo requirement failure; and dateModified '2026-07-01' is identical to datePublished, giving no freshness differentiation.",
+          "score": 3,
+          "max": 5
+        }
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Source every number: inline-link the Anthropic support doc and the Search Engine Land piece where the crawler claims are made, and either name the study behind 'Analyses of Claude citations consistently show' and 'Reporting suggests brands with a rich set of structured attributes get cited several times more often' or delete both sentences. The unsourced 'roughly forty-seven billion dollars in annualized revenue in 2026' plus 'a majority of enterprise LLM spend' must get a cited source or be cut - it is the single biggest credibility and accuracy risk in the post.",
+    "2. Make 'A robots.txt Starting Point You Can Copy' actually copyable: replace the prose run-on of <code> spans with a real <pre> block containing the three User-agent stanzas, and convert the 'Do three checks' paragraph and the five page-structure tactics into ordered/unordered lists - the post currently has only three <li> elements in 2,436 words.",
+    "3. Add in-body visuals: at minimum a crawler decision-flow diagram (which bot to allow for which outcome) and an annotated server-log or robots.txt screenshot showing a Claude-User 403. There are currently zero <img> tags in the body.",
+    "4. Fix the CTA and byline mechanics: hyperlink 'Run the free checker' to the AI Visibility Checker URL (only /contact is currently a link), and put Sumit Nautiyal's name and title in the visible body - the post argues named authors drive citations while carrying no on-page byline.",
+    "5. Repair the schema and heading nits: point publisher.logo.url at a real DevCommX logo asset instead of the blog OG image, drop or earn the 'claude aeo' keyword (AEO appears nowhere in the body), advance dateModified past datePublished, and promote 'FAQ' and 'Further Reading' from H3 to H2 so they stop nesting inside the sales CTA section.",
+    "6. De-risk sibling cannibalisation: compress the generic third-party-corroboration and freshness advice that also appears in the Perplexity, Gemini and ChatGPT posts, and rename 'How to Structure a Page Claude Will Cite' to something Claude-specific so the four guides do not compete on the same middle-of-article query set."
+  ]
+}

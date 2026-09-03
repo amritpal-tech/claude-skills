@@ -1,0 +1,280 @@
+{
+  "slug": "reddit-strategy-ai-citations-b2b",
+  "title": "The Reddit Playbook for AI Citations: How B2B Brands Get Pulled into Perplexity",
+  "words": 2387,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Every hard statistic in the post is unsourced: 46.7%, 8.2 sources, 68%, 29.5%, 60%-to-10% are all hedged with \"reportedly\" or \"one 2026 analysis\" and none is inline-linked.",
+      "flag_type": "critical",
+      "criteria": [
+        {
+          "category": "Sources",
+          "criterion": "Stat Accuracy & Source Quality",
+          "finding": "The post carries at least nine load-bearing numbers with zero inline citations: \"close to 46.7% of the sources Perplexity surfaces\", \"roughly 8.2 sources per answer, which is about 3.4 times what ChatGPT cites\", \"top 15 domains reportedly capture around 68%\", \"YouTube alone near 29.5%\", \"roughly 43% going to Google-owned sites\", and \"fell from around 60% to near 10% in about six weeks in late 2025\". Attribution is uniformly vague (\"by some 2026 measurements\", \"one 2026 analysis\", \"multiple studies\", \"reportedly\"), and the only credible external source, the Semrush most-cited-domains study, sits in a Further Reading list at the bottom where it is attached to no specific claim.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Depth",
+          "criterion": "Practitioner Depth",
+          "finding": "There is genuine operational specificity: \"a working list of 8 to 15 subreddits\", \"budget roughly 10 hours a week\", a \"90-day window\" before promoting, \"ideally 12 months or older\" account age, and the 90/10 versus 99/1 self-promotion ratio distinction. But the depth stops at the level of rules of thumb: the post never names a single subreddit, never names a tracking tool for citation monitoring, and offers no worked example of a comment that actually got cited, so it reads as an informed briefing rather than a deployment log.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Attribution",
+          "criterion": "Data Attribution",
+          "finding": "The single table (\"Stage / What happens / Typical timing / What you control\") asserts timings such as \"Hours to 7 days\", \"1 to 3 weeks\", and \"Ongoing, volatile\" with no source row, no footnote, and no methodology note. The same is true of the body version of that claim, \"sometimes within a few hours to 24 hours, and more typically inside a 3 to 7 day window\", which is presented as established fact with no study, no sample, and no observation period behind it.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Accuracy",
+          "criterion": "Technical Accuracy",
+          "finding": "The mechanics described are directionally correct for 2026: Reddit's data licensing deals with major AI companies, Google indexing as the gate into AI Overviews, and shadowban risk for new accounts posting only brand-relevant content are all accurate. The weakness is an unreconciled internal inconsistency: the intro says Reddit \"accounts for close to 46.7% of the sources Perplexity surfaces\" while the next section says Reddit \"has held a 20 to 24% single-domain concentration\". Those are different metrics (share of citations versus share of responses containing Reddit), and only the FAQ half-acknowledges it with \"treat it as the leading source rather than a fixed number\"; the body never explains the methodology difference.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Coverage",
+          "criterion": "Completeness",
+          "finding": "Seven of the eight H2s deliver what they promise, and \"The honesty guardrails, in one place\" genuinely consolidates the rules. The exception is the largest promise in the post: \"Step one: map the subreddits your buyers actually read\" delivers a method for finding subreddits but not a single named community, not even the obvious r/sales, r/SaaS, or r/RevOps, so the reader finishes the mapping step with no map.",
+          "score": 3,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Keyword targeting, metas, and a strong 6-question FAQ are solid; the gaps are zero inline external citations and only one process table where a comparison table would win the snippet.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Keywords",
+          "criterion": "Primary Keyword Targeting",
+          "finding": "\"Reddit strategy for AI citations\" is bolded in the opening sentence, sits in the meta-title (\"Reddit Strategy for AI Citations: B2B AEO Playbook\"), the meta-description, the slug (reddit-strategy-ai-citations-b2b), and the FAQ (\"Is a Reddit strategy enough on its own for AEO?\"). The gap is the H1 and H2s: the title is \"The Reddit Playbook for AI Citations\" and the closest H2 is \"Why Reddit dominates AI citations right now\", so the exact target phrase never appears in a heading.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQ / People Also Ask",
+          "finding": "Six FAQs, all mapping to genuine high-intent queries rather than invented ones: \"Will I get banned for promoting my product on Reddit?\", \"How long does it take for a Reddit thread to get cited by AI?\", \"What share of Perplexity citations come from Reddit?\", and \"Why do AI engines trust Reddit over my own website?\". Each answer opens with a direct verdict (\"You will if you plug without participating.\", \"No.\") and runs 40 to 70 words, which is the right shape for snippet and PAA extraction.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Tables",
+          "criterion": "Comparison / Featured Snippet Tables",
+          "finding": "There is exactly one table across 2,387 words, and it is a four-stage pipeline (Contribution, Indexing, Ranking, Citation) rather than a comparison. The markup is clean and snippet-friendly (proper thead/tbody, four labelled columns, an overflow-x wrapper), but the post repeatedly sets up comparisons it never tabulates: Reddit citation share by engine (ChatGPT versus Perplexity versus AI Overviews), and 90/10 versus 99/1 subreddit policing, both of which would be far stronger snippet bait than the process table.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Links",
+          "criterion": "Internal & External Link Structure",
+          "finding": "Four contextual internal links with descriptive anchors, all to slugs that exist in the library: the LLMO playbook, \"how to measure LLMO and AI visibility\", the \"B2B buying signals guide\", and \"how to get cited by ChatGPT\". Three external links exist but all three are parked in a \"Further Reading\" list (Semrush, Reddit Content Policy, Google Search Central) rather than attached inline to the claims they support, so not one of the nine statistics in the body has a citation next to it. The sibling post how-to-get-cited-by-perplexity-b2b is also never linked despite this post being Perplexity-centric.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical SEO",
+          "finding": "Meta-title is 50 characters and meta-description is 156, both comfortably inside limits; the H1 is a single 79-character title; the heading tree runs H2 to H3 to H4 with no skipped levels; and a two-node @graph (BlogPosting + FAQPage) is present and parses. The minor flaw is that \"FAQ\" and \"Further Reading\" are H3s appearing after the CTA H2 \"Get Your Free AI Visibility Check\", which nests the FAQ block under a conversion section instead of giving it its own top-level H2.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.20,
+      "flag": "Strong extractable opener and FAQ, but no statistic is attributable to a named source, so an LLM can quote the numbers only by citing DevCommX as the originator.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Definitions",
+          "criterion": "Direct Definitions",
+          "finding": "The opening paragraph is a clean extractable answer: \"A Reddit strategy for AI citations works because Reddit is the single most-cited domain across AI answer engines... you earn genuine mentions inside the specific subreddits your buyers already read, then let the 24-hour-to-7-day indexing window carry that thread into Perplexity and ChatGPT.\" \"The path.\" paragraph is similarly extractable. Missing is a standalone definition of the \"citation window\" the meta-description promotes, and \"answer engine optimization\" is only spelled out once in passing rather than defined.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Structure",
+          "criterion": "Structured Data for AI Parsing",
+          "finding": "Good parsing scaffolding exists: a four-column stage table, three explicitly sequenced H2s (\"Step one\", \"Step two\", \"Step three\"), six FAQ pairs, and bolded paragraph lead-ins such as \"The path.\", \"The catch is volatility.\", and \"Account age and history matter.\". Against that, the post has exactly one <ul> in the whole body and it holds the three Further Reading links. The section literally titled \"The honesty guardrails, in one place\" bundles seven discrete rules into a single running paragraph, which is the one place a machine-extractable list was most obviously called for.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Authority",
+          "criterion": "Statistical Authority",
+          "finding": "No number in the post is tied to a nameable source an LLM could attribute. The strongest claims are hedged into anonymity: \"by some 2026 measurements\", \"one 2026 analysis put Reddit inside 46.7% of the responses it sampled\", \"in multiple studies\", \"reportedly capture around 68%\", \"ChatGPT's Reddit citation share reportedly fell\". Semrush appears once, in the Further Reading list, unattached to any figure, so a model quoting the 46.7% or 8.2-sources figure would have to attribute it to DevCommX itself.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Entity",
+          "criterion": "Entity Association",
+          "finding": "DevCommX is tied to the niche in three places: \"At DevCommX we build autonomous, signal-based AI SDR and GTM systems\", the disclosure example \"I work at DevCommX, and here is how we think about this\", and the CTA's \"the same signal-based approach that takes clients from setup to 40+ qualified demos in about six weeks\". But Sumit Nautiyal appears only in the schema and CMS fields, never in the body, and DevCommX is never tied to Reddit specifically with a first-party result (no threads run, no citations won, no client example), so the brand-to-topic link is asserted rather than demonstrated.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Distinctiveness",
+          "criterion": "GEO Distinctiveness",
+          "finding": "The query cluster is genuinely distinct: no existing slug in the library covers Reddit as a channel, and the closest siblings attack owned content instead (how-to-get-cited-by-perplexity-b2b is about crawlers, corroboration, and page structure; how-to-get-cited-by-chatgpt about owned-content tactics). Mild overlap risk remains because the Perplexity sibling already mentions Reddit six times and this post's H2 \"How a Reddit thread becomes a Perplexity citation\" targets adjacent language, and the two posts do not cross-link to disambiguate themselves for the engines.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "The sanctioned 40+ demos proof and a free-tool CTA are present, but the owned-infrastructure narrative is one clause and there is no cost or ROI framing anywhere.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Differentiation",
+          "criterion": "Differentiation Narrative",
+          "finding": "The signal-based model surfaces in \"At DevCommX we build autonomous, signal-based AI SDR and GTM systems\", in the bridge \"The subreddits where people describe a problem in their own words are the same places our systems watch for intent\", and in \"This is the same operating discipline we bring to signal-based outbound: build the system, watch the signals, and let it compound.\" Client ownership, the sharper half of the positioning, gets a single trailing clause, \"a citation plan your team owns\", with nothing explaining what the client actually ends up owning.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Proof",
+          "criterion": "Proof Metrics & Evidence",
+          "finding": "The sanctioned framing appears once and correctly: \"the same signal-based approach that takes clients from setup to 40+ qualified demos in about six weeks\". It lands in the CTA paragraph only, and it is an outbound proof point bolted onto an AEO article. There is no Reddit-specific or citation-specific evidence anywhere: no number of threads run, no before/after citation share, no named client, no timeline from a real engagement.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Pricing",
+          "criterion": "Pricing Transparency",
+          "finding": "No dollar figure, retainer range, or ROI model appears in the post. The only cost framing is in time and risk terms: \"budget roughly 10 hours a week\", the \"90-day window\" before promoting, and \"A brand-wide ban is far more costly than a slow, honest ramp\". A reader deciding between running this in-house and hiring DevCommX gets no economic anchor at all, and the CTA offers a free check without indicating what paid engagement follows.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "CTA",
+          "criterion": "CTA Quality",
+          "finding": "The CTA gets its own H2, \"Get Your Free AI Visibility Check\", opens with a well-framed reason to act (\"Before you invest 90 days in a Reddit motion, find out where you already stand\"), states the deliverable (\"how often ChatGPT, Perplexity, and Google AI Overviews mention or cite your brand today\"), and ends with a linked next step to \"book a GTM strategy call\". The gap is mechanical: the AI Visibility Checker, the primary offer, is named but never hyperlinked, so the only clickable path is the secondary sales call.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Library Fit",
+          "criterion": "Content Differentiation",
+          "finding": "This fills an empty slot. No slug in _existing_slugs.txt covers Reddit, and the AEO cluster to date is owned-content and measurement focused (llmo-for-b2b-saas-get-cited-by-ai, how-to-measure-llmo-ai-visibility-tracking, llmo-vs-seo-vs-geo-vs-aeo). Positioning Reddit as \"one input into answer engine optimization, not the whole thing\" and linking out to the LLMO playbook keeps it complementary rather than duplicative, though it repeats general AI-citation-concentration context those posts already carry.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Clean heading tree and good prose flow, but zero in-body images or diagrams and only one bulleted list in 2,387 words.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Headings",
+          "criterion": "Heading Architecture",
+          "finding": "One H1, eight H2s, two H3s (\"Further Reading\", \"FAQ\"), and six H4 questions, with no skipped levels. The sequencing is logical: why Reddit matters, then the mechanism, then Step one/two/three, then guardrails, then program context, then CTA. The flaw is placement rather than nesting: the FAQ H3 falls under the conversion H2 \"Get Your Free AI Visibility Check\", which structurally subordinates six PAA-grade questions to a sales block.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Visuals",
+          "criterion": "Visual Elements",
+          "finding": "The body contains zero <img> tags, zero diagrams, zero charts, and zero screenshots; the only image asset in the record is the shared OG file imresizer-DevCommX-Blog-OG.png in og-image and schema. The single visual break in 2,387 words is the four-row stage table. The article describes at least two things that beg for a diagram, the Contribution to Indexing to Ranking to Citation pipeline and the volatility timeline (60% to 10% for ChatGPT, 25% in February 2026 to 7% by April), and renders both as prose plus a plain table.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Scannability",
+          "criterion": "Scannability",
+          "finding": "The hook is strong and answer-first, the H2s are descriptive rather than clever, and most paragraphs open with a bolded micro-headline (\"Why the models lean this way.\", \"The catch is volatility.\", \"Be specific and be fair.\") that a skimmer can follow. Working against it: 30 paragraphs and only one <ul>, which holds Further Reading links. The guardrails section packs seven rules (one account, disclose, follow subreddit rules, 90/10, no bought upvotes, no alts, no unsolicited DMs) into unbroken prose where a skimmer needs bullets.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Readability",
+          "criterion": "Reading Level & Flow",
+          "finding": "The register is plain and confident with natural transitions: \"The concentration is not subtle.\", \"Understanding the mechanics keeps you from wasting effort.\", \"This is where most B2B teams fail.\" Jargon is used sparingly and mostly unpacked; AEO is spelled out as \"answer engine optimization\" in the guardrails follow-on section. Minor friction: LLMO and GEO appear in the internal-link anchors and schema keywords without ever being defined in the body, so a reader outside the category meets three acronyms with only one explained.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Length",
+          "criterion": "Content Length & Density",
+          "finding": "2,387 words is appropriate for a channel playbook and matches the declared 11-minute reading time closely enough. Padding is low and most paragraphs carry a distinct idea. The density cost is repetition of the two headline facts: the \"8 to 15 subreddits\" figure appears three times (mapping section, portfolio paragraph, FAQ) and the volatility argument is made three times (\"The catch is volatility\", \"Because the channel is volatile\", and the AEO-sufficiency FAQ) in near-identical terms.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Strongest dimension: valid two-node @graph with all six FAQ answers matching the body verbatim; only entity-level details (Person URL, publisher logo, dateModified) are off.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Article",
+          "criterion": "Article Type Completeness",
+          "finding": "The BlogPosting node carries headline, description, url, datePublished \"2026-07-01\", dateModified, a five-term keywords string, an ImageObject, author, publisher, and mainEntityOfPage, so nothing required is missing. The defect is entity correctness: author is @type Person \"Sumit Nautiyal\" but his url points to https://www.linkedin.com/company/devcommx, a company page, which mis-identifies the Person entity for any consumer trying to resolve the author.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQPage Structure",
+          "finding": "Six entries in mainEntity, well above the 3+ threshold, each correctly typed as @type Question with a name and an acceptedAnswer of @type Answer carrying a text field. Answers are full prose (for example the Perplexity-share answer runs to \"treat it as the leading source rather than a fixed number\") rather than truncated stubs, and no entry uses a bare string or a malformed answer object.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Alignment",
+          "criterion": "Schema-to-Content Alignment",
+          "finding": "Verified programmatically: all six schema question names and all six acceptedAnswer.text values match the body H4/P pairs character-for-character, with no drift. The schema description is byte-identical to the meta-description and the headline is byte-identical to the CMS name field. The keywords string (\"reddit strategy for ai citations, reddit aeo, perplexity citations, b2b geo, get cited by ai\") maps to what the article actually argues rather than to aspirational unrelated terms.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Graph",
+          "criterion": "@graph Implementation",
+          "finding": "A proper @graph array holds two nodes, each with a distinct fragment @id: #article on the BlogPosting and #faq on the FAQPage. The gap is that the two nodes are not connected: the FAQPage has only @type, @id, and mainEntity, with no isPartOf or mainEntityOfPage pointing back at #article, and there is no WebPage or BreadcrumbList node, so the graph is two islands rather than a linked entity set.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Rich Results",
+          "criterion": "Rich Result Eligibility",
+          "finding": "image is a full ImageObject with url, width 1200 and height 630; publisher is an Organization with name, url, and a logo ImageObject; dateModified is present. Two issues reduce eligibility quality: the publisher logo url is identical to the article image url (the 1200x630 OG banner is being reused as a brand logo, which is not a logo asset), and dateModified equals datePublished at \"2026-07-01\", giving freshness signals nothing to work with on a topic the article itself calls volatile within weeks.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Attach inline external citations to every hard number. The 46.7% Perplexity figure, the 8.2-sources-per-answer and 3.4x ChatGPT comparison, the 68% top-15-domain concentration, the 29.5% YouTube and 43% Google-owned splits, and the 60%-to-10% ChatGPT collapse are all currently hedged as 'reportedly' or 'one 2026 analysis' with no link. Name the study and link it at the sentence, and move the Semrush link out of Further Reading to sit beside the claim it supports.",
+    "2. Name actual subreddits in 'Step one: map the subreddits your buyers actually read'. The section promises a map but delivers only a method; add a starter table of 8 to 15 named communities (r/sales, r/SaaS, r/RevOps, r/Emailmarketing and peers) with columns for buyer role, self-promotion policy (90/10 vs 99/1), and observed AI-citation frequency. This fixes the completeness gap and adds the comparison table the post lacks.",
+    "3. Add in-body visuals. Convert the Contribution to Indexing to Ranking to Citation pipeline into a diagram and chart the volatility data (ChatGPT 60% to 10% in six weeks; Perplexity 25% in Feb 2026 to 7% by April) as a timeline. The body currently has zero images across 2,387 words.",
+    "4. Break 'The honesty guardrails, in one place' into a numbered list. Seven distinct rules (one aged account, disclose every mention, follow subreddit rules, 90/10 minimum, no bought upvotes, no alt accounts, no unsolicited DMs) are buried in a single paragraph; as a list they become directly extractable by AI engines and skimmable for readers.",
+    "5. Fix the schema entity details: point author.url at Sumit Nautiyal's personal LinkedIn profile instead of the DevCommX company page, replace the publisher logo url (currently the same 1200x630 OG banner as the article image) with a real logo asset, and add isPartOf linking the #faq node to #article.",
+    "6. Reconcile the 46.7% and 20-to-24% figures in the body. Explain in the 'Why Reddit dominates' section that they measure different things (share of responses containing Reddit vs share of total citations); right now only the FAQ softens the contradiction.",
+    "7. Hyperlink the AI Visibility Checker in the CTA. The primary offer is named but unclickable, leaving 'book a GTM strategy call' to /contact as the only conversion path. Also add an internal link to the sibling how-to-get-cited-by-perplexity-b2b post to disambiguate the two for search engines."
+  ]
+}

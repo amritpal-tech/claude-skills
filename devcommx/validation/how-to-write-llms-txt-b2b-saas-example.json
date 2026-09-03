@@ -1,0 +1,279 @@
+{
+  "slug": "how-to-write-llms-txt-b2b-saas-example",
+  "title": "How to Write an llms.txt File for B2B SaaS (With a Real Example)",
+  "words": 2799,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Deployment depth is excellent, but every external source sits in a 'Further Reading' list at the end instead of inline at the claim, and the title promises a 'Real Example' while the body delivers a 'deliberately fictional' one.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Sources",
+          "criterion": "Stat Accuracy & Source Quality",
+          "finding": "The load-bearing statistics are named but not inline-linked: 'Ahrefs analysed roughly 137,000 domains and found that while adoption has grown sharply, about 97 percent of published llms.txt files received no requests at all', 'SEO audit tools were the largest source at roughly 22 percent', and \"Google's John Mueller has been blunt that no AI system was using the file for Search\" all appear as bare prose with the Ahrefs and Google links parked in a Further Reading <ul> several sections later. The file-size figures 'the Stripe docs file runs to roughly 90 KB, the Vercel and Anthropic docs files to roughly 200 KB each' carry no source at all, and 'Teams serving Markdown instead have reported large token reductions on identical content' names no team and gives no number.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Depth",
+          "criterion": "Practitioner Depth",
+          "finding": "This is genuinely implementation-grade rather than a spec restatement: it names the exact Next.js paths ('drop the file at public/llms.txt or create app/llms.txt/route.ts with a GET handler returning the string with an explicit text/plain header'), identifies the real production failure ('a catch all route returns your HTML shell for any unmatched path, so an agent fetching /llms.txt gets a JavaScript bundle and a 200 status'), and gives the correct-but-counterintuitive robots reasoning: 'Do not use a robots.txt disallow instead. Disallow blocks crawling, not indexing, and it stops crawlers ever seeing the noindex header.' The Webflow paragraph correctly flags that 'standard hosting will not let you place arbitrary files at the root' and offers reverse proxy worker or Webflow Cloud.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Attribution",
+          "criterion": "Data Attribution",
+          "finding": "The single comparison table is five columns of unattributed assertion; the 'Who actually reads it' column claims '/llms.txt' is consumed by 'Coding and IDE agents, MCP documentation servers, some retrieval tools, audit crawlers' with no citation, which is precisely the disputed claim the post's own Ahrefs data qualifies. Percentages in prose ('roughly 22 percent', 'around 1 percent') are attributed to Ahrefs by name but the reader cannot click through at the point of claim, and the 90 KB / 200 KB size assertions have no identified source.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Accuracy",
+          "criterion": "Technical Accuracy",
+          "finding": "Spec facts check out for 2026: 'Jeremy Howard proposed it in September 2024', 'The only required element is an H1 containing the name of the project or site', the Optional-heading semantics ('URLs listed there can be skipped when a shorter context is needed'), the index.html.md convention, and the real subpath examples 'docs.stripe.com/llms.txt and Vercel at vercel.com/docs/llms.txt' with 'docs.stripe.com/testing.md resolves to plain Markdown'. The correct disclaimer that 'llms-full.txt is a convention popularised by documentation platforms, not part of the core proposal' is a genuine accuracy win. One unverifiable aside: 'Webflow also ships an open source llms.txt generator example that pulls from CMS collections' is asserted with no link.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Coverage",
+          "criterion": "Completeness",
+          "finding": "All ten H2s deliver: 'A Complete llms.txt Example for a B2B SaaS' ships a full ~360-word Loopwire file with eight sections plus an Optional block, and 'How to Verify and Measure It' gives four concrete checks ending with 'paste the file into an assistant with a cold context and ask what the company sells and what it costs.' The gap is the title contract, not the H2 contract: name and meta-title both promise a 'Real Example' while the body immediately concedes 'Loopwire, a deliberately fictional subscription revenue reporting product' — a searcher clicking for a real published file gets an invented one.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Keyword targeting, FAQ and technical SEO are all strong; the one real weakness is that all four external citations are exiled to a Further Reading block with zero inline outbound links in the body.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Keywords",
+          "criterion": "Primary Keyword Targeting",
+          "finding": "'llms.txt' appears 34 times and 'B2B SaaS' 6 times across a 2,799-word body, with the exact head term in the slug (how-to-write-llms-txt-b2b-saas-example), the name ('How to Write an llms.txt File for B2B SaaS'), the meta-title ('How to Write llms.txt for B2B SaaS (Real Example)'), the opening bolded phrase 'llms.txt file for a B2B SaaS', the H2 'A Complete llms.txt Example for a B2B SaaS', and the FAQ 'How many links should a B2B SaaS llms.txt file contain?'. Density is natural rather than stuffed.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQ / People Also Ask",
+          "finding": "Six H4 questions that read like real PAA harvest rather than invented filler: 'Where exactly should the llms.txt file live?', 'Does an llms.txt file help you rank in Google AI Overviews?', 'What is the difference between llms.txt and llms-full.txt?', 'Should llms.txt be blocked in robots.txt?'. Each answer is a self-contained 40-70 word block, and none simply restates an H2 — the AI Overviews and robots.txt questions cover intent the body never addresses head-on.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Tables",
+          "criterion": "Comparison / Featured Snippet Tables",
+          "finding": "One well-built table compares /robots.txt, /sitemap.xml, /llms.txt, /llms-full.txt and /your-page.md across 'What it is for', 'Format', 'Who actually reads it' and 'Controls access?', with a horizontal-scroll wrapper. Five columns is wider than Google typically lifts into a table snippet, and it is the only table in a 2,799-word how-to: the include/exclude decision ('Include: product overview... Leave out: blog tag and category archives...') and the four-step verification sequence are both natural table candidates currently trapped in comma-run prose.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Links",
+          "criterion": "Internal & External Link Structure",
+          "finding": "Internal linking is good: four contextual links with descriptive anchors (LLMO playbook, 'getting cited by ChatGPT', 'does llms.txt actually work for B2B SaaS', 'measuring LLMO and AI visibility') plus the /contact CTA. External linking is structurally wrong: all four outbound links (llmstxt.org, ahrefs.com/blog/llmstxt-study, Google Search Central block-indexing, docs.stripe.com/llms.txt) live only inside the 'Further Reading' <ul>, so the sentences that make the claims — the Ahrefs 97 percent stat, the Mueller quote, the X-Robots-Tag advice — carry no anchor at all.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical SEO",
+          "finding": "Meta-title is 49 characters and meta-description 150 characters, both inside SERP limits, and the description leads with the exact query ('How to write llms.txt for B2B SaaS: the exact spec, where the file goes...'). Schema is present as a two-node @graph (BlogPosting + FAQPage). The body correctly contains no <h1> — the Webflow template supplies it from the name field — and the H2/H3/H4 sequence has no skipped levels.",
+          "score": 5,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.20,
+      "flag": "Textbook extractable opening answer and dense definitional statements; held back by the author never appearing in the body and by list-formatting being under-used in the most quotable sections.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Definitions",
+          "criterion": "Direct Definitions",
+          "finding": "The first paragraph is a complete, liftable answer to the head query: 'To write an llms.txt file for a B2B SaaS, publish a plain Markdown file at yourdomain.com/llms.txt containing one H1 with your product name, a blockquote summary... then H2 sections listing your highest value URLs as Markdown links with a one line description each.' Additional bolded definitional anchors are scattered through the body — 'The only required element is an H1 containing the name of the project or site', 'The Optional heading is a real instruction, not a label', and the crisp disambiguation 'It is a content offer, not an access control.'",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Parsing",
+          "criterion": "Structured Data for AI Parsing",
+          "finding": "Strong artifacts: a five-row comparison table, a six-question FAQPage, and a complete fenced <pre><code> llms.txt example that a model can quote verbatim as a template. But the post contains exactly one <ul> (Further Reading) and zero <ol>, so the two most extractable sequences are buried in prose — 'Verify in four checks. One, request the URL with headers visible... Two, confirm... Three, request every URL... Four, paste the file into an assistant' runs as a single paragraph, and the include/exclude sets are comma lists inside bolded paragraphs.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Authority",
+          "criterion": "Statistical Authority",
+          "finding": "Several claims are cleanly attributable to a named source an LLM can repeat: 'Ahrefs analysed roughly 137,000 domains', 'about 97 percent of published llms.txt files received no requests at all in a recent month of server log data', \"Google's John Mueller has been blunt that no AI system was using the file for Search\", and 'Jeremy Howard proposed it in September 2024'. The weakest sentence is the token-savings claim — 'Teams serving Markdown instead have reported large token reductions on identical content' — which names no team, gives no percentage, and is therefore uncitable.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Entity",
+          "criterion": "Entity Association",
+          "finding": "DevCommX is named twice, both inside the closing CTA ('DevCommX built a free AI Visibility Checker', 'clients owning the infrastructure end to end'), and the only experiential first-person signal in 2,799 words is 'a failure mode we see constantly on generator produced files that assumed the convention without checking the server.' Sumit Nautiyal appears only in the CMS author fields and the schema author node — his name and 'VP of Revenue Operations & GTM Engineering' never appear in the body, so nothing ties a named practitioner to llms.txt implementation in the extractable text.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Distinctiveness",
+          "criterion": "GEO Distinctiveness",
+          "finding": "Against the sibling 'Does llms.txt Actually Work for B2B SaaS? An Evidence-Based Verdict', intent separation is real and deliberate: this post targets 'llms.txt example / llms.txt spec / llms.txt template' (how-to cluster) while the sibling targets 'does llms.txt actually work' (verdict cluster), and the body explicitly disambiguates — 'This post is the implementation guide, not the does it work verdict. If you are still deciding whether to bother, read that one first.' The cannibalisation risk is evidence overlap, not intent overlap: the whole H2 'Who Actually Reads This File in 2026' re-runs the sibling's core proof (the same Ahrefs 137K / 97 percent study and the same Mueller line), so the two pages compete for skeptic-phrased queries even though the primary clusters stay distinct.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "DevCommX shows up only in the final 90 words: the owned-infrastructure narrative, the 40-plus-demos proof and the tool CTA are all compressed into one closing paragraph, and no cost or engagement framing appears anywhere.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Positioning",
+          "criterion": "Differentiation Narrative",
+          "finding": "The signal-based / owned-infrastructure model appears exactly once, in the last paragraph: 'We then build the signal based GTM systems that turn those answers into pipeline, with clients owning the infrastructure end to end.' The framing is correct but bolted on — nothing in the preceding nine H2s connects llms.txt, .md twins or log-based measurement to why DevCommX builds systems clients own, even though 'Measure with logs, not vibes' is a natural bridge to that argument.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Proof",
+          "criterion": "Proof Metrics & Evidence",
+          "finding": "The sanctioned proof line is present verbatim — 'which is how our clients get from setup to 40 plus qualified demos in roughly six weeks' — but it is the only DevCommX outcome in the post, and it is unrelated to the topic. The article tells readers to 'Filter your CDN or origin access logs for the /llms.txt path, group by user agent' yet shows no DevCommX or client log result, which is the one piece of proprietary evidence that would make this post uncopyable.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Pricing",
+          "criterion": "Pricing Transparency",
+          "finding": "No DevCommX cost, retainer, or engagement-size framing appears anywhere. The only dollar figure in the post is fictional — 'Self serve from 499 USD per month' inside the invented Loopwire example — and the only effort framing is qualitative: 'Publishing llms.txt is the easy half hour' and 'it is cheap insurance rather than a growth lever'. Ironically the body argues 'pricing with real numbers' belongs in llms.txt and warns that without it 'the answer an assistant gives about your cost comes from a competitor comparison post instead', while the post itself gives none.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "CTA",
+          "criterion": "CTA Quality",
+          "finding": "The CTA is specific and mechanism-led rather than generic: it names the asset, explains what it does — 'a free AI Visibility Checker that runs your brand and category prompts across the major assistants and shows the citation gap in plain terms' — and closes with the linked action 'Book a GTM strategy call'. One conversion leak: the AI Visibility Checker is described but never hyperlinked; the only href in that section is https://www.devcommx.com/contact.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Library Fit",
+          "criterion": "Content Differentiation",
+          "finding": "The post occupies a clean, non-duplicated slot as the 'build the file' node of the LLMO cluster, linking outward to the playbook (how-to-optimize-content-for-llms-llmo-playbook), the verdict post (does-llms-txt-actually-work-b2b-saas), the citation post (how-to-get-cited-by-chatgpt) and the measurement post (how-to-measure-llmo-ai-visibility-tracking). No other DevCommX post ships a full copy-ready llms.txt artifact or the .md-companion / text-plain serving detail.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Zero in-body images in a post whose central concepts (file-layer comparison, HTTP response verification) are inherently visual, and only one <ul> in 2,799 words despite several list-shaped sections.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Headings",
+          "criterion": "Heading Architecture",
+          "finding": "Ten descriptive H2s in a logical build order (spec, comparison, serving, include/exclude, example, .md twins, adoption reality, mistakes, verification, CTA), then H3 'Further Reading' and H3 'FAQ' with six H4 questions — no skipped levels and no H1 in body, which is correct for the Webflow template. The one nesting flaw: 'Further Reading' is an H3 sitting under the CTA H2 'Find Out What AI Assistants Already Say About You', so the reference list is semantically parented to a sales section.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Visuals",
+          "criterion": "Visual Elements",
+          "finding": "The body contains zero <img> tags; the only image asset is the shared OG file 'imresizer-DevCommX-Blog-OG.png' referenced in schema and the og-image field. The comparison table and the Loopwire <pre><code> block are the only non-prose breaks across nine screens of text, and two obvious visuals are missing: a layer diagram for the robots.txt / sitemap.xml / llms.txt / .md stack described in the table, and a terminal screenshot showing the 'Content-Type: text/plain' response the verification section tells readers to check for.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Scannability",
+          "criterion": "Scannability",
+          "finding": "Bolded lead-ins do most of the skim work well — 'Root path first.', 'Serve it as text/plain, not HTML.', 'Add a noindex header.', 'Skipping the blockquote.', 'Letting it go stale.' — and the opening paragraph answers the query before any scrolling. Against that, the post has exactly one <ul> and no <ol>, so the Include set ('product overview, the two or three pages explaining how the product actually works, pricing with real numbers, the docs quickstart and API reference...') and the four verification checks are delivered as long comma-runs where bullets or a numbered list belong.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Flow",
+          "criterion": "Reading Level & Flow",
+          "finding": "Register is consistent practitioner-to-practitioner and transitions carry real argument rather than filler: 'The takeaway: your sitemap is exhaustive and machine generated, your llms.txt is selective and hand curated. If the two look alike, you built the wrong file.' and 'That is the honest split.' Technical terms are unpacked in situ — MCP servers, single-page-app catch-all routes and X-Robots-Tag are each explained where introduced rather than dropped as jargon.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Length",
+          "criterion": "Content Length & Density",
+          "finding": "2,799 total body words, of which roughly 360 are the code example, against a stated 13-minute reading time — proportionate for a spec-plus-artifact how-to, and every H2 introduces new information rather than restating. The only soft padding is 'Who Actually Reads This File in 2026', which re-argues the adoption evidence that the linked sibling post exists to cover.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Clean two-node @graph with verified character-for-character FAQ alignment to the body; only nits are an unconnected FAQPage node, dateModified identical to datePublished, and a Person author pointed at a company LinkedIn URL.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Article",
+          "criterion": "Article Type Completeness",
+          "finding": "The BlogPosting node carries every required field: headline 'How to Write an llms.txt File for B2B SaaS (With a Real Example)', description, url, datePublished '2026-07-01', dateModified, a seven-term keywords string, image, author, publisher and mainEntityOfPage. The defect is the author node: @type Person, name 'Sumit Nautiyal', jobTitle 'VP of Revenue Operations & GTM Engineering, DevCommX', but url 'https://www.linkedin.com/company/devcommx' — a company page standing in as a Person identifier, which is a weak and technically incorrect entity signal.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "FAQ Schema",
+          "criterion": "FAQPage Structure",
+          "finding": "Six entries in mainEntity, double the 3+ threshold, each correctly formed as {'@type': 'Question', 'name': ..., 'acceptedAnswer': {'@type': 'Answer', 'text': ...}} — for example 'Should llms.txt be blocked in robots.txt?' with a full 60-word answer text. No malformed nodes, no empty answers, no answers truncated below snippet-usable length.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Alignment",
+          "criterion": "Schema-to-Content Alignment",
+          "finding": "Programmatically verified: all six schema question names and all six acceptedAnswer.text values match the body H4/paragraph pairs character for character, with no drift. The schema description is identical to the meta-description, and the keywords string ('llms.txt example, llms.txt spec, llms-full.txt, llms.txt template, AEO, LLMO') maps onto real body coverage — the spec H2, the llms-full.txt table row, and the Loopwire template section all exist.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Graph",
+          "criterion": "@graph Implementation",
+          "finding": "A proper @graph array with two nodes, each carrying a distinct @id — '...#article' and '...#faq' — under a single @context. What is missing is graph connectivity and breadth: the FAQPage node has no isPartOf or mainEntityOfPage pointing back to '#article', so the two nodes float independently, and there is no WebPage, BreadcrumbList or Organization node to anchor the page in the site graph.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Rich Results",
+          "criterion": "Rich Result Eligibility",
+          "finding": "The eligibility basics are all present: image as an ImageObject with url plus width 1200 and height 630, publisher as an Organization with name, url and a logo ImageObject, and dateModified. Two weaknesses: dateModified '2026-07-01' is identical to datePublished, so the page ships with no freshness signal on a topic the post itself dates ('Who Actually Reads This File in 2026'), and publisher.logo reuses the same 1200x630 OG image rather than a real logo asset and omits width/height.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Resolve the title/body contradiction: the meta-title promises a '(Real Example)' but the body opens the example with 'Loopwire, a deliberately fictional subscription revenue reporting product'. Either retitle to 'Full Template' / 'Complete Example', or add a short teardown of a genuinely live file (docs.stripe.com/llms.txt is already cited in Further Reading) alongside the Loopwire template.",
+    "2. Move the four Further Reading links inline to the claims they support: hyperlink ahrefs.com/blog/llmstxt-study on 'Ahrefs analysed roughly 137,000 domains', the Google block-indexing doc on 'Add a noindex header', llmstxt.org on 'The specification at llmstxt.org', and docs.stripe.com/llms.txt on 'the Stripe docs file runs to roughly 90 KB'. Also source or delete the unattributed 'Teams serving Markdown instead have reported large token reductions on identical content'.",
+    "3. Convert the two list-shaped prose blocks into real markup: make 'Verify in four checks. One... Two... Three... Four...' an <ol>, and split the Include / Leave out comma-runs into two <ul> blocks. The post currently has one <ul> in 2,799 words, which costs both skim readers and LLM extraction.",
+    "4. Add at least one in-body visual: a layer diagram showing robots.txt (access) vs sitemap.xml (index) vs llms.txt (curated offer) vs .md twins, and ideally a terminal capture of a response showing 'Content-Type: text/plain' to match the verification instructions. There are currently zero <img> tags in the body.",
+    "5. Strengthen the DevCommX signal beyond the closing 90 words: put Sumit Nautiyal's practitioner voice in the body (he appears only in CMS/schema fields), add one anonymised client log result to the 'Measure with logs, not vibes' section, hyperlink the AI Visibility Checker (currently described but only /contact is linked), and add an engagement-cost or effort/value framing since the post has none.",
+    "6. Tighten the schema: point author.url at a Person profile rather than 'linkedin.com/company/devcommx', add isPartOf/mainEntityOfPage from the '#faq' node to the '#article' node, give publisher.logo a real logo asset with width and height, and set a dateModified later than datePublished before publishing."
+  ]
+}

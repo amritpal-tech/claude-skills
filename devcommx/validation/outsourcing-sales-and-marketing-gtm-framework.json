@@ -1,0 +1,127 @@
+{
+  "slug": "outsourcing-sales-and-marketing-gtm-framework",
+  "title": "Outsourcing Sales and Marketing: A Framework for High-Growth, Low-Risk GTM",
+  "words": 1980,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Strong practitioner depth, but almost no hard stats and the one proof number is self-attributed, not source-linked.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Sources", "criterion": "Stat Accuracy & Source Quality",
+         "finding": "The only quantified claims are soft or self-sourced: 'rarely lands under a six-figure annual run rate' and 'forty or more qualified demos in roughly six weeks' carry no external citation. The External Links and References sections point to generic Gartner/McKinsey/HBR/Forrester topic hubs (e.g. 'gartner.com/en/sales/topics/sales-technology') rather than a specific page backing any specific number, so no key claim is inline-linked to a credible stat.", "score": 3, "max": 5},
+        {"category": "Depth", "criterion": "Practitioner Depth",
+         "finding": "Shows real deployment knowledge: 'separate sending infrastructure from your primary domain, require message approval gates early', the per-meeting incentive trap ('booking low-quality meetings that inflate the number'), and the build-and-transfer vs hybrid engagement distinction. 'We build go-to-market infrastructure for B2B companies every week' is backed by concrete operational detail, not surface summary.", "score": 4, "max": 5},
+        {"category": "Attribution", "criterion": "Data Attribution",
+         "finding": "The In-House vs Outsourced comparison table has no source line and every cell is a bare qualitative assertion ('Weeks: partner stands up a running motion fast', 'Immediate access to a full GTM engineering team'). It is a defensible framework table rather than sourced data, but nothing in it is attributed.", "score": 3, "max": 5},
+        {"category": "Technical", "criterion": "Technical Accuracy",
+         "finding": "Concepts are correct and current for 2026: domain reputation, sending-domain separation, signal-based triggering vs static lists, MQL vs SQL qualification. No tool names, prices, or feature limits are misstated because the piece stays at the framework level and makes no false factual claim.", "score": 4, "max": 5},
+        {"category": "Completeness", "criterion": "Completeness",
+         "finding": "Every H2 promise is delivered: 'What Outsourcing... Actually Means', 'Build vs Buy', the comparison table, 'What to Outsource and What to Keep', the four-part risk framework, engagement models, and the client-owns-the-system section all pay off in the body with no dangling heading.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Excellent keyword coverage, snippet-ready table and FAQ, strong internal linking; meta description runs slightly long.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Keywords", "criterion": "Primary Keyword Targeting",
+         "finding": "'Outsourcing sales and marketing' is the bolded first phrase of the body, appears in the H1/name, meta-title, slug, multiple H2s ('The Real Decision Behind Outsourcing Sales and Marketing', 'The Risk Framework for Outsourcing Sales and Marketing'), and the first FAQ. Variants 'outsource marketing and sales' and 'outsourced GTM' are woven throughout naturally.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQ / People Also Ask",
+         "finding": "Six FAQs map to genuine high-intent PAA queries: 'Should I outsource sales or build an in-house team?', 'What should I keep in-house when I outsource marketing and sales?', 'What are the biggest risks of outsourcing GTM?', and 'How is outsourced GTM different from a managed campaign?'. Each answer is self-contained and quotable.", "score": 5, "max": 5},
+        {"category": "Tables", "criterion": "Comparison / Featured Snippet Tables",
+         "finding": "A clean In-House vs Outsourced table compares six decision dimensions (time to first pipeline, cost shape, control, skill access, key risk, what you keep) in a real <table> with thead/tbody, extractable for a comparison snippet. It is horizontally scrollable via an overflow wrapper rather than plain markdown.", "score": 4, "max": 5},
+        {"category": "Links", "criterion": "Internal & External Link Structure",
+         "finding": "Five relevant internal links with descriptive anchors ('hiring a GTM engineer vs an agency', 'best GTM engineering agencies', 'definitive guide to AI SDRs', 'AI SDR vs human SDR', 'GTM engineering') plus external authority links to Gartner, McKinsey, HBR and Forrester. Anchors are contextual, not generic 'click here'.", "score": 5, "max": 5},
+        {"category": "Technical", "criterion": "Technical SEO",
+         "finding": "Schema is present, H1 (name) carries the keyword, and meta-title 'Outsourcing Sales and Marketing: A GTM Framework' is ~48 chars. The meta-description runs ~185 characters ('...the risks, and how to structure a low-risk outsourced GTM motion.'), slightly over the ~155-160 display limit and likely to truncate.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.20,
+      "flag": "Highly extractable definitions and structured frameworks; weak point is source-attributable statistics an LLM can cite.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Definitions", "criterion": "Direct Definitions",
+         "finding": "Opens with a clean extractable definition: 'Outsourcing sales and marketing means hiring an external partner to run part or all of your go-to-market motion, from demand generation to booked meetings, instead of building the full team in-house.' The managed-campaign vs ownership-model distinction is also defined crisply and repeated in the FAQ.", "score": 5, "max": 5},
+        {"category": "Structure", "criterion": "Structured Data for AI Parsing",
+         "finding": "Dense with parseable structures an LLM can lift: a six-row comparison table, a numbered four-risk framework each with a stated mitigation, three named engagement models, explicit keep-in-house vs safe-to-outsource lists, and a six-item FAQ. Bolded lead-ins ('Risk one, vendor lock-in.') make each unit self-labeling.", "score": 5, "max": 5},
+        {"category": "Authority", "criterion": "Statistical Authority",
+         "finding": "The References section adds four citations (Gartner, McKinsey, HBR, Forrester), which lifts credibility, but they support framing rather than any citable number, and the load-bearing claims ('forty or more qualified demos in roughly six weeks', 'six-figure annual run rate') are self-attributed with no named third-party source an LLM could cite.", "score": 3, "max": 5},
+        {"category": "Entity", "criterion": "Entity Association",
+         "finding": "DevCommX is explicitly tied to the topic ('DevCommX operates this way', 'DevCommX builds autonomous, signal-based AI SDR and GTM systems that your team owns') and author Sumit Nautiyal, VP of Revenue Operations & GTM Engineering, is bound to the piece in schema, associating the brand with the outsourced-GTM/ownership niche.", "score": 5, "max": 5},
+        {"category": "Distinctiveness", "criterion": "GEO Distinctiveness",
+         "finding": "Targets the broad 'outsourcing sales and marketing / should I outsource sales' cluster and stays distinct from the live 'hire-gtm-engineer-vs-agency-build-vs-buy' post, which it links to and defers to for 'the narrower question of hiring a technical builder versus an agency'. Some build-vs-buy overlap exists, but this post frames the whole GTM-function outsourcing decision rather than one role, so cannibalisation risk is low.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Ownership/owned-infrastructure narrative is the spine of the piece; proof metric present but pricing stays at value framing only.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Differentiation", "criterion": "Differentiation Narrative",
+         "finding": "The signal-based, client-owned-infrastructure model is the article's central argument: 'When you outsource execution on top of infrastructure you own, the partner is renting you speed and specialization while the asset accrues to you' and 'the deliverable is a machine, not a monthly campaign'. Ownership is returned to in every section.", "score": 5, "max": 5},
+        {"category": "Proof", "criterion": "Proof Metrics & Evidence",
+         "finding": "Uses the sanctioned framing 'from setup to forty or more qualified demos in roughly six weeks' in both the body and the final FAQ. It appears twice but is the only concrete outcome cited, so evidence is present but thin.", "score": 4, "max": 5},
+        {"category": "Pricing", "criterion": "Pricing Transparency",
+         "finding": "Value and cost shape are framed ('scoped retainer tied to a defined motion', 'rarely lands under a six-figure annual run rate', fixed salaries vs retainer in the table) but no DevCommX price, package, or engagement fee is disclosed, so this is directional cost framing rather than transparency.", "score": 3, "max": 5},
+        {"category": "CTA", "criterion": "CTA Quality",
+         "finding": "Closes with a specific, conversion-oriented CTA: 'book a GTM strategy call to map this to your pipeline', linked to /contact-us and preceded by a dedicated 'Outsource Your GTM Execution With DevCommX' section tying the offer back to the framework's ownership argument.", "score": 5, "max": 5},
+        {"category": "Differentiation", "criterion": "Content Differentiation",
+         "finding": "Fills a distinct top-of-funnel slot in the library: the broad 'should we outsource GTM at all' decision framework, sitting above the narrower hire-vs-agency and best-agencies posts it links to, so it does not duplicate an existing DevCommX piece.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Clean heading hierarchy and strong scannability, but zero in-body visuals beyond the single table caps this dimension.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Headings", "criterion": "Heading Architecture",
+         "finding": "Logical progression: H1 (name) into seven topical H2s, then H3s for 'Further Reading', 'References', and 'FAQ', with H4s for each FAQ question. No skipped levels and each H2 opens a self-contained section.", "score": 5, "max": 5},
+        {"category": "Visuals", "criterion": "Visual Elements",
+         "finding": "There are no in-body images, diagrams, charts, or infographics; the only graphic asset is the OG image, and the sole visual structure is one HTML comparison table. Per the honest no-image baseline this cannot exceed a low score.", "score": 2, "max": 5},
+        {"category": "Scannability", "criterion": "Scannability",
+         "finding": "Skim-readable: a concrete hook ('the pipeline target is set, hiring is slow'), descriptive subheads, bolded lead-ins ('Keep in-house:', 'Safe to outsource:', 'Risk one, vendor lock-in.'), a comparison table, and bulleted keep/outsource and reference lists. Prose sections are otherwise dense paragraphs.", "score": 4, "max": 5},
+        {"category": "Flow", "criterion": "Reading Level & Flow",
+         "finding": "Reads at an appropriate executive level with natural transitions ('Read down the last two rows first', 'That is why one stays and the other can go') and no jargon dump; specialized terms like deliverability and signal detection are explained in context.", "score": 4, "max": 5},
+        {"category": "Length", "criterion": "Content Length & Density",
+         "finding": "At roughly 1,950 words the length fits a decision-framework topic, with each section earning its place; there is mild repetition of the ownership point across sections but no filler padding.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Complete, well-aligned @graph with BlogPosting + FAQPage; only nit is publisher logo reusing the OG image.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Article", "criterion": "Article Type Completeness",
+         "finding": "The BlogPosting node carries headline, description, url, datePublished (2026-07-01), keywords, image ImageObject, author Person with jobTitle, publisher, and mainEntityOfPage. All required Article fields are present.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQPage Structure",
+         "finding": "The FAQPage node holds six mainEntity items, each a @type Question with an acceptedAnswer of @type Answer and full text, well above the 3+ minimum.", "score": 5, "max": 5},
+        {"category": "Alignment", "criterion": "Schema-to-Content Alignment",
+         "finding": "Schema keywords ('outsourcing sales and marketing, outsourced GTM, should I outsource sales, outsource marketing and sales') and description mirror the article, and all six FAQ answer texts match the body FAQ paragraphs verbatim, including the 'forty or more qualified demos in roughly six weeks' answer.", "score": 5, "max": 5},
+        {"category": "Graph", "criterion": "@graph Implementation",
+         "finding": "Uses a proper @graph array of two nodes, each with a distinct @id ('...#article' and '...#faq') and correct @context, making the structured data machine-linkable.", "score": 5, "max": 5},
+        {"category": "RichResult", "criterion": "Rich Result Eligibility",
+         "finding": "Image ImageObject (1200x630), publisher Organization, and dateModified (2026-07-01) are all present. The one flaw is that the publisher logo reuses the 1200x630 OG blog image rather than a proper squarish logo asset, which can fail Google's logo guidelines.", "score": 4, "max": 5}
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Replace the four generic External/Reference hub links with page-specific citations that back a real number (e.g. an SDR ramp-time or cost-per-hire stat), and inline-link at least one to the 'six-figure annual run rate' claim to lift Statistical Authority and Stat Accuracy.",
+    "2. Add at least one in-body visual - a build-vs-buy decision-flow diagram or a risk-and-mitigation infographic - since Visual Elements is currently capped at 2/5 with only the OG image and one table.",
+    "3. Trim the meta-description to ~155 characters so it does not truncate in SERPs, and swap the schema publisher logo for a proper squarish DevCommX logo asset instead of the 1200x630 OG image.",
+    "4. Attribute the comparison table (add a short 'Framework: DevCommX' or sourced caption) and consider a second concrete proof point beyond the single 40+ demos framing to strengthen Proof Metrics."
+  ]
+}

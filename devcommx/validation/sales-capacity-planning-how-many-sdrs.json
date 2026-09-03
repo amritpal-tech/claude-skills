@@ -1,0 +1,126 @@
+{
+  "slug": "sales-capacity-planning-how-many-sdrs",
+  "title": "Sales Capacity Planning for B2B Outbound: How Many SDRs Do You Need?",
+  "words": 1750,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Strong practitioner reasoning and internally-consistent math, but benchmark stats are not inline-cited at the point of claim.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Sources", "criterion": "Stat Accuracy & Source Quality",
+         "finding": "Load-bearing benchmarks are asserted without an inline link at the point of claim: 'roughly 8 to 15 qualified meetings a month', 'Most take three to four months to reach full productivity', and 'A team with 30% annual attrition'. A References section names The Bridge Group as supporting 'the ramp-time and SDR productivity benchmarks referenced throughout', but the reader/LLM cannot trace a specific number to a specific source at the sentence level.", "score": 3, "max": 5},
+        {"category": "Depth", "criterion": "Practitioner Depth",
+         "finding": "Demonstrates real deployment knowledge beyond a surface summary: it introduces the 'ramp-and-availability factor' as a single haircut 'bundling ramp time, attrition, PTO, and non-selling admin', warns 'If you cannot report meetings-per-rep and stage conversion rates from your CRM in under a minute, fix that first', and frames capacity as 'a quarterly loop' rebuilt on trailing data. This is operator-grade, not generic.", "score": 4, "max": 5},
+        {"category": "Attribution", "criterion": "Data Attribution",
+         "finding": "The worked-example numbers are honestly labeled as illustrative ('Average contract value is $30,000', 'books about 12 qualified meetings a month'), which is fine. But the comparison table ('3 to 4 months of ramp per hire', 'None; the system does not resign') carries no source line, and the '8 to 15' range is a bare assertion rather than a cited benchmark table.", "score": 3, "max": 5},
+        {"category": "Technical", "criterion": "Technical Accuracy",
+         "finding": "The worked example is arithmetically sound and reproducible: $3M / $30K = 100 deals, / 25% = 400 opps, / 50% = 800 meetings (~67/mo), 12 x 0.75 = 9 effective, 67 / 9 = 7.4 -> 8 SDRs. It also correctly contrasts the 'naive answer, 67 divided by 12, is 5.6 reps' against the honest 8. No false tool/pricing claims are made.", "score": 4, "max": 5},
+        {"category": "Completeness", "criterion": "Completeness",
+         "finding": "Every H2 promise is delivered: the formula section states the one-line model, 'A worked example you can copy' walks all four steps, 'The four inputs that drive the answer' enumerates conversion/meetings-per-rep/ramp/attrition, 'When the honest answer is fewer SDRs' argues the denominator case, and 'Three ways to add outbound capacity' delivers the promised table. No H2 is left as a stub.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Excellent keyword coverage, six real-PAA FAQs, six internal links, and four external citations.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Keyword", "criterion": "Primary Keyword Targeting",
+         "finding": "'Sales capacity planning' appears in the title, meta-title ('Sales Capacity Planning: How Many SDRs Do You Need?'), the slug, multiple H2s ('The sales capacity planning formula', 'How to run sales capacity planning in practice'), the opening bold sentence, and the FAQ. The secondary 'how many SDRs' anchors the title, slug, and first FAQ. Coverage is thorough and natural.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQ / People Also Ask",
+         "finding": "Six FAQs map cleanly to high-intent PAA queries: 'How many SDRs do I need for B2B outbound?', 'What is sales capacity planning?', 'What is the SDR capacity formula?', 'How many meetings should one SDR book per month?', 'When should I add SDRs versus automation?', and 'Why does ramp time change my SDR headcount?'. Each answer is concise and directly responsive.", "score": 5, "max": 5},
+        {"category": "Tables", "criterion": "Comparison / Featured Snippet Tables",
+         "finding": "The three-column table (Add human SDRs / Add signal-based AI SDR system / Hybrid) across rows like 'Time to capacity' and 'Attrition risk' is clean and extractable, and the bolded formula line 'SDRs needed = Monthly qualified-meeting target / (Meetings per fully ramped rep per month x Ramp-and-availability factor)' is a strong snippet target. Inline table styling (fixed pixel borders/colors) is slightly heavy but does not block extraction.", "score": 4, "max": 5},
+        {"category": "Links", "criterion": "Internal & External Link Structure",
+         "finding": "Six contextual internal links with relevant anchors (repeatable outbound pipeline, definitive guide to AI SDRs, AI SDR vs human SDR, AI automation doubled SDR opportunity creation, B2B sales team structure, B2B sales velocity formula) plus four external citations (Gartner, HBR, Sales Hacker, The Bridge Group). Anchor text is descriptive, not 'click here'.", "score": 5, "max": 5},
+        {"category": "Technical", "criterion": "Technical SEO",
+         "finding": "Schema is present and valid, the meta-title is ~48 characters (within range), and the meta-description at ~180 characters is at the upper edge but acceptable. The body opens with a paragraph and jumps straight to H2s, relying on the CMS to render the page H1 from 'name'; no in-body H1 is present, which is normal for this template but worth confirming.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.20,
+      "flag": "Highly extractable definitions and a distinct query cluster; statistical authority is the one soft spot.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Definitions", "criterion": "Direct Definitions",
+         "finding": "Clean, quotable definitional statements exist for every core concept: 'Sales capacity planning is the model that tells you how many SDRs you actually need to hit a pipeline target' and the FAQ's 'Sales capacity planning is the process of calculating how much selling capacity, usually in SDRs or AEs, you need to hit a revenue or pipeline target.' The formula is also stated as one extractable line.", "score": 5, "max": 5},
+        {"category": "Structure", "criterion": "Structured Data for AI Parsing",
+         "finding": "The post gives an LLM multiple parseable structures: a numbered four-step worked example, a numbered list of 'four inputs', a three-column comparison table, and a six-item FAQ mirrored in FAQPage schema. The only missing structure is any labeled benchmark table tying numbers to sources.", "score": 4, "max": 5},
+        {"category": "Authority", "criterion": "Statistical Authority",
+         "finding": "Named, citable sources exist (Gartner, HBR, The Bridge Group, Sales Hacker) and the References block attaches each to a claim class, but the key numeric claims an LLM would want to cite ('8 to 15 qualified meetings a month', 'three to four months to reach full productivity') are not bound to a named source in-sentence, so the attributable-statistic density is moderate rather than high.", "score": 3, "max": 5},
+        {"category": "Entity", "criterion": "Entity Association",
+         "finding": "DevCommX and the author are explicitly tied to the topic: 'It is written from how we build outbound systems at DevCommX, where the goal is targets hit with fewer SDRs, not more', the 'Build This With DevCommX' section, and schema author 'Sumit Nautiyal, VP of Revenue Operations & GTM Engineering, DevCommX'. The niche (signal-based owned AI SDR systems) is clearly bound to the entity.", "score": 5, "max": 5},
+        {"category": "Distinctiveness", "criterion": "GEO Distinctiveness",
+         "finding": "This post owns a distinct query cluster (headcount math / 'how many SDRs') that none of the siblings claim: it defers velocity to the 'B2B sales velocity formula' post and team ratios to the 'B2B sales team structure' post via internal links rather than re-answering them, and it does not touch no-shows, speed-to-lead, or MQL-vs-SQL. Low cannibalisation risk.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Owned-infrastructure narrative, the sanctioned 40+ demos proof, and a specific CTA are all present; pricing stays qualitative.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Differentiation", "criterion": "Differentiation Narrative",
+         "finding": "The owned, signal-based model is stated cleanly: 'DevCommX builds autonomous, signal-based AI SDR systems that your team owns, not a managed campaign you rent' and 'the system triggers on real buying signals instead of static lists'. Automation is framed as 'a capacity strategy rather than a cost-cutting one', which is on-message.", "score": 5, "max": 5},
+        {"category": "Proof", "criterion": "Proof Metrics & Evidence",
+         "finding": "The sanctioned proof framing is used verbatim: 'Our clients typically go from setup to 40+ qualified demos in about 6 weeks'. It is also reinforced by the linked case reference to how 'AI automation doubled SDR opportunity creation for a team that kept its headcount flat'.", "score": 5, "max": 5},
+        {"category": "Pricing", "criterion": "Pricing Transparency",
+         "finding": "No dollar pricing is disclosed, but value framing is present and relevant: 'the right question is capacity per dollar', and the table's 'Mostly fixed system cost, low marginal cost per meeting' versus 'Fixed salary plus tooling, per head'. This is qualitative cost framing, not a priced offer.", "score": 3, "max": 5},
+        {"category": "CTA", "criterion": "CTA Quality",
+         "finding": "The CTA is specific and conversion-oriented: 'See how the AI SDR system works, then book a GTM strategy call to run your own capacity numbers and map them to your pipeline', with distinct links to the AI SDR page and the contact-us page. It ties the offer directly to the post's payload (the capacity model).", "score": 5, "max": 5},
+        {"category": "Differentiation", "criterion": "Content Differentiation",
+         "finding": "Fills a distinct library slot: the headcount/capacity-math question, positioned as complementary to the sales-velocity, team-structure, and AI-SDR-vs-human posts it links to rather than duplicating them. It advances the house thesis that the answer is 'fewer, better-utilized reps sitting on top of a system'.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Very scannable and well-written, but no in-body visuals beyond a single table caps Visual Elements.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Headings", "criterion": "Heading Architecture",
+         "finding": "Heading flow is logical with no skipped levels: seven topical H2s, then H3 for 'Further Reading', 'References', and 'FAQ', with H4 per FAQ question. The body relies on the CMS to supply the page-level H1 from the 'name' field rather than including its own, which is consistent but means the visible article starts at H2.", "score": 4, "max": 5},
+        {"category": "Visuals", "criterion": "Visual Elements",
+         "finding": "There are no in-body images, diagrams, or charts; the only graphic asset is the shared OG image, and the sole visual structure is the one HTML comparison table. A worked example this numeric is a missed opportunity for a funnel diagram or a capacity-math visual. Per calibration, no in-body imagery caps this dimension.", "score": 2, "max": 5},
+        {"category": "Scannability", "criterion": "Scannability",
+         "finding": "Highly skimmable: a bolded thesis opener, bolded step lead-ins ('Step 1, revenue to deals.'), a numbered input list ('1. Funnel conversion rates.'), bolded imperatives ('Instrument the inputs before you trust the output.'), a comparison table, and a six-item FAQ. A skim reader gets the model without reading prose.", "score": 5, "max": 5},
+        {"category": "Readability", "criterion": "Reading Level & Flow",
+         "finding": "Complexity is appropriate for a RevOps audience and transitions are natural ('Notice what just happened', 'Here is the part most capacity guides skip'). It explains jargon in place (the ramp-and-availability factor is defined before it is used) rather than dumping terms. Tone is confident without hype.", "score": 5, "max": 5},
+        {"category": "Length", "criterion": "Content Length & Density",
+         "finding": "At roughly 1,750 words the length fits the topic and most paragraphs carry a distinct point. There is mild thematic echo between 'It is a quarterly loop' early and the closing 'Model in quarters, not years' section, but it is reinforcement rather than padding.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Complete two-node @graph with a 6-question FAQPage that matches the body verbatim; only the author URL is off.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Article", "criterion": "Article Type Completeness",
+         "finding": "The BlogPosting node carries headline, description, url, datePublished, dateModified, keywords, image, author, publisher, and mainEntityOfPage. The one blemish is author.url pointing to 'linkedin.com/company/devcommx' (a company page) for a Person node rather than a personal profile, a minor correctness gap.", "score": 4, "max": 5},
+        {"category": "FAQPage", "criterion": "FAQPage Structure",
+         "finding": "The FAQPage node lists six entries, each a proper @type Question with an acceptedAnswer of @type Answer and a populated text field (e.g. 'What is the SDR capacity formula?' -> 'SDRs needed equals your monthly qualified-meeting target...'). Well above the 3-question minimum.", "score": 5, "max": 5},
+        {"category": "Alignment", "criterion": "Schema-to-Content Alignment",
+         "finding": "Schema keywords ('sales capacity planning, how many SDRs do I need, SDR capacity model...') and the description mirror the article's focus, and all six FAQ answer texts match the body FAQ verbatim (the ramp-time answer '...ramp-and-availability factor of 0.7 to 0.8 captures that...' is identical in both). Alignment is exact.", "score": 5, "max": 5},
+        {"category": "Graph", "criterion": "@graph Implementation",
+         "finding": "A proper @graph array holds two nodes, each with a distinct @id ('...#article' for the BlogPosting and '...#faq' for the FAQPage), plus a nested WebPage @id on mainEntityOfPage. Structure follows best practice.", "score": 5, "max": 5},
+        {"category": "RichResult", "criterion": "Rich Result Eligibility",
+         "finding": "Rich-result signals are all present: image is an ImageObject with url plus width 1200 and height 630, publisher is an Organization with a logo ImageObject, and dateModified is set. Eligible for article and FAQ rich results.", "score": 5, "max": 5}
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Bind the load-bearing benchmarks to their named sources inline: attach The Bridge Group to '8 to 15 qualified meetings a month' and the 'three to four months' ramp figure at the point of claim, so the numbers are traceable for both readers and LLM citation instead of only appearing in the References block.",
+    "2. Add at least one in-body visual: a funnel diagram of the worked example ($3M -> 100 deals -> 400 opps -> 800 meetings -> 8 SDRs) or a capacity-math infographic would lift the Visual Elements score and reinforce the numeric argument.",
+    "3. Source the comparison table and correct the schema author URL: add a one-line source note under the three-ways table, and change author.url from the DevCommX company LinkedIn page to Sumit Nautiyal's personal profile."
+  ]
+}

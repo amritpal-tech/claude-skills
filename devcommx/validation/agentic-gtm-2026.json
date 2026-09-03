@@ -1,0 +1,127 @@
+{
+  "slug": "agentic-gtm-2026",
+  "title": "Agentic GTM: How Autonomous AI Agents Are Reshaping Go-To-Market in 2026",
+  "words": 2902,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Only one externally sourced statistic (Gartner 40%); the rest of the authority rests on unverifiable first-party claims like 'more than 40 client deployments'.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Sources", "criterion": "Stat Accuracy & Source Quality",
+         "finding": "The post carries exactly one hard external stat: 'Gartner projects that over 40% of agentic AI projects will be scrapped by the end of 2027,' which is credible and links to the real 2025-06-25 Gartner press release in Further Reading. However that stat is NOT hyperlinked at the point of claim in the body, and no other quantitative claim is externally sourced, so authority is thin for a 2,900-word pillar.", "score": 3, "max": 5},
+        {"category": "Depth", "criterion": "Practitioner Depth",
+         "finding": "Genuine deployment knowledge shows through: 'The failures we get called in to fix almost always trace to a team skipping a level,' and error recovery framed as 'the property most teams underestimate, because it only shows up at scale.' The production section names a concrete five-agent division of labor (signal, enrichment, messaging, sequencing, hygiene agents) with logging per decision. This reads from production, not a summary.", "score": 4, "max": 5},
+        {"category": "Attribution", "criterion": "Data Attribution",
+         "finding": "The L0-L4 maturity table is a proprietary framework presented without a source line, which is acceptable as an original model. But quantified proof claims are bare assertions: 'Across more than 40 client deployments we have converged on roughly this shape' has no identifier or corroboration, and the only attributed number is the Gartner 40% figure.", "score": 3, "max": 5},
+        {"category": "Technical", "criterion": "Technical Accuracy",
+         "finding": "Tool references are correct for 2026: 'A Zapier zap, a Clay table that runs on a schedule, and a multi-step sequence are all automation' accurately classifies these as stateless workflows, and the state/tool-access/decision-authority/error-recovery framing is technically sound. No pricing or feature-limit claims are made that could be wrong.", "score": 4, "max": 5},
+        {"category": "Completeness", "criterion": "Completeness",
+         "finding": "Every H2 promise is delivered: 'What Agentic GTM Actually Is' delivers the three eras, 'Why Automated and Agentic Are Not the Same' delivers all four properties, 'The Five Agentic GTM Functions' delivers all five as H3s, the maturity model delivers the L0-L4 table, and 'What Breaks When Teams Jump Levels' delivers the three named prerequisites. No promised section is left unfilled.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Keyword targeting and internal linking are excellent; only nit is the 168-char meta description running slightly past the safe truncation length.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Keyword", "criterion": "Primary Keyword Targeting",
+         "finding": "'Agentic GTM' saturates every surface: the H1 name, meta-title 'Agentic GTM in 2026: Definition + Maturity Model', slug 'agentic-gtm-2026', H2s ('What Agentic GTM Actually Is', 'The Five Agentic GTM Functions', 'The Agentic GTM Maturity Model'), the opening bolded sentence, and the FAQ ('What is agentic GTM?'). Placement is comprehensive and natural.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQ / People Also Ask",
+         "finding": "Six FAQs map cleanly to high-intent PAA queries: 'What is agentic GTM?', 'How is agentic GTM different from GTM automation?', 'What are the five functions of an agentic GTM system?', 'What is the agentic GTM maturity model?', 'Why do agentic GTM projects fail?', and 'Do I need to replace my existing GTM stack to go agentic?' Each is a real searcher question, not filler.", "score": 5, "max": 5},
+        {"category": "Tables", "criterion": "Comparison / Featured Snippet Tables",
+         "finding": "The L0-L4 maturity table is cleanly structured (Level / Name / What runs the motion / Human role) and is well-formed for snippet extraction. The automated-vs-agentic contrast, however, stays in prose across four bolded paragraphs rather than a side-by-side table, a missed snippet opportunity for the comparison query.", "score": 4, "max": 5},
+        {"category": "Links", "criterion": "Internal & External Link Structure",
+         "finding": "Internal linking is dense and relevant: eight inline links to sibling posts (agentic-gtm-ai-agents-gtm-engineering, first-gen-automation, agentic-builder-vs-static-workflow, real-time-sales-signals, clay-data-enrichment, gtm-engineering-trends-2026, deterministic-vs-probabilistic, human-in-the-loop) plus a /contact-us CTA. Three external authority links (Gartner, Forrester, McKinsey) carry rel='noopener noreferrer'. Only gap: the Gartner stat is not linked inline where it is stated.", "score": 4, "max": 5},
+        {"category": "Technical", "criterion": "Technical SEO",
+         "finding": "Schema is present (@graph BlogPosting + FAQPage), meta-title is 48 chars (within range), and the H1 is correct. The meta description runs 168 characters ('Agentic GTM is go-to-market executed by autonomous agents...'), slightly over the ~155-160 char safe zone and likely to truncate in SERPs.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.20,
+      "flag": "Strongly extractable definitions and structure; stays mostly distinct from its two live siblings but shares definitional/era ground with the companion pillar.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Definitions", "criterion": "Direct Definitions",
+         "finding": "The opening sentence is a clean, LLM-liftable definition: 'Agentic GTM is go-to-market executed by autonomous AI agents that perceive buying signals, decide what to do, and act across your revenue stack with minimal human input, rather than by rule-based workflows that only fire preset steps.' The FAQ restates it in near-identical extractable form. Core concepts are defined unambiguously.", "score": 5, "max": 5},
+        {"category": "Structure", "criterion": "Structured Data for AI Parsing",
+         "finding": "Highly parseable: a four-column maturity table, five numbered H3 functions, four bolded named properties (State, Tool access, Decision authority, Error recovery), a three-item Further Reading list, and a six-question FAQ. An LLM can extract discrete facts at multiple granularities.", "score": 5, "max": 5},
+        {"category": "Authority", "criterion": "Statistical Authority",
+         "finding": "Only one claim is attributable to a named external source an LLM would cite: the 'Gartner projects over 40% of agentic AI projects will be canceled by the end of 2027' figure. The remaining authority ('more than 40 client deployments') is first-party and unverifiable, limiting citable statistical density.", "score": 3, "max": 5},
+        {"category": "Entity", "criterion": "Entity Association",
+         "finding": "DevCommX is explicitly bound to the topic: 'We build these systems for a living, so the framing below comes from production,' 'the architecture we deploy for clients,' and 'Clients own this infrastructure outright.' The schema names author Sumit Nautiyal, VP of Revenue Operations & GTM Engineering, DevCommX. Entity-to-niche association is strong.", "score": 5, "max": 5},
+        {"category": "Distinctiveness", "criterion": "GEO Distinctiveness",
+         "finding": "The post deliberately carves a narrow slot ('Here we stay narrow on purpose: what the words mean... exactly which level your motion sits at') and links out to the broader companion agentic-gtm-ai-agents-gtm-engineering and to gtm-engineering-trends-2026, signaling non-overlap. The L0-L4 maturity model is a genuinely distinct query cluster. Some cannibalisation risk remains on the shared definition/three-eras material that the companion pillar also likely covers.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Owned-infrastructure narrative and CTA are sharp, but the sanctioned '40+ demos in ~6 weeks' proof is absent and there is no pricing or value framing.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Differentiation", "criterion": "Differentiation Narrative",
+         "finding": "The owned-infrastructure, signal-based model is stated cleanly: 'Clients own this infrastructure outright, which is why it keeps compounding after we hand it over rather than decaying like a managed campaign,' and agents that 'perceive buying signals, decide what to do, and act.' The positioning is unmistakable.", "score": 5, "max": 5},
+        {"category": "Proof", "criterion": "Proof Metrics & Evidence",
+         "finding": "Proof is present but soft: 'Across more than 40 client deployments we have converged on roughly this shape' and 'The failures we get called in to fix.' The sanctioned outcome framing '40+ qualified demos in ~6 weeks' is NOT used; the substituted '40 client deployments' is an activity count, not a result, so the strongest available proof point is left on the table.", "score": 3, "max": 5},
+        {"category": "Pricing", "criterion": "Pricing Transparency",
+         "finding": "No cost, pricing, or explicit value framing appears. The nearest gesture is qualitative ('compounding' owned infrastructure vs a 'decaying managed campaign'), with no numbers, ROI, or investment context. Consistent with most drafts omitting this.", "score": 2, "max": 5},
+        {"category": "CTA", "criterion": "CTA Quality",
+         "finding": "The CTA is specific and conversion-oriented: 'Assess your team against the maturity model and book a 30-minute agentic GTM readiness review to map which functions are ready for agents,' linking to /contact-us. It ties directly to the article's maturity-model payoff.", "score": 5, "max": 5},
+        {"category": "Differentiation", "criterion": "Content Differentiation",
+         "finding": "The post fills a distinct definitional/maturity-model slot in the library, explicitly positioned against the broader companion pillar and the trends post it links to. It is not a duplicate of existing DevCommX assets, though it overlaps them on foundational definitions.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Clean heading hierarchy and strong prose flow; only one in-body visual (the maturity table) and no images/diagrams.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Headings", "criterion": "Heading Architecture",
+         "finding": "Hierarchy is logical with no skipped levels: H1 title, seven H2 section headers, five numbered H3 function headers under 'The Five Agentic GTM Functions', plus H3 'Further Reading' and 'FAQ' with six H4 question headers nested under FAQ. Structure is clean and machine-readable.", "score": 5, "max": 5},
+        {"category": "Visuals", "criterion": "Visual Elements",
+         "finding": "The only visual asset is the single L0-L4 HTML table; there are no in-body images, diagrams, charts, or infographics, and the OG image is not rendered in the body. For a 2,900-word pillar covering three eras, four properties, and five functions, a diagram of the agent architecture is a clear miss.", "score": 2, "max": 5},
+        {"category": "Scannability", "criterion": "Scannability",
+         "finding": "A strong hook, bolded lead-in labels (State, Tool access, Human/Rule-based/Agentic), the maturity table, and numbered function headers aid skimming. However the body is largely dense prose paragraphs with bulleted lists appearing only in Further Reading; the 'What Breaks' section relies on bold run-in labels rather than true bullets.", "score": 4, "max": 5},
+        {"category": "Readability", "criterion": "Reading Level & Flow",
+         "finding": "Transitions are natural ('That definition matters because...', 'The pattern across all three is the same') and jargon is defined in place rather than dumped. Complexity is appropriate for a technical GTM buyer without being impenetrable.", "score": 5, "max": 5},
+        {"category": "Length", "criterion": "Content Length & Density",
+         "finding": "At roughly 2,900 words the length fits a definitional pillar with a maturity model, three eras, and five functions. Sections carry distinct content with no visible padding or repetition beyond the intentional FAQ restatement of key points.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Complete @graph with BlogPosting + FAQPage; FAQ text matches the body exactly. Minor rich-result nit: publisher logo reuses the OG banner image.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Article", "criterion": "Article Type Completeness",
+         "finding": "The BlogPosting node includes headline, description, url, datePublished (2026-07-01), dateModified, keywords, image, author (Person Sumit Nautiyal with jobTitle), publisher, and mainEntityOfPage. All expected fields are present; the author 'url' resolving to the LinkedIn company page rather than a personal profile is a small inaccuracy.", "score": 4, "max": 5},
+        {"category": "FAQ", "criterion": "FAQPage Structure",
+         "finding": "The FAQPage node holds six entries, each a proper @type Question with an acceptedAnswer @type Answer and a text field. Well above the 3-question minimum and correctly structured for rich results.", "score": 5, "max": 5},
+        {"category": "Alignment", "criterion": "Schema-to-Content Alignment",
+         "finding": "Schema keywords ('agentic GTM, agentic go-to-market, AI agents GTM, autonomous GTM, what is agentic GTM, agentic GTM maturity model') and description match the article's subject, and all six FAQ answer texts in the schema are verbatim copies of the body FAQ answers, including the Gartner 40% line. Alignment is exact.", "score": 5, "max": 5},
+        {"category": "Graph", "criterion": "@graph Implementation",
+         "finding": "The schema uses a proper @graph array containing two nodes, each with a distinct @id (#article and #faq), and the BlogPosting mainEntityOfPage points to the canonical WebPage @id. Graph structure is correct.", "score": 5, "max": 5},
+        {"category": "RichResult", "criterion": "Rich Result Eligibility",
+         "finding": "The image is a valid ImageObject (1200x630 with dimensions), publisher is an Organization, and dateModified is present. The one weakness: the publisher logo ImageObject reuses the 1200x630 OG banner rather than a proper square/organization logo, which can fail Google's logo requirements.", "score": 4, "max": 5}
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Hyperlink the Gartner 40% statistic inline at the point of claim in the 'What Breaks When Teams Jump Levels' section (not only in Further Reading), and add one more externally-sourced stat to strengthen statistical authority for GEO/AEO.",
+    "2. Add the sanctioned '40+ qualified demos in ~6 weeks' proof framing to the production section to replace the vaguer 'more than 40 client deployments' activity count, and include at least one line of value/ROI framing to lift Pricing Transparency above 2/5.",
+    "3. Add at least one in-body visual (an agent-architecture diagram of the five-agent division of labor, or a comparison graphic) to move Visual Elements past the table-only 2/5.",
+    "4. Trim the meta description from 168 to under 160 characters to avoid SERP truncation, and swap the publisher logo ImageObject for a proper square organization logo instead of the OG banner."
+  ]
+}

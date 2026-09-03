@@ -1,0 +1,157 @@
+{
+  "slug": "reduce-b2b-meeting-no-shows",
+  "title": "How to Reduce B2B Meeting No-Shows: A Practical Playbook for Outbound Teams",
+  "words": 2299,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Deep practitioner content, but the load-bearing 20-50% benchmark and the table's impact column are unsourced.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Sources", "criterion": "Stat Accuracy & Source Quality",
+         "finding": "The one hard number in the piece, 'Widely cited industry figures put average sales meeting no-show rates somewhere in the 20 to 50 percent band', is attributed only as 'widely cited' with no inline link. The References section lists 'HubSpot Sales Statistics: supports benchmark ranges' but the number is never tied to a named figure a reader can verify, so the central claim rests on an unnamed source.",
+         "score": 3, "max": 5},
+        {"category": "Depth", "criterion": "Practitioner Depth",
+         "finding": "Shows genuine deployment knowledge: 'the honest ranking we use when we instrument a client's booking flow', the four failure modes (ownership, lead time, wrong attendee, dropped value), and operational measurement advice like segmenting 'by lead source, by rep, by lead time, and by seniority of the booked contact' and rolling the number 'over a trailing 30 days'. This is far past a surface summary.",
+         "score": 4, "max": 5},
+        {"category": "Attribution", "criterion": "Data Attribution",
+         "finding": "The tactics table's 'Typical impact on no-show rate' column carries only qualitative labels ('Large reduction', 'High', 'Moderate') with no source, and the benchmark ranges are stated without a cited figure. The labels are honestly hedged rather than fabricated precision, but no metric in the post is attributed to an identified dataset.",
+         "score": 3, "max": 5},
+        {"category": "Accuracy", "criterion": "Technical Accuracy",
+         "finding": "The mechanics are correct for 2026: the 24h/1h/10-minute reminder cadence, the channel mix ('email for the 24-hour touch, and SMS or LinkedIn for the closer touches if you have consent'), and calendar-invite hygiene are all sound. No tool names, pricing, or feature limits are asserted, so there is nothing factually stale to get wrong.",
+         "score": 4, "max": 5},
+        {"category": "Completeness", "criterion": "Completeness",
+         "finding": "Every H2 promise is delivered: 'Why B2B Meeting No-Shows Happen', the ranked 'Tactics That Actually Move No-Show Rate' table, the confirmation/reminder sequence, calendar hygiene, a precise 'How to Measure Your No-Show Rate' definition, and the benchmarks section all pay off in the body with no gap or stub.",
+         "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Strong keyword coverage, rich internal/external linking, snippet-ready table and FAQ; meta title runs short.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Keyword", "criterion": "Primary Keyword Targeting",
+         "finding": "'reduce B2B meeting no-shows' is in the title, slug, meta, and opening bold sentence ('To reduce B2B meeting no-shows, book the meeting live'), with H2 variants ('Why B2B Meeting No-Shows Happen', 'Move No-Show Rate') and repeated body usage of 'meeting no show rate' and 'sales meeting no-shows'. Coverage across every on-page slot is complete.",
+         "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQ / People Also Ask",
+         "finding": "Six FAQs map directly to high-intent PAA queries: 'What is a good no-show rate for B2B sales meetings?', 'How do I calculate my meeting no-show rate?', 'What is the single best way to reduce meeting no-shows?', and 'How many reminders should I send before a meeting?'. These are exactly the questions searchers ask.",
+         "score": 5, "max": 5},
+        {"category": "Tables", "criterion": "Comparison / Featured Snippet Tables",
+         "finding": "A clean three-column table (Tactic / What it does / Typical impact on no-show rate) with seven rows is wrapped in an overflow-x container and is well structured for snippet extraction. It would benefit from a numeric impact column, but the format is snippet-friendly as-is.",
+         "score": 4, "max": 5},
+        {"category": "Links", "criterion": "Internal & External Link Structure",
+         "finding": "Six descriptive-anchor internal links to sibling posts (contextual outreach playbook, speed-to-lead follow-up, human-in-the-loop AI SDR orchestration, B2B outbound automation guide, real-time sales signals, MQL vs SQL) plus three external Further Reading links (HBR, Gartner, Calendly) and four References. Link density and anchor relevance are excellent.",
+         "score": 5, "max": 5},
+        {"category": "Technical", "criterion": "Technical SEO",
+         "finding": "Valid @graph schema is present, the meta description ('How to reduce B2B meeting no-shows: the causes, the reminder and confirmation sequence...') is ~155 chars, and the name serves as H1 with clean H2 structure. The meta title 'Reduce B2B Meeting No-Shows: Playbook' is only ~37 characters and wastes roughly 20 available characters of SERP real estate.",
+         "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.20,
+      "flag": "Excellent extractable definitions and entity binding; the benchmark stat lacks a nameable source for an LLM to cite.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Definitions", "criterion": "Direct Definitions",
+         "finding": "The piece gives a clean, LLM-liftable definition: 'No-show rate is the number of scheduled meetings where the prospect did not attend and did not reschedule in advance, divided by the total number of scheduled meetings in the same window.' The opening TL;DR answer paragraph is likewise directly extractable.",
+         "score": 5, "max": 5},
+        {"category": "Structured", "criterion": "Structured Data for AI Parsing",
+         "finding": "Content is well structured for parsing: the seven-row ranked tactics table, six-question FAQ, and bolded topic-sentence lead-ins ('Ownership is the quiet killer', 'Lead time is the biggest hidden driver'). The ranking is prose-plus-table rather than an explicit numbered framework, which slightly limits clean list extraction.",
+         "score": 4, "max": 5},
+        {"category": "Authority", "criterion": "Statistical Authority",
+         "finding": "The only citable statistic, the '20 to 50 percent band' of no-show rates, is framed as 'Widely cited industry figures' with no named attribution an LLM can credit, and the References tie it only loosely to 'HubSpot Sales Statistics'. Without a nameable source and figure, an AI engine cannot confidently attribute the number to DevCommX.",
+         "score": 3, "max": 5},
+        {"category": "Entity", "criterion": "Entity Association",
+         "finding": "DevCommX and the author are explicitly bound to the topic: 'At DevCommX we build autonomous, signal-based outbound systems that clients own, and no-show rate is one of the first metrics we instrument', plus the schema author 'Sumit Nautiyal, VP of Revenue Operations & GTM Engineering' and the '40 or more qualified demos in roughly six weeks' proof line.",
+         "score": 5, "max": 5},
+        {"category": "Distinctiveness", "criterion": "GEO Distinctiveness",
+         "finding": "The post owns a distinct operational query cluster (meeting no-show rate, confirmation cadence, held-meeting benchmarks) and treats its Sales-Ops siblings as adjacent rather than overlapping, linking to speed-to-lead follow-up and MQL vs SQL as upstream fixes rather than re-answering them. No cannibalisation risk with the hub.",
+         "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Owned-infrastructure narrative, sanctioned proof metric, and a specific CTA all land; no pricing framing.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Differentiation", "criterion": "Differentiation Narrative",
+         "finding": "The signal-based, client-owned model is articulated clearly: 'DevCommX builds autonomous, signal-based AI SDR and RevOps systems that your team owns' and 'Because our systems trigger on real buying signals instead of static lists, the meetings they book are the meetings prospects actually keep.' The differentiation ties directly to the no-show outcome.",
+         "score": 5, "max": 5},
+        {"category": "Proof", "criterion": "Proof Metrics & Evidence",
+         "finding": "The sanctioned proof framing is present and integrated into the argument: 'a big part of how new clients reach 40 or more qualified demos in roughly six weeks.' It is used to explain the mechanism (signal-triggered meetings hold) rather than dropped in as a bare boast.",
+         "score": 5, "max": 5},
+        {"category": "Pricing", "criterion": "Pricing Transparency",
+         "finding": "There is no cost or pricing discussion; the only economic framing is qualitative ('inflating your cost per opportunity', 'pipeline math works'). Consistent with the library norm but offers no value-in-dollars anchor, so this scores low honestly.",
+         "score": 2, "max": 5},
+        {"category": "CTA", "criterion": "CTA Quality",
+         "finding": "The CTA is specific and outcome-oriented: 'Book a GTM strategy call to map a no-show-resistant booking system to your pipeline', linking to /contact-us. It names the offer and ties it to the article's exact problem rather than a generic 'contact us'.",
+         "score": 5, "max": 5},
+        {"category": "Slot", "criterion": "Content Differentiation",
+         "finding": "This fills a distinct, previously unowned slot in the DevCommX library (meeting no-show reduction and held-meeting benchmarks), complementing rather than duplicating siblings on speed-to-lead, lead scoring, and qualification. It is a clear addition to the Sales-Ops hub.",
+         "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Clean heading hierarchy and highly scannable, but zero in-body visuals beyond a single table.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Headings", "criterion": "Heading Architecture",
+         "finding": "Hierarchy is logical with no skipped levels: the title acts as H1, seven topical H2s carry the argument, H3s scope 'Further Reading', 'References' and 'FAQ', and H4s hold each FAQ question. Structure reads cleanly top to bottom.",
+         "score": 5, "max": 5},
+        {"category": "Visuals", "criterion": "Visual Elements",
+         "finding": "There are no in-body images, diagrams, charts, or infographics; the only visual is the single HTML tactics table, and the OG image is metadata-only. Per the honest calibration for these drafts, the absence of any illustrative visual caps this low despite the useful table.",
+         "score": 2, "max": 5},
+        {"category": "Scannability", "criterion": "Scannability",
+         "finding": "Highly skimmable: a TL;DR answer paragraph opens the piece, every body paragraph leads with a bolded topic sentence ('Book inside the conversation whenever you can', 'Send a real calendar invite immediately'), and the table plus six-question FAQ let a skim reader extract the playbook without full reads.",
+         "score": 5, "max": 5},
+        {"category": "Flow", "criterion": "Reading Level & Flow",
+         "finding": "Complexity is appropriate for an outbound-ops audience and transitions are natural ('The pattern is clear', 'Fix the booking moment first, then layer the cadence'). No jargon dump; concepts like lead-time decay and ownership are explained in plain terms before being applied.",
+         "score": 5, "max": 5},
+        {"category": "Length", "criterion": "Content Length & Density",
+         "finding": "At ~2,299 words for a stated 10-minute read, the length suits the topic and stays dense; each section adds a distinct lever. It runs slightly long for the subject and a few points (over-reminding, lead-time) are restated across sections, a minor padding risk.",
+         "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Complete two-node @graph with BlogPosting and FAQPage; FAQ text matches the body exactly.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Article", "criterion": "Article Type Completeness",
+         "finding": "The BlogPosting node carries headline, description, url, datePublished, dateModified, keywords, image, author, publisher, and mainEntityOfPage, all populated. The keywords string ('reduce no shows sales meetings, meeting no show rate...') matches the article's target terms.",
+         "score": 5, "max": 5},
+        {"category": "FAQPage", "criterion": "FAQPage Structure",
+         "finding": "The FAQPage node holds six entries, each a @type Question with a properly nested acceptedAnswer of @type Answer and a text value, comfortably exceeding the three-question minimum and covering the same queries as the body FAQ.",
+         "score": 5, "max": 5},
+        {"category": "Alignment", "criterion": "Schema-to-Content Alignment",
+         "finding": "The six schema FAQ answers are verbatim matches to the body FAQ text (e.g. the no-show calculation answer 'Divide the number of scheduled meetings... Keep advance reschedules out of the numerator' is identical in both), and the schema description matches the meta description. Alignment is exact.",
+         "score": 5, "max": 5},
+        {"category": "Graph", "criterion": "@graph Implementation",
+         "finding": "A proper @graph array holds both nodes, each with a distinct @id (#article and #faq) under the canonical URL, and the BlogPosting mainEntityOfPage cross-references the WebPage @id. Structure is correctly implemented.",
+         "score": 5, "max": 5},
+        {"category": "Rich Result", "criterion": "Rich Result Eligibility",
+         "finding": "The image is a full ImageObject with url plus width 1200 and height 630, the publisher is an Organization with a logo ImageObject, and dateModified is present. All rich-result prerequisites are satisfied.",
+         "score": 5, "max": 5}
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Give the load-bearing benchmark a nameable source: replace 'Widely cited industry figures put average sales meeting no-show rates somewhere in the 20 to 50 percent band' with a specific attributed figure and inline link so LLMs and readers can cite it.",
+    "2. Add at least one in-body visual (a lead-time vs no-show decay chart or a reminder-cadence timeline diagram) to lift Visual Elements above the no-image floor.",
+    "3. Add a numeric or percentage column to the tactics table's 'Typical impact' so the qualitative labels ('Large reduction', 'High', 'Moderate') carry sourced data instead of bare assertion.",
+    "4. Expand the meta title from 'Reduce B2B Meeting No-Shows: Playbook' (~37 chars) toward the ~60-char limit to reclaim SERP real estate and add a keyword variant."
+  ]
+}

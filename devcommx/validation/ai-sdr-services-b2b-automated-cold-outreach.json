@@ -1,0 +1,129 @@
+{
+  "slug": "ai-sdr-services-b2b-automated-cold-outreach",
+  "title": "AI SDR Services in 2026: How B2B Companies Automate Cold Outreach Without Hiring SDRs",
+  "words": 2450,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Strong deployment-level depth and every H2 delivered, but external stats (11x, Amplemarket, SalesHive) are named in prose while the clickable sources sit only in Further Reading, not inline at the claim.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Sources", "criterion": "Stat Accuracy & Source Quality",
+         "finding": "Key figures are soft-attributed, not inline-linked at the point of claim: '11x lists its Growth plan around $3,750 per month billed annually ... per its own pricing guides' has no link, Artisan's '$280 to $660 per month' cites only unnamed 'third-party reviews', and the SDR '$98,000 to $173,000 per year ... near $154,000 per rep according to 2026 cost breakdowns' points to no clickable source (SalesHive appears only in Further Reading). The '3.4%' cold-email reply baseline and 'strong programs at 8 to 12%' carry no source at all.", "score": 3, "max": 5},
+        {"category": "Depth", "criterion": "Practitioner Depth",
+         "finding": "Real deployment knowledge is evident: the deliverability section lists 'Secondary sending domains, mailbox provisioning, warmup, SPF, DKIM, DMARC, and ongoing inbox-placement monitoring', the data layer names concrete triggers ('new funding, relevant hiring, tech-stack changes, leadership moves, or product usage'), and the reply-handling section distinguishes 'The AI drafts and personalizes at volume; the sequence logic decides cadence and channel per contact'. This is operator-level detail, not a surface summary.", "score": 5, "max": 5},
+        {"category": "Attribution", "criterion": "Data Attribution",
+         "finding": "The 10-row service-vs-software comparison table carries no source, which is acceptable for a conceptual framework. But quantified assertions are mixed: the '18% versus roughly 9%' personalization stat is attributed 'per Amplemarket's 2026 benchmark data' (good), while the '3.4%' industry baseline and the '8 to 12%' strong-program range are bare assertions, and the software price ranges lean on 'its own pricing guides' and 'third-party reviews' with no identifiable citation.", "score": 3, "max": 5},
+        {"category": "Technical", "criterion": "Technical Accuracy",
+         "finding": "Tool positioning is correct for 2026: 11x, Artisan, and AiSDR are accurately framed as licensable software you 'configure, and operate in-house', and the pricing bands ($3,750/mo 11x Growth, $250 to $2,500+/mo category range) are plausible and internally consistent. Deliverability primitives (SPF/DKIM/DMARC, warmup) and the human-in-the-loop reply model are described accurately. No incorrect feature or limit claims appear.", "score": 4, "max": 5},
+        {"category": "Completeness", "criterion": "Completeness",
+         "finding": "Every H2 promise is fully delivered: the service-vs-software distinction (10-row table), 'What is included' (seven bolded deliverables from signal-based ICP to infrastructure ownership), 'What it costs' (software, service, and human-SDR baselines), 'What results look like' (reply-rate benchmarks + the six-week ramp), 'What it does not solve' (five explicit limits), and 'How to choose' (six numbered criteria). No section is left as a stub.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Primary keyword, FAQ, table, and 11 internal links are all strong; the only weakness is the three external citations living in Further Reading rather than inline.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Keywords", "criterion": "Primary Keyword Targeting",
+         "finding": "'AI SDR services' is placed in the H1, the meta-title ('AI SDR Services in 2026: Automate Cold Outreach'), the slug (ai-sdr-services-b2b-automated-cold-outreach), multiple H2s ('What is included in an AI SDR service', 'What an AI SDR service costs', 'How to choose an AI SDR service'), the opening bolded sentence, and three of six FAQ questions ('How much do AI SDR services cost in 2026?'). Coverage is thorough and natural.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQ / People Also Ask",
+         "finding": "Six FAQs map to genuine high-intent buyer queries: 'What is the difference between an AI SDR service and AI SDR software?', 'How much do AI SDR services cost in 2026?', 'Can AI SDR services replace hiring human SDRs?', 'How fast do AI SDR services produce meetings?', and 'How do I choose an AI SDR provider?'. These are real PAA-style questions, not filler.", "score": 5, "max": 5},
+        {"category": "Tables", "criterion": "Comparison / Featured Snippet Tables",
+         "finding": "One well-built 10-row, 3-column comparison table (Dimension / Managed AI SDR service / AI SDR software you operate) covers what-you-buy, who-runs-it, deliverability, cost model, and best fit, wrapped in an overflow-x scroll container for mobile. It is highly snippet-extractable, though a single table limits featured-snippet surface area versus a post with several.", "score": 4, "max": 5},
+        {"category": "Links", "criterion": "Internal & External Link Structure",
+         "finding": "Eleven inline internal links with descriptive anchors build a tight topic cluster ('definitive guide to AI SDRs', 'AI SDR agency vs software guide', 'human-in-the-loop AI SDR orchestration', 'AI SDR pricing guide', the '/ai-sdr' service page). Three external authority links (Fortune Business Insights, Amplemarket, SalesHive) exist but only in the Further Reading list, not woven inline beside the claims they support.", "score": 4, "max": 5},
+        {"category": "Technical", "criterion": "Technical SEO",
+         "finding": "The meta-title is 47 characters and the meta-description 158 characters, both within limits. JSON-LD schema is present with BlogPosting + FAQPage, and the schema headline matches the H1/name field 'AI SDR Services in 2026: How B2B Companies Automate Cold Outreach Without Hiring SDRs'. All technical basics are met.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.20,
+      "flag": "Excellent extractable definition and structure, but the whole opening replays the service-vs-software comparison already owned by the live /ai-sdr-agency-vs-software-guide, creating real cannibalisation risk.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Definitions", "criterion": "Direct Definitions",
+         "finding": "The piece opens with a clean, standalone, quotable definition: 'AI SDR services are managed engagements where a provider builds and operates an autonomous, signal-based cold outreach system for you, as opposed to AI SDR software that you license and run yourself.' The FAQ restates it crisply ('Software gives you a tool; a service gives you an outcome and the operator behind it.'). Highly extractable.", "score": 5, "max": 5},
+        {"category": "Structure", "criterion": "Structured Data for AI Parsing",
+         "finding": "Multiple parseable structures: the 10-row comparison table, seven bolded deliverable blocks, five bolded limits ('It will not fix a weak offer.', 'It will not close deals.'), an explicitly numbered six-point evaluation framework, and six FAQ pairs. An LLM can lift the service-vs-software rows and the choose-a-provider checklist cleanly.", "score": 5, "max": 5},
+        {"category": "Statistics", "criterion": "Statistical Authority",
+         "finding": "Some claims are attributable to named sources an LLM can cite: 'reply rates near 18% versus roughly 9% for generic templates, per Amplemarket's 2026 benchmark data' and the specific '11x lists its Growth plan around $3,750 per month' are named at the point of claim. Others are weaker for citation: the '3.4%' baseline is unsourced and the SDR cost cites only vague '2026 cost breakdowns'. Net attributability is decent but uneven.", "score": 4, "max": 5},
+        {"category": "Entity", "criterion": "Entity Association",
+         "finding": "DevCommX is explicitly bound to the niche throughout: 'an AI SDR service ... a managed engagement where a provider such as DevCommX designs, builds, and runs the entire outbound system', 'The DevCommX model hands the underlying system to the client', 'The DevCommX framing is 40+ qualified demos in roughly 6 weeks', plus the schema author 'Sumit Nautiyal, VP of Revenue Operations & GTM Engineering, DevCommX'. Entity-to-topic association is strong.", "score": 5, "max": 5},
+        {"category": "Distinctiveness", "criterion": "GEO Distinctiveness",
+         "finding": "The post tries to fence itself off ('This post assumes you already know the platforms exist and focuses on the service layer' and deferrals to the 'AI SDR agency vs software guide', 'best AI SDR platforms', and 'best AI SDR agencies'), but its entire first H2, 'What \"AI SDR services\" actually means: the service versus software distinction', plus the 10-row service-vs-software table, directly replays the query cluster the live /blogs/ai-sdr-agency-vs-software-guide already owns. The buyer-intent 'AI SDR services' angle is distinct, yet the service-vs-software framing creates material overlap that the deferral links only partly mitigate.", "score": 3, "max": 5}
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Owned-infrastructure narrative, sanctioned 40+ demos proof, and a specific CTA are all strong; unusually for the library it also carries real pricing framing, though no DevCommX-specific price.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Differentiation", "criterion": "Differentiation Narrative",
+         "finding": "The owned-infrastructure, signal-based model is articulated sharply: 'The DevCommX model hands the underlying system to the client, so you own the domains, the workflows, and the playbook rather than renting a campaign you lose the day you stop paying', reinforced by the evaluation criterion 'Ownership versus lock-in' and 'Signal-based versus static ... the entire reason the AI is worth it'. The thesis runs through the whole piece.", "score": 5, "max": 5},
+        {"category": "Proof", "criterion": "Proof Metrics & Evidence",
+         "finding": "The sanctioned framing is used and honestly hedged: 'The DevCommX framing is 40+ qualified demos in roughly 6 weeks from setup ... That is a qualitative benchmark tied to signal-based design, not a guarantee', repeated in FAQ ('40 or more qualified demos in roughly six weeks from setup'). It resists over-claiming while still supplying a concrete, on-brand outcome metric.", "score": 5, "max": 5},
+        {"category": "Pricing", "criterion": "Pricing Transparency",
+         "finding": "Pricing framing is unusually strong for the library: software licenses ('$250 to $2,500+ per month', 11x '$3,750 per month', Artisan '$280 to $660'), the three service pricing models ('a monthly retainer, a performance model that charges per booked meeting, or a hybrid'), and the human-SDR baseline ('$98,000 to $173,000 per year'). It stops short of quoting DevCommX's own price ('There is no single sticker price'), so value framing is rich but the service's actual cost stays undisclosed.", "score": 4, "max": 5},
+        {"category": "CTA", "criterion": "CTA Quality",
+         "finding": "The CTA is specific and conversion-oriented: a dedicated closing section directs readers to 'book a GTM strategy call and we will map the service to your ICP and pipeline targets', linked to /contact-us, with a secondary path to the '/ai-sdr' service page 'for how our engagements are structured'. It names the deliverable rather than a generic 'contact us'.", "score": 5, "max": 5},
+        {"category": "Differentiation", "criterion": "Content Differentiation",
+         "finding": "The post fills a distinct buyer-intent slot, the 'AI SDR services' explainer for buyers who want an outcome rather than a tool, and interlinks to 11 distinct DevCommX guides (definitive guide, agency-vs-software, pricing, human-in-the-loop, true-cost, buy-vs-build) without duplicating them. Its slot is real, though the service-vs-software section overlaps the agency-vs-software guide it cites.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Clean heading logic, strong scannability and flow; zero in-body images per draft convention caps Visual Elements at 2, and 2,450 words runs slightly long for a services explainer.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Headings", "criterion": "Heading Architecture",
+         "finding": "Logical progression with no skipped levels: a single H1, seven H2s (service-vs-software, deliverables, cost, results, limits, evaluation framework, CTA), then H3s for 'Further Reading' and 'FAQ' with an H4 per FAQ question. The heading sequence tracks the buyer's journey from definition to decision cleanly.", "score": 5, "max": 5},
+        {"category": "Visuals", "criterion": "Visual Elements",
+         "finding": "There are no in-body images, diagrams, charts, or infographics; the only asset is the OG image (imresizer-DevCommX-Blog-OG.png) referenced in schema and og-image. The single HTML comparison table is the sole visual break in an otherwise text-only body, which per calibration caps this criterion low.", "score": 2, "max": 5},
+        {"category": "Scannability", "criterion": "Scannability",
+         "finding": "Strong skim support: a bolded opening definition, bold lead-ins on all seven deliverables ('Signal-based ICP and data layer.', 'Sending infrastructure and deliverability.') and all five limits, the numbered six-point evaluation framework, the comparison table, and six FAQ H4s. A skim reader can extract the argument without reading full paragraphs.", "score": 5, "max": 5},
+        {"category": "Readability", "criterion": "Reading Level & Flow",
+         "finding": "Complexity suits a revenue/GTM buyer and transitions are natural ('Why the gap matters: an AI SDR platform is only as good as the person driving it.'). Jargon like SPF/DKIM/DMARC and 'signal-based' is introduced in context rather than dumped, and punchy framing ('Outbound is a mirror') keeps the pace without sacrificing clarity.", "score": 5, "max": 5},
+        {"category": "Length", "criterion": "Content Length & Density",
+         "finding": "At roughly 2,450 words (11-minute read field) the piece is comprehensive and each section earns its place, but it runs slightly long for a services explainer, and a few passages restate the same idea in different words ('renting a campaign you lose the day you stop paying' echoes across the deliverables, results, and evaluation sections). Density is good but there is mild redundancy.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Complete @graph with BlogPosting + FAQPage and verbatim FAQ match; the only defect is the Person author whose url points to the company LinkedIn page.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Article", "criterion": "Article Type Completeness",
+         "finding": "The BlogPosting node carries headline, description, url, datePublished (2026-07-01), dateModified (2026-07-01), keywords, image ImageObject, author, publisher, and mainEntityOfPage. Every core Article field is populated with real values, and the keywords string lists six on-topic terms ('AI SDR services, AI SDR agency, AI SDR company, outsourced AI SDR, AI SDR provider, done-for-you cold outreach').", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQPage Structure",
+         "finding": "The FAQPage node holds six entries, each a @type Question with an acceptedAnswer of @type Answer and full text, exceeding the 3+ minimum. The questions match the six body FAQ H4s exactly ('What is the difference between an AI SDR service and AI SDR software?', 'How fast do AI SDR services produce meetings?').", "score": 5, "max": 5},
+        {"category": "Alignment", "criterion": "Schema-to-Content Alignment",
+         "finding": "The schema description ('what a managed AI SDR service actually delivers versus AI SDR software you run yourself, what it costs, what results look like, and how to choose one') mirrors the article, keywords match the body themes, and each acceptedAnswer.text is a verbatim copy of the corresponding body FAQ answer (the difference, cost, replace-humans, speed, limits, and choose-a-provider answers all match word for word). Alignment is exact.", "score": 5, "max": 5},
+        {"category": "Graph", "criterion": "@graph Implementation",
+         "finding": "A proper @graph array holds two nodes, each with a distinct fragment @id: BlogPosting at '#article' and FAQPage at '#faq', both under the canonical URL. mainEntityOfPage references the WebPage @id, and the graph is correctly structured for parsing.", "score": 5, "max": 5},
+        {"category": "RichResult", "criterion": "Rich Result Eligibility",
+         "finding": "image is an ImageObject with url plus width 1200 and height 630, publisher is an Organization with a logo ImageObject, and dateModified is present, so rich-result requirements are met. The one defect is the author: @type Person 'Sumit Nautiyal' whose url points to https://www.linkedin.com/company/devcommx, a company page rather than a personal profile, so the Person entity does not resolve correctly.", "score": 4, "max": 5}
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Move the Amplemarket, SalesHive, and 11x citations inline to the exact sentences they support (and add a hard figure where possible, e.g. the specific Amplemarket reply-rate table and the SalesHive year-one SDR cost) instead of leaving them only in the Further Reading list, to lift Stat Accuracy (3/5) and Data Attribution (3/5).",
+    "2. Source or soften the currently-bare stats, the '3.4%' cold-email reply baseline and the '8 to 12%' strong-program range, with a named, linkable benchmark so an LLM can attribute them.",
+    "3. Sharpen GEO distinctiveness: compress or reframe the opening 'service versus software' section (and the 10-row table) so it defers harder to the live /ai-sdr-agency-vs-software-guide, and lean the post's unique angle onto buyer-intent 'AI SDR services' deliverables/pricing/selection rather than re-arguing the comparison that sibling already ranks for.",
+    "4. Add at least one in-body visual (a service-vs-software diagram, a deliverables stack graphic, or a six-week ramp timeline), since the post has zero in-body images and Visual Elements is capped at 2/5.",
+    "5. Fix the schema author.url to a personal LinkedIn profile for Sumit Nautiyal rather than the company page, so the Person entity resolves for rich results.",
+    "6. Trim mild redundancy around the 'rent a campaign vs own the infrastructure' idea, which recurs across the deliverables, results, and evaluation sections, to tighten the 2,450-word body."
+  ]
+}

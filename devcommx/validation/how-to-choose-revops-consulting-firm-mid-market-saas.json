@@ -1,0 +1,127 @@
+{
+  "slug": "how-to-choose-revops-consulting-firm-mid-market-saas",
+  "title": "How to Choose a RevOps Consulting Firm for Mid-Market SaaS in 2026",
+  "words": 2100,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Strong practitioner depth, but the two headline stat claims (Gartner adoption, pricing bands) are not inline-linked at the point of assertion.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Sources", "criterion": "Stat Accuracy & Source Quality",
+         "finding": "The two load-bearing stats are asserted without inline citation. 'Gartner projects that by 2026 the majority of the highest-growth companies will run a formal revenue operations model, and mid-market adoption already sits near the halfway mark' has no anchor at the sentence, and the pricing claim 'Independent sources put senior hourly rates at $150 to $400, retainers from roughly $3,500 to $20,000 per month' credits only 'Independent sources.' Gartner, MergeYourData and Mountainise appear only in the Further Reading list at the bottom, so the reader cannot trace a specific number to a specific source.", "score": 3, "max": 5},
+        {"category": "Depth", "criterion": "Practitioner Depth",
+         "finding": "Demonstrates genuine deployment knowledge rather than surface summary. It distinguishes 'routing, scoring, and reporting logic inside private tools instead of your CRM,' names real SaaS instrumentation ('pipeline coverage, stage conversion, sales cycle velocity, net revenue retention, and forecast accuracy'), and frames a concrete reference test ('here is how we instrumented pipeline coverage and forecast accuracy for a Series B company, here is what broke'). The pilot section prescribes a 30-to-60-day bounded scope with owner-training, which reads as lived process.", "score": 4, "max": 5},
+        {"category": "Attribution", "criterion": "Data Attribution",
+         "finding": "The pricing table's four cost rows ('Roughly $25,000 to $200,000', 'CRM rebuilds cluster around $40,000 to $120,000', etc.) carry no per-cell or per-table source; they hang off the generic preamble 'The ranges below reflect public 2026 pricing benchmarks.' The metric assertions are plausible but presented as bare figures rather than attributed data.", "score": 3, "max": 5},
+        {"category": "Technical", "criterion": "Technical Accuracy",
+         "finding": "The RevOps concepts and cost mechanics are internally consistent and correct for 2026: three engagement shapes (fixed project, monthly retainer, fractional/embedded), the build-vs-buy-vs-automate framing, and the caution that 'RevOps influences pipeline and efficiency; a partner that guarantees closed revenue is either naive or dishonest.' No tool names, feature limits, or version-specific claims are misstated because the piece deliberately stays stack-agnostic.", "score": 4, "max": 5},
+        {"category": "Completeness", "criterion": "Completeness",
+         "finding": "Every H2 promise is delivered: 'The 7 questions' lists all seven with good/bad answer contrasts, 'The 4 red flags' delivers exactly four, 'Engagement models and what each costs' gives a three-row costed table, and both the pilot-structuring and mid-market-fit sections resolve their headings with concrete sub-points. No section is stubbed or left as a promise.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Primary keyword and PAA-grade FAQ coverage are excellent; external citations are relegated to a Further Reading list rather than placed inline.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Keyword", "criterion": "Primary Keyword Targeting",
+         "finding": "'RevOps consulting firm' saturates every required slot: the H1/name ('How to Choose a RevOps Consulting Firm for Mid-Market SaaS in 2026'), the slug (how-to-choose-revops-consulting-firm-mid-market-saas), the H2 'The 7 questions to ask any RevOps consulting firm,' the opening body sentence, and FAQ questions ('How much does a RevOps consulting firm cost for mid-market SaaS?'). Coverage is complete and natural, not stuffed.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQ / People Also Ask",
+         "finding": "Six FAQs map directly onto high-intent PAA queries: cost ('How much does a RevOps consulting firm cost'), the single decisive question, SaaS-competence vetting, 'boutique RevOps firm or a large agency,' time-to-results, and red flags. These are the real buyer questions for this query stage, each answered in a self-contained paragraph.", "score": 5, "max": 5},
+        {"category": "Snippet", "criterion": "Comparison / Featured Snippet Tables",
+         "finding": "A four-column comparison table (Engagement model / Typical 2026 cost / Best when / Main risk) with three rows is cleanly structured for snippet extraction and wrapped in an overflow-x scroll container. It is inline-styled HTML rather than semantic markup, but the header row and cell structure are snippet-parseable.", "score": 4, "max": 5},
+        {"category": "Links", "criterion": "Internal & External Link Structure",
+         "finding": "Six relevant internal links with descriptive anchors ('buy versus build decision,' 'consolidating the stack,' 'true cost of outbound across models,' 'revenue operations,' 'GTM engineering partner,' 'book a GTM strategy call'). External authority links (Gartner, MergeYourData, Mountainise) exist but only in a bottom Further Reading block; none are woven inline next to the claim they support, weakening in-body external signal.", "score": 4, "max": 5},
+        {"category": "Technical", "criterion": "Technical SEO",
+         "finding": "Schema is present (BlogPosting + FAQPage in @graph), meta-title 'How to Choose a RevOps Consulting Firm (2026)' is a tidy ~41 characters, and meta-description at ~152 characters sits within limit. The H1 (name field) carries the primary keyword. All core technical elements are in range with no obvious defect.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.20,
+      "flag": "Highly parseable structure and a distinct query cluster, but statistical claims lack the named-source-at-point-of-claim an LLM needs to attribute confidently.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Definitions", "criterion": "Direct Definitions",
+         "finding": "The opening paragraph is a clean extractable answer to the title query: 'To choose a RevOps consulting firm for mid-market SaaS, judge it on evidence, not decks. Ask who owns the system when the engagement ends... The best RevOps consultants build transferable infrastructure your team can run without them.' Several red-flag and pilot passages are similarly self-contained and quotable, though the piece defines process more than it defines the concept of RevOps itself.", "score": 4, "max": 5},
+        {"category": "Structured", "criterion": "Structured Data for AI Parsing",
+         "finding": "Densely machine-parseable: a numbered 7-question framework, a numbered 4-red-flag list, a structured comparison table, bold lead-in sub-points in the pilot and mid-market sections, and a six-item FAQ mirrored in JSON-LD. This is close to ideal input for extraction.", "score": 5, "max": 5},
+        {"category": "Authority", "criterion": "Statistical Authority",
+         "finding": "The citable statistics are attributed only loosely: 'Gartner projects that by 2026...' names an authority but no linked report, and the pricing bands are credited to 'Independent sources' and 'public 2026 pricing benchmarks.' An LLM can attribute the Gartner directional claim but cannot pin the specific dollar ranges to a nameable source from the body text alone.", "score": 3, "max": 5},
+        {"category": "Entity", "criterion": "Entity Association",
+         "finding": "DevCommX and the author are explicitly bound to the topic: 'This guide is the framework we use ourselves at DevCommX, written so you could turn it back on us,' the closing 'DevCommX builds signal-based RevOps and GTM systems that your team owns outright,' and author metadata 'Sumit Nautiyal, VP of Revenue Operations & GTM Engineering.' The entity-to-niche tie is clear and repeated.", "score": 4, "max": 5},
+        {"category": "Distinctiveness", "criterion": "GEO Distinctiveness",
+         "finding": "Stays distinct from the sibling revops-agency-vs-in-house-first-hire, which sits at the earlier build-vs-buy stage. This post explicitly narrows to the post-decision selection stage ('here we assume you are buying and now need to pick the right partner') and links out to the buy-vs-build piece rather than re-litigating it, so cannibalisation risk is low.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Owned-infrastructure differentiation, the sanctioned 40+ demos proof, and unusually strong value framing are all present with a specific CTA.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Differentiation", "criterion": "Differentiation Narrative",
+         "finding": "The owned-infrastructure, signal-based model is articulated cleanly: 'DevCommX builds signal-based RevOps and GTM systems that your team owns outright, not managed campaigns you rent' and 'the systems trigger on real buying signals instead of static lists.' The whole ownership thesis ('an asset you keep from a dependency you rent') doubles as the brand's positioning.", "score": 4, "max": 5},
+        {"category": "Proof", "criterion": "Proof Metrics & Evidence",
+         "finding": "Uses the sanctioned proof framing verbatim in spirit: 'Teams that start this way have gone from setup to 40+ qualified demos in roughly six weeks because the systems trigger on real buying signals.' It is the single concrete outcome metric and it is correctly attributed to the signal-based approach.", "score": 4, "max": 5},
+        {"category": "Pricing", "criterion": "Pricing Transparency",
+         "finding": "Stronger than the typical draft: a full engagement-cost section plus table gives real dollar bands ($25,000-$200,000 projects, $3,500-$20,000 retainers, $5,000-$20,000 embedded) and explicit value framing, e.g. 'A $12,000-per-month embedded leader who leaves you owning a documented system is cheaper over two years than a $6,000-per-month retainer that keeps you dependent forever.' It is market pricing rather than DevCommX's own rate card, so not fully transparent on the firm's cost.", "score": 4, "max": 5},
+        {"category": "CTA", "criterion": "CTA Quality",
+         "finding": "The CTA is specific and conversion-oriented: 'See how we approach revenue operations, then book a GTM strategy call to map this framework to your pipeline,' with both anchors linking to real pages (/revenue-operations and /contact-us). It ties the offer back to the article's framework rather than a generic 'contact us.'", "score": 4, "max": 5},
+        {"category": "Differentiation", "criterion": "Content Differentiation",
+         "finding": "Fills a distinct library slot: a buyer-side selection guide for choosing an external RevOps firm, adjacent to but separate from the buy-vs-build and in-house-first-hire pieces it links to. The 'evaluate us critically, including us' framing is a differentiated angle not duplicated elsewhere in the set.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Excellent heading logic and scannability, but no in-body images beyond the OG asset caps the visual dimension.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Headings", "criterion": "Heading Architecture",
+         "finding": "Clean H1 (name) to H2 progression across six logical sections, with H3 for 'Further Reading' and 'FAQ' and H4 for each FAQ question. Within-section structure uses bold lead-ins ('Scope it to one bounded, real problem.') rather than sub-headings, but no heading levels are skipped.", "score": 4, "max": 5},
+        {"category": "Visual", "criterion": "Visual Elements",
+         "finding": "No in-body images, diagrams, charts or infographics exist; the only image asset is the OG/blog image referenced in schema. The one visual structuring element is the engagement-cost HTML table. Consistent with the draft-set limitation, this is capped low.", "score": 2, "max": 5},
+        {"category": "Scannability", "criterion": "Scannability",
+         "finding": "Highly skimmable: a bolded one-paragraph answer hook up top, descriptive H2s, numbered lists for the 7 questions and 4 red flags, bold sentence-leads in the pilot and fit sections, a comparison table, and a six-item FAQ. A skim reader can extract the framework without reading full paragraphs.", "score": 5, "max": 5},
+        {"category": "Readability", "criterion": "Reading Level & Flow",
+         "finding": "Prose is confident and transitions naturally ('Mid-market is the hardest place to absorb these mistakes'; 'Two practical notes'). Complexity fits a mid-market operator/exec audience, and it avoids jargon dumps by defining SaaS metrics in context rather than listing them cold.", "score": 4, "max": 5},
+        {"category": "Length", "criterion": "Content Length & Density",
+         "finding": "At roughly 2,100 words (12-minute read) the length matches a decision-grade selection guide covering seven questions, four red flags, three engagement models and a pilot process. Density is high with little padding; each section earns its space.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Complete, well-formed @graph with matching FAQ text and full rich-result fields; the strongest dimension of the post.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Article", "criterion": "Article Type Completeness",
+         "finding": "The BlogPosting node carries every core field: headline, description, url, datePublished (2026-07-01), dateModified, keywords, image, author (Person with jobTitle), publisher, and mainEntityOfPage. Nothing required is missing.", "score": 5, "max": 5},
+        {"category": "FAQPage", "criterion": "FAQPage Structure",
+         "finding": "The FAQPage node contains all six questions, each a proper @type Question with an acceptedAnswer of @type Answer and a populated text field. Well above the 3-question minimum and correctly typed.", "score": 5, "max": 5},
+        {"category": "Alignment", "criterion": "Schema-to-Content Alignment",
+         "finding": "All six schema FAQ answers match the body FAQ text verbatim (e.g. the cost answer 'Expect three bands in 2026. Project work runs roughly $25,000 to $200,000...' is identical in both). Schema keywords ('how to choose RevOps consulting firm, best RevOps consultants...') track the article. The schema description differs slightly from the meta-description ('what each costs, and how to structure a pilot' vs 'engagement models and costs, and how to run a pilot first'), a minor, non-material variance.", "score": 4, "max": 5},
+        {"category": "Graph", "criterion": "@graph Implementation",
+         "finding": "Uses a proper @graph array with two nodes, each carrying a distinct @id (BlogPosting at #article, FAQPage at #faq), and the nested mainEntityOfPage WebPage also has an @id. Node structure is correct.", "score": 5, "max": 5},
+        {"category": "RichResult", "criterion": "Rich Result Eligibility",
+         "finding": "Rich-result fields are all present: image as an ImageObject with url plus width 1200 and height 630, publisher as an Organization with a logo ImageObject, and dateModified alongside datePublished. Eligible for article and FAQ rich results.", "score": 5, "max": 5}
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Move external citations inline: anchor the Gartner adoption claim and the specific pricing bands ($150-$400 hourly, $3,500-$20,000 retainer, $25,000-$200,000 project) to MergeYourData/Mountainise/Gartner at the point of assertion instead of leaving them in the bottom Further Reading list, so both content_quality and GEO statistical-authority claims become traceable.",
+    "2. Attribute the engagement-cost table: add a source line or per-row citation to the pricing table and replace the generic 'Independent sources' / 'public 2026 pricing benchmarks' phrasing with named benchmarks, closing the Data Attribution gap.",
+    "3. Add at least one in-body visual (a decision-flow diagram for the 7-question / red-flag screen, or a chart of the three engagement models vs cost) to lift the Visual Elements score above the no-image floor.",
+    "4. Reconcile the schema description with the meta-description wording so both use the same clause about engagement models, costs, and the pilot."
+  ]
+}

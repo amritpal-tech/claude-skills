@@ -1,0 +1,27 @@
+{
+  "collection_id": "689c92652a4b35f0e9a14fc2",
+  "isDraft": true,
+  "isArchived": false,
+  "fieldData": {
+    "name": "",
+    "slug": "",
+    "meta-title": "",
+    "meta-description": "",
+    "post-summary": "",
+    "post-body": "",
+    "schema-markup": "",
+    "date": "2026-07-01T00:00:00.000Z",
+    "last-updated": "2026-07-01T00:00:00.000Z",
+    "author-name": "Sumit Nautiyal",
+    "author-title": "VP of Revenue Operations & GTM Engineering, DevCommX",
+    "add-blog-reading-time": "",
+    "blog-list": "https://www.devcommx.com/blogs/",
+    "og-image": {
+      "fileId": "69ce06f820d4562027a83191",
+      "url": "https://cdn.prod.website-files.com/677194290c472080e6cd6ab0/69ce06f820d4562027a83191_imresizer-DevCommX-Blog-OG.png"
+    },
+    "author": "677194290c472080e6cd6c06",
+    "authors-collection": "69d8f4fd2475affd96f68115",
+    "category": ["689c9183e68cf0a3029741d1"]
+  }
+}

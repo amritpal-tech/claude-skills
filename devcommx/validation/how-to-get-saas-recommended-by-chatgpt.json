@@ -1,0 +1,281 @@
+{
+  "slug": "how-to-get-saas-recommended-by-chatgpt",
+  "title": "How to Get Your SaaS Recommended (Not Just Cited) by ChatGPT",
+  "words": 2799,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Ten-plus hard statistics carry zero inline citations; the only four external links are dumped in a Further Reading list at the very bottom.",
+      "flag_type": "critical",
+      "criteria": [
+        {
+          "category": "Sources",
+          "criterion": "Stat Accuracy & Source Quality",
+          "finding": "The body contains no inline external links at all. Every href in the article except the Further Reading block points to devcommx.com, so claims like '62 percent of AI citations are ghost citations', '15 cited sources per ChatGPT response', 'rank in classic organic positions 21 and beyond ... nearly 90 percent of the time' and 'roughly 2.8 times more likely' sit as unlinked assertions, with four Semrush/OpenAI URLs parked in a closing list a reader must reverse-engineer back to the claim.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Depth",
+          "criterion": "Practitioner Depth",
+          "finding": "This reads like someone who has actually run the motion: the three-agent robots.txt distinction ('GPTBot for model training, OAI-SearchBot for search citations and ChatGPT-User for pages a person asks ChatGPT to open'), the warning that teams 'blanket block GPTBot ... often catch OAI-SearchBot in the same rule', the ten-field positioning fact sheet, and the operational instruction to 'run each in a fresh logged out session three times' are implementation-level, not summary-level. The pitch mechanic ('a ready to paste fact block: definition, pricing model, ICP, one differentiator, logo, review rating and one original data point') is specific enough to execute.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Attribution",
+          "criterion": "Data Attribution",
+          "finding": "Semrush is named in-text twice ('Semrush analysis found', 'Semrush measured about 15 cited sources per ChatGPT response ... 126 million AI search prompts'), which is the good pattern, but the remaining numbers are orphaned: 'roughly 2.8 times more likely', 'around three times higher citation probability', the 57/17/12/6 percent citation-source breakdown, and Reddit at '11 percent of ChatGPT citations, 21 percent of Google AI Overviews citations and close to 47 percent of Perplexity citations' all appear with no named source anywhere in the piece. The G2 '10 reviews / 25 for stable placement / 20 reviews at 4.0 for Users Love Us' and 'Capterra ... as few as five reviews' thresholds are also bare assertions with no link to G2 or Capterra documentation.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical Accuracy",
+          "finding": "The OpenAI crawler taxonomy is correct and current for 2026, and the G2 Grid inclusion threshold of ten category reviews plus the Users Love Us badge at twenty reviews with a 4.0 average match G2's published rules. The soft spot is 'OpenAI shipped a rebuilt memory and personalisation architecture in mid 2026 that synthesises context from past conversations' — a load-bearing justification for logged-out testing that names no release, no date and no source, so a reader cannot verify it.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Completeness",
+          "criterion": "Completeness",
+          "finding": "Every promise is paid off. The post-summary advertises 'the four levers' and the body delivers exactly four numbered H2 levers (category entity, review grids and listicles, comparison and alternatives layer, positioning consistency); 'A 30 Day Build Sequence' delivers all four weeks with named deliverables; and 'Measure Inclusion Rate, Not Traffic' defines inclusion rate then adds the four companion metrics (average position, competitor set, cited sources, misdescription rate). No H2 opens a loop it fails to close.",
+          "score": 5,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Metadata, slug and FAQ targeting are clean, but not one statistical claim links to its external source and no H2 carries the exact primary keyword.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Keywords",
+          "criterion": "Primary Keyword Targeting",
+          "finding": "The exact phrase is in the slug (how-to-get-saas-recommended-by-chatgpt), the meta-title ('How to Get Your SaaS Recommended by ChatGPT'), the H1 name field, the opening sentence ('To get your SaaS recommended by ChatGPT rather than merely cited') and FAQ question one. The gap is the H2 layer: across nine H2s the exact keyword never appears, with the closest being 'See Whether ChatGPT Recommends You Today' and four H2s starting with the generic 'Lever One/Two/Three/Four'.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQ / People Also Ask",
+          "finding": "Six FAQs and every one is a real buyer query rather than filler: 'Can I pay to be included in ChatGPT recommendations?', 'How many G2 or Capterra reviews do I need before ChatGPT can recommend my SaaS?', 'Does blocking GPTBot stop ChatGPT from recommending my product?' and 'How long does it take to enter the recommendation set?'. The paid-placement answer even handles the objection head-on ('Any vendor selling guaranteed ChatGPT recommendation placement is selling something that does not exist'), which is exactly the shape PAA rewards.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Tables",
+          "criterion": "Comparison / Featured Snippet Tables",
+          "finding": "There is exactly one table, a 7-row three-column 'Dimension / Cited as a source / Named in the recommendation set' grid inside an overflow-x wrapper with a proper thead, which is the right asset for this post's core distinction. It underperforms as a snippet target because the cells are full prose sentences ('Category membership learned from listicles, review grids, forums and repeated third party description') rather than terse values, and because 2,799 words carry no second table — the 30-day sequence and the ten-field fact sheet, both natural table candidates, stay in paragraph form.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Links",
+          "criterion": "Internal & External Link Structure",
+          "finding": "Internal linking is good: five contextual links with descriptive anchors ('how to get cited by ChatGPT', 'LLMO playbook', 'best AI SDR platforms', 'measuring LLMO and AI visibility', 'Book a GTM strategy call'), and all four blog targets exist in the current slug inventory. External linking is the failure: zero inline citations in 2,799 words, with the Semrush AI Visibility Index, Semrush ghost citations study, Semrush B2B buying survey and OpenAI bots docs all relegated to a Further Reading <ul>, so no statistic is anchored to its evidence at the point of claim.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical SEO",
+          "finding": "meta-title is 43 characters and meta-description is 159 characters, both inside limits; the schema-markup field parses to a valid two-node @graph; the H1 comes from the 60-character name field with no competing H1 in post-body (correct for the Webflow template); and heading order runs H2 to H3 to H4 with no skipped levels. Nothing here needs fixing.",
+          "score": 5,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.2,
+      "flag": "Excellent extractable definitions and a genuinely distinct query cluster, held back by prose-locked frameworks and unattributed statistics.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Definitions",
+          "criterion": "Direct Definitions",
+          "finding": "The post opens with a lift-ready definitional contrast — 'Citation earns you a footnote. Category entity association earns you a place in the answer' — and FAQ one restates it in two clean sentences ('A citation is a linked source under an explanatory answer. A recommendation is your product name inside the answer text when a buyer asks for the best tool in a category'). It also defines its own metric explicitly: 'inclusion rate: across a fixed set of category prompts run on a schedule, in what share of answers is your brand named in the body text.' These are quotable without surrounding context.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Structure",
+          "criterion": "Structured Data for AI Parsing",
+          "finding": "The parseable assets are a 7-row comparison table, four explicitly numbered levers in the H2s, a four-week sequence and a 6-question FAQ. But the most enumerable content stays trapped in prose: the ten-field positioning fact sheet is written as a single run-on sentence ('One page, ten fields: exact brand name and casing, canonical definition, category label, three ICP descriptors, pricing model, five proof points, five named competitors, three integrations, founding year, headquarters'), and the entire body contains one <ul> with four <li> items, all of which are the Further Reading links.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Authority",
+          "criterion": "Statistical Authority",
+          "finding": "Two claims are properly attributable in-text for an LLM to repeat with a source — 'Semrush analysis found that roughly 62 percent of AI citations are ghost citations' and 'Semrush measured about 15 cited sources per ChatGPT response across its 2026 index of 126 million AI search prompts'. The rest are floating: 'roughly 85 percent of brand mentions in AI answers originate on third party pages', 'around three times higher citation probability', '2.8 times more likely' and the Reddit 11/21/47 percent split all lack a named source, so a model quoting them cannot say who measured them.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Entity",
+          "criterion": "Entity Association",
+          "finding": "DevCommX is tied to the topic three times in-body: 'At DevCommX we run both motions, for our own outbound and for client GTM systems', 'This is the same discipline we apply to signal based outbound at DevCommX', and the free AI Visibility Checker in the CTA. The gap is the author — Sumit Nautiyal and 'VP of Revenue Operations & GTM Engineering' exist only in the CMS fields and the schema Person node, never inside the article text, so a model extracting the body alone has no named human expert to bind to the claims.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Distinctiveness",
+          "criterion": "GEO Distinctiveness",
+          "finding": "This stays genuinely distinct from the live how-to-get-cited-by-chatgpt, and the draft does the disambiguation work itself in paragraph two: it links the sibling and states 'That post is about being the source ChatGPT quotes when it explains a concept. This one is about a different outcome ... they share almost no levers.' The target cluster (selection prompts, 'best tool for X', shortlist inclusion, inclusion rate) does not overlap the citation cluster. Residual cannibalisation risk is with two other assets rather than the sibling: the Reddit 11/21/47 percent citation stats and community-thread advice duplicate the pending reddit-strategy-ai-citations-b2b draft, and the 'Organization and SoftwareApplication schema with a sameAs array' guidance restates how-to-optimize-content-for-llms-llmo-playbook, which it links but does not defer to.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "The headline CTA asset, the free AI Visibility Checker, is mentioned in plain text with no link, and there is no cost or value framing anywhere.",
+      "flag_type": "critical",
+      "criteria": [
+        {
+          "category": "Differentiation",
+          "criterion": "Differentiation Narrative",
+          "finding": "The signal-based half of the DevCommX model is stated once, near the end: 'Systems that trigger on real buying signals rather than static lists are how we take clients from setup to 40 plus qualified demos in about six weeks.' The owned-infrastructure half is never articulated — the closest the post comes is listing 'who owns the data and infrastructure' as a comparison-page attribute buyers ask about, which is advice to the reader about their own comparison pages, not a statement that DevCommX clients own what gets built.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Proof",
+          "criterion": "Proof Metrics & Evidence",
+          "finding": "The sanctioned framing is present and correctly worded: '40 plus qualified demos in about six weeks'. It is the only proof point in 2,799 words, though — there is no client example, no before/after inclusion-rate number from a real engagement, and the credibility claim 'we run both motions, for our own outbound and for client GTM systems' is asserted without a single result attached to it.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Pricing",
+          "criterion": "Pricing Transparency",
+          "finding": "No cost or value framing for DevCommX appears anywhere in the article. Pricing is discussed only as something the reader must manage on their own assets ('refresh pricing every quarter', 'A page carrying a wrong 2024 price teaches the model to describe you incorrectly') and as a third-party cost the reader might incur ('Paid review site packages can improve profile visibility'). There is no engagement cost, no budget range, no ROI or cost-of-inaction framing for the service being sold.",
+          "score": 1,
+          "max": 5
+        },
+        {
+          "category": "CTA",
+          "criterion": "CTA Quality",
+          "finding": "The closing section is well-constructed rhetorically — 'Most teams have never actually checked. Run your ten highest intent category prompts through our free AI Visibility Checker' followed by a linked 'Book a GTM strategy call' to /contact. But the free tool, which is the low-friction entry point and the whole reason the CTA works, is plain unlinked text: the only href in that paragraph is the /contact link. A reader who wants the checker has no way to reach it.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Differentiation",
+          "criterion": "Content Differentiation",
+          "finding": "The library already holds eight LLMO/AEO posts (how-to-get-cited-by-chatgpt, llmo-for-b2b-saas-get-cited-by-ai, how-to-optimize-content-for-llms-llmo-playbook, llmo-vs-seo-vs-geo-vs-aeo and others), and all of them target the citation outcome. This is the only asset arguing that 'Your website is mostly a verification layer' and that the shortlist is won off-domain, which is a real and unoccupied slot. It also feeds the existing best-ai-sdr-platforms roundup by linking it as the format exemplar.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Clean heading tree and strong prose rhythm, but zero in-body images and only one bulleted list across 2,799 words.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Headings",
+          "criterion": "Heading Architecture",
+          "finding": "Nine H2s descend to two H3s ('Further Reading', 'FAQ') and six H4 FAQ questions with no skipped levels, and the H1 lives in the CMS name field so there is no duplicate H1 in the body. The only oddity is that the FAQ block sits at H3 under no parent H2, making six substantive Q&As structurally subordinate to the reference list above them rather than a peer section.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Visuals",
+          "criterion": "Visual Elements",
+          "finding": "The post-body contains zero <img> tags — no diagram, no chart, no screenshot — across 2,799 words and a 13-minute read; the only image asset is the shared og-image (imresizer-DevCommX-Blog-OG.png), which never renders in the article. The single visual break is the one HTML comparison table. Concepts that beg for a graphic go unillustrated: the 57/17/12/6 percent citation-source split is a one-paragraph list of numbers, and the four-week build sequence has no timeline visual.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Scannability",
+          "criterion": "Scannability",
+          "finding": "Bold lead-ins carry the skim path well — 'Pick the label buyers use, not the one you wish existed.', 'Then make the entity machine readable.', 'Ship a positioning fact sheet.', 'Week one, baseline and vocabulary.' — and key stats are bolded inline. Working against that: one <ul> in the entire post (the four Further Reading links), so every enumerable item, including the ten fact-sheet fields, the three comparison page shapes and the four measurement metrics, has to be read as running prose.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Readability",
+          "criterion": "Reading Level & Flow",
+          "finding": "Transitions are deliberate and do real work: 'Read the last row carefully' hands off from the table into the next argument, 'The conclusion is uncomfortable for content teams' turns a data dump into a thesis, and 'Two hygiene rules' cleanly closes the measurement section. Jargon is introduced then defined rather than dumped (OAI-SearchBot, ghost citations, inclusion rate, parametric memory are each explained on first use).",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Length",
+          "criterion": "Content Length & Density",
+          "finding": "2,799 words against a stated 13-minute read is proportionate for a four-lever playbook plus a 30-day sequence and a measurement framework, and there is no filler: every section introduces new mechanics rather than restating the intro. The comparison-versus-citation premise is set up in two paragraphs and one table rather than being stretched across a thousand words, which is the usual failure mode for this topic.",
+          "score": 5,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Strongest dimension: valid @graph, complete BlogPosting, and all six FAQ answers match the body text character for character.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Article",
+          "criterion": "Article Type Completeness",
+          "finding": "The BlogPosting node carries headline, description, url, datePublished and dateModified (2026-07-01), a seven-term keywords string ('how to get your saas recommended by chatgpt, chatgpt recommendation set, aeo for saas, ai visibility, category entity association, g2 ai citations, llmo'), an author Person with name, jobTitle and url, publisher, image and mainEntityOfPage. Nothing required is missing.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQPage Structure",
+          "finding": "Six mainEntity items, each correctly typed @type Question with a name and a nested acceptedAnswer of @type Answer carrying a text string — well above the 3-question threshold, and the answers are full paragraphs rather than truncated stubs (the G2/Capterra answer runs the complete 'ten reviews ... twenty five or more before placement is stable ... roughly five reviews' explanation).",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Alignment",
+          "criterion": "Schema-to-Content Alignment",
+          "finding": "All six schema questions and all six acceptedAnswer.text values are exact string matches to the body H4 questions and their following paragraphs — verified character for character, including 'Any vendor selling guaranteed ChatGPT recommendation placement is selling something that does not exist.' The schema description ('category entity association, review grids, third party listicles, comparison content and inclusion rate measurement') maps directly onto the four levers and the measurement section, and the keywords reflect topics the article actually covers.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Graph",
+          "criterion": "@graph Implementation",
+          "finding": "A proper @graph array holds two nodes, each with a distinct @id (#article and #faq) built off the canonical URL. It stops short of a full graph, though: there is no WebPage or BreadcrumbList node, the FAQPage is not bound to the BlogPosting by isPartOf or mainEntity, and the author and publisher sub-nodes have no @id of their own, so nothing is reusable or cross-referenced.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Rich Results",
+          "criterion": "Rich Result Eligibility",
+          "finding": "image is a proper ImageObject at 1200x630, publisher is an Organization with name, url and a logo ImageObject, and dateModified is present. Two weaknesses: the publisher logo reuses the same imresizer-DevCommX-Blog-OG.png as the article image rather than a real logo asset (Google expects a distinct organisation logo), and dateModified is identical to datePublished at 2026-07-01, so the post has no freshness signal on a topic the article itself says must be refreshed quarterly.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Add inline external citations at the point of claim. Every statistic currently sits unlinked with the four sources buried in Further Reading: link the Semrush ghost citations study on '62 percent of AI citations are ghost citations', the 2026 AI Visibility Index on '15 cited sources per ChatGPT response' and the '85 percent of brand mentions' / 57-17-12-6 breakdown, and the OpenAI bots doc on the GPTBot / OAI-SearchBot / ChatGPT-User paragraph.",
+    "2. Source or cut the four orphaned statistics that have no attribution anywhere in the piece: 'roughly 2.8 times more likely' (Wikipedia/Reddit/G2 co-presence), 'around three times higher citation probability' (complete G2/Capterra/Trustpilot profiles), the Reddit 11 / 21 / 47 percent citation split, and the G2 ten-review Grid and Capterra five-review thresholds.",
+    "3. Link the free AI Visibility Checker in the closing CTA. 'Run your ten highest intent category prompts through our free AI Visibility Checker' is plain text today, so the only clickable path in the conversion section is the /contact call and the low-friction offer is unreachable.",
+    "4. Convert the prose-locked frameworks into real markup. Make the ten-field positioning fact sheet an <ol>, the four measurement metrics (average position, competitor set, cited sources, misdescription rate) a <ul>, and the four-week build sequence a table — the article has exactly one <ul> and it holds the Further Reading links.",
+    "5. Add at least one in-body visual. A diagram of the citation-versus-recommendation split, or a bar chart of the 57 / 17 / 12 / 6 percent citation-source breakdown, would fix the weakest structural criterion; there are currently zero <img> tags in 2,799 words.",
+    "6. Add value framing for the DevCommX engagement. The post has no cost, budget range or ROI statement anywhere; even a non-price framing (what a quarter of entity and comparison-layer work costs in effort versus the deals lost while a competitor owns the shortlist) would lift the weakest brand criterion.",
+    "7. Name Sumit Nautiyal and his GTM Engineering role inside the body, and put the primary keyword into at least one H2 — 'Lever One/Two/Three/Four' headings carry no keyword, and the author exists only in CMS fields and schema.",
+    "8. Fix two schema details before publish: point publisher.logo at an actual DevCommX logo asset instead of reusing imresizer-DevCommX-Blog-OG.png, and bind the FAQPage node to the BlogPosting via isPartOf so the @graph is connected rather than two loose nodes."
+  ]
+}

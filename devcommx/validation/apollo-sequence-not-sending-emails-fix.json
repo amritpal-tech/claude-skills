@@ -1,0 +1,280 @@
+{
+  "slug": "apollo-sequence-not-sending-emails-fix",
+  "title": "Apollo Sequence Not Sending Emails? 7 Reasons and How to Fix Each",
+  "words": 2598,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Genuinely strong Apollo UI-level depth and complete coverage of all 7 promised causes, but the article carries exactly one statistic ('more than 500,000 companies') and it is unsourced, with all three Apollo Knowledge Base links exiled to a bottom 'Further Reading' list.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Sources",
+          "criterion": "Stat Accuracy & Source Quality",
+          "finding": "Across 2,598 words there is exactly one third-party number: 'Apollo runs outbound for more than 500,000 companies, so a stalled sequence is one of the most common and most frustrating problems in B2B sales' - and that sentence carries no link and no attribution to Apollo's own marketing page where the figure originates. The three credible sources that do exist (knowledge.apollo.io 'Troubleshoot Sending Emails', 'Configure a Sequence Sending Schedule', 'Manage Sequence Rulesets') all sit at character offset 15,238+ inside a bottom 'Further Reading' <ul>, so not one of the 7 fix sections cites the vendor doc it is paraphrasing.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Depth",
+          "criterion": "Practitioner Depth",
+          "finding": "The fixes name real Apollo surfaces rather than generic advice: 'go to the Tasks tab and filter by the sequence name', 'open the sequence, go to the Health tab, complete at least one cleanup action such as removing bounced contacts, then click Activate', 'go to Settings, Sequences, Rulesets and read the actual rules in force', and the Sequence Status filter values 'active, paused, finished, bounced, not sent, and blocked'. The advanced-variable advice ('Rebuild them as advanced dynamic variables with fallback logic, so if the first name is missing the email still sends with a neutral fallback like \"there\"') is the kind of durable fix only someone who has run sequences at volume writes.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Attribution",
+          "criterion": "Data Attribution",
+          "finding": "The single table ('Reason / Symptom You See / The Fix', 7 rows) is a diagnostic map with no numeric cells and no source line beneath it, so nothing in it is attributable. The only quantified claims in the whole piece - 'more than 500,000 companies' and the implied provider throttles in 'Gmail and Outlook both cap how many messages an account can send in a day' - are bare assertions with neither a figure nor a citation.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical Accuracy",
+          "finding": "Every Apollo concept named is real and correctly described: manual vs automatic email steps, mailbox OAuth tokens breaking 'the moment you change your email password, revoke an app permission', the Health tab gate before Activate, rulesets with 'finish on reply', 'pause on out of office', 'finish on booked meeting', and per-mailbox daily send caps. The gap is that no 2026 figure is ever pinned down: the send-cap section says only that Gmail and Outlook 'enforce its own hidden limit underneath' without stating the actual Workspace or Microsoft 365 daily limits a reader would need to align their Apollo cap against.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Completeness",
+          "criterion": "Completeness",
+          "finding": "The opening enumerates all seven causes ('manual instead of scheduled ... daily send cap'), the table repeats them in the same order, and each of the seven H2s delivers with a bolded 'The symptom:' and 'The fix:' pair - the mapping is exact with no orphaned promise. The closing H2s ('The Deeper Issue: You Are Renting Your Sending Layer', 'Build Owned Outbound With DevCommX') also deliver what their headings state.",
+          "score": 5,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Keyword placement, meta lengths and the snippet table are all solid, but zero external citations appear inline in the body and no H2 contains the exact primary keyword.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Keywords",
+          "criterion": "Primary Keyword Targeting",
+          "finding": "'apollo sequence not sending emails' appears in the title, the slug, the meta-title ('Apollo Sequence Not Sending Emails? 7 Fixes'), the opening line ('If your <strong>Apollo sequence is not sending emails</strong>'), the post-summary and FAQ Q1 ('Why is my Apollo sequence not sending emails automatically?'). The miss is the H2 layer: all ten H2s are 'Reason 1: Your Step Is Manual, Not Scheduled' style and none contains the head term or a close variant, and the schema keyword 'apollo.io sequence not sending' never appears in prose (the string 'apollo.io' occurs only inside knowledge.apollo.io URLs).",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQ / People Also Ask",
+          "finding": "Six PAA-shaped questions, each mapped to a body section and each phrased the way a stuck user types it: 'Why is my Apollo sequence not sending emails automatically?', 'How do I fix an Apollo mailbox that stopped sending?', 'Why does Apollo say my email was not sent because of a missing variable?', 'Can Apollo sending limits stop a sequence from going out?'. Reason 4 (sending window) is the one cause with no matching FAQ, so the very common query pattern 'Apollo emails stuck in scheduled' has no direct question to capture it.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Tables",
+          "criterion": "Comparison / Featured Snippet Tables",
+          "finding": "One clean 3-column, 7-row table with a real <thead>/<tbody> and terse parallel cells ('Manual step, not scheduled | Emails sit in Tasks and never leave | Send from Tasks or switch the step to automatic'), wrapped in an overflow-x:auto div - well built for snippet extraction. It is the only table in the piece; the send-cap section in particular begs for a second Apollo-cap-vs-Gmail/Outlook-limit table and instead delivers prose.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Links",
+          "criterion": "Internal & External Link Structure",
+          "finding": "Three contextual internal links with descriptive anchors placed where they help ('B2B outbound tool stack' in the intro, 'cold email domain setup checklist' inside the mailbox section, 'B2B email deliverability guide for 2026' inside the sending-window section) plus a /contact CTA. But external links are 0-for-body: all three knowledge.apollo.io URLs appear only in the trailing 'Further Reading' list, so 2,598 words of Apollo troubleshooting cite the vendor documentation nowhere inline.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical SEO",
+          "finding": "meta-title is 43 characters and meta-description 157 - both inside limits, though the title leaves roughly 15 characters of SERP width unused. Schema markup is present with BlogPosting + FAQPage, the body correctly starts at H2 with no in-body H1 (the Webflow 'name' field supplies it), og-image is set at 1200x630, and blog-list carries the canonical URL. Minor: date and last-updated are both 2026-07-01 with no freshness signal.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.2,
+      "flag": "Highly extractable structure and a genuinely unique query cluster, undercut by having no citable statistics and no in-body author/expertise signal.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Definitions",
+          "criterion": "Direct Definitions",
+          "finding": "The lead paragraph is a near-perfect extraction target, enumerating all seven causes in one sentence, and the body carries clean copular definitions: 'A ruleset is a set of conditions that governs who a sequence is allowed to email' and 'A contact can be finished, meaning they completed every step in the sequence and there is simply nothing left to send'. Weaker on the variable concept - 'advanced dynamic variables with fallback logic' is described in passing but never given an 'X is Y' definition an LLM can lift.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Structure",
+          "criterion": "Structured Data for AI Parsing",
+          "finding": "Strong scaffolding: a 7-row symptom/fix table, sequentially numbered H2s ('Reason 1' through 'Reason 7'), a repeated bolded 'The symptom:' / 'The fix:' pattern in every section, and a 6-question FAQPage. The gap is list markup - the body contains exactly one <ul> (the Further Reading links) and zero <ol>, so each fix arrives as a 5-8 sentence paragraph rather than the discrete steps an answer engine prefers to quote.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Stats",
+          "criterion": "Statistical Authority",
+          "finding": "There is one number in the entire article, 'more than 500,000 companies', with no named source attached, so an LLM has nothing here it can attribute to DevCommX or to a citable authority. The send-cap section, the natural home for hard numbers, states only that Gmail and Outlook 'throttle aggressively when a young or unwarmed mailbox pushes volume' and 'start low and increase gradually over several weeks' - no daily limits, no warmup ramp figures, no bounce-rate thresholds.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Entity",
+          "criterion": "Entity Association",
+          "finding": "DevCommX is tied to the topic in the closing H2 'Build Owned Outbound With DevCommX' - 'autonomous, signal-based AI SDR systems that your team owns end to end, including the sending infrastructure, deliverability guardrails, and the enrichment that keeps sequences from stalling on missing data' - which is a clean topic-to-brand bridge. But Sumit Nautiyal appears only in the author-name/author-title fields and the schema Person node; his name and 'VP of Revenue Operations & GTM Engineering' never appear in the prose, so there is no in-body expertise signal linking a named practitioner to Apollo troubleshooting.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Distinctiveness",
+          "criterion": "GEO Distinctiveness",
+          "finding": "The existing Apollo footprint in the library is entirely comparison and alternatives intent - apollo-io-alternatives-sales-intelligence-tools, apollo-io-vs-devcommx-comparison-2026, clay-vs-apollo-vs-instantly-2026, waterfall-enrichment-clay-vs-zoominfo-vs-apollo - so this is the only troubleshooting-intent Apollo page and cannot cannibalise them. The nearest batch sibling, smartlead-replies-not-showing-master-inbox-fix, targets a different tool and a different failure, so the 'apollo sequence not sending / stuck in scheduled / mailbox disconnected' cluster is owned outright.",
+          "score": 5,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "The 'You Are Renting Your Sending Layer' pivot is one of the better-earned owned-infrastructure arguments in the library, but proof is a single reused stat, the CTA is generic, and there is no cost or value framing at all.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Differentiation",
+          "criterion": "Differentiation Narrative",
+          "finding": "The dedicated H2 'The Deeper Issue: You Are Renting Your Sending Layer' converts the seven fixes into the thesis rather than bolting it on: 'Every one of them is you reacting to a limit that a platform imposed and hid from you, a mailbox token that expired, a provider throttle you cannot see, a ruleset a teammate changed.' It lands the owned-infrastructure model concretely - 'treat their sending infrastructure as something they own and instrument, with monitoring on mailbox health, deterministic checks before a send, and enrichment that fills variables before they ever break a sequence' - so the pivot is argued, not asserted.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Proof",
+          "criterion": "Proof Metrics & Evidence",
+          "finding": "Exactly one proof point appears, the sanctioned framing 'clients typically go from setup to 40+ qualified demos in roughly 6 weeks', and it sits in the final CTA paragraph. Nothing anywhere ties DevCommX to the specific problem the article solves - no recovered-send-rate, no count of stalled sequences audited, no client example of a ruleset or token failure caught by monitoring - so the proof is generic to the agency rather than evidence for the Apollo argument just made.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Pricing",
+          "criterion": "Pricing Transparency",
+          "finding": "No cost or value framing exists anywhere in the 2,598 words: no Apollo plan tiers, no per-mailbox or per-domain cost, no engagement pricing, and no quantified cost of a stalled sequence. The one place economics is implied - 'the right answer is more mailboxes across more domains, each sending a modest amount' - carries no price signal at all, leaving the reader with no way to compare renting the sending layer against owning it.",
+          "score": 1,
+          "max": 5
+        },
+        {
+          "category": "CTA",
+          "criterion": "CTA Quality",
+          "finding": "One CTA at the very end: 'If you would rather own your outbound than debug it, <a>talk to us about building it</a>' pointing at devcommx.com/contact. The setup line is on-message but the anchor is generic contact-us with no offer, no deliverability or sequence audit hook, and no mid-article capture - a reader who solves their problem at Reason 1 exits 2,000 words before ever seeing a CTA.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Differentiation",
+          "criterion": "Content Differentiation",
+          "finding": "This is the library's only Apollo troubleshooting page and the only one that reaches bottom-of-funnel support intent, where the existing Apollo posts are all vs/alternatives content. It also does something the comparison posts cannot: use a support query to argue the owned-sending-layer thesis ('a sequence can stall without a clear reason'), which gives it a defensible slot rather than a duplicate one.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Zero in-body images in a UI troubleshooting post where screenshots are the norm, and every fix is delivered as a dense paragraph instead of numbered steps.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Headings",
+          "criterion": "Heading Architecture",
+          "finding": "Ten H2s in a logical arc (table of causes, Reason 1 through Reason 7 in check-first order, then the thesis and CTA sections), with no in-body H1 - correct, since the Webflow name field supplies it - and no skipped levels. The one inconsistency is that 'Further Reading' and 'FAQ' are H3s sitting as siblings after ten H2s rather than H2s themselves, which demotes two genuinely top-level sections; the six FAQ questions then sit at H4.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Visuals",
+          "criterion": "Visual Elements",
+          "finding": "The 18,335-character post-body contains zero <img> tags; the only image asset is the shared og-image ('imresizer-DevCommX-Blog-OG.png'), which never renders in the article. For a UI-diagnostic post that instructs the reader to 'go to the Tasks tab', check 'the Health tab', and open 'Settings, Sequences, Rulesets', the absence of even one Apollo screenshot or a diagnostic flow diagram is the biggest readability gap in the piece.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Scannability",
+          "criterion": "Scannability",
+          "finding": "The hook front-loads all seven causes in bold within the first paragraph, the 7-row table lets a reader jump straight to their symptom, and every section repeats a bolded 'The symptom:' / 'The fix:' pair. Against that, the body has exactly one <ul> (the Further Reading list) and no <ol> at all, so multi-step fixes such as Reason 4's 'Check three things. First, the time zone ... Second, the allowed days ... Third, the hours' are buried inside prose where a numbered list belongs.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Readability",
+          "criterion": "Reading Level & Flow",
+          "finding": "Plain and jargon-light, with product terms explained on first use ('Rulesets are the safety layer most people forget they configured') and a well-earned transition into the brand section ('Notice the pattern across all seven fixes'). The rigid symptom/fix template starts reading mechanically by Reason 5, and some sentences run long ('If a contact was tagged into one of those stages by an integration, an import, or a teammate, the ruleset will hold every email even though the sequence itself is running').",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Length",
+          "criterion": "Content Length & Density",
+          "finding": "2,598 words for seven causes is roughly 300 words per cause, appropriate for the intent, and the stated 12-minute reading time matches. Mild padding appears in the philosophical closers - 'This is a reputation decision as much as a throughput one, and treating it that way keeps your whole sending operation healthy' and 'Reading this view before you troubleshoot anything else often saves you from chasing a problem that is really just Apollo doing its job' - which restate rather than add.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Clean two-node @graph with a verbatim FAQ match to the body; small flaws are the Person author URL pointing at a LinkedIn company page and the publisher logo reusing the 1200x630 OG image.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Article",
+          "criterion": "Article Type Completeness",
+          "finding": "The BlogPosting node carries headline (exactly matching the post name), description, url, datePublished and dateModified (both '2026-07-01'), a 6-term keywords string, ImageObject, author, publisher and mainEntityOfPage. The defect is the author node: 'Sumit Nautiyal' with jobTitle 'VP of Revenue Operations & GTM Engineering, DevCommX' but url 'https://www.linkedin.com/company/devcommx', a company page used as a Person's URL, which weakens the entity link; inLanguage and wordCount are also absent.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQPage Structure",
+          "finding": "The FAQPage node has six mainEntity items, each correctly '@type': 'Question' with a 'name' and an 'acceptedAnswer' of '@type': 'Answer' carrying full 'text' - well above the 3-question threshold, and every answer is a complete 3-4 sentence response rather than a stub ('Yes. Apollo enforces the daily send cap you set per mailbox, and your provider like Gmail or Outlook enforces its own hidden limit underneath...').",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Alignment",
+          "criterion": "Schema-to-Content Alignment",
+          "finding": "All six schema questions and all six answer texts match the body H4 FAQ verbatim (checked string-for-string), and the headline is identical to the post name. Two small drifts: the schema description ('Here are the 7 real reasons, from manual steps to daily send caps, with the exact fix for each') is not the meta-description ('Diagnose all 7 causes, from manual steps to send caps ... so your outreach starts flowing again'), and the keyword 'apollo.io sequence not sending' has no prose support - 'apollo.io' appears in the article only inside knowledge.apollo.io hyperlinks.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Graph",
+          "criterion": "@graph Implementation",
+          "finding": "A proper '@graph' array with '@context': 'https://schema.org' and both nodes carrying stable fragment @ids ('...#article' and '...#faq'). It stops there: the FAQPage is not linked back to the article via isPartOf or mainEntityOfPage, and there is no WebPage, Organization or BreadcrumbList node with its own @id for the two nodes to reference, so the graph is two islands rather than a connected entity set.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Rich Results",
+          "criterion": "Rich Result Eligibility",
+          "finding": "Eligibility basics are covered: ImageObject with explicit width 1200 and height 630, publisher as an Organization with name, url and a logo ImageObject, and dateModified present. Two weaknesses - the publisher logo reuses the same 1200x630 OG file ('imresizer-DevCommX-Blog-OG.png') rather than a dedicated logo asset, and dateModified is identical to datePublished, so the page emits no freshness signal for a troubleshooting topic that will need updating as Apollo's UI changes.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Move the three knowledge.apollo.io links inline into the sections they support (Troubleshoot Sending Emails into Reason 1, Configure a Sequence Sending Schedule into Reason 4, Manage Sequence Rulesets into Reason 5) instead of leaving all external citations in the trailing Further Reading list, and attribute the 'more than 500,000 companies' figure to its Apollo source.",
+    "2. Add hard numbers to Reason 7: state the actual Google Workspace and Microsoft 365 daily send limits, a concrete warmup ramp (for example emails/day per week for a new mailbox), and a small Apollo-cap-vs-provider-limit table so the section has citable statistical authority and a second snippet target.",
+    "3. Add in-body visuals - at minimum an Apollo Tasks-queue screenshot for Reason 1, a mailbox status/Health tab screenshot for Reason 2, and a simple 7-step diagnostic flow diagram - since the body currently contains zero <img> tags for a UI troubleshooting post.",
+    "4. Convert the multi-step fixes to numbered <ol> lists, especially Reason 4's 'Check three things. First, the time zone ... Second, the allowed days ... Third, the hours', and Reason 2's unlink/relink/verify-SPF-DKIM-DMARC/reactivate sequence.",
+    "5. Strengthen brand conversion: add a mid-article CTA around Reason 3 or 4, replace the generic 'talk to us about building it' anchor with a specific offer (for example a sequence deliverability audit), and add one cost or value data point so Pricing Transparency is not a total blank.",
+    "6. Fix schema details: point the author Person url at a personal LinkedIn profile rather than 'https://www.linkedin.com/company/devcommx', swap the publisher logo for a real logo asset instead of the 1200x630 OG image, align the schema description with the meta-description, and add isPartOf/WebPage nodes so the @graph nodes are connected.",
+    "7. Add an FAQ question for Reason 4 (for example 'Why are my Apollo emails stuck in scheduled status?') and work the primary keyword or a close variant into at least one H2, since none of the ten H2s currently contains it."
+  ]
+}

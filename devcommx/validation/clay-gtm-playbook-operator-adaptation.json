@@ -1,0 +1,127 @@
+{
+  "slug": "clay-gtm-playbook-operator-adaptation",
+  "title": "How We Apply (and Extend) Clay's GTM Playbook to Book More Meetings: An Operator's Adaptation",
+  "words": 3037,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Deep, credible operator content, but performance claims are all self-labeled 'directional' and the one hard pricing stat is unsourced",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Sources", "criterion": "Stat Accuracy & Source Quality",
+         "finding": "The only external citation is a single inline link to 'the Clay team's own documentation and blog' (clay.com/blog/gtm-engineering); every performance claim is explicitly hedged, e.g. 'The direction of the result is consistent across deployments' and 'Directionally, structured full-message personalization produces higher reply rates'. The one concrete number, Clay plans 'commonly range from roughly 134 to 720 dollars a month' in the FAQ, carries no inline source. Honest but thinly evidenced.", "score": 3, "max": 5},
+        {"category": "Depth", "criterion": "Practitioner Depth",
+         "finding": "Demonstrates real deployment knowledge repeatedly: 'we score each signal, timestamp it, and only let a row advance when the combined score crosses a threshold within a rolling window'; the SIRC layer 'maps to a Clay column'; the enrichment fix 'call the cheapest high-accuracy source first... and cap total enrichment spend per row'; and a two-part QA gate catching 'an empty personalization variable, a merge that resolved to a placeholder'. This is genuine operator detail, not a surface summary.", "score": 5, "max": 5},
+        {"category": "Attribution", "criterion": "Data Attribution",
+         "finding": "The one table (Divergence / What Clay recommends / What we do instead / When Clay is right) is a conceptual framework with no data cells needing sources, which is appropriate. But no metric anywhere is attributed to a named dataset; outcomes like 'cost per booked meeting drops' and 'reply quality... meaningfully higher' are bare directional assertions with no figures or study behind them.", "score": 3, "max": 5},
+        {"category": "Technical", "criterion": "Technical Accuracy",
+         "finding": "Tool and feature names are correct for 2026: Clay 'waterfall enrichment', the 'Claybooks' prebuilt plays, Smartlead owning 'inbox rotation, warmup, throttling, and reply capture', HeyReach owning the LinkedIn layer 'with its own per-sender limits'. The Clay $134-$720/mo range is plausible for 2026 tiers though unverifiable here. No detectable technical errors.", "score": 4, "max": 5},
+        {"category": "Completeness", "criterion": "Completeness",
+         "finding": "Every H2 promise is delivered: the 'Five Divergences at a Glance' table is followed by five dedicated Divergence sections each with 'What Clay recommends' + 'What we do instead' + mechanism, and the 'When Clay's Original Approach Is the Right Call' H2 fully pays off the table's 'When Clay is right' column (Smaller lists, Single-ICP motions, Teams without operator capacity). No dangling promises.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Strong keyword coverage, snippet-ready table, and 12 internal + 3 external links; only the Divergence H2s miss the keyword",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Keywords", "criterion": "Primary Keyword Targeting",
+         "finding": "'Clay GTM playbook' / 'Clay outbound' appears in the H1, the slug (clay-gtm-playbook-operator-adaptation), meta-title ('Clay GTM Playbook: An Operator's Adaptation for 2026'), the H2 'Clay's Playbook, Summarized Fairly', the FAQ 'What is Clay's GTM playbook?', and densely through the body. The five 'Divergence N' H2s carry no keyword, a minor missed placement, but coverage is otherwise strong.", "score": 4, "max": 5},
+        {"category": "FAQ", "criterion": "FAQ / People Also Ask",
+         "finding": "Six FAQs map to genuine high-intent queries: 'Should you trigger outbound on a single signal in Clay?', 'Where should Clay stop and Smartlead or HeyReach start?', and 'Is Clay expensive to run for outbound in 2026?'. These read like real PAA questions a Clay buyer would ask, not filler.", "score": 5, "max": 5},
+        {"category": "Tables", "criterion": "Comparison / Featured Snippet Tables",
+         "finding": "One clean four-column HTML table (Divergence, What Clay recommends, What we do instead, When Clay is right) with a proper thead/tbody and five rows, wrapped in an overflow-x container. It is directly extractable as a featured snippet comparison.", "score": 5, "max": 5},
+        {"category": "Links", "criterion": "Internal & External Link Structure",
+         "finding": "12 internal links with descriptive anchors (e.g. 'contextual outreach playbook', 'GTM engineering stack breakdown', 'how Clay pricing and credits actually work', 'signal-based prospecting guide') plus 3 external citations (Clay blog, Smartlead, HeyReach) all with rel=\"noopener noreferrer\". Rich, relevant link graph.", "score": 5, "max": 5},
+        {"category": "Technical", "criterion": "Technical SEO",
+         "finding": "meta-title is 52 chars and meta-description 149 chars, both within limits. A single H1 (the name field) leads a clean heading tree, and full BlogPosting + FAQPage JSON-LD is present in schema-markup.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.20,
+      "flag": "Extractable definitions, numbered frameworks, and strong entity ties; weakened only by the absence of named, citable statistics",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Definitions", "criterion": "Direct Definitions",
+         "finding": "Clean extractable definitions exist: the FAQ opens 'Clay's GTM playbook is a documented approach to signal-based outbound: detect a buying signal, enrich the account and contact, then trigger personalized outreach at scale from a single workspace.' The SIRC acronym is spelled out explicitly: 'Signal, Insight, Relevance, Call', each layer then defined. Ideal for AI answer extraction.", "score": 5, "max": 5},
+        {"category": "Structure", "criterion": "Structured Data for AI Parsing",
+         "finding": "Highly parseable: a 5-row comparison table, five numbered 'Divergence N' H2 sections, a 'The playbook has three moves' enumeration (First... Second... Third...), a bulleted Further Reading list, and a 6-item FAQ mirrored in FAQPage schema. Multiple structured formats for LLM ingestion.", "score": 5, "max": 5},
+        {"category": "Authority", "criterion": "Statistical Authority",
+         "finding": "The weakest GEO axis: nearly every claim is self-sourced and directional ('consistent across deployments', 'far fewer of the polite non-answers'), and the sole hard figure ('roughly 134 to 720 dollars a month') has no named source an LLM could confidently attribute. '40+ client deployments' is a first-party assertion only.", "score": 3, "max": 5},
+        {"category": "Entity", "criterion": "Entity Association",
+         "finding": "DevCommX is explicitly bound to the topic ('Our job at DevCommX is not to replace it. It is to operate it under load') and the schema names author Sumit Nautiyal, 'VP of Revenue Operations & GTM Engineering, DevCommX'. Clay, Smartlead, and HeyReach are all named as distinct entities, cleanly associating DevCommX with the Clay/GTM-engineering niche.", "score": 5, "max": 5},
+        {"category": "Distinctiveness", "criterion": "GEO Distinctiveness",
+         "finding": "Targets a distinct 'how we extend Clay's playbook / Clay best practices / when Clay's default is right' cluster and deliberately hands sibling topics off to separate posts it links (clay-pricing-breakdown, signal-based-prospecting-guide, contextual-outreach-playbook), rather than re-covering them. No apparent cannibalisation.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Owned-infrastructure narrative and specific CTA are excellent; the sanctioned 40+ demos proof lands, but no DevCommX pricing",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Differentiation", "criterion": "Differentiation Narrative",
+         "finding": "The owned-infrastructure, signal-based model is stated verbatim: 'DevCommX builds autonomous, signal-based AI SDR systems that your team owns, not a managed campaign you rent.' The 'operator-run system' vs 'median-case default' framing runs through the whole piece and differentiates cleanly.", "score": 5, "max": 5},
+        {"category": "Proof", "criterion": "Proof Metrics & Evidence",
+         "finding": "The sanctioned framing appears twice: 'After 40+ client deployments' and 'how our clients go from setup to 40+ qualified demos in roughly six weeks'. Concrete and on-message, though beyond this the outcome evidence stays directional rather than adding case-specific numbers.", "score": 4, "max": 5},
+        {"category": "Pricing", "criterion": "Pricing Transparency",
+         "finding": "Cost framing is present but it is Clay's tooling cost, not DevCommX's: the FAQ gives 'roughly 134 to 720 dollars a month' plus 'a separate sender that typically adds a further monthly cost', and the enrichment section frames 'cost per usable record' and 'cost per booked meeting'. No DevCommX service pricing or value package is disclosed.", "score": 3, "max": 5},
+        {"category": "CTA", "criterion": "CTA Quality",
+         "finding": "A specific, conversion-oriented CTA closes the post: the 'Book a Clay Workspace Audit' H2 with 'If you already run Clay and suspect it is leaking meetings, we will tell you exactly where' linking to /contact-us and promising 'we will map these changes to your workspace and your pipeline.' Concrete offer, not a generic 'contact us'.", "score": 5, "max": 5},
+        {"category": "Differentiation", "criterion": "Content Differentiation",
+         "finding": "Fills a distinct 'we respect and credit Clay, then extend it' slot that no other library post occupies; it explicitly positions against copying playbooks blind ('most teams get hurt copying a playbook without knowing which parts were written for their situation') and routes adjacent topics to sibling posts.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Logical headings and strong scannability, capped by having zero in-body images (only an OG image)",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Headings", "criterion": "Heading Architecture",
+         "finding": "Clean hierarchy with no skipped levels: H1 (name) leads 10 H2s (Clay's Playbook Summarized Fairly, Why We Diverge, Five Divergences at a Glance, Divergence 1-5, When Clay's Original Approach Is Right, Book a Clay Workspace Audit), then H3 (Further Reading, FAQ) over six H4 FAQ questions.", "score": 5, "max": 5},
+        {"category": "Visuals", "criterion": "Visual Elements",
+         "finding": "No in-body images, diagrams, charts, or infographics exist; the only image is the OG file (imresizer-DevCommX-Blog-OG.png) referenced in schema. The single comparison table adds some visual structure but does not substitute for imagery, so per calibration this caps low.", "score": 2, "max": 5},
+        {"category": "Scannability", "criterion": "Scannability",
+         "finding": "Highly skimmable: a strong opening hook, a summary table, and every Divergence section led by bolded 'What Clay recommends:' / 'What we do instead:' labels, plus a bolded list in the 'When Clay is right' section (Smaller lists / Single-ICP motions / Teams without operator capacity) and a 6-item FAQ. A skim reader gets the full argument from the bold labels alone.", "score": 5, "max": 5},
+        {"category": "Readability", "criterion": "Reading Level & Flow",
+         "finding": "Confident operator voice with natural transitions ('None of this means the playbook is wrong. It means the median-case defaults were never meant to be the production configuration.'). Jargon like SIRC, waterfall enrichment, and 'deterministic gate' is defined on introduction, so no unexplained dump.", "score": 5, "max": 5},
+        {"category": "Length", "criterion": "Content Length & Density",
+         "finding": "At ~3037 words the length fits a detailed operator playbook and matches the stated 14-minute read. Density is mostly high, though the recurring 'The direction of the result...' / 'Directionally...' restatements add mild repetition that could be trimmed.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Complete BlogPosting + FAQPage with exact FAQ match; only nit is missing @id on author/image/publisher nodes",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Article", "criterion": "Article Type Completeness",
+         "finding": "The BlogPosting node carries headline, description, url, datePublished (2026-07-01), dateModified, keywords ('Clay GTM playbook, Clay outbound playbook, how to use Clay for outbound, Clay best practices 2026'), image, author, publisher, and mainEntityOfPage. All required Article fields present.", "score": 5, "max": 5},
+        {"category": "FAQPage", "criterion": "FAQPage Structure",
+         "finding": "The FAQPage node holds a mainEntity array of six items, each @type Question with a name and an acceptedAnswer of @type Answer containing full text. Well above the 3-question minimum and correctly typed throughout.", "score": 5, "max": 5},
+        {"category": "Alignment", "criterion": "Schema-to-Content Alignment",
+         "finding": "The six schema FAQ questions and answer text match the body FAQ verbatim (e.g. 'Is Clay expensive to run for outbound in 2026?' with the identical '134 to 720 dollars a month' answer). The schema description also matches the meta-description exactly, and keywords reflect the actual topic.", "score": 5, "max": 5},
+        {"category": "Graph", "criterion": "@graph Implementation",
+         "finding": "A proper @graph array holds two nodes, the BlogPosting (@id ...#article) and FAQPage (@id ...#faq), and mainEntityOfPage/WebPage also carries an @id. However the nested author (Person), image (ImageObject), and publisher (Organization) nodes have no @id, so '@id on each node' is not fully satisfied.", "score": 4, "max": 5},
+        {"category": "RichResult", "criterion": "Rich Result Eligibility",
+         "finding": "Rich-result signals are complete: image is an ImageObject with url plus width 1200 / height 630, publisher is an Organization with a logo ImageObject, and dateModified (2026-07-01) is present alongside datePublished. Eligible for article rich results.", "score": 5, "max": 5}
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Add an inline citation for the one hard number ('roughly 134 to 720 dollars a month') linking to Clay's pricing page, and attribute or quantify at least one directional claim (e.g. reply-rate or cost-per-meeting delta) so GEO Statistical Authority and Stat Accuracy rise above 3/5.",
+    "2. Add one or two in-body visuals, e.g. a SIRC-layer diagram and a signal-stacking-vs-single-signal funnel graphic, to lift Visual Elements above the current 2/5 cap.",
+    "3. Add the primary keyword to at least the first Divergence H2 (e.g. 'Divergence 1: Signal Stacking in Clay') and add @id to the author, image, and publisher schema nodes to complete @graph node identification.",
+    "4. Trim the repeated 'The direction of the result is...' / 'Directionally...' restatements across Divergences 1, 2, and 5 to tighten density."
+  ]
+}

@@ -1,0 +1,280 @@
+{
+  "slug": "how-many-inboxes-mailboxes-cold-email-at-scale",
+  "title": "How Many Inboxes Do You Actually Need to Send Cold Email at Scale?",
+  "words": 2536,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Genuinely deep practitioner content, but only ONE inline external citation in 2,536 words and the 40,000-send table row (64 inboxes) contradicts the post's own formula (63).",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Sources",
+          "criterion": "Stat Accuracy & Source Quality",
+          "finding": "The regulatory claims are accurate and specific: Google's bulk sender bar is stated as \"a user reported spam rate that stays under 0.30 percent, with 0.10 percent as the working target\" for senders of \"5,000 or more messages a day\", and the Microsoft policy is dated correctly (\"Since 5 May 2025\") with the right rejection code (\"5.7.515 access denied\"). But the body carries exactly ONE inline external link (the techcommunity.microsoft.com high-volume sender post); the Google limits paragraph (\"2,000 messages per day per Workspace user, 3,000 external recipients per day, and a maximum of 500 external recipients on any single message\") is uncited inline and only reachable via the Further Reading list at the bottom, and the pipeline benchmark \"Average cold email reply rates sit near 3 to 4 percent in 2026, and only 10 to 30 percent of those replies are genuinely positive\" has no source at all.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Depth",
+          "criterion": "Practitioner Depth",
+          "finding": "This reads like someone who has actually run a fleet. The 1.2 multiplier is defended operationally, not hand-waved: \"Twenty percent is the number that keeps daily throughput flat instead of sawtoothing every time you rotate stock.\" The per-domain ceiling is argued as blast radius with real numbers (\"At three inboxes per domain you lose three units of daily capacity, roughly 105 sends a day\"), and the warmup advice is non-obvious (\"warmup keeps running underneath at a maintenance level rather than being switched off... Warmup is engagement supply\"). The rolling-cohort recommendation and the \"Add neither\" branch (reply rates falling while deliverability metrics stay clean = a targeting problem) are the kind of judgement calls a surface summary never contains.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Attribution",
+          "criterion": "Data Attribution",
+          "finding": "The six-column volume table carries no source row, no assumption footnote inside the table, and no methodology note in the markup. The two most load-bearing columns are derived from unattributed constants explained only in the paragraph after it: \"the low end assumes a dedicated cold email infrastructure provider at roughly $3.50 per mailbox per month and the high end assumes real Google Workspace or Microsoft 365 seats at about $7\", and \"The prospect column assumes a three step sequence\". A reader who skims to the table (or an LLM that lifts it) gets five rows of hard numbers with zero attached provenance.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical Accuracy",
+          "finding": "Most 2026 specifics check out: \"Google Workspace Business Starter runs $8.40 per user per month on flexible billing or $7 on an annual commitment\" is correct, and the 500-external-recipients-per-message limit is right. Two problems. First, an internal arithmetic break: the stated formula ((40,000 / 22) / 35) x 1.2 = 62.3, which rounds to 63, yet the 40,000 row says \"64 inboxes\" — it appears to have been doubled from the 20,000 row rather than computed (every other row reconciles exactly: 3,000 to 5, 6,000 to 10, 10,000 to 16, 20,000 to 32). Second, \"Microsoft 365 Business Basic moved from $6 to $7 per user per month on 1 July 2026\" is a dated, checkable price change presented with no citation, in a post published 2026-07-01, one day into the claimed change.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Coverage",
+          "criterion": "Completeness",
+          "finding": "All eight H2 promises are delivered in full: the formula section gives the actual equation, \"Why 30 To 50 Is The Real Ceiling, Not 2,000\" explains the enforcement-vs-documented-limit gap, \"You Cannot Buy Capacity On Day One\" gives the week-by-week ramp, and \"When To Add Domains Versus When To Add Inboxes\" gives all three branches. The gap is actionability on procurement: the post repeatedly prices \"dedicated cold email infrastructure providers\" at \"$2.50 to $4 per mailbox per month\" and credits them with taking \"so much share\", but never names a single one, so the reader cannot execute the cheaper half of the cost table without leaving the page.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Strong six-question FAQ and a snippet-ready volume table; primary phrase \"at scale\" appears zero times in body prose and the meta title uses only 44 of ~60 available characters.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Keywords",
+          "criterion": "Primary Keyword Targeting",
+          "finding": "\"How many inboxes\" is in the H1 (\"How Many Inboxes Do You Actually Need to Send Cold Email at Scale?\"), the slug, the meta title, the meta description, and FAQ Q1 verbatim; \"inbox\" appears 40 times and \"cold email\" 10 times across 2,536 words, so semantic coverage is solid. The gap is the modifier: the exact string \"at scale\" appears ZERO times in the body prose and in none of the eight H2s, which are all conceptual rather than keyword-bearing (\"Why 30 To 50 Is The Real Ceiling, Not 2,000\", \"What A Mailbox Actually Costs\").",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQ / People Also Ask",
+          "finding": "Six questions, every one a real high-intent query rather than filler: \"How many inboxes do I need to send 1,000 cold emails per day?\", \"How many cold emails can one inbox safely send per day in 2026?\", \"How many inboxes should I put on one domain?\", \"How much does cold email infrastructure cost per mailbox?\", \"Should I add more domains or more inboxes to scale?\", \"How long before new inboxes can send at full volume?\". Each answer opens with the number first (\"About 35 warmed inboxes across 12 domains\", \"Two to three, with three as the hard ceiling\") and then shows the working, which is exactly the shape PAA and AI Overviews lift.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Tables",
+          "criterion": "Comparison / Featured Snippet Tables",
+          "finding": "One well-built table with a real thead and five rows spanning \"Monthly send target\" 3,000 to 40,000, wrapped in an overflow-x:auto container for mobile. It is the single most extractable asset on the page. Two limits: six columns (target, sends/day, inboxes, domains, cost, prospects) is wider than Google typically renders in a table snippet, so the cost and prospect columns are the ones likely to be truncated, and there is no caption or summary row stating the assumptions, so the table cannot stand alone in a snippet without the paragraph beneath it.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Links",
+          "criterion": "Internal & External Link Structure",
+          "finding": "Six internal links with clean descriptive anchors placed at genuinely relevant moments: \"cold email domain setup checklist\" in the intro, \"B2B email deliverability guide\", \"best email warmup tools for deliverability\" inside the cost section, \"2026 deliverability rules for SPF, DKIM, and DMARC\", \"guide to B2B buying signals\", and \"B2B outbound tool stack\", plus the /contact CTA — 11 anchors total. External citation placement is the weakness: only the Microsoft techcommunity link is inline at the claim, while the Google sender guidelines, Google Workspace sending limits, and RFC 8058 links are all dumped into a \"Further Reading\" list detached from the sentences they support.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical SEO",
+          "finding": "Schema is present and parses cleanly as a two-node @graph; meta description is 156 characters, inside the 155-160 sweet spot; the body correctly starts at H2 with no duplicate H1 (the H1 comes from the Webflow name field, 66 chars). The meta title \"How Many Inboxes to Send Cold Email at Scale\" is only 44 characters, leaving roughly 15 characters of SERP width unused — no year, no number, and no brand token, where a variant like \"How Many Inboxes for Cold Email at Scale? (2026 Math)\" would use the space it is given.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.2,
+      "flag": "Excellent extractable opening answer and formula, but the load-bearing constants (30-50/day, 3 per domain, 1.2 buffer) are DevCommX assertion with no named source an LLM can attribute.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Definitions",
+          "criterion": "Direct Definitions",
+          "finding": "The post opens with a fully self-contained, bolded answer that an assistant can lift verbatim: \"You need roughly one warmed inbox for every 30 to 50 cold emails you want to send per day\", followed immediately by the procedure and a concrete worked case (\"A 10,000 sends per month program needs about 16 inboxes across 6 domains\"). The formula is then isolated on its own bolded line — \"Inboxes = (monthly sends / 22 working days) / 35 sends per inbox per day, multiplied by 1.2\" — and each of the three inputs is defined explicitly (\"total emails leaving the system including follow up steps, not unique prospects\"). This is close to ideal AEO shape.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Structure",
+          "criterion": "Structured Data for AI Parsing",
+          "finding": "Machine-parseable assets are real: a 5x6 numeric table, a valid FAQPage with 6 Q/A pairs, a three-branch decision structure with bolded triggers (\"Add inboxes\" / \"Add domains\" / \"Add neither\"), and eight paragraphs that each open with a bolded thesis sentence. The miss is list markup: the body contains zero <ol> and only one <ul> (the Further Reading list). The warmup ramp, which is inherently a numbered sequence, is left as prose — \"Week one, 5 to 10 sends a day. Week two, 15 to 25. Week three, 30 to 50.\" — and the five-item stack budget (\"mailboxes, 11 domains at $10 to $15 a year, a sequencer with inbox rotation, a verification tool billed per contact, and inbox placement monitoring at $50 to $150 a month\") is a run-on sentence rather than a list.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Authority",
+          "criterion": "Statistical Authority",
+          "finding": "There is a genuinely citable authority layer: Google's bulk sender guidelines, RFC 8058 one-click unsubscribe, the 0.30 percent / 0.10 percent spam-rate thresholds, and Microsoft's dated 5 May 2025 requirement with the 5.7.515 error code are all attributable to named sources an LLM will happily quote. But the numbers the article is actually about are not: \"30 to 50\", \"We plan at 35\", the \"1.2\" reserve, \"three mailboxes per domain\", and \"reply rates sit near 3 to 4 percent in 2026\" are presented as settled practice (\"Two to three mailboxes per domain is the settled ratio\") with no study, vendor benchmark, or DevCommX dataset named behind them.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Entity",
+          "criterion": "Entity Association",
+          "finding": "DevCommX is bound to the topic early and concretely — \"We build this layer for clients as owned infrastructure rather than a rented campaign, and the sizing math below is what we run before a single domain gets bought\" — and again in the closing H2 \"Build This With DevCommX\", with the sanctioned proof framing used twice (\"40 or more qualified demos in about six weeks\"). Weakness: Sumit Nautiyal appears only in the CMS author fields and the JSON-LD author node, never in the body — there is no byline sentence, no first-person practitioner signal, and no tie between the named person and the mailbox-infrastructure entity that an LLM could pick up from the article text itself.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Distinctiveness",
+          "criterion": "GEO Distinctiveness",
+          "finding": "Judged against the live siblings, this stays distinct: cold-email-domain-setup-checklist owns DNS/SPF/DKIM/DMARC setup and best-email-warmup-tools-deliverability owns tool selection, whereas this post owns a query cluster neither touches — capacity sizing (\"how many inboxes\", \"sends per mailbox per day\", the volume table). The overlap that exists is real but contained to roughly two paragraphs and is explicitly handed off rather than duplicated: the intro sends DNS readers away (\"start with the cold email domain setup checklist, then come back and size the fleet\") and the cost section links out at the exact point it quotes warmup pricing (\"Standalone warmup tools run $15 to $29 per inbox per month... our breakdown of the best email warmup tools\"). Residual cannibalisation risk sits on \"Inboxes Per Domain: Three Is The Hard Ceiling\", which is domain-architecture territory the setup checklist also plausibly ranks for; worth checking GSC after 60 days for query overlap on \"inboxes per domain\".",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Owned-infrastructure narrative and cost transparency are unusually strong; the single generic \"Book a GTM strategy call\" CTA at the very end under-monetises a 2,536-word planning guide.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Differentiation",
+          "criterion": "Differentiation Narrative",
+          "finding": "The model is stated plainly and more than once. Intro: \"We build this layer for clients as owned infrastructure rather than a rented campaign\". Close: \"DevCommX builds autonomous, signal based AI SDR systems that your team owns outright, including the mailbox fleet, the domain architecture, the enrichment logic, and the triggers\" and \"Clients keep the infrastructure and the data when the engagement ends, which is the entire point.\" The signal-based half is argued through the article's own logic rather than bolted on: \"Doubling the positive reply rate by only contacting accounts showing a real buying signal produces the same pipeline from the same 16 inboxes.\"",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Proof",
+          "criterion": "Proof Metrics & Evidence",
+          "finding": "The sanctioned framing appears twice and is used correctly rather than as a slogan — once tied to the article's own argument (\"a signal triggered system can produce 40 or more qualified demos in about six weeks without an enormous mailbox fleet behind it\") and once in the CTA block (\"setup to 40 or more qualified demos in roughly six weeks is a normal outcome\"). What is missing is any deployment-specific evidence for THIS topic: no client fleet size, no before/after inbox count, no observed spam-rate or placement number from a DevCommX-built fleet, which is exactly the proof a capacity-planning post is positioned to give.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Pricing",
+          "criterion": "Pricing Transparency",
+          "finding": "Unusually transparent for this library: the post prices the entire stack — \"$2.50 to $4 per mailbox per month\" for dedicated providers, \"$8.40 per user per month on flexible billing or $7 on an annual commitment\" for Workspace, \"$10 to $15 a year\" per domain, \"$15 to $29 per inbox per month\" for standalone warmup with the fleet-level consequence spelled out (\"at a 32 inbox fleet is $480 to $928 a month\"), and \"$50 to $150 a month\" for placement monitoring — plus a dedicated cost column in the table. The gap is DevCommX's own commercials: the engagement is never priced or even value-framed against the tooling spend it just itemised.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "CTA",
+          "criterion": "CTA Quality",
+          "finding": "One CTA only, at the very bottom: \"Book a GTM strategy call\" pointing at /contact, after 2,536 words with no mid-article conversion point. The anchor is generic and disconnected from the article's own hook — a post whose entire value is a sizing formula and a volume table has an obvious offer (a fleet-sizing worksheet, or \"send us your monthly target and we will size the fleet\") that it never makes. The surrounding paragraph does the persuasion work, but the click itself asks for a call with no stated agenda or deliverable.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Library Fit",
+          "criterion": "Content Differentiation",
+          "finding": "It fills a slot nothing else in the library occupies: the four posts it links to (cold email domain setup checklist, B2B email deliverability guide 2026, best email warmup tools, 2026 SPF/DKIM/DMARC rules) all answer \"how do I make mail land\", while this one answers \"how much sending capacity do I have to buy, and when\". It also functions as a hub, routing to five sibling posts plus the outbound tool stack, which strengthens the cluster rather than competing inside it. Minor overlap with the warmup-tools post on pricing keeps it short of a clean 5.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Zero in-body visuals (no fleet/domain diagram, no ramp chart) and essentially no bullet lists in 2,536 words — the bolded lead-sentence pattern is carrying all the scannability.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Headings",
+          "criterion": "Heading Architecture",
+          "finding": "Clean and sequential: H1 from the name field, then eight H2s in a logical arc from \"The Formula\" through cost, ramp, and scaling decisions to \"Build This With DevCommX\", then H3 \"Further Reading\" and H3 \"FAQ\" with six H4 questions beneath it — no skipped levels anywhere. The one flaw is nesting semantics: \"Further Reading\" and \"FAQ\" are H3s with no H2 of their own, so both formally nest under \"Build This With DevCommX\", making the FAQ a subsection of the CTA block rather than a peer section.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Visuals",
+          "criterion": "Visual Elements",
+          "finding": "Zero <img> tags in the body — the only image anywhere is the shared OG file (imresizer-DevCommX-Blog-OG.png), which is also reused as the schema publisher logo. This is a post built entirely on spatial concepts that beg for a diagram: the fleet-to-domain topology (16 inboxes across 6 domains at a 3-per-domain ceiling), the blast-radius contrast between 3 and 10 mailboxes on one domain, and the four-week ramp curve (\"Week one, 5 to 10 sends a day. Week two, 15 to 25. Week three, 30 to 50.\") are all described in prose that a single chart would carry better.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Scannability",
+          "criterion": "Scannability",
+          "finding": "The bolded opening-sentence device works hard and consistently — \"The enforcement layer sits well below the documented limits.\", \"The real argument is blast radius.\", \"The line item people forget is warmup.\", \"The leverage is not in the denominator.\" — and the \"Add inboxes / Add domains / Add neither\" block plus the volume table give a skimmer two anchor points. But there is not one content bullet list in the article: the only <ul> is Further Reading, and naturally listable material (the ramp weeks, the five-item stack budget, the two structural domain rules) is all delivered as dense paragraphs.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Readability",
+          "criterion": "Reading Level & Flow",
+          "finding": "Register is right for a RevOps buyer and transitions are genuinely earned — \"Two clarifications on that table\", \"The planning consequence is that infrastructure carries a six to eight week lead time on pipeline\" — with no acronym dumping (SPF, DKIM, DMARC, RFC 8058 all appear in context). Sentences run long and clause-heavy in places, e.g. \"Sizing infrastructure to fix a relevance problem is the most expensive mistake in outbound, because you pay for it twice, once in tooling and once in prospects you can never approach again\", which is quotable but demands a second read.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Length",
+          "criterion": "Content Length & Density",
+          "finding": "2,536 words for a sizing question is well-judged — long enough for the formula, the ceiling rationale, cost, ramp, and the scaling decision tree, with no padding sections and no restated-intro conclusion. Density is high: nearly every paragraph carries a number. One QA nit: the add-blog-reading-time field says \"12\" minutes, which overstates 2,536 words at any normal 225-250 wpm rate (roughly 10-11 minutes).",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Valid two-node @graph with all 6 FAQ answers matching the body verbatim; publisher.logo reuses the 1200x630 OG image and author.url points at the DevCommX company page, not the person.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Article",
+          "criterion": "Article Type Completeness",
+          "finding": "The BlogPosting node carries headline (exactly matching the CMS name, \"How Many Inboxes Do You Actually Need to Send Cold Email at Scale?\"), description, url, datePublished and dateModified (both 2026-07-01), a five-phrase keywords string, image, author, publisher, and mainEntityOfPage. Two defects: author.url is \"https://www.linkedin.com/company/devcommx\", a company page attached to a Person node named Sumit Nautiyal, which mis-wires the person entity; and there is no wordCount, articleSection, or inLanguage despite all three being trivially available.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQPage Structure",
+          "finding": "Six mainEntity items, every one a proper \"@type\": \"Question\" with a name and a nested acceptedAnswer of \"@type\": \"Answer\" carrying a full text string — well past the 3-question minimum. Answers are substantive rather than stubs (the 1,000/day answer shows the full derivation: \"1,000 daily sends divided by 35 safe sends per inbox, which gives 29 inboxes, multiplied by 1.2... which gives 35\"), and each is a standalone paragraph that can stand without the article.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Alignment",
+          "criterion": "Schema-to-Content Alignment",
+          "finding": "Verified programmatically: all six schema question names AND all six acceptedAnswer.text strings appear byte-for-byte in the rendered post body — no drift, no paraphrase, no orphan FAQ. The keywords string (\"how many inboxes to send cold email at scale, cold email inboxes per domain, cold email infrastructure sizing, sends per mailbox per day, cold email mailbox cost\") maps directly onto the H2s that exist, and the schema description (\"sends per inbox per day, inboxes per domain, cost per mailbox, and a worked table for five monthly volume targets\") accurately describes the article rather than a generic blurb.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Graph",
+          "criterion": "@graph Implementation",
+          "finding": "A proper @graph array with @context at the root and both nodes individually addressed — \"...#article\" on the BlogPosting and \"...#faq\" on the FAQPage. What is missing is connective tissue: there is no WebPage node (mainEntityOfPage points to a @id that is never defined as a node in the graph), no BreadcrumbList for the /blogs/ path, and the FAQPage is not tied back to the article with isPartOf or about, so the two nodes sit side by side rather than as one linked entity graph.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Rich Results",
+          "criterion": "Rich Result Eligibility",
+          "finding": "The core requirements are met: image is a full ImageObject with url plus \"width\": 1200 and \"height\": 630, publisher is an Organization with name, url, and a logo ImageObject, and dateModified is present. Two eligibility risks: publisher.logo reuses the identical 1200x630 OG file (imresizer-DevCommX-Blog-OG.png) as the organization logo, which does not meet Google's logo guidance for a rectangular brand mark, and dateModified is identical to datePublished, so the post has no freshness signal on a page whose pricing claims (Microsoft's \"1 July 2026\" change) will date quickly.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Fix the arithmetic break in the volume table: the 40,000 row says \"64 inboxes\" but the post's own formula ((40,000/22)/35)x1.2 = 62.3 gives 63. Every other row reconciles exactly, so this one looks doubled from the 20,000 row rather than computed.",
+    "2. Move external citations inline to the claims they support. The Google limits paragraph (\"2,000 messages per day per Workspace user, 3,000 external recipients per day\") and the spam-rate thresholds currently have no inline link, and the Microsoft 365 Business Basic \"$6 to $7 on 1 July 2026\" price change and the \"3 to 4 percent\" reply-rate benchmark have no source anywhere.",
+    "3. Add two in-body visuals: a fleet topology diagram (16 inboxes across 6 domains at the 3-per-domain ceiling, with the blast-radius contrast) and a warmup ramp chart for the week 1-4 curve. The body currently has zero images, which is the single lowest-scoring criterion.",
+    "4. Add an assumptions/source row inside the volume table stating the $3.50 and $7 per-mailbox constants, the 22 working days, the 35 sends/inbox/day plan rate, and the three-step sequence behind the prospect column, so the table survives being extracted on its own.",
+    "5. Convert the prose ramp (\"Week one, 5 to 10 sends a day. Week two, 15 to 25...\") and the five-item stack budget into <ol>/<ul> lists. The article has zero content lists in 2,536 words, which costs it both skim value and AI parseability.",
+    "6. Schema cleanup: replace publisher.logo with a real rectangular brand mark instead of the 1200x630 OG image, point author.url at Sumit Nautiyal's personal LinkedIn rather than the DevCommX company page, and link the FAQPage to the article via isPartOf.",
+    "7. Strengthen the CTA and the meta title: replace the generic \"Book a GTM strategy call\" with an offer tied to this article's hook (a fleet-sizing review against the reader's monthly target), and use the ~15 unused characters in the 44-character meta title."
+  ]
+}

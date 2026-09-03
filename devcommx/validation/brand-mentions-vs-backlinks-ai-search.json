@@ -1,0 +1,127 @@
+{
+  "slug": "brand-mentions-vs-backlinks-ai-search",
+  "title": "Why Brand Mentions Matter More Than Backlinks in AI Search",
+  "words": 1950,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Claims are backed by real, credible sources (GEO paper, Gartner) but the two hard stats are cited in prose/References, not hyperlinked at the point of claim.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Sources", "criterion": "Stat Accuracy & Source Quality",
+         "finding": "The two load-bearing stats are accurate and credibly sourced: 'the GEO paper from researchers at Princeton, Georgia Tech, Allen Institute, and IIT Delhi... raised its visibility in generative engine responses by up to 40 percent' matches the real arXiv 2311.09735 finding, and 'Gartner has projected that traditional search engine volume will drop 25 percent by 2026' matches the Gartner 2024-02-19 release. Both appear in the References list with correct URLs, though within the body prose the GEO and Gartner figures are stated without an inline anchor at the sentence itself.", "score": 4, "max": 5},
+        {"category": "Depth", "criterion": "Practitioner Depth",
+         "finding": "The post shows real GEO working knowledge: it explains the retrieval mechanism ('When Perplexity or Google AI Overviews answers a query, it retrieves a set of documents, reads them, and synthesizes a response that names specific brands') and gives a concrete channel playbook (digital PR, Reddit/communities, comparison content, podcasts/transcripts, owned surfaces). The DevCommX first-party claim 'we track how often AI assistants cite the brands we work with' signals deployment experience, but the tactics stay at explanation level without a worked example or numbers from an actual engagement.", "score": 4, "max": 5},
+        {"category": "Attribution", "criterion": "Data Attribution",
+         "finding": "The comparison table is a conceptual backlinks-vs-mentions matrix (e.g. 'Needs a clickable link: Yes, by definition / No, unlinked mentions still count') so it correctly asserts logic rather than borrowed data and needs no external source. The only quantitative claims in the body (40 percent, 25 percent) are attributed to named institutions rather than left as bare assertions.", "score": 4, "max": 5},
+        {"category": "Technical", "criterion": "Technical Accuracy",
+         "finding": "Tool and concept references are correct for 2026: ChatGPT, Perplexity, and Google AI Overviews are named accurately as answer engines, PageRank is correctly described as a hyperlink-graph vote system, and Google's 'implied links' concept is invoked correctly ('a brand reference can function like a link for the purpose of understanding authority'). No pricing, feature, or limit is misstated.", "score": 4, "max": 5},
+        {"category": "Completeness", "criterion": "Completeness",
+         "finding": "Every H2 promise is delivered: the 'side by side comparison' H2 yields the eight-row table, 'The evidence' H2 delivers the GEO/Gartner/retrieval argument, 'Why unlinked mentions count now' explains the mechanism, 'Entity consistency' covers naming/schema, 'How B2B teams build mention volume' gives the five-channel playbook, and 'Measure mentions' covers the KPI method. No H2 is left as a stub.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Strong exact-match keyword coverage across title, H2, body, FAQ, and slug, with a clean snippet table and both internal and external links.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Keyword", "criterion": "Primary Keyword Targeting",
+         "finding": "The primary keyword 'brand mentions vs backlinks' appears in the meta-title ('Brand Mentions vs Backlinks in AI Search'), an H2 ('Brand mentions vs backlinks: a side by side comparison'), the opening sentence, the FAQ, and the slug (brand-mentions-vs-backlinks-ai-search). Secondary terms 'unlinked mentions SEO', 'brand mentions GEO', and 'AI search brand mentions' are all bolded and worked in naturally.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQ / People Also Ask",
+         "finding": "Six FAQ entries map to genuine high-intent PAA queries: 'Do brand mentions matter more than backlinks in AI search?', 'What are unlinked brand mentions in SEO?', 'How do LLMs weight entity mentions over backlinks?', 'Are backlinks still useful in the age of AI search?', 'How do B2B teams build brand mentions for GEO?', and 'How can I measure brand mentions in AI answers?' Each answer is a self-contained 2-4 sentence response.", "score": 5, "max": 5},
+        {"category": "Snippet", "criterion": "Comparison / Featured Snippet Tables",
+         "finding": "The three-column table (Dimension / Backlinks / Brand mentions) with eight labeled rows (What it is, Primary consumer, Signal type, Needs a clickable link, Effect on classic Google rank, Effect on AI citation, How you earn it, Failure mode) is clean, symmetric, and directly extractable as a featured snippet, wrapped in an overflow-x scroll container for mobile.", "score": 5, "max": 5},
+        {"category": "Links", "criterion": "Internal & External Link Structure",
+         "finding": "Four internal links point to relevant sibling posts with descriptive anchors ('breakdown of LLMO vs SEO vs GEO vs AEO', 'LLMO playbook', 'how to get cited by ChatGPT', 'measuring LLMO and AI visibility'), and external authority links go to arXiv, Gartner, and Semrush both inline-adjacent (Further Reading) and in a five-item References list.", "score": 5, "max": 5},
+        {"category": "Technical", "criterion": "Technical SEO",
+         "finding": "Meta-title 'Brand Mentions vs Backlinks in AI Search' (~40 chars) and meta-description (~165 chars) both sit within recommended limits, the headline is present in the Article schema, and both BlogPosting and FAQPage JSON-LD are supplied. The article body opens with a paragraph rather than a body-level H1, which is standard for this CMS where the title field is the H1.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.20,
+      "flag": "Highly extractable definitions and structured data with citable stats; stays distinct from the acronym-comparison sibling posts rather than cannibalising them.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Definitions", "criterion": "Direct Definitions",
+         "finding": "The post gives clean, liftable definitional statements: 'Unlinked brand mentions are references to your company name that appear in text without a clickable link back to your site' and 'Consistent entity signals means using the same brand name, the same one-line description of what you do, and the same category framing everywhere a machine reads you.' The opening sentence also frames the whole thesis in one extractable line.", "score": 5, "max": 5},
+        {"category": "Structure", "criterion": "Structured Data for AI Parsing",
+         "finding": "Multiple parse-friendly structures are present: the eight-row comparison table, a six-entry FAQ, a bolded five-item channel playbook ('Digital PR and expert commentary', 'Reddit, communities, and forums', etc.), and consistently bolded key entity terms. There is no explicitly numbered step framework, but the bolded-label list functions as one.", "score": 5, "max": 5},
+        {"category": "Authority", "criterion": "Statistical Authority",
+         "finding": "Two claims are attributable to named sources an LLM can cite: the GEO paper's 'up to 40 percent' visibility lift tied to Princeton/Georgia Tech/Allen Institute/IIT Delhi, and Gartner's '25 percent by 2026' search-volume drop, both reinforced by a References section with exact arXiv, Gartner, and Semrush URLs. The density of hard stats is moderate rather than heavy, so authority rests on two anchor figures.", "score": 4, "max": 5},
+        {"category": "Entity", "criterion": "Entity Association",
+         "finding": "DevCommX is explicitly tied to the topic ('At DevCommX we build signal-based GTM systems, and we track how often AI assistants cite the brands we work with') and the schema names author Sumit Nautiyal as 'VP of Revenue Operations & GTM Engineering, DevCommX', binding the brand and author to the GEO/AI-visibility niche. The association is present and repeated but leans on a single first-person mention plus the CTA.", "score": 4, "max": 5},
+        {"category": "Distinctiveness", "criterion": "GEO Distinctiveness",
+         "finding": "This post targets a distinct query cluster (mentions vs backlinks as a signal comparison for AI citation) rather than the acronym-definition cluster owned by the live llmo-vs-seo-vs-geo-vs-aeo post and the draft aeo-vs-geo; it links to the former as foundational context instead of re-explaining the acronyms. Overlap is limited to shared GEO vocabulary, so cannibalisation risk is low, though the 'brand mentions GEO' angle should stay narrowly scoped so it does not drift into general GEO how-to territory the LLMO playbook already covers.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Strong specific CTA and a distinct library slot, but no concrete proof metric (no '40+ demos' framing) and the owned-infrastructure differentiation is only lightly stated.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Differentiation", "criterion": "Differentiation Narrative",
+         "finding": "The signal-based positioning surfaces once ('At DevCommX we build signal-based GTM systems') and the measurement section hints at a productised approach, but the owned-infrastructure / clients-own-the-system narrative that defines DevCommX is not articulated here. The post reads as a category-education piece more than a differentiated point of view about how DevCommX specifically operates.", "score": 3, "max": 5},
+        {"category": "Proof", "criterion": "Proof Metrics & Evidence",
+         "finding": "No concrete outcome is cited: the sanctioned '40+ qualified demos in ~6 weeks' framing is absent, and the only first-party evidence is the unquantified 'we track how often AI assistants cite the brands we work with.' The hard numbers in the piece (40 percent, 25 percent) belong to GEO researchers and Gartner, not to DevCommX results.", "score": 2, "max": 5},
+        {"category": "Pricing", "criterion": "Pricing Transparency",
+         "finding": "There is no cost or pricing discussion; the only value framing is the free offer 'DevCommX offers a free AI Visibility Checker' and 'Request your free AI visibility check.' That establishes a no-cost entry point but no pricing, ROI, or investment framing for the paid engagement.", "score": 2, "max": 5},
+        {"category": "CTA", "criterion": "CTA Quality",
+         "finding": "The CTA is specific and conversion-oriented: 'DevCommX offers a free AI Visibility Checker that runs your brand against real assistant prompts and shows where you are named, where competitors are named instead, and which sources the models are citing... Request your free AI visibility check and we will map your mention gaps against the prompts your buyers are actually asking.' It ties directly to the article's thesis and links to /contact-us.", "score": 5, "max": 5},
+        {"category": "Differentiation", "criterion": "Content Differentiation",
+         "finding": "The mentions-vs-backlinks framing fills a distinct slot in the DevCommX library, sitting alongside rather than duplicating the acronym-comparison and LLMO-playbook posts it links to. It owns the specific 'why mentions beat links for AI citation' angle that the sibling posts only touch tangentially.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Clean heading hierarchy and strong scannability, but zero in-body visuals beyond the OG image caps this dimension.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Headings", "criterion": "Heading Architecture",
+         "finding": "Heading levels descend logically with no skips: seven topical H2s carry the argument, and H3s frame the back-matter (Further Reading, References, FAQ) with H4s for each FAQ question. The flow from problem (backlink model) to evidence to tactics to measurement to CTA is coherent.", "score": 5, "max": 5},
+        {"category": "Visuals", "criterion": "Visual Elements",
+         "finding": "The only image asset is the OG/social image referenced in schema; the body contains no diagrams, charts, or infographics. The comparison table provides some visual structure, but there is no illustrative imagery to break up roughly 1,950 words of prose, which per the no-in-body-images baseline caps this at a low score.", "score": 2, "max": 5},
+        {"category": "Scannability", "criterion": "Scannability",
+         "finding": "Scannability is good: a strong bolded hook opens the piece, descriptive H2 subheads segment it, the eight-row table anchors the comparison, the channel playbook uses bolded lead-in labels, and key terms are bolded throughout. A skim reader can extract the thesis and tactics without reading full paragraphs.", "score": 4, "max": 5},
+        {"category": "Readability", "criterion": "Reading Level & Flow",
+         "finding": "Prose flows naturally with clean transitions ('That difference is the whole argument', 'There is a practical corollary') and no jargon dumping; technical concepts like retrieval-augmented generation are explained in plain language rather than assumed. Sentence length and complexity are appropriate for a B2B practitioner audience.", "score": 5, "max": 5},
+        {"category": "Length", "criterion": "Content Length & Density",
+         "finding": "At roughly 1,950 words plus a 12-minute stated reading time, the length suits a pillar-style comparison topic, and density is high with little padding: each section advances a distinct point rather than restating the thesis. A couple of sections (evidence, unlinked mentions) lightly overlap on the 'models read text not links' idea.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Complete, well-formed @graph with BlogPosting + FAQPage; FAQ text matches the body exactly and rich-result fields are all present.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Article", "criterion": "Article Type Completeness",
+         "finding": "The BlogPosting node carries headline, description, url, datePublished (2026-07-01), dateModified, keywords, image, author, publisher, and mainEntityOfPage. The keywords string ('brand mentions vs backlinks, AI search brand mentions, unlinked mentions SEO, brand mentions GEO') mirrors the article's target terms.", "score": 5, "max": 5},
+        {"category": "FAQPage", "criterion": "FAQPage Structure",
+         "finding": "The FAQPage node contains six mainEntity entries, each a @type Question with a properly nested acceptedAnswer of @type Answer and a populated text field, comfortably exceeding the 3-question minimum.", "score": 5, "max": 5},
+        {"category": "Alignment", "criterion": "Schema-to-Content Alignment",
+         "finding": "The schema FAQ text matches the body FAQ verbatim (e.g. the 'Do brand mentions matter more than backlinks in AI search?' answer is identical in both), and the schema description ('Why brand mentions vs backlinks now favors mentions in AI search and GEO, the research evidence...') aligns with the article's actual thesis and keywords.", "score": 5, "max": 5},
+        {"category": "Graph", "criterion": "@graph Implementation",
+         "finding": "The markup uses a proper @graph array with two nodes, each carrying a distinct @id (#article for the BlogPosting and #faq for the FAQPage), plus a nested mainEntityOfPage @id, giving crawlers unambiguous node references.", "score": 5, "max": 5},
+        {"category": "RichResult", "criterion": "Rich Result Eligibility",
+         "finding": "All rich-result prerequisites are present: an ImageObject with url/width/height (1200x630), a publisher Organization with name/url/logo, and a dateModified. One minor nit is that the author Person's url points to the DevCommX company LinkedIn rather than a personal profile, but this does not block eligibility.", "score": 4, "max": 5}
+      ]
+    }
+  ],
+  "top_fixes": [
+    "Add a concrete DevCommX proof point to lift Brand Proof Metrics: work in the sanctioned '40+ qualified demos in ~6 weeks' framing or a quantified AI-visibility result instead of the vague 'we track how often AI assistants cite the brands we work with.'",
+    "Add at least one in-body visual (a mentions-vs-backlinks signal diagram or a retrieval-flow graphic) to raise the capped Visual Elements score and break up ~1,950 words of prose.",
+    "Hyperlink the GEO paper and Gartner stats inline at the sentence where each figure appears (not only in the References list) so the two anchor claims are citable at the point of assertion.",
+    "Strengthen the differentiation narrative with one or two sentences on the owned-infrastructure / client-owns-the-system model so the post reads as a DevCommX point of view, not generic GEO education."
+  ]
+}

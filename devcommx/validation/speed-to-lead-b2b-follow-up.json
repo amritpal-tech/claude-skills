@@ -1,0 +1,128 @@
+{
+  "slug": "speed-to-lead-b2b-follow-up",
+  "title": "Speed to Lead: How Fast Follow-Up Wins B2B Meetings",
+  "words": 2765,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Named, credible research anchors every stat and the deployment detail is real, but body-prose citations are unlinked (live only in References).",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Sources", "criterion": "Stat Accuracy & Source Quality",
+         "finding": "Every headline stat is tied to a named, credible study: the '100 times more likely to connect' and 'roughly 21 times higher' figures to 'The Lead Response Management study, led by Dr. James Oldroyd out of MIT', and the '7x' / '60x' / 'forty-two hours' figures to Harvard Business Review's 'The Short Life of Online Sales Leads.' The one gap is that these attributions are bold text in the body, not inline hyperlinks; the actual links live only in the Further Reading and References blocks, and the HBR (2011) and LRM datasets are dated though still the canonical citations.", "score": 4, "max": 5},
+        {"category": "Depth", "criterion": "Practitioner Depth",
+         "finding": "This reads as real deployment knowledge, not a summary: it lays out a five-step firing order ('Instant capture and enrichment', 'Rules-based routing in real time', 'An automated first touch that buys time', 'A human or AI-led second touch inside the SLA', 'A persistent, multi-touch cadence') and adds operator nuance like measuring 'the ninety-fifth percentile' rather than the median because 'averages lie', and segmenting SLAs by intent. The failure-mode section names concrete structural breaks ('nights-and-weekends gap', 'unowned-lead limbo', 'context gap', 'one-and-done cadence').", "score": 5, "max": 5},
+        {"category": "Attribution", "criterion": "Data Attribution",
+         "finding": "The response-time table attributes each row to its source inline, e.g. 'Up to 100x more likely to connect... (Lead Response Management study)' and 'Nearly 7x more likely... (Harvard Business Review)'. The weak point is the 'Under 1 minute' row, whose claim rests on the bare hedge 'some vendors report large lifts when the first touch lands inside 60 seconds' with no named source.", "score": 4, "max": 5},
+        {"category": "Technical", "criterion": "Technical Accuracy",
+         "finding": "Technical claims stay generic and defensible for 2026 (enrichment, ICP scoring, 'a routing engine assigns the owner instantly by territory, segment, or round-robin', Slack/CRM notifications, an 'AI SDR operating under human oversight'). No tool version, pricing, or feature limit is asserted that could be wrong, so nothing is inaccurate, but nothing is specifically verifiable either.", "score": 4, "max": 5},
+        {"category": "Completeness", "criterion": "Completeness",
+         "finding": "Every H2 promise is delivered: 'Why speed to lead decides B2B win rates', 'The speed to lead statistics that prove it' (three studies plus the table), 'What good lead response time looks like' (95th-percentile and intent-segmented SLAs), 'How to build a follow-up system...' (the five steps), 'Signal-based triggers...', and 'Where speed to lead breaks down...' (four fixes). No section is a stub.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Primary keyword saturates every required slot, six PAA-shaped FAQs, a snippet table, and six on-topic internal links.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Keyword", "criterion": "Primary Keyword Targeting",
+         "finding": "'Speed to lead' appears in the H1/name, meta-title ('Speed to Lead: Why Fast Follow-Up Wins B2B'), slug (speed-to-lead-b2b-follow-up), the opening sentence in bold, multiple H2s ('Why speed to lead decides B2B win rates', 'The speed to lead statistics that prove it'), and the FAQ ('What is speed to lead?'). Coverage across every required surface is complete.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQ / People Also Ask",
+         "finding": "Six FAQs map cleanly onto real high-intent PAA queries: 'What is speed to lead?', 'What is a good lead response time in B2B?', 'Why does responding within five minutes matter so much?', 'How do you actually respond to leads in minutes?', 'Does speed to lead apply to outbound and buying signals too?', and 'What is the most common speed to lead mistake?'. Answers are self-contained and quotable.", "score": 5, "max": 5},
+        {"category": "Tables", "criterion": "Comparison / Featured Snippet Tables",
+         "finding": "A three-column response-time table ('Response time' / 'What the data shows' / 'Effect on conversion') with clean rows from 'Under 1 minute' to 'After 24 hours' is well structured for snippet extraction. It is functional but the middle column is prose-heavy ('Highest recorded contact and conversion rates; some vendors report large lifts...'), which is longer than an ideal snippet cell.", "score": 4, "max": 5},
+        {"category": "Links", "criterion": "Internal & External Link Structure",
+         "finding": "Six contextual internal links to sibling posts with descriptive anchors ('B2B outbound automation guide', 'how AI automation doubled SDR opportunity creation', 'real-time sales signals and lead scoring tools', 'B2B sales velocity formula', 'reduce B2B meeting no-shows'), plus external citations to HBR, Lead Response Management, Drift, and Gartner in Further Reading and References with rel='noopener noreferrer'. Strong link graph both directions.", "score": 5, "max": 5},
+        {"category": "Technical", "criterion": "Technical SEO",
+         "finding": "Schema is present (BlogPosting + FAQPage in @graph), meta-title is 42 characters and meta-description 160, both within acceptable length, and the H1 is supplied by the CMS name field. All core technical SEO signals are in place.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.20,
+      "flag": "Clean extractable definitions, named citable statistics, and a genuinely distinct query cluster versus its Sales-Ops siblings.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Definitions", "criterion": "Direct Definitions",
+         "finding": "The opening line is a lift-ready definition: 'Speed to lead is the elapsed time between a prospect raising their hand and your first meaningful response.' The FAQ restates it and 'Lead response time is not a single number, it is a distribution' defines the secondary concept. LLMs can extract these verbatim.", "score": 5, "max": 5},
+        {"category": "Structure", "criterion": "Structured Data for AI Parsing",
+         "finding": "The article gives an AI multiple parse-friendly structures: the numbered five-step framework (1 through 5), the response-time comparison table, the six-item FAQ, and the bolded failure-mode list. This is dense, machine-readable scaffolding.", "score": 5, "max": 5},
+        {"category": "Authority", "criterion": "Statistical Authority",
+         "finding": "Claims are attributable to named, citable sources an LLM will surface: 'Dr. James Oldroyd out of MIT', 'Harvard Business Review... The Short Life of Online Sales Leads', and 'Drift's Lead Response Report', all reinforced by a dedicated References list with the specific figure each source backs. This is exactly the attribution AI answers reward.", "score": 5, "max": 5},
+        {"category": "Entity", "criterion": "Entity Association",
+         "finding": "DevCommX is tied to the topic ('It is written the way we build it at DevCommX: as an engineered system') and the closing section plus schema name Sumit Nautiyal, VP of Revenue Operations & GTM Engineering. The author is not named in the running prose, only in schema and the CTA, which slightly weakens the person-to-topic bond.", "score": 4, "max": 5},
+        {"category": "Distinctiveness", "criterion": "GEO Distinctiveness",
+         "finding": "The post owns a distinct operational question, response-time decay and building a minutes-fast follow-up system, that does not overlap its Sales-Ops hub siblings: 'sales-velocity-formula-b2b' (velocity math), 'reduce-b2b-meeting-no-shows' (post-book retention), 'mql-vs-sql-lead-qualification' (stage definitions), and 'lead-quality-vs-quantity-b2b'. It links to these as complements rather than repeating them, so cannibalisation risk is low.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Owned-infrastructure narrative, the sanctioned 40+ demos proof, and a specific CTA are all present; pricing framing is absent as expected.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Differentiation", "criterion": "Differentiation Narrative",
+         "finding": "The owned-infrastructure, signal-based model is stated plainly: 'your team owns the infrastructure, not a managed campaign' and 'DevCommX builds autonomous, signal-based AI SDR and RevOps systems that respond in minutes and run around the clock.' The signal-based angle is also woven through the dedicated 'Signal-based triggers' section.", "score": 5, "max": 5},
+        {"category": "Proof", "criterion": "Proof Metrics & Evidence",
+         "finding": "The sanctioned proof framing appears verbatim: 'Clients typically go from setup to 40+ qualified demos within roughly six weeks because the system triggers on real signals instead of static lists.' This is the approved outcome metric, used correctly.", "score": 5, "max": 5},
+        {"category": "Pricing", "criterion": "Pricing Transparency",
+         "finding": "No cost, price, or ROI figure is given. The only value framing is qualitative ('your team owns the infrastructure, not a managed campaign'), with no dollar or investment context. Consistent with most posts in the library, but scored honestly as a significant gap.", "score": 2, "max": 5},
+        {"category": "CTA", "criterion": "CTA Quality",
+         "finding": "The closing CTA is specific and conversion-oriented: 'Book a GTM strategy call to map a fast follow-up system to your pipeline', linking to /contact-us and tying the ask directly to the article's subject rather than a generic 'contact us'.", "score": 5, "max": 5},
+        {"category": "Differentiation", "criterion": "Content Differentiation",
+         "finding": "This fills a distinct slot, the speed-to-lead / response-time playbook, not held by any sibling, and the signal-based extension section ('speed to lead beyond the inbound form') gives it a DevCommX-specific angle competitors' generic speed-to-lead posts lack.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Excellent scannability and flow, but zero in-body images cap the visual score; only one table carries the visual load.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Headings", "criterion": "Heading Architecture",
+         "finding": "Six content H2s progress logically from 'Why speed to lead decides...' through statistics, benchmarks, system build, signals, and failure modes, then H3s for 'Further Reading', 'References', and 'FAQ' with H4 questions nested under the FAQ H3. No levels are skipped; the H1 is CMS-supplied, so the body itself opens at H2 as intended.", "score": 4, "max": 5},
+        {"category": "Visuals", "criterion": "Visual Elements",
+         "finding": "There are no in-body images, diagrams, or charts, only the OG image in metadata. A single HTML response-time table provides the only visual break across ~2,765 words; the five-step system and four failure modes are prose with bold lead-ins rather than a diagram. Capped low per the no-images rule.", "score": 2, "max": 5},
+        {"category": "Scannability", "criterion": "Scannability",
+         "finding": "Highly skimmable: a strong stopwatch hook, descriptive H2s, bold lead-ins on every framework step ('1. Instant capture and enrichment.') and every failure mode ('The nights-and-weekends gap.'), a comparison table, and a six-question FAQ all let a skim reader extract the argument.", "score": 5, "max": 5},
+        {"category": "Flow", "criterion": "Reading Level & Flow",
+         "finding": "Complexity is appropriate for a RevOps audience and transitions are natural ('The inverse is just as real', 'Speed gets you the first shot; persistence gets you the connect'). Metaphors like the 'stopwatch' and 'decaying asset' carry the concepts without jargon dumping.", "score": 5, "max": 5},
+        {"category": "Length", "criterion": "Content Length & Density",
+         "finding": "At ~2,765 words the length fits a pillar-style guide covering statistics, a build architecture, signals, and failure modes without padding; each section adds a distinct idea rather than restating. The reading-time field (13 min) is consistent with the count.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Complete @graph with BlogPosting + FAQPage; FAQ text matches the body exactly; only the author.url points to the company page, not a person profile.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Article", "criterion": "Article Type Completeness",
+         "finding": "The BlogPosting node carries headline, description, url, datePublished (2026-07-01), dateModified, keywords, author, publisher, image, and mainEntityOfPage. Only minor imperfection: the author Person's url is 'https://www.linkedin.com/company/devcommx', a company page rather than Sumit Nautiyal's personal profile.", "score": 4, "max": 5},
+        {"category": "FAQ", "criterion": "FAQPage Structure",
+         "finding": "The FAQPage node holds six entries, each a @type Question with an acceptedAnswer of @type Answer and a text value, well above the 3-question minimum. Structure is textbook.", "score": 5, "max": 5},
+        {"category": "Alignment", "criterion": "Schema-to-Content Alignment",
+         "finding": "All six schema FAQ answers match the body FAQ text verbatim (verified string-for-string), and the schema keywords ('speed to lead, lead response time, speed to lead statistics, fast follow-up B2B') and description mirror the article's actual focus. No drift between schema and content.", "score": 5, "max": 5},
+        {"category": "Graph", "criterion": "@graph Implementation",
+         "finding": "A proper @graph array holds two nodes, each with a distinct @id ('...#article' and '...#faq'), and mainEntityOfPage cross-references the WebPage @id. Correct linked-data structure.", "score": 5, "max": 5},
+        {"category": "RichResult", "criterion": "Rich Result Eligibility",
+         "finding": "Rich-result signals are complete: image is an ImageObject with url plus width 1200 and height 630, publisher is an Organization with name, url, and a logo ImageObject, and dateModified is present alongside datePublished. Eligible for both article and FAQ rich results.", "score": 5, "max": 5}
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Add at least one in-body visual (a diagram of the five-step follow-up architecture or a response-time decay chart) to lift Visual Elements above the no-image cap of 2/5.",
+    "2. Convert the bold in-prose source mentions ('The Lead Response Management study', 'Harvard Business Review's audit', 'Drift's Lead Response Report') into inline hyperlinks so citations are linked at the point of claim, not only in the References block.",
+    "3. Source or remove the unattributed 'some vendors report large lifts... inside 60 seconds' claim in the 'Under 1 minute' table row to close the one data-attribution gap.",
+    "4. Point the schema author.url to Sumit Nautiyal's personal LinkedIn profile instead of the DevCommX company page to strengthen person-entity association and author rich-result signals.",
+    "5. Add a light value or engagement-model framing near the CTA (e.g. build-and-own vs managed) to move Pricing Transparency off 2/5 without inventing prices."
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "slug": "ai-outbound-playbook-stack-2026",
+  "title": "The AI Outbound Playbook for 2026: The Complete Stack for AI-Powered Prospecting",
+  "words": 2725,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Deep, credible practitioner content, but most pricing claims are asserted without an inline source (only Vendr, Clay, and Google are linked).",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Sources", "criterion": "Stat Accuracy & Source Quality",
+         "finding": "Only three external sources are cited (Vendr, Clay official pricing, Google sender guidelines), yet the post asserts many discrete prices with no inline link: 'Sales Navigator Core at around 99 dollars per seat', Apollo 'from roughly 49 to 149 dollars', Smartlead 'from roughly 39 dollars ... up to around 174', and Bombora/6sense ranges introduced only as 'Public analyses put'. The vague 'Public analyses' attribution is the weakest link and is unverifiable.", "score": 3, "max": 5},
+        {"category": "Depth", "criterion": "Practitioner Depth",
+         "finding": "Demonstrates real deployment knowledge: Clay's 'waterfall approach' that 'checks providers in sequence and stops at the first that returns a verified result', a concrete Claude-API personalization prompt spec ('no praise, no I noticed, reference the trigger in the first sentence, keep it under 40 words'), and specific deliverability mechanics ('set SPF, DKIM, and DMARC correctly, warm every mailbox ... rotate across multiple inboxes'). This reads from inside a build, not off a vendor sheet.", "score": 5, "max": 5},
+        {"category": "Attribution", "criterion": "Data Attribution",
+         "finding": "The single build-order table is DevCommX's own reasoning and needs no source. Pricing figures in 'Total cost by team size' are mostly bare ranges ('roughly 1,500 to 4,000 dollars per month') though the section does caveat with 'every pricing analysis worth reading, including Vendr's benchmarks, notes that real spend runs higher'. Individual per-tool prices still lack attribution.", "score": 3, "max": 5},
+        {"category": "Technical", "criterion": "Technical Accuracy",
+         "finding": "Tool names and features are correct for 2026: Clay waterfall enrichment, Sales Navigator Core, Smartlead/Instantly, HeyReach for multi-account LinkedIn, UserGems champion-tracking, Bombora/6sense intent. The claim 'Google and Yahoo now enforce authentication and complaint-rate thresholds on bulk senders' is accurate. 'Clay's 2026 restructure' with Launch ~185 / Growth ~495 is plausible and self-consistent.", "score": 4, "max": 5},
+        {"category": "Completeness", "criterion": "Completeness",
+         "finding": "Every H2 is delivered: each of the five layers gets a What-it-does plus Recommended plus Alternatives treatment, the 'Build order' H2 pays off with explicit reverse-order reasoning and a table, 'Total cost by team size' gives all three tiers (5/10/20 reps), and the DevCommX CTA lands. No promised section is left as a stub.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Excellent keyword coverage, 6 high-intent FAQs, and a strong internal/external link web; only gap is the single table is build-order not a tool/pricing comparison.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Keyword", "criterion": "Primary Keyword Targeting",
+         "finding": "'AI outbound stack' appears in meta-title ('AI Outbound Stack 2026'), the H2 'The 5-layer AI outbound stack overview', the opening line, the slug 'ai-outbound-playbook-stack-2026', and the FAQ 'What is the AI outbound stack in 2026?'. Coverage across title, H2, body, FAQ and slug is complete.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQ / People Also Ask",
+         "finding": "Six genuine PAA-style questions including 'How much does an AI outbound stack cost per rep?', 'Do I need intent data tools like 6sense or Bombora?', and 'Should I buy the sequencer first?'. These map to real high-intent buyer queries rather than filler.", "score": 5, "max": 5},
+        {"category": "Snippet", "criterion": "Comparison / Featured Snippet Tables",
+         "finding": "One clean HTML table (Layer / Build priority / Why this order) is well formatted for snippet extraction with a header row and five ordered rows. For a 'what do I buy and what does it cost' post, a tool-or-pricing comparison table would earn more snippet real estate than the build-order table alone.", "score": 4, "max": 5},
+        {"category": "Links", "criterion": "Internal & External Link Structure",
+         "finding": "Eight contextual internal links with relevant anchors (b2b-outbound-tool-stack, repeatable-outbound-pipeline-without-sales-team, signal-based-prospecting-guide, clay-pricing-breakdown, definitive-guide-to-ai-sdrs, b2b-cold-email-benchmarks, best-ai-outbound-revops-automation-tools) plus three authoritative external citations (Vendr, Clay, Google) in a Further Reading list. Strong bidirectional structure.", "score": 5, "max": 5},
+        {"category": "Technical", "criterion": "Technical SEO",
+         "finding": "Schema is present, meta-title 'AI Outbound Stack 2026: The Complete Playbook' is ~44 chars and meta-description ~155 chars (both within limits), and the body correctly opens at H2 with the H1 carried by the Webflow name field, so no duplicate/skipped H1.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.20,
+      "flag": "Strongly extractable and entity-anchored; distinctiveness is deliberately engineered against both siblings, though it still overlaps the b2b-outbound-tool-stack query cluster.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Definitions", "criterion": "Direct Definitions",
+         "finding": "Opens with a clean lift-quote definition: 'The AI outbound stack for 2026 is five layers wired in a fixed order: signal detection, enrichment, personalization, sequencing, and measurement.' The FAQ repeats it verbatim, giving an LLM a canonical extractable statement.", "score": 5, "max": 5},
+        {"category": "Structure", "criterion": "Structured Data for AI Parsing",
+         "finding": "Highly parseable: numbered five-layer framework, a 3-column build-priority table, six FAQ Q&As, and consistent bolded lead-ins ('What it does:', 'Recommended core:', 'Deliverability is the real work:') that segment each layer for extraction.", "score": 5, "max": 5},
+        {"category": "Statistics", "criterion": "Statistical Authority",
+         "finding": "Some claims are attributed to named, citable sources (Vendr benchmarks, Clay pricing, Google sender guidelines), but many key figures hang on vague framing an LLM cannot attribute: 'Public analyses put Bombora in the range of 30,000 to 60,000 dollars' and '6sense from roughly 50,000 dollars into six figures'. Named authority is inconsistent.", "score": 3, "max": 5},
+        {"category": "Entity", "criterion": "Entity Association",
+         "finding": "DevCommX is explicitly tied to the topic: 'DevCommX builds these systems for B2B teams, and clients own the infrastructure', 'the tools we deploy', and the closing 'DevCommX builds autonomous, signal-based AI outbound systems'. Author Sumit Nautiyal, VP RevOps & GTM Engineering, is named in schema. Clear entity-to-niche binding.", "score": 5, "max": 5},
+        {"category": "Distinctiveness", "criterion": "GEO Distinctiveness",
+         "finding": "The post actively de-cannibalises via a dedicated H2 'How this differs from the operating-model guide' plus intro framing that casts repeatable-outbound-pipeline-without-sales-team as the operating model and b2b-outbound-tool-stack as 'the wide-angle map', positioning itself as the narrow tooling deep dive. This is real separation, but it still competes with b2b-outbound-tool-stack on the 'outbound tool stack' cluster it links to as a peer, so overlap risk is reduced not eliminated.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Owned-infrastructure narrative, sanctioned 40+ demos proof, and a specific CTA are all present; unusually strong cost framing for a DevCommX draft.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Differentiation", "criterion": "Differentiation Narrative",
+         "finding": "The signal-based, owned-infrastructure model is stated plainly: 'you own the infrastructure rather than renting a managed campaign' and 'Because the system triggers on real buying signals instead of static lists'. The intro's 'from inside the build rather than off a vendor spec sheet' reinforces the positioning.", "score": 5, "max": 5},
+        {"category": "Proof", "criterion": "Proof Metrics & Evidence",
+         "finding": "Uses the sanctioned framing exactly: 'clients typically go from setup to 40 or more qualified demos within about six weeks.' It is tied to the mechanism (signals not static lists) rather than dropped as a bare boast.", "score": 5, "max": 5},
+        {"category": "Pricing", "criterion": "Pricing Transparency",
+         "finding": "Unusually strong cost framing for these drafts: an entire 'Total cost by team size' section gives list-price ranges per rep tier plus value framing ('you own the infrastructure rather than renting a managed campaign'). What is missing is any DevCommX engagement price or scoping figure, so the transparency is about the stack, not the service.", "score": 4, "max": 5},
+        {"category": "CTA", "criterion": "CTA Quality",
+         "finding": "The CTA is specific and conversion-oriented: 'Get the stack diagram and build-order checklist, and book a GTM strategy call to map these five layers to your pipeline', linking to /contact-us with a concrete offer rather than a generic 'learn more'.", "score": 5, "max": 5},
+        {"category": "Differentiation", "criterion": "Content Differentiation",
+         "finding": "Fills a distinct 'tooling deep dive' slot in the library, explicitly demarcated from the operating-model guide and the wide-angle tool-stack survey. It is a genuinely new angle, though its subject matter is adjacent enough to b2b-outbound-tool-stack that the two must be kept differentiated on-page (which this post does).", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Clean heading hierarchy, dense and well-written, but NO in-body images (only an OG image) caps Visual Elements.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Headings", "criterion": "Heading Architecture",
+         "finding": "Logical progression: ten H2s (overview, five numbered layers, build order, cost, CTA) with H3s for 'Further Reading' and 'FAQ' and H4s for each FAQ question. No skipped levels, and the body correctly starts at H2 under the name-field H1.", "score": 5, "max": 5},
+        {"category": "Visuals", "criterion": "Visual Elements",
+         "finding": "There are no in-body images, diagrams, or infographics; the only image is the OG social image referenced in schema. A single HTML build-order table is the lone visual break across 2,725 words, so this scores low per calibration despite the ironic CTA offering a 'stack diagram' that does not appear in the post.", "score": 2, "max": 5},
+        {"category": "Scannability", "criterion": "Scannability",
+         "finding": "Bolded lead-in labels ('What it does:', 'Recommended entry point:', 'Deliverability is the real work:') let a skimmer parse each layer, and the table plus six FAQ headers aid navigation. Weakness: the body is almost entirely paragraphs with the only bullet list being Further Reading, so the metrics list in Layer 5 stays buried in prose.", "score": 4, "max": 5},
+        {"category": "Readability", "criterion": "Reading Level & Flow",
+         "finding": "Flow is strong with natural transitions ('Here is the part most teams get wrong', 'The two are meant to be read side by side, not as substitutes') and no jargon dump; concepts like waterfall enrichment and deliverability are explained before they are used.", "score": 5, "max": 5},
+        {"category": "Length", "criterion": "Content Length & Density",
+         "finding": "At 2,725 words (12-min read) the length fits a layer-by-layer stack deep dive, and density is high with no filler; each layer earns its space and the cost section adds concrete, non-padding value.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Complete @graph with BlogPosting + FAQPage; FAQ text matches the body verbatim; only nit is the publisher logo reuses the 1200x630 OG image.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Article", "criterion": "Article Type Completeness",
+         "finding": "BlogPosting node carries headline, description, url, datePublished (2026-07-01), dateModified, keywords ('AI outbound stack, AI prospecting tools 2026, AI outbound playbook, AI SDR stack'), image, author (Person, Sumit Nautiyal with jobTitle), publisher, and mainEntityOfPage. Nothing required is missing.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQPage Structure",
+         "finding": "FAQPage node has six mainEntity items, each a proper @type Question with acceptedAnswer.text, well above the 3-question minimum.", "score": 5, "max": 5},
+        {"category": "Alignment", "criterion": "Schema-to-Content Alignment",
+         "finding": "The six schema FAQ answers match the body FAQ text verbatim (e.g. the build-order answer 'Build measurement first, then signal, then enrichment...' is identical in both), and the schema description matches the meta-description exactly. Keywords reflect the actual article focus.", "score": 5, "max": 5},
+        {"category": "Graph", "criterion": "@graph Implementation",
+         "finding": "Uses an @graph array with two nodes, each carrying a distinct @id (#article and #faq). Nested author and publisher nodes lack their own @id, but the two top-level entities are correctly identified and linkable.", "score": 5, "max": 5},
+        {"category": "RichResult", "criterion": "Rich Result Eligibility",
+         "finding": "image is a proper ImageObject with width 1200 and height 630, publisher is an Organization, and dateModified is present. The one weakness is the publisher logo URL points to the 1200x630 OG blog image rather than a square/appropriate logo asset, which can fail Google's logo requirements.", "score": 4, "max": 5}
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Add inline source links for the per-tool prices currently asserted (Sales Navigator ~$99, Apollo $49-149, Smartlead $39-174) and replace the vague 'Public analyses put Bombora...' with a named, linkable citation so every price is LLM-attributable.",
+    "2. Add at least one in-body visual: the build-order or five-layer 'stack diagram' the CTA already promises, or a tool-and-pricing comparison table, to lift Visual Elements above 2/5 and give a second snippet-eligible asset.",
+    "3. Sharpen distinctiveness from the live b2b-outbound-tool-stack post by tightening the shared 'outbound tool stack' phrasing toward the narrower 'AI outbound stack build order / cost' angle, reducing residual cannibalisation on the tool-stack query cluster.",
+    "4. Swap the publisher logo in schema from the 1200x630 OG image to a proper square logo asset to secure rich-result / logo eligibility."
+  ]
+}

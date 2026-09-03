@@ -58,6 +58,7 @@ Exported 2026-09-03 from this machine's Claude configuration.
 - **design-system-adoption** — Create adoption strategies and materials to drive design system usage across teams.
 - **design-token** — Define and organize design tokens (color, spacing, typography, elevation) with naming conventions and usage guidance.
 - **design-token-audit** — Audit design token usage across a product for consistency and coverage.
+- **devcommx-blog-ops** — Run the DevCommX SEO/AEO/GEO blog program in Webflow CMS end to end: keyword sheets to long-form drafts against a strict spec, 6-dimension validation, sequential CMS pushes, link audits, figures, review docs. Carries the collection IDs, field schema, pipeline and the known gotchas.
 - **devcommx-brand** — Apply the DevCommX Brand Book v3.1 (logo-first) to anything being produced for DevCommX — creatives, carousels, single-image posts, banners, avatars, ads, decks, PDFs, documents, letterheads, email si
 - **devcommx-keyword-governance** — The DevCommX keyword filter. Apply BEFORE writing any DevCommX content brief, blog post, service page, landing page or pSEO template, and whenever a keyword, topic or "we should rank for X" idea is pr
 - **diary-study-plan** — Design a diary study plan with prompts, duration, participant criteria, and analysis framework. Use when you need to understand user behavior over time in natural contexts.

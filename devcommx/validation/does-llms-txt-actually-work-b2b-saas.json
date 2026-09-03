@@ -1,0 +1,279 @@
+{
+  "slug": "does-llms-txt-actually-work-b2b-saas",
+  "title": "Does llms.txt Actually Work for B2B SaaS? An Evidence-Based Verdict",
+  "words": 2593,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Statistics are unusually precise and mostly named, but not a single external citation is linked inline; all three sources sit in a Further Reading list at the bottom.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Sources",
+          "criterion": "Stat Accuracy & Source Quality",
+          "finding": "The numbers are specific and credible: 'Ahrefs analyzed 137,210 domains', '97 percent of valid llms.txt files received no requests at all', 'SEO audit tools at 21.7 percent', 'GPTBot made up 4.51 percent of requests and ClaudeBot 0.80 percent', and SE Ranking's 'Adoption sat at 10.13 percent' across 'roughly 300,000 domains'. But zero external links appear inline in the 2,593-word body - the only three outbound citations (answer.ai, ahrefs.com/blog/llmstxt-study, seranking.com/blog/llms-txt) are parked in a Further Reading <ul> under an H3. Several load-bearing claims have no source at all: 'Cyrus Shepard published a meta-analysis synthesizing 54 experiments', 'Branded web mentions correlate with AI citations at roughly 0.664 against 0.218 for backlinks', 'one analysis found 82 percent of AI citations come from earned coverage', and the '23x conversion differential' Ahrefs case.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Depth",
+          "criterion": "Practitioner Depth",
+          "finding": "Real operator knowledge shows through: the log audit names the exact user agents to segment on ('GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, and Google-Extended'), the tier-one rule correctly ties value to 'fewer hallucinated API calls in the tools your users already live in' rather than search visibility, and the closing instruction is 'keep it generated, not hand-curated'. The observation that Anthropic, Stripe, Vercel, Cloudflare, Zapier and Hugging Face 'are all developer tools shipping documentation, mostly through docs platforms that generate the file automatically' is the sharpest insight in the piece. Missing: no literal command or code block for the log query, and no first-party DevCommX data - 'Most B2B SaaS teams that run this query find their only requesters are SEO audit tools' has no n and no client count behind it.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Attribution",
+          "criterion": "Data Attribution",
+          "finding": "The six-row evidence table attributes generically rather than by name: its column header reads 'What the 2026 evidence shows' and cells say 'Across roughly 300,000 domains there was no measurable correlation' without naming SE Ranking, and '97 percent of files got zero requests in a full month' without naming Ahrefs. Since this table is the most snippet-extractable asset in the post, a reader or LLM lifting it gets numbers with no provenance. The body prose does attribute correctly ('In May 2026 Ahrefs analyzed 137,210 domains', 'SE Ranking ran the other half of the question'), which keeps this from scoring lower.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Accuracy",
+          "criterion": "Technical Accuracy",
+          "finding": "Core facts check out for 2026: 'Jeremy Howard of Answer.AI proposed llms.txt on 3 September 2024', the H1-plus-blockquote-plus-H2 structure, the llms-full.txt companion, and the Lighthouse 13.3.0 Agentic Browsing audit shipping '7 May 2026' alongside 'WebMCP integration and agent accessibility'. Two overreaches: the post asserts twice that 'every major AI crawler honors it' about robots.txt, stated as absolute when compliance is contested; and the intro plus FAQ both credit the 97 percent figure to 'Two independent 2026 studies covering roughly 437,000 domains' when 97 percent comes only from Ahrefs' 137,210-domain log set - SE Ranking measured citation correlation, not request rates.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Completeness",
+          "criterion": "Completeness",
+          "finding": "All eight H2 promises land: 'What llms.txt Actually Is' defines the spec and the not-a-robots-txt distinction, 'The Evidence' delivers both studies plus the 8.8x growth figure (4,088 to 36,120 instances), 'The Verdict' delivers a genuine three-tier rule, and 'What Actually Moves AI Visibility Instead' supplies the counterfactual with Shepard's top five factors scored 9.5 to 9.2. The one shortfall is 'Settle the Argument With Your Own Logs in Thirty Minutes' - it describes the query in prose ('filter for requests to the path /llms.txt, and segment by user agent') but never gives the literal grep, awk, or CDN filter expression a reader would paste, so the thirty-minute promise is directional rather than executable.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Strong keyword placement, six real PAA questions and an excellent verdict table, undercut by zero inline external citations and a 41-character meta title that wastes SERP width.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Keywords",
+          "criterion": "Primary Keyword Targeting",
+          "finding": "'does llms.txt actually work for b2b saas' is in the slug, the meta title 'Does llms.txt Actually Work for B2B SaaS?', the H1/name, the opening line of the meta description, the post-summary, and FAQ question one verbatim. The first body sentence is an exact-match answer: 'No, llms.txt does not currently work as an AI visibility lever for B2B SaaS.' The gap is H2 level - none of the eight H2s contains the phrase; they are editorial ('The Evidence: What Crawler Logs Actually Show in 2026', 'The Verdict, With a Decision Rule You Can Use'), so no subhead reinforces the target query.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQ / People Also Ask",
+          "finding": "Six H4 questions that read like actual PAA harvests rather than invented filler: 'Is llms.txt the same thing as robots.txt?', 'Does Google use llms.txt for AI Overviews or AI Mode?', 'Do ChatGPT, Claude, or Perplexity read llms.txt at answer time?', and 'How do I know if my llms.txt is being used?'. Each answer opens with a direct verdict ('Not as a visibility lever.', 'No.', 'None of them has committed to it.') before the supporting evidence, which is exactly the shape featured snippets and AI answers extract.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Tables",
+          "criterion": "Comparison / Featured Snippet Tables",
+          "finding": "The single table is well built for extraction: proper <thead> with three columns ('The claim' / 'What the 2026 evidence shows' / 'Verdict'), six rows, and terse right-hand verdicts - 'Not supported', 'Not supported', 'Contradicted', 'Overstated', 'True but narrow', 'Fair, and the only honest argument'. It is wrapped in an overflow-x:auto div so it will not break mobile layout. The claim-versus-evidence-versus-verdict shape is unusually snippet-friendly for a myth-busting query.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Links",
+          "criterion": "Internal & External Link Structure",
+          "finding": "Four internal links with descriptive anchors - 'LLMO playbook', 'tracking AI visibility', 'how to get cited by ChatGPT', and 'writing an llms.txt file for B2B SaaS' pointing at the sibling how-to - plus a /contact CTA, which is a clean hub structure. The failure is external: not one of the eight href values in the body is an inline citation next to a claim. Ahrefs, SE Ranking and Answer.AI are linked only in the Further Reading list, and Cyrus Shepard's meta-analysis, the Gary Illyes and John Mueller statements, the Lighthouse 13.3.0 release, and the Google AI search guidance are named with no link anywhere.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical SEO",
+          "finding": "Meta description is 159 characters, right at the limit and keyword-led. Schema-markup is valid JSON with a two-node @graph. No stray <h1> in post-body, so the Webflow title field stays the single H1, and heading levels run h2 to h3 to h4 with no skips. The weak spot is the meta title at only 41 characters ('Does llms.txt Actually Work for B2B SaaS?') - it leaves roughly 18 characters of SERP width unused and omits the differentiators already sitting in the headline, such as '2026' or 'Evidence-Based Verdict'.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.20,
+      "flag": "Excellent extractable verdict and named-source density, but the body has only 3 list items total and the three-tier decision rule is prose rather than an ordered list.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Definitions",
+          "criterion": "Direct Definitions",
+          "finding": "The post opens with a bolded, quotable verdict - 'No, llms.txt does not currently work as an AI visibility lever for B2B SaaS' - which is the single most extractable sentence an LLM could lift for this query. It then supplies a clean positive definition ('It is a Markdown file at your domain root, so example.com/llms.txt, structured with an H1 for the project name, a blockquote summary, and H2 sections listing links with one line descriptions') and an equally clean negative one ('It is not an access control file... Llms.txt grants nothing, blocks nothing, and has no enforcement mechanism').",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Structure",
+          "criterion": "Structured Data for AI Parsing",
+          "finding": "One six-row table and a six-question FAQ carry the structured load, but the body contains only three <li> elements in total and all three are the Further Reading links - there is not a single bulleted or numbered list in 2,593 words of argument. The three-tier decision rule, the post's most reusable framework, is delivered as three prose paragraphs led by bold text ('Tier one, ship it now.', 'Tier two, ship it last.', 'Tier three, never.') instead of an <ol>. Shepard's top five factors are likewise a comma run-on: 'URL accessibility at 9.5 out of 10, classic search rank at 9.4, fan-out rank at 9.3, preview control at 9.2, and query to answer match at 9.2'.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Authority",
+          "criterion": "Statistical Authority",
+          "finding": "Most headline numbers are tied to a citable named entity an LLM can attribute: Ahrefs (137,210 domains, 97 percent, 1.1 percent AI retrieval bots), SE Ranking (300,000 domains, 10.13 percent adoption, XGBoost model), Cyrus Shepard (54 experiments, 23 citation factors), Gary Illyes and John Mueller for the Google position. Weakening it are the unattributed figures: 'Branded web mentions correlate with AI citations at roughly 0.664 against 0.218', 'one analysis found 82 percent of AI citations come from earned coverage and 94 percent from non-paid sources', and 'Broader B2B datasets put AI referral conversion in the low teens' - all named-source-free, so they cannot be safely cited.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Entity",
+          "criterion": "Entity Association",
+          "finding": "DevCommX is bound to the topic four times in body prose: 'At DevCommX we build signal-based GTM and LLMO systems for revenue teams', 'This is the uncomfortable DevCommX position: AEO will not fix average content', 'the kind of instrumentation we build into every LLMO engagement before we change a single page', and 'Our free AI Visibility Checker'. The gap is the author entity - Sumit Nautiyal and his 'VP of Revenue Operations & GTM Engineering' title exist only in fieldData and the JSON-LD, never in the body text, so a model extracting the article prose alone finds no named human expertise to attach to the verdict.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Distinctiveness",
+          "criterion": "GEO Distinctiveness",
+          "finding": "Genuinely distinct from its closest sibling. This post owns the evaluative cluster (does it work, is it worth it, what does the data say) while how-to-write-llms-txt-b2b-saas-example owns the implementation cluster - that sibling's H2s are 'What the llms.txt Spec Actually Requires', 'Where the File Goes and How to Serve It', and 'A Complete llms.txt Example for a B2B SaaS', none of which is duplicated here. The hierarchy is also signalled correctly: this post links down to the sibling with the anchor 'writing an llms.txt file for B2B SaaS' only after the verdict. One real overlap risk remains: the sibling contains an H2 'Who Actually Reads This File in 2026' and an FAQ 'Does an llms.txt file help you rank in Google AI Overviews?', which competes almost directly with this post's 'Does Google use llms.txt for AI Overviews or AI Mode?' - the two FAQ answers should be differentiated or one removed.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Critical gap: zero DevCommX proof metrics - the sanctioned '40+ qualified demos in ~6 weeks' framing and every client outcome are absent, so all authority in the piece is borrowed from Ahrefs and SE Ranking.",
+      "flag_type": "critical",
+      "criteria": [
+        {
+          "category": "Differentiation",
+          "criterion": "Differentiation Narrative",
+          "finding": "The signal-based positioning appears once, in passing: 'At DevCommX we build signal-based GTM and LLMO systems for revenue teams'. The closest thing to a methodology claim is 'that is the kind of instrumentation we build into every LLMO engagement before we change a single page', which is good but isolated. The owned-infrastructure model - clients keeping the systems DevCommX builds - is never articulated anywhere in 2,593 words, even though the post's whole thesis (measure your own logs, own your measurement layer) is a natural setup for it.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Proof",
+          "criterion": "Proof Metrics & Evidence",
+          "finding": "No DevCommX outcome appears anywhere. The '40+ qualified demos in ~6 weeks' framing is absent, and there is no client count, no engagement result, no before-and-after citation lift. The only first-party assertion is 'Most B2B SaaS teams that run this query find their only requesters are SEO audit tools and unidentified crawlers' - an anecdote with no sample size, no time window, and no attribution to DevCommX engagements. Every number in the post belongs to Ahrefs, SE Ranking, or Cyrus Shepard.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Pricing",
+          "criterion": "Pricing Transparency",
+          "finding": "No DevCommX pricing or engagement-value framing at all. The only cost figures are the effort cost of the tactic itself: 'One Markdown file, roughly an hour of work' in the table, 'It costs about sixty to ninety minutes' in tier two, and 'It should cost you about an hour' in the FAQ. That is useful effort framing for the reader's decision but says nothing about what an LLMO engagement with DevCommX costs or returns, and the CTA asks for a call with no price anchor whatsoever.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "CTA",
+          "criterion": "CTA Quality",
+          "finding": "The closing CTA is specific and well-sequenced: it names the offer, states the mechanism ('it runs your brand against real buyer prompts and shows where you are cited, where a competitor is cited instead, and which pages are doing the work'), and closes with a linked 'Book a GTM strategy call' to /contact. It also ties back to the article thesis - 'Publishing llms.txt tells you nothing about whether ChatGPT, Claude, Perplexity, or Google AI Mode currently recommend you.' The flaw: the free AI Visibility Checker is named twice but never hyperlinked, so the low-friction entry point has no clickable path and the only link is the higher-commitment call.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Differentiation",
+          "criterion": "Content Differentiation",
+          "finding": "This fills a real and unoccupied slot: a contrarian, evidence-first verdict that argues against a tactic the market is selling, which none of the sibling AEO posts (how-to-write-llms-txt-b2b-saas-example, how-to-get-cited-by-claude-ai, how-to-get-cited-by-perplexity-b2b, optimize-pricing-pages-for-ai-search) does. Lines like 'llms.txt has become the clearest example of AEO cargo culting in the market right now' and 'AEO will not fix average content' give the library a defensible point of view. It stops short of 5 because the 'what to do instead' section largely restates the LLMO playbook and how-to-get-cited-by-chatgpt posts rather than adding a new frame.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "No in-body visuals of any kind beyond one HTML table, and only one bulleted list in the entire post, leaving 31 dense paragraphs to carry the argument.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Headings",
+          "criterion": "Heading Architecture",
+          "finding": "Clean and valid: no <h1> in post-body (correct for Webflow, where the title field supplies it), eight sequential H2s, then H3 'Further Reading' and H3 'FAQ' with six H4 questions nested under the FAQ H3. No skipped levels anywhere. Minor inconsistency: 'Further Reading' and 'FAQ' are demoted to H3 while every content section is H2, so they read as subsections of 'Find Out Where You Actually Stand in AI Search' rather than as peers.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Visuals",
+          "criterion": "Visual Elements",
+          "finding": "There is exactly one visual asset in 2,593 words - the six-row claim/evidence/verdict HTML table. Zero images, diagrams, charts, or screenshots appear in the body; the only image in the whole record is the generic OG banner (imresizer-DevCommX-Blog-OG.png) referenced in fieldData and schema. This post has obvious chart material going unused: the 97 percent zero-request split, the requester breakdown (21.7 / 14.9 / 13.1 / 4.51 / 1.1 percent), and the 8.8x growth curve from 4,088 to 36,120 instances would each carry a simple bar or donut.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Scannability",
+          "criterion": "Scannability",
+          "finding": "The bolded paragraph leads do real work - 'What it is not.', 'Google has been unusually blunt.', 'And then Google contradicted itself.', 'Tier one, ship it now.' - and 13 <strong> spans plus the table give a skimmer some handholds. But the post has 31 paragraphs and only one <ul> (the three Further Reading links), so a skim reader gets almost no bullet structure. Several paragraphs run long for scanning: 115 words in the Ahrefs evidence paragraph, 113 in the intro, and 111 in the platform-statements section.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Flow",
+          "criterion": "Reading Level & Flow",
+          "finding": "Prose is confident and the argument sequence is genuinely well-built: claim, evidence, platform statements, why people believe it anyway, what to do instead, decision rule, self-serve proof. Transitions are earned rather than mechanical - 'The most damning detail is quieter', 'That is not hypocrisy, it is two teams optimizing for different futures', 'The mental model transfers cleanly and incorrectly'. One stat dump breaks the flow: a single 115-word paragraph fires 97, 77, 21.7, 14.9, 13.1, 1.1, 4.51 and 0.80 percent in sequence, which is more than a reader can hold without a table or chart.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Length",
+          "criterion": "Content Length & Density",
+          "finding": "2,593 words is well judged for a verdict piece that has to carry two studies, a platform-statement audit, a counterfactual, and a decision rule - long enough to be the definitive answer, short enough that nothing repeats. The declared add-blog-reading-time of 12 minutes matches the actual count. There is no padding anywhere: no throat-clearing intro, no restated summary section, and the shortest paragraphs (35 and 43 words) are deliberate punch lines rather than filler.",
+          "score": 5,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Complete BlogPosting plus FAQPage with all six FAQ strings matching the body verbatim; weakened only by the org logo reusing the OG banner and dateModified equalling datePublished.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Article",
+          "criterion": "Article Type Completeness",
+          "finding": "The BlogPosting node carries every required field: headline identical to the CMS name, description, url, datePublished '2026-07-01', dateModified, a seven-term keywords string, ImageObject, Person author with jobTitle, Organization publisher, and mainEntityOfPage. The author node includes 'jobTitle': 'VP of Revenue Operations & GTM Engineering, DevCommX' and a url, so the E-E-A-T signal is machine-readable even though it never appears in the body prose.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQPage Structure",
+          "finding": "Six entries, comfortably above the three-question minimum, each correctly shaped as '@type': 'Question' with a name and a nested acceptedAnswer of '@type': 'Answer' carrying a text string. Answers are substantive rather than stubs - the shortest ('Is llms.txt the same thing as robots.txt?') still runs three full sentences, and all six open with a direct verdict, which is what Google's FAQ rich result and AI answer extraction both prefer.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Alignment",
+          "criterion": "Schema-to-Content Alignment",
+          "finding": "Verified string-by-string: all six schema question names and all six acceptedAnswer.text values are byte-identical to the H4 and following paragraph in post-body, with no truncation or paraphrase. The schema headline matches the CMS name exactly. The keywords string ('does llms.txt actually work for b2b saas, llms.txt, llms.txt B2B SaaS, AEO, LLMO, AI visibility, AI citations') reflects what the article actually argues. The schema description is worded differently from meta-description and post-summary but is accurate to the article ('using 2026 crawler log studies across 400,000 plus domains, plus what to do instead').",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Graph",
+          "criterion": "@graph Implementation",
+          "finding": "A proper @graph array with two nodes, each carrying a distinct fragment @id - '...#article' for the BlogPosting and '...#faq' for the FAQPage - and mainEntityOfPage supplying a WebPage @id at the canonical URL. What is missing is any connective tissue: there is no standalone WebPage node, no BreadcrumbList, and the FAQPage is never tied back to the article via isPartOf or the BlogPosting via mainEntity, so the two nodes sit side by side rather than as one linked entity graph.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Rich Results",
+          "criterion": "Rich Result Eligibility",
+          "finding": "image is a proper ImageObject with width 1200 and height 630, publisher is an Organization with name, url and a logo ImageObject, and dateModified is present - so the basic eligibility bar is cleared. Two defects hold it back: publisher.logo.url reuses the identical OG blog banner (69ce06f820d4562027a83191_imresizer-DevCommX-Blog-OG.png) as the organization logo, which is a 1200x630 article graphic rather than a logo asset and can fail Google's logo aspect guidance; and dateModified is '2026-07-01', exactly equal to datePublished, so the markup emits no freshness signal for a post whose entire value is being current to 2026.",
+          "score": 3,
+          "max": 5
+        }
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Move external citations inline: link 'Ahrefs analyzed 137,210 domains' to the Ahrefs study, 'SE Ranking ran the other half' to the SE Ranking post, and add the missing sources for Cyrus Shepard's 54-experiment meta-analysis, the 0.664 vs 0.218 brand-mention correlation, the '82 percent of AI citations come from earned coverage' analysis, and the Gary Illyes / John Mueller statements. Also name Ahrefs and SE Ranking inside the evidence table cells so the table is citable on its own.",
+    "2. Add DevCommX proof: replace 'Most B2B SaaS teams that run this query find their only requesters are SEO audit tools' with a quantified first-party result (how many client log audits, over what window, what the crawler split was), and work in the sanctioned '40+ qualified demos in ~6 weeks' framing plus the clients-own-the-infrastructure positioning, which currently appears nowhere in the post.",
+    "3. Convert the three-tier decision rule into an ordered list and Shepard's top five citation factors into a bulleted or tabular list, then add at least two in-body visuals - a chart of the requester breakdown (21.7 / 14.9 / 13.1 / 4.51 / 1.1 percent) and the 4,088-to-36,120 adoption curve - since the post currently has one table, three list items, and zero images.",
+    "4. Correct the attribution overreach: the 97 percent zero-request figure comes from Ahrefs' 137,210-domain log study alone, not from 'Two independent 2026 studies covering roughly 437,000 domains' as stated in the intro, the post-summary, and FAQ one. Split the claim so SE Ranking is credited for the citation-correlation finding only, and soften 'every major AI crawler honors it' about robots.txt.",
+    "5. Fix schema and metadata details: swap publisher.logo.url from the 1200x630 OG banner to a real DevCommX logo asset, set dateModified to the actual review date rather than 2026-07-01, add a WebPage or BreadcrumbList node with isPartOf linking BlogPosting and FAQPage, and expand the 41-character meta title toward 55-60 characters (for example 'Does llms.txt Actually Work for B2B SaaS? 2026 Evidence').",
+    "6. De-duplicate against the sibling post: this post's FAQ 'Does Google use llms.txt for AI Overviews or AI Mode?' competes directly with how-to-write-llms-txt-b2b-saas-example's 'Does an llms.txt file help you rank in Google AI Overviews?' - keep the full answer here and reduce the sibling's to a one-line pointer, and hyperlink the 'free AI Visibility Checker' in the CTA, which is named twice but never linked."
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "slug": "plg-outbound-free-users-to-pipeline",
+  "title": "GTM Strategy for Product-Led Growth: How to Turn Free Users Into Outbound Targets",
+  "words": 2899,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Strong practitioner depth, but the two hard statistics are attributed only to 'Analysts' with no inline links",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Sources", "criterion": "Stat Accuracy & Source Quality",
+         "finding": "The two load-bearing stats, 'Around 58 percent of B2B SaaS companies now run some form of PLG motion, yet only about a quarter operate a formal framework' and self-serve 'rarely scales past roughly fifty million dollars in ARR', are attributed only to 'Analysts who track PLG report' and 'Analysts note', with zero inline links. Real sources (OpenView, Mixpanel, Gainsight) sit in a bottom 'Further Reading' list but are never bound to the specific claims, so no figure is inline-sourced.", "score": 2, "max": 5},
+        {"category": "Depth", "criterion": "Practitioner Depth",
+         "finding": "Depth is genuine: a weighted scoring table with specific point values (+25 for 'Completed core workflow 3+ times', +25 for '2+ new signups from the same domain in 14 days'), a two-threshold design ('60 points and at least one signal from each of the three factors' vs a '35 to 59' nurture band), and a concrete operational stack ('a product-analytics or warehouse source that emits usage events, a scoring job... and a trigger'). This reflects real deployment knowledge, not a surface summary.", "score": 5, "max": 5},
+        {"category": "Attribution", "criterion": "Data Attribution",
+         "finding": "The scoring table is honestly self-labeled as DevCommX's own framework ('a sane starting point, not gospel'), which is fair for a proprietary model, but the percentage and ARR figures in the prose carry no identified source at the point of assertion. The mix of a well-labeled framework table and bare-assertion market stats is a material gap.", "score": 3, "max": 5},
+        {"category": "Technical", "criterion": "Technical Accuracy",
+         "finding": "No tool names, features, or pricing are cited that could be stale for 2026; the concepts used (PQL, MQL, activation events, ICP fit, seat/plan limits) are described correctly, and the MQL-vs-PQL contrast in the FAQ is accurate. The only quantitative claim exposed to error is the '$50M ARR' ceiling, which is a reasonable and hedged industry figure.", "score": 4, "max": 5},
+        {"category": "Completeness", "criterion": "Completeness",
+         "finding": "Every H2 promise is delivered: the self-serve ceiling section explains the coverage problem, the PQL-definition section lays out usage depth x account fit x buying signal, the scoring H2 delivers the actual weighted table, the outbound-layer H2 covers capacity and timing filters, and the worked-example H2 walks one account from signup to booked meeting with matching point math (+20+10+25+25 crossing 60). No H2 is left as a stub.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Primary keyword and FAQ coverage are excellent; external sources are a bottom list, not inline citations",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Keywords", "criterion": "Primary Keyword Targeting",
+         "finding": "'PLG outbound' appears in the meta-title ('PLG Outbound: Turn Free Users Into Pipeline'), the slug, the bolded first sentence, an H2 ('why PLG outbound is not cold outbound'), and the lead FAQ ('What is PLG outbound?'). Secondary terms 'product qualified lead' and 'PQL' recur throughout body and headings. Coverage is thorough and natural.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQ / People Also Ask",
+         "finding": "Six FAQ entries map cleanly to real high-intent PAA queries: 'How is a product qualified lead different from an MQL?', 'How do you score a PQL?', 'Should you do outbound to every free user?', and 'Why does a PLG company need outbound at all?'. Each answer is a self-contained 3-4 sentence block. This is a strong, query-aligned FAQ.", "score": 5, "max": 5},
+        {"category": "Tables", "criterion": "Comparison / Featured Snippet Tables",
+         "finding": "One well-formed HTML table (Factor / Signal / Weight / Why it matters) with clean thead/tbody and inline styling, extractable for a snippet. It is a data/scoring table rather than a head-to-head comparison table, so it captures a 'how to score' snippet but not a comparison-style result.", "score": 4, "max": 5},
+        {"category": "Links", "criterion": "Internal & External Link Structure",
+         "finding": "Seven descriptive internal anchors point to relevant siblings ('repeatable outbound pipeline', 'AI-powered ICP scoring calibrated to win rate', 'event-driven outreach', 'contextual outreach playbook') plus a '/contact-us' CTA. External linking is weaker: the three sources (OpenView, Mixpanel, Gainsight) appear only as a bottom 'Further Reading' list, so there are no inline external citations tied to claims.", "score": 4, "max": 5},
+        {"category": "Technical", "criterion": "Technical SEO",
+         "finding": "Meta-title is 43 chars and meta-description 158 chars, both within limits; @graph schema with BlogPosting and FAQPage is present. The body opens directly at H2 with no in-body H1, relying on the CMS to render the 'name' field as H1, which is standard but leaves the H1 outside the content payload.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.20,
+      "flag": "Definitions and entity association are citation-ready, but statistics lack named sources an LLM could attribute",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Definitions", "criterion": "Direct Definitions",
+         "finding": "Clean extractable definitions abound: 'PLG outbound is the motion where you turn your best free and trial users into a targeted outbound pipeline', 'A real PQL is the product of three independent factors', and the FAQ's 'PLG outbound is an outbound sales motion built on top of a product-led model'. These are quotable, standalone definitional statements ideal for AI extraction.", "score": 5, "max": 5},
+        {"category": "Structure", "criterion": "Structured Data for AI Parsing",
+         "finding": "The article gives an LLM multiple parseable structures: a weighted numeric scoring table, a six-item FAQPage, a threshold framework ('60 points' high bar, '35 to 59' band), and bolded topic-sentence lead-ins on the anti-pattern and worked-example paragraphs. This is well above a wall-of-text draft.", "score": 5, "max": 5},
+        {"category": "Statistics", "criterion": "Statistical Authority",
+         "finding": "The citable numbers are anonymized: '58 percent', 'only about a quarter operate a formal framework', and the '$50M ARR' ceiling are all fronted by 'Analysts who track PLG report' or 'Analysts note', with no named institution in the sentence. An LLM cannot confidently attribute these, so the statistical authority is low despite the figures being present.", "score": 2, "max": 5},
+        {"category": "Entity", "criterion": "Entity Association",
+         "finding": "DevCommX and the author are tightly bound to the topic: 'We build these systems for B2B teams at DevCommX', the sanctioned 'from zero to more than 40 qualified demos in about six weeks', a closing 'DevCommX builds the PQL-to-pipeline motion your team owns end to end', and schema author 'Sumit Nautiyal, VP of Revenue Operations & GTM Engineering'. The niche-to-brand link is explicit.", "score": 5, "max": 5},
+        {"category": "Distinctiveness", "criterion": "GEO Distinctiveness",
+         "finding": "The post owns a distinct query cluster (PLG outbound / PQL-to-pipeline / free users to pipeline) and actively differentiates from siblings, explicitly framing 'PQL scoring is ICP scoring with product-usage data added on top' and cross-linking rather than duplicating the ICP-scoring and buying-signal posts. No cannibalization risk is evident.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Differentiation, proof metric, and CTA all land; no pricing or cost framing",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Differentiation", "criterion": "Differentiation Narrative",
+         "finding": "The owned-infrastructure, signal-based model is stated directly: 'your best intent data is first-party... which no competitor can see', 'the system acted on real usage events, not a static list', and 'DevCommX builds the PQL-to-pipeline motion your team owns end to end'. Both the client-ownership and signal-based pillars are articulated.", "score": 5, "max": 5},
+        {"category": "Proof", "criterion": "Proof Metrics & Evidence",
+         "finding": "The sanctioned proof framing is used precisely: 'the same signal-based approach that took one client from zero to more than 40 qualified demos in about six weeks, because the system acted on real usage events, not a static list'. This is concrete, on-brand outcome evidence.", "score": 5, "max": 5},
+        {"category": "Pricing", "criterion": "Pricing Transparency",
+         "finding": "There is no cost, pricing, or engagement-value figure anywhere; the closest is qualitative opportunity framing ('unclaimed revenue', 'burning rep time', converting 'high-value accounts the product alone will never close'). Value framing exists but no pricing transparency, consistent with most posts in the library.", "score": 2, "max": 5},
+        {"category": "CTA", "criterion": "CTA Quality",
+         "finding": "The CTA is specific and conversion-oriented: 'If high-fit accounts are piling up in your free tier and never converting, book a GTM strategy call and we will map the motion to your pipeline', hyperlinked to '/contact-us'. It ties the offer to the reader's exact pain and names a concrete next step.", "score": 5, "max": 5},
+        {"category": "Differentiation", "criterion": "Content Differentiation",
+         "finding": "The post fills a distinct PLG-outbound / PQL slot that complements rather than overlaps the ICP-scoring, buying-signal, and event-based-outbound posts it links to, positioning PQL work as usage-and-signal layered on top of existing ICP fit. It occupies a clear, non-duplicative slot in the library.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Highly scannable and well-paced, but no in-body images and body H2s carry no H3 subheads",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Headings", "criterion": "Heading Architecture",
+         "finding": "Levels are logical with no skips: eight body H2s, then H3 'Further Reading' and H3 'FAQ' with six H4 question headings nested under FAQ. However, none of the eight content H2s use H3 subheads; sub-points are carried by bolded paragraph lead-ins ('The tell that you have hit the ceiling.', 'Set two thresholds, not one.'), flattening the internal hierarchy.", "score": 4, "max": 5},
+        {"category": "Visuals", "criterion": "Visual Elements",
+         "finding": "There are no in-body images, diagrams, charts, or infographics; the only image is the OG image referenced in schema. A single styled HTML scoring table provides the sole in-body visual structure, so this sits at the low end the calibration expects for image-free drafts.", "score": 2, "max": 5},
+        {"category": "Scannability", "criterion": "Scannability",
+         "finding": "Very skim-friendly: a bolded one-paragraph hook defining the term up front, eight descriptive H2s, bolded topic sentences opening most paragraph clusters, a scoring table, and a six-question FAQ. A skimmer can extract the model and the anti-patterns without reading every line.", "score": 5, "max": 5},
+        {"category": "Readability", "criterion": "Reading Level & Flow",
+         "finding": "Flow is natural and conversational ('Product-led growth scales beautifully until it does not'), transitions connect sections logically, and jargon (PQL, activation events, ICP) is defined on first use rather than dumped. Complexity is appropriate for a practitioner audience.", "score": 5, "max": 5},
+        {"category": "Length", "criterion": "Content Length & Density",
+         "finding": "At ~2,899 words for a comprehensive how-to spanning definition, scoring, sequencing, messaging, anti-patterns, and a worked example, the length fits the topic with little padding; some overlap between body claims and the FAQ recap is the only mild redundancy.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Complete, well-formed @graph with FAQ text that matches the body exactly",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Article", "criterion": "Article Type Completeness",
+         "finding": "The BlogPosting node carries headline, description, url, datePublished '2026-07-01', dateModified, keywords, an ImageObject, and a full author Person ('Sumit Nautiyal' with jobTitle 'VP of Revenue Operations & GTM Engineering, DevCommX' and url). All expected Article fields are present.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQPage Structure",
+         "finding": "The FAQPage node holds six entries, each a @type Question with a name and an acceptedAnswer of @type Answer containing a text string, well above the 3-question minimum. The structure is valid for FAQ rich results.", "score": 5, "max": 5},
+        {"category": "Alignment", "criterion": "Schema-to-Content Alignment",
+         "finding": "Verified programmatically: all six schema FAQ questions and answer texts match the body FAQ verbatim. The schema headline equals the article 'name', and the keywords ('PLG outbound, product qualified leads, PQL to pipeline...') reflect the article's actual topic. Alignment is exact.", "score": 5, "max": 5},
+        {"category": "Graph", "criterion": "@graph Implementation",
+         "finding": "A proper @graph array is used with two nodes, each carrying a distinct @id ('...#article' for the BlogPosting and '...#faq' for the FAQPage), plus a mainEntityOfPage WebPage reference. The graph is correctly structured.", "score": 5, "max": 5},
+        {"category": "RichResult", "criterion": "Rich Result Eligibility",
+         "finding": "Rich-result signals are all present: an ImageObject with url plus width 1200 and height 630, a publisher Organization with name, url, and a logo ImageObject, and a dateModified alongside datePublished. Nothing required for eligibility is missing.", "score": 5, "max": 5}
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Bind the two market statistics to inline sources: attach the '58 percent run PLG / only a quarter have a formal framework' claim and the '$50M ARR self-serve ceiling' claim to named, inline-linked sources (e.g. OpenView or Gainsight) at the point of assertion instead of relying on the vague 'Analysts note' phrasing and a detached Further Reading list.",
+    "2. Add at least one in-body visual: a simple PQL scoring-flow or three-factor (usage x fit x signal) diagram, or a two-threshold funnel graphic, to lift Visual Elements above the image-free floor.",
+    "3. Introduce H3 subheads under the content H2s (e.g. convert the bolded 'Set two thresholds, not one.' and 'Timing is tied to usage events' lead-ins into real H3s) to deepen heading architecture and give AI parsers more structure."
+  ]
+}

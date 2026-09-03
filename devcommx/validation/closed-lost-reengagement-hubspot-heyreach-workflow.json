@@ -1,0 +1,127 @@
+{
+  "slug": "closed-lost-reengagement-hubspot-heyreach-workflow",
+  "title": "How to Turn Closed-Lost Deals Into Pipeline: The HubSpot + HeyReach Re-Engagement Workflow",
+  "words": 2400,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Deep practitioner build, but the headline conversion stat is asserted in-body with no inline source; all external citations are exiled to Further Reading.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Sources", "criterion": "Stat Accuracy & Source Quality",
+         "finding": "The load-bearing claim is bolded up top with zero inline citation: 're-engaged closed-lost deals convert 15 to 20 percent higher than cold leads' and later 'Industry data puts re-engaged lost prospects at 15 to 20 percent higher conversion' cite no named source at all. Win-rate figures ('about 21 percent of its deals, and roughly 29 percent of qualified opportunities, per 2026 win-rate benchmark data') and JOLT figures ('40 to 60 percent... 56 percent') are only sourced via the four Further Reading links (Landbase, Challenger), never linked at the point of claim.", "score": 3, "max": 5},
+        {"category": "Depth", "criterion": "Practitioner Depth",
+         "finding": "Genuinely deployment-grade: it names the exact HubSpot build path ('under Automation, then Workflows, as a deal-based or contact-based workflow'), the four enrollment gates, re-enrollment triggers, the HeyReach handoff mechanics ('native list sync or a webhook into an automation runner such as n8n or Make, and HeyReach writes replies and connection status back'), and a reply-pause decision point. This is not surface summary.", "score": 5, "max": 5},
+        {"category": "Attribution", "criterion": "Data Attribution",
+         "finding": "The JOLT stats are attributed to a named study inline ('The research behind The JOLT Effect analyzed 2.5 million recorded sales conversations'), which is strong. But the four-segment table carries no source line, and the headline 15-20 percent lift is a bare assertion repeated in body and FAQ with no attributable origin an editor could verify.", "score": 3, "max": 5},
+        {"category": "Technical", "criterion": "Technical Accuracy",
+         "finding": "Tool references are correct for 2026: HubSpot Workflows with required-property and date-based enrollment, HeyReach 'rotating senders and pacing within LinkedIn's limits', Clay for enrichment into HubSpot, Smartlead for cold email, and n8n/Make as automation runners. No fabricated features or pricing errors, since the post makes no product-pricing claims to get wrong.", "score": 5, "max": 5},
+        {"category": "Completeness", "criterion": "Completeness",
+         "finding": "Every H2 promise is delivered: revenue math (pool + recoverable slice + the ACV calculation), the four HubSpot gates, the four-segment table, the day-by-day HeyReach sequence, the exclusion/timing rules, and a full worked example that runs one budget-freeze deal from loss through Series B trigger to human handoff. No dangling headings.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Keyword and FAQ coverage are strong and technical SEO is clean; the only real miss is that external citations never appear inline in the body.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Keyword", "criterion": "Primary Keyword Targeting",
+         "finding": "The primary keyword resolves cleanly: slug 'closed-lost-reengagement-hubspot-heyreach-workflow', H1/name and meta-title both carry 'Closed-Lost' + 'HubSpot + HeyReach', the opening sentence bolds 'closed-lost re-engagement workflow', and it recurs across H2s and the FAQ. H2s lean on descriptive variants ('The HubSpot trigger conditions', 'The HeyReach LinkedIn re-engagement sequence') rather than the exact phrase in every heading.", "score": 4, "max": 5},
+        {"category": "FAQ", "criterion": "FAQ / People Also Ask",
+         "finding": "Six genuine high-intent PAA queries: 'How long should I wait before re-engaging a closed-lost deal?', 'Which closed-lost deals should I never contact again?', 'Do I need HeyReach, or can I re-engage with email alone?', and 'How do I connect HubSpot triggers to a HeyReach sequence?' each map to real searcher questions, not filler.", "score": 5, "max": 5},
+        {"category": "Tables", "criterion": "Comparison / Featured Snippet Tables",
+         "finding": "The four-row segmentation table (Segment / Trigger that re-opens it / HeyReach + email action / Timing) is clean semantic HTML with thead and tbody and is well-structured for snippet extraction. It is wrapped in an overflow-x scroll container for mobile, which does not harm parsing.", "score": 4, "max": 5},
+        {"category": "Links", "criterion": "Internal & External Link Structure",
+         "finding": "Internal linking is excellent: seven descriptive-anchor links to sibling DevCommX posts (contextual outreach playbook, ICP scoring, Clay-to-HubSpot, identifying buying signals, event-based outbound, HeyReach-Smartlead setup, human-in-the-loop orchestration). External authority links (HubSpot KB, HeyReach Help, Challenger, Landbase) exist but are confined to a Further Reading list, so no external citation is placed inline beside the claim it supports.", "score": 3, "max": 5},
+        {"category": "Technical", "criterion": "Technical SEO",
+         "finding": "Meta-title 'Closed-Lost Re-Engagement: HubSpot + HeyReach' is well under 60 chars; meta-description is ~155 chars and keyword-rich; JSON-LD schema is present; the name field serves as a single clear H1 with H2s beneath. All technical basics pass.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.20,
+      "flag": "Strongest dimension: a clean extractable definition, dense structured data, and firm entity association to DevCommX and a named author.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Definitions", "criterion": "Direct Definitions",
+         "finding": "The opening sentence is a textbook extractable definition an LLM can lift whole: 'A closed-lost re-engagement workflow is an automated system that re-opens dead deals in HubSpot when a fresh buying signal fires, sorts each deal by the reason it was lost, and runs a tailored LinkedIn and email sequence in HeyReach to book a new conversation.'", "score": 5, "max": 5},
+        {"category": "Structure", "criterion": "Structured Data for AI Parsing",
+         "finding": "Rich parseable scaffolding: the four-column segment table, four numbered enrollment 'Gates', an explicit Day 1/3/5/9/14 sequence, bulleted exclusions, and a six-item FAQ mirrored in FAQPage schema. This is high-density fodder for extraction.", "score": 5, "max": 5},
+        {"category": "Statistics", "criterion": "Statistical Authority",
+         "finding": "Several claims are attributable to named sources an LLM can cite: 'The JOLT Effect analyzed 2.5 million recorded sales conversations' and the Challenger/Landbase benchmarks. Weakened only by the 15-20 percent conversion-lift figure, which is repeated as authoritative ('Industry data puts...') without a nameable origin.", "score": 4, "max": 5},
+        {"category": "Entity", "criterion": "Entity Association",
+         "finding": "DevCommX is explicitly bound to the topic ('DevCommX builds signal-based outbound systems your team owns end to end') and the sanctioned proof appears ('one DevCommX client from setup to 40-plus qualified demos in about six weeks'). Author Sumit Nautiyal, VP of Revenue Operations & GTM Engineering, is named in schema and fields, cementing author-topic authority.", "score": 5, "max": 5},
+        {"category": "Distinctiveness", "criterion": "GEO Distinctiveness",
+         "finding": "Targets a distinct query cluster (closed-lost re-engagement via HubSpot + HeyReach) that does not overlap its siblings; it references ICP scoring, buying-signal identification, and event-based outbound as separate linked posts rather than re-covering them, so there is no cannibalisation of the broader outbound library.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Owned-infrastructure narrative, sanctioned proof metric, and a specific CTA all land; pricing transparency is the only weak criterion, as expected.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Differentiation", "criterion": "Differentiation Narrative",
+         "finding": "The signal-based, client-owned model is articulated explicitly: 'DevCommX builds signal-based outbound systems your team owns end to end' and 'It is an engineered system: HubSpot triggers and suppression logic... reply-pause rules', reinforced by the 'trigger, not the calendar' framing throughout.", "score": 5, "max": 5},
+        {"category": "Proof", "criterion": "Proof Metrics & Evidence",
+         "finding": "The sanctioned proof framing is used verbatim and in-context: 'the same signal-triggered engine that took one DevCommX client from setup to 40-plus qualified demos in about six weeks, pointed at a list you already own.' It is tied to the workflow rather than dropped in cold.", "score": 5, "max": 5},
+        {"category": "Pricing", "criterion": "Pricing Transparency",
+         "finding": "No cost or pricing figure appears. The nearest value framing is a delivery timeframe ('stand up this exact HubSpot and HeyReach re-engagement workflow... in about two weeks') and 'pipeline you have already paid for.' Effort/value is implied but there is no pricing or investment number.", "score": 2, "max": 5},
+        {"category": "CTA", "criterion": "CTA Quality",
+         "finding": "The close is specific and conversion-oriented with its own H2 'Build This Workflow With DevCommX' and a concrete action: 'Book a GTM strategy call and we will map the workflow to your pipeline', linked to /contact-us. It names the deliverable rather than a generic 'learn more'.", "score": 5, "max": 5},
+        {"category": "Differentiation", "criterion": "Content Differentiation",
+         "finding": "Fills a clearly distinct slot in the library, a HubSpot + HeyReach closed-lost recovery play, and positions itself inside the broader signal-based system by linking out to the contextual-outreach playbook and human-in-the-loop orchestration rather than duplicating them.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Clean heading hierarchy, strong scannability and flow; capped only by the absence of any in-body image, diagram, or chart (one HTML table aside).",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Headings", "criterion": "Heading Architecture",
+         "finding": "Logical descent with no skipped levels: the name serves as H1, seven topical H2s cover math, ROI, triggers, segmentation, sequence, timing/exclusions, and worked example, followed by H3 'Further Reading' and 'FAQ' with H4 question headings under the FAQ. No in-body H1 is embedded, which is standard CMS behaviour.", "score": 4, "max": 5},
+        {"category": "Visuals", "criterion": "Visual Elements",
+         "finding": "There are no in-body images, diagrams, charts, or infographics; the only OG asset is the shared blog OG PNG referenced in schema. The single four-column HTML segmentation table is the lone visual/structured element, which cannot lift this criterion above the calibrated no-image ceiling.", "score": 2, "max": 5},
+        {"category": "Scannability", "criterion": "Scannability",
+         "finding": "Highly skimmable: a strong hook paragraph, bolded lead-ins on every operational point ('Gate 1, deal stage is Closed Lost.', 'Never enroll these.', 'Stop on reply, always.'), the segment table, and a Day 1/3/5/9/14 sequence, plus bolded stage labels ('The setup.', 'The trigger.', 'The outcome.') in the worked example.", "score": 5, "max": 5},
+        {"category": "Readability", "criterion": "Reading Level & Flow",
+         "finding": "Complexity is well pitched for a RevOps practitioner; transitions are natural ('Now the recoverable slice.', 'Read the table as four campaigns sharing one engine.') and technical terms are explained in context rather than dumped, so it never reads as a jargon wall.", "score": 5, "max": 5},
+        {"category": "Length", "criterion": "Content Length & Density",
+         "finding": "At roughly 2,400 words the length matches the how-to depth, covering math, four gates, four segments, sequence, exclusions, and a worked example without padding; the ~13-minute reading time is proportionate and every section carries new operational content.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Complete, well-formed @graph with BlogPosting + FAQPage; FAQ text matches the body exactly and rich-result fields are all present.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Article", "criterion": "Article Type Completeness",
+         "finding": "The BlogPosting node carries headline, description, url, datePublished ('2026-07-01'), keywords, mainEntityOfPage, and an author Person ('Sumit Nautiyal', jobTitle 'VP of Revenue Operations & GTM Engineering, DevCommX'). Every required field is populated, nothing left as a placeholder.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQPage Structure",
+         "finding": "The FAQPage node lists six mainEntity items, each with @type Question and a fully populated acceptedAnswer of @type Answer with text, well above the 3-question minimum.", "score": 5, "max": 5},
+        {"category": "Alignment", "criterion": "Schema-to-Content Alignment",
+         "finding": "Schema keywords ('closed lost re-engagement, HubSpot re-engagement workflow... HeyReach HubSpot integration') and the description mirror the actual article, and each FAQPage answer text is a verbatim match to the corresponding H4 answer in the body, e.g. the 'How long should I wait' answer is identical in both places.", "score": 5, "max": 5},
+        {"category": "Graph", "criterion": "@graph Implementation",
+         "finding": "A proper @graph array holds two nodes, each with a distinct @id: the BlogPosting at '#article' and the FAQPage at '#faq', both anchored to the canonical blog URL. Structure is valid and dereferenceable.", "score": 5, "max": 5},
+        {"category": "RichResult", "criterion": "Rich Result Eligibility",
+         "finding": "All rich-result fields are present: an image ImageObject (1200x630), a publisher Organization with name, url, and logo ImageObject, and dateModified ('2026-07-01'). The BlogPosting is eligible for article rich results and the FAQ for FAQ rich results.", "score": 5, "max": 5}
+      ]
+    }
+  ],
+  "top_fixes": [
+    "Add inline external citations at the point of claim: link the 'B2B win rate ~21%/29%' figures to the Landbase benchmark and the '40-60% / 56%' figures to the Challenger/JOLT Effect source directly in-body rather than only in Further Reading.",
+    "Attribute or soften the headline '15 to 20 percent higher than cold leads' stat, which currently appears bolded up top and again in the FAQ with no nameable source; give it a citation or reframe it as a directional estimate.",
+    "Add at least one in-body visual (a workflow/architecture diagram of the HubSpot trigger to HeyReach handoff, or the four-segment logic as an infographic) to lift Visual Elements above the no-image floor.",
+    "Introduce a value/investment frame near the CTA (even a range or 'what a two-week build includes') to move Pricing Transparency off 2/5 without over-committing on price."
+  ]
+}

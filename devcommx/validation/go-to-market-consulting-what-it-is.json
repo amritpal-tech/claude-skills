@@ -1,0 +1,127 @@
+{
+  "slug": "go-to-market-consulting-what-it-is",
+  "title": "Go-To-Market Consulting: What It Is and Who Needs It",
+  "words": 2319,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Strong practitioner reasoning and full topic completeness, but almost no sourced statistics; external sources are generic hub links appended at the end, not inline citations tied to specific claims.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Sources", "criterion": "Stat Accuracy & Source Quality",
+         "finding": "This is a conceptual advisory piece with essentially no hard statistics to source; the only quantified claims are the brand line 'clients typically go from setup to 40+ qualified demos within about 6 weeks' and soft ranges like engagement lengths of 'four to twelve weeks'. The four references (Gartner Go-to-Market, HBR Marketing Myopia, HBR Motivating Salespeople, McKinsey Growth Marketing and Sales) are credible outlets but link to generic topic/hub pages, and none are inline-linked to back a specific in-body claim.", "score": 3, "max": 5},
+        {"category": "Depth", "criterion": "Practitioner Depth",
+         "finding": "Real build-side perspective is evident: 'We sit on the build side of this line every week, wiring the outbound and RevOps infrastructure that a strategy assumes' and 'A consultant tells you where to aim. Someone else has to build the gun.' The 'Concrete triggers we see repeatedly' list (founder-led-to-repeatable, Series A/B growth plan, spreading across segments, stale pricing) and the disambiguation from management consulting, sales training, and brand marketing demonstrate lived deployment knowledge rather than a surface summary.", "score": 4, "max": 5},
+        {"category": "Attribution", "criterion": "Data Attribution",
+         "finding": "The single table (engagement models) is qualitative, not numeric, so it needs no data source, and the References section usefully annotates what each outlet 'supports'. However the few metric-like assertions are bare: the '40+ qualified demos within about 6 weeks' figure and 'four to twelve weeks' engagement length carry no attribution, and no pipeline or CAC benchmark in the body is tied to a named source.", "score": 3, "max": 5},
+        {"category": "Technical", "criterion": "Technical Accuracy",
+         "finding": "Domain terminology is correct for 2026: Clay tables, CRM, sequences, ICP, CAC by channel, win-loss, and the product-led / sales-led / partner / outbound motion taxonomy are all used accurately. The engagement-model taxonomy (project-based, fractional, retainer, workshop/sprint, integrated strategy-plus-build) is a faithful description of how GTM advisory is actually sold, and the cost FAQ is appropriately hedged rather than asserting false precision.", "score": 4, "max": 5},
+        {"category": "Completeness", "criterion": "Completeness",
+         "finding": "Every H2 promise is delivered: 'What Is GTM Consulting, Precisely' defines it, 'What a GTM Consultant Actually Delivers' lists artifacts, 'Who Needs It: Stage and Signs' gives triggers and a counter-signal, 'Engagement Models Compared' delivers the table, 'GTM Consulting vs GTM Engineering' draws the strategy/build line with a 'simple test', and 'How to Choose and Get Value' gives selection criteria. No section is left as a stub or a promise the body fails to keep.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Excellent primary-keyword coverage, clean internal linking, and correct technical SEO; the only real weakness is that external citations sit in appended lists rather than inline in the body.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Keywords", "criterion": "Primary Keyword Targeting",
+         "finding": "The 'go-to-market consulting' / 'GTM consulting' phrase is placed in the title, meta-title ('Go-To-Market Consulting: What It Is, Who Needs It'), slug, opening sentence, multiple H2s ('What Is GTM Consulting, Precisely', 'GTM Consulting vs GTM Engineering'), the FAQ ('What is GTM consulting?'), and repeatedly through the body including variants 'GTM consultant' and 'GTM consulting services'. Coverage is thorough without keyword stuffing.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQ / People Also Ask",
+         "finding": "Six FAQs map cleanly to genuine high-intent PAA queries: 'What is GTM consulting?', 'What does a GTM consultant actually deliver?', 'Who needs go-to-market consulting?', 'How is GTM consulting different from GTM engineering?', 'What are the common GTM consulting engagement models?', and 'How much does GTM consulting cost?'. Including the cost question captures commercial intent most definitional posts omit.", "score": 4, "max": 5},
+        {"category": "Tables", "criterion": "Comparison / Featured Snippet Tables",
+         "finding": "One well-formed HTML table ('GTM Consulting Engagement Models Compared') with a clean four-column header (Engagement Model / What You Get / Best For / Trade-off) and five rows is structured for snippet extraction. It is qualitative rather than numeric, which limits some featured-snippet formats, but the row-per-model layout is directly liftable.", "score": 4, "max": 5},
+        {"category": "Links", "criterion": "Internal & External Link Structure",
+         "finding": "Internal linking is strong and relevant: five contextual anchors to gtm-engineering-stack, hire-gtm-engineer-vs-agency, the /gtm-engineering service page, best-gtm-engineering-agencies, and /contact-us. External authority links (Gartner, HBR, McKinsey) exist but only as appended 'Further Reading' and 'References' lists; none are woven inline next to the claim they support, so in-body external citation is absent.", "score": 4, "max": 5},
+        {"category": "Technical", "criterion": "Technical SEO",
+         "finding": "Meta-title is 49 characters and meta-description is 162 characters (both within display limits), the H1 matches the article title, and valid JSON-LD (@graph with BlogPosting + FAQPage) is present. Heading levels are correctly nested with no skips. A minor nit: the meta-description at 162 chars is at the upper edge of the safe range.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.20,
+      "flag": "Highly extractable definitions and clear entity association; weaker on named-source statistical authority, and it stays mostly distinct from sibling posts with only minor overlap risk on engagement-models / vs-engineering content.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Definitions", "criterion": "Direct Definitions",
+         "finding": "Definitional statements are clean and liftable: the opener 'Go-to-market consulting is advisory work that helps a company decide how to take a product to market: which segment to target, how to position and price it, which channels to sell through...' and the contrast pair 'GTM consulting is the strategy layer: what to do and why. GTM engineering is the build layer: the systems, data pipelines, scoring models, and outbound infrastructure that make the strategy real.' Both the intro and FAQ give an LLM a self-contained answer.", "score": 5, "max": 5},
+        {"category": "Structured Data", "criterion": "Structured Data for AI Parsing",
+         "finding": "A comparison table and a six-question FAQ give strong machine-parseable structure. However the 'five areas' (Segmentation and ICP, Positioning, Pricing, Channel, Team and process) and the deliverables set are written as bolded run-in prose rather than true numbered or bulleted lists, so some of the most extractable framework content is buried in paragraphs an LLM must parse rather than lift.", "score": 4, "max": 5},
+        {"category": "Statistics", "criterion": "Statistical Authority",
+         "finding": "There are no named-source statistics an LLM would cite as a data point; the piece reasons rather than quantifies. The References section does name Gartner, HBR (twice), and McKinsey with an explicit note on what each supports, which gives citable authority anchors, but they attach to generic hub URLs and back arguments, not figures. The only quantified claim, '40+ qualified demos within about 6 weeks', is brand-attributable only.", "score": 3, "max": 5},
+        {"category": "Entity", "criterion": "Entity Association",
+         "finding": "DevCommX and the topic are explicitly bound through first-person build-side framing ('This is the model we operate: strategy that is written to be built, and infrastructure the client owns rather than rents') and the closing 'DevCommX builds the machine that actually reaches the target'. Schema names author Sumit Nautiyal as 'VP of Revenue Operations & GTM Engineering, DevCommX', tying a named person and org to the GTM niche, though the author is not surfaced by name in the visible body.", "score": 4, "max": 5},
+        {"category": "Distinctiveness", "criterion": "GEO Distinctiveness",
+         "finding": "This pillar owns the definitional 'what is GTM consulting / who needs it' cluster and deliberately links out to siblings rather than duplicating them (to 'hire-gtm-engineer-vs-agency' and 'gtm-engineering-stack'). It stays distinct from gtm-consultant-vs-gtm-agency (a provider-decision/comparison post) and from revenue-operations-consulting-guide-mid-market (a RevOps-scoped pillar). Minor cannibalisation risk remains where its engagement-models table, its 'vs GTM engineering' section, and its cost FAQ brush against the vs-agency post's comparison-and-cost angle.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "The owned-infrastructure, signal-based differentiation is clearly stated with the sanctioned 40+ demos proof and a strong CTA; proof rests on a single metric.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Differentiation", "criterion": "Differentiation Narrative",
+         "finding": "The signal-based, client-owned model is articulated crisply: 'autonomous, signal-based AI SDR and GTM infrastructure that your team owns, not a managed campaign you rent' and 'outbound that fires on real buying triggers instead of static lists'. The recurring 'strategy that is written to be built' framing positions DevCommX squarely on the build side of the strategy/execution line the article draws.", "score": 5, "max": 5},
+        {"category": "Proof", "criterion": "Proof Metrics & Evidence",
+         "finding": "The sanctioned proof framing is present verbatim in spirit: 'clients typically go from setup to 40+ qualified demos within about 6 weeks'. It is on-message and correctly scoped, but it is the only concrete outcome cited in the entire piece, with no second data point or client example to reinforce it.", "score": 4, "max": 5},
+        {"category": "Pricing", "criterion": "Pricing Transparency",
+         "finding": "Unusually for these drafts, cost is addressed: the FAQ states GTM consulting ranges 'from a few thousand dollars for a focused workshop to five figures or more for a full project-based strategy engagement, and monthly retainers for fractional or ongoing advisory'. This is market cost framing rather than DevCommX's own pricing, but it gives the reader real value anchors instead of silence.", "score": 4, "max": 5},
+        {"category": "CTA", "criterion": "CTA Quality",
+         "finding": "The close carries a specific, conversion-oriented CTA: 'book a GTM strategy call to map it to your pipeline', linked to /contact-us, and is set up by a qualifying line ('If your strategy is sound but execution is the constraint...'). It targets the exact buyer the article has just profiled rather than a generic 'contact us'.", "score": 4, "max": 5},
+        {"category": "Differentiation", "criterion": "Content Differentiation",
+         "finding": "The post fills a distinct GTM-consulting-pillar slot in the library, complementing the engineering-side posts it links to and feeding the vs-agency and RevOps siblings. Its definitional 'what it is / who needs it' angle is not duplicated elsewhere, though the engagement-models and cost content overlaps modestly with the vs-agency post.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Clean heading hierarchy and strong prose flow, but zero in-body images and prose-heavy framework sections (few bullet lists) hold scannability and visual richness down.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Headings", "criterion": "Heading Architecture",
+         "finding": "The hierarchy is logical with no skipped levels: a single H1 (the title), seven topical H2s, then H3s for 'Further Reading', 'References', and 'FAQ', with the six FAQ questions correctly nested as H4 under the FAQ H3. The H2 sequence follows a natural definition to delivery to who-needs to models to contrast to how-to-choose progression.", "score": 5, "max": 5},
+        {"category": "Visuals", "criterion": "Visual Elements",
+         "finding": "There are zero in-body images, diagrams, charts, or infographics (img count is 0); only an OG image exists in metadata. The one HTML comparison table adds a small amount of visual structure, but per the honest-scoring rule an image-free draft is capped low here, and this piece has no diagram of the strategy-vs-build relationship it repeatedly describes.", "score": 2, "max": 5},
+        {"category": "Scannability", "criterion": "Scannability",
+         "finding": "A clear hook, descriptive subheads, one comparison table, and bolded run-in labels (e.g. 'Segmentation and ICP', 'Positioning and messaging') aid skimming. However the deliverables set and the 'five areas' are delivered as dense paragraphs rather than bullet lists, and several body paragraphs run long, so a skim reader gets structure from headers but little from list formatting inside sections.", "score": 3, "max": 5},
+        {"category": "Reading Level", "criterion": "Reading Level & Flow",
+         "finding": "Prose is fluent and transitions are natural ('That last distinction is where most confusion lives, and it is the reason companies hire the wrong help'). Complexity suits a leadership B2B buyer, and vivid connective phrasing ('A consultant tells you where to aim. Someone else has to build the gun.') keeps it from becoming a jargon dump.", "score": 4, "max": 5},
+        {"category": "Length", "criterion": "Content Length & Density",
+         "finding": "At roughly 2,319 words the length is appropriate for a top-of-funnel pillar covering definition, deliverables, timing, five engagement models, a strategy/build contrast, and a selection guide. Density is high but on-topic; there is little obvious padding, though the prose-heavy delivery of lists adds to reader load.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Complete, well-formed @graph with BlogPosting + FAQPage, exact FAQ-to-body match, and full rich-result fields; only a minor schema-vs-meta description wording difference.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Article", "criterion": "Article Type Completeness",
+         "finding": "The BlogPosting node carries headline, description, url, datePublished ('2026-07-01'), dateModified, keywords ('go to market consulting, GTM consulting services, GTM consultant, what is GTM consulting...'), image, author (Person, Sumit Nautiyal with jobTitle), publisher, and mainEntityOfPage. All expected Article fields are present.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQPage Structure",
+         "finding": "The FAQPage node contains six entries, each a proper @type Question with an acceptedAnswer of @type Answer and a text value, comfortably exceeding the 3-question minimum and covering definition, deliverables, who-needs, vs-engineering, models, and cost.", "score": 5, "max": 5},
+        {"category": "Alignment", "criterion": "Schema-to-Content Alignment",
+         "finding": "All six schema FAQ answers match the body FAQ text verbatim (0 mismatches verified), and the keywords reflect the article's actual focus. The one inconsistency is that the schema description ('what a GTM consultant delivers...') is worded slightly differently from the page meta-description ('what a GTM consultant actually does...'); both align to the content but they are not identical strings.", "score": 4, "max": 5},
+        {"category": "Graph", "criterion": "@graph Implementation",
+         "finding": "A proper @graph array holds two nodes, the BlogPosting with '@id ...#article' and the FAQPage with '@id ...#faq', each carrying its own @id, plus a nested mainEntityOfPage WebPage @id. This is a correctly structured multi-node graph.", "score": 5, "max": 5},
+        {"category": "Rich Result", "criterion": "Rich Result Eligibility",
+         "finding": "The image is a full ImageObject with url, width 1200, and height 630; the publisher is an Organization with url and a logo ImageObject; and dateModified is present alongside datePublished. All the fields Google checks for enhanced Article/FAQ eligibility are in place.", "score": 5, "max": 5}
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Add at least one in-body visual, most obviously a simple diagram or two-column graphic of the 'GTM consulting = strategy layer' vs 'GTM engineering = build layer' contrast the post repeats, to lift the 2/5 Visual Elements score.",
+    "2. Convert the prose-buried frameworks into real lists: make the 'five areas' (Segmentation/Positioning/Pricing/Channel/Team) and the deliverables set into bulleted or numbered lists to improve scannability and AI extraction.",
+    "3. Move the Gartner/HBR/McKinsey references inline next to the specific claims they support instead of leaving them in appended lists, and add one credible external statistic to raise Statistical Authority.",
+    "4. Reconcile the schema BlogPosting description with the page meta-description so the two strings match exactly, and de-risk overlap with the gtm-consultant-vs-gtm-agency post by trimming or cross-linking (rather than duplicating) the engagement-model and cost content."
+  ]
+}

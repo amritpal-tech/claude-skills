@@ -1,0 +1,96 @@
+{
+  "slug": "sales-velocity-formula-b2b",
+  "title": "Sales Velocity: The Formula and How to Improve It for B2B Outbound",
+  "words": 2000,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Math is fully accurate and self-consistent, but the four named sources sit in an end References block, not inline against the claims they support.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Sources", "criterion": "Stat Accuracy & Source Quality", "finding": "The two worked calculations are arithmetically correct: (50 x 0.25 x 20,000) / 60 = 4,166.67, quoted as 'roughly 4,167 dollars of sales velocity per day', and (55 x 0.275 x 22,000) / 54 = 6,162, quoted as 'about 6,162 dollars per day, a roughly 48 percent jump' (actual 47.9%). However every external source (HubSpot, Gartner, HBR, Salesforce) is bundled in end 'References'/'Further Reading' lists with generic labels like 'supports the formula definition', not linked inline at the point of claim.", "score": 3, "max": 5},
+        {"category": "Depth", "criterion": "Practitioner Depth", "finding": "Real deployment sequencing is shown, not summary: 'The practical sequence we use is: fix qualification first so win rate is protected, then add signal-based volume... then compress the cycle... and only then push deal size.' The deal-value caveat that 'pushing deal size usually lengthens the sales cycle... so this lever must be managed against the denominator' demonstrates hands-on trade-off knowledge.", "score": 4, "max": 5},
+        {"category": "Attribution", "criterion": "Data Attribution", "finding": "The worked numbers are explicitly flagged as illustrative ('Assume the team is working 50 qualified opportunities...'), which is honest, and the four-lever table cells are conceptual not statistical, so no false precision. But the table carries no source, and directional claims like speed-to-lead 'materially improves both connect rates and cycle time' assert benchmarks without an attributed figure.", "score": 3, "max": 5},
+        {"category": "Technical", "criterion": "Technical Accuracy", "finding": "The formula and its mechanics are stated correctly, including the decimal-conversion note 'Win rate is expressed as a decimal, so 25 percent enters the formula as 0.25' and the definitional discipline that 'Number of opportunities should mean qualified opportunities... not raw leads'. No tool pricing or feature claims are made that could be wrong for 2026.", "score": 4, "max": 5},
+        {"category": "Completeness", "criterion": "Completeness", "finding": "Every H2 promise is delivered: the formula is defined, worked through a full example, compounding is demonstrated, all four levers get a dedicated section with an owning function and an outbound system, and the closing 'without breaking the formula' section delivers the cross-lever sequencing. No H2 is left as a stub.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Exemplary keyword targeting and metadata; primary term appears in title, slug, meta, H2s, body lead, and FAQ.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Keyword", "criterion": "Primary Keyword Targeting", "finding": "'sales velocity formula' is in the H1 title, slug (sales-velocity-formula-b2b), meta-title ('Sales Velocity Formula: Calculate and Improve It'), the bold body opener 'the sales velocity formula is', an H2 ('The Sales Velocity Formula, Worked Through an Example'), and the first FAQ ('What is the sales velocity formula?'). Coverage across every on-page slot is complete.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQ / People Also Ask", "finding": "Six FAQs map cleanly to real PAA intent: 'What is the sales velocity formula?', 'How do you calculate sales velocity with an example?', 'How do you improve sales velocity?', 'Which sales velocity lever should I fix first?', 'Why does sales cycle length matter so much...', and 'Is sales velocity a useful metric for B2B outbound?'. These are genuine high-intent queries, not padding.", "score": 5, "max": 5},
+        {"category": "Tables", "criterion": "Comparison / Featured Snippet Tables", "finding": "The 'Four Levers... at a Glance' table has clean Lever / Position in Formula / What Moves It / Outbound System columns, snippet-extractable, and the formula is also stated as a standalone extractable sentence. One table only; a benchmark or before/after velocity table would strengthen snippet capture further.", "score": 4, "max": 5},
+        {"category": "Links", "criterion": "Internal & External Link Structure", "finding": "Five internal links with descriptive anchors (e.g. 'sales capacity planning and how many SDRs you need', 'AI-powered ICP scoring calibrated to win rate', 'speed-to-lead and B2B follow-up') plus external Further Reading/References to HubSpot, Gartner, HBR, Salesforce. External citations are end-bundled rather than inline, which slightly weakens contextual relevance signals.", "score": 4, "max": 5},
+        {"category": "Technical", "criterion": "Technical SEO", "finding": "Schema is present and valid, meta-title is 54 characters and meta-description 154 characters (both within limits), and the H1 is the article title with a clean H2/H3/H4 hierarchy below it. All core technical on-page signals are correct.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.20,
+      "flag": "Strong extractable definitions and a distinct query cluster; statistical authority is the soft spot because named sources are not tied to specific in-text figures.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Definitions", "criterion": "Direct Definitions", "finding": "Multiple clean, quotable definitional statements exist: 'Sales velocity is a rate, not a total', and 'the sales velocity formula is (Number of Opportunities x Win Rate x Average Deal Value) / Sales Cycle Length. The output is a dollar figure per day'. An LLM can lift either verbatim as a self-contained answer.", "score": 5, "max": 5},
+        {"category": "Structure", "criterion": "Structured Data for AI Parsing", "finding": "The content is highly parseable: a four-column lever table, a fully worked step-by-step calculation, four discretely labeled lever sections, and a six-item FAQPage. What is missing is an explicit numbered list of the four inputs (they are prose-embedded), which would give an even cleaner extraction target.", "score": 4, "max": 5},
+        {"category": "Authority", "criterion": "Statistical Authority", "finding": "The References section names HubSpot, Gartner, HBR and Salesforce, which gives an LLM citable authorities, but the labels are generic ('supports pipeline and win-rate management context') and no specific figure in the body is attributed to a named source. The concrete numbers (4,167/day, 48% lift) are the author's own illustrative math, citable to DevCommX but not to an external authority.", "score": 3, "max": 5},
+        {"category": "Entity", "criterion": "Entity Association", "finding": "DevCommX and the author are explicitly bound to the topic: 'We build outbound infrastructure for B2B teams every week, and this equation is where we start every diagnosis', plus 'DevCommX builds autonomous, signal-based AI SDR systems that your team owns' and the sanctioned '40+ qualified demos within about 6 weeks'. Author schema names Sumit Nautiyal, VP RevOps & GTM Engineering.", "score": 5, "max": 5},
+        {"category": "Distinctiveness", "criterion": "GEO Distinctiveness", "finding": "The post owns the 'sales velocity formula / calculation / how to improve' cluster and does not cannibalise Sales-Ops siblings; it links out to them by their own distinct queries (sales-capacity-planning-how-many-sdrs, speed-to-lead-b2b-follow-up, ai-powered-icp-scoring-win-rate-calibrated) as sub-topics rather than repeating them. Clean topical separation.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Owned-infrastructure narrative, sanctioned proof metric, and a specific CTA all land; pricing/cost framing is absent as expected.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Differentiation", "criterion": "Differentiation Narrative", "finding": "The owned, signal-based model is stated sharply: 'DevCommX builds autonomous, signal-based AI SDR systems that your team owns, not a managed campaign you rent', reinforced by 'the system fires on real buying signals instead of static lists'. The category contrast (own vs rent) is explicit.", "score": 5, "max": 5},
+        {"category": "Proof", "criterion": "Proof Metrics & Evidence", "finding": "The sanctioned proof framing is present verbatim: 'Clients typically go from setup to 40+ qualified demos within about 6 weeks'. It is a single proof point with no secondary client evidence or named case, so it lands but does not stack.", "score": 4, "max": 5},
+        {"category": "Pricing", "criterion": "Pricing Transparency", "finding": "No cost, price, or investment figure appears anywhere; the only value framing is abstract ('the goal is a net velocity gain'). Honest score for a post that omits pricing entirely.", "score": 2, "max": 5},
+        {"category": "CTA", "criterion": "CTA Quality", "finding": "The CTA is specific and conversion-oriented: 'Book a GTM strategy call to map the sales velocity formula to your pipeline and find the lever worth fixing first', linked to /contact-us and tied directly to the article's own framework rather than a generic 'contact us'.", "score": 5, "max": 5},
+        {"category": "Differentiation", "criterion": "Content Differentiation", "finding": "The post fills a distinct library slot as the canonical 'sales velocity formula' explainer, hub-linking to capacity planning, ICP scoring, speed-to-lead and real-time signals as spokes. It is not a rehash of any existing sibling.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Logical heading tree, strong scannability and flow; the only material weakness is the absence of in-body images or diagrams.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Headings", "criterion": "Heading Architecture", "finding": "The hierarchy is clean with no skipped levels: H1 title, nine H2s (formula, worked example, levers overview, four lever sections, improvement section, CTA), then H3s for Further Reading / References / FAQ, with six H4 questions nested under the FAQ H3.", "score": 5, "max": 5},
+        {"category": "Visual", "criterion": "Visual Elements", "finding": "There are no in-body images, diagrams, or charts, only the OG image referenced in schema. The single four-lever HTML table is the sole visual break; a compounding-effect chart or a formula diagram would materially help a numeric topic like this. Capped low per spec.", "score": 2, "max": 5},
+        {"category": "Scannability", "criterion": "Scannability", "finding": "Skim-readers are well served: a strong bold hook opening ('Sales velocity measures how much revenue your pipeline generates per day'), descriptive H2s, bold lever lead-ins, a comparison table, and a six-question FAQ. Structure supports fast scanning.", "score": 5, "max": 5},
+        {"category": "Flow", "criterion": "Reading Level & Flow", "finding": "Complexity fits a RevOps audience, transitions are natural ('Now watch what compounding does', 'Before we break down each lever individually'), and math is explained in plain language rather than dumped. No jargon walls.", "score": 5, "max": 5},
+        {"category": "Length", "criterion": "Content Length & Density", "finding": "At roughly 2,000 words the length suits a formula-plus-four-levers explainer, with each section carrying distinct operational content and no visible padding or repetition between the lever sections.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Complete, valid @graph with BlogPosting + FAQPage; FAQ schema text matches the body FAQ verbatim.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Article", "criterion": "Article Type Completeness", "finding": "The BlogPosting node carries headline, description, url, datePublished (2026-07-01), dateModified, keywords, image, author (Person with jobTitle), publisher, and mainEntityOfPage. All required Article fields are present.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQPage Structure", "finding": "The FAQPage node has six entries, each a proper @type Question with an acceptedAnswer of @type Answer and full text, well above the 3+ minimum.", "score": 5, "max": 5},
+        {"category": "Alignment", "criterion": "Schema-to-Content Alignment", "finding": "The schema FAQ answers match the body FAQ verbatim (verified: the first answer 'The sales velocity formula is (Number of Opportunities x Win Rate x Average Deal Value) / Sales Cycle Length...' is identical in both), and the keywords ('sales velocity formula, sales velocity calculation, how to improve sales velocity...') accurately reflect the article's targeting.", "score": 5, "max": 5},
+        {"category": "Graph", "criterion": "@graph Implementation", "finding": "A proper @graph array is used with two nodes, each carrying a distinct @id: the BlogPosting at '#article' and the FAQPage at '#faq', both anchored to the canonical URL.", "score": 5, "max": 5},
+        {"category": "RichResult", "criterion": "Rich Result Eligibility", "finding": "Rich-result requirements are met: image is an ImageObject with url plus width 1200 and height 630, publisher is an Organization with a logo ImageObject, and dateModified is present alongside datePublished.", "score": 5, "max": 5}
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Move the external citations inline: link HubSpot, Gartner, HBR and Salesforce at the exact sentences they support (e.g. HBR at the speed-to-lead 'responding within minutes' claim) instead of bundling them in an end References list, to lift Stat Accuracy and Statistical Authority.",
+    "2. Add at least one in-body visual: a compounding-lift bar chart (4,167 to 6,162/day) or a formula diagram, since the post currently has no image or chart and Visual Elements is the lowest structural score.",
+    "3. Attribute a real benchmark to a named source for the directional claims (e.g. cite a figure for how much faster response time improves connect/cycle rates) rather than relying only on the author's illustrative math."
+  ]
+}

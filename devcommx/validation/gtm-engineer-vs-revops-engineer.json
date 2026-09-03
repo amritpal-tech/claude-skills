@@ -1,0 +1,281 @@
+{
+  "slug": "gtm-engineer-vs-revops-engineer",
+  "title": "GTM Engineer vs RevOps Engineer: Which Role Does Your Team Actually Need?",
+  "words": 2226,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Seven hard statistics (200% YoY posting growth, 1,400 to 3,000 openings, 70% Clay, three quarters of RevOps postings, 300% RevOps growth, $127K-$132K median, $180K+ senior) carry zero inline attribution; the only three sources sit in a bottom-of-page Further Reading list.",
+      "flag_type": "critical",
+      "criteria": [
+        {
+          "category": "Sources",
+          "criterion": "Stat Accuracy & Source Quality",
+          "finding": "Every load-bearing number is asserted without an inline citation: \"GTM engineering job postings rose more than 200 percent year over year in 2025, climbing from roughly 1,400 openings in mid-2025 to over 3,000 by early 2026\" and \"Clay alone appears in close to 70 percent of GTM engineer job descriptions\" both stand bare. Three credible sources exist (Clay, Bloomberry's 1000-jobs analysis, Gartner RevOps) but only as a Further Reading <ul> after the CTA, so a reader cannot tell which source backs which claim, and Bloomberry is never named in prose.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Depth",
+          "criterion": "Practitioner Depth",
+          "finding": "There is genuine operator signal: \"We build this infrastructure for B2B teams every week\", \"a GTM engineer asked to babysit a forecast will quit\", and the collision framing \"RevOps owns the schema and the guardrails, GTM engineering builds on top of them within agreed contracts\". But the build examples stay at label level (\"enrichment pipelines\", \"routing bots\", \"pipeline observability\") with no named workflow, no example architecture, no trigger logic, and no failure story from an actual deployment.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Attribution",
+          "criterion": "Data Attribution",
+          "finding": "The 7-row comparison table has no source column and no footnote; the quantitative cell \"Often 25 to 50 percent variable, tied to pipeline\" is presented as fact with nothing behind it. Same for \"roughly three quarters of RevOps job postings explicitly call out improving forecast accuracy\" and \"RevOps itself has grown roughly 300 percent in postings since 2020\", neither of which names a dataset, year of collection, or sample size.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical Accuracy",
+          "finding": "Tool and credential references check out for 2026: Clay, Apollo, Salesforce, HubSpot, SQL, Looker, Tableau are assigned to the correct side of the build/run split, and \"Salesforce Admin certification, with HubSpot RevOps certification close behind\" is a reasonable ranking. \"Clay coined the title in 2023\" and the adopter list \"Cursor, Lovable, Webflow, Ramp, and OpenAI\" are plausible but unsourced, and no tool pricing or plan limits are stated anywhere, so nothing is verifiably wrong but nothing is verifiable either.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Completeness",
+          "criterion": "Completeness",
+          "finding": "Eight of nine H2s deliver fully, and the hiring-order H2 resolves cleanly into three staged answers ($5M-$25M ARR, growth-stalls trigger, $50M+). The gap is \"Backgrounds, Mindset, and Compensation\": GTM engineers get concrete bands ($127,000-$132,000, past $180,000) while RevOps compensation gets only \"more heavily weighted toward base with operational KPIs\" with no number at all, which under-delivers the meta-description promise of comparing the two roles \"on scope, tools, mandate, and pay\".",
+          "score": 3,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Keyword targeting, FAQ coverage and the snippet table are all strong; the weak point is linking, with the three external sources dumped at the bottom and no link to the obvious sibling gtm-engineer-salary from the compensation section.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Keywords",
+          "criterion": "Primary Keyword Targeting",
+          "finding": "\"gtm engineer vs revops engineer\" is fully covered: slug gtm-engineer-vs-revops-engineer, meta-title \"GTM Engineer vs RevOps Engineer: Which to Hire\", H2 \"GTM Engineer vs RevOps Engineer at a Glance\", the opening sentence \"A GTM engineer builds new revenue systems, while a RevOps engineer runs and governs the revenue stack that already exists\", and FAQ #1 \"What is the difference between a GTM engineer and a RevOps engineer?\". Secondary variants (build vs run, which role to hire first) are worked in naturally without stuffing.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQ / People Also Ask",
+          "finding": "Six FAQs map to real high-intent queries rather than filler: \"Do I need a GTM engineer or a RevOps engineer first?\", \"Can one person do both GTM engineering and RevOps?\", \"What tools does a GTM engineer use versus a RevOps engineer?\", and \"How much do GTM engineers and RevOps engineers make in 2026?\". Each answer is a self-contained 3-4 sentence block that starts with the direct answer, which is exactly the shape PAA extraction wants.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Tables",
+          "criterion": "Comparison / Featured Snippet Tables",
+          "finding": "The at-a-glance table is a real <table> with <thead> and three columns (Dimension / GTM Engineer / RevOps Engineer) across 7 comparison rows including Core mandate, Primary tools, Hire first at, and Comp structure. It is introduced by a lead-in sentence (\"here is the head-to-head on the dimensions that actually decide which role you need first\") and wrapped in an overflow-x:auto container, so it is both snippet-extractable and mobile-safe.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Links",
+          "criterion": "Internal & External Link Structure",
+          "finding": "Three internal links with descriptive anchors (\"best GTM engineering agencies\", \"agentic GTM and AI agents in GTM engineering\", \"GTM engineering stack\") plus the /contact CTA. But the compensation section quoting $127,000-$132,000 does not link to the existing gtm-engineer-salary post, and neither what-is-gtm-engineer-role-skills-2026 nor how-to-hire-a-gtm-engineer is referenced despite being directly on-topic. All three external sources are relegated to a Further Reading list instead of being cited inline at the claims they support.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical SEO",
+          "finding": "Schema-markup is present and valid JSON-LD, meta-description is 157 characters (inside the ~160 limit), and the H2 outline is clean. Meta-title is only 46 characters (\"GTM Engineer vs RevOps Engineer: Which to Hire\"), leaving roughly 14 characters of SERP real estate unused where a qualifier such as \"in 2026\" would fit. No H1 exists in post-body, which is correct for this Webflow template since the name field renders the H1.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.2,
+      "flag": "Definitions are excellently extractable but the statistics are orphaned: no named source appears anywhere in the prose, so an LLM can quote the numbers without ever being able to attribute them to DevCommX or to a dataset.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Definitions",
+          "criterion": "Direct Definitions",
+          "finding": "The very first sentence is a clean two-entity definition an answer engine can lift verbatim: \"A GTM engineer builds new revenue systems, while a RevOps engineer runs and governs the revenue stack that already exists.\" It is reinforced by the system-of-action versus system-of-record framing and by \"The cleanest way to separate the two roles is the build versus run model\", giving three independently extractable definitional units for the same concept pair.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Structure",
+          "criterion": "Structured Data for AI Parsing",
+          "finding": "The 7-row table and the 6-question FAQ are strong parseable assets, and the hiring section uses bolded stage leads (\"Under roughly $5M to $25M ARR, hire RevOps first.\"). Against that, the article contains exactly one <ul> and it is the Further Reading list. The two natural list moments are buried in prose: \"Day-to-day, a GTM engineer ships things like:\" runs five duties in one 60-word sentence, and \"The RevOps engineer owns:\" runs seven items the same way. There is no numbered framework anywhere.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Statistics",
+          "criterion": "Statistical Authority",
+          "finding": "The quotable claims are all unattributed in-text: \"roughly three quarters of RevOps job postings explicitly call out improving forecast accuracy\", \"RevOps itself has grown roughly 300 percent in postings since 2020\", and \"GTM engineer median cash sits around the $127,000 to $132,000 mark\". Bloomberry and Gartner appear only as bare anchor text in the Further Reading list and are never named beside a number, so an LLM has no source-plus-stat pairing to cite.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Entity",
+          "criterion": "Entity Association",
+          "finding": "DevCommX is tied to the build side explicitly: \"an external team can stand up the build side while your RevOps person governs, which is exactly the model we run at DevCommX\", plus the \"Build This With DevCommX\" H2 and the owned-infrastructure sentence. The gap is authorship: Sumit Nautiyal and his \"VP of Revenue Operations & GTM Engineering\" title exist only in the CMS fields and JSON-LD, never in the body, so the human expertise entity is invisible to text-only extraction.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Distinctiveness",
+          "criterion": "GEO Distinctiveness",
+          "finding": "The head-to-head query cluster is genuinely unclaimed in the library (no existing X-vs-Y slug pairs these two roles). However the compensation paragraph plus FAQ #5 \"How much do GTM engineers and RevOps engineers make in 2026?\" restate the core intent of the existing gtm-engineer-salary post without linking to it, and the \"What a GTM Engineer Actually Does\" section overlaps what-is-gtm-engineer-role-skills-2026, creating avoidable partial cannibalisation.",
+          "score": 3,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "The owned-infrastructure narrative and the 40+ demos proof both land, but they appear only in the final 120-word section and there is no cost or engagement-value framing against the salary numbers the article itself supplies.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Positioning",
+          "criterion": "Differentiation Narrative",
+          "finding": "The sanctioned model is stated precisely: \"DevCommX builds autonomous, signal-based AI SDR systems that your team owns, not a managed campaign you rent\", followed by the division of labour \"so your RevOps function can keep governing a clean system of record\". The weakness is placement and volume, since this is confined to the closing H2 and the body's 2,100 preceding words never demonstrate the signal-based build model with a DevCommX-specific example.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Proof",
+          "criterion": "Proof Metrics & Evidence",
+          "finding": "The sanctioned framing appears correctly: \"Clients typically go from setup to 40+ qualified demos within about 6 weeks, because the system fires on real buying signals instead of static lists\", with a causal reason attached rather than a bare number. It is the only DevCommX outcome in the article though, and there is no client type, industry, or before/after context to make it concrete for a hiring-manager reader.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Pricing",
+          "criterion": "Pricing Transparency",
+          "finding": "No DevCommX cost, retainer range, project fee, or payback framing appears anywhere. The article hands itself the perfect setup by publishing hire costs ($127,000 to $132,000 median, \"well past $180,000\" for senior) and then saying \"if you do not want to hire either full time yet, an external team can stand up the build side\", but never attaches a number or even a relative cost comparison to that alternative, leaving the buy-versus-build economics unanswered.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "CTA",
+          "criterion": "CTA Quality",
+          "finding": "The close is specific and conversion-oriented: \"Book a GTM strategy call\" anchored to https://www.devcommx.com/contact with a stated payoff, \"to map the right build to your pipeline\". It is the only CTA in 2,226 words, with no mid-article offer after the high-intent hiring-stage section where a reader has just self-diagnosed which role they need.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Differentiation",
+          "criterion": "Content Differentiation",
+          "finding": "This fills a real gap: the existing library has what-is-gtm-engineering, gtm-engineer-salary, how-to-hire-a-gtm-engineer and gtm-engineering-vs-growth-hacking, but no GTM-versus-RevOps head-to-head, and the build/run + system-of-action/system-of-record framing is a distinct angle. Points off because it duplicates rather than links to the salary and role-definition siblings, so it partly re-covers ground the library already owns.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Zero in-body visuals across 2,226 words, and the FAQ and Further Reading H3s are nested under the \"Build This With DevCommX\" CTA H2 instead of standing at H2 level.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Headings",
+          "criterion": "Heading Architecture",
+          "finding": "The nine H2s form a logical arc from \"The One-Line Distinction: Build vs Run\" through to \"Which Role Does Your Team Actually Need First\". The defect is at the tail: \"Further Reading\" and \"FAQ\" are both <h3> with no H2 of their own, so they parse as subsections of the \"Build This With DevCommX\" CTA, and the six question <h4>s therefore hang three levels below a promotional heading rather than under a top-level FAQ section.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Visuals",
+          "criterion": "Visual Elements",
+          "finding": "There are zero <img> tags in post-body; the only image asset is the shared OG file imresizer-DevCommX-Blog-OG.png referenced in og-image and reused as the schema logo. The single HTML comparison table is the entire visual layer across 2,226 words, and an obvious diagram opportunity is skipped, namely a build-versus-run boundary graphic or an ARR-stage hiring timeline for the $5M-$25M / $50M+ progression.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Scannability",
+          "criterion": "Scannability",
+          "finding": "The opening paragraph front-loads the whole answer before any heading, and the hiring section uses bolded decision leads a skimmer can read alone (\"Under roughly $5M to $25M ARR, hire RevOps first.\", \"At $50M+ ARR, you almost always need both.\"). It is held back by only one bullet list in the body and by two duty inventories rendered as single long sentences after \"Day-to-day, a GTM engineer ships things like:\" and \"The RevOps engineer owns:\".",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Readability",
+          "criterion": "Reading Level & Flow",
+          "finding": "The build-versus-run motif carries cleanly across every section, and transitions are earned rather than bolted on (\"The overlap is real, and it is where hiring goes wrong\", \"That difference shows up in pay structure\"). Jargon is defined on first use rather than dumped. One metaphor wobble: the RevOps engineer is called \"the conductor bringing order and predictability to the revenue engine\" in the same paragraph that frames them as the system of record, mixing two images for one idea.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Length",
+          "criterion": "Content Length & Density",
+          "finding": "2,226 words is appropriate for a two-role comparison and there is no visible padding; each of the nine H2s carries new information rather than restating the intro. The declared add-blog-reading-time of \"11\" minutes implies roughly 200 words per minute, which is defensible but on the generous side for a B2B skim reader, and the FAQ answers do repeat the hiring-stage and salary paragraphs almost verbatim.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Schema is complete and FAQ text matches the body exactly on all 6 questions, but the publisher logo reuses the 1200x630 blog OG image instead of a real logo asset and dateModified duplicates datePublished.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Article",
+          "criterion": "Article Type Completeness",
+          "finding": "The BlogPosting node carries headline, description, url, datePublished 2026-07-01, dateModified, a 6-term keywords string, image, author, publisher, and mainEntityOfPage, so nothing required is missing. One flaw: author is a Person named Sumit Nautiyal but the author.url points to https://www.linkedin.com/company/devcommx, a company page rather than that person's profile, which weakens the Person entity resolution the jobTitle is trying to establish.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQPage Structure",
+          "finding": "The FAQPage node holds 6 entries, well above the 3-question minimum, and every one uses @type Question with name plus acceptedAnswer of @type Answer with a text string. Answers are full multi-sentence blocks rather than fragments, for example the tools question runs from \"GTM engineers lean on Clay, APIs, LLMs, scripts, and data pipelines\" through \"The stacks overlap on enrichment tools but diverge on purpose.\"",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Alignment",
+          "criterion": "Schema-to-Content Alignment",
+          "finding": "All 6 schema questions and all 6 answer strings match the body <h4>/<p> FAQ character-for-character, verified by direct comparison. The keywords list (\"gtm engineer vs revops engineer, gtm engineer vs revops, gtm engineering vs revops, revops engineer, gtm engineer role, build vs run gtm\") reflects the actual article, including the build-vs-run frame. Schema description differs in wording from the CMS meta-description but both accurately describe the same piece.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Graph",
+          "criterion": "@graph Implementation",
+          "finding": "A proper @graph array holds two nodes, each with a unique @id (#article and #faq) built on the canonical URL. What is missing is linkage between them: the FAQPage carries no isPartOf or about pointing at #article, the BlogPosting does not reference the FAQ node, and there is no WebPage, BreadcrumbList, or Organization node with its own @id for the graph to hang off.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Rich Results",
+          "criterion": "Rich Result Eligibility",
+          "finding": "image is a full ImageObject with url plus width 1200 and height 630, and publisher is an Organization with name, url, and a logo object. The defect is that publisher.logo.url reuses the exact same imresizer-DevCommX-Blog-OG.png file as the article image, so the logo is a 1200x630 blog banner rather than a dedicated logo asset, which fails Google's logo expectations. dateModified 2026-07-01 is identical to datePublished, giving no freshness signal.",
+          "score": 3,
+          "max": 5
+        }
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Attach inline citations to the seven orphaned statistics: link Bloomberry directly at \"rose more than 200 percent year over year in 2025\" and at the 70 percent Clay figure, name the source in prose for \"roughly three quarters of RevOps job postings\" and \"grown roughly 300 percent in postings since 2020\", and cite a salary dataset beside \"$127,000 to $132,000\". Move Further Reading from a dumping ground to a supplement.",
+    "2. Add a RevOps engineer compensation band. The H2 \"Backgrounds, Mindset, and Compensation\" and the meta-description promise a pay comparison, but RevOps gets only \"more heavily weighted toward base with operational KPIs\" with no number against the GTM engineer's $127K-$132K and $180K+ figures.",
+    "3. Fix heading levels: promote \"FAQ\" and \"Further Reading\" from <h3> to <h2> so they stop parsing as subsections of the \"Build This With DevCommX\" CTA, and keep the six questions at H3 under the FAQ H2.",
+    "4. Add at least two in-body visuals: a build-versus-run boundary diagram showing system of action vs system of record, and an ARR-stage hiring timeline covering the $5M-$25M RevOps-first, growth-stalls, and $50M+ both stages. The article currently has zero images and one table across 2,226 words.",
+    "5. Convert the two prose duty inventories into bulleted lists. \"Day-to-day, a GTM engineer ships things like:\" packs five deliverables into one sentence and \"The RevOps engineer owns:\" packs seven, both of which are prime LLM-extraction and skim targets.",
+    "6. Replace publisher.logo.url with a dedicated square DevCommX logo asset instead of reusing the 1200x630 imresizer-DevCommX-Blog-OG.png, point author.url at Sumit Nautiyal's personal LinkedIn rather than the company page, and add isPartOf linking the #faq node to #article.",
+    "7. Link the compensation paragraph to the existing gtm-engineer-salary post and the \"What a GTM Engineer Actually Does\" section to what-is-gtm-engineer-role-skills-2026 to convert partial cannibalisation into a hub-and-spoke cluster.",
+    "8. Add buy-versus-build cost framing beside \"if you do not want to hire either full time yet, an external team can stand up the build side\", since the article already publishes the $127K-$180K+ hire cost and leaves the comparison unfinished."
+  ]
+}

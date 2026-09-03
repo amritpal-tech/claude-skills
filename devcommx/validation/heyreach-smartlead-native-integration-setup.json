@@ -1,0 +1,281 @@
+{
+  "slug": "heyreach-smartlead-native-integration-setup",
+  "title": "HeyReach + Smartlead Integration: Setup, Limits, and the Reply-Sync Gap",
+  "words": 2446,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Excellent hands-on setup detail, but every number in the post is unsourced: all 3 external links are parked in the 'Further Reading' list and zero appear inline next to a claim.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Sources",
+          "criterion": "Stat Accuracy & Source Quality",
+          "finding": "Five checkable numbers carry no inline citation: 'Platform-average cold email reply rates sat around 3.4 percent in 2026', 'Coordinated multichannel sequences outperform single-channel by roughly two to three times', 'reply rates in the 15 to 25 percent range', 'LinkedIn allows roughly 100 connection requests per account per week', and 'roughly 15 to 20 cold emails per mailbox per day'. The one source that would actually support the limits claims, 'HeyReach Help Center: How to configure your sending limits', sits in a Further Reading <ul> at the bottom of a 2,446-word article instead of being linked at the sentence that makes the claim.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Depth",
+          "criterion": "Practitioner Depth",
+          "finding": "This reads like someone who has actually run the connection. It names the exact failure mode ('Create the destination email campaign in Smartlead first. This is the step people miss. Campaigns must already exist in Smartlead before they will show up in the HeyReach dropdown'), the non-obvious throttling behaviour ('If a single sender is active in three campaigns at once, its daily allowance is shared proportionally across those campaigns, not multiplied'), the reset window ('every Monday at 2 AM Pacific'), and the plan-level exclusion ('The Smartlead integration is not available to HeyReach white-label users'). It stops short of full depth at the coordination layer: 'fire a webhook that pauses or removes that lead from the matching Smartlead campaign' never names the HeyReach webhook event, the Smartlead endpoint, or how leads are matched across the two systems (email vs LinkedIn URL as the join key).",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Attribution",
+          "criterion": "Data Attribution",
+          "finding": "The single table ('Capability / Native (no extra tools) / You build it') is a pure assertion table with no source row, no 'verified as of' date, and no link, even though cells like 'Yes, via Add to Smartlead action' and 'Replies live in HeyReach Unibox or Smartlead master inbox, not both' are exactly the kind of vendor-doc facts that go stale. The performance metrics paragraph attributes 'Platform-average cold email reply rates' to no platform at all, so a reader cannot tell whether the 3.4 percent is Smartlead's own benchmark or a third-party study.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical Accuracy",
+          "finding": "Tool paths and feature names are correct and current: 'Settings, then Profile, then Smartlead API Key', 'Integrations, then HeyReach API, then Get API Key', the 'Add to Smartlead' action, HeyReach Unibox, Smartlead master inbox, and event types 'Email Reply, Email Open, and Email Link Click'. Two 2026-dated assertions are unverifiable as written: 'In 2026, HeyReach cut its Growth per-sender price, so the entry point is lower than it was' gives no before or after figure and no source, and 'the native integration, which HeyReach shipped in late 2025' dates a release with nothing to back it. 'Smartlead offers unlimited connected mailboxes on every plan' is stated as an absolute across all tiers, which is a risky blanket claim to publish without a pricing-page link.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Coverage",
+          "criterion": "Completeness",
+          "finding": "All nine H2s pay off, and the three promises in the title (Setup, Limits, Reply-Sync Gap) each get a dedicated section: four numbered steps for HeyReach-to-Smartlead, four for the reverse direction, a limits section covering senders, LinkedIn caps and mailbox warmup, and two sections on the gap plus its fix. One promise is under-delivered: the H2 'The rate and seat limits that shape your sequence' covers sending limits and seat pricing but never touches API rate limits, despite the entire integration running on two API keys and the coordination layer adding webhook traffic on top.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Keyword targeting and FAQ coverage are strong, but the 8 setup steps are bolded <p> tags rather than an <ol>, forfeiting the how-to snippet for a query that is explicitly a setup search.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Keywords",
+          "criterion": "Primary Keyword Targeting",
+          "finding": "'heyreach smartlead integration setup' is well covered: slug 'heyreach-smartlead-native-integration-setup', meta-title 'HeyReach Smartlead Integration Setup Guide', H1 'HeyReach + Smartlead Integration: Setup, Limits, and the Reply-Sync Gap', a bolded first-sentence match ('The HeyReach and Smartlead native integration'), 53 HeyReach and 51 Smartlead mentions in the body, and the FAQ 'How do I set up the HeyReach to Smartlead connection?'. The gap is at H2 level: not one of the nine H2s contains both brand names together, with 'Setup part one: send LinkedIn leads to Smartlead' and 'Setup part two: send email events back to HeyReach' each carrying only half the pair.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQ / People Also Ask",
+          "finding": "Six FAQs and every one is a real high-intent query rather than filler: 'Do I need Zapier to connect HeyReach and Smartlead?', 'Does the HeyReach Smartlead integration sync replies automatically?', 'What are the sending limits I need to plan around?', and the genuinely long-tail 'Is the Smartlead integration available on HeyReach white-label plans?'. Each answer opens with a direct 'No.' or 'Yes, when it is coordinated.' before elaborating, which is the correct PAA answer shape.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Tables",
+          "criterion": "Comparison / Featured Snippet Tables",
+          "finding": "The one table is clean and extractable: proper thead/tbody, three columns ('Capability', 'Native (no extra tools)', 'You build it'), five rows, plain-text cells with no nested markup, and a horizontal-scroll wrapper. It is undermined by having no <caption> and by the rest of the article carrying zero list markup where snippets live: the eight setup steps are '<p><strong>Step 1.</strong>' paragraphs rather than an <ol>, and the five-touch cadence ('Day 1... Day 3... Day 5... Day 8... Day 14') is buried inside a single prose paragraph instead of an ordered list.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Links",
+          "criterion": "Internal & External Link Structure",
+          "finding": "Three internal links use descriptive anchors and sit in relevant context: 'B2B outbound automation guide', 'B2B outbound tool stack' (placed inside the setup-part-two section), and 'human-in-the-loop AI SDR orchestration' (placed in the coordination-layer section). Two structural problems: all three external links are confined to a 'Further Reading' <ul>, so a 2,446-word body contains zero inline external citations; and the post restates the core numbers of three sibling drafts (linkedin-connection-request-limits-2026-safe-outreach, how-many-inboxes-mailboxes-cold-email-at-scale, smartlead-replies-not-showing-master-inbox-fix) without linking to any of them.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical SEO",
+          "finding": "meta-title is 42 characters and meta-description is 160 characters, both inside limits though the description is at the truncation boundary. The schema-markup string parses as valid JSON-LD, the H1 comes from the 'name' field with no competing H1 in post-body (correct for the Webflow template), heading order runs H2 to H3 to H4 with no skipped level, and og-image is populated. Minor deductions: the description ends at exactly 160 chars with no buffer, and 'blog-list' duplicates the canonical URL rather than pointing at a list page.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.2,
+      "flag": "A model-perfect opening definition paragraph, but the performance numbers an LLM would want to quote ('3.4 percent', 'two to three times', '15 to 25 percent') have no nameable source attached.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Definitions",
+          "criterion": "Direct Definitions",
+          "finding": "The opening paragraph is a lift-ready answer block: 'The HeyReach and Smartlead native integration connects LinkedIn outreach in HeyReach with cold email in Smartlead so leads move between the two automatically, with no Zapier, Make, or manual CSV exports', followed immediately by the mechanism and the caveat 'It syncs lead data both ways, but it does not natively sync replies'. Supporting concepts are defined just as crisply: 'A sender is one connected LinkedIn account' and 'The fix is a thin coordination layer that sits between the two tools and enforces the one rule the native sync leaves out: if a prospect replies on either channel, stop the other channel.'",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Structure",
+          "criterion": "Structured Data for AI Parsing",
+          "finding": "Parseable assets are the 5-row capability table, the 6-question FAQ, and FAQPage schema. Against that, the body contains exactly one <ul> (the 3-item Further Reading list) and zero <ol> elements, so the two most extractable sequences in the post are trapped in prose: the eight setup steps exist only as '<strong>Step 1.</strong>' inside paragraphs, and the recommended cadence 'Day 1, a signal triggers a LinkedIn connection request in HeyReach. Day 3, a cold email in Smartlead references the same trigger' runs as a single continuous paragraph with no list or table.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Statistics",
+          "criterion": "Statistical Authority",
+          "finding": "Not one statistic in the article is attributable to a named entity. 'Platform-average cold email reply rates sat around 3.4 percent in 2026' names no platform; 'Coordinated multichannel sequences outperform single-channel by roughly two to three times' names no study; 'teams running tight-ICP multichannel with real personalisation report reply rates in the 15 to 25 percent range' names no teams and no dataset. An LLM can restate these but cannot cite them to DevCommX or to anyone, which is the opposite of what this dimension rewards.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Entity",
+          "criterion": "Entity Association",
+          "finding": "DevCommX appears only twice in 2,446 words: 'We build owned outbound systems for B2B teams at DevCommX, so we set this up often' in the intro and 'At DevCommX we build signal-based outbound systems that your team owns end to end, coordination layer included' in the CTA. Author Sumit Nautiyal is present in the author-name field and the schema author node but is never named or quoted anywhere in the body, and there is no experience marker tying him to this specific integration (no 'across the HeyReach deployments we have run' style claim), so the topic-to-expert link exists only in metadata.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Distinctiveness",
+          "criterion": "GEO Distinctiveness",
+          "finding": "The core query cluster ('heyreach smartlead integration setup', 'heyreach smartlead reply sync') is unique in the pending library, and no other draft in /longtail covers HeyReach. Cannibalisation risk is real but partial: this post reproduces the headline claim of linkedin-connection-request-limits-2026-safe-outreach ('roughly 100 connection requests per account per week' with the Monday reset), of how-many-inboxes-mailboxes-cold-email-at-scale ('15 to 20 cold emails per mailbox per day' plus 'two to three weeks of warmup'), and of smartlead-replies-not-showing-master-inbox-fix ('email replies live in Smartlead's master inbox'), without linking to any of the three.",
+          "score": 3,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Owned-infrastructure narrative and the sanctioned 40+ demos proof both land in the CTA, but pricing is discussed as a model only, with no figure anywhere in the post.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Positioning",
+          "criterion": "Differentiation Narrative",
+          "finding": "The owned-infrastructure and signal-based model is stated explicitly: 'At DevCommX we build signal-based outbound systems that your team owns end to end, coordination layer included' and 'talk to us about your outbound stack' following 'into one system you control'. The article also earns the positioning rather than asserting it, with the line 'The native integration gives you the plumbing. The coordination layer gives you the judgement.' Deduction: the narrative appears only in the intro and the final section; the seven sections in between are vendor-neutral how-to with no DevCommX point of view.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Proof",
+          "criterion": "Proof Metrics & Evidence",
+          "finding": "The sanctioned framing is used correctly and in context: 'the kind of setup that took one client from zero to 40-plus qualified demos in about six weeks because the sequence triggered on real buying signals instead of a static list'. It appears exactly once, in the closing CTA paragraph, and carries no client segment, deal size, or channel split, so a skeptical reader gets one unverifiable outcome and nothing else. No before/after numbers from an actual HeyReach plus Smartlead build are offered anywhere, despite the claim 'we set this up often'.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Pricing",
+          "criterion": "Pricing Transparency",
+          "finding": "Cost is discussed as a pricing model but never as a number. The post says 'HeyReach is priced per sender, not per user', 'You can invite unlimited team members, VAs, or clients into the workspace at no extra cost', 'Smartlead offers unlimited connected mailboxes on every plan', and 'In 2026, HeyReach cut its Growth per-sender price, so the entry point is lower than it was' - which is a price-change claim with no before figure, no after figure, and no link. There is no total-cost-of-stack estimate, no cost of the coordination layer (n8n, Make or Zapier all have real per-execution costs at outbound volume), and no DevCommX engagement or value framing.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "CTA",
+          "criterion": "CTA Quality",
+          "finding": "The close is specific and matched to the article's own thesis: 'If you want help wiring HeyReach, Smartlead, and the reply-pause logic into one system you control, talk to us about your outbound stack', anchored on https://www.devcommx.com/contact. It names the exact deliverable the reader just learned they were missing. Deduction: it is the only conversion point in 2,446 words, with no mid-article CTA after the reply-sync gap section (the natural pain peak) and no lower-friction offer such as a coordination-layer template or audit.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Differentiation",
+          "criterion": "Content Differentiation",
+          "finding": "This is the only HeyReach-focused draft in the pending set and the only one covering a native LinkedIn-to-email tool handoff, so it fills a clear integration-setup slot alongside the Apollo, Lemlist, Clay and Smartlead troubleshooting posts. Its distinct angle - 'The part that trips people up is not the connection, it is understanding exactly what the native sync covers and what you still have to engineer yourself' - is genuinely different from vendor documentation. Deducted one point because three of its core facts are duplicated from sibling drafts rather than linked out to them.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Zero in-body visuals in a step-by-step UI walkthrough: no screenshot of the 'Add to Smartlead' action or either API key screen, and no diagram of the two-way sync or reply-pause webhook flow.",
+      "flag_type": "critical",
+      "criteria": [
+        {
+          "category": "Headings",
+          "criterion": "Heading Architecture",
+          "finding": "Nine H2s, two H3s and six H4s with no skipped levels: the hierarchy runs H1 (from the 'name' field) to H2 to H3 to H4 throughout, and the H2s are descriptive and sequential ('Setup part one: send LinkedIn leads to Smartlead', then 'Setup part two: send email events back to HeyReach'). The flaw is nesting: 'Further Reading' and 'FAQ' are H3s, which makes them semantic children of the CTA H2 'Build outbound systems you actually own', and the six FAQ questions then sit at H4 - the FAQ block is a top-level section and should be an H2 with H3 questions.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Visuals",
+          "criterion": "Visual Elements",
+          "finding": "The post-body contains zero <img> tags. This is more damaging here than in a typical draft because the article is a UI walkthrough that describes screens it never shows: 'In Smartlead, go to Settings, then Profile, then Smartlead API Key', 'In HeyReach, go to Integrations, then HeyReach API, then Get API Key', and 'From the dropdown, select the Smartlead campaign you want to feed' all cry out for screenshots. The reply-pause coordination layer, described only in prose ('When HeyReach registers a LinkedIn reply, fire a webhook that pauses or removes that lead from the matching Smartlead campaign'), has no flow diagram. The only image asset attached to the record is the shared generic og-image 'imresizer-DevCommX-Blog-OG.png', which is also reused as the schema publisher logo.",
+          "score": 1,
+          "max": 5
+        },
+        {
+          "category": "Scannability",
+          "criterion": "Scannability",
+          "finding": "The opening paragraph answers the query in three sentences before any scrolling, the nine H2s are self-explanatory, bolded lead-ins carry the skim ('One important caveat up front.', 'HeyReach is priced per sender, not per user.', 'LinkedIn limits still govern everything.', 'Smartlead scales through mailboxes.'), and the capability table gives one strong visual anchor. Against that, the body has a single 3-item <ul> and no <ol> at all, so the two most list-shaped passages - the eight setup steps and the Day 1 to Day 14 cadence - render as walls of paragraph text.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Readability",
+          "criterion": "Reading Level & Flow",
+          "finding": "The register is practitioner-to-practitioner with no jargon dump, and the transitions are deliberate rather than mechanical: 'Read that table again before you launch anything', 'Play that out', 'Here is the part that separates a clean setup from a sloppy one'. Concepts are explained before they are used (sender defined before seat pricing, the gap defined before the fix). Minor deduction for a repeated rhetorical figure at the end - 'The lift is real, but only if the two channels cooperate instead of colliding' immediately followed by 'A native integration with no reply sync, run carelessly, gets you the collision. Run with a coordination layer, it gets you the lift.'",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Length",
+          "criterion": "Content Length & Density",
+          "finding": "2,446 words (11-minute reading time on the record) for a query whose complete answer is eight setup steps plus one limitation is on the long side, and the padding is concentrated in one idea: the reply-sync gap is stated in the intro ('it does not natively sync replies'), in table rows 3 and 4, across the whole of 'The reply-sync gap, and why it matters', again in 'How to close the gap with a coordination layer', again in FAQ 2, and once more in the closing paragraph - six restatements of a single fact. The limits section, by contrast, is dense and non-repetitive.",
+          "score": 3,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Strongest dimension: all 6 FAQ questions and answers match the body character-for-character, but the two @graph nodes are not cross-linked and publisher.logo reuses the 1200x630 OG image.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Article",
+          "criterion": "Article Type Completeness",
+          "finding": "The BlogPosting node carries headline (identical to the 'name' field, 70 chars), description, url, datePublished and dateModified '2026-07-01', a 4-phrase keywords string, an author Person with jobTitle 'VP of Revenue Operations & GTM Engineering, DevCommX', publisher, and mainEntityOfPage. Two weaknesses: author.url is 'https://www.linkedin.com/company/devcommx', a company page used as a Person's URL, which blurs the author entity; and wordCount, articleSection and inLanguage are all absent.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQPage Structure",
+          "finding": "The FAQPage node has 6 entries against a 3+ requirement, and every one is correctly formed: '@type': 'Question' with a 'name' and an acceptedAnswer of '@type': 'Answer' carrying a plain-text 'text' value. Answers are substantive rather than one-liners - the sending-limits answer runs to three sentences covering both channels ('each HeyReach sender is capped at roughly 100 connection requests per week... Smartlead mailboxes should send about 15 to 20 cold emails per day each').",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Alignment",
+          "criterion": "Schema-to-Content Alignment",
+          "finding": "Verified programmatically: all 6 schema Question names and all 6 acceptedAnswer.text values match the body's H4/P pairs exactly, character for character, with no truncation or paraphrase. The keywords string ('heyreach smartlead integration setup, heyreach smartlead native integration, multichannel outreach linkedin email, heyreach smartlead reply sync') maps directly onto the article's actual sections, and the schema description ('Step-by-step setup for the native HeyReach and Smartlead integration, the rate and seat limits to plan around, and how to close the reply-sync gap') accurately describes what the body delivers even though it is worded differently from the meta-description.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Graph",
+          "criterion": "@graph Implementation",
+          "finding": "A proper @graph array is used with two nodes, each carrying a distinct fragment @id: '...#article' on the BlogPosting and '...#faq' on the FAQPage. The nodes are isolated, however: the FAQPage has no isPartOf or mainEntityOfPage pointing back at '#article', the BlogPosting does not reference the FAQ, and neither the publisher Organization nor the mainEntityOfPage WebPage is given its own @id to be referenced from elsewhere - so the graph is two standalone blocks in an array rather than a linked entity graph.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Rich Results",
+          "criterion": "Rich Result Eligibility",
+          "finding": "The required pieces are present: image as an ImageObject with url plus 'width': 1200 and 'height': 630, publisher as an Organization with name, url and logo, and dateModified populated. Two issues hold it back: publisher.logo reuses the identical OG file '..._imresizer-DevCommX-Blog-OG.png' as the article image rather than an actual DevCommX logo, and supplies no width/height, which is exactly what Google's logo guidance warns against; and dateModified is identical to datePublished, so the post ships with no freshness signal.",
+          "score": 3,
+          "max": 5
+        }
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Move the three Further Reading URLs inline to the claims they support - link the HeyReach sending-limits doc at 'roughly 100 connection requests per account per week' and the Smartlead x HeyReach guide at the Step 1 API-key instruction - and either source or cut the three unattributed performance stats ('3.4 percent in 2026', 'two to three times', '15 to 25 percent range').",
+    "2. Add in-body visuals to a setup guide that currently has zero: screenshots of the Smartlead API key screen (Settings > Profile), the HeyReach Integrations > Get API Key screen, and the 'Add to Smartlead' campaign dropdown, plus one diagram of the reply-pause webhook flow between HeyReach Unibox and the Smartlead campaign.",
+    "3. Convert the eight bolded 'Step 1.' paragraphs into two <ol> blocks and the 'Day 1 / Day 3 / Day 5 / Day 8 / Day 14' cadence paragraph into an ordered list or table, then add HowTo schema for the two setup sequences to compete for the step-by-step rich result.",
+    "4. Fix the schema graph: cross-link the FAQPage to the article with isPartOf '#article', give the publisher Organization and WebPage their own @id nodes, swap publisher.logo for a real DevCommX logo asset with width/height instead of the 1200x630 OG image, and point author.url at Sumit Nautiyal's personal LinkedIn profile rather than the company page.",
+    "5. Promote 'Further Reading' and 'FAQ' from H3 to H2 (with questions at H3), since as H3s they currently nest under the CTA H2 'Build outbound systems you actually own'.",
+    "6. Add internal links to the three sibling drafts whose core numbers this post restates - linkedin-connection-request-limits-2026-safe-outreach (the 100/week cap), how-many-inboxes-mailboxes-cold-email-at-scale (15-20 per mailbox, 2-3 week warmup), and smartlead-replies-not-showing-master-inbox-fix (master inbox replies) - to defuse cannibalisation and pass authority.",
+    "7. Replace the vague 'In 2026, HeyReach cut its Growth per-sender price' with the actual per-sender figure and a pricing-page link, and add a one-paragraph total-cost view of the stack including the n8n/Make/Zapier coordination layer.",
+    "8. Cut roughly 300 words of reply-sync repetition (the point is restated six times across intro, table, two H2 sections, FAQ 2 and the CTA) and add a mid-article CTA immediately after 'The reply-sync gap, and why it matters', which is the article's pain peak."
+  ]
+}

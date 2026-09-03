@@ -1,0 +1,280 @@
+{
+  "slug": "how-to-get-cited-by-perplexity-b2b",
+  "title": "How to Get Cited by Perplexity: A B2B Playbook for AI Search Visibility",
+  "words": 2724,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Strong practitioner detail, but almost every headline statistic is attributed to unnamed 'independent 2026 analyses' with zero inline source links.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Sources",
+          "criterion": "Stat Accuracy & Source Quality",
+          "finding": "The load-bearing numbers are unsourced: 'reported at more than 50 billion pages as of early 2026', 'Two independent 2026 analyses, one covering hundreds of millions of citations and one covering roughly 118,000 responses, both landed near 11 percent domain overlap', and 'Early 2026 data put social sources near 31 percent of Perplexity citations' name no publisher and carry no link. Only two sources are named at all, 'Semrush's study put the average AI search visitor at roughly 4.4 times the value of an organic visit' and 'Seer Interactive's benchmark had Perplexity-referred sessions converting near 10 percent', and neither is hyperlinked. In 2,724 words the body contains exactly one inline external link (perplexity.com/perplexitybot.json).",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Depth",
+          "criterion": "Practitioner Depth",
+          "finding": "Real deployment knowledge is visible: it diagnoses edge blocking rather than robots.txt ('Cloudflare bot fight mode, an over-eager WAF rule, a rate limit tuned for scrapers, or a verified-bots-only setting'), tells you to 'grep your access logs for each user agent and check the status codes', names the Sonar API 'search_domain_filter parameter', and estimates the refresh sweep as 'a two-day job for a small team'. The gap is that none of it is made copy-pasteable: it instructs you to grep logs and allowlist IP ranges but ships no command, no robots.txt block, and no example log line, where the sibling Claude post includes 'A robots.txt Starting Point You Can Copy'.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Attribution",
+          "criterion": "Data Attribution",
+          "finding": "The single table ('What differs / How Perplexity behaves / What you change') carries six rows of behavioural assertions with no source column and no citation anywhere in the block, including contestable ones like 'PerplexityBot obeys it, Perplexity-User generally does not' and 'roughly 6 to 20 plus sources'. The in-house claim 'we still find it on roughly half the sites we audit' gives no sample size or period, which directly contradicts the post's own instruction to label original data 'with its method and sample size'.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Accuracy",
+          "criterion": "Technical Accuracy",
+          "finding": "The core technical material checks out for 2026: the two documented agents, the verbatim user-agent string 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; PerplexityBot/1.0; +https://perplexity.ai/perplexitybot)', the published IP JSON, and the Sonar 'search_domain_filter' parameter are all correctly named. Two soft spots: the Further Reading link 'https://docs.perplexity.ai/docs/resources/perplexity-crawlers' uses a docs path that no longer matches Perplexity's current crawler-docs URL and should be re-verified before publish, and 'Perplexity's Comet Plus publisher programme, which shares subscription revenue with publishers on an 80/20 split, moved into its formal form in early 2026' is vague about a programme first announced in 2025.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Completeness",
+          "criterion": "Completeness",
+          "finding": "All eight H2 promises are paid off in the body: the two-crawler section delivers both agents plus the rendering caveat, the prompt-map section delivers all four tiers, and the measurement section delivers all three named layers. The one unfulfilled promise is in the closing H2 'Find Out Where You Actually Stand', which tells the reader to 'run our free AI Visibility Checker against your domain' but never links the tool, so the section's central instruction cannot be acted on.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Metadata, FAQ and internal linking are clean; the weakness is one inline external citation and no exact-match keyword in any H2.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Keywords",
+          "criterion": "Primary Keyword Targeting",
+          "finding": "'How to get cited by Perplexity' is in the slug, the H1 name, the meta-title ('How to Get Cited by Perplexity: B2B Playbook'), the meta-description, the bolded first clause ('To get cited by Perplexity as a B2B brand'), and FAQ one. 'Perplexity' appears 74 times across the body, but the exact phrase appears only 3 times and in zero of the eight H2s: the closest are 'How to Structure a Page Perplexity Can Actually Pull' and 'Measure Perplexity Citations Without Guessing'.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQ / People Also Ask",
+          "finding": "Six FAQ entries, all PAA-shaped and high intent rather than filler: 'How long does it take to get cited by Perplexity?', 'Does blocking PerplexityBot stop Perplexity from citing me?', 'Is Reddit still worth it for Perplexity citations in 2026?', 'Do I need schema markup to get cited by Perplexity?', 'How is getting cited by Perplexity different from getting cited by ChatGPT?', and 'Can I track Perplexity citations without a paid tool?'. Each answer opens with a direct verdict ('It stops you from being indexed', 'Schema is not a citation lever on its own') before the explanation.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Tables",
+          "criterion": "Comparison / Featured Snippet Tables",
+          "finding": "One well-formed 3-column, 6-row table with a proper thead and an overflow-x wrapper, keyed 'What differs / How Perplexity behaves / What you change', covering Index, Citations per answer, Source mix, Freshness, robots.txt and Traffic shape, which is directly snippet-extractable. But the article's central thesis, the ChatGPT-versus-Perplexity divergence built on '11 percent domain overlap' and 'roughly eight for ChatGPT', is left entirely in prose rather than given the head-to-head comparison table that would be the strongest snippet target on the page.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Links",
+          "criterion": "Internal & External Link Structure",
+          "finding": "Internal linking is strong and verified: all four internal targets exist in the live slug list (how-to-get-cited-by-chatgpt, how-to-optimize-content-for-llms-llmo-playbook, how-clay-uses-clay-seo-aeo-strategy, how-to-measure-llmo-ai-visibility-tracking) and the anchors are descriptive, plus a /contact CTA link. External linking is thin: only one inline external citation in the whole body, with the other three references (Perplexity Crawlers docs, Sonar Pro API, Google structured data intro) parked in a 'Further Reading' list where they support no specific claim, and the named Semrush and Seer Interactive studies get no link at all.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical SEO",
+          "finding": "Meta-title is 44 characters and meta-description is 155 characters, both inside limits. The body correctly contains no stray H1 (the CMS 'name' field supplies it), heading order runs H2 to H3 to H4 with no skipped level, and a valid JSON-LD @graph is present in schema-markup with a canonical url matching the blog-list field.",
+          "score": 5,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.2,
+      "flag": "Engine-specific substance is genuinely distinct, but unnamed statistics and prose-buried frameworks limit what an LLM can lift and re-attribute.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Definitions",
+          "criterion": "Direct Definitions",
+          "finding": "The opening paragraph is a fully extractable three-condition answer ('three things have to be true at once: your pages are reachable by PerplexityBot and Perplexity-User, your key claims are corroborated... and every page opens with a dated, extractable answer'), and the crawler section gives clean one-line definitions: 'PerplexityBot builds the search index that decides whether you can be retrieved at all' and 'Perplexity-User is the live fetcher'. Three H2s break the post's own rule to 'Lead every H2 with a self-contained answer' by opening with framing instead: 'The most expensive assumption in AEO is that every answer engine pulls from the same place' and 'Do not chase AI visibility in the abstract'.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Structure",
+          "criterion": "Structured Data for AI Parsing",
+          "finding": "There is one table, a 6-question FAQ, and bolded lead-ins that act as pseudo-list markers ('Rendering matters too.', 'Layer one is crawl access.', 'Layer two is citation presence.'). But the two named frameworks are buried in prose rather than enumerated: the four third-party moves run as 'First, entity consistency... Second, get onto the comparison and alternatives pages... Third, publish video... Fourth, seed genuinely useful answers' inside a single paragraph, and the four prompt tiers are similarly one paragraph. The entire 2,724-word body contains one <ul> with three items, all in Further Reading.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Authority",
+          "criterion": "Statistical Authority",
+          "finding": "Only two claims are attributable to a named source an LLM could re-cite: 'Semrush's study put the average AI search visitor at roughly 4.4 times the value of an organic visit' and 'Seer Interactive's benchmark had Perplexity-referred sessions converting near 10 percent against under 2 percent for Google organic'. The most quotable numbers in the piece, the '11 percent domain overlap', the '50 billion pages' index, the '31 percent' social-source share and the '118,000 responses' sample, are all credited to anonymous 'independent 2026 analyses', 'Mid-2026 analyses' or 'Teardowns of its ranking behaviour', which an answer engine cannot attribute back to anyone.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Entity",
+          "criterion": "Entity Association",
+          "finding": "DevCommX is tied to the topic in first-person operator voice ('At DevCommX we build signal-based GTM systems, and over the last year answer engines stopped being a curiosity and started showing up as a pipeline source', 'we still find it on roughly half the sites we audit'), and the schema names Sumit Nautiyal with jobTitle 'VP of Revenue Operations & GTM Engineering, DevCommX'. Weak points: the brand is named only three times in 2,724 words, and the schema carries no sameAs array even though the article itself tells readers to ship 'a complete sameAs list'.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Distinctiveness",
+          "criterion": "GEO Distinctiveness",
+          "finding": "The query cluster is genuinely distinct (branded 'perplexity' terms) and the post carries material no sibling can hold: the PerplexityBot-versus-Perplexity-User robots.txt asymmetry, the perplexitybot.json IP list, the Sonar API 'search_domain_filter' tracking method, the Comet Plus 80/20 publisher split, and the 2026 Reddit reversal. Cannibalisation risk is real but moderate at the skeleton level: three of its eight H2s are near one-for-one restatements of the Claude post's ('How to Structure a Page Perplexity Can Actually Pull' vs 'How to Structure a Page Claude Will Cite', 'Measure Perplexity Citations Without Guessing' vs 'Measure Whether Any of This Is Working', 'Corroboration Beats Authorship' vs 'Why Third-Party Sources Decide Your Citations'), and the corroboration, page-structure and CTA arguments are the same argument reused across the Claude, Gemini and ChatGPT siblings. It defends its slot mainly through the crawler and Sonar detail, so those sections must not be trimmed.",
+          "score": 3,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "The owned-infrastructure narrative and the 40+ demos proof appear only in the final CTA paragraph, and the free-tool CTA is not linked.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Positioning",
+          "criterion": "Differentiation Narrative",
+          "finding": "The owned-infrastructure model is stated once, in the closing paragraph: 'the same signal-based GTM infrastructure that has taken clients from setup to 40 plus qualified demos in around six weeks, and you own it rather than renting a campaign', with a single earlier mention ('At DevCommX we build signal-based GTM systems'). Across the seven substantive H2s the advice is engine-generic and never shows the DevCommX system doing the work, so a reader could finish the crawl-access, corroboration and measurement sections without learning what DevCommX actually builds.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Proof",
+          "criterion": "Proof Metrics & Evidence",
+          "finding": "The sanctioned framing is present verbatim ('40 plus qualified demos in around six weeks') and there is one first-party observation, 'A silent 403 to PerplexityBot is the cheapest AEO bug you will ever fix, and we still find it on roughly half the sites we audit'. Both are unquantified as evidence: the audit claim carries no sample size or timeframe, and the illustrative metric in the writing section ('Median reply rate was 3.1 percent across 40 campaigns in Q1 2026') is presented as an example sentence, not as DevCommX data, so the post publishes no original dataset despite arguing that 'Proprietary numbers get cited disproportionately'.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Pricing",
+          "criterion": "Pricing Transparency",
+          "finding": "There is no cost figure anywhere in the post: no Perplexity Pro or Sonar API pricing despite recommending the API for tracking, no budget range for the AEO work, and no DevCommX engagement pricing. The only cost framing is effort-based ('That is a two-day job for a small team and it compounds') plus the borrowed value proxy of Semrush's '4.4 times the value of an organic visit', which is used to 'justify the budget' without ever naming one.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "CTA",
+          "criterion": "CTA Quality",
+          "finding": "The closing CTA is well-constructed as a two-step, tool-then-call sequence with a specific promise ('run our free AI Visibility Checker against your domain to see which prompts already surface you, which competitors hold the citations you want, and where your crawl access is quietly broken') and a linked 'Book a GTM strategy call' pointing to /contact. The defect is that the free AI Visibility Checker, the lower-friction half of the offer and the one the whole H2 is built around, is mentioned in plain text with no hyperlink, so the primary conversion path is a dead end.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Differentiation",
+          "criterion": "Content Differentiation",
+          "finding": "It occupies the Perplexity slot in a four-engine cluster and explicitly positions against its siblings rather than repeating them ('We covered the general mechanics in how to get cited by ChatGPT, and there is a companion post on Claude in the same cluster. This one stays narrow on purpose'). Its unique assets, the two-crawler asymmetry, the perplexitybot.json allowlist step, Sonar API citation logging and Comet Plus, do not appear in the Claude or Gemini drafts.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Clean heading tree and well-paced prose, but zero in-body visuals and only one bulleted list across 2,724 words.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Headings",
+          "criterion": "Heading Architecture",
+          "finding": "Eight H2s, two H3s ('Further Reading', 'FAQ') and six H4 FAQ questions, with no skipped levels and descriptive, question-adjacent H2 phrasing such as 'Two Crawlers, and Only One of Them Reads Your robots.txt'. Minor semantic issue: both H3s sit after the CTA H2 'Find Out Where You Actually Stand', so the FAQ and reference list are nested inside the conversion section rather than standing as top-level H2 blocks.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Visuals",
+          "criterion": "Visual Elements",
+          "finding": "The body contains zero <img> tags, zero diagrams and zero charts across 2,724 words; the only image asset is the shared OG file (imresizer-DevCommX-Blog-OG.png), which never renders in the article. The single visual break is the one HTML comparison table. Content that is explicitly visual in nature, the PerplexityBot versus Perplexity-User request flow and the three-layer measurement stack, is delivered entirely in prose where a diagram would carry it.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Scannability",
+          "criterion": "Scannability",
+          "finding": "The hook is a four-sentence direct answer, the H2s are self-describing, and bolded lead-ins break up the longer sections ('Rendering matters too.', 'Use tables for anything comparative.', 'Schema is disambiguation, not a lever.', 'Layer one is crawl access.'). Against that, the post is paragraph-dominant: most body paragraphs run 90 to 130 words, the four-item corroboration list and the four prompt tiers are each compressed into one dense block, and the only <ul> in the article is the three-item Further Reading list.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Flow",
+          "criterion": "Reading Level & Flow",
+          "finding": "The argument sequences logically from retrieval access to corroboration to freshness to page structure to measurement, and every technical term is defined on first use (PerplexityBot, Perplexity-User, chunk-level retrieval, Sonar API). The voice is direct and non-padded, with sharp transitional lines like 'If you optimised for one engine and assumed the other followed, you optimised for one engine.' The minor cost is density: several 120-word paragraphs stack three or four distinct instructions without a visual break.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Length",
+          "criterion": "Content Length & Density",
+          "finding": "2,724 words against a stated 12-minute reading time is right for a branded-engine playbook and matches the sibling drafts. There is no padding: no restated intro, no 'in conclusion' section, and no generic AEO preamble, because the general mechanics are deliberately offloaded to the linked ChatGPT post and LLMO playbook. Every H2 carries new, engine-specific instruction.",
+          "score": 5,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Valid two-node @graph with FAQ text matching the body exactly; gaps are the missing sameAs, an identical dateModified, and a Person author pointed at a company LinkedIn URL.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Article",
+          "criterion": "Article Type Completeness",
+          "finding": "The BlogPosting node carries headline, description, url, datePublished, dateModified, a nine-term keywords string ('how to get cited by perplexity for b2b, perplexity citations, perplexitybot, perplexity-user, answer engine optimization, AEO, LLMO, AI search visibility, B2B SaaS'), image, author, publisher and mainEntityOfPage. The one defect is the author node: '@type': 'Person', 'name': 'Sumit Nautiyal' is given 'url': 'https://www.linkedin.com/company/devcommx', which is an Organization page standing in for a person's profile and will confuse entity resolution.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQPage Structure",
+          "finding": "The FAQPage node holds six mainEntity items, well above the 3+ floor, and every one uses '@type': 'Question' with a name and a nested 'acceptedAnswer' of '@type': 'Answer' carrying a populated text string. Answers are substantive rather than stub, for example the 60-word answer to 'Does blocking PerplexityBot stop Perplexity from citing me?'.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Alignment",
+          "criterion": "Schema-to-Content Alignment",
+          "finding": "All six schema questions and all six acceptedAnswer.text strings match the body FAQ character-for-character on programmatic comparison, including the Reddit answer's '31 percent of Perplexity citations' phrasing. The schema description is identical to the meta-description, the headline matches the CMS name field, and the keywords ('perplexitybot', 'perplexity-user', 'AEO', 'LLMO') map to sections that actually exist in the article.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Graph",
+          "criterion": "@graph Implementation",
+          "finding": "A proper @graph array is used with two nodes, each carrying a fragment @id ('...#article' and '...#faq') under the canonical URL. What is missing is cross-referencing and breadth: the FAQPage is not tied to the article via isPartOf or mainEntityOfPage, and there is no standalone Organization, WebSite or BreadcrumbList node, so the publisher exists only as an inline sub-object with no @id to reference.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Rich Results",
+          "criterion": "Rich Result Eligibility",
+          "finding": "The image is a full ImageObject with url plus width 1200 and height 630, the publisher is an Organization with a logo ImageObject, and dateModified is present, so the core eligibility bar is met. Two weaknesses: the publisher logo reuses the same 1200x630 OG file rather than an actual logo asset and omits width/height, and dateModified is set to '2026-07-01', identical to datePublished, on a post whose own thesis is that 'Recency is an explicit factor' and that you should 'mirror it in the dateModified property'.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Name and inline-link every headline statistic: replace 'Two independent 2026 analyses' behind the 11 percent domain-overlap claim, the '50 billion pages' index size, the '31 percent' social-source share and the '118,000 responses' sample with named, hyperlinked studies, and add links to the Semrush 4.4x and Seer Interactive 10 percent benchmarks that are currently named but unlinked.",
+    "2. Link the free AI Visibility Checker in the closing CTA. The H2 'Find Out Where You Actually Stand' tells the reader to run it but ships no URL, leaving the lower-friction half of the conversion path dead while only 'Book a GTM strategy call' is clickable.",
+    "3. Add the two missing extractable structures: a ChatGPT-versus-Perplexity comparison table for the index, citation-count, freshness and source-mix differences (currently prose only), and convert the four-item corroboration paragraph ('First, entity consistency... Fourth, seed genuinely useful answers') and the four prompt tiers into numbered lists.",
+    "4. Add in-body visuals. There are zero images across 2,724 words; at minimum diagram the PerplexityBot versus Perplexity-User request flow and the three-layer measurement stack, both of which are described in prose that a single diagram would carry better.",
+    "5. Fix the schema gaps the article itself preaches: add a sameAs array and a standalone Organization node with an @id, point the Person author URL at Sumit Nautiyal's personal profile instead of linkedin.com/company/devcommx, use a real logo asset with width/height for the publisher, and set dateModified to the actual last-edit date rather than repeating datePublished.",
+    "6. Protect the post from its siblings: rename the overlapping H2s ('How to Structure a Page Perplexity Can Actually Pull', 'Measure Perplexity Citations Without Guessing', 'Corroboration Beats Authorship') so they do not mirror the Claude post one-for-one, and keep the Perplexity-only material (two-crawler asymmetry, perplexitybot.json allowlisting, Sonar search_domain_filter, Comet Plus) as the bulk of the word count.",
+    "7. Verify or replace the Further Reading link 'https://docs.perplexity.ai/docs/resources/perplexity-crawlers' before publish, and add a copy-pasteable robots.txt allow block plus an example log-grep command to back the instruction to 'grep your access logs for each user agent'."
+  ]
+}

@@ -1,0 +1,280 @@
+{
+  "slug": "fix-gmail-postmaster-spam-rate-over-0-3-percent",
+  "title": "Gmail Spam Rate Over 0.3%? The Step by Step Postmaster Tools Recovery Plan",
+  "words": 2778,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Facts are accurate and the practitioner depth is genuinely high, but every external source sits in a bottom-of-page 'Further Reading' list instead of being cited inline at the claim.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Sources",
+          "criterion": "Stat Accuracy & Source Quality",
+          "finding": "The load-bearing claims are correct and specific: 'bulk senders remain ineligible for mitigation while user reported spam rate is greater than 0.3%, and they become eligible again only when the rate stays below 0.3% for seven consecutive days' and the 'close to 5,000 messages or more to personal Gmail accounts within a 24 hour period' bulk-sender threshold both track Google's published sender guidelines. But not one of the four external sources is hyperlinked inline at the claim - all four (support.google.com/a/answer/81126, /14229414, RFC 8058, the Microsoft high-volume-sender post) are dumped in a 'Further Reading' <ul> after the CTA, so the 0.3% and 5,000/24h assertions read as bare in the body.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Depth",
+          "criterion": "Practitioner Depth",
+          "finding": "This is clearly written from real remediation work, not a doc summary. Specifics that only an operator would surface: 'a team that pauses the campaign in the sequencer but leaves three CRM workflows and a webinar follow up quietly firing', 'Audit by looking at actual sent volume per mailbox for the previous 24 hours, not by trusting the tool status page', and the counterintuitive denominator explanation - 'as filtering worsens, the denominator shrinks and your reported rate can climb even while you send less'. The re-warm rule 'If the seven day rolling spam rate ticks up, hold volume flat rather than cutting to zero again, because whiplash sending patterns look worse to filters than a steady low volume' is a genuine field heuristic.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Attribution",
+          "criterion": "Data Attribution",
+          "finding": "The six-row recovery table carries no source column and no lead-in stating whose playbook it is, so operational thresholds inside it read as bare assertions: 'Restart at roughly 10 to 20% of prior Gmail volume', 'Increase about 20% every few days', 'Bounce rate under 2% on a small test send', 'Spam rate holds under 0.1% at target volume for 30 days'. Two body figures are also unattributed to anything: 'roughly 200 or more daily messages landing at Gmail addresses to see meaningful data' and 'In June 2026 Google added a Deliverability analysis section'. Only the Google-owned numbers (0.1%, 0.3%, seven days, 5,000/24h) are verbally attributed, via 'Google publishes two numbers for bulk senders'.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical Accuracy",
+          "finding": "The 2026 technical detail holds up: '550 5.7.26 means your mail was rejected as unauthenticated' and '550 5.7.1 is the catch all rejection' are correct SMTP enhanced status codes; 'Postmaster Tools v2 removed the old Domain Reputation and IP Reputation dashboards entirely' and the 'Compliant, Needs work, or No data found' states are accurate for v2; 'one click unsubscribe implemented per RFC 8058 using List Unsubscribe headers' honored 'within 48 hours' and 'Microsoft applied comparable requirements to high volume senders to Outlook and Hotmail consumer addresses from May 2025' are both right. The single soft spot is the dated product claim 'In June 2026 Google added a Deliverability analysis section inside that dashboard', which is stated with month-level precision and zero citation.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Completeness",
+          "criterion": "Completeness",
+          "finding": "Every H2 pays off: 'Read Postmaster Tools v2 Before You Change Anything' delivers three concrete rules (compliance status first, denominator, lag), 'Day 5 to 10: Prune the List Hard' delivers verification, the 90-day engagement filter, role-address stripping and a seed send. The one gap is the table's sixth row, 'Day 21 onward, rebuild', which has no matching section - its content is only implied by 'What Recovery Does Not Fix', so the reader who follows the table to the end finds no expanded guidance on returning to full volume.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Keyword targeting, FAQ and technical SEO are strong; the only real weakness is that zero external citations appear inline in the body.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Keywords",
+          "criterion": "Primary Keyword Targeting",
+          "finding": "The head term is placed everywhere it needs to be: slug 'fix-gmail-postmaster-spam-rate-over-0-3-percent', meta-title 'Fix Gmail Spam Rate Over 0.3%: Recovery Plan', H1 'Gmail Spam Rate Over 0.3%? The Step by Step Postmaster Tools Recovery Plan', the opening bolded clause 'To fix a Gmail spam rate over 0.3%', and FAQ H4 'How long does it take to fix a Gmail spam rate over 0.3%?'. Secondary entity 'Postmaster Tools' owns its own H2 ('Read Postmaster Tools v2 Before You Change Anything') and a second FAQ ('Where do I find spam rate in Google Postmaster Tools v2?').",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQ / People Also Ask",
+          "finding": "Six FAQs and all six are real remediation-intent queries rather than padding: 'Why did my spam rate go up after I cut sending volume?' and 'Should I buy a new domain instead of fixing the current one?' are exactly the questions a panicked sender types, and 'Does list verification alone fix a spam rate problem?' pre-empts the most common wrong fix. Answers are self-contained snippet-length (60-80 words) and lead with a direct verdict ('No.', 'Not instantly, but the damage is already happening.').",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Tables",
+          "criterion": "Comparison / Featured Snippet Tables",
+          "finding": "One well-formed table with a proper <thead> and four semantic columns - Window / What you do / What you check daily / Exit condition - across six rows from 'Day 0 to 2, stop' to 'Day 21 onward, rebuild', wrapped in an overflow-x container so it survives mobile. It is weakened for snippet extraction by cell length: several cells run 20-30 words ('Verify and drop invalid, catch all, risky, and role addresses. Suppress anyone with no open, click, or reply in 90 days.'), and there is no keyword-bearing sentence directly above it naming what the table is.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Links",
+          "criterion": "Internal & External Link Structure",
+          "finding": "Three internal links, all contextually placed with descriptive anchors: 'B2B email deliverability guide', '2026 SPF, DKIM and DMARC compliance guide', and 'the best email warmup tools for deliverability', each dropped at the exact moment the reader would want it. External linking is the failure: all four authoritative sources (two Google Workspace Admin Help pages, RFC 8058, the Microsoft high-volume-sender announcement) appear only in the trailing 'Further Reading' <ul>, so claims like the seven-consecutive-day rule and the Microsoft May 2025 change carry no citation where they are made.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical SEO",
+          "finding": "meta-title is 44 characters and meta-description is 152 characters, both comfortably inside SERP limits, and the description leads with the query verbatim ('How to fix a Gmail spam rate over 0.3%'). Schema-markup is present and valid JSON with an @graph. Heading levels in post-body start at H2 with no stray H1, so the CMS-rendered H1 from the 'name' field stays unique; date and last-updated are both populated (2026-07-01) and og-image resolves.",
+          "score": 5,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.20,
+      "flag": "Highly extractable definitions and a distinct remediation query cluster, held back by claims that name sources in prose but never link them at the point of assertion.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Definitions",
+          "criterion": "Direct Definitions",
+          "finding": "The post opens with a lift-ready answer in the first sentence - 'To fix a Gmail spam rate over 0.3%, stop all cold and bulk sending to Gmail the same day, then send only to contacts who opened or replied in the last 60 days' - and supplies clean standalone definitions elsewhere: 'Spam rate is manual Report spam clicks divided by messages delivered to the inbox for active Gmail users. It excludes mail that Gmail already filtered to spam.' and 'Ineligible for mitigation ... means that if your mail is being throttled or rejected, there is no support path, no escalation, and no exception process'. Each is a complete sentence an LLM can quote without surrounding context.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Structure",
+          "criterion": "Structured Data for AI Parsing",
+          "finding": "Good machine-parsable scaffolding: the 6x4 recovery table, a 6-question FAQ, and a bolded four-cause taxonomy ('Bad list source.', 'Bad relevance.', 'Bad mechanics.', 'Bad infrastructure.') that reads as an enumerated framework. Against that, the body contains exactly one <ul> (the four Further Reading links) and zero <ol> across 38 paragraphs - the day-by-day sequence, which is inherently ordered, is delivered as bolded prose lead-ins ('Day 0 to 2, stop sending properly.', 'Day 3 to 6, fix authentication and compliance mechanics.') rather than a numbered list.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Authority",
+          "criterion": "Statistical Authority",
+          "finding": "The major figures are verbally attributed to named authorities an LLM can resolve - 'Google publishes two numbers for bulk senders' preceding the 0.1%/0.3% pair, and 'Microsoft applied comparable requirements to high volume senders to Outlook and Hotmail consumer addresses from May 2025' - which is citable. But no figure is hyperlinked at the claim, and three operational numbers have no source of any kind: 'roughly 200 or more daily messages', 'In June 2026 Google added a Deliverability analysis section', and 'A short spike on an otherwise clean domain typically recovers in two to four weeks ... realistically needs six to twelve weeks'.",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Entity",
+          "criterion": "Entity Association",
+          "finding": "DevCommX is bound to the topic in first-person operator voice early - 'We run this recovery for clients who come to us with burned sending infrastructure' - and again in a dedicated 'Build This With DevCommX' H2 naming the deliverability layer explicitly ('domain and mailbox architecture, authentication, suppression logic, complaint kill switches, and trigger based enrollment'). The gap is the author entity: Sumit Nautiyal and his 'VP of Revenue Operations & GTM Engineering' title exist only in the CMS fields and the JSON-LD, never in the visible body, so an LLM scraping rendered text gets no in-copy person-to-topic link.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Distinctiveness",
+          "criterion": "GEO Distinctiveness",
+          "finding": "Genuinely distinct and, unusually, it defends its own boundary in paragraph two: 'Most deliverability advice is written for senders who are still healthy. This is not that.' followed by an explicit hand-off - 'If you want the preventative version instead, start with our B2B email deliverability guide and come back here when you are actually over 0.3%.' The query cluster (already-breached remediation, Postmaster Tools v2 compliance status, mitigation eligibility) does not overlap the prevention guide. The one real cannibalisation risk is the 'Day 3 to 6, fix authentication' section, which restates the core payload of email-deliverability-rules-2026-spf-dkim-dmarc-compliance - SPF/DKIM passing, DMARC at p=none, From alignment, TLS, forward and reverse DNS, RFC 8058, the 48-hour honor window, the Microsoft May 2025 change - but it compresses these into one paragraph and links out rather than expanding, so the risk is contained rather than realised.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "The owned-infrastructure/signal-based thesis is woven into the argument rather than bolted on, but proof is a single generic metric and there is no cost or value framing anywhere.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Differentiation",
+          "criterion": "Differentiation Narrative",
+          "finding": "The signal-based model is not a footer add-on here, it is the article's thesis: 'A spam rate over 0.3% is almost never a DNS problem. It is a targeting problem that DNS made visible', resolved with 'The durable fix is not sending less, it is sending on evidence: a hiring signal, a funding event, a technology change, a job change, a product launch, a support ticket pattern.' The CTA section closes the loop with the ownership claim - 'autonomous, signal based AI SDR and outbound systems that your team owns outright, including the deliverability layer'.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Proof",
+          "criterion": "Proof Metrics & Evidence",
+          "finding": "Exactly one proof point appears, the sanctioned framing, and only inside the CTA block: 'clients typically go from setup to 40+ qualified demos in around six weeks without the complaint rate that puts a domain back over 0.3%'. For a recovery post this is the weakest possible evidence choice - there is no before/after deliverability outcome anywhere ('we took a domain from X% to under 0.1% in N days'), despite the body twice claiming direct experience ('We run this recovery for clients', 'The mistake we see most often').",
+          "score": 3,
+          "max": 5
+        },
+        {
+          "category": "Pricing",
+          "criterion": "Pricing Transparency",
+          "finding": "No cost or value framing of any kind. The post prescribes list verification, additional sending infrastructure, warmup pools ('Automated warmup pools help maintain a positive baseline') and two to twelve weeks of suppressed outbound volume, and quantifies none of it - no verification cost per record, no mailbox or domain cost, no engagement figure for the revenue lost during a freeze. The nearest thing to economics is the qualitative line 'a complainer who receives a second message from you is the highest cost send in your entire program'.",
+          "score": 1,
+          "max": 5
+        },
+        {
+          "category": "CTA",
+          "criterion": "CTA Quality",
+          "finding": "The CTA is specific and conversion-oriented: a dedicated 'Build This With DevCommX' H2 that itemises the deliverable ('domain and mailbox architecture, authentication, suppression logic, complaint kill switches, and trigger based enrollment') before the anchor 'Book a GTM strategy call' pointing at /contact. It loses a point for being generic to the whole site rather than matched to the reader's live emergency - no deliverability audit, no recovery-plan offer, no lead magnet for someone who is currently over 0.3% and not ready for a strategy call.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Differentiation",
+          "criterion": "Content Differentiation",
+          "finding": "It occupies a slot nothing in the existing library holds. Against the published set - b2b-email-deliverability-guide-2026 (prevention), email-deliverability-rules-2026-spf-dkim-dmarc-compliance (auth rules), best-email-warmup-tools-deliverability (tool review), cold-email-domain-setup-checklist (setup) - this is the only post addressing a sender who has already breached the threshold, and it links to three of those four rather than duplicating them.",
+          "score": 5,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Well-paced, tightly written and highly scannable, but there are zero in-body images or diagrams and the day-window H2s sit flat instead of nesting under the plan.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Headings",
+          "criterion": "Heading Architecture",
+          "finding": "Eight H2s descending into two H3s ('Further Reading', 'FAQ') and six H4 questions, with no skipped level and no stray H1 in the body. The flaw is logical rather than technical: 'Day 2 to 6: Diagnose the Source', 'Day 5 to 10: Prune the List Hard' and 'Day 8 to 21: Re Warm Without Resetting the Clock' are all children of 'The Day By Day Recovery Plan' conceptually but are coded as sibling H2s, so the outline reads as five parallel sections instead of one plan with four phases.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Visuals",
+          "criterion": "Visual Elements",
+          "finding": "Zero <img> tags in post-body - the only image asset on the record is the shared og-image (imresizer-DevCommX-Blog-OG.png), which is the generic DevCommX blog OG reused across the library, and it also doubles as the publisher logo in the schema. Across 2,778 words the sole visual break is the single recovery table. A topic built entirely on a timeline and a threshold begs for at least a spam-rate-over-time chart and an annotated Postmaster Tools v2 Compliance status screenshot, and has neither.",
+          "score": 2,
+          "max": 5
+        },
+        {
+          "category": "Scannability",
+          "criterion": "Scannability",
+          "finding": "Strong bolded lead-in discipline lets a skimmer read the argument off the bold text alone: 'Compliance status comes first, spam rate second.', 'Understand the denominator or you will misread your own recovery.', 'Expect lag.', 'Bad list source.', 'Bad relevance.', 'Bad mechanics.', 'Bad infrastructure.' The four-column table anchors the middle. What is missing is list formatting - one <ul> and four <li> total, all in Further Reading - so the compliance checklist ('SPF and DKIM both passing, a DMARC record at minimum p=none ... TLS on SMTP connections and valid forward and reverse DNS') is buried in a running paragraph where it should be a checklist.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Readability",
+          "criterion": "Reading Level & Flow",
+          "finding": "The register is direct and the transitions are earned rather than mechanical: 'Here is the uncomfortable part.', 'The instinct at 0.3% is to start changing things immediately. Do not.', 'Bounces are now the signal, not silence, which is at least honest.' Technical terms are decoded on first use rather than dumped - '550 5.7.26 means your mail was rejected as unauthenticated', 'one click unsubscribe implemented per RFC 8058 using List Unsubscribe headers'. No AI-tell phrasing and no em dashes.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Length",
+          "criterion": "Content Length & Density",
+          "finding": "2,778 words including the table (2,468 of prose) is right-sized for a remediation playbook and there is no padding - no history-of-email preamble, no restating of the 2024 bulk sender rules, and the one soft section ('What Recovery Does Not Fix') earns its place by delivering three concrete permanent controls. Only nit: the CMS field add-blog-reading-time is set to '13' minutes, which overstates a 2,778-word piece by roughly double.",
+          "score": 5,
+          "max": 5
+        }
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Clean two-node @graph with all six FAQ answers matching the body verbatim; minor rich-result weaknesses in the publisher logo, author URL and identical dates.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Article",
+          "criterion": "Article Type Completeness",
+          "finding": "The BlogPosting node carries every required and recommended property: headline matching the 'name' field exactly ('Gmail Spam Rate Over 0.3%? The Step by Step Postmaster Tools Recovery Plan'), description, url, datePublished and dateModified (2026-07-01), a five-term keywords string, image, author, publisher and mainEntityOfPage. The keywords are on-target for the page ('how to fix gmail spam rate over 0.3%, gmail postmaster tools spam rate, gmail 0.3 percent spam rate, email deliverability recovery, postmaster tools v2 compliance status').",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQPage Structure",
+          "finding": "Six entries in mainEntity, well above the 3-question minimum, every one correctly typed as @type Question with a name and a nested acceptedAnswer of @type Answer carrying a non-empty text string. Answer lengths run 55-80 words each (e.g. the 'Where do I find spam rate in Google Postmaster Tools v2?' answer), which is in the ideal band for FAQ rich results and for AI answer extraction.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Alignment",
+          "criterion": "Schema-to-Content Alignment",
+          "finding": "Verified programmatically: all six schema question names and all six acceptedAnswer.text values are byte-identical to the H4/paragraph pairs in post-body, with no truncation or paraphrase drift. The schema description ('freeze sending, diagnose in Postmaster Tools v2, fix authentication, prune the list, and re warm without resetting the clock') maps one-to-one onto the actual H2 sequence, and every keyword term is substantively covered in the body.",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "category": "Graph",
+          "criterion": "@graph Implementation",
+          "finding": "A proper @graph array with a single @context and a distinct @id on each of the two nodes - '#article' and '#faq' fragment identifiers off the canonical URL. What is missing is connective tissue and coverage: there is no WebPage or BreadcrumbList node, and the FAQPage is not tied back to the BlogPosting via isPartOf or the BlogPosting to the FAQ via a reference, so the two nodes sit in the same graph without any declared relationship.",
+          "score": 4,
+          "max": 5
+        },
+        {
+          "category": "Rich Results",
+          "criterion": "Rich Result Eligibility",
+          "finding": "image is a full ImageObject with url plus width 1200 and height 630, publisher is an Organization with name, url and a logo ImageObject, and dateModified is present. Three weaknesses reduce eligibility quality: the publisher logo reuses the identical OG file ('...69ce06f820d4562027a83191_imresizer-DevCommX-Blog-OG.png') rather than a real logo asset, dateModified is identical to datePublished so the page signals no freshness, and author.url points to 'linkedin.com/company/devcommx' - an organization page - for a @type Person named Sumit Nautiyal.",
+          "score": 4,
+          "max": 5
+        }
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Move the four Further Reading URLs inline to the claims they support: link support.google.com/a/answer/14229414 on the 'seven consecutive days' mitigation-eligibility sentence, support.google.com/a/answer/81126 on the '5,000 messages ... within a 24 hour period' classification, RFC 8058 where one-click unsubscribe is introduced, and the Microsoft techcommunity post on the 'from May 2025' Outlook sentence. This single change lifts three separate criteria (Stat Accuracy, Link Structure, Statistical Authority).",
+    "2. Source or soften the three unattributed figures: 'In June 2026 Google added a Deliverability analysis section' needs a citation or should drop the month, and 'roughly 200 or more daily messages' plus the 'two to four weeks / six to twelve weeks' recovery ranges should be explicitly labelled as DevCommX's observed benchmark rather than presented as neutral fact.",
+    "3. Add two in-body visuals: an annotated Postmaster Tools v2 Compliance status screenshot in the 'Read Postmaster Tools v2 Before You Change Anything' section, and a spam-rate-versus-volume timeline chart showing the seven-day clock in the re-warm section. Body currently has zero <img> tags across 2,778 words.",
+    "4. Replace the generic '40+ qualified demos in around six weeks' with a deliverability-specific outcome in the CTA block (for example a client domain taken from a stated spam rate back under 0.1% in a stated number of days), and add cost framing somewhere in the prune and re-warm sections - verification cost per record and the revenue cost of the freeze window - since Pricing Transparency is currently the single lowest-scoring criterion at 1/5.",
+    "5. Convert the compliance paragraph ('SPF and DKIM both passing, a DMARC record at minimum p=none, ... TLS on SMTP connections and valid forward and reverse DNS') into a <ul> checklist, and demote 'Day 2 to 6', 'Day 5 to 10' and 'Day 8 to 21' from H2 to H3 under 'The Day By Day Recovery Plan' so the outline reflects one plan with phases.",
+    "6. Schema polish: set dateModified to the actual publish/refresh date rather than duplicating datePublished, swap the publisher logo away from the reused blog OG file to a true logo asset, point author.url at Sumit Nautiyal's personal LinkedIn instead of the company page, and add isPartOf linking the FAQPage node to the BlogPosting node.",
+    "7. Add a 'Day 21 onward' section in the body to match the table's sixth row, which currently has no corresponding prose, and name Sumit Nautiyal in the visible copy (currently only in CMS fields and JSON-LD) so the author-to-topic entity link survives text-only extraction."
+  ]
+}

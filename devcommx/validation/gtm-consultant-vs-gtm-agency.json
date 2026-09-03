@@ -1,0 +1,96 @@
+{
+  "slug": "gtm-consultant-vs-gtm-agency",
+  "title": "GTM Consultant vs GTM Agency: Which One Does Your Business Need?",
+  "words": 2792,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Deep practitioner knowledge and complete coverage, but the piece is almost entirely qualitative with a single self-sourced metric and vague, unattributed cost ranges.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Sources", "criterion": "Stat Accuracy & Source Quality", "finding": "The only quantified claim is DevCommX's own sanctioned framing, '40 or more qualified demos in roughly six weeks,' which is self-referential rather than externally sourced. Cost figures such as 'a few thousand dollars' and 'into the tens of thousands' are asserted with no citation, and the four external links (Gartner, HBR, McKinsey, Forrester) sit in Further Reading/References rather than being inline-linked to any specific claim in the body.", "score": 3, "max": 5},
+        {"category": "Depth", "criterion": "Practitioner Depth", "finding": "The agency section demonstrates real deployment knowledge: 'building the data and enrichment layer, defining and detecting buying signals, writing and testing sequences, standing up sending infrastructure and warming domains, managing deliverability.' The engineer section correctly names 'Clay enrichment tables, the signal detection, the API integrations' as concrete build artifacts, not surface summary.", "score": 4, "max": 5},
+        {"category": "Attribution", "criterion": "Data Attribution", "finding": "The 8-row comparison table carries no source line and is presented as bare conceptual assertion (e.g. 'Slower start, then compounding pipeline'). The recurring '40 or more qualified demos in roughly six weeks' metric is stated without any linked case study or dataset, so the one hard number in the article is an unbacked claim.", "score": 3, "max": 5},
+        {"category": "Technical", "criterion": "Technical Accuracy", "finding": "Tool and concept names are correct for 2026: Clay enrichment tables, signal detection, domain warming, deliverability, RevOps engineering, and the retainer-plus-setup agency model are all described accurately. Pricing is deliberately kept as ranges and cost models rather than specific 2026 figures, so nothing is factually wrong.", "score": 4, "max": 5},
+        {"category": "Completeness", "criterion": "Completeness", "finding": "Every H2 promise is delivered: the core difference, the at-a-glance table, what each of the consultant and agency delivers, the consultant-vs-engineer clarification, the pricing section, the four-question framework, and the when-to-pick-each guidance all appear in full. The cost H2 is the only soft spot, promising concreteness but staying in vague ranges.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Strong exact-match keyword saturation across title, slug, H2s and FAQ, with a snippet-ready table and rich internal linking; external links are generic topic pages.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Keyword", "criterion": "Primary Keyword Targeting", "finding": "The exact phrase appears in the slug, meta-title 'GTM Consultant vs Agency: Which Does Your Business Need?', the opening bolded 'GTM consultant vs GTM agency,' and repeatedly across H2s ('GTM Consultant vs Agency: The Core Difference', 'GTM Consultant vs Agency at a Glance', 'What Each Costs: GTM Consultant vs Agency Pricing', 'GTM Consultant vs Agency: When to Pick Each') and the FAQ. Coverage is thorough and natural.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQ / People Also Ask", "finding": "Six FAQ items map cleanly to real high-intent PAA queries: 'What is the difference between a GTM consultant vs agency?', 'Is a GTM consultant or agency cheaper?', 'What is the difference between a GTM consultant and a GTM engineer?', 'When should I hire a GTM consultant instead of an agency?', 'Do GTM agencies just run campaigns, or do they build systems?' and 'Which does my business need?'. These are the questions searchers actually ask.", "score": 5, "max": 5},
+        {"category": "Tables", "criterion": "Comparison / Featured Snippet Tables", "finding": "One well-structured 8-row comparison table with proper thead/tbody and three columns (Dimension, GTM Consultant, GTM Agency) is snippet-extractable, e.g. 'Typical cost model | Day rate or fixed project fee | Monthly retainer, often plus setup.' Heavy inline styling on every cell adds markup noise but does not block extraction.", "score": 4, "max": 5},
+        {"category": "Links", "criterion": "Internal & External Link Structure", "finding": "Six internal links use relevant anchors (engineer vs agency build-vs-buy, GTM engineering stack, best GTM engineering agencies, B2B outbound automation, GTM engineering service, repeatable outbound pipeline) plus a contact-us CTA, and four external authority links (Gartner, HBR, McKinsey, Forrester) are cited. External links point to generic hub/topic pages rather than being inline citations for specific claims.", "score": 4, "max": 5},
+        {"category": "Technical", "criterion": "Technical SEO", "finding": "Valid @graph JSON-LD is present, the meta-title is ~52 characters and the meta-description ~158 characters (both within limits), and the H1 (post name) correctly states the primary keyword. Heading hierarchy is clean. Minor: the schema description differs slightly in wording from the meta-description, a cosmetic inconsistency.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.20,
+      "flag": "Excellent extractable definitions and structured framing, and it cleanly de-conflicts from the sibling engineer-vs-agency post; statistical authority is the weak point because named sources back framing, not cited numbers.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Definitions", "criterion": "Direct Definitions", "finding": "The opening delivers a crisp, LLM-extractable definition pair: 'A GTM consultant hands you strategy, diagnosis, and a plan your team then builds and runs. A GTM agency builds and operates the go-to-market machine for you and delivers pipeline.' The 'advice versus execution' and 'consultant answers what should we do; an agency answers we did it' formulations are highly quotable.", "score": 5, "max": 5},
+        {"category": "Structured", "criterion": "Structured Data for AI Parsing", "finding": "The article is dense with parseable structures: an 8-row comparison table, a numbered four-question decision framework, six FAQ Q&A pairs, and bolded lead-in sentences ('The consultant model works when your constraint is clarity.') that act as extractable topic anchors for AI answer engines.", "score": 5, "max": 5},
+        {"category": "Statistics", "criterion": "Statistical Authority", "finding": "There are almost no citable statistics an LLM could attribute. The References section names Gartner, HBR, McKinsey and Forrester, but each is framed as 'supports the ... framing' rather than sourcing a specific figure, and the one number ('40 or more qualified demos in roughly six weeks') is DevCommX's own claim. The citation scaffolding adds named-source credibility but no attributable data point.", "score": 3, "max": 5},
+        {"category": "Entity", "criterion": "Entity Association", "finding": "DevCommX is explicitly tied to the topic in-body: 'This is the model we use at DevCommX: autonomous, signal-based systems that trigger outreach on real buying signals,' and the schema names author Sumit Nautiyal as 'VP of Revenue Operations & GTM Engineering, DevCommX.' The author is not named in the prose itself, only in schema, slightly weakening the person-entity tie.", "score": 4, "max": 5},
+        {"category": "Distinctiveness", "criterion": "GEO Distinctiveness", "finding": "The post actively de-conflicts from the live engineer-vs-agency sibling: it states 'consultant vs agency is a distinct question from GTM engineer vs agency, which is about building the system in-house versus buying it' and dedicates a section, 'Consultant vs Engineer vs Agency,' that draws the advice-vs-execution vs build-vs-buy line and links out for build-vs-buy. It targets a distinct strategy-vs-execution query cluster with low cannibalisation risk.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Owned-infrastructure signal-based model is articulated well and the sanctioned proof metric is used, with unusually strong cost framing for the category and a specific CTA.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Differentiation", "criterion": "Differentiation Narrative", "finding": "The owned-infrastructure, signal-based model is stated directly: 'The strongest agencies do not run a black-box managed campaign that disappears the day you stop paying. They build systems you own,' and DevCommX is positioned as 'autonomous, signal-based systems that trigger outreach on real buying signals rather than static lists, with clients keeping the infrastructure.'", "score": 5, "max": 5},
+        {"category": "Proof", "criterion": "Proof Metrics & Evidence", "finding": "The sanctioned framing appears in the agency section, the FAQ, and the CTA: 'taking a client from setup to 40 or more qualified demos in roughly six weeks.' It is the only proof point and is repeated rather than supplemented with a second outcome or a client reference.", "score": 4, "max": 5},
+        {"category": "Pricing", "criterion": "Pricing Transparency", "finding": "The article devotes a full section to cost logic, contrasting a consultant's 'day rate or a fixed project fee' with an agency's 'monthly retainer, often with a one-time setup fee,' and reframes value as 'total cost to a booked meeting, not the invoice.' It gives no DevCommX-specific price, but the value framing is stronger than most posts in the library.", "score": 3, "max": 5},
+        {"category": "CTA", "criterion": "CTA Quality", "finding": "The closing CTA is specific and conversion-oriented: 'If you are weighing a GTM consultant vs a GTM agency and your bottleneck is a running pipeline, not a plan, book a GTM strategy call to map this to your business,' linked to the contact-us page, with a dedicated 'Build Your GTM System With DevCommX' section.", "score": 4, "max": 5},
+        {"category": "Differentiation", "criterion": "Content Differentiation", "finding": "The post fills a distinct library slot (strategy/advice consultant vs execution agency) separate from the engineer-vs-agency build-vs-buy piece it links to, and complements the GTM engineering stack and best-agencies posts rather than duplicating them.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Clean heading hierarchy and highly scannable, but zero in-body visuals beyond a single table caps the visual dimension.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Headings", "criterion": "Heading Architecture", "finding": "The hierarchy is logical with no skipped levels: the H1 post name flows into nine descriptive H2s, then H3s for 'Further Reading', 'References' and 'FAQ', with the six FAQ questions correctly nested as H4s under the FAQ H3.", "score": 4, "max": 5},
+        {"category": "Visual", "criterion": "Visual Elements", "finding": "There are zero in-body images, diagrams, charts or infographics (confirmed: 0 <img> tags); only an OG image exists in fieldData. The single comparison table is the only visual asset, so the body is a wall of prose plus one table.", "score": 2, "max": 5},
+        {"category": "Scannability", "criterion": "Scannability", "finding": "Strong scannability: a punchy hook paragraph, bolded lead-in sentences ('The agency model works when your constraint is execution.'), the comparison table, a numbered four-question framework, and bolded 'Pick a GTM consultant when / Pick a GTM agency when / Pick neither' signposts let a skimmer navigate quickly.", "score": 4, "max": 5},
+        {"category": "Flow", "criterion": "Reading Level & Flow", "finding": "Complexity is appropriate for a revenue-leader audience with natural transitions ('That difference cascades into everything else') and no jargon dump; technical terms like deliverability and enrichment are used in context rather than defined pedantically.", "score": 4, "max": 5},
+        {"category": "Length", "criterion": "Content Length & Density", "finding": "At 2,792 words the length is well matched to a multi-facet comparison covering definitions, a table, pricing, a three-way role distinction, a framework, and selection guidance, without obvious padding; density stays high throughout.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Complete BlogPosting plus FAQPage in a @graph with FAQ text matching the body exactly; only minor gaps (no @id on author/publisher nodes).",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Article", "criterion": "Article Type Completeness", "finding": "The BlogPosting node includes headline, description, url, datePublished (2026-07-01), dateModified, keywords, an ImageObject, author (Person, Sumit Nautiyal with jobTitle), publisher (Organization), and mainEntityOfPage. All expected Article fields are present.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQPage Structure", "finding": "The FAQPage node carries six mainEntity items, each a @type Question with a name and an acceptedAnswer of @type Answer containing full text, comfortably exceeding the 3-question minimum.", "score": 5, "max": 5},
+        {"category": "Alignment", "criterion": "Schema-to-Content Alignment", "finding": "All six schema FAQ answers match the body FAQ text verbatim (e.g. the consultant-vs-engineer answer 'A consultant tells you what to build; a GTM engineer builds it' is identical in both), and the schema keywords ('GTM consultant vs agency, GTM agency, hire GTM consultant...') mirror the article's targeting.", "score": 5, "max": 5},
+        {"category": "Graph", "criterion": "@graph Implementation", "finding": "A proper @graph array holds two nodes, each with an @id ('...#article' and '...#faq'). However the nested author, publisher, image and mainEntityOfPage nodes carry no @id, so cross-node referencing is not fully realized.", "score": 4, "max": 5},
+        {"category": "RichResult", "criterion": "Rich Result Eligibility", "finding": "Rich-result signals are present: an ImageObject with url plus width 1200 and height 630, a publisher Organization with a logo ImageObject, and dateModified alongside datePublished. The image URL is a generic blog OG asset rather than a post-specific graphic, a minor eligibility weakness.", "score": 4, "max": 5}
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Add real statistical authority: replace or supplement the generic Gartner/HBR/McKinsey/Forrester 'supports the framing' references with at least two inline-cited, attributable data points (e.g. a cited stat on outbound reply rates or RevOps cost) so LLMs and readers have a sourced number, not just DevCommX's own '40+ demos in six weeks' claim.",
+    "2. Add in-body visuals: the post has zero images or diagrams. Insert at least a decision-tree graphic for the four-question framework and a consultant-vs-agency-vs-engineer comparison diagram to lift Visual Elements above the 2/5 cap.",
+    "3. Ground the cost section: the pricing H2 promises concreteness but delivers vague ranges ('a few thousand dollars', 'tens of thousands'). Add a worked total-cost-to-a-booked-meeting example (consultant fee plus loaded SDR/RevOps/tooling cost vs an agency retainer) so the comparison is verifiable rather than asserted."
+  ]
+}

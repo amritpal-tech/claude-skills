@@ -1,0 +1,127 @@
+{
+  "slug": "sdr-burnout-reduce-turnover-retention",
+  "title": "SDR Burnout: How to Reduce Turnover and Retain Your Sales Development Reps",
+  "words": 2303,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Numeric claims are real but hedged as 'widely cited industry figures' and never inline-attributed at the point of the claim.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Sources", "criterion": "Stat Accuracy & Source Quality",
+         "finding": "The load-bearing figures are all hedged and unlinked at the point of use: 'Widely cited industry figures put average SDR tenure well under two years and annual turnover ... in the 30 to 40 percent range or higher' and 'ramp time of three to five months'. Credible sources (Gartner, HBR, WHO, HubSpot) sit in a References block at the foot, but no specific number is tied inline to a specific source, so the numbers read as folklore rather than sourced fact.", "score": 3, "max": 5},
+        {"category": "Depth", "criterion": "Practitioner Depth",
+         "finding": "The post shows genuine deployment knowledge, not a surface summary: 'When we audit a struggling SDR team, the same structural causes show up again and again', and it names concrete burnout leading indicators to instrument ('declining reply quality, falling connect-to-meeting conversion, longer gaps between activity, and quieter one-on-ones'). The signal-based/human-in-the-loop framing is applied specifically to retention.", "score": 4, "max": 5},
+        {"category": "Attribution", "criterion": "Data Attribution",
+         "finding": "The one table ('Cause of burnout' / 'Why it drives turnover' / 'The fix') is conceptual, not data, so it needs no source, and it carries none. But the quantitative assertions (tenure, 30-40% turnover, 3-5 month ramp) are bare in the body with attribution deferred to a generic 'supports benchmark ranges for SDR tenure, ramp time and turnover' HubSpot reference line, not pinned to the numbers.", "score": 3, "max": 5},
+        {"category": "Technical", "criterion": "Technical Accuracy",
+         "finding": "Claims stay at a safe, generic level (a 'signal-based system can monitor for buying triggers, enrich and score accounts, assemble the target list, and draft first-pass personalized outreach') with no specific 2026 tool names, features, limits or pricing that could be wrong. Nothing is inaccurate, but nothing is verifiable at tool level either.", "score": 4, "max": 5},
+        {"category": "Completeness", "criterion": "Completeness",
+         "finding": "Every H2 promise is delivered: the causes H2 pays off with the table, 'Quota Pressure: Fix the Math' delivers tiered ramp quotas and signal-based targets, 'The Retention Levers Automation Cannot Buy' delivers three concrete human levers (promotion path, coaching/ownership, leading indicators). No section is announced and left empty.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Strong keyword coverage, snippet-ready table, 7 internal + 7 external links, and correct technical SEO.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Keyword", "criterion": "Primary Keyword Targeting",
+         "finding": "'SDR burnout' appears in the meta-title ('SDR Burnout: Reduce Turnover and Retain Reps'), slug, opening definition, multiple H2s ('Why SDR Burnout Turned Into a Turnover Crisis', 'What Actually Causes SDR Burnout', 'How Automation Removes the Burnout Work'), FAQ ('What causes SDR burnout?') and repeatedly in bold body copy. Secondary terms 'SDR turnover' and 'SDR retention' are also woven through.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQ / People Also Ask",
+         "finding": "Six FAQs map cleanly onto real PAA intent: 'What causes SDR burnout?', 'How do you reduce SDR turnover?', 'What is a normal SDR tenure and turnover rate?', and 'How does automation help with SDR retention?'. These are genuine high-intent queries, not filler.", "score": 5, "max": 5},
+        {"category": "Tables", "criterion": "Comparison / Featured Snippet Tables",
+         "finding": "A three-column table ('Cause of burnout' | 'Why it drives turnover' | 'The fix') with six rows is well structured for snippet extraction. It is a single well-formed HTML table with clear headers; a numeric benchmark table (tenure/turnover/ramp) is missing, which would have added a second snippet target.", "score": 4, "max": 5},
+        {"category": "Links", "criterion": "Internal & External Link Structure",
+         "finding": "Seven contextual internal links with descriptive anchors ('AI SDR versus human SDR', 'human-in-the-loop AI SDR orchestration', 'definitive guide to AI SDRs', 'the hybrid AI SDR model and account split') plus seven external citations to Gartner, HBR and WHO across Further Reading and References. Anchor relevance is high throughout.", "score": 5, "max": 5},
+        {"category": "Technical", "criterion": "Technical SEO",
+         "finding": "Meta-title 'SDR Burnout: Reduce Turnover and Retain Reps' is ~42 chars and the meta-description ~155 chars, both within limits; JSON-LD schema is present with BlogPosting + FAQPage, and the H1 flows from the article name. No heading or metadata defects.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.20,
+      "flag": "Excellent extractable definition and entity association, but statistical authority is weak because numbers are not attributable to named sources inline.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Definitions", "criterion": "Direct Definitions",
+         "finding": "The opening is a clean, LLM-liftable definition: 'SDR burnout is the chronic exhaustion, cynicism and dropping output that hits sales development reps when quota pressure and repetitive manual work outpace real support.' The 'how you reduce it' sentence immediately after is equally extractable.", "score": 5, "max": 5},
+        {"category": "Structure", "criterion": "Structured Data for AI Parsing",
+         "finding": "Good parseable scaffolding: a labelled cause/effect/fix table, six FAQ Q&A pairs, two bulleted reference lists, and bolded topic sentences opening nearly every paragraph ('Burnout is rarely about the person.', 'Retention compounds, churn resets.'). No explicit numbered framework, which would have added another liftable unit.", "score": 4, "max": 5},
+        {"category": "Authority", "criterion": "Statistical Authority",
+         "finding": "This is the citation weak point. The quantified claims are attributed only as 'Widely cited industry figures' and 'often reported', never bound to a named source in-body; an LLM cannot cite 'Gartner says SDR turnover is 30-40%' from this text. The References block credits Gartner/HBR/WHO/HubSpot generically but decouples each source from the specific stat, undercutting citability.", "score": 3, "max": 5},
+        {"category": "Entity", "criterion": "Entity Association",
+         "finding": "DevCommX and the author are explicitly bound to the topic: 'At DevCommX we build autonomous, signal-based AI SDR systems that clients own, and we see the same pattern everywhere', plus the schema author 'Sumit Nautiyal, VP of Revenue Operations & GTM Engineering, DevCommX'. The niche tie (SDR retention via automation) is unambiguous.", "score": 5, "max": 5},
+        {"category": "Distinctiveness", "criterion": "GEO Distinctiveness",
+         "finding": "Targets a distinct query cluster (SDR burnout / turnover / retention) that no sibling owns; neighbours like 'sales-capacity-planning-how-many-sdrs' and 'ai-sdr-vs-human-sdr' cover headcount and human-vs-AI, not retention. Mild overlap risk is the shared 'fewer, better-supported reps / automate the grunt work' thesis, but the retention framing keeps it differentiated rather than cannibalising.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Owned-infrastructure narrative and sanctioned 40+ demos proof are present; pricing is the only real gap.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Differentiation", "criterion": "Differentiation Narrative",
+         "finding": "The owned, signal-based model is stated repeatedly and clearly: 'autonomous, signal-based AI SDR systems that clients own' and the closing 'DevCommX builds autonomous, signal-based AI SDR and RevOps systems that your team owns'. The 'fewer, better-supported reps, not zero reps' hybrid stance is a distinct, on-brand position.", "score": 5, "max": 5},
+        {"category": "Proof", "criterion": "Proof Metrics & Evidence",
+         "finding": "The sanctioned proof framing is used correctly and once: 'new clients reach 40 or more qualified demos in roughly six weeks, without grinding a team into the ground'. It is the only concrete outcome cited, with no supporting case detail, so it lands but does not compound.", "score": 4, "max": 5},
+        {"category": "Pricing", "criterion": "Pricing Transparency",
+         "finding": "No cost or value pricing is offered for DevCommX's service. The only cost framing is about the client's turnover ('recruit, ramp, burn out, replace' and 'hiring and onboarding: sourcing, interviewing, ramp salary'); there is no ROI, engagement cost or value-per-retained-rep number to anchor the offer.", "score": 2, "max": 5},
+        {"category": "CTA", "criterion": "CTA Quality",
+         "finding": "The CTA is specific and conversion-oriented: 'Book a GTM strategy call to map a burnout-resistant SDR engine to your pipeline', linked to /contact-us and tied directly to the article's promise rather than a generic 'contact us'.", "score": 5, "max": 5},
+        {"category": "Differentiation", "criterion": "Content Differentiation",
+         "finding": "Fills a distinct library slot: the retention/turnover angle on SDR economics that sits alongside but does not duplicate the AI-SDR, capacity-planning and team-structure posts it links to. It reframes retention 'as a systems problem alongside outreach itself', which is a fresh DevCommX cut.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Clean heading tree and very scannable, but no in-body images (only OG) caps Visual Elements.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Headings", "criterion": "Heading Architecture",
+         "finding": "Logical hierarchy with no skipped levels: the article name serves as H1, seven H2 section heads, then H3 for 'Further Reading', 'References' and 'FAQ' with the six questions consistently as H4 beneath the FAQ H3. Clean top-down structure.", "score": 5, "max": 5},
+        {"category": "Visuals", "criterion": "Visual Elements",
+         "finding": "There are no in-body images, diagrams, charts or infographics; only the OG image (imresizer-DevCommX-Blog-OG.png) exists at the metadata level. The lone cause/fix table is the only visual break in a wall of text, so per the no-images calibration this stays low.", "score": 2, "max": 5},
+        {"category": "Scannability", "criterion": "Scannability",
+         "finding": "Highly scannable: a crisp hook definition up top, bolded lead-in sentences on nearly every paragraph ('The math is brutal.', 'Automate the pipeline of work, not the relationship.'), a scannable table, two bullet lists and a Q&A FAQ. A skim reader can extract the thesis from the bold lines alone.", "score": 5, "max": 5},
+        {"category": "Flow", "criterion": "Reading Level & Flow",
+         "finding": "Complexity is appropriate for a revenue-leader audience and transitions are natural ('Read the right-hand column and a theme jumps out'). No jargon dump; technical terms (enrichment, signal monitoring, human-in-the-loop) are used in plain-language context.", "score": 5, "max": 5},
+        {"category": "Length", "criterion": "Content Length & Density",
+         "finding": "At roughly 2,300 words (table cells included) the length suits a pillar-style retention explainer, matching the labelled 10-minute read. Some thesis repetition ('fewer, better-supported reps' recurs four-plus times) adds mild padding but density is otherwise strong.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Complete @graph with aligned FAQ text; only nit is author.url pointing to the company page, not a person profile.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Article", "criterion": "Article Type Completeness",
+         "finding": "The BlogPosting node carries headline, description, url, datePublished ('2026-07-01'), dateModified, keywords ('SDR burnout, SDR turnover, SDR retention, reduce SDR burnout'), image, author, publisher and mainEntityOfPage. Every core Article field is present.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQPage Structure",
+         "finding": "The FAQPage node uses a mainEntity array of six entries, each with @type Question, a name, and acceptedAnswer of @type Answer with a text field. Well above the 3-question threshold and structurally correct.", "score": 5, "max": 5},
+        {"category": "Alignment", "criterion": "Schema-to-Content Alignment",
+         "finding": "Schema keywords and description mirror the article, and all six FAQ answers in the schema match the body FAQ text verbatim (e.g. the 'What causes SDR burnout?' answer is identical in both). No drift between structured data and rendered content.", "score": 5, "max": 5},
+        {"category": "Graph", "criterion": "@graph Implementation",
+         "finding": "Uses a proper @graph array with two nodes, each carrying a distinct @id ('...#article' for the BlogPosting and '...#faq' for the FAQPage), enabling clean node referencing.", "score": 5, "max": 5},
+        {"category": "RichResult", "criterion": "Rich Result Eligibility",
+         "finding": "Image is a full ImageObject with url plus width 1200 and height 630, publisher is an Organization with a logo ImageObject, and dateModified is present. One minor nit: the author is a Person but author.url points to the company LinkedIn ('/company/devcommx') rather than a personal profile, a small authorship-signal weakness.", "score": 4, "max": 5}
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Bind the numeric claims to their named sources inline (e.g. attribute the 'under two years tenure' and '30-40% turnover' figures directly to Gartner/HubSpot at the point of the claim) so both statistical authority and LLM citability jump from a folklore hedge to a quotable fact.",
+    "2. Add at least one in-body visual: a simple SDR tenure/ramp/turnover benchmark table or a burnout-cost-of-turnover chart would lift Visual Elements off the floor and give a second featured-snippet target.",
+    "3. Introduce a light value/ROI frame for the DevCommX offer (cost of one lost tenured rep vs the retained-rep payback) to close the Pricing Transparency gap without publishing rate cards.",
+    "4. Trim the repeated 'fewer, better-supported reps' thesis (stated 4+ times) and fix author.url in the schema to a personal Sumit Nautiyal profile for a cleaner authorship signal."
+  ]
+}

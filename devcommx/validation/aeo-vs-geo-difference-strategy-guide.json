@@ -1,0 +1,127 @@
+{
+  "slug": "aeo-vs-geo-difference-strategy-guide",
+  "title": "AEO vs GEO: The Difference Between Answer Engine and Generative Engine Optimization (and Which You Need)",
+  "words": 2474,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Strong practitioner framing and full topic coverage, but several load-bearing stats are unsourced or only linked in a bottom Further Reading list rather than inline at the claim.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Sources", "criterion": "Stat Accuracy & Source Quality",
+         "finding": "The Princeton '30 to 40 percent' and 'more than 100 percent' lift figures and the '68 percent' zero-click stat are only reachable via the bottom Further Reading list (arxiv.org/abs/2311.09735, searchengineland.com), not linked inline where the claim is made. Worse, 'ChatGPT referral conversion near 15 percent and Perplexity around 10 percent' and 'roughly two billion monthly users' and 'roughly one percent of sessions' carry no citation anywhere in the post.", "score": 3, "max": 5},
+        {"category": "Depth", "criterion": "Practitioner Depth",
+         "finding": "Shows real deployment knowledge: 'the AEO versus GEO question comes up in almost every scoping call', concrete tactics like 'lead every section with a crisp 40 to 60 word answer', and a measurement cadence of 'running a defined set of buyer prompts across ChatGPT, Perplexity, Gemini, and Claude on a schedule'. This reads as operator experience, not a surface summary.", "score": 4, "max": 5},
+        {"category": "Attribution", "criterion": "Data Attribution",
+         "finding": "The 7-row comparison table is analytical rather than statistical, so bare assertion is acceptable there, but the quantitative claims lack attribution: only 'The Princeton GEO research that named the category' is named at the point of use, while the 15%/10% conversion figures and 2 billion MAU are stated as bare facts.", "score": 3, "max": 5},
+        {"category": "Technical", "criterion": "Technical Accuracy",
+         "finding": "Tool and surface names are correct for 2026: 'Google AI Overviews, featured snippets, voice results' for AEO and 'ChatGPT, Perplexity, Gemini, and Claude' for GEO. No pricing or feature-limit claims are made that could be wrong, and the extraction-vs-inclusion mechanism is described accurately.", "score": 4, "max": 5},
+        {"category": "Completeness", "criterion": "Completeness",
+         "finding": "Every H2 promise is delivered: 'When AEO Matters More' gives the 'AEO is the right first move when' checklist, 'When GEO Matters More' gives the GEO conditions, 'How to Measure AEO and GEO' splits AEO vs GEO instruments, and 'Is SEO Dead? The Honest Section' resolves the layered model. No orphan headings or unfulfilled promises.", "score": 5, "max": 5}
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Excellent keyword targeting and a genuine PAA-shaped FAQ; only minor nits (meta description slightly long, external cites not inline).",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Keyword", "criterion": "Primary Keyword Targeting",
+         "finding": "'AEO vs GEO' appears in the H1, the meta-title ('AEO vs GEO: The Difference and Which You Need'), the slug (aeo-vs-geo-difference-strategy-guide), the H2 'AEO vs GEO in One Line Each', repeatedly in body, and in the FAQ 'What is the difference between AEO and GEO?'. Full coverage across every required surface.", "score": 5, "max": 5},
+        {"category": "FAQ", "criterion": "FAQ / People Also Ask",
+         "finding": "Six FAQ entries map directly to high-intent PAA queries: 'What is the difference between AEO and GEO?', 'Is GEO the same as AEO?', 'Should B2B teams prioritise AEO or GEO?', 'Is SEO dead because of AEO and GEO?', 'How do you measure AEO and GEO?', and 'Which engines does each optimize for?'. These are the actual questions searchers ask about this pairing.", "score": 5, "max": 5},
+        {"category": "Tables", "criterion": "Comparison / Featured Snippet Tables",
+         "finding": "A clean 7-row comparison table with thead/tbody maps Goal, Target engines, Core mechanism, Ranking signals, Content tactics, Primary metric, and Where the user is across AEO and GEO columns, which is well structured for snippet extraction. Inline styling is present but does not block parsing.", "score": 4, "max": 5},
+        {"category": "Links", "criterion": "Internal & External Link Structure",
+         "finding": "Eight internal links with relevant anchors (llmo-vs-seo-vs-geo-vs-aeo, how-to-rank-in-google-ai-overviews, LLMO playbook, how-to-get-cited-by-chatgpt, aeo-wont-fix-average-content, measuring-llmo, revenue-operations, contact-us) plus three authoritative external links (arxiv, developers.google.com, searchengineland.com). The external citations sit in a Further Reading block rather than inline at the stat.", "score": 4, "max": 5},
+        {"category": "Technical", "criterion": "Technical SEO",
+         "finding": "Schema is present (BlogPosting + FAQPage @graph), meta-title is 45 chars (well within limit), and the H1 is set from the name field. Only nit: the meta-description is 166 chars, slightly over the ~160 snippet-safe threshold and at risk of truncation.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness (GEO-AEO)",
+      "weight": 0.20,
+      "flag": "Highly extractable definitions and structure; distinctiveness from the 4-way sibling is explicitly managed. Weakest link is unnamed statistical sources an LLM cannot attribute.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Definitions", "criterion": "Direct Definitions",
+         "finding": "Opens with bolded, self-contained definitions: 'AEO (Answer Engine Optimization) is the practice of structuring content so it becomes the answer an answer engine extracts and displays' and the parallel GEO definition, closing with the quotable 'AEO optimises to be the answer. GEO optimises to be in the answer.' These are ideal extractable statements for an LLM.", "score": 5, "max": 5},
+        {"category": "Structure", "criterion": "Structured Data for AI Parsing",
+         "finding": "The post gives a machine multiple parse-friendly structures: the 7-dimension comparison table, the six-item FAQ, the numbered 'Three moves pay off across both disciplines' framework, and bolded lead sentences per section like 'AEO is winning the direct answer.'", "score": 5, "max": 5},
+        {"category": "Authority", "criterion": "Statistical Authority",
+         "finding": "Only one statistic is attributed to a named source an LLM can cite ('The Princeton GEO research that named the category'). The conversion figures ('ChatGPT referral conversion near 15 percent and Perplexity around 10 percent'), the 'two billion monthly users', and the 'one percent of sessions' claim are stated without a nameable source, limiting what a model can safely repeat with attribution.", "score": 3, "max": 5},
+        {"category": "Entity", "criterion": "Entity Association",
+         "finding": "DevCommX is explicitly tied to the topic: 'At DevCommX we build signal-based GTM and AI visibility systems for revenue teams, and the AEO versus GEO question comes up in almost every scoping call', and the schema names author Sumit Nautiyal as 'VP of Revenue Operations & GTM Engineering, DevCommX'. The brand-to-niche link is clear.", "score": 4, "max": 5},
+        {"category": "Distinctiveness", "criterion": "GEO Distinctiveness",
+         "finding": "Cannibalisation is actively managed: the intro tells readers to 'read our overview of LLMO vs SEO vs GEO vs AEO first, then come back here for the precise AEO versus GEO distinction', and defers the undifferentiated-content angle to the aeo-wont-fix-average-content sibling. The query cluster ('AEO vs GEO', extraction vs inclusion) is genuinely narrower than the 4-way post, though the 'Is SEO Dead' section does re-tread substrate ground the 4-way post also owns.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "CTA is strong and specific, but the sanctioned proof framing (40+ demos) is absent, the owned-infrastructure differentiator is not articulated, and there is no pricing/value framing.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Differentiation", "criterion": "Differentiation Narrative",
+         "finding": "The 'signal-based' descriptor appears once ('we build signal-based GTM and AI visibility systems for revenue teams'), but the core owned-infrastructure model, that clients own the systems DevCommX builds, is never stated. The differentiation is gestured at rather than articulated.", "score": 3, "max": 5},
+        {"category": "Proof", "criterion": "Proof Metrics & Evidence",
+         "finding": "No concrete DevCommX outcome is cited anywhere; the sanctioned '40+ qualified demos in ~6 weeks' framing is absent. Every quantified claim in the post is an industry statistic (Princeton lifts, 68% zero-click, 15%/10% conversions), none of it DevCommX's own result.", "score": 2, "max": 5},
+        {"category": "Pricing", "criterion": "Pricing Transparency",
+         "finding": "There is no cost, price, or value-in-dollars framing. The only money-adjacent phrase is 'usually framed as a either/or budget decision', which describes the buyer's mindset rather than offering any DevCommX pricing or ROI signal.", "score": 2, "max": 5},
+        {"category": "CTA", "criterion": "CTA Quality",
+         "finding": "The closing CTA is specific and conversion-oriented: it pitches the 'free AI Visibility Checker' that 'runs your brand against real buyer prompts and shows where you are cited', then 'Book a GTM strategy call and we will run your AI visibility baseline with you'. Clear tool-to-call funnel with a named asset.", "score": 4, "max": 5},
+        {"category": "Differentiation", "criterion": "Content Differentiation",
+         "finding": "This fills a distinct 2-way 'AEO vs GEO' slot that the 4-way LLMO-vs-SEO-vs-GEO-vs-AEO post and the aeo-wont-fix-average-content post do not occupy, and it explicitly positions itself as the focused distinction piece between them.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Clean heading hierarchy and good prose flow, but zero in-body images (only an OG image) and prose-heavy sections with only a single bulleted list.",
+      "flag_type": "warn",
+      "criteria": [
+        {"category": "Headings", "criterion": "Heading Architecture",
+         "finding": "Logical descent: H1 (name) into eight topical H2s, then H3 'FAQ' with six H4 question headings nested beneath it, and an H3 'Further Reading'. No skipped levels; the FAQ H4s correctly sit under the FAQ H3.", "score": 4, "max": 5},
+        {"category": "Visuals", "criterion": "Visual Elements",
+         "finding": "There are no in-body images, diagrams, charts, or infographics; the only image asset is the OG image (imresizer-DevCommX-Blog-OG.png) used in schema, not rendered in the body. The single comparison table is the only visual break in an otherwise text-only body.", "score": 2, "max": 5},
+        {"category": "Scannability", "criterion": "Scannability",
+         "finding": "Skimmability is aided by bolded lead sentences ('AEO is winning the direct answer.', 'GEO is winning the citation.'), the comparison table, and the FAQ, but the body is largely dense paragraphs; the only true bulleted list is the three-item Further Reading block, so mid-article checklists like the 'AEO is the right first move when' conditions run as prose instead of scannable bullets.", "score": 4, "max": 5},
+        {"category": "Flow", "criterion": "Reading Level & Flow",
+         "finding": "Transitions are natural and the register is consistent, with device-level framing like 'Same goal at the altitude of the boardroom... different mechanics at the altitude of the page' and no jargon dumping. Complexity suits a B2B practitioner audience.", "score": 4, "max": 5},
+        {"category": "Length", "criterion": "Content Length & Density",
+         "finding": "At ~2,474 words the length is appropriate for a two-way comparison that also covers when-each-matters, overlap, an SEO-is-dead section, and measurement; the density is high with little visible padding, though the overlap and SEO sections restate the extraction-vs-inclusion point a few times.", "score": 4, "max": 5}
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Complete @graph with BlogPosting + FAQPage, all 6 FAQ Q&As match the body verbatim; only nit is the Person author URL pointing to the company LinkedIn.",
+      "flag_type": "pass",
+      "criteria": [
+        {"category": "Article", "criterion": "Article Type Completeness",
+         "finding": "The BlogPosting node carries headline, description, url, datePublished (2026-07-01), dateModified, keywords, image, author, publisher, and mainEntityOfPage. The one flaw is the author node: '@type Person, name Sumit Nautiyal' is given a 'url' of https://www.linkedin.com/company/devcommx, a company page rather than the person's profile.", "score": 4, "max": 5},
+        {"category": "FAQPage", "criterion": "FAQPage Structure",
+         "finding": "The FAQPage node has six mainEntity items, each a '@type Question' with an 'acceptedAnswer' of '@type Answer' carrying a text value, well above the 3+ minimum.", "score": 5, "max": 5},
+        {"category": "Alignment", "criterion": "Schema-to-Content Alignment",
+         "finding": "Programmatic diff confirms all six schema FAQ questions and answer texts match the body H4/paragraph FAQ verbatim. The schema keywords ('AEO vs GEO, AEO vs GEO difference, answer engine optimization vs generative engine optimization...') and description accurately describe the article body.", "score": 5, "max": 5},
+        {"category": "Graph", "criterion": "@graph Implementation",
+         "finding": "Uses an @graph array with two nodes each carrying an @id (#article on the BlogPosting, #faq on the FAQPage), and mainEntityOfPage also has an @id, so the entity relationships are explicitly identified.", "score": 5, "max": 5},
+        {"category": "RichResult", "criterion": "Rich Result Eligibility",
+         "finding": "Rich-result requirements are met: image is an ImageObject with url/width/height (1200x630), publisher is an Organization with a logo ImageObject, and dateModified is present alongside datePublished.", "score": 5, "max": 5}
+      ]
+    }
+  ],
+  "top_fixes": [
+    "1. Inline-cite the load-bearing statistics at the point of claim instead of only in the Further Reading block, and add a real source for the currently unsourced '15 percent / 10 percent' ChatGPT/Perplexity conversion figures, the 'two billion monthly users', and the 'one percent of sessions' claim.",
+    "2. Inject DevCommX proof into the brand layer: add the sanctioned '40+ qualified demos in ~6 weeks' framing and articulate the owned-infrastructure differentiator (clients own the systems) so the post carries a concrete result, not only industry stats.",
+    "3. Add at least one in-body visual (an extraction-vs-inclusion diagram or an AEO/GEO decision flowchart) since the body currently has zero images, and convert the prose 'AEO is the right first move when' and 'GEO is the right emphasis when' conditions into scannable bullet lists.",
+    "4. Trim the meta-description from 166 to under 160 characters to avoid SERP truncation, and point the schema author Person 'url' to Sumit Nautiyal's personal profile rather than the DevCommX company LinkedIn page."
+  ]
+}
