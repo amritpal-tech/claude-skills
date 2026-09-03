@@ -3,20 +3,20 @@
 #
 # Mirrors this repo's skill library into the session's Claude config dir so the
 # skills and commands are available even where project-level .claude/skills
-# discovery does not reach the session (Claude Code on the web).
+# discovery does not reach the session.
+#
+# Runs everywhere: remote (web) sessions and local installs alike.
 #
 # Runs synchronously and on purpose: skills are enumerated at session start, so
 # this must finish before the agent loop reads them.
 #
+# NOTE: this repo is the source of truth. Same-named skills under ~/.claude/skills
+# are overwritten on every session start, so edit skills here in .claude/skills/
+# and commit them — local edits made directly in ~/.claude/skills will be lost.
+#
 # Idempotent, quiet, and never fails session startup.
 
 set -uo pipefail
-
-# Web sessions only. On a local machine ~/.claude persists and is the user's own;
-# use ./install.sh there instead of overwriting it on every session start.
-if [ "${CLAUDE_CODE_REMOTE:-}" != "true" ]; then
-  exit 0
-fi
 
 REPO="${CLAUDE_PROJECT_DIR:-$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)}"
 DEST="${CLAUDE_CONFIG_DIR:-$HOME/.claude}"
