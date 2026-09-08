@@ -34,8 +34,11 @@ See `internal-links.md`.
 
 ## 4. Draft in parallel
 
-Fan out, one agent per blog, general-purpose type. **Cap the batch at ~13 agents** — a
-31-agent run tripped an org token cap mid-flight.
+Fan out, one agent per blog, general-purpose type, in **waves of about 4**. A single
+12-agent fan-out hit a per-session rate limit and lost all 12 mid-flight with nothing
+written to disk; a 31-agent run tripped an org token cap. Cap each agent's research
+explicitly (for example, "at most 6 WebSearch calls") and have it build the JSON with a
+`json.dump` script rather than typing raw JSON, so escaping is correct by construction.
 
 Each agent:
 1. reads `references/draft-spec.md`,

@@ -71,10 +71,24 @@ Validate with a **quoted heredoc** (`<<'PY'`) or a script file. Never an unquote
 or an inline `python3 -c` containing `\"` — the shell mangles it and produces false
 positives and false negatives. This is why the checks live in `scripts/`.
 
-## 9. Subagent runtime cap
+## 9. Subagent runtime cap, and the session limit underneath it
 
 A 31-agent workflow (~2M subagent tokens) tripped an org "Claude subscription access
-disabled" cap mid-run. **Keep batches at or below ~13 agents.** A lighter re-run cleared it.
+disabled" cap mid-run.
+
+**Agent count is not the real limit, total session tokens is.** A later batch of only
+**12** agents, each doing WebSearch research plus a 2,500-word draft, hit a per-session
+rate limit (HTTP 429, "You've hit your session limit") and **all 12 died at once, before
+any of them wrote a file.** Twelve was inside the documented 13-agent cap and still blew
+the budget, because long-form drafting agents are individually expensive.
+
+**How to apply:** run long-form drafting in **waves of about 4**, not one big fan-out.
+Cap each agent's research explicitly (for example, "at most 6 WebSearch calls"). Waves
+also fail softer: a rate limit costs you one wave instead of the whole batch.
+
+**Write the file before anything else can go wrong.** Every one of the 12 died mid-research
+with nothing on disk. An agent that drafts first and polishes second leaves salvageable
+work; one that researches exhaustively then writes leaves nothing.
 
 ## 10. Agents mislabel their own verdicts
 
