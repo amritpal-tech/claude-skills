@@ -102,3 +102,20 @@ Related: subagents cannot run openpyxl reliably. Build the workbook in the main 
 
 Agents report "2,600 words, JSON parses" for files that are 1,900 words or fail a hard
 rule. Re-validate every draft independently in the main thread.
+
+
+## 12. Pushing a batch through the MCP connector does not scale
+
+The connector needs every field value retyped as a literal tool argument. One blog is
+about 30KB of HTML, and printing it to copy now exceeds the tool-output limit and gets
+truncated to a file, so a single create costs several round trips.
+
+Measured: one create through the connector was roughly 25,000 tokens end to end, counting
+the print, the emission and the echoed response. Seven blogs is most of a session, and
+every hand-copied character is a chance to silently corrupt a post.
+
+**How to apply:** the connector is right for one or two items, or for reading. For a whole
+batch use `scripts/push_drafts.py` with a Webflow site token. It is idempotent, so a
+re-run after a partial push resumes rather than duplicating. Note that
+`api.webflow.com` is blocked by the egress proxy in Claude Code web sessions, so the
+script has to run somewhere with plain internet access.

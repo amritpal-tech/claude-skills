@@ -104,6 +104,7 @@ Run from the repo root. All are dependency-light (`openpyxl` only for the workbo
 | `scripts/build_workbook.py` | Findings JSONs to a colour-coded multi-tab `.xlsx`. |
 | `scripts/check_keywords.py` | Verify each draft carries its brief's primary keyword in H1, meta-title, first 100 words, 2+ H2s, an FAQ question and the slug, plus every secondary keyword in the body. |
 | `scripts/check_links.sh` | Curl-verify internal link targets return 200. |
+| `scripts/push_drafts.py` | Create drafts in Webflow from the JSON files via the API: sequential, skips slugs that already exist so it is idempotent, verifies the returned slug and reads each item back. Use this for any batch of more than one or two items. |
 | `scripts/fix_schema_dates.py` | Compute and verify schema date corrections across both schema locations. |
 | `scripts/apply_schema_date_fix.py` | Apply that fix straight against the Webflow API, with backup, read-back and publish. |
 | `scripts/excel_helpers.py` | openpyxl styling helpers used by `build_workbook.py`. |
