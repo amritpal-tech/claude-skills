@@ -26,7 +26,11 @@ REQUIRED_FIELDS = [
 
 
 def strip_tags(s):
+    # Drop script/style, and drop <svg> whole: an embedded figure's axis and label
+    # text is figure content, not body prose, and counting it inflates the word
+    # count enough to trip the length gate on a post that is actually in range.
     s = re.sub(r"<(script|style)[^>]*>.*?</\1>", " ", s, flags=re.S | re.I)
+    s = re.sub(r"<svg\b.*?</svg>", " ", s, flags=re.S | re.I)
     return html.unescape(re.sub(r"<[^>]+>", " ", s))
 
 
