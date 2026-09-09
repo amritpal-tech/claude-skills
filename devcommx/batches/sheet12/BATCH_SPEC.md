@@ -95,6 +95,18 @@ A JSON **string** holding an `@graph` with a `BlogPosting` and a `FAQPage`. Keep
 house shape (it overrides the sheet's HowTo/ItemList/Service suggestions). Dates are
 `2026-09-08`. FAQ entries must mirror the body FAQ exactly.
 
+**Schema goes in TWO places and they must be byte identical.** The template renders the
+`schema-markup` field, and every DevCommX post also carries the same JSON-LD as a script
+inside `post-body`. Append this as the LAST thing in `post-body`, with the identical
+schema string, bare JSON inside the script tag (never nest a second `<script>`):
+
+```html
+<div data-rt-embed-type='true'><script type="application/ld+json">
+
+{the same schema string}
+  </script></div>
+```
+
 ```
 {"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://www.devcommx.com/blogs/{slug}#article","headline":"...","description":"...","url":"https://www.devcommx.com/blogs/{slug}","datePublished":"2026-09-08","dateModified":"2026-09-08","keywords":"...","image":{"@type":"ImageObject","url":"https://cdn.prod.website-files.com/677194290c472080e6cd6ab0/69ce06f820d4562027a83191_imresizer-DevCommX-Blog-OG.png","width":1200,"height":630},"author":{"@type":"Person","name":"Sumit Nautiyal","jobTitle":"VP of Revenue Operations & GTM Engineering, DevCommX","url":"https://www.linkedin.com/company/devcommx"},"publisher":{"@type":"Organization","name":"DevCommX","url":"https://www.devcommx.com","logo":{"@type":"ImageObject","url":"https://cdn.prod.website-files.com/677194290c472080e6cd6ab0/69ce06f820d4562027a83191_imresizer-DevCommX-Blog-OG.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.devcommx.com/blogs/{slug}"}},{"@type":"FAQPage","@id":"https://www.devcommx.com/blogs/{slug}#faq","mainEntity":[{"@type":"Question","name":"...","acceptedAnswer":{"@type":"Answer","text":"..."}}]}]}
 ```
