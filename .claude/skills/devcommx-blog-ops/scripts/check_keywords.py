@@ -22,17 +22,29 @@ def text_of(h):
     return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", h))).strip()
 
 
-def norm(s):
-    """Lowercase, strip punctuation that varies (A/B vs AB), collapse space."""
+def norm(s, slash=" "):
+    """Lowercase, drop varying punctuation, collapse space.
+
+    `slash` controls how "/" reads. Both readings are legitimate and which one a
+    writer used cannot be known in advance:
+      " "  ->  "SPF/DKIM"      reads as "spf dkim"   (matches "SPF, DKIM")
+      ""   ->  "A/B testing"   reads as "ab testing" (matches "AB testing")
+    `has` tries both, so either spelling counts.
+    """
     s = html.unescape(s or "").lower()
-    s = s.replace("/", " ").replace("-", " ").replace("&amp;", "and")
-    return re.sub(r"[^a-z0-9 ]+", " ", re.sub(r"\s+", " ", s)).strip()
+    s = s.replace("/", slash).replace("-", " ").replace("&amp;", "and")
+    # punctuation to space FIRST, then collapse: otherwise "AI Overviews, B2B"
+    # normalises to a double space and fails to match "AI Overviews B2B".
+    return re.sub(r"\s+", " ", re.sub(r"[^a-z0-9 ]+", " ", s)).strip()
 
 
 def has(hay, needle):
     """Whole-phrase match on normalised text, tolerant of punctuation and hyphens."""
-    h, n = norm(hay), norm(needle)
-    return bool(n) and re.search(r"(?<![a-z0-9])" + re.escape(n) + r"(?![a-z0-9])", h)
+    for slash in (" ", ""):
+        h, n = norm(hay, slash), norm(needle, slash)
+        if n and re.search(r"(?<![a-z0-9])" + re.escape(n) + r"(?![a-z0-9])", h):
+            return True
+    return False
 
 
 def check(path, kw):
