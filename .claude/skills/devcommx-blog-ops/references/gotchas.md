@@ -90,6 +90,20 @@ also fail softer: a rate limit costs you one wave instead of the whole batch.
 with nothing on disk. An agent that drafts first and polishes second leaves salvageable
 work; one that researches exhaustively then writes leaves nothing.
 
+**Even a wave of 3 dies if the session budget is already spent.** On a later batch, a
+wave of only three drafting agents was killed within seconds of launch, all three
+reporting the same `resets <time> (UTC)` session limit. The wave size was not the
+problem: the main thread had already spent the session budget pushing seven long posts
+through the CMS connector, so there was nothing left to allocate. Each MCP create call
+carries the full ~27KB body twice, once out and once back in the response, so a push
+run of that size costs roughly as much as a drafting wave.
+
+**How to apply:** do not interleave a heavy connector push and a drafting wave in the
+same session window. Push, then check the remaining budget before fanning out, or run
+the drafting wave first while the budget is fresh. When agents die this way nothing is
+lost, so the recovery is simply to relaunch the identical wave after the reset: verify
+with `git status` that the tree is clean, then re-issue the same prompts unchanged.
+
 ## 10. Agents mislabel their own verdicts
 
 Validation subagents write plausible findings and then attach the wrong verdict. **Always
