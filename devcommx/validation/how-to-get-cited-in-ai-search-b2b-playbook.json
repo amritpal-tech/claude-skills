@@ -1,0 +1,278 @@
+{
+  "slug": "how-to-get-cited-in-ai-search-b2b-playbook",
+  "title": "How to Get Cited in AI Search: The 2026 B2B Citation Playbook",
+  "words": 3139,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Figures verified at source, but the Ahrefs URL slug is suspect and the post states the correlation finding more firmly than Ahrefs does.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Sources",
+          "criterion": "Stat Accuracy & Source Quality",
+          "score": 4,
+          "max": 5,
+          "finding": "I re-verified the load-bearing figures at source: Pew's '8 percent of the time when an AI summary was present, against 15 percent' across roughly 68,000 searches, and Ahrefs' '0.664 with AI visibility against 0.218 for backlinks' across 75,000 brands both check out. Two deductions. The cited URL 'ahrefs.com/blog/ai-brand-visibility-correlations/' does not match the slug search consistently returns for that study ('ai-overview-brand-correlation'), and ahrefs.com is egress-blocked here so I could not resolve it. Separately, Ahrefs characterises these as moderate to very weak Spearman correlations, while the post concludes flatly 'Being talked about beats being linked to.'"
+        },
+        {
+          "category": "Depth",
+          "criterion": "Practitioner Depth",
+          "score": 5,
+          "max": 5,
+          "finding": "The 45 minute audit is genuinely operational, not a summary: ten named prompt shapes ('Compare [you] and [competitor]', 'Alternatives to [competitor]'), an instruction to run them 'in a clean session with personalisation and memory off', and a logging schema naming the exact columns including 'the top three domains that were cited instead', which it correctly calls 'the most valuable one in the sheet'."
+        },
+        {
+          "category": "Attribution",
+          "criterion": "Data Attribution",
+          "score": 5,
+          "max": 5,
+          "finding": "The post refuses to fabricate where it has no data: 'We are not going to put a number on that distribution here, because we have not published the underlying audit and inventing one would make this page exactly the kind of uncorroborated source that does not get cited.' Every table row is a qualitative signal rather than an unsourced metric, and the SVG figure carries its Ahrefs attribution inline."
+        },
+        {
+          "category": "Accuracy",
+          "criterion": "Technical Accuracy",
+          "score": 5,
+          "max": 5,
+          "finding": "Tool and platform detail is correct for 2026: OAI-SearchBot named as the crawler to allow 'in robots.txt or at your CDN', the generative AI performance report in Search Console, and llms.txt handled with appropriate scepticism ('What it lacks is confirmed support from any major engine'). The Copilot section correctly makes Bing indexation a prerequisite rather than a by-product of Google ranking."
+        },
+        {
+          "category": "Delivery",
+          "criterion": "Completeness",
+          "score": 4,
+          "max": 5,
+          "finding": "Eight of nine H2s deliver fully. 'What a Cross Engine Citation Audit Actually Shows' is the exception: the heading promises audit findings, and the body delivers three qualitative patterns plus a principled refusal to quantify them. The honesty is right, but the heading writes a cheque the section deliberately does not cash."
+        }
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Keyword placement, FAQ intent and link structure are all fully met.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Keywords",
+          "criterion": "Primary Keyword Targeting",
+          "score": 5,
+          "max": 5,
+          "finding": "'how to get cited in AI search' appears in the H1, the slug, the 48-character meta-title, the opening sentence, two H2s ('How to Get Cited in AI Search: The Six Signals Every Engine Shares' and 'The 45 Minute Audit That Tells You How to Get Cited in AI Search') and one FAQ question. The keyword gate confirms placement."
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQ / People Also Ask",
+          "score": 5,
+          "max": 5,
+          "finding": "All six questions are real high-intent PAA shapes rather than invented ones: 'How do I get my brand mentioned by ChatGPT?', 'Why is my site not showing in AI Overviews?', 'Do backlinks influence whether an LLM cites you?' and 'How fast do content changes show up in AI answers?' Each answer is self-contained and lands in the 50 to 80 word extractable band."
+        },
+        {
+          "category": "Tables",
+          "criterion": "Comparison / Featured Snippet Tables",
+          "score": 5,
+          "max": 5,
+          "finding": "One six-row, four-column table keyed to the six signals, with columns 'What a weak page looks like', 'What a cited page looks like' and 'How you verify it in the audit'. The verification column makes each row independently liftable, which is what snippet and answer extraction rewards."
+        },
+        {
+          "category": "Links",
+          "criterion": "Internal & External Link Structure",
+          "score": 5,
+          "max": 5,
+          "finding": "Ten internal links and seven external hosts (pewresearch.org, ahrefs.com, semrush.com, developers.google.com, developers.openai.com, help.openai.com, bing.com), every one placed inline at the claim it supports rather than pooled at the foot. Anchors are descriptive, and there are no bare-URL anchors anywhere."
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical SEO",
+          "score": 5,
+          "max": 5,
+          "finding": "Meta-title is 48 characters and meta-description 151, both inside the truncation limits. One H1, schema present in both required locations, and the slug matches the schema url and mainEntityOfPage @id exactly."
+        }
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness",
+      "weight": 0.2,
+      "flag": "Strongest dimension. One deduction for newly created overlap with the topic 10 measurement post.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Definitions",
+          "criterion": "Direct Definitions",
+          "score": 5,
+          "max": 5,
+          "finding": "The core distinction is stated in three short liftable sentences: 'Citation is not ranking. Ranking is a page competing for a slot. Citation is a passage competing to be the sentence an engine reuses.' The opening answer paragraph is a self-contained 63 words naming all six signals, which is exactly the unit an engine reuses."
+        },
+        {
+          "category": "Structure",
+          "criterion": "Structured Data for AI Parsing",
+          "score": 5,
+          "max": 5,
+          "finding": "Six parallel bolded signal definitions, a six-row table, a three-step numbered audit with explicit time boxes ('Step one, ten minutes', 'Step two, twenty minutes'), three named failure modes, three named metrics, an FAQ block and an SVG grouped into three labelled stages. Dense machine-parseable structure throughout."
+        },
+        {
+          "category": "Authority",
+          "criterion": "Statistical Authority",
+          "score": 5,
+          "max": 5,
+          "finding": "Every quantitative claim is attributable to a named, linkable organisation an LLM can re-cite: Pew Research Center, Ahrefs (twice, on distinct studies), Semrush, Google Search Central, OpenAI's crawler documentation and the Bing Webmaster Guidelines. No orphan statistics."
+        },
+        {
+          "category": "Entity",
+          "criterion": "Entity Association",
+          "score": 5,
+          "max": 5,
+          "finding": "DevCommX is bound to the topic repeatedly and specifically: 'DevCommX runs this citation audit for every client before touching a single page', 'These are the six DevCommX scores every page against, in this order, because they fail in this order', plus a named author bio tying Sumit Nautiyal's role to the method."
+        },
+        {
+          "category": "Distinctiveness",
+          "criterion": "GEO Distinctiveness",
+          "score": 4,
+          "max": 5,
+          "finding": "The post deliberately defers engine-specific queries to the ChatGPT, Perplexity and Gemini posts ('This page is the map. Those are the terrain'). However the new topic 10 post now uses 'citation share' five times against this post's six, so the measurement query cluster is shared rather than cleanly owned. The two cross-link, and topic 10 owns 'dark funnel' and 'self-reported attribution' outright, so the overlap is narrow but real."
+        }
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Weakest dimension: the post carries no concrete proof metric and no cost or value framing.",
+      "flag_type": "critical",
+      "criteria": [
+        {
+          "category": "Narrative",
+          "criterion": "Differentiation Narrative",
+          "score": 4,
+          "max": 5,
+          "finding": "The audit-before-anything positioning is clear ('DevCommX runs this citation audit for every client before touching a single page', 'it answers the only question that matters here: can a machine find, lift and attribute your claim'). The owned-infrastructure and signal-based model that anchors the outbound library is not articulated here, which is defensible for an LLMO topic but does leave the differentiation thinner."
+        },
+        {
+          "category": "Proof",
+          "criterion": "Proof Metrics & Evidence",
+          "score": 2,
+          "max": 5,
+          "finding": "There is no concrete DevCommX outcome anywhere in the body. The '40+ qualified demos in ~6 weeks' framing that every sibling post in this batch carries is absent, and the section that would naturally hold proof instead explains why no number is published. Honest, but it leaves the reader with no evidence the method has worked for anyone."
+        },
+        {
+          "category": "Pricing",
+          "criterion": "Pricing Transparency",
+          "score": 2,
+          "max": 5,
+          "finding": "No cost or value framing at all. The only economic signal is that the audit is free ('free, on your ten prompts across three engines, and you keep the sheet either way'), which sets an expectation without conveying what the paid engagement costs or is worth. Scored honestly against the rubric's instruction not to inflate this criterion."
+        },
+        {
+          "category": "CTA",
+          "criterion": "CTA Quality",
+          "score": 5,
+          "max": 5,
+          "finding": "Two well-placed CTAs, both specific and low-friction. Mid-body: 'If you would rather have the sheet than build it, DevCommX will run this audit on your domain and hand you the scored spreadsheet, no strings.' Closing: a scarcity-framed free audit with the objection pre-answered, 'No demo, no pitch deck, just your baseline and the ranked list of what to fix first.'"
+        },
+        {
+          "category": "Slot",
+          "criterion": "Content Differentiation",
+          "score": 5,
+          "max": 5,
+          "finding": "Occupies a clean pillar slot as the cross-engine layer above the three per-engine posts and beside the AEO versus GEO explainer, and it routes to each of them explicitly rather than competing with them."
+        }
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Well built. One in-body figure is adequate but thin for a 3,139-word pillar.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Headings",
+          "criterion": "Heading Architecture",
+          "score": 5,
+          "max": 5,
+          "finding": "Nine H2s descending to H3s for About the author, Further Reading, References and FAQ, then H4s for the six FAQ questions. No skipped levels, and the H2 sequence tracks a real argument from definition to signals to audit to fixes to measurement."
+        },
+        {
+          "category": "Visuals",
+          "criterion": "Visual Elements",
+          "score": 4,
+          "max": 5,
+          "finding": "Two in-body visual assets: the six-row signal table and a brand-compliant inline SVG grouping the signals into 'CAN IT FIND YOU', 'CAN IT LIFT YOU' and 'CAN IT TRUST YOU', with role='img' and a full aria-label. That clears the rubric's 2/5 ceiling for image-less drafts, but one diagram across 3,139 words leaves long stretches of unbroken prose."
+        },
+        {
+          "category": "Scannability",
+          "criterion": "Scannability",
+          "score": 5,
+          "max": 5,
+          "finding": "Bolded lead-ins carry the skim ('Entity clarity.', 'Extractability.', 'Unextractable claims.', 'Missing entity association.'), and the audit steps are time-boxed in bold so a reader can extract the method without reading the prose around it."
+        },
+        {
+          "category": "Flow",
+          "criterion": "Reading Level & Flow",
+          "score": 5,
+          "max": 5,
+          "finding": "Consistently concrete and free of filler, with transitions that carry an argument rather than announce sections: 'Engines diverge loudly in public and converge quietly in practice.' Technical terms are defined at first use."
+        },
+        {
+          "category": "Length",
+          "criterion": "Content Length & Density",
+          "score": 4,
+          "max": 5,
+          "finding": "3,139 words against the brief's stated 2,200 to 2,800 band. Pillar depth justifies overshooting, and the density is high with little padding, but it is over the commissioned length and the Copilot and llms.txt section is the most detachable part."
+        }
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Structurally complete and byte-identical across both locations, but dateModified is stale after the redraft.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Article",
+          "criterion": "Article Type Completeness",
+          "score": 5,
+          "max": 5,
+          "finding": "The BlogPosting node carries all ten expected properties: @id, @type, headline, description, url, datePublished, dateModified, keywords, image, author, publisher and mainEntityOfPage. The headline matches the H1 exactly."
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQPage Structure",
+          "score": 5,
+          "max": 5,
+          "finding": "Six entries, each a proper @type Question with an acceptedAnswer of @type Answer carrying a text property, comfortably above the three-question minimum, under its own #faq @id."
+        },
+        {
+          "category": "Alignment",
+          "criterion": "Schema-to-Content Alignment",
+          "score": 5,
+          "max": 5,
+          "finding": "I verified programmatically that the schema-markup field and the post-body script embed are byte-identical, and that all six visible H4 FAQ questions match the FAQPage mainEntity names word for word. The keywords property tracks the body's actual coverage."
+        },
+        {
+          "category": "Graph",
+          "criterion": "@graph Implementation",
+          "score": 5,
+          "max": 5,
+          "finding": "A proper @graph array with two nodes, each carrying a distinct fragment @id ('#article' and '#faq') anchored to the canonical URL, which is what lets a parser address them separately."
+        },
+        {
+          "category": "Rich results",
+          "criterion": "Rich Result Eligibility",
+          "score": 3,
+          "max": 5,
+          "finding": "ImageObject with explicit width 1200 and height 630, and a publisher Organization with a logo, are both correct. The defect is dateModified: it still reads '2026-09-08', identical to datePublished, even though the post was materially redrafted and the live CMS item records lastUpdated of 2026-09-09. This is the same stale-date defect class already fixed across the legacy library, reintroduced here."
+        }
+      ]
+    }
+  ],
+  "top_fixes": [
+    "Set dateModified to the real redraft date in both schema locations and in the CMS last-updated field. datePublished and dateModified are currently identical at 2026-09-08 despite the live item showing a 2026-09-09 update, which is the exact defect already remediated across the legacy library.",
+    "Add one concrete proof point. Brand scores 3.6 and is the only dimension below the publish threshold, driven by Proof Metrics at 2/5. The '40+ qualified demos in ~6 weeks' framing used across every sibling post in this batch is absent here.",
+    "Check the Ahrefs citation URL before publish. The post links ahrefs.com/blog/ai-brand-visibility-correlations/, but search consistently returns ai-overview-brand-correlation for that 75,000-brand study, and ahrefs.com is egress-blocked from this session so it could not be resolved.",
+    "Soften the correlation claim to match the source. Ahrefs characterises these as moderate to very weak Spearman correlations; the post concludes flatly that 'Being talked about beats being linked to.'",
+    "Add a second in-body figure. One SVG across 3,139 words leaves long unbroken stretches; the 45 minute audit is the obvious candidate for a process diagram."
+  ]
+}
