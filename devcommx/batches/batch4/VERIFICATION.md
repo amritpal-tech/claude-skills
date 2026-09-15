@@ -31,6 +31,32 @@ elements were correctly styled.
 | Forrester, US B2B e-commerce $3T by 2027, 24% of US B2B sales | topic 2 | Confirmed; cited URL is the real press page |
 | Gartner, AI agents outnumber sellers 10 to 1 by 2028, under 40% report improved productivity | topic 6 | Confirmed verbatim; cited URL exact |
 | Gartner, 67% of B2B buyers prefer a rep-free experience | topic 6 | Confirmed: 9 March 2026, 646 buyers, fielded Aug to Sep 2025. Draft correctly uses the current 67% rather than the superseded 61% |
+| Cleverly published pricing, $397 / $697 / $997 LinkedIn tiers and cold email from $1,995 a month | topic 4 | Confirmed. One caveat: a second source shows the Platinum tier as a $891 to $997 range rather than a flat $997. The figure sits inside the published range and the post tells readers to hold a written quote, but a reviewer should check the live pricing page |
+
+## Topic 4, the named-competitor post
+
+Checked adversarially in the main thread, not just accepted from the agent.
+
+Every sentence naming a firm was grepped against a judgement-word list
+(best, worst, better, leading, poor, unreliable, recommend, avoid, outperform,
+trustworthy, scam and so on). One genuine hit: the FAQ question "What are the
+best Cold Email Hackers alternatives?", which is the brief's own PAA target
+phrasing, and whose answer opens "This comparison does not rank agencies,
+because no public dataset supports a quality ranking." Two further hits were
+the schema JSON surviving the tag strip, not prose.
+
+Cold Email Hackers is named six times and every mention is neutral: its
+published positioning, sourced to a directory listing, and the comparison
+framing. No claim about its results, quality or clients.
+
+Eleven table cells read "Not publicly stated". That is the correct outcome:
+the alternative was guessing. Only Cleverly's figures are asserted as
+published prices. The ItemList carries ItemListUnordered and the post says
+the order is alphabetical.
+
+A second false positive from my own checking: reading `name` off each
+ListItem returned None for all six entries. The names are correctly nested
+under `item` as Organization nodes, which is the right pattern.
 
 ## Open items a human must close before publish
 
