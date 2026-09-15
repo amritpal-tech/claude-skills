@@ -104,6 +104,8 @@ hybrid-ai-sdr-model-account-split
 identify-buying-signals-outbound
 instantly-vs-smartlead-vs-lemlist-2026
 intent-data-buying-signals-b2b-outbound-2026
+lemlist-ai-voice-notes-linkedin-setup
+linkedin-connection-request-limits-2026-safe-outreach
 linkedin-outreach-templates-2026
 linkedin-sales-strategy-b2b-pipeline
 llmo-checklist-best-llmo-tools-2026
