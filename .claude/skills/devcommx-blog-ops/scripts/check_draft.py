@@ -15,6 +15,10 @@ CONTACT_OK   = "https://www.devcommx.com/contact-us"
 CONTACT_BAD  = "devcommx.com/contact\""
 COLLECTION   = "689c92652a4b35f0e9a14fc2"
 AUTHOR       = "Sumit Nautiyal"
+# Default band suits the long-form batches (sheet12 and earlier). Later sheets
+# commission shorter pieces (batch 4 specs run 1,500 to 2,200), so the band is
+# overridable with --words-min/--words-max rather than forcing a draft to choose
+# between its own brief and this gate.
 WORDS_MIN, WORDS_MAX = 2300, 3200
 
 REQUIRED_FIELDS = [
@@ -134,7 +138,11 @@ def check(path):
     # --- word count / reading time -------------------------------------------
     words = len(strip_tags(body).split())
     if not WORDS_MIN <= words <= WORDS_MAX:
-        (E if words < 2000 or words > 3600 else W)(
+        # Outside the band is a warning; badly outside it is an error. The error
+        # margin tracks the band so a shorter-form batch does not inherit the
+        # long-form thresholds.
+        hard_lo, hard_hi = WORDS_MIN - 300, WORDS_MAX + 400
+        (E if words < hard_lo or words > hard_hi else W)(
             f"word count {words} outside {WORDS_MIN}-{WORDS_MAX}")
     try:
         rt = int(str(fd.get("add-blog-reading-time", "")).strip())
@@ -215,10 +223,16 @@ def check(path):
 
 
 def main():
+    global WORDS_MIN, WORDS_MAX
     ap = argparse.ArgumentParser()
     ap.add_argument("files", nargs="+")
     ap.add_argument("--json", action="store_true", help="machine-readable output")
+    ap.add_argument("--words-min", type=int, default=WORDS_MIN,
+                    help=f"minimum body word count (default {WORDS_MIN})")
+    ap.add_argument("--words-max", type=int, default=WORDS_MAX,
+                    help=f"maximum body word count (default {WORDS_MAX})")
     a = ap.parse_args()
+    WORDS_MIN, WORDS_MAX = a.words_min, a.words_max
 
     results, failed = [], 0
     for p in a.files:
