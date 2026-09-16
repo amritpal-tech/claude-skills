@@ -1,0 +1,278 @@
+{
+  "slug": "cold-email-warm-up-maintenance-spam-recovery",
+  "title": "Cold Email Warm Up: Ongoing Maintenance, Spam Signals and Domain Recovery",
+  "words": 2816,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Technically excellent, but the four-to-twelve-week recovery window is hung on a Google help page that does not state it, and the operating thresholds are unsourced.",
+      "flag_type": "critical",
+      "criteria": [
+        {
+          "category": "Sources",
+          "criterion": "Stat Accuracy & Source Quality",
+          "score": 3,
+          "max": 5,
+          "finding": "Four of the six citations are correct and well placed — Validity's 2026 benchmark for inbox placement ('roughly 87 percent, with Microsoft mailboxes hardest at about 77 percent'), Google's sender guidelines for the 5,000-a-day authentication rule and the 0.10 / 0.30 percent spam thresholds, and dmarcian for Microsoft's '550 5.7.15' rejection from May 2025. Two are not. 'Recovery for a damaged sender typically runs four to twelve weeks of consistent, low volume, high engagement sending' is linked to support.google.com/a/answer/9981691, which is the Postmaster Tools help page documenting the reputation scale and spam-rate reporting; it does not publish a recovery duration, so the post's most consequential number is attached to a source that does not support it. Separately the bounce benchmark is introduced anonymously — 'Benchmarks put a healthy overall bounce rate below 2 percent' — with the Validity attribution hidden inside the anchor rather than named in the sentence."
+        },
+        {
+          "category": "Depth",
+          "criterion": "Practitioner Depth",
+          "score": 5,
+          "max": 5,
+          "finding": "This is unmistakably operator knowledge. It names the blind spot in each monitoring feed rather than just describing them: 'SNDS is IP keyed, which is useful if you run your own sending IPs and close to useless on Google Workspace or Microsoft 365, where you do not own the addresses and cannot register them.' The silent failure mode is called out precisely — 'has SPF crossed the ten DNS lookup limit and started returning permerror... mail that passed yesterday fails today with nothing visibly changed' — and the seed test is used as a localiser, not a ritual: 'If only Microsoft is junking you, this is an IP and SNDS problem, not a content problem, and rewriting the email will waste a week.' The best line in the post is the cheapest instrument: 'replies collapse before Postmaster reflects the damage.'"
+        },
+        {
+          "category": "Attribution",
+          "criterion": "Data Attribution",
+          "score": 3,
+          "max": 5,
+          "finding": "The comparison table is a feature matrix rather than a metrics table, and its threshold cells ('Reputation High, spam rate under 0.10%, authentication near 100%') trace correctly to the Google guidance cited in the surrounding prose. The gap is the volume of bare numeric assertions elsewhere: '25 to 40 new messages per mailbox per weekday is defensible', 'A working ratio is 15 to 25 percent of total volume as engaged, replied to traffic', 'hard bounces under 1 percent per campaign', 'Re verify anything older than 60 days', the entire recovery ramp ('roughly 10 percent of previous volume... 20 to 25 percent... 40 percent... 60 percent'), and the alert thresholds ('DMARC pass rate below 98 percent, and reply rate falling more than 40 percent week over week'). Every one of these is presented in the same register as the cited figures, with no marker that they are DevCommX operating heuristics rather than published benchmarks."
+        },
+        {
+          "category": "Accuracy",
+          "criterion": "Technical Accuracy",
+          "score": 5,
+          "max": 5,
+          "finding": "The platform detail is correct and current throughout: Postmaster Tools' Bad / Low / Medium / High domain reputation scale, SNDS's Green / Yellow / Red per-IP filter verdict, the SPF ten DNS lookup ceiling returning permerror, the '550 5.7.15' rejection code and Microsoft's May 2025 start date, Google's 5,000-messages-a-day bulk sender threshold and the 0.10 / 0.30 percent complaint rates. The DNS verification methods are right for each tool ('Your sending domain, verified by a DNS TXT record' for Postmaster, 'IP ranges only, verified by the address block contact' for SNDS), which is the level of detail that is easy to get wrong and is not."
+        },
+        {
+          "category": "Delivery",
+          "criterion": "Completeness",
+          "score": 5,
+          "max": 5,
+          "finding": "All nine H2s deliver what they promise. 'Reading Google Postmaster Tools and Microsoft SNDS Without Fooling Yourself' delivers both the readings and the self-deception ('Read the direction of travel, not the absolute number... A domain touching 0.30 percent is already filtered hard'). 'Diagnosing an Already Warm Domain' delivers an ordered five-point differential. 'The Sequence for a Burned Domain' delivers a genuine week-by-week ramp plus the stop condition ('If the domain is rated Bad, has been listed publicly more than once, or has an SNDS history of trap hits, replacement is usually cheaper than rehabilitation'). 'The Monitoring You Should Have Running Permanently' names exactly the five feeds it promises."
+        }
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Keyword coverage is complete but one secondary term is forced into the prose ungrammatically, and the sibling Postmaster spam-rate post is never linked.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Keywords",
+          "criterion": "Primary Keyword Targeting",
+          "score": 4,
+          "max": 5,
+          "finding": "'Cold email warm up' is bolded in the opening sentence and carries the slug, the 49-character meta-title, the meta-description and three H2s ('Why Cold Email Warm Up Is a Permanent Process, Not a Two Week Task', 'The Cold Email Warm Up Maintenance Schedule at Steady State', 'Cold Email Warm Up Recovery: The Sequence for a Burned Domain'), plus two FAQ questions. Four secondary terms are bolded in body. Three of those read naturally; the fourth does not — 'To **avoid spam folder cold email** outcomes at steady state, most of the work is catching silent regressions' is a keyword jammed into a sentence it does not fit grammatically, and it is visible to a reader as such."
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQ / People Also Ask",
+          "score": 5,
+          "max": 5,
+          "finding": "Six questions, all real search shapes and several genuinely high-intent long-tail: 'Why are my cold emails going to spam when nothing changed?', 'Can you recover a burned sending domain or should you replace it?', 'Do email warm up tools actually work?'. The answers are unusually good because they refuse the easy answer — 'They work for one narrow job: manufacturing early positive engagement so a brand new mailbox is not sending only to strangers. They do not repair a damaged reputation' — and each lands in the 55 to 65 word extractable band."
+        },
+        {
+          "category": "Tables",
+          "criterion": "Comparison / Featured Snippet Tables",
+          "score": 4,
+          "max": 5,
+          "finding": "One well-formed table with a real <thead> and three <th> cells (Signal / Google Postmaster Tools / Microsoft SNDS) over six <td> rows. The row choices are strong for extraction: 'First real warning sign' and 'Blind spot for cold email' are the two lines a reader cannot get elsewhere, and 'The reading you want' is a liftable threshold set. It is the smallest table in the batch at 18 data cells, and the post leaves its most tabular content untabulated — the week-by-week recovery ramp (10%, 20-25%, 40%, 60%, full) is delivered as three prose paragraphs when it is plainly a five-row schedule."
+        },
+        {
+          "category": "Links",
+          "criterion": "Internal & External Link Structure",
+          "score": 3,
+          "max": 5,
+          "finding": "Eight internal links but only seven distinct destinations, the lowest count of the four drafts, and one destination (cold-email-domain-setup-checklist) is linked twice within three paragraphs of each other. The more serious gap is what is missing: the library already contains a dedicated post on fixing a Gmail Postmaster spam rate over 0.3 percent, and this draft discusses that exact threshold in the body, in the table and in an FAQ answer without ever linking to it. Anchor quality is also uneven — three external anchors are the statistic itself rather than the source ('roughly 87 percent, with Microsoft mailboxes hardest at about 77 percent', 'four to twelve weeks of consistent, low volume, high engagement sending'), so a reader cannot see who is being cited without hovering."
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical SEO",
+          "score": 5,
+          "max": 5,
+          "finding": "Meta-title is 49 characters and meta-description 156, both inside truncation limits. Schema is present in both required locations and the slug matches the schema url and the mainEntityOfPage @id exactly. The body heading tree starts cleanly at H2, correct for this collection since Webflow renders the CMS name field as the page H1."
+        }
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness",
+      "weight": 0.2,
+      "flag": "Excellent liftable definitions, but the enumerated procedures are prose rather than markup and a key statistic is misattributed.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Definitions",
+          "criterion": "Direct Definitions",
+          "score": 5,
+          "max": 5,
+          "finding": "The reframing is stated in exactly the form an engine reuses. The opening: 'Cold email warm up is not a two week task you finish before launch. It is a permanent control loop.' The mechanism nobody else states plainly: 'Accepting mail and showing mail are separate decisions, made at different moments by different systems.' The recovery definition: 'Recovery is a re ramp, not a reset. The clock does not start when you stop sending, it starts when the provider sees a sustained clean pattern replace the bad one.' Each is a self-contained sentence pair that survives being lifted out of its paragraph."
+        },
+        {
+          "category": "Structure",
+          "criterion": "Structured Data for AI Parsing",
+          "score": 3,
+          "max": 5,
+          "finding": "A six-row table and a six-question FAQ are the only real structure. Everything procedural is prose. The diagnostic differential is enumerated inline inside a single paragraph — 'One, volume:... Two, list source:... Three, authentication drift:... Four, shared surface:... Five, blocklist:' — the five monitoring feeds are a comma-separated run in one sentence, and the six alert thresholds are another. There are zero <ul> and zero <ol> elements in the body, the two <ul> in the document being Further Reading and References, and the eight <strong> tags are almost all keyword bolding rather than structural lead-ins."
+        },
+        {
+          "category": "Authority",
+          "criterion": "Statistical Authority",
+          "score": 3,
+          "max": 5,
+          "finding": "The named sources are strong and citable — Google Workspace Admin Help, Google Postmaster Tools, Microsoft SNDS, the Microsoft Defender for Office 365 blog, Validity and dmarcian. But two of the post's most quotable numbers are not safely attributable. The four-to-twelve-week recovery window points at a Google help page that does not contain it, so an engine tracing the claim finds no supporting text; and the bounce benchmark is introduced as 'Benchmarks put', naming no organisation in the visible sentence. On top of that, roughly a dozen operating figures (25-40 per mailbox per weekday, the 15-25 percent warm-up ratio, the entire recovery ramp, the 98 percent DMARC pass threshold) carry no attribution at all."
+        },
+        {
+          "category": "Entity",
+          "criterion": "Entity Association",
+          "score": 3,
+          "max": 5,
+          "finding": "Three DevCommX mentions, two of which sit in the same intro paragraph and say nearly the same thing ('At DevCommX we build outbound infrastructure clients own outright, and the failure we see most is not a botched first send' followed four sentences later by 'DevCommX maintains sending infrastructure for client outbound programs, and the failure patterns below are the ones that actually recur'). The third binding, in the monitoring section, is the one that earns its place. There is no author bio in the body — the only H3s are Further Reading, References and FAQ — so Sumit Nautiyal exists only in the CMS author field and the schema Person node, invisible to an engine reading the page."
+        },
+        {
+          "category": "Distinctiveness",
+          "criterion": "GEO Distinctiveness",
+          "score": 3,
+          "max": 5,
+          "finding": "The post is deliberately and cleanly scoped to post-launch — 'This guide starts after launch, so here is initial setup compressed' — and defers setup, tool selection and mailbox-count maths to three named siblings. That discipline is real. But it collides head-on with an existing library post on fixing a Gmail Postmaster spam rate over 0.3 percent: this draft covers the 0.10 / 0.30 percent thresholds in the body, in a table row, in the recovery gate ('spam rate is back under 0.10 percent') and in a dedicated FAQ ('What spam complaint rate should trigger a pause?'), which is that post's entire query cluster, and it never links to it."
+        }
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "The proof point is overstated from one client to 'clients', and there is almost no cost or value framing.",
+      "flag_type": "critical",
+      "criteria": [
+        {
+          "category": "Narrative",
+          "criterion": "Differentiation Narrative",
+          "score": 3,
+          "max": 5,
+          "finding": "The ownership half of the positioning is stated twice ('we build outbound infrastructure clients own outright', 'Running AI SDR infrastructure for clients who own the systems outright') and the closing insight is genuinely differentiating: 'the difference between programmes that hold deliverability and programmes that burn is almost never the tooling. It is whether one person is accountable for reading five numbers every Monday and empowered to throttle sending.' What is absent is the signal-based half of the model. Nothing in the post connects deliverability maintenance to signal-triggered sending, so the narrative reads as generic managed-infrastructure rather than the DevCommX model."
+        },
+        {
+          "category": "Proof",
+          "criterion": "Proof Metrics & Evidence",
+          "score": 3,
+          "max": 5,
+          "finding": "The proof point is present but overstated. The sanctioned claim is a single result, and the two sibling drafts in this batch scope it correctly ('One DevCommX client reached 40+ qualified demos', 'On one recent build we reached 40+ qualified demos'). This draft pluralises it: 'DevCommX has driven 40+ qualified demos in ~6 weeks for clients on infrastructure they own.' That converts one engagement into an implied pattern across a client base, which is exactly the kind of unearned generalisation the rest of the post is scrupulous about avoiding. It also sits in the final paragraph with no connection to deliverability, the subject of the article."
+        },
+        {
+          "category": "Pricing",
+          "criterion": "Pricing Transparency",
+          "score": 2,
+          "max": 5,
+          "finding": "Almost no cost or value framing. One sentence carries all of it — 'A new domain costs almost nothing against six weeks of a sales team sending into a junk folder' — which is a real opportunity-cost argument but the only one in 2,816 words. There is no figure anywhere for what a deliverability audit costs or is worth, no cost of a burned domain, no comparison of replacement against rehabilitation in money rather than weeks. The closing does offer value framing of a kind ('We will hand over the steady state maintenance schedule and the recovery ramp as templates your team can run without us'), but nothing is priced. Scored honestly per the rubric's instruction not to inflate this criterion."
+        },
+        {
+          "category": "CTA",
+          "criterion": "CTA Quality",
+          "score": 4,
+          "max": 5,
+          "finding": "The single CTA is specific about scope rather than asking for a generic demo, and it itemises the deliverable: 'a structured deliverability audit: authentication records, volume patterns, list sources, suppression coverage, and the Postmaster and SNDS history read together', plus the low-friction promise that the templates transfer ('your team can run without us'), anchored on 'Talk to us about a deliverability audit' pointing at /contact-us (the correct path). Deducted one for being the only CTA in the post, with nothing at the end of the diagnosis or recovery sections where a reader in trouble is most likely to want help."
+        },
+        {
+          "category": "Slot",
+          "criterion": "Content Differentiation",
+          "score": 4,
+          "max": 5,
+          "finding": "Fills a genuinely distinct slot — steady-state maintenance and burned-domain recovery, as opposed to the setup, tooling and capacity posts it explicitly hands off to. The 'this guide starts after launch' framing is the right editorial decision and is honoured throughout. One deduction for the unacknowledged adjacency to the existing Gmail Postmaster spam-rate post, which occupies part of the same territory."
+        }
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "No in-body image or diagram, and the recovery ramp — the most procedural content in the post — is delivered as unbroken prose.",
+      "flag_type": "critical",
+      "criteria": [
+        {
+          "category": "Headings",
+          "criterion": "Heading Architecture",
+          "score": 5,
+          "max": 5,
+          "finding": "No skipped levels: nine H2s, then three H3s (Further Reading, References, FAQ), then six H4 questions under the FAQ H3, for a sequence of 2,2,2,2,2,2,2,2,2,3,3,3,4,4,4,4,4,4. The H2 order follows the actual operating loop — why it never ends, what setup is assumed, what to read, what to hold at steady state, list hygiene, diagnosis, recovery, permanent monitoring, the offer — so a reader can enter at the section matching their situation."
+        },
+        {
+          "category": "Visuals",
+          "criterion": "Visual Elements",
+          "score": 2,
+          "max": 5,
+          "finding": "Zero <img>, zero <svg>, zero <figure> in the body. The only visual asset is the six-row Postmaster-versus-SNDS table, and the only image attached to the post is the shared OG banner used by every draft in this batch. This is the rubric's ceiling for image-less drafts. It is a particularly costly omission on this topic, where two objects are begging to be drawn: the six-week recovery ramp as a volume curve, and the five-step diagnostic differential as a decision flow."
+        },
+        {
+          "category": "Scannability",
+          "criterion": "Scannability",
+          "score": 3,
+          "max": 5,
+          "finding": "The nine H2s and the table carry the top-level skim, and paragraphs generally open with a usable thesis ('Bounces are the fastest way to tell a provider you do not know who you are emailing', 'Recovery is a re ramp, not a reset'). Below that there is nothing to hold onto: eight <strong> tags across nine sections, and almost all of them are keyword bolding rather than section markers. The recovery sequence is the worst case — a reader who has just burned a domain needs a checklist and gets three dense paragraphs in which the week markers ('Week two, hold at 20 to 25 percent') are plain text inside running prose."
+        },
+        {
+          "category": "Flow",
+          "criterion": "Reading Level & Flow",
+          "score": 5,
+          "max": 5,
+          "finding": "Technical without being dense, and every section opens by reframing rather than announcing. 'Outbound teams debug the wrong layer. When replies fall, the reflex is to rewrite the opener or test a new subject line. That is right for a message nobody answered and wrong for a message nobody saw.' Terms are defined at first use, and the judgements are memorable and short: 'it buys the right to be judged on behaviour', 'The method depends on the provider seeing an unbroken, boring, upward pattern.'"
+        },
+        {
+          "category": "Length",
+          "criterion": "Content Length & Density",
+          "score": 5,
+          "max": 5,
+          "finding": "2,816 words across nine sections, declared a 13 minute read, right at the top of the commissioned band. The density is high and evenly distributed — every section carries at least one threshold, one mechanism and one instruction — and the setup material that would have padded it is deliberately compressed to a single section with the reason stated ('This guide starts after launch, so here is initial setup compressed'). Nothing is detachable."
+        }
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Byte-identical across both locations with word-for-word FAQ alignment; publisher.logo still points at the blog OG banner.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Article",
+          "criterion": "Article Type Completeness",
+          "score": 5,
+          "max": 5,
+          "finding": "The BlogPosting node carries all twelve expected properties: @id, @type, headline, description, url, datePublished, dateModified, keywords, image, author, publisher and mainEntityOfPage. The headline matches the CMS name field exactly, and the keywords property lists seven terms including the two tool entities the article is built around, 'Google Postmaster Tools' and 'Microsoft SNDS'."
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQPage Structure",
+          "score": 5,
+          "max": 5,
+          "finding": "Six entries under a distinct '#faq' @id, each a proper @type Question with an acceptedAnswer of @type Answer carrying a text property. Answer texts run 344 to 370 characters, the tightest and most consistent band of the four drafts, and double the three-question minimum."
+        },
+        {
+          "category": "Alignment",
+          "criterion": "Schema-to-Content Alignment",
+          "score": 5,
+          "max": 5,
+          "finding": "Verified mechanically rather than by eye. The schema-markup field and the <script type=\"application/ld+json\"> embed at the foot of post-body are byte-identical once surrounding whitespace is stripped. All six visible H4 questions match the FAQPage mainEntity names word for word, and all six visible answer paragraphs match their acceptedAnswer.text word for word. All seven schema keywords appear in the body, five of them as the bolded secondary terms."
+        },
+        {
+          "category": "Graph",
+          "criterion": "@graph Implementation",
+          "score": 5,
+          "max": 5,
+          "finding": "A proper @graph array with two nodes, each carrying a distinct fragment @id anchored to the canonical URL ('...cold-email-warm-up-maintenance-spam-recovery#article' and '...#faq'), which is what lets a parser address the article and the FAQ independently."
+        },
+        {
+          "category": "Rich results",
+          "criterion": "Rich Result Eligibility",
+          "score": 3,
+          "max": 5,
+          "finding": "The article ImageObject is correct with explicit width 1200 and height 630, and dateModified is present and legitimately equal to datePublished (both 2026-09-08), consistent with the CMS last-updated field for a draft that has not been revised. The defect is the publisher node: Organization.logo is an ImageObject whose url is the same '..._imresizer-DevCommX-Blog-OG.png' banner used as the article image, with no width or height. Reusing a 1200x630 article banner as the publisher logo is the mismatch that quietly disqualifies the node."
+        }
+      ]
+    }
+  ],
+  "top_fixes": [
+    "Fix or remove the recovery-window citation. 'Recovery for a damaged sender typically runs four to twelve weeks of consistent, low volume, high engagement sending' links to support.google.com/a/answer/9981691, which documents the reputation scale and does not state any recovery duration. Either find a source that says it or present it as DevCommX operating experience.",
+    "Correct the proof point back to a single client. The post says 'DevCommX has driven 40+ qualified demos in ~6 weeks for clients on infrastructure they own'; the permitted claim is one result, and the sibling drafts correctly scope it as 'One DevCommX client' and 'On one recent build'.",
+    "Link the Gmail Postmaster spam-rate post and de-duplicate the setup link. The 0.10 / 0.30 percent thresholds appear in the body, the table and an FAQ answer without ever linking to the existing library post that owns that query, while cold-email-domain-setup-checklist is linked twice within three paragraphs. Internal links are the lowest of the four drafts at seven distinct destinations.",
+    "Mark the unsourced operating numbers as heuristics, or source them. '25 to 40 new messages per mailbox per weekday', the '15 to 25 percent' warm-up ratio, the 10/20-25/40/60/full recovery ramp, the 60-day reverification window and the 98 percent DMARC pass alert all sit in the same register as the cited Google and Validity figures with nothing distinguishing them.",
+    "Give the recovery ramp and the diagnostic differential real structure and one figure. Both are currently prose — the five-step differential is enumerated inside a single paragraph and the week-by-week ramp is three paragraphs — and the post has zero <ul>, zero <ol> and zero in-body images, holding Visual Elements at 2/5. Also rewrite 'To avoid spam folder cold email outcomes at steady state', where the keyword is visibly forced into the sentence."
+  ]
+}

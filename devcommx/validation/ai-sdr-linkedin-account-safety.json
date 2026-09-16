@@ -1,0 +1,278 @@
+{
+  "slug": "ai-sdr-linkedin-account-safety",
+  "title": "Can an AI SDR Run LinkedIn Without Getting Your Account Restricted? Limits, Risk and What Stays Human (2026)",
+  "words": 2190,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "The ToS paraphrase is correctly hedged and claims no section number, date or limit, but the hiQ passage overstates what the Ninth Circuit decided and the four enforcement triggers are asserted as fact.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Sources",
+          "criterion": "Stat Accuracy & Source Quality",
+          "score": 4,
+          "max": 5,
+          "finding": "linkedin.com was egress-blocked, so the ToS wording is paraphrased from search-result text rather than read at source, and the draft handles that constraint correctly. It never uses quotation marks, never names a clause number, never gives an effective date and never states an invitation cap, writing instead 'LinkedIn's User Agreement tells members not to develop, support or use software, devices, scripts, robots or other means... to scrape the services'. The FAQ hedges again with 'Yes, on a plain reading.' All five canonical LinkedIn URLs are the correct ones and are cited inline and in References. One deduction: nothing on the page tells the reader the wording is second-hand or gives an 'accurate as of' date for a living legal document, and a human with LinkedIn access must confirm the prohibited-conduct clause still reads as paraphrased before this publishes, as VERIFICATION.md open item 1 requires."
+        },
+        {
+          "category": "Depth",
+          "criterion": "Practitioner Depth",
+          "score": 5,
+          "max": 5,
+          "finding": "This is deployment knowledge, not a summary. The recovery sequence contains the detail only someone who has run an appeal would include: 'Remove every extension from the browser immediately, including ones you think are unrelated, because a second detection during review makes the appeal unwinnable. Log in from the usual device.' The architectural advice is stronger still: 'Build it so the agent cannot click. Give the system no LinkedIn credentials and no extension, and safety becomes structural rather than a policy someone overrides in month four.' It also names the failure mode that actually loses accounts: 'Most account losses are a trial nobody switched off.'"
+        },
+        {
+          "category": "Attribution",
+          "criterion": "Data Attribution",
+          "score": 3,
+          "max": 5,
+          "finding": "The eleven-row decision table is a DevCommX judgement matrix and is honestly framed as one ('Put this in front of whoever is buying the tool'), so the verdict column needs no source. The 'Why it sits there' column does make sourceable risk assertions with no source, most sharply 'The most scored, most rate limited, most reportable action' for connection requests. The larger gap is the restriction-trigger section, which opens 'Four patterns cause most enforcement' and lists velocity, sameness, negative recipient signal and session anomalies as flat fact. DATA_GAPS_topic1.md item 4 is explicit that these are 'observable risk patterns from practitioner experience, not as LinkedIn's confirmed detection methods' but the body never tells the reader that, so the most consequential claims in the post read as platform-documented when they are not."
+        },
+        {
+          "category": "Accuracy",
+          "criterion": "Technical Accuracy",
+          "score": 3,
+          "max": 5,
+          "finding": "The platform mechanics are right for 2026: the restriction ladder (feature limit, identity verification prompt, full restriction, permanent removal), the correct refusal to state a weekly invitation number, and 'LinkedIn publishes no appeal service level, so plan for a week or more off the channel', which is framed as a planning recommendation rather than a claim about LinkedIn's queue. The legal passage is where it slips. The post says 'The hiQ Labs Ninth Circuit scraping case ended in a consent judgment against hiQ... after the court found that scraping and the use of false profiles breached the User Agreement', then draws 'Terms of this kind hold up.' The linked Ninth Circuit 2022 opinion is the decision hiQ largely won, on the CFAA question; the breach-of-contract finding and the 500,000 dollar consent judgment came later, from the district court. Compressing three separate rulings into one sentence overstates what the cited document says."
+        },
+        {
+          "category": "Delivery",
+          "criterion": "Completeness",
+          "score": 4,
+          "max": 5,
+          "finding": "All seven H2s the brief specifies are delivered in order, plus the CTA section, and the batch note that pricing and ROI are out of scope is honoured by linking to ai-sdr-pricing and ai-sdr-reply-rates-roi rather than restating them. The one 'must include' that is delivered thinly is 'an account-safety protocol the reader can adopt': it exists only as four checkpoints inside a prose paragraph plus the closing instruction to 'Keep a one page channel policy naming which actions are automated, assisted and human.' There is no adoptable protocol block, which is the one artefact a risk guide is expected to hand over."
+        }
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Best decision table in the batch, but the meta-description is 168 characters and will truncate, and the brief-mandated title does not contain the primary keyword verbatim.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Keywords",
+          "criterion": "Primary Keyword Targeting",
+          "score": 4,
+          "max": 5,
+          "finding": "'AI SDR LinkedIn' is bolded in the first three words of the body, opens the 57-character meta-title, sits in the slug and the schema keywords, and appears verbatim in two H2s ('What an AI SDR LinkedIn Workflow Can and Cannot Safely Do' and 'Where a Person Has to Stay in an AI SDR LinkedIn Sequence') and one FAQ ('What is the safest AI SDR LinkedIn setup in 2026?'). All four secondaries appear. The H1 is the exception: the brief mandates the title verbatim, and 'Can an AI SDR Run LinkedIn Without Getting Your Account Restricted?' breaks the phrase with 'Run', so the H1 does not carry the exact keyword the same brief demands it carry. Two of the secondary insertions are also visibly bolted on, notably 'That is safe LinkedIn automation 2026 in one rule.'"
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQ / People Also Ask",
+          "score": 5,
+          "max": 5,
+          "finding": "All three PAA targets the brief names are reproduced word for word as H4s ('Is LinkedIn automation against the terms of service?', 'Can you get banned for using LinkedIn automation?', 'Can AI SDRs use LinkedIn?'), joined by three genuine search-shaped additions, of which 'Does LinkedIn detect AI written messages?' is the highest-intent question in the whole batch and gets the sharpest answer: 'The risk is not that text was generated. It is that a hundred messages share one skeleton.' Answers run 49 to 62 words, all inside the extractable band."
+        },
+        {
+          "category": "Tables",
+          "criterion": "Comparison / Featured Snippet Tables",
+          "score": 5,
+          "max": 5,
+          "finding": "The action-by-action table is eleven data rows across four columns (LinkedIn action, Verdict, Why it sits there, What the software may do) with all four th cells carrying the required color:#1f2937. Every row is independently liftable as a complete answer, for example 'Sending the connection request | Keep human | The most scored, most rate limited, most reportable action. | Queue it. The account owner clicks send.' The post also supplies the extraction key immediately before it by defining Automate, Assist and Keep human, and the rule that generalises it immediately after: 'Risk tracks who receives the action, not how hard it is to automate.'"
+        },
+        {
+          "category": "Links",
+          "criterion": "Internal & External Link Structure",
+          "score": 4,
+          "max": 5,
+          "finding": "Seven internal links from the brief's menu, including /ai-sdr and a correct /contact-us rather than /contact, each with a descriptive anchor and placed where it substitutes for out-of-scope content ('The cost side is in our AI SDR pricing breakdown'). Seventeen external anchors, none of them bare URLs. The deduction is host concentration: those seventeen anchors resolve to just three hosts, and thirteen of them point at linkedin.com. Grounding a ToS post in the primary source is right, but the Further Reading block then repeats three URLs that References lists again with fuller labels, so five of the seventeen anchors are pure duplication."
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical SEO",
+          "score": 3,
+          "max": 5,
+          "finding": "Schema is present in both required locations, the slug matches the schema url and mainEntityOfPage @id, there are no em or en dashes and no HTML comments, and the body correctly carries no h1 because the Webflow template renders the name field. The defect is the meta-description at 168 characters, which is past the truncation point: 'What an AI SDR can and cannot safely do on LinkedIn in 2026: the action by action automate, assist or keep human table, what triggers a restriction, and recovery steps.' The tail, which is the recovery promise, is the part that will be cut."
+        }
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness",
+      "weight": 0.2,
+      "flag": "Highly extractable and cleanly demarcated from the limits post, but there is almost nothing statistically citable and the author is absent from the visible text.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Definitions",
+          "criterion": "Direct Definitions",
+          "score": 5,
+          "max": 5,
+          "finding": "The whole post is built out of liftable definitional sentences. The opening is a complete answer in one line: 'An AI SDR LinkedIn workflow is safe only when the software stops at the draft and a person performs the action.' The three verdicts are defined before the table ('Assist means software prepares it and a human confirms before anything leaves'), the generalising rule is stated explicitly ('Risk tracks who receives the action, not how hard it is to automate'), and the boundary is drawn in one sentence an engine can quote: 'The line the enforcement policy draws is between a human performing informed actions and software performing them for a human.'"
+        },
+        {
+          "category": "Structure",
+          "criterion": "Structured Data for AI Parsing",
+          "score": 4,
+          "max": 5,
+          "finding": "Dense parseable structure: an eleven-row four-column table, four named enforcement triggers, four named human checkpoints in order, a four-tier restriction ladder, a six-question FAQPage and seventeen bolded lead-ins that act as a skeleton. The deduction is that the body has no lists at all. Both <ul> elements in the markup are the Further Reading and References blocks, so the four triggers, the four checkpoints and the five-step recovery sequence are all delivered as prose sentences inside paragraphs, leaving a parser to infer where each enumeration begins and ends."
+        },
+        {
+          "category": "Authority",
+          "criterion": "Statistical Authority",
+          "score": 3,
+          "max": 5,
+          "finding": "The post contains exactly one number an LLM could re-cite: the '500,000 dollar judgment and a permanent injunction' against hiQ, and that is attributed to privacyworld.blog, a law-firm commentary post, rather than to the court docket. Everything else is policy paraphrase attributed to linkedin.com, which cannot be quoted here and carries no date. DATA_GAPS_topic1.md item 5 records the deliberate decision that no restriction-rate or ban-rate figure exists, which is the right call, but the consequence is a post with strong definitional authority and almost no statistical authority."
+        },
+        {
+          "category": "Entity",
+          "criterion": "Entity Association",
+          "score": 4,
+          "max": 5,
+          "finding": "DevCommX is bound to this specific topic four times and always with a mechanism attached: 'In the systems we build, clicking is cheap and the profile is the asset', 'That is how we architect the AI SDR systems we build', 'DevCommX builds autonomous, signal based AI SDR systems that your team owns, with... every platform action left with the account owner', and the claim tied directly to the thesis, 'this structure produced 40+ qualified demos in ~6 weeks with no automated write action against any LinkedIn profile'. The author is not in the extractable text: I searched the post-body outside the JSON-LD and 'Sumit' does not appear, and there is no About the author block, unlike managing-hybrid-ai-sales-team in the same batch which carries one."
+        },
+        {
+          "category": "Distinctiveness",
+          "criterion": "GEO Distinctiveness",
+          "score": 5,
+          "max": 5,
+          "finding": "The boundary with the sibling limits post is drawn explicitly in the second paragraph and then honoured: 'The limits themselves are covered in our guide to LinkedIn connection request limits and safe outreach. This piece answers what happens when software works inside them.' Consistent with that, the post never states an invitation number anywhere, deferring entirely on volume and owning a different cluster, the automate-versus-assist-versus-human decision, restriction triggers and recovery. The batch note that pricing and ROI are out of scope is honoured the same way, by linking rather than restating."
+        }
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "The owned-infrastructure model is the post's actual argument rather than a closing paragraph, and the permitted proof claim is used exactly on-thesis.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Narrative",
+          "criterion": "Differentiation Narrative",
+          "score": 5,
+          "max": 5,
+          "finding": "The differentiation is the thesis, not a bolt-on. The post argues the whole way through that safety comes from architecture: 'Build it so the agent cannot click. Give the system no LinkedIn credentials and no extension, and safety becomes structural rather than a policy someone overrides in month four.' The close states the owned model in full ('autonomous, signal based AI SDR systems that your team owns, with research, scoring and drafting handled by the agent and every platform action left with the account owner'), and the opening reframes the category against it: 'Most LinkedIn tooling is sold on the idea that clicking is the expensive part. In the systems we build, clicking is cheap and the profile is the asset.'"
+        },
+        {
+          "category": "Proof",
+          "criterion": "Proof Metrics & Evidence",
+          "score": 4,
+          "max": 5,
+          "finding": "The single permitted claim is used once and is the best-targeted use of it in the batch, because the qualifier carries the argument: 'this structure produced 40+ qualified demos in ~6 weeks with no automated write action against any LinkedIn profile.' That directly answers the post's own objection that a human-in-the-loop model does not scale. It stays at 4 because it remains one unverifiable first-party claim with no acceptance rate, no reply rate and no restriction count beside it, and DATA_GAPS_topic1.md item 6 confirms nothing else may be asserted."
+        },
+        {
+          "category": "Pricing",
+          "criterion": "Pricing Transparency",
+          "score": 3,
+          "max": 5,
+          "finding": "Unusually for this library there is a whole H2 on economics, 'How This Changes the Economics: A Burned Profile Versus the Saved Hours', and it frames value as an asymmetry rather than a number: 'A restricted profile does not cost you a seat licence. It costs the connections, the conversation history, the credibility of a real posting record, and every thread that was mid deal that day. None of it transfers. Against that, automating the click saves fifteen minutes of a rep's day.' The fifteen minutes is the only quantity. No price, no cost per meeting and no ROI arithmetic appear, which is correct because the brief puts pricing out of scope, but it caps this criterion at partial."
+        },
+        {
+          "category": "CTA",
+          "criterion": "CTA Quality",
+          "score": 4,
+          "max": 5,
+          "finding": "The closing CTA offers a specific artefact rather than a demo and it is the artefact the post just taught: 'book a GTM strategy call and we will map the automate, assist and human split to your team', pointing at /contact-us. The deduction is that it is the only conversion point in 2,190 words. The natural mid-body offer, right after the eleven-row table where a reader most wants their own version of it, is instead a soft service-page link ('That is how we architect the AI SDR systems we build')."
+        },
+        {
+          "category": "Slot",
+          "criterion": "Content Differentiation",
+          "score": 5,
+          "max": 5,
+          "finding": "Fills a slot nothing else in the library holds, the compliance and account-risk question, and it routes rather than competes on all three adjacent topics: limits to linkedin-connection-request-limits-2026-safe-outreach, cost to ai-sdr-pricing, outcomes to ai-sdr-reply-rates-roi, architecture to definitive-guide-to-ai-sdrs. The eleven-row automate/assist/human matrix is a genuinely reusable asset no sibling post contains."
+        }
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "No in-body image or diagram at all, and no bullet lists in the argument; the bolded lead-ins and the table carry the entire skim.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Headings",
+          "criterion": "Heading Architecture",
+          "score": 4,
+          "max": 5,
+          "finding": "Eight H2s reproduce the brief's seven-part outline in order and add the CTA section, then three H3s (Further Reading, References, FAQ) and six H4s under the FAQ, with no skipped levels. The deduction is flatness: not one of the eight argument H2s carries an H3, so the four enforcement triggers, the four human checkpoints and the four restriction tiers, each of which is an enumerated set the reader will want to jump back to, have no heading anchor."
+        },
+        {
+          "category": "Visuals",
+          "criterion": "Visual Elements",
+          "score": 2,
+          "max": 5,
+          "finding": "I counted zero <img>, zero <svg> and zero <figure> elements in the body. The only in-body visual asset is the eleven-row table, and the OG image never appears in the article. This is the rubric's ceiling case for a draft with no in-body image or diagram. It is the more conspicuous here because the post's two strongest ideas are both inherently diagrammable: the line through the workflow separating everything upstream of the click from everything that writes to the platform, and the four-tier restriction ladder from feature limit to permanent removal."
+        },
+        {
+          "category": "Scannability",
+          "criterion": "Scannability",
+          "score": 4,
+          "max": 5,
+          "finding": "Seventeen <strong> elements do real work as paragraph ledes, and they read as an outline on their own: 'Start with the contract.', 'The real trade.', 'Four patterns cause most enforcement.', 'What does not trigger one.', 'An invitation is an unconsented touch with a report button attached.', 'Four checkpoints, in order.', 'Restrictions come in tiers.', 'Assume it may not come back.', 'Price the downside first.' With the eleven-row table, a skim reader gets most of the argument. The deduction is that there is not one bullet list in the body, so every enumerated set has to be read as a sentence."
+        },
+        {
+          "category": "Flow",
+          "criterion": "Reading Level & Flow",
+          "score": 5,
+          "max": 5,
+          "finding": "Short declarative sentences suit a risk topic and the transitions carry argument rather than announce sections: 'So the answer is not a number of messages per day. It is a line through the workflow.' The post consistently states the reader's objection before answering it ('The objection is that this does not scale. It scales further than expected, because...'), and it avoids scaremongering while still being direct: 'do not build a channel that depends on rules not being enforced.'"
+        },
+        {
+          "category": "Length",
+          "criterion": "Content Length & Density",
+          "score": 5,
+          "max": 5,
+          "finding": "2,190 words against the brief's 1,800 to 2,200 band, inside it and near the top, with a 10-minute reading time in the CMS. Density is high with no padding: the out-of-scope material that would have inflated it, limits and pricing and ROI, is linked out instead of restated, exactly as the batch note instructs."
+        }
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Byte-identical across both locations, FAQ matches the visible block exactly, and dates agree with the draft date; only the publisher logo is wrong.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Article",
+          "criterion": "Article Type Completeness",
+          "score": 5,
+          "max": 5,
+          "finding": "The BlogPosting node carries all twelve expected properties: @id, @type, headline, description, url, datePublished, dateModified, keywords, image, author, publisher and mainEntityOfPage. The headline matches the CMS name field character for character, including the '(2026)' suffix, and keywords carries the brief's primary plus all four mandated secondaries."
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQPage Structure",
+          "score": 5,
+          "max": 5,
+          "finding": "Six entries against a three-question minimum. I parsed every one: each is @type Question with an acceptedAnswer of @type Answer carrying a text property, answers running 49 to 62 words, all under a distinct '...#faq' @id."
+        },
+        {
+          "category": "Alignment",
+          "criterion": "Schema-to-Content Alignment",
+          "score": 5,
+          "max": 5,
+          "finding": "Verified mechanically, not by eye. The schema-markup field and the post-body script embed are byte-identical at 4,228 characters each. All six visible H4 questions equal the six FAQPage names exactly and all six visible answer paragraphs equal their acceptedAnswer.text exactly. Unlike the sheet-12 sibling, the schema description is also character-for-character identical to the CMS meta-description, so the page presents one description rather than two."
+        },
+        {
+          "category": "Graph",
+          "criterion": "@graph Implementation",
+          "score": 5,
+          "max": 5,
+          "finding": "A proper @graph array with two nodes, each carrying a distinct fragment @id anchored to the canonical URL ('...ai-sdr-linkedin-account-safety#article' and '...#faq'), so a parser can address the article and the FAQ independently. mainEntityOfPage points at the bare canonical as a WebPage."
+        },
+        {
+          "category": "Rich results",
+          "criterion": "Rich Result Eligibility",
+          "score": 4,
+          "max": 5,
+          "finding": "ImageObject with explicit width 1200 and height 630 and a publisher Organization node with url and logo are present, and the dates are internally consistent and honest: datePublished and dateModified both read 2026-09-15, which is the date the draft was actually committed (61bc9ee), so this does not carry the stale-date defect the sheet-12 sibling does. The one defect is the publisher logo, which reuses the 1200x630 blog OG image file rather than a logo asset, so the logo is neither square nor a brand mark."
+        }
+      ]
+    }
+  ],
+  "top_fixes": [
+    "Have a human with LinkedIn access confirm the prohibited-conduct clause before publish, as VERIFICATION.md open item 1 requires, and add an 'accurate as of' date line to the ToS section. The wording is paraphrased from search results because linkedin.com was egress-blocked, and nothing on the page signals that to the reader or dates a legal document that changes.",
+    "Fix the hiQ passage. 'The hiQ Labs Ninth Circuit scraping case ended in a consent judgment against hiQ... after the court found that scraping and the use of false profiles breached the User Agreement' compresses three separate rulings; the linked Ninth Circuit 2022 opinion is the one hiQ largely won on the CFAA question, and the contract finding and 500,000 dollar consent judgment came from the district court later.",
+    "Tell the reader the four enforcement triggers are practitioner observations. DATA_GAPS_topic1.md item 4 is explicit that velocity, sameness, negative recipient signal and session anomalies are 'not LinkedIn's confirmed detection methods', but the body asserts 'Four patterns cause most enforcement' as fact. One hedging clause fixes it.",
+    "Cut the meta-description from 168 characters to under 155. It currently truncates at the recovery promise, which is the part most likely to earn the click.",
+    "Add one in-body diagram and the missing protocol block. Visual Elements is at the rubric floor with zero images and zero SVGs; the line through the workflow (everything upstream of the click versus everything that writes to the platform) and the four-tier restriction ladder are both directly drawable, and the brief's required 'account-safety protocol the reader can adopt' currently exists only as four checkpoints buried in a paragraph."
+  ]
+}

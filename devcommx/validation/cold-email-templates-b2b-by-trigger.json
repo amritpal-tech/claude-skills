@@ -1,0 +1,278 @@
+{
+  "slug": "cold-email-templates-b2b-by-trigger",
+  "title": "10 Cold Email Templates B2B Teams Send, One Per Buying Signal",
+  "words": 2812,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "The 5% to 18% reply band is the load-bearing number in the whole post and it is the one figure with no named source anywhere.",
+      "flag_type": "critical",
+      "criteria": [
+        {
+          "category": "Sources",
+          "criterion": "Stat Accuracy & Source Quality",
+          "score": 3,
+          "max": 5,
+          "finding": "Five figures are inline-linked at the claim and each names its publisher: Belkins at 'roughly 0.45%' on a sent basis, Instantly at 'near 27.7% opens and 3.43% replies on a delivered basis', Woodpecker at '42% of replies arrive on follow ups', Gartner at 'about 17% of the purchase journey', McKinsey on ten-plus channels. The defect is the number the post is built on. 'Signal triggered outreach is documented in a 5% to 18% reply band' carries no citation, the word 'documented' implies one, and the References block lists source attributions for 3.43%, 0.45%, 42%, 17% and the channel count but nothing for 5% to 18%. That band is then reused as the entire fourth column of the ten-row table."
+        },
+        {
+          "category": "Depth",
+          "criterion": "Practitioner Depth",
+          "score": 5,
+          "max": 5,
+          "finding": "Every signal carries a disqualifier that only comes from running this: 'if the round is over three weeks old. Switch to the job posting signal', 'evergreen reqs open six months. Those are pipeline posts, not real openings', 'Technographic tools throw false positives on staging subdomains', 'never quote a pseudonymous review, and never name the competitor in the subject line', 'A single hire in Lisbon is not a European expansion.' The closing operational point, that detection must be infrastructure because 'If a human checks Crunchbase each morning, the 48 hour window is lost on half the accounts', is a real deployment constraint rather than advice."
+        },
+        {
+          "category": "Attribution",
+          "criterion": "Data Attribution",
+          "score": 4,
+          "max": 5,
+          "finding": "The brief demanded a real reply rate per template with sample size stated, which the author did not have, and the post refuses to invent them: 'carries a published third party reply band rather than a number we invented' and 'The position within it is our judgement about the intent each signal carries, not a measured figure.' That is the correct behaviour and the table's band column is honestly labelled 'Third party reply band'. Two deductions: the band's own boundaries are unsourced, and the brief instructed the writer to mark gaps as '<!-- DATA GAP: ... -->' comments, of which the body contains zero."
+        },
+        {
+          "category": "Accuracy",
+          "criterion": "Technical Accuracy",
+          "score": 5,
+          "max": 5,
+          "finding": "Every named source is real and correctly scoped for 2026: Crunchbase and SEC Form D for funding, Greenhouse and Lever boards for reqs, BuiltWith and HG Insights plus 'DNS and MX changes' for technographics, Product Hunt and changelogs for launches, 'visitor de anonymisation' for content engagement. The distinction that 'A removal beats an install' and the caveat about staging-subdomain false positives are both accurate descriptions of how those tools behave."
+        },
+        {
+          "category": "Delivery",
+          "criterion": "Completeness",
+          "score": 5,
+          "max": 5,
+          "finding": "All nine H2s deliver. Ten templates appear as full copy-paste blocks with subject line, body, merge fields, 'Why it converts' and 'When not to use it'. The brief's requirement for at least two underperformers is met by a dedicated H2 that names signals 9 and 10 and explains the shared cause: 'neither proves anything changed inside the account.' The adaptation H2 delivers the three-part anatomy, the 125-word ceiling and the three-touch cadence."
+        }
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Keyword placement and link structure are fully met; one FAQ question is ungrammatical keyword insertion.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Keywords",
+          "criterion": "Primary Keyword Targeting",
+          "score": 5,
+          "max": 5,
+          "finding": "'cold email templates B2B' appears seven times, including the H1/name, the 50-character meta-title, the first sentence of the body, the slug, two H2s ('The ten signals behind these cold email templates B2B teams send' and 'How to adapt these cold email templates B2B without killing the reply rate') and one FAQ question. All four secondary keywords are present. The keyword gate confirms 7 occurrences with 2 in H2s and 4/4 secondaries."
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQ / People Also Ask",
+          "score": 4,
+          "max": 5,
+          "finding": "The brief's three PAA targets appear verbatim ('What is a good cold email reply rate?', 'What should a cold email say?', 'How long should a cold email be?') and two of the additions are real operator queries ('Which triggering signal should a team start with?', 'How many follow ups should a signal triggered sequence have?'). Question four, 'How do cold email templates B2B teams organise by signal differ from persona templates?', is ungrammatical, is nobody's search query, and exists only to place the keyword in a FAQ. It is also copied into the FAQPage schema, so the defect is published twice."
+        },
+        {
+          "category": "Tables",
+          "criterion": "Comparison / Featured Snippet Tables",
+          "score": 4,
+          "max": 5,
+          "finding": "One ten-row, four-column table with columns 'Triggering signal', 'Signal source', 'Why it converts' and 'Third party reply band'. Ten rows keyed to ten body sections is a strong extraction target. The band column is inconsistently phrased across rows, mixing 'Upper half, 5% to 18%' with 'Upper half of the 5% to 18% band' and 'Middle, 5% to 18%' with 'Middle of the 5% to 18% band', which wastes the cell that a snippet would lift and makes six of ten rows read as near-duplicates."
+        },
+        {
+          "category": "Links",
+          "criterion": "Internal & External Link Structure",
+          "score": 5,
+          "max": 5,
+          "finding": "Nine internal links, and I verified every one against the brief's verified-published menu: all nine are on it, including both incumbent template posts that the cannibalisation fence required ('a set of templates organised by copy framework' and 'best cold email templates for B2B sales prospecting'). Fifteen external links across five hosts (woodpecker.co, belkins.io, instantly.ai, gartner.com, mckinsey.com), placed inline at the claim, with descriptive anchors and no bare URLs."
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical SEO",
+          "score": 4,
+          "max": 5,
+          "finding": "Meta-title is 50 characters, schema is present in both required locations and byte-identical between them, the slug matches the schema url and mainEntityOfPage @id exactly, and heading levels descend cleanly. The meta-description is 156 characters, a shade over the 155 the rest of this batch holds to and into truncation territory on some SERP widths."
+        }
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness",
+      "weight": 0.2,
+      "flag": "Dense parseable structure and clean definitions, undercut by an unattributable core statistic and no on-page author.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Definitions",
+          "criterion": "Direct Definitions",
+          "score": 5,
+          "max": 5,
+          "finding": "The organising claim is one liftable sentence in the opening: 'The strongest cold email templates B2B teams run in 2026 are organised by triggering signal, not by framework or persona.' The discriminating rule is stated twice in extractable form: 'The top of the table is where money or a person moves. The bottom only proves awareness' and 'Every other signal marks a change of state, and change of state creates a buying window. Awareness does not.'"
+        },
+        {
+          "category": "Structure",
+          "criterion": "Structured Data for AI Parsing",
+          "score": 5,
+          "max": 5,
+          "finding": "A ten-row four-column table, ten parallel template blocks each with the same bolded slots ('Subject:', 'Why it converts:', 'When not to use it:'), 42 bolded lead-ins, a six-question FAQ block, and separate Further Reading and References lists. The repetition of the identical block shape across all ten signals is exactly the regularity an extractor keys on."
+        },
+        {
+          "category": "Authority",
+          "criterion": "Statistical Authority",
+          "score": 3,
+          "max": 5,
+          "finding": "Instantly, Belkins, Woodpecker, Gartner and McKinsey are all named and linkable, and the denominator discussion ('Belkins measures replies against total emails sent... Instantly reports... on a delivered basis. Both are right. They are not the same measurement') is genuinely re-citable. But the figure an engine would most want to lift from this page is the 5% to 18% signal band, and it is attributable to nobody. A model citing this post on signal reply rates would be citing DevCommX for a number DevCommX does not claim to have measured."
+        },
+        {
+          "category": "Entity",
+          "criterion": "Entity Association",
+          "score": 3,
+          "max": 5,
+          "finding": "DevCommX appears seven times and is bound to the topic specifically: 'DevCommX builds the signal pipelines that fire these templates, so the trigger sources listed are ones we wire into client systems.' The author is not bound to it at all. 'Sumit Nautiyal' appears zero times in the visible prose and only inside the JSON-LD, and the post carries no 'About the author' block, unlike the AI-search pillar in this same batch. The person-level E-E-A-T signal an engine reads is missing from the page."
+        },
+        {
+          "category": "Distinctiveness",
+          "criterion": "GEO Distinctiveness",
+          "score": 5,
+          "max": 5,
+          "finding": "The post opens by naming its own axis against the two incumbents and links both: 'We already publish a set of templates organised by copy framework. This post is the third axis: the signal itself.' It also routes persona queries away at the close ('For the persona cut, read our best cold email templates for B2B sales prospecting'), so the trigger/signal query cluster is cleanly owned rather than shared."
+        }
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Proof point and CTA both land; no cost or value framing anywhere in the post.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Narrative",
+          "criterion": "Differentiation Narrative",
+          "score": 4,
+          "max": 5,
+          "finding": "The owned-infrastructure and signal-based model is stated in the intro ('DevCommX builds signal based outbound systems that clients own outright, so most of our work sits in the plumbing behind the send') and worked into the copy itself, where template 3 offers 'We built that workflow as owned infrastructure for a team that could not wait nine months.' The closing detection-as-infrastructure paragraph is the sharpest expression of it. What is missing is any description of what ownership means mechanically, so 'own outright' stays an assertion."
+        },
+        {
+          "category": "Proof",
+          "criterion": "Proof Metrics & Evidence",
+          "score": 4,
+          "max": 5,
+          "finding": "The permitted claim is present and correctly worded: 'It is the same approach behind 40+ qualified demos in ~6 weeks.' It appears once, in the final CTA paragraph, with no surrounding context about the client, the motion or which signals were used, so it reads as a credential rather than evidence for the specific argument the post just made."
+        },
+        {
+          "category": "Pricing",
+          "criterion": "Pricing Transparency",
+          "score": 2,
+          "max": 5,
+          "finding": "No cost or value framing at all. The only economic signal in 2,812 words is that the templates are free: 'All ten templates are the full text, not a teaser' and 'Take the whole pack, ungated'. Nothing conveys what the detection layer costs to build, what it costs to buy, or what a signal-triggered program is worth against an untargeted one, even though the post establishes the reply-rate delta that would make that arithmetic easy. Scored against the rubric's instruction not to inflate this criterion."
+        },
+        {
+          "category": "CTA",
+          "criterion": "CTA Quality",
+          "score": 5,
+          "max": 5,
+          "finding": "The brief asked for the full template pack ungated and the post delivers exactly that, then makes a specific, scoped ask rather than a generic demo request: 'Tell us which two signals matter most in your market and we will scope the detection layer.' The CTA names the thing being sold (the detection layer that watches all ten sources against your ICP) rather than the meeting, and links /contact-us correctly."
+        },
+        {
+          "category": "Slot",
+          "criterion": "Content Differentiation",
+          "score": 5,
+          "max": 5,
+          "finding": "This is the third axis in a three-post template cluster and the post says so explicitly, linking the framework post and the persona post by name. It fills a slot neither of them occupies and hands traffic to both, which is the opposite of cannibalisation."
+        }
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Highly scannable, but one table and zero figures across 2,812 words.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Headings",
+          "criterion": "Heading Architecture",
+          "score": 5,
+          "max": 5,
+          "finding": "Nine H2s in a logical sequence from measurement method to the signal inventory to four template groupings to the failure analysis to adaptation to CTA, then H3s for Further Reading, References and FAQ, then H4s for the six FAQ questions. No skipped levels. There is no H1 in post-body, which is correct for this CMS since the template renders the H1 from the name field."
+        },
+        {
+          "category": "Visuals",
+          "criterion": "Visual Elements",
+          "score": 2,
+          "max": 5,
+          "finding": "Zero img tags, zero svg tags, zero figure elements. The only in-body visual asset is the single ten-row table; everything else is prose and bold text. A post whose central argument is a ranking of ten signals by intent strength is the obvious candidate for the ordered-tile or ladder figure pattern the visuals reference describes, and it has none."
+        },
+        {
+          "category": "Scannability",
+          "criterion": "Scannability",
+          "score": 5,
+          "max": 5,
+          "finding": "42 bolded lead-ins carry the skim, and the template blocks use an identical three-slot shape ('Subject:', 'Why it converts:', 'When not to use it:') so a reader can extract any single signal without reading the ones around it. The table front-loads the whole inventory before the detail begins."
+        },
+        {
+          "category": "Flow",
+          "criterion": "Reading Level & Flow",
+          "score": 4,
+          "max": 5,
+          "finding": "Concrete throughout and free of filler, with transitions that carry the argument ('The top of the table is where money or a person moves. The bottom only proves awareness'). The deduction is rhythm: signals 4 through 10 repeat the same four-beat structure with diminishing commentary, so the middle third reads as a list to be scanned rather than prose to be read."
+        },
+        {
+          "category": "Length",
+          "criterion": "Content Length & Density",
+          "score": 4,
+          "max": 5,
+          "finding": "2,812 words against the brief's 2,300 to 2,800 band, marginally over. Density is high with almost no padding, since roughly a third of the word count is template copy the reader can use directly. The two weakest signals get proportionally more analysis than the strongest ones, which is the one place the balance is off."
+        }
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Structurally clean and byte-identical across both locations; dateModified is stale against two recorded post-publication revisions.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Article",
+          "criterion": "Article Type Completeness",
+          "score": 5,
+          "max": 5,
+          "finding": "The BlogPosting node carries @id, @type, headline, description, url, datePublished, dateModified, keywords, image, author, publisher and mainEntityOfPage. The headline matches the name field exactly, and the description matches the CMS meta-description character for character. Keywords list the primary plus all four secondaries."
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQPage Structure",
+          "score": 5,
+          "max": 5,
+          "finding": "Six entries under a distinct #faq @id, each a proper @type Question with an acceptedAnswer of @type Answer carrying a text property. Answer text lengths run 303 to 345 characters, inside the extractable band, and the count is double the three-question minimum."
+        },
+        {
+          "category": "Alignment",
+          "criterion": "Schema-to-Content Alignment",
+          "score": 5,
+          "max": 5,
+          "finding": "I checked this programmatically rather than by eye. The schema-markup field and the script embed at the end of post-body are byte-identical, and all six visible H4 questions and their following paragraphs match the FAQPage name and acceptedAnswer.text word for word after whitespace normalisation. The keywords property tracks what the body actually covers."
+        },
+        {
+          "category": "Graph",
+          "criterion": "@graph Implementation",
+          "score": 5,
+          "max": 5,
+          "finding": "A proper @graph array with two nodes, each carrying a distinct fragment @id anchored to the canonical URL, '...cold-email-templates-b2b-by-trigger#article' and '...#faq', which is what lets a parser address the article and the FAQ separately."
+        },
+        {
+          "category": "Rich results",
+          "criterion": "Rich Result Eligibility",
+          "score": 3,
+          "max": 5,
+          "finding": "ImageObject with explicit width 1200 and height 630 and a publisher Organization with a logo are both correct. dateModified is the defect: it reads '2026-09-08', identical to datePublished, while the repository records two post-dated revisions to this file, a full redraft on 2026-09-09 (d34c085) and a copy fix on 2026-09-09 (f40929b). The program's own rule requires dateModified to reflect the real last modification and to differ from datePublished."
+        }
+      ]
+    }
+  ],
+  "top_fixes": [
+    "Source the 5% to 18% band or stop calling it documented. It is the entire fourth column of the ten-row table and the comparison anchor in the FAQ, and no reference entry supports it. Either cite the study it comes from inline at first use, or relabel the column as an internal estimate the way the position-within-band caveat already does.",
+    "Set dateModified to 2026-09-09 in both schema locations and in the CMS last-updated field. datePublished and dateModified are both 2026-09-08 despite two recorded revisions to this draft on 2026-09-09.",
+    "Rewrite FAQ question four. 'How do cold email templates B2B teams organise by signal differ from persona templates?' is ungrammatical and is not a query anyone types; 'Signal-based or persona-based cold email templates: which works better?' keeps the keyword and reads as a real question. The fix has to be applied in both the H4 and the FAQPage schema so they stay word-for-word identical.",
+    "Add one in-body figure. Zero images or SVGs across 2,812 words holds Visual Elements at 2/5; the natural candidate is an intent ladder ordering the ten signals from change-of-state at the top to awareness at the bottom, which is already the post's core argument and needs no new data.",
+    "Normalise the table's band column to one phrasing per tier ('Upper half', 'Middle', 'Lower half', 'At the average') with the 5% to 18% range stated once in the column header instead of repeated in six cells."
+  ]
+}

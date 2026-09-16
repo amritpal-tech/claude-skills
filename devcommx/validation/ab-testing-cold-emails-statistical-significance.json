@@ -1,0 +1,278 @@
+{
+  "slug": "ab-testing-cold-emails-statistical-significance",
+  "title": "A/B Testing Cold Emails: How to Run Sales Tests That Are Actually Statistically Valid",
+  "words": 2767,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Arithmetic is independently reproducible end to end; the one soft spot is the Instantly citation URL, which differs from the URL a sibling post uses for the same figure.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Sources",
+          "criterion": "Stat Accuracy & Source Quality",
+          "score": 4,
+          "max": 5,
+          "finding": "The statistical sources are primary and appropriate: the ACM SIGKDD Johari et al. peeking paper, the NIH PMC review for the 80 percent power and 5 percent alpha convention, Select Statistical Services and Evan Miller for the sample size arithmetic, all inline at the claim. Two deductions. The 3.43 percent benchmark is cited to 'instantly.ai/cold-email-benchmark-report-2026', while the sibling post cold-email-templates-b2b-by-trigger cites the same 3.43 percent figure to 'instantly.ai/blog/cold-email-reply-rate-benchmarks/'; one of the two URLs is wrong and neither can be resolved from this session. Separately the FAQ says 5,301 per variant is 'about 10,601 sends in total' where the doubling is 10,602."
+        },
+        {
+          "category": "Depth",
+          "criterion": "Practitioner Depth",
+          "score": 5,
+          "max": 5,
+          "finding": "This is a practitioner's statistics piece, not a textbook summary. It names the legitimate escapes by name ('the mixture sequential probability ratio test or alpha spending with pre planned interim analyses'), prices the factorial alternative ('each of the four cells needs the full per variant sample size, so a factorial on a 3 percent baseline chasing a 50 percent lift costs about 10,068 sends'), flags the outbound-specific confounds ('randomize across mailboxes', 'out of office autoresponders and \"remove me\" replies all count as replies'), and gives small teams three real methods instead of a consolation prize: pool across campaigns, test upstream of reply rate, raise the baseline."
+        },
+        {
+          "category": "Attribution",
+          "criterion": "Data Attribution",
+          "score": 5,
+          "max": 5,
+          "finding": "The table states its assumptions in the sentence above it ('a two sided test at 95 percent confidence and 80 percent power, computed with the standard two proportion formula'), names the calculator it was computed with and the second it was cross-checked against, and defines the lift convention ('Lift is relative: a 25 percent lift on a 3 percent baseline means moving to 3.75 percent'). The worked example is labelled before the first number: 'This is an illustrative walkthrough with numbers you can check, not a client result.' No figure in the post is presented as DevCommX data."
+        },
+        {
+          "category": "Accuracy",
+          "criterion": "Technical Accuracy",
+          "score": 5,
+          "max": 5,
+          "finding": "I re-derived the worked example from scratch and every step reproduces: pooled 32/800 = 4.0 percent, standard error sqrt(0.04 x 0.96 x 2/400) = 0.013856 against the stated 0.01386, z = 2.165 against the stated 2.17, two-sided p = 0.030. Stage two reproduces too: pooled 118/3,200, SE 0.006662 against the stated 0.0067, z = -0.563 against -0.56, p = 0.573 against 0.57. The 39,644 sends needed to power 3.50 against 3.875 percent reproduces exactly, as does the lede's 5,301. The description of what a p value does and does not tell you is correct and unusually careful."
+        },
+        {
+          "category": "Delivery",
+          "criterion": "Completeness",
+          "score": 4,
+          "max": 5,
+          "finding": "All eight H2s deliver on their promise, and the brief's must-includes are both met: the baseline-by-lift sample size table, and a worked example of a winner that reversed. The gap is the brief's first outline item, 'the sample-size problem in one chart', which the post delivers as prose and a table; there is no chart anywhere in the body."
+        }
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "The sample-size table is the best snippet target in the batch; internal link density is the thinnest.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Keywords",
+          "criterion": "Primary Keyword Targeting",
+          "score": 5,
+          "max": 5,
+          "finding": "'A/B testing cold emails' appears ten times, including the 49-character meta-title, the first two words of the body, the slug, three H2s ('Why A/B testing cold emails usually measures noise instead of copy', 'The A/B testing cold emails sample size table', 'Make A/B testing cold emails a system, not a spreadsheet ritual') and one FAQ question. All three secondaries appear, each in a natural sentence rather than a bolt-on: 'Cold email subject line testing is the most popular test in outbound and close to the least useful.'"
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQ / People Also Ask",
+          "score": 5,
+          "max": 5,
+          "finding": "All six are shapes people actually type, and the brief's three targets appear verbatim. 'Can you A/B test with 500 contacts?' is answered with a direct 'Not for reply rate' followed by what the run is still good for, and 'How long should an email A/B test run?' converts the sample size into calendar time a reader can act on: 'At 1,000 sends a week split across two arms, a test needing 5,301 per variant takes about eleven weeks.' Answers run 358 to 385 characters, inside the extractable band."
+        },
+        {
+          "category": "Tables",
+          "criterion": "Comparison / Featured Snippet Tables",
+          "score": 5,
+          "max": 5,
+          "finding": "A four-row by four-column matrix of baseline reply rate against detectable lift, where every cell is a single number and every column header is a complete question ('Sends per variant to detect +25% relative lift'). This is the ideal snippet shape for the query 'how many emails do you need for a valid A/B test', and the sentence beneath it tells a reader how to use it: 'Read the top left cell first, because it ends arguments.'"
+        },
+        {
+          "category": "Links",
+          "criterion": "Internal & External Link Structure",
+          "score": 4,
+          "max": 5,
+          "finding": "Fifteen external links across six hosts, weighted toward primary sources (dl.acm.org, pmc.ncbi.nlm.nih.gov, evanmiller.org, select-statistics.co.uk), all inline with descriptive anchors. Internal linking is the batch's thinnest at seven links across 2,767 words, all verified against the brief's published menu but drawing on only six of the ten offered; three of the seven sit in a single paragraph of the traps section, leaving the first two H2s and the entire results-reading section with no internal link at all."
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical SEO",
+          "score": 5,
+          "max": 5,
+          "finding": "Meta-title 49 characters, meta-description 155, both inside truncation limits, and the meta-description matches the schema description exactly. Schema is present in both required locations and byte-identical between them, the slug matches the schema url and mainEntityOfPage @id, and headings descend H2 to H3 to H4 with no skipped levels."
+        }
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness",
+      "weight": 0.2,
+      "flag": "Excellent definitional and statistical authority; the priority framework an engine would most want to lift is buried in prose instead of listed.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Definitions",
+          "criterion": "Direct Definitions",
+          "score": 5,
+          "max": 5,
+          "finding": "Several self-contained definitional statements an engine can lift whole. 'A p value answers one narrow question: if the two variants truly performed identically, how often would random sampling produce a gap at least this large? It does not tell you the size of the difference, how likely your hypothesis is to be true, or whether the effect holds next quarter.' And the conclusion of the first section: 'an underpowered test does not give you a weak answer, it gives you a random one.'"
+        },
+        {
+          "category": "Structure",
+          "criterion": "Structured Data for AI Parsing",
+          "score": 4,
+          "max": 5,
+          "finding": "The numeric table, the three bolded traps ('Trap one: peeking', 'Trap two: two changes in one arm', 'Trap three: reusing a winner on a different ICP') and the six-question FAQ are all clean parse targets. But the post carries only seven strong tags and two lists across 2,767 words, and the testing priority order, which is the single most liftable framework in the piece, is delivered as a run-on prose clause: 'In descending order: who you target, what you are offering and why now, the proof you attach, the ask itself, then sequence shape.' As a numbered list that becomes a citable framework; as a sentence it is much harder to extract cleanly."
+        },
+        {
+          "category": "Authority",
+          "criterion": "Statistical Authority",
+          "score": 5,
+          "max": 5,
+          "finding": "Every load-bearing claim traces to a named, re-citable authority: the NIH National Library of Medicine for the adequacy minimums, Johari, Koomen, Pekelis and Walsh at ACM SIGKDD 2017 for the five-to-ten-times false positive inflation at n=10,000, Evan Miller and Select Statistical Services for the sample size arithmetic, Instantly for the 3.43 percent baseline. The References block states what each source is the source for, rather than listing URLs."
+        },
+        {
+          "category": "Entity",
+          "criterion": "Entity Association",
+          "score": 3,
+          "max": 5,
+          "finding": "DevCommX is tied to the discipline twice, in the intro ('DevCommX builds outbound as infrastructure the client owns, so every claimed lift has to survive arithmetic before it changes a template') and the close. The author is absent from the page: 'Sumit Nautiyal' appears zero times in the visible prose and only inside the JSON-LD, and there is no author bio block. On a statistics credibility piece, where the whole value proposition is that a named human can do this arithmetic, the missing person-level signal costs more than it would elsewhere."
+        },
+        {
+          "category": "Distinctiveness",
+          "criterion": "GEO Distinctiveness",
+          "score": 5,
+          "max": 5,
+          "finding": "The post owns the sample-size and statistical-validity cluster outright and actively pushes adjacent queries elsewhere: subject line craft to the subject lines post ('Pick a strong one... on judgment, ship it, and spend your statistical budget elsewhere'), deliverability to the inbox-count post ('Fix deliverability first, too'), and tooling to the Instantly vs Smartlead vs Lemlist comparison. No sibling in this batch competes for 'email A/B test sample size'."
+        }
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Weakest dimension. The brief's linkable asset, a downloadable sample-size calculator, was replaced by a contact-form request, and there is no cost or value framing.",
+      "flag_type": "critical",
+      "criteria": [
+        {
+          "category": "Narrative",
+          "criterion": "Differentiation Narrative",
+          "score": 4,
+          "max": 5,
+          "finding": "The owned-infrastructure model is stated twice and both times it is load-bearing for the argument: 'DevCommX builds outbound as infrastructure the client owns, so every claimed lift has to survive arithmetic before it changes a template', and 'Owning the stack rather than renting a campaign is what makes that practical' as the reason you can retest a winner on a new segment. The signal-based half of the positioning is absent, which is defensible on a methodology topic but leaves the differentiation narrower than its siblings."
+        },
+        {
+          "category": "Proof",
+          "criterion": "Proof Metrics & Evidence",
+          "score": 4,
+          "max": 5,
+          "finding": "The permitted claim appears once, correctly scoped to a single engagement: 'it is how one engagement produced 40+ qualified demos in about 6 weeks'. It sits in the final paragraph next to the CTA with no connection to the testing discipline the post spent 2,700 words arguing for, so it credentials the company rather than evidencing the method."
+        },
+        {
+          "category": "Pricing",
+          "criterion": "Pricing Transparency",
+          "score": 2,
+          "max": 5,
+          "finding": "No cost or value framing of any kind. The post is full of economics in a different currency, sends and weeks ('a fourteen month experiment', 'about 27,618 emails in total'), but never converts any of it into money, and never says what a testing program or the DevCommX engagement costs or is worth. On a post whose central argument is that most teams are spending their testing budget badly, the absence of a single figure in dollars is a real gap."
+        },
+        {
+          "category": "CTA",
+          "criterion": "CTA Quality",
+          "score": 3,
+          "max": 5,
+          "finding": "The brief commissioned 'a downloadable sample-size calculator (spreadsheet), a genuinely linkable asset'. The post instead offers 'For the sample size calculator we use and a review of whether your current tests support the claims made from them, talk to the DevCommX team', which puts the link-earning asset behind a contact form. The second half of that CTA, a review of whether your current tests support your claims, is genuinely specific and well aimed at the stated reader; the calculator itself does not exist on the page, so the piece cannot earn the links it was designed to earn."
+        },
+        {
+          "category": "Slot",
+          "criterion": "Content Differentiation",
+          "score": 5,
+          "max": 5,
+          "finding": "Occupies a slot nothing else in the library holds: the statistical-rigour credibility piece under the cold email cluster. It sits beneath the templates and subject lines posts as the measurement layer, links to both, and competes with neither."
+        }
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Excellent flow, but the chart the brief commissioned was never built and the post is the least bold-formatted in the batch.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Headings",
+          "criterion": "Heading Architecture",
+          "score": 5,
+          "max": 5,
+          "finding": "Eight H2s tracking a clean argument from why tests fail, to the required volume, to what to test, to the traps, to reading results, to the worked example, to what small teams do instead, to the system. Then H3s for Further Reading, References and FAQ and H4s for the six questions. No skipped levels, and the H2 sequence is itself a usable table of contents."
+        },
+        {
+          "category": "Visuals",
+          "criterion": "Visual Elements",
+          "score": 2,
+          "max": 5,
+          "finding": "Zero img tags, zero svg tags, zero figure elements. The single table is the only visual asset. This is the post in the batch where that hurts most: the brief's first outline item literally reads 'the sample-size problem in one chart', and the inverse-square relationship the post explains in a paragraph ('halving the lift you want to detect roughly quadruples the sample: 748 sends per variant to catch a doubling at a 3 percent baseline, 9,100 to catch a 25 percent lift at the same baseline') is a curve, which is exactly what a chart shows and prose does not."
+        },
+        {
+          "category": "Scannability",
+          "criterion": "Scannability",
+          "score": 3,
+          "max": 5,
+          "finding": "Only seven strong tags and two lists across 2,767 words, against 42 strong tags in the sibling templates post. The three traps are the sole bolded lead-ins; the significance and confidence interval section is three consecutive dense paragraphs with no bold, no list and no subhead, and the small-volume section is the same. A skim reader gets the table and the trap labels and very little else."
+        },
+        {
+          "category": "Flow",
+          "criterion": "Reading Level & Flow",
+          "score": 5,
+          "max": 5,
+          "finding": "The hardest content in the batch handled with real control. Statistical terms are introduced through a worked number rather than a definition ('Send 300 on variant A and get 9 replies: 3.0 percent... five extra replies out of 300 sits well inside the range you would see if both variants were identical'), and the transitions do argumentative work: 'That test is not slow, it is impossible' and 'The p value was computed correctly. The experiment was still incapable of answering the question.'"
+        },
+        {
+          "category": "Length",
+          "criterion": "Content Length & Density",
+          "score": 5,
+          "max": 5,
+          "finding": "2,767 words, inside the brief's 2,300 to 2,800 band, with no padding. Every section earns its length, and the worked example, the most expensive section in word count, is the one doing the most persuasive work."
+        }
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Byte-identical across both locations with an exact FAQ match; dateModified is stale against the recorded 2026-09-09 redraft.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Article",
+          "criterion": "Article Type Completeness",
+          "score": 5,
+          "max": 5,
+          "finding": "The BlogPosting node carries @id, @type, headline, description, url, datePublished, dateModified, keywords, image, author, publisher and mainEntityOfPage. The headline matches the name field exactly and the description matches the CMS meta-description character for character. Keywords cover the primary and all three secondaries plus 'statistical significance cold email'."
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQPage Structure",
+          "score": 5,
+          "max": 5,
+          "finding": "Six entries under a distinct #faq @id, each a proper @type Question with an acceptedAnswer of @type Answer carrying a text property, double the three-question minimum. Answer text runs 358 to 385 characters, consistently sized for extraction."
+        },
+        {
+          "category": "Alignment",
+          "criterion": "Schema-to-Content Alignment",
+          "score": 5,
+          "max": 5,
+          "finding": "Verified mechanically rather than by eye: the schema-markup field and the script embed at the foot of post-body are byte-identical, and all six visible H4 questions and their answer paragraphs match the FAQPage name and acceptedAnswer.text word for word after whitespace normalisation. The keywords and description both describe what the article actually contains."
+        },
+        {
+          "category": "Graph",
+          "criterion": "@graph Implementation",
+          "score": 5,
+          "max": 5,
+          "finding": "A proper @graph array with two nodes, each with its own fragment @id anchored to the canonical URL, '...ab-testing-cold-emails-statistical-significance#article' and '...#faq', so a parser can address the article and the FAQ independently."
+        },
+        {
+          "category": "Rich results",
+          "criterion": "Rich Result Eligibility",
+          "score": 3,
+          "max": 5,
+          "finding": "ImageObject with explicit width 1200 and height 630, and a publisher Organization with a logo, are both correct and sufficient for rich result eligibility. dateModified is the defect: it reads '2026-09-08', identical to datePublished, while the repository records this draft being redrafted on 2026-09-09 (commit d34c085, 'Redraft sheet12 batch against the content validation findings'). The program's date rule requires dateModified to reflect the real last modification."
+        }
+      ]
+    }
+  ],
+  "top_fixes": [
+    "Build the sample-size chart the brief commissioned. The inverse-square relationship is the post's central insight and is currently a prose sentence; a curve of sends-per-variant against detectable lift at each baseline would carry it, and an inline SVG needs no asset upload. Visual Elements sits at 2/5 with one table and no figures.",
+    "Publish the sample-size calculator instead of gating it behind the contact form. The CTA currently says 'For the sample size calculator we use... talk to the DevCommX team', which converts the piece's designed link-earning asset into a lead form and is the single biggest driver of the brand score.",
+    "Resolve the Instantly citation URL. This post cites the 3.43 percent benchmark to instantly.ai/cold-email-benchmark-report-2026 while cold-email-templates-b2b-by-trigger cites the same figure to instantly.ai/blog/cold-email-reply-rate-benchmarks/. Both cannot be right, and instantly.ai is egress-blocked from this session so neither could be resolved here.",
+    "Set dateModified to 2026-09-09 in both schema locations and in the CMS last-updated field; it currently equals datePublished at 2026-09-08 despite a recorded redraft the following day.",
+    "Break up the two unbolded stretches. The significance and confidence-interval section and the low-volume section run three dense paragraphs each with no bold, list or subhead, and the testing priority order should become a numbered list rather than the prose clause 'In descending order: who you target, what you are offering and why now, the proof you attach, the ask itself, then sequence shape.'"
+  ]
+}
