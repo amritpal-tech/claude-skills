@@ -1,0 +1,278 @@
+{
+  "slug": "b2b-buyer-journey-ai-research",
+  "title": "B2B Buyer Journey AI: Where Pipeline Now Starts and How to Measure It",
+  "words": 2869,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Every figure is inline-attributed and the worked example is explicitly labelled invented, but DATA_GAPS_topic10.md records that four source fetches were refused, so the SparkToro and 6sense numbers rest on search summaries.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Sources",
+          "criterion": "Stat Accuracy & Source Quality",
+          "score": 4,
+          "max": 5,
+          "finding": "Six named organisations carry every load-bearing number, each linked at the sentence that makes the claim rather than pooled in the footer: Gartner on '17 percent of their time meeting with potential suppliers', 6sense on '94 percent of buying groups had ranked a preferred vendor before first contact', SparkToro on 'without a click at 68.01 percent across the first four months of 2026, up from 60.45 percent in 2024', Pew on '8 percent of the time when an AI summary was present against 15 percent when it was not', Semrush on 'roughly 4.4 times as valuable as the average organic visitor', and HockeyStack on a benchmark of 'more than 8,000 responses across dozens of B2B brands'. The deduction is verifiability, not sourcing: devcommx/batches/sheet12/DATA_GAPS_topic10.md records that all four WebFetch attempts (sparktoro.com, 6sense.com, businesswire.com, semrush.com) were refused by the egress proxy, so the SparkToro 68.01 percent and the 6sense 94 and 77 percent figures come from search-result summaries and still need a spot check at the live page."
+        },
+        {
+          "category": "Depth",
+          "criterion": "Practitioner Depth",
+          "score": 5,
+          "max": 5,
+          "finding": "The self-reported attribution section is a build spec, not advice. It names the three specific failure modes ('They are optional, so only the enthusiastic answer', a dropdown 'borrowed from ad platform taxonomy, so the buyer picks Google because Google was involved somewhere', and an answer that 'lands in a free text note nobody parses'), then fixes each: one required open-text question worded 'how did you first hear about us, and please be specific', asked on the demo request form rather than a content download 'because you want an answer from someone far enough along to remember the path', stored 'in a dedicated CRM field on the opportunity, not on the contact and not in a notes blob, so pipeline value can be summed by source', and normalised weekly 'into a fixed taxonomy with an explicit AI assistant category'. The citation-share method is equally concrete: 'thirty to fifty prompts', run monthly, recording 'which domains are cited and where'."
+        },
+        {
+          "category": "Attribution",
+          "criterion": "Data Attribution",
+          "score": 5,
+          "max": 5,
+          "finding": "The five-row journey table carries no numbers at all, only mechanism ('Nothing. The question was answered in a chat window'), so there are no unsourced metrics to attribute. The worked example pre-empts the obvious objection in its own first sentence: 'The numbers below are illustrative, invented so you can follow the arithmetic and run it on your own quarter. They are not a DevCommX client result.' The 240 / 146 / 38 / 9 walkthrough and the derived 'factor of roughly four' therefore never masquerade as evidence, and DATA_GAPS_topic10.md lists the first-party distribution that would replace them."
+        },
+        {
+          "category": "Accuracy",
+          "criterion": "Technical Accuracy",
+          "score": 4,
+          "max": 5,
+          "finding": "The mechanics are right for 2026: branded impressions and clicks pulled from Google Search Console with 'the query set fixed', paid brand campaigns and seasonality annotated 'before anyone reads a trend into it', and the honest caveat that the referrer-based count is 'a floor, never the total'. The FAQ is correctly hedged too, saying attribution platforms 'can see an assistant referral when the click carries a referrer header' but not a conversation that ended without one. One executable gap: the post twice instructs the reader to 'build an analytics segment matching assistant referrer hostnames' without ever naming a single hostname, so the most concrete instruction in the post cannot be followed as written."
+        },
+        {
+          "category": "Delivery",
+          "criterion": "Completeness",
+          "score": 5,
+          "max": 5,
+          "finding": "All eight H2s cash their promise. The brief's three mandatory inclusions are all present and identifiable: the before/after funnel diagram is a 720x330 inline SVG, the three proxy metrics are bolded and numbered ('1. Branded search lift.', '2. Self-reported attribution.', '3. Citation share.'), and the worked attribution example runs a full quarter of arithmetic. 'What to Stop Measuring, and What to Report Upward Instead' delivers both halves explicitly, three stops and four reports."
+        }
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Keyword placement, PAA coverage and link structure are fully met; only one table across 2,869 words.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Keywords",
+          "criterion": "Primary Keyword Targeting",
+          "score": 5,
+          "max": 5,
+          "finding": "'B2B buyer journey AI' is bolded in the first eleven words of the body, sits in the 47-character meta-title, the slug, the schema keywords string and the CMS name that becomes the H1, and appears verbatim in two H2s ('Mapping the B2B Buyer Journey AI Stage by Stage, and Which Stages You Still Control' and 'A Worked Example: Reading One Quarter of B2B Buyer Journey AI Signals') plus one FAQ ('What does the B2B buyer journey AI research stage look like in 2026?'). Note the draft rewrote the brief's verbatim title, which did not contain the primary keyword; the swap is what makes this criterion pass."
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQ / People Also Ask",
+          "score": 5,
+          "max": 5,
+          "finding": "All three PAA targets the brief mandates appear word for word as H4s ('How do you track leads from ChatGPT?', 'What is the dark funnel?', 'Are MQLs still relevant?'), joined by three genuine high-intent additions including 'Can attribution software see AI-assisted research?'. Answer lengths are 62, 61, 62, 59, 58 and 58 words, every one inside the extractable band, and each is self-contained rather than referring back to the body."
+        },
+        {
+          "category": "Tables",
+          "criterion": "Comparison / Featured Snippet Tables",
+          "score": 4,
+          "max": 5,
+          "finding": "The single table is well built for extraction: five rows keyed to journey stages against 'What it used to leave behind', 'What your analytics sees in 2026' and 'Proxy metric that still works', with all four th cells carrying the required color:#1f2937 styling, so each row lifts independently. The deduction is that this is the only table in 2,869 words. The three-proxy-metrics section, which compares what each metric measures, where the data comes from and what it leads or lags, is the obvious second table and is delivered as three prose paragraphs instead."
+        },
+        {
+          "category": "Links",
+          "criterion": "Internal & External Link Structure",
+          "score": 5,
+          "max": 5,
+          "finding": "Nine internal links, eight to blog posts plus /revenue-operations, and the CTA correctly uses /contact-us rather than /contact. Fifteen external anchors across seven hosts (gartner.com, 6sense.com, sparktoro.com, pewresearch.org, semrush.com, hockeystack.com, developers.google.com), every statistical one placed inline at the claim and repeated in a References list that says what each source supports. Anchor text is descriptive throughout ('why the MQL stopped predicting revenue', 'leading indicators and pipeline risk in HubSpot') and there is not a single bare-URL anchor."
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical SEO",
+          "score": 5,
+          "max": 5,
+          "finding": "Meta-title is 47 characters and meta-description 154, both inside truncation limits. The body carries no h1, which matches the library convention of letting the Webflow template render the name field as the H1, and I confirmed the sibling pillar does the same. Schema is present in both required locations and the slug matches the schema url and mainEntityOfPage @id exactly. No em or en dashes, no HTML comments."
+        }
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness",
+      "weight": 0.2,
+      "flag": "Strong extractable definitions and named-source authority, but the author is never named in visible prose and the citation-share method duplicates the pillar's audit.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Definitions",
+          "criterion": "Direct Definitions",
+          "score": 5,
+          "max": 5,
+          "finding": "The opening 62-word paragraph is a complete liftable answer to the title query: 'the B2B buyer journey AI research phase happens inside an assistant, not on your website... Your analytics records that arrival as direct traffic. You cannot recover the missing touches, so you measure them with proxy metrics instead.' The dark funnel gets a clean one-sentence definition in the FAQ ('every buying touch that influences a decision but never reaches your analytics or CRM'), and the reframe is stated as a crisp extractable claim: 'It is the same five stages with the observation point moved to the bottom.'"
+        },
+        {
+          "category": "Structure",
+          "criterion": "Structured Data for AI Parsing",
+          "score": 4,
+          "max": 5,
+          "finding": "Machine-readable assets present: a five-row four-column table, three bolded numbered proxy metrics, a six-question FAQPage, and an SVG carrying role='img' with a 60-word aria-label that restates the whole diagram in prose. The deduction is that the body contains zero bullet lists in the argument itself. Both <ul> elements in the markup are the Further Reading and References apparatus at byte offsets 22040 and 22581. Enumerations that are already numbered in the prose, the three reasons attribution fields fail and the four things to 'Report four things instead', sit inside 90 to 102-word paragraphs where a parser has to infer the list boundaries."
+        },
+        {
+          "category": "Authority",
+          "criterion": "Statistical Authority",
+          "score": 5,
+          "max": 5,
+          "finding": "Every quantitative claim in the post is attributable to a named, re-citable organisation: Gartner, 6sense, SparkToro (credited to Similarweb clickstream data), Pew Research Center, Semrush and HockeyStack Labs. There are no orphan statistics and no 'studies show' constructions. The References block restates each source with the exact figure it supports, which gives an engine a second, unambiguous attribution anchor."
+        },
+        {
+          "category": "Entity",
+          "criterion": "Entity Association",
+          "score": 3,
+          "max": 5,
+          "finding": "DevCommX is bound to the topic three times, including 'DevCommX builds the signal layer underneath GTM systems, so we rebuild this measurement often' in the second paragraph and the closing H2 'Build Your Dark Funnel Measurement Layer With DevCommX'. The author is not. I searched the body for 'Sumit': the only occurrence in the entire post-body is inside the JSON-LD author node. There is no About the author H3 and no visible byline, unlike the sibling pillar which carries one, so nothing in the extractable text ties Sumit Nautiyal to dark-funnel measurement."
+        },
+        {
+          "category": "Distinctiveness",
+          "criterion": "GEO Distinctiveness",
+          "score": 4,
+          "max": 5,
+          "finding": "The two posts are genuinely differentiated and say so explicitly: 'Being retrievable is a separate discipline from measuring it... This post assumes that work is under way and asks the next question: how do you prove it moved anything.' Term counts bear that out. This post owns 'dark funnel' (8 uses), 'self-reported attribution' (12) and branded search lift; the pillar owns the six signals and the 45-minute audit. The residual overlap is real but narrow: 'citation share' appears 5 times here against 6 in the pillar, and both posts hand the reader a prompt-set method for it, thirty to fifty prompts run monthly here against ten prompts across three engines there. Two competing methods for the same metric under one brand is the one thing an engine could get confused by."
+        }
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Differentiation narrative is stated verbatim, but the only proof point is an outbound demo count on an attribution post and there is no cost framing.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Narrative",
+          "criterion": "Differentiation Narrative",
+          "score": 5,
+          "max": 5,
+          "finding": "The owned-infrastructure, signal-based model is stated in full in the closing section: 'DevCommX builds autonomous, signal-based AI SDR and GTM systems your team owns outright, and the measurement layer ships with the build: the self-reported attribution field, the CRM taxonomy, the branded demand trend and the citation prompt set.' It is set up early rather than bolted on, with 'DevCommX builds the signal layer underneath GTM systems' in paragraph two, and the argument earns it: 'you cannot tune a system whose inputs you cannot see.'"
+        },
+        {
+          "category": "Proof",
+          "criterion": "Proof Metrics & Evidence",
+          "score": 3,
+          "max": 5,
+          "finding": "The permitted claim is used exactly once and correctly: 'the outbound programmes where we have driven 40+ qualified demos in ~6 weeks'. That is the only concrete DevCommX outcome in 2,869 words, and it is evidence for outbound execution rather than for the measurement layer this post actually sells. The one place a result would land, the worked example, opens by disclaiming itself: 'They are not a DevCommX client result.' The honesty is correct given DATA_GAPS_topic10.md, but the reader finishes with no evidence that this instrumentation has changed anyone's reporting."
+        },
+        {
+          "category": "Pricing",
+          "criterion": "Pricing Transparency",
+          "score": 2,
+          "max": 5,
+          "finding": "No cost figure, no engagement pricing and no ROI arithmetic anywhere. The three gestures toward value are all qualitative: the H2 label 'the Highest ROI Form Change You Can Make', the effort estimate 'Each is fixable in an afternoon', and the build-versus-buy line 'This is ordinary revenue operations plumbing, and it beats another attribution tool', which implies an attribution platform is an avoidable cost without naming what one costs. The only quantified value in the post belongs to Semrush, not DevCommX ('4.4 times as valuable as the average organic visitor'). Scored to the rubric's instruction not to inflate this criterion."
+        },
+        {
+          "category": "CTA",
+          "criterion": "CTA Quality",
+          "score": 4,
+          "max": 5,
+          "finding": "The single CTA is specific and matches the brief's stated CTA angle: 'To get the dark funnel measurement checklist mapped to your stack, book a GTM strategy call', pointing at /contact-us. It offers a named artefact rather than a demo. The deduction is placement: it is the last sentence of a 2,869-word post and there is no mid-body offer, so a reader who stops after the self-reported attribution fix, which is the section most likely to make someone want help, is never given anywhere to go."
+        },
+        {
+          "category": "Slot",
+          "criterion": "Content Differentiation",
+          "score": 5,
+          "max": 5,
+          "finding": "Occupies the measurement-and-attribution slot cleanly and routes rather than competes: it sends readers to the MQL post for lead definition, to the AI-search pillar for earning citations, to signal-based-selling-vs-intent-data for the signal half, and to the HubSpot leading-indicators post for reporting. Nothing else in the library owns 'what do I report upward when the first touch is invisible'."
+        }
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Only one diagram and one table, with zero in-body bullet lists and only six bolded phrases across thirty-two paragraphs, several of them 90 to 102 words.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Headings",
+          "criterion": "Heading Architecture",
+          "score": 4,
+          "max": 5,
+          "finding": "Eight H2s track a real argument from the invisible touch, through why reports drift, to the stage map, the three metrics, the form fix, the worked example and what to report upward, closing on the CTA section. Three H3s (Further Reading, References, FAQ) and six H4s under the FAQ, with no skipped levels. The deduction is flatness: not one of the eight argument H2s has an H3 beneath it, so the three proxy metrics and the three-part form fix, both of which are explicitly enumerated in the prose, carry no heading-level anchor a reader or a parser can jump to."
+        },
+        {
+          "category": "Visuals",
+          "criterion": "Visual Elements",
+          "score": 3,
+          "max": 5,
+          "finding": "There are zero <img> elements in the body and two visual assets total: the five-row table and one inline SVG. The SVG is well made, a 720x330 before/after funnel in brand colours (#2F5BFF, #0C0F1A) labelling every stage 'tracked' or 'invisible', with role='img' and a full aria-label. That clears the rubric's 2/5 ceiling for image-less drafts. It does not go higher because one diagram and one table across thirty-two paragraphs leaves the entire second half of the post, the form fix, the worked example and the report-upward section, visually unbroken, and the worked example's 240 / 146 / 38 / 9 arithmetic is the most obviously chartable content in the batch."
+        },
+        {
+          "category": "Scannability",
+          "criterion": "Scannability",
+          "score": 3,
+          "max": 5,
+          "finding": "Skim support is thin for the length. The body contains six <strong> phrases in total: three are keyword bolds in the opening paragraph and three are the proxy-metric lead-ins ('1. Branded search lift.', '2. Self-reported attribution.', '3. Citation share.'). There are no bullet lists in the argument body at all. Thirty-two paragraphs average 73 words with a long tail at 90, 96, 98 and 102 words, so a skim reader gets headings and one table and nothing else until the FAQ."
+        },
+        {
+          "category": "Flow",
+          "criterion": "Reading Level & Flow",
+          "score": 5,
+          "max": 5,
+          "finding": "The prose is concrete and the transitions carry the argument rather than announce it: 'The share of the decision made without you in the room is not the new part. Where that research happens, and whether it leaves a trace, is.' Diagnosis precedes prescription throughout, terms are defined at first use, and the register stays operator-level ('Fewer visits, later in the process, worth more each. Good commercially, terrible for reporting built on session counts')."
+        },
+        {
+          "category": "Length",
+          "criterion": "Content Length & Density",
+          "score": 4,
+          "max": 5,
+          "finding": "2,869 words against the brief's 2,300 to 2,800 band, 69 words over, with a 13-minute reading time recorded in the CMS. Density is genuinely high and I found no padding. The mildest redundancy is that the References block restates six figures already stated and linked inline, which is deliberate apparatus rather than filler."
+        }
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Byte-identical across both locations and FAQ matches the visible block word for word, but both dates read 2026-09-08 while the draft was written on 2026-09-10.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Article",
+          "criterion": "Article Type Completeness",
+          "score": 5,
+          "max": 5,
+          "finding": "The BlogPosting node carries all twelve expected properties: @id, @type, headline, description, url, datePublished, dateModified, keywords, image, author, publisher and mainEntityOfPage. I verified the headline matches the CMS name field character for character, and keywords carries the brief's primary plus all four mandated secondaries ('B2B buyer journey AI, dark funnel B2B, AI marketing funnel, self-reported attribution, zero-click B2B marketing')."
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQPage Structure",
+          "score": 5,
+          "max": 5,
+          "finding": "Six entries, double the three-question minimum. I parsed each one: every entry is @type Question with an acceptedAnswer of @type Answer carrying a text property, answer texts running 58 to 62 words, all under a distinct #faq @id."
+        },
+        {
+          "category": "Alignment",
+          "criterion": "Schema-to-Content Alignment",
+          "score": 4,
+          "max": 5,
+          "finding": "Verified mechanically rather than by eye: the schema-markup field and the post-body script embed are byte-identical at 4,300 characters each, all six visible H4 questions equal the six FAQPage names exactly, and all six visible answer paragraphs equal their acceptedAnswer.text exactly. One misalignment: the schema description ('Where B2B pipeline now starts when buyers research inside AI assistants, why attribution cannot see it, and the three proxy metrics that replace what you lost.') is not the CMS meta-description ('Buyers now research inside AI, so the first touch never reaches your analytics. Three proxy metrics, a self-reported attribution fix and a worked example.'). Both are accurate, but the page will present two different descriptions to a parser."
+        },
+        {
+          "category": "Graph",
+          "criterion": "@graph Implementation",
+          "score": 5,
+          "max": 5,
+          "finding": "A proper @graph array with two nodes, each carrying a distinct fragment @id anchored to the canonical URL ('...b2b-buyer-journey-ai-research#article' and '...#faq'), which is what lets a parser address the article and the FAQ separately. mainEntityOfPage points at the bare canonical as a WebPage."
+        },
+        {
+          "category": "Rich results",
+          "criterion": "Rich Result Eligibility",
+          "score": 3,
+          "max": 5,
+          "finding": "ImageObject with explicit width 1200 and height 630 and a publisher Organization with a logo are both present, so the base eligibility is there. Two defects. dateModified is identical to datePublished at 2026-09-08, and both predate the draft itself: the file first lands in git at commit 30b6602 on 2026-09-10 and its own DATA_GAPS file is stamped 'Recorded 2026-09-10', so the schema asserts a publication date two days before the text existed. Separately the publisher logo reuses the 1200x630 blog OG image rather than a logo asset, which is not a valid square-ish logo for rich result rendering."
+        }
+      ]
+    }
+  ],
+  "top_fixes": [
+    "Correct the dates. datePublished and dateModified both read 2026-09-08 in both schema locations, and the CMS date and last-updated fields match, but git shows the draft was first written on 2026-09-10 and DATA_GAPS_topic10.md is stamped the same day. Set dateModified to the real date and stop backdating datePublished.",
+    "Name the assistant referrer hostnames. The post twice tells the reader to 'build an analytics segment matching assistant referrer hostnames' and never lists one, which makes the single most executable instruction in the article impossible to follow. A short table of hostnames per engine would also become the post's second snippet table.",
+    "Add a visible author block. 'Sumit Nautiyal' appears exactly once in the post-body and only inside the JSON-LD author node. Add the About the author H3 the sibling pillar carries, tying him to dark-funnel measurement, so Entity Association has something in the extractable text to work with.",
+    "Resolve the citation-share overlap with the pillar. Both posts hand the reader a prompt-set method for the same metric, thirty to fifty prompts here against ten prompts across three engines in how-to-get-cited-in-ai-search-b2b-playbook. Pick one canonical method, host it in the pillar, and have this post link to it rather than restate a competing version.",
+    "Break up the second half. Six bolded phrases and zero in-body bullet lists across thirty-two paragraphs, several at 90 to 102 words, means the form fix and the worked example read as unbroken prose. Convert the three reasons attribution fields fail and the four things to report upward into real lists, and chart the 38 self-reported against 9 measured comparison."
+  ]
+}
