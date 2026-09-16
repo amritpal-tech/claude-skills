@@ -1,0 +1,278 @@
+{
+  "slug": "ai-marketing-budget-b2b-allocation",
+  "title": "The Wrong 20%: Where B2B Teams Are Wasting Their AI Marketing Budget (and the 80% They Ignore)",
+  "words": 2795,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Sourcing and hedging are exemplary, but the H2 that promises the budget split delivers a table with no numbers in it.",
+      "flag_type": "critical",
+      "criteria": [
+        {
+          "category": "Sources",
+          "criterion": "Stat Accuracy & Source Quality",
+          "score": 5,
+          "max": 5,
+          "finding": "The Gartner and McKinsey figures were re-verified at source in the main thread and check out. Beyond accuracy, the post states methodology where it matters: Gartner's survey is described as 'fielded among 401 CMOs and marketing leaders across North America, the UK and Europe between January and March 2026', and the MIT Project NANDA finding is given its sample ('52 executive interviews, surveys of 153 leaders and analysis of 300 public deployments') and then explicitly downgraded: 'The authors flag the work as preliminary and not peer reviewed, so treat it as a directional signal.' That hedge on the most quotable statistic in the piece is the behaviour of a careful writer."
+        },
+        {
+          "category": "Depth",
+          "criterion": "Practitioner Depth",
+          "score": 4,
+          "max": 5,
+          "finding": "The procurement insight is the kind of thing only someone who has watched these budgets move would write: 'Seat licences fit an existing purchase order shape. A research analyst, a paid subject matter expert review hour, or an attribution rebuild does not. So the budget flows to what the system already knows how to buy.' The ownership rule is equally operational: 'An unowned line reverts to zero within a quarter.' The deduction is that the six budget lines are characterised but never sized or costed, so a reader who accepts the argument still cannot build the budget the post is asking them to build."
+        },
+        {
+          "category": "Attribution",
+          "criterion": "Data Attribution",
+          "score": 4,
+          "max": 5,
+          "finding": "The post refuses to dress a model up as data, and says so before the table rather than after it: 'Here is the honest caveat first: the split below is a model, not a measured DevCommX dataset, and you should treat it as a structure to fill with your own line items. The external anchors are real.' That is the right call. The deduction is placement: the paragraph carrying five Gartner numbers (7.8 percent of revenue, up from 7.7, 15.3 percent to AI, 21.3 percent among AI-ready, 8.9 percent of revenue) names Gartner but carries no inline link, with the link sitting two sections earlier and in the References footer."
+        },
+        {
+          "category": "Accuracy",
+          "criterion": "Technical Accuracy",
+          "score": 5,
+          "max": 5,
+          "finding": "Google's position is represented accurately and in the right register: the post says the ranking systems 'reward original, high quality content demonstrating experience, expertise, authoritativeness and trustworthiness' and that scaled automation to manipulate rankings falls under the scaled content abuse policy, then correctly frames the second Google source as making the same point from the other side, 'production method is not the issue, quality is'. The Deloitte finding is stated precisely as different frameworks or timeframes for generative versus agentic AI rather than blended into a generic ROI claim."
+        },
+        {
+          "category": "Delivery",
+          "criterion": "Completeness",
+          "score": 3,
+          "max": 5,
+          "finding": "Six of seven H2s deliver. The exception is the one the title depends on: 'What the AI marketing budget split actually looks like, and what it should be'. Its table's 'Where it belongs' column returns 'A capped minority of the line', 'The largest single share', 'A named, paid share', 'At least equal to generation', 'A standing share with an owner' and 'A funded project, not a training email'. Not one percentage appears. The brief's must-include was 'a before/after spend breakdown'; what shipped is a before/after posture. The only numeric rule in the entire post is buried in an FAQ answer: 'if generation is more than half of the AI marketing budget, the split is almost certainly wrong.'"
+        }
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Strongest keyword coverage in the batch, but the table returns no number on a query whose answer is a number, and the schema description diverges from the meta description.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Keywords",
+          "criterion": "Primary Keyword Targeting",
+          "score": 5,
+          "max": 5,
+          "finding": "'AI marketing budget' appears fourteen times, the highest density in the batch, across the H1/name, the 49-character meta-title, the first sentence, the slug, four H2s and one FAQ question, and it reads naturally in every one. The brief's title did not contain the primary keyword and one word was inserted deliberately to fix that; the result, 'Where B2B Teams Are Wasting Their AI Marketing Budget', is indistinguishable from an original headline. All three secondaries appear, including the awkward one worked in cleanly: 'Most AI marketing strategy mistakes we see are simply this diagnosis being skipped.'"
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQ / People Also Ask",
+          "score": 5,
+          "max": 5,
+          "finding": "The brief's three PAA targets appear verbatim and all six are genuine query shapes, including the complaint-form query 'Why isn't AI improving our marketing results?' which is answered directly and with a number: 'McKinsey reports that only about 21 percent of organisations using generative AI have redesigned any workflow.' Answers run 367 to 409 characters and each one carries its own attributed statistic rather than restating body prose."
+        },
+        {
+          "category": "Tables",
+          "criterion": "Comparison / Featured Snippet Tables",
+          "score": 3,
+          "max": 5,
+          "finding": "Six rows by four columns with a clear before/after structure, but every cell in the two decision columns is a qualitative phrase. An engine extracting this table for 'how should I split my AI marketing budget' returns 'A capped minority of the line' and 'The largest single share', which answers nothing. For a post that owns a budget-allocation keyword, the table is the object most likely to be lifted and it is the one place the post declines to commit to a figure."
+        },
+        {
+          "category": "Links",
+          "criterion": "Internal & External Link Structure",
+          "score": 5,
+          "max": 5,
+          "finding": "Eight internal links, and I verified each against the brief's verified-published menu: all eight are on it, including the service page /gtm-engineering and the /contact-us CTA. Sixteen external links across five authoritative hosts (gartner.com, developers.google.com, mckinsey.com, forbes.com, deloitte.com), every one inline at the claim with a descriptive anchor, and both Google Search Central documents linked separately rather than collapsed into one."
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical SEO",
+          "score": 3,
+          "max": 5,
+          "finding": "Meta-title is 49 characters and meta-description 155, both in range, schema is present in both required locations and byte-identical, and the slug matches the schema url and mainEntityOfPage @id. The defect is that the CMS meta-description (155 characters, 'Most B2B teams put their AI marketing budget into drafting and volume...') and the schema description (196 characters, 'Where B2B teams waste the AI marketing budget on content generation...') are two different texts, so the page and its structured data describe the article differently. The sibling cold email and A/B testing posts in this batch keep the two identical."
+        }
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness",
+      "weight": 0.2,
+      "flag": "Very strong definitional writing and named-source authority; the most parseable object on the page carries no data.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Definitions",
+          "criterion": "Direct Definitions",
+          "score": 5,
+          "max": 5,
+          "finding": "Several short, self-contained statements built for extraction. 'Drafting speed is an output metric. It tells you the factory is faster, not that the goods sell.' 'A review gate is not a proofread. It is a named reviewer with domain authority who can delete a claim.' 'Distribution is assumed to be free because publishing is free. It is not the same thing.' And the rule the whole argument reduces to: 'generation spend is a multiplier, and a multiplier applied to a weak input returns a weak result faster.'"
+        },
+        {
+          "category": "Structure",
+          "criterion": "Structured Data for AI Parsing",
+          "score": 4,
+          "max": 5,
+          "finding": "Four bolded and parallel 80 percent definitions, three numbered benefits ('One: targeting precision', 'Two: trust that survives contact with a buyer', 'Three: compounding measurement'), a six-row table, a time-boxed audit in three labelled windows ('Minutes 0 to 8, list and tag', 'Minutes 8 to 15', 'Minutes 15 to 20') and a six-question FAQ. Dense and machine-readable. The deduction is that the table, the single most parseable object on the page, contains no numbers, so a parser gets structure without data."
+        },
+        {
+          "category": "Authority",
+          "criterion": "Statistical Authority",
+          "score": 5,
+          "max": 5,
+          "finding": "Every quantitative claim is attributable to a named organisation an LLM can re-cite, with the methodology attached: Gartner's 2026 CMO Spend Survey (15.3, 21.3, 7.8, 8.9 percent, and the 70 versus 30 readiness gap), MIT Project NANDA via Forbes (95 percent, with the preliminary status flagged), Gartner data quality (12.9 million dollars), Deloitte (85 percent of AI ROI leaders), McKinsey State of AI (21 percent, 39 percent, the 6 percent high performers). No orphan statistics anywhere in the body."
+        },
+        {
+          "category": "Entity",
+          "criterion": "Entity Association",
+          "score": 3,
+          "max": 5,
+          "finding": "DevCommX appears seven times, the closing H2 is named for the brand ('Audit Your AI Marketing Budget With DevCommX'), and the first-person claim to observed evidence is specific: 'We build GTM systems for B2B teams, which means we see the actual line items, and the pattern repeats.' The author is entirely absent from the page: 'Sumit Nautiyal' appears zero times in visible prose and only inside the JSON-LD, with no author bio block, so the post carries no person-level expertise signal for an opinionated POV piece that depends on the writer's standing."
+        },
+        {
+          "category": "Distinctiveness",
+          "criterion": "GEO Distinctiveness",
+          "score": 4,
+          "max": 5,
+          "finding": "The post owns 'AI marketing budget' and the 20/80 framing outright, and routes adjacent intents away by name: agentic marketing to the agentic guide, distribution to the Reddit citations post, instrumentation order to the AI GTM strategy guide. The narrow overlap is with its own first internal link, the SEO and AEO ROI budget model, which is also a budget-allocation asset; the post deconflicts explicitly ('If you are rebuilding the whole model rather than one line, start with...'), but the two share budget-modelling queries."
+        }
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Strongest brand dimension in the batch: the fullest statement of the owned-infrastructure model and real budget framing throughout.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Narrative",
+          "criterion": "Differentiation Narrative",
+          "score": 5,
+          "max": 5,
+          "finding": "The most complete articulation of the model across the four posts, and it is tied to the article's own argument rather than bolted on: 'DevCommX builds autonomous, signal based AI SDR and GTM systems that our clients own outright, which means the research layer, the review gates, the distribution logic and the measurement all sit on your side of the line rather than inside a vendor account you rent.' That sentence names the four budget lines the post just spent 2,000 words defending, which is why it reads as a conclusion instead of a pitch."
+        },
+        {
+          "category": "Proof",
+          "criterion": "Proof Metrics & Evidence",
+          "score": 4,
+          "max": 5,
+          "finding": "The permitted claim appears once and is the only rendering in the batch that connects the number to the post's thesis: 'One signal based system we built produced 40+ qualified demos in approximately 6 weeks, and the work behind it sat almost entirely in the 80 percent.' Still a single unaudited outcome with no client, sector or baseline, so it supports the argument without being independently checkable."
+        },
+        {
+          "category": "Pricing",
+          "criterion": "Pricing Transparency",
+          "score": 4,
+          "max": 5,
+          "finding": "The strongest cost framing in the batch, which is what you would hope for on a budget post. Real published anchors a reader can benchmark against (15.3 percent of marketing budgets, 21.3 percent among AI-ready organisations, budgets at 7.8 percent of company revenue rising to 8.9), the cost of the failure mode (12.9 million dollars a year in poor data quality), and an explicit statement of what the recommendation costs: 'Most teams can rebalance inside the existing AI marketing budget without asking finance for a single additional dollar.' What is missing is any DevCommX-side number: no engagement cost, retainer band or price for the audit being offered."
+        },
+        {
+          "category": "CTA",
+          "criterion": "CTA Quality",
+          "score": 4,
+          "max": 5,
+          "finding": "Specific and low friction, with the deliverable named rather than the meeting: 'Bring your current AI line items and we will run the split with you and name the one rebalance worth making first.' The deduction is that the brief commissioned an AI spend audit worksheet as the asset, noting ungated performs better on POV pieces; the audit exists only as three paragraphs of body prose, so there is nothing on the page a reader can take away or another site can link to."
+        },
+        {
+          "category": "Slot",
+          "criterion": "Content Differentiation",
+          "score": 4,
+          "max": 5,
+          "finding": "Fills a distinct POV slot: the budget-defence argument for a marketing leader facing a CFO, which nothing else in the library covers. It sits adjacent to the SEO and AEO ROI budget model on spend questions and to the agentic marketing guide on the signal argument, and links both, but the boundary with the budget model post is drawn by a single sentence rather than by structure."
+        }
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Well built and well paced; the spend-allocation chart the brief specified was never produced.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Headings",
+          "criterion": "Heading Architecture",
+          "score": 5,
+          "max": 5,
+          "finding": "Seven H2s following the brief's outline in order, from the 20 percent, to the 80 percent, to the split, to the three payoffs, to the honest counter-case, to the audit, to the CTA, then H3s for Further Reading, References and FAQ and H4s for the six questions. No skipped levels, and the counter-case H2 placed before the audit is a deliberate and effective ordering choice."
+        },
+        {
+          "category": "Visuals",
+          "criterion": "Visual Elements",
+          "score": 2,
+          "max": 5,
+          "finding": "Zero img tags, zero svg tags, zero figure elements; the six-row table is the only in-body visual. The brief specified the format as 'Argument piece with a spend-allocation chart and a self-audit', and the chart does not exist. A two-bar before/after allocation figure is the single most obvious asset this post could carry, and its absence is compounded by the table declining to state any allocation numerically."
+        },
+        {
+          "category": "Scannability",
+          "criterion": "Scannability",
+          "score": 4,
+          "max": 5,
+          "finding": "The 80 percent section is genuinely skimmable through four bolded lead-ins ('Research quality is the input problem', 'Review gates are where credibility is defended', 'Distribution is assumed to be free because publishing is free', 'Measurement is the line that decides whether the budget survives'), and the audit's three time-boxed windows are bolded. Against that, only twelve strong tags in total, and the honest counter-case section runs three unbroken paragraphs including a four-item list delivered inside a sentence rather than as a list."
+        },
+        {
+          "category": "Flow",
+          "criterion": "Reading Level & Flow",
+          "score": 5,
+          "max": 5,
+          "finding": "Reads as an argument rather than a listicle, with transitions doing real work: 'That gap is where the money goes to the easy line', 'Every other case is a research, review or distribution problem wearing a content costume.' The counter-case section is the strongest signal of quality, conceding the opposing position specifically and then bounding it: 'The tell is whether quality already exists in the organisation and is simply not getting written down.'"
+        },
+        {
+          "category": "Length",
+          "criterion": "Content Length & Density",
+          "score": 5,
+          "max": 5,
+          "finding": "2,795 words, inside the brief's 2,300 to 2,800 band, with no padding and no section that could be cut without losing an argument. The counter-case and the audit, which are the two sections most likely to be filler in a POV piece, are both among the densest."
+        }
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Byte-identical across both locations with an exact FAQ match, but the description diverges from the meta description and both dates predate the draft's own creation.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Article",
+          "criterion": "Article Type Completeness",
+          "score": 5,
+          "max": 5,
+          "finding": "The BlogPosting node carries @id, @type, headline, description, url, datePublished, dateModified, keywords, image, author, publisher and mainEntityOfPage. The headline matches the name field exactly, including the parenthetical, and keywords cover the primary and all three secondaries plus 'B2B AI budget allocation'."
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQPage Structure",
+          "score": 5,
+          "max": 5,
+          "finding": "Six entries under a distinct #faq @id, each a proper @type Question with an acceptedAnswer of @type Answer carrying a text property, double the minimum. Answer text runs 367 to 409 characters, consistently sized for extraction, and each answer is self-contained enough to stand alone in an AI answer."
+        },
+        {
+          "category": "Alignment",
+          "criterion": "Schema-to-Content Alignment",
+          "score": 3,
+          "max": 5,
+          "finding": "The good half, verified mechanically: the schema-markup field and the post-body script embed are byte-identical, and all six visible H4 questions and their answer paragraphs match the FAQPage name and acceptedAnswer.text word for word. The defect is the description property. At 196 characters it is both a different text from the 155-character CMS meta-description and over the length a description field should carry, so the structured data and the page-level meta tag give a crawler two different summaries of the same article."
+        },
+        {
+          "category": "Graph",
+          "criterion": "@graph Implementation",
+          "score": 5,
+          "max": 5,
+          "finding": "A proper @graph array with two nodes, each carrying its own fragment @id anchored to the canonical URL, '...ai-marketing-budget-b2b-allocation#article' and '...#faq', which is what lets a parser address the article and the FAQ separately."
+        },
+        {
+          "category": "Rich results",
+          "criterion": "Rich Result Eligibility",
+          "score": 2,
+          "max": 5,
+          "finding": "ImageObject with explicit width 1200 and height 630 and a publisher Organization with a logo are correct. The dates are worse than stale, they are impossible: datePublished and dateModified both read '2026-09-08', while this draft was not created until 2026-09-10 (commit 7348ab4, 'Draft topic 2: the AI marketing budget allocation argument'). Both schema dates and the CMS date and last-updated fields therefore predate the article's existence, and dateModified duplicating datePublished also breaks the program's own date rule."
+        }
+      ]
+    }
+  ],
+  "top_fixes": [
+    "Put numbers in the 'Where it belongs' column. The H2 promises what the split should be, the title trades on 20/80, and the table answers in adjectives ('A capped minority of the line', 'The largest single share'). Even a stated range per line, flagged as the model the post already admits it is, turns the table into the snippet this page should win and closes the largest content gap in the piece.",
+    "Correct both dates. datePublished and dateModified are both 2026-09-08 for a draft first committed on 2026-09-10, so the schema claims the article existed two days before it was written. Set datePublished to the real intended publish date and dateModified to the last edit, and mirror into the CMS date and last-updated fields.",
+    "Make the schema description and the meta-description the same text. The schema carries a 196-character description, the CMS field a different 155-character one; the sibling posts in this batch keep them identical and this one should too.",
+    "Build the spend-allocation chart the brief specified. Zero figures across 2,795 words holds Visual Elements at 2/5, and a before/after allocation bar is the natural companion to the table once the table carries numbers.",
+    "Move the Gartner link to the paragraph that carries the Gartner numbers. The 7.8, 7.7, 15.3, 21.3 and 8.9 percent figures sit in one paragraph that names Gartner but links nothing; the citation is two sections earlier and in the footer, which is the exact inline-attribution gap the rubric flags across every batch."
+  ]
+}

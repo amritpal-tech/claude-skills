@@ -1,0 +1,278 @@
+{
+  "slug": "ai-sdr-for-ecommerce-fit-criteria",
+  "title": "Does AI SDR Work for E-commerce? The ACV and Buyer Criteria That Decide It (B2B vs DTC)",
+  "words": 1791,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "The illustrative labelling is handled correctly, but not one external source is linked at the claim, and the DTC worked example drops the margin division the B2B example applies.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Sources",
+          "criterion": "Stat Accuracy & Source Quality",
+          "score": 4,
+          "max": 5,
+          "finding": "Three of the four sources are strong and the figures are correctly stated. VERIFICATION.md confirms the Forrester claim at source, 'US B2B e-commerce will reach about $3 trillion by 2027, roughly 24 percent of total US B2B sales', and that the cited URL is the real press page. Gartner's '17 percent of their purchase time meeting potential suppliers' matches the figure used across the library. The Bridge Group figure is deliberately given as a range, 'average monthly meeting quotas in the high teens to low twenties per rep', because DATA_GAPS_topic2.md records that summaries conflicted between 21 and 12 to 20 and the report is gated; that restraint is right. The deduction is SalesHive: a vendor's own blog is used as the pricing 'market anchor', saleshive.com was egress-blocked so it was never read, and the sentence it supports carries no figure at all ('document per qualified meeting tiers that scale with qualification depth'), so the weakest source in the post is the one propping up its most load-bearing input."
+        },
+        {
+          "category": "Depth",
+          "criterion": "Practitioner Depth",
+          "score": 5,
+          "max": 5,
+          "finding": "The 'How to test it' column turns every criterion into something a reader can run this week: 'Build 500 accounts with a named contact', 'Did your last ten customers speak to a human?', 'Median days from first touch to closed won', 'Run the filter in your data provider first'. The disqualification list contains the observations only someone who has sold and delivered these programmes makes: 'A founder writing individually beats any automated motion at that size', and 'Your CRM cannot tell you a close rate. Without it you cannot compute break even, so you will renew or cancel on vibes.' The wholesale edge case is handled with the same specificity, naming 'a named category manager, a specialty retail buyer or a marketplace partnerships lead'."
+        },
+        {
+          "category": "Attribution",
+          "criterion": "Data Attribution",
+          "score": 3,
+          "max": 5,
+          "finding": "The illustrative labelling is exemplary and is exactly the right call given that no DevCommX cost per meeting is published: the word appears nine times, once per input, and the examples are headed 'Every input is illustrative, substitute your own'. The failure is elsewhere. I extracted every anchor in the article body before the Further Reading block and got seven links, all seven internal to devcommx.com, and zero external. The Forrester $3 trillion and 24 percent, the Gartner 17 percent and the Bridge Group quota range are all named in prose with no link at the point of claim; their URLs appear only in Further Reading and References, hundreds of words later. At the moment a reader meets each statistic it is a bare assertion."
+        },
+        {
+          "category": "Accuracy",
+          "criterion": "Technical Accuracy",
+          "score": 3,
+          "max": 5,
+          "finding": "I recomputed both examples. The B2B chain is correct: $400 / 0.15 = $2,667, $2,667 / 0.75 = $3,556, and three times that is 'roughly $10,700'. The DTC example is inconsistent with it. It states 'an illustrative $90 order and an illustrative $240 lifetime value at 55 percent margin', then concludes '$5,000 per acquired customer... Roughly twenty times underwater', which is $5,000 divided by $240 with the 55 percent margin ignored. The B2B example divides by margin at exactly this step. Applying the same method to the DTC case gives a contribution of $132 and a gap of roughly 38 times, not 20. The conclusion survives either way, but the post cites a margin it does not use and the two worked examples do not use the same formula."
+        },
+        {
+          "category": "Delivery",
+          "criterion": "Completeness",
+          "score": 5,
+          "max": 5,
+          "finding": "All seven H2s the brief specifies appear in order, plus a closing decision section. Every 'must include' is delivered and identifiable: the break-even ACV as an explicit formula chain, a worked B2B example, a worked DTC example, and an explicit 'You are not a fit if...' section carrying six named disqualifiers. The batch note is honoured too, with /ai-sdr linked in place of the unresolvable /ai-sdr/{city}/ecommerce placeholder and no invented landing page anywhere."
+        }
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Critical: the body carries zero inline external citations. All seven external anchors sit in the Further Reading and References footers.",
+      "flag_type": "critical",
+      "criteria": [
+        {
+          "category": "Keywords",
+          "criterion": "Primary Keyword Targeting",
+          "score": 4,
+          "max": 5,
+          "finding": "'AI SDR for ecommerce' is bolded as the first three words of the body, opens the 53-character meta-title, sits in the slug and the schema keywords, and appears verbatim in two H2s ('why AI SDR for ecommerce depends on which half you sell to' and 'Where AI SDR for ecommerce works: platforms, 3PLs, payments, wholesale and agency services') plus one FAQ ('When does AI SDR for ecommerce make sense?'). All four secondaries land naturally rather than being bolted on. The deduction is the H1: the brief mandates the title verbatim and it reads 'Does AI SDR Work for E-commerce?', which does not contain the exact phrase, a conflict DATA_GAPS_topic2.md item 7 records rather than resolves."
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQ / People Also Ask",
+          "score": 5,
+          "max": 5,
+          "finding": "All three PAA targets appear word for word as H4s ('Does AI SDR work for B2C?', 'Can you use outbound sales for e-commerce?', 'What ACV do you need for outbound to pay back?') plus two genuine additions, of which 'Does AI SDR work for DTC brands selling into retail?' captures the exact long-tail the edge-case section exists to answer. Answers run 52 to 57 words, all inside the extractable band, and each is self-contained; the ACV answer restates the whole formula rather than pointing back at the body."
+        },
+        {
+          "category": "Tables",
+          "criterion": "Comparison / Featured Snippet Tables",
+          "score": 4,
+          "max": 5,
+          "finding": "The fit-criteria table is five data rows by four columns (Fit criterion, What qualifies you, What disqualifies you, How to test it) with all four th cells carrying color:#1f2937, and the qualifies/disqualifies pairing makes each row a complete standalone answer, for example 'Named buyer exists | A title you can filter for, such as Head of Ecommerce | A consumer, with no company or title attached'. The deduction is that the break-even section, which is the most inherently tabular content in the post with four or five labelled inputs per example, is delivered as two prose paragraphs instead of the side-by-side B2B versus DTC table it is asking to be."
+        },
+        {
+          "category": "Links",
+          "criterion": "Internal & External Link Structure",
+          "score": 2,
+          "max": 5,
+          "finding": "The internal half is fine: seven links, every one from the brief's verified menu, correct /contact-us rather than /contact, descriptive anchors ('cost per meeting model', 'the true cost of outbound'), no bare URLs. The external half fails the criterion outright. I split the markup at the Further Reading heading and counted anchors in the article body: seven, all internal, zero external. Every one of the seven external anchors, covering forrester.com, gartner.com, bridgegroupinc.com and saleshive.com, sits in the footer blocks. This is the exact defect the rubric names as the library's second cross-cutting gap, sources pooled in References instead of anchored at the claim, and here it is total rather than partial."
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical SEO",
+          "score": 5,
+          "max": 5,
+          "finding": "Meta-title is 53 characters and meta-description 152, both comfortably inside truncation limits. Schema is present in both required locations and byte-identical between them, the slug matches the schema url and mainEntityOfPage @id, the body correctly carries no h1 so the Webflow template renders the name field, and there are no em or en dashes, no HTML comments and no bare-URL anchors."
+        }
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness",
+      "weight": 0.2,
+      "flag": "Very extractable definitions and a clean query cluster, but the named sources carry no link at the claim and DevCommX is barely present in the body.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Definitions",
+          "criterion": "Direct Definitions",
+          "score": 5,
+          "max": 5,
+          "finding": "The post opens with a complete liftable answer to its own title query: 'AI SDR for ecommerce works when the e-commerce company sells to other businesses, not to consumers,' followed immediately by the three deciding conditions in one sentence. The framing line is equally quotable ('The real variable is not the software, it is who your e-commerce company sells to'), the criteria are declared as a closed set ('Every workable set of AI SDR fit criteria reduces to three tests'), and the FAQ supplies the category-level rule an engine would reuse: 'Who signs the cheque matters more than the label on the company.'"
+        },
+        {
+          "category": "Structure",
+          "criterion": "Structured Data for AI Parsing",
+          "score": 4,
+          "max": 5,
+          "finding": "Good parseable scaffolding: a five-row four-column table, three explicitly numbered criteria bolded as 'One, an identifiable named buyer.', 'Two, revenue per customer above break even,' and 'Three, a deal that requires a conversation.', two labelled worked examples, a six-item disqualification set and a five-question FAQPage. The deduction is that the body has no list markup at all. Both <ul> elements are the Further Reading and References blocks, so the six disqualifiers, which are the most obviously list-shaped content in the batch, are compressed into two paragraphs of bolded run-ons."
+        },
+        {
+          "category": "Authority",
+          "criterion": "Statistical Authority",
+          "score": 3,
+          "max": 5,
+          "finding": "The organisations are named and re-citable in principle, Forrester, Gartner and The Bridge Group, but none is linked where its number appears, so an engine lifting 'Forrester estimates US B2B e-commerce will reach about $3 trillion by 2027' gets no href to follow and has to match the claim against a References block it may never reach. Worse for this criterion, the numbers that actually carry the argument are the break-even thresholds, and every one of those is self-generated and labelled illustrative, correctly so given no DevCommX figure is published. The net effect is a post whose most quotable quantities are explicitly not evidence."
+        },
+        {
+          "category": "Entity",
+          "criterion": "Entity Association",
+          "score": 3,
+          "max": 5,
+          "finding": "This is the thinnest entity binding of the five. DevCommX is named twice in the body, once in a clause ('the system we build sits on our AI SDR service') and once in the final four-word CTA ('Book a GTM strategy call with DevCommX'), plus the first-person 'Our own best case' on the demos claim. The closing H2 is 'Test the fit before you buy the system', which is a reader instruction rather than a branded section, so unlike the three siblings there is no DevCommX-named heading. The author is absent from the extractable text entirely: 'Sumit' does not appear in the post-body outside the JSON-LD author node, and there is no About the author block."
+        },
+        {
+          "category": "Distinctiveness",
+          "criterion": "GEO Distinctiveness",
+          "score": 5,
+          "max": 5,
+          "finding": "The boundary is drawn in the second paragraph and held: 'For the model itself, read the definitive guide to AI SDRs. This piece is only about whether to buy one.' The same discipline applies to cost, which is linked out to three separate pricing and ROI posts rather than restated. The post owns a query cluster nothing else in the library touches, 'AI SDR B2C', 'does AI SDR work for DTC' and the wholesale edge case, and the DTC-into-retail section answers a question with no competing page anywhere in the batch."
+        }
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Best cost framing in the batch, but the differentiation narrative is a single subordinate clause and the CTA is four words with no offer.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Narrative",
+          "criterion": "Differentiation Narrative",
+          "score": 3,
+          "max": 5,
+          "finding": "The owned-infrastructure model surfaces exactly once, and only as a subordinate clause in the penultimate sentence: 'an AI SDR system compounds, because the list, sequences and data stay yours.' That is the right idea in the right place, but nothing builds to it. The signal-based half of the positioning is absent entirely, there is no contrast with rented or vendor-owned tooling anywhere, and the post's own honest posture, telling readers when not to buy, would have made the ownership argument land harder than it does."
+        },
+        {
+          "category": "Proof",
+          "criterion": "Proof Metrics & Evidence",
+          "score": 4,
+          "max": 5,
+          "finding": "The single permitted claim is used once and, unusually, used against DevCommX's own interest, as a caveat inside the disqualification list: 'You need results in six weeks with nothing built... Our own best case, a fully scoped programme with a clear ICP, produced 40+ qualified demos in ~6 weeks, and that assumed the foundations were in place.' Labelling it 'our own best case' and attaching the precondition is the most honest framing of that number across the five drafts. It stays at 4 because it is still the only DevCommX outcome on the page and it evidences speed, not the e-commerce fit thesis the post argues."
+        },
+        {
+          "category": "Pricing",
+          "criterion": "Pricing Transparency",
+          "score": 4,
+          "max": 5,
+          "finding": "By a distance the strongest cost framing in the batch, and it is the point of the article rather than a gesture. The formula chain is spelled out ('Acquisition cost per customer equals cost per booked meeting divided by meeting to closed won rate. Break even first year revenue equals that divided by gross margin'), a target multiple is given and justified ('about three times break even, because the revenue also funds delivery and the rest of go to market'), two fully worked dollar examples follow, and a 'Where the cost input comes from' paragraph tells buyers and builders where to get their own number. Held at 4 because no real figure anchors any of it: every input is illustrative, correctly, and the one external anchor offered instead, SalesHive, is cited without a single price."
+        },
+        {
+          "category": "CTA",
+          "criterion": "CTA Quality",
+          "score": 2,
+          "max": 5,
+          "finding": "The entire conversion ask is four words appended to the closing paragraph: 'Book a GTM strategy call with DevCommX.' There is no offer, no artefact, no reason to act and no mid-body CTA anywhere in 1,791 words. Compare the sibling drafts, which attach something concrete ('we will map the automate, assist and human split to your team'). The obvious move is unused: the post has just taught a break-even calculation, so offering to run it on the reader's numbers is a CTA the article has already earned."
+        },
+        {
+          "category": "Slot",
+          "criterion": "Content Differentiation",
+          "score": 5,
+          "max": 5,
+          "finding": "Occupies the qualification slot cleanly and routes rather than competes: the model goes to definitive-guide-to-ai-sdrs, cost to ai-sdr-roi-calculator-cost-per-meeting and ai-sdr-pricing, metric definitions to outbound-sales-kpis-metrics-2026, build versus buy to true-cost-of-outbound. Nothing else in the library answers 'should an e-commerce company buy this at all', and the willingness to publish a disqualification list is itself a differentiator in a category where every page says yes."
+        }
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "No in-body image or diagram, and the six-item disqualification list is delivered as two paragraphs of bolded run-ons rather than a list.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Headings",
+          "criterion": "Heading Architecture",
+          "score": 4,
+          "max": 5,
+          "finding": "Eight H2s reproduce the brief's seven-part outline in order and add the closing decision section, then three H3s (Further Reading, References, FAQ) and five H4s under the FAQ, with no skipped levels. The deduction is flatness: none of the eight argument H2s carries an H3, so the two worked examples, which a reader will want to return to and which are the section most likely to be deep-linked, sit inside one undifferentiated H2 with only bold text separating them."
+        },
+        {
+          "category": "Visuals",
+          "criterion": "Visual Elements",
+          "score": 2,
+          "max": 5,
+          "finding": "I counted zero <img>, zero <svg> and zero <figure> elements in the body. The only in-body visual asset is the five-row fit-criteria table, and the OG image never appears in the article. This is the rubric's ceiling for a draft with no in-body image or diagram. It is a particularly costly miss here because the post's central idea is a threshold, and the break-even relationship between cost per meeting, close rate, margin and required ACV is the single most chartable thing in the batch, with two worked examples already sitting there as data points."
+        },
+        {
+          "category": "Scannability",
+          "criterion": "Scannability",
+          "score": 4,
+          "max": 5,
+          "finding": "Twenty-three <strong> elements, the densest lede pattern of the five drafts, and they work as an outline on their own: 'B2B infrastructure', 'Wholesale sits in the middle.', 'DTC is the outlier.', 'One, an identifiable named buyer.', 'The formula, run on your numbers rather than ours.', 'You cannot name the buyer's job title.' With the table, a skim reader gets the argument. The deduction is the disqualification section, where six separate bolded conditions are packed into two paragraphs as run-on sentences; it is the one place in the post that visibly wants <li> markup and is the section most likely to be screenshotted or quoted."
+        },
+        {
+          "category": "Flow",
+          "criterion": "Reading Level & Flow",
+          "score": 5,
+          "max": 5,
+          "finding": "Concrete and economical throughout, with the category distinction made by example rather than definition: 'A returns platform charging merchants $18,000 a year and a brand selling $32 candles are both filed under e-commerce and share nothing in outbound terms.' Transitions carry the argument ('That gap is the answer on AI SDR B2C, and it is structural, not an execution problem'), and the closing line earns its place: 'If one fails, software makes the failure faster, not smaller.'"
+        },
+        {
+          "category": "Length",
+          "criterion": "Content Length & Density",
+          "score": 5,
+          "max": 5,
+          "finding": "1,791 words against the brief's 1,500 to 1,800 band, inside it, with an 8-minute reading time recorded in the CMS. Density is high and I found no padding: the adjacent topics that would have inflated it, the AI SDR model itself, pricing, ROI and KPI definitions, are all linked out rather than restated, and even the regulatory point in the DTC section is compressed to one clause because DATA_GAPS_topic2.md item 8 records that the fuller claim could not be sourced."
+        }
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Byte-identical across both locations with an exact FAQ match; the only gaps are a schema description that differs from the meta-description and the OG image reused as the publisher logo.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Article",
+          "criterion": "Article Type Completeness",
+          "score": 5,
+          "max": 5,
+          "finding": "The BlogPosting node carries all twelve expected properties: @id, @type, headline, description, url, datePublished, dateModified, keywords, image, author, publisher and mainEntityOfPage. The headline matches the CMS name field character for character including the '(B2B vs DTC)' suffix, and keywords carries the brief's primary plus all four mandated secondaries ('AI SDR for ecommerce, AI SDR B2C, does AI SDR work for DTC, AI SDR fit criteria, B2B ecommerce outbound')."
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQPage Structure",
+          "score": 5,
+          "max": 5,
+          "finding": "Five entries against the three-question minimum. I parsed each: every one is @type Question with an acceptedAnswer of @type Answer carrying a text property, answers running 52 to 57 words, all under a distinct '...#faq' @id. This is the smallest FAQ block of the five drafts but still comfortably clears the bar, and it is proportionate to the shortest word count."
+        },
+        {
+          "category": "Alignment",
+          "criterion": "Schema-to-Content Alignment",
+          "score": 4,
+          "max": 5,
+          "finding": "Verified mechanically rather than by eye: the schema-markup field and the post-body script embed are byte-identical at 3,722 characters each, all five visible H4 questions equal the five FAQPage names exactly, and all five visible answer paragraphs equal their acceptedAnswer.text exactly. The keywords track the body's real coverage. One misalignment: the schema description ('Three fit criteria decide whether AI SDR for ecommerce pays back: a named buyer, an ACV above your break even, and a deal that needs a conversation.') is not the CMS meta-description ('Does AI SDR work for ecommerce? The three fit criteria, the break even ACV arithmetic you run on your own numbers, and the honest disqualification list.'), so the page will present two different descriptions to a parser."
+        },
+        {
+          "category": "Graph",
+          "criterion": "@graph Implementation",
+          "score": 5,
+          "max": 5,
+          "finding": "A proper @graph array with two nodes, each carrying a distinct fragment @id anchored to the canonical URL ('...ai-sdr-for-ecommerce-fit-criteria#article' and '...#faq'), so a parser can address the article and the FAQ independently, with mainEntityOfPage pointing at the bare canonical as a WebPage."
+        },
+        {
+          "category": "Rich results",
+          "criterion": "Rich Result Eligibility",
+          "score": 4,
+          "max": 5,
+          "finding": "ImageObject with explicit width 1200 and height 630 and a publisher Organization with url and logo are present, and the dates are honest and internally consistent: datePublished and dateModified both read 2026-09-15, matching the actual draft commit date, so this carries none of the stale-date defect seen elsewhere in the library. The one defect is the publisher logo, which points at the same 1200x630 blog OG image file rather than a logo asset, so it is neither a brand mark nor an acceptable aspect ratio for logo rendering."
+        }
+      ]
+    }
+  ],
+  "top_fixes": [
+    "Move the four external citations inline. The article body contains seven anchors and all seven are internal; Forrester, Gartner, The Bridge Group and SalesHive are named in prose with their URLs only in the Further Reading and References footers. Link each one at the sentence that makes the claim. This single change addresses the lowest score in the findings and lifts Data Attribution and Statistical Authority with it.",
+    "Fix the DTC arithmetic. The example cites 'an illustrative $240 lifetime value at 55 percent margin' and then computes 'Roughly twenty times underwater' from $5,000 / $240 without applying the margin, while the B2B example above it does divide by margin. Applying the same method gives roughly 38 times. Use one formula in both examples or drop the unused margin figure.",
+    "Rewrite the CTA. 'Book a GTM strategy call with DevCommX' is four words with no offer, in a post that has just taught a break-even calculation. Offer to run that calculation on the reader's own cost per meeting, close rate and margin, and place a second instance directly after the worked examples.",
+    "Add the break-even figure. Visual Elements is at the rubric floor with zero images and zero SVGs, and the threshold relationship between cost per meeting, close rate, margin and required ACV is the most chartable content in the batch, with the two worked examples already available as plotted points.",
+    "Mark up the disqualification list and build the differentiation. Six conditions are currently packed into two paragraphs of bolded run-ons where <li> markup belongs, and the owned-infrastructure argument appears only as the clause 'because the list, sequences and data stay yours' in the penultimate sentence."
+  ]
+}
