@@ -1,0 +1,278 @@
+{
+  "slug": "bdr-outsourcing-cost-when-it-works",
+  "title": "BDR Outsourcing: When It Works, When It Fails, and What It Actually Costs",
+  "words": 3013,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Sourcing and arithmetic are the strongest in the batch, but the 'at three team sizes' H2 only works one team size.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Sources",
+          "criterion": "Stat Accuracy & Source Quality",
+          "score": 4,
+          "max": 5,
+          "finding": "The source tier here is genuinely good: two U.S. Bureau of Labor Statistics releases, Gartner, and The Bridge Group's 2025 SDR Models, Motions and Metrics report with its sample size stated inline ('built on responses from 351 B2B companies'), each linked at the claim. Vendor blogs (salespipe.co, saleshive.com) are used only for vendor pricing, which is the one thing they are a legitimate source for. I re-checked the derived arithmetic and it holds: benefits at '30.1 percent of total employer compensation costs' means wages are 69.9 percent, and $77,000 / 0.699 = $110,157, which the post rounds to 'near $110,000 a year, about $9,200 a month'. One stretch: the BLS Occupational Outlook figure of '$100,070 median wage' is for wholesale and manufacturing technical and scientific sales representatives, and the post uses it to characterise the B2B SaaS closer the BDR feeds, which is a different population."
+        },
+        {
+          "category": "Depth",
+          "criterion": "Practitioner Depth",
+          "score": 5,
+          "max": 5,
+          "finding": "Repeatedly names things buyers only learn after signing. The three delivery models are separated by their exit cost, not their brochure: 'Cancel staff augmentation and you keep the sequences, the data, and the warmed domains. Cancel a managed campaign and you keep a spreadsheet of meetings that already happened: twelve months of spend, no reusable asset.' The per-meeting incentive defect is stated exactly — 'the vendor is paid on meetings booked, not held, and never on pipeline' — and the 90-day plan tells you to read replies rather than dashboards and sorts them into a real diagnostic ('Wrong person means the list is broken. Wrong problem means the message is broken')."
+        },
+        {
+          "category": "Attribution",
+          "criterion": "Data Attribution",
+          "score": 4,
+          "max": 5,
+          "finding": "The table is explicitly framed rather than asserted: 'Read that as a structure, not a quote. Two lines are yours to fill: real per seat tooling spend, and your manager's loaded salary divided by span of control. Everything else comes from the cited benchmarks or from published vendor pricing.' Cells carry their provenance where it matters ('About $33,000, per the BLS employer cost share'). Two lapses. The 'AI augmented system you own' column is unsourced DevCommX assertion sitting in the same rows as BLS and Bridge Group figures ('About $70,000 for one internal owner') with no marker distinguishing the two. And the crossover claim — 'At six reps plus a manager, in house unit cost typically drops below equivalent retainer spend' — is the section's conclusion and the only figure in it that is neither worked nor cited."
+        },
+        {
+          "category": "Accuracy",
+          "criterion": "Technical Accuracy",
+          "score": 5,
+          "max": 5,
+          "finding": "The commercial mechanics are correct for 2026 and stated with the right granularity: retainer tiers at $2,500-$4,000 shared email-only, $4,000-$7,500 dedicated, $7,500+ enterprise; setup fees plus three to six month minimums, with the reason given ('which exists because the first two months produce little'); per-meeting deals at $175 to $350. The warmup claim is right and load-bearing — 'Anyone promising meetings in week one is sending from unwarmed infrastructure.' The post also sensibly avoids quoting per-seat tool prices it would have to keep current, describing the stack generically as 'sequencer, enrichment, dialer, navigator seat, inbox infrastructure'."
+        },
+        {
+          "category": "Delivery",
+          "criterion": "Completeness",
+          "score": 3,
+          "max": 5,
+          "finding": "Eight of nine H2s deliver in full — the four conditions are four, the five stop conditions are genuinely five, and the 90-day plan has three dated blocks. The exception is material because it is the analytical core: 'Cost per qualified meeting, in house versus outsourced, at three team sizes' works exactly one team size. The one-BDR case gets five worked figures ('At eight held meetings that is over $1,150 each before tooling, at twelve about $765, at sixteen about $575'), then three reps gets two sentences with no numbers at all and six reps gets a single unquantified sentence. The heading promises three worked comparisons and delivers one."
+        }
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Keyword, FAQ, table and links all clean; meta-description is at the 160-character ceiling.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Keywords",
+          "criterion": "Primary Keyword Targeting",
+          "score": 5,
+          "max": 5,
+          "finding": "'BDR outsourcing' is bolded in the first sentence of the answer block and 'BDR outsourcing cost' bolded in the fourth, and the term carries four of the nine H2s ('What BDR outsourcing actually covers...', 'The real BDR outsourcing cost: retainers, per meeting pricing...', 'When BDR outsourcing works...', 'When BDR outsourcing fails...'). It is in the slug, the 53-character meta-title, the meta-description and one FAQ ('Is BDR outsourcing worth it?'). The secondary cluster is deliberately covered too, with 'sales development outsourcing, outsourced BDR services, and outsourced SDR' named as vendor synonyms in the body and 'How much does outsourced SDR cost?' as the lead FAQ."
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQ / People Also Ask",
+          "score": 5,
+          "max": 5,
+          "finding": "Six questions, all real high-intent shapes rather than invented ones: 'How much does outsourced SDR cost?', 'Is BDR outsourcing worth it?', 'What is the difference between SDR and BDR outsourcing?', 'Should you hire two outsourced BDR vendors at once?'. Each answers first and qualifies second — 'Expect weeks, not days' — and each sits in the 50 to 65 word extractable band. The two-vendor question in particular is a genuine buyer query almost nobody covers."
+        },
+        {
+          "category": "Tables",
+          "criterion": "Comparison / Featured Snippet Tables",
+          "score": 5,
+          "max": 5,
+          "finding": "The best-built table in the batch: a real <thead> with four <th> cells (Annual cost line, In house BDR fully loaded, Outsourced BDR agency, AI augmented system you own) over nine <td> rows, 36 data cells. Rows are chosen for decision value rather than symmetry — 'Contract minimum', 'Attrition exposure' and 'What you hold in month 13' are the three lines a retainer quote never shows — and the final row's answers ('A seat that may be empty again' / 'A renewal quote' / 'Domains, data and sequences you own') are individually liftable."
+        },
+        {
+          "category": "Links",
+          "criterion": "Internal & External Link Structure",
+          "score": 5,
+          "max": 5,
+          "finding": "Eleven internal links across ten destinations, each placed at the moment the reader would want the detour: 'signs an SDR program is underperforming' in the intro for readers unsure whether the model or the execution is the problem, 'how to reduce SDR burnout and turnover' right after the 14-month tenure figure, 'the outbound sales KPIs that matter in 2026' at the instrumentation instruction. Two /ai-sdr links and the correct /contact-us. Five external hosts, all cited inline at the claim and restated in a References block that says what each one sourced."
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical SEO",
+          "score": 4,
+          "max": 5,
+          "finding": "Schema is present in both required locations and the slug matches the schema url and mainEntityOfPage @id exactly. The heading tree starts cleanly at H2, which is correct for this collection since Webflow renders the CMS name field as the page H1. Meta-title is 53 characters, comfortably inside the limit. The meta-description is 160 characters, which is right at the truncation ceiling rather than inside it, and the tail that would be cut ('plus the four conditions it works and five it fails') is the differentiating half of the promise."
+        }
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness",
+      "weight": 0.2,
+      "flag": "Best definitional opener and best statistical sourcing of the four, undercut by only two DevCommX mentions and no author entity on the page.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Definitions",
+          "criterion": "Direct Definitions",
+          "score": 5,
+          "max": 5,
+          "finding": "The post opens with the exact sentence an engine wants: 'BDR outsourcing means paying an external team to run top of funnel prospecting so your closers only take qualified meetings', immediately followed by the two-sided qualifier ('It works when your motion is proven and your ICP is broad. It fails on undefined targeting and deeply technical buyers') and a price range. It then defines the term again at operational depth in the first H2, and settles the adjacent definitional query outright: 'Internally a BDR means cold outbound and an SDR means inbound or hybrid... but on an invoice the two words are interchangeable.'"
+        },
+        {
+          "category": "Structure",
+          "criterion": "Structured Data for AI Parsing",
+          "score": 4,
+          "max": 5,
+          "finding": "Dense parseable structure: a nine-row four-column table, a six-question FAQ, four explicitly enumerated bolded conditions ('**One, the motion is proven.**' through '**Four, you have an internal owner and a six to nine month horizon.**'), five bolded failure conditions, and three bolded date-boxed phases ('**Days 0 to 14, define and instrument.**'). Fourteen <strong> tags carry it. The deduction is that none of these enumerations are actual list markup — there are zero <ul> and zero <ol> elements in the body, the only two <ul> being Further Reading and References — so the five failure conditions are packed into three paragraphs and a parser has to recover the enumeration from bold runs."
+        },
+        {
+          "category": "Authority",
+          "criterion": "Statistical Authority",
+          "score": 5,
+          "max": 5,
+          "finding": "Every number traces to a named, re-citable organisation, and two of the five are U.S. government statistical releases rather than marketing content: BLS Employer Costs for Employee Compensation (30.1 percent benefits share, March 2026), BLS Occupational Outlook Handbook ($100,070 median), The Bridge Group with sample size disclosed (351 companies; $77,000 OTE, 3.2 to 5.5 month ramp, ~14 month tenure), Gartner ('about 17 percent of total purchase time meeting potential suppliers, across buying groups averaging eleven or more people'), Salespipe and SalesHive for pricing. No orphan statistics."
+        },
+        {
+          "category": "Entity",
+          "criterion": "Entity Association",
+          "score": 3,
+          "max": 5,
+          "finding": "The two DevCommX mentions that exist are unusually good — the intro discloses the conflict rather than hiding it ('DevCommX sells into this category, so treat the cost comparison as a starting framework to run against your own numbers, not as a verdict') and the ramp section attaches the proof point to the mechanism. But two mentions across 3,013 words is the thinnest entity binding in the batch, and there is no author bio anywhere in the body: the only H3s are Further Reading, References and FAQ, so Sumit Nautiyal exists in the CMS author field and the schema Person node and nowhere an engine reading the page can see him."
+        },
+        {
+          "category": "Distinctiveness",
+          "criterion": "GEO Distinctiveness",
+          "score": 4,
+          "max": 5,
+          "finding": "Owns a specific and commercially valuable cluster the library does not otherwise cover: 'BDR outsourcing cost', 'outsourced SDR cost', retainer tiers, cost per qualified meeting held, and the four/five condition lists. It routes rather than competes, handing payback-horizon strategy to 'our framework for outsourcing sales and marketing' and the role-level argument to 'what AI agents are doing to the BDR role'. The narrow overlap is the build-versus-buy frame, which the GTM engineer and RevOps agency posts in the same library also target."
+        }
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "The strongest brand dimension in the batch: real dollar figures throughout and the ownership narrative argued rather than asserted.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Narrative",
+          "criterion": "Differentiation Narrative",
+          "score": 5,
+          "max": 5,
+          "finding": "The owned-infrastructure, signal-based model is not bolted on at the end, it is the analytical spine. The three delivery models are introduced in section one with the infrastructure model defined as 'a signal based system your team or an autonomous agent runs on assets registered to you', the exit-cost argument makes ownership the deciding variable ('you rented a campaign instead of building a channel'), it becomes a named failure condition ('Rented infrastructure with no internal owner. This is the quiet one'), a day-one instruction ('Register sending domains in your name even if the vendor operates them'), and the closing thesis ('when execution becomes software, the durable advantage is owning the system')."
+        },
+        {
+          "category": "Proof",
+          "criterion": "Proof Metrics & Evidence",
+          "score": 4,
+          "max": 5,
+          "finding": "The permitted claim is present, correctly bounded and well placed: 'On one recent build we reached 40+ qualified demos in approximately 6 weeks, the only performance number we publish', sitting inside the ramp-curve section as evidence for the specific assertion that configured systems do not ramp like hired reps. Flagging it as the only published number is exactly right. Deducted one because the metric is in demos while the post has just argued at length that 'the only unit that makes the models comparable is fully loaded cost per qualified meeting held. Not booked' — the proof point is quoted in the unit the post itself rejects, with no ICP, ACV or baseline attached."
+        },
+        {
+          "category": "Pricing",
+          "criterion": "Pricing Transparency",
+          "score": 5,
+          "max": 5,
+          "finding": "Genuinely transparent rather than the usual omission. Real figures on every side of the decision: agency retainers by tier ($2,500-$4,000 / $4,000-$7,500 / $7,500+), per-meeting pricing ($175-$350), setup fees and three-to-six-month minimums, fully loaded in-house cost ($77,000 OTE, ~$33,000 burden, ~$110,000 total, ~$9,200 a month), and worked cost per held meeting at four volumes. It also names what is never priced — 'Then there is what no retainer covers... Your offer. Your proof. Your AE follow up speed... None of it transfers at cancellation.' The DevCommX offer is described in commercial terms ('a fixed, time boxed pilot with a written qualification bar and a system you keep') even though no figure is attached to it."
+        },
+        {
+          "category": "CTA",
+          "criterion": "CTA Quality",
+          "score": 4,
+          "max": 5,
+          "finding": "The closing CTA is specific, low-friction and tied to the artifact the reader has just been handed: 'Take the table above and fill in your two real numbers... If you would rather pressure test it with someone who has built both sides, DevCommX will run the comparison and scope a fixed, time boxed pilot with a written qualification bar and a system you keep', anchored on 'Bring your figures and book a scoping call' to /contact-us (the correct path). Deducted one for being the only CTA in 3,013 words, with nothing at the end of the pricing section where a reader has just been given retainer quotes to react to."
+        },
+        {
+          "category": "Slot",
+          "criterion": "Content Differentiation",
+          "score": 5,
+          "max": 5,
+          "finding": "Fills the build-versus-buy cost slot cleanly and routes to nine distinct siblings rather than restating them: underperforming SDR programs, what an SDR does, SDR burnout, cold email services versus DIY, outbound KPIs, the outsourcing framework, the death of the BDR role and solo-founder outbound each take one inbound link at the point of relevance. Nothing else in the library prices an in-house BDR line by line against a retainer."
+        }
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "No in-body image or diagram at all, and the enumerated condition lists are bold runs inside paragraphs rather than real lists.",
+      "flag_type": "critical",
+      "criteria": [
+        {
+          "category": "Headings",
+          "criterion": "Heading Architecture",
+          "score": 5,
+          "max": 5,
+          "finding": "No skipped levels: nine H2s, then three H3s (Further Reading, References, FAQ), then six H4 questions under the FAQ H3, giving the sequence 2,2,2,2,2,2,2,2,2,3,3,3,4,4,4,4,4,4. The H2 order tracks the actual decision path — what it is, what in-house costs, what outsourcing costs, how to compare them, how long each takes, when it works, when it fails, how to judge it, what to do — so the heading list alone is a usable summary."
+        },
+        {
+          "category": "Visuals",
+          "criterion": "Visual Elements",
+          "score": 2,
+          "max": 5,
+          "finding": "Zero <img>, zero <svg>, zero <figure> in 3,013 words. The only visual asset is the nine-row cost table, and the only image associated with the post is the shared OG banner used by every other draft in this batch. This is the rubric's ceiling for image-less drafts. The miss is conspicuous here because the post explicitly describes two chartable objects it never draws: the ramp curves ('first qualified meeting at about 3.2 months, full quota capacity at up to 5.5' against 'The agency curve is shorter at the front and flatter later') and the cost-per-meeting crossover between in-house and retainer as headcount rises."
+        },
+        {
+          "category": "Scannability",
+          "criterion": "Scannability",
+          "score": 4,
+          "max": 5,
+          "finding": "The most scannable of the four drafts. Fourteen <strong> tags do real work as lead-ins — the four success conditions are numbered in bold, the five failure conditions each open with a bolded label ('**A deeply technical ICP.**', '**An undefined ICP.**'), and the 90-day plan is bolded by date range. The nine-row table anchors the middle. What stops it short of full marks is that none of those enumerations use list markup, so the five failure conditions are compressed into three paragraphs and a skimmer counting them has to parse prose to find the fifth."
+        },
+        {
+          "category": "Flow",
+          "criterion": "Reading Level & Flow",
+          "score": 5,
+          "max": 5,
+          "finding": "Opens with a scene that states the whole thesis in one sentence — 'A VP of Sales compares a $6,000 retainer against a $60,000 salary line, concludes the hire is cheaper, then discovers fourteen months later that the seat cost nearly double the salary and produced at full capacity for fewer than nine of those months' — and keeps that register throughout. Transitions advance the argument rather than announce sections ('Then add employer burden', 'Ramp and attrition decide the outcome', 'Read that as a structure, not a quote'), and judgements land as short declaratives: 'Systems do not ramp, they get configured.'"
+        },
+        {
+          "category": "Length",
+          "criterion": "Content Length & Density",
+          "score": 4,
+          "max": 5,
+          "finding": "3,013 words, declared a 14 minute read, which is above the 2,200 to 2,800 band the spec commissions. The density justifies most of it — nine sections each carrying figures, a nine-row table and two condition lists, with no filler — but the post is carrying one section that does not pay for its length: 'Cost per qualified meeting... at three team sizes' spends four paragraphs to deliver one worked team size, and is the natural place to either tighten or finish the analysis."
+        }
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Byte-identical across both locations with word-for-word FAQ alignment; publisher.logo still points at the blog OG banner.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Article",
+          "criterion": "Article Type Completeness",
+          "score": 5,
+          "max": 5,
+          "finding": "The BlogPosting node carries all twelve expected properties: @id, @type, headline, description, url, datePublished, dateModified, keywords, image, author, publisher and mainEntityOfPage. The headline reproduces the CMS name field exactly ('BDR Outsourcing: When It Works, When It Fails, and What It Actually Costs') and the author Person node carries name, jobTitle and url rather than a bare string."
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQPage Structure",
+          "score": 5,
+          "max": 5,
+          "finding": "Six entries under a distinct '#faq' @id, each a proper @type Question with an acceptedAnswer of @type Answer carrying a text property. Answer texts run 321 to 370 characters, the right size for an answer-box lift, and double the three-question minimum."
+        },
+        {
+          "category": "Alignment",
+          "criterion": "Schema-to-Content Alignment",
+          "score": 5,
+          "max": 5,
+          "finding": "Checked programmatically, not by eye. The schema-markup field and the <script type=\"application/ld+json\"> embed at the foot of post-body are byte-identical once surrounding whitespace is stripped. All six visible H4 questions match the FAQPage mainEntity names word for word and all six visible answer paragraphs match their acceptedAnswer.text word for word. The five keywords ('BDR outsourcing, outsourced SDR, sales development outsourcing, BDR outsourcing cost, outsourced BDR services') are all terms the body actually uses — the middle three appear together in the synonym sentence in section one."
+        },
+        {
+          "category": "Graph",
+          "criterion": "@graph Implementation",
+          "score": 5,
+          "max": 5,
+          "finding": "A proper @graph array with two nodes, each carrying a distinct fragment @id anchored to the canonical URL ('...bdr-outsourcing-cost-when-it-works#article' and '...#faq'), so a parser can address the article and the FAQ independently."
+        },
+        {
+          "category": "Rich results",
+          "criterion": "Rich Result Eligibility",
+          "score": 3,
+          "max": 5,
+          "finding": "The article ImageObject is correct with explicit width 1200 and height 630, and dateModified is present and legitimately equal to datePublished (both 2026-09-08), matching the CMS last-updated field, since this draft has not been revised. The defect is the publisher node: Organization.logo is an ImageObject whose url is the same '..._imresizer-DevCommX-Blog-OG.png' banner used as the article image, with no width or height properties. A 1200x630 article banner standing in for a publisher logo is the kind of mismatch that quietly disqualifies the node from rich-result treatment."
+        }
+      ]
+    }
+  ],
+  "top_fixes": [
+    "Finish the section the H2 promises. 'Cost per qualified meeting, in house versus outsourced, at three team sizes' works only the one-BDR case with real numbers; three reps gets two sentences and six reps gets one unquantified sentence, including the unworked conclusion 'At six reps plus a manager, in house unit cost typically drops below equivalent retainer spend.' Work all three, or retitle the section.",
+    "Mark the DevCommX column in the cost table as an estimate. The 'AI augmented system you own' cells ('About $70,000 for one internal owner') are unsourced vendor assertions sitting in the same rows as BLS and Bridge Group figures, with nothing distinguishing them, in a post that otherwise separates cited from user-supplied numbers explicitly.",
+    "Add an in-body figure. Visual Elements is 2/5 with zero images, zero SVG and zero figures across 3,013 words. The ramp curves (3.2 months to first meeting, 5.5 to full quota, against the flatter agency curve) and the in-house versus retainer cost-per-meeting crossover are both already described numerically and are the obvious chart candidates.",
+    "Convert the condition lists to real list markup. The four success conditions and five failure conditions are currently bold runs inside paragraphs, with the five compressed into three paragraphs. There are zero <ul> and zero <ol> elements in the body, so neither the reader nor a parser can count them without reading the prose.",
+    "Trim the meta-description and add an author bio. The description is 160 characters, exactly at the truncation ceiling, and the clause most likely to be cut is the differentiating one. Separately there is no 'About the author' H3, so Sumit Nautiyal appears only in the CMS field and the schema Person node, and DevCommX itself is named just twice in the body."
+  ]
+}
