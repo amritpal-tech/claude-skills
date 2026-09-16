@@ -1,0 +1,278 @@
+{
+  "slug": "how-many-cold-emails-per-day",
+  "title": "How Many Cold Emails Per Day Can You Actually Send? Volume Limits and the Deliverability Ceiling",
+  "words": 2756,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Best sourcing in the batch — every citation is a primary platform or government source — with one internal numeric inconsistency (30 mailboxes in the intro, 33 in the body).",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Sources",
+          "criterion": "Stat Accuracy & Source Quality",
+          "score": 5,
+          "max": 5,
+          "finding": "Every external citation is a primary platform or government source, with zero vendor blogs anywhere in the post: Google Workspace Admin Help for the 2,000-per-day paid cap and 500-message trial cap over 'a rolling 24 hour window rather than a calendar day', Gmail Help for the 500-recipient consumer limit, Microsoft Learn for Exchange Online's '10,000 recipients per day per mailbox plus a 30 messages per minute rate limit', Google's sender guidelines FAQ for the 0.3 / 0.1 percent spam rates and the June 2024 mitigation-ineligibility change, Yahoo Sender Hub, the Microsoft Community Hub high-volume announcement, and the FTC for CAN-SPAM's ten-business-day opt-out. I re-checked the derived arithmetic: '300 cold sends a day needs about 10 mailboxes across 4 domains' (300/30 = 10, 10/2.5 = 4) and '1,000 needs roughly 33 mailboxes across 13 domains' (1000/30 = 33.3, 33/2.5 = 13.2) both hold, as does the complaint maths ('At 100 sends a day, three complaints across a ten day window puts you at the line' = 3/1,000 = 0.3%)."
+        },
+        {
+          "category": "Depth",
+          "criterion": "Practitioner Depth",
+          "score": 5,
+          "max": 5,
+          "finding": "Real deployment knowledge, not a limits recap. The domain-versus-mailbox distinction is stated as a reputational fact with the consequence attached — 'Ten mailboxes on one domain do not give you ten independent reputations. They give you one reputation that ten mailboxes can damage' — followed by the configuration that falls out of it ('Two to three mailboxes per secondary domain... limits blast radius when one domain gets burned, and lets you retire a domain without taking the program offline'). The hard rule is named and priced in consequences: 'Burn the domain your invoices and support mail go out on and you have turned a marketing experiment into a company wide outage.' The three-instrument diagnostic is the sharpest passage: 'Spam rate rising means targeting or copy. Reply rate falling with spam rate flat means list fatigue. Bounce rate spiking means your data source degraded.'"
+        },
+        {
+          "category": "Attribution",
+          "criterion": "Data Attribution",
+          "score": 5,
+          "max": 5,
+          "finding": "The table is built for attribution: it carries a dedicated 'Primary source' column naming Google Workspace Admin Help, Gmail Help, Microsoft Learn, Google email sender guidelines and Microsoft Community Hub per row, and it separates 'Published limit' from 'Practical cold outreach ceiling' so the cited figure and the operator judgement never occupy the same cell. The post then refuses to invent the one number a reader would most like: 'We do not publish a universal decay curve, because a credible one has to come from your own data, and any vendor quoting one industry number for this is selling an average that describes nobody' — and hands over a method instead ('Cohort your mailboxes by average daily send volume, hold copy and offer constant, and measure reply rate per mailbox over at least eight weeks'). That is the correct behaviour, not a gap."
+        },
+        {
+          "category": "Accuracy",
+          "criterion": "Technical Accuracy",
+          "score": 4,
+          "max": 5,
+          "finding": "The platform detail is correct and unusually precise for 2026: the rolling 24-hour window on Workspace limits, Exchange Online's 30-messages-per-minute rate limit alongside the recipient cap, Microsoft's high-volume definition keyed to 'the same domain in the 5322.From address', and the '550 5.7.515' rejection code, which is the correct code for high-volume sender authentication failure (the sibling warm-up draft in this same batch cites it as '550 5.7.15', so one of the two is wrong and this one is right). The deduction is an internal inconsistency in a numbers-first post: the opening answer says reaching 1,000 sends a day means 'running roughly **30 warmed mailboxes**', while the capacity section and the FAQ both say 'roughly 33'."
+        },
+        {
+          "category": "Delivery",
+          "criterion": "Completeness",
+          "score": 5,
+          "max": 5,
+          "finding": "All seven H2s deliver. 'The Short Answer' answers in its first two words ('Twenty to forty.'). 'Domain Level Limits Versus Mailbox Level Limits' delivers the distinction, the bulk-sender thresholds counted at the domain, and the configuration rule. 'Batch and Blast: What It Costs, and When It Is Still Rational' delivers both halves, including the narrow rational case ('a launch window or a genuinely time bound offer going to people who already know your brand') with its conditions. 'Mailbox Count, Domain Spread and Ramp Schedule' delivers all three, including a week-by-week ramp and the instrumentation to run alongside it."
+        }
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Strong on every axis except one mechanical defect: the Microsoft citation URL carries percent-encoded smart punctuation and is repeated three times.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Keywords",
+          "criterion": "Primary Keyword Targeting",
+          "score": 5,
+          "max": 5,
+          "finding": "'How many cold emails per day' is bolded in the first sentence, and carries the slug, the 49-character meta-title, the meta-description, the post-summary and two H2s ('The Short Answer: How Many Cold Emails Per Day Per Mailbox Is Safe' and 'The Spam Rate Thresholds That Cap How Many Cold Emails Per Day You Can Sustain'), plus two FAQ questions. Four secondary terms are bolded into the body — 'cold email sending limits', 'bulk sender requirements', 'cold email frequency', 'cold email volume deliverability' — and unlike the sibling warm-up draft, every one of them reads as natural prose rather than an insertion ('This is where the bulk sender requirements become concrete')."
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQ / People Also Ask",
+          "score": 5,
+          "max": 5,
+          "finding": "Six questions, every one a genuine high-intent PAA shape: 'How many cold emails can I send per day without getting flagged?', 'Does email volume affect deliverability?', 'What is the spam complaint rate threshold for Google and Yahoo?', 'Do cold emails count toward the bulk sender requirements?'. The answers are strong because they correct the premise before answering — 'Volume by itself is not the signal filters punish. What volume does is amplify whatever your list quality and message relevance already are' — and each lands in the 55 to 65 word extractable band."
+        },
+        {
+          "category": "Tables",
+          "criterion": "Comparison / Featured Snippet Tables",
+          "score": 5,
+          "max": 5,
+          "finding": "The best-designed table of the four. A real <thead> with four <th> cells (Sending surface / Published limit / Primary source / Practical cold outreach ceiling) over seven <td> rows, 28 data cells. The 'Primary source' column is what makes it liftable: any single row carries its own provenance, so an engine or a snippet can quote 'Microsoft 365, Exchange Online — 10,000 recipients per day, 30 messages per minute — Microsoft Learn' without the surrounding article. The post also states the table's thesis immediately after it: 'Every published limit in that table is between 12 and 500 times higher than the practical one.'"
+        },
+        {
+          "category": "Links",
+          "criterion": "Internal & External Link Structure",
+          "score": 4,
+          "max": 5,
+          "finding": "Ten internal links across nine destinations with descriptive anchors placed at the point of need, plus /ai-sdr and the correct /contact-us. Five external hosts, all cited inline at the claim and restated in a References block that says what each one sourced. The defect is mechanical and I confirmed it programmatically: the Microsoft Community Hub URL is 'strengthening-email-ecosystem-outlook%E2%80%99s-new-requirements-for-high%E2%80%90volume-senders', which percent-encodes a right single quotation mark (U+2019) and a non-breaking hyphen (U+2010) into the slug. It appears three times — body, Further Reading and References. The sibling warm-up draft links the same article with the plain-ASCII slug 'outlooks-new-requirements-for-highvolume-senders', so this copy has been mangled by smart-quote substitution and will almost certainly 404."
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical SEO",
+          "score": 5,
+          "max": 5,
+          "finding": "Meta-title is 49 characters and meta-description 151, both comfortably inside truncation limits and the shortest, cleanest pair in the batch. Schema is present in both required locations and the slug matches the schema url and mainEntityOfPage @id exactly ('https://www.devcommx.com/blogs/how-many-cold-emails-per-day'). The body heading tree starts cleanly at H2, correct for this collection since Webflow renders the CMS name field as the page H1."
+        }
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness",
+      "weight": 0.2,
+      "flag": "Textbook answer-first construction and all-primary sourcing, undermined by a direct collision with the existing mailbox-count post.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Definitions",
+          "criterion": "Direct Definitions",
+          "score": 5,
+          "max": 5,
+          "finding": "Answer-first throughout. The opening states the figure, the contrast and the consequence in three sentences: 'The honest answer to how many cold emails per day you can send is 20 to 40 per mailbox, not the 2,000 that Google Workspace technically permits. Provider caps are the ceiling your vendor enforces. Deliverability is the ceiling that actually binds.' The first H2 then opens with the bare answer as a two-word sentence, 'Twenty to forty.' The two structural definitions are equally liftable: 'A mailbox limit is per user. A domain limit is aggregate', and 'Batch and blast means loading a large list, sending to all of it in a compressed window, and treating the outcome as a numbers game.'"
+        },
+        {
+          "category": "Structure",
+          "criterion": "Structured Data for AI Parsing",
+          "score": 4,
+          "max": 5,
+          "finding": "The seven-row four-column table with its own source column and the six-question FAQ carry most of the parseable weight, and the capacity formula is stated as an extractable rule ('Divide daily sends by 30 for mailbox count, then by 2.5 for domains') with two worked instantiations. The deduction is that the two most procedural passages stay in prose: the ramp schedule ('week one at 5 cold sends per day, week two at 10 to 15, week three at 20, and steady state at 25 to 40 from week four') and the three instruments are both single paragraphs. There are zero <ul> and zero <ol> elements in the body — the only two <ul> are Further Reading and References — and the seven <strong> tags are all keyword bolding rather than structural lead-ins."
+        },
+        {
+          "category": "Authority",
+          "criterion": "Statistical Authority",
+          "score": 5,
+          "max": 5,
+          "finding": "Every number in the post traces to a first-party platform document or a US government agency, and nothing traces to a marketing blog: four distinct Google help pages (Gmail sending limits, Gmail Help recipient limits, sender guidelines, sender guidelines FAQ, Postmaster Tools), Microsoft Learn, the Microsoft Defender for Office 365 blog, Yahoo Sender Hub and the Federal Trade Commission. For an LLM this is the ideal shape: every claim is re-citable at its origin rather than through an aggregator, which is the failure mode the multichannel sibling in this batch has."
+        },
+        {
+          "category": "Entity",
+          "criterion": "Entity Association",
+          "score": 3,
+          "max": 5,
+          "finding": "Three DevCommX mentions across 2,756 words. The intro binding is specific and earns its place ('At DevCommX we build outbound infrastructure that clients own outright, so we size capacity in mailboxes rather than sends before a sequence goes live'), and the capacity section ties the model to the argument ('Thirty mailboxes across thirteen domains, each with its own authentication, warmup and monitoring, is a system, and it should be owned like one. That is the position behind our AI SDR work'). But there is no author bio anywhere in the body — the only H3s are Further Reading, References and FAQ — so Sumit Nautiyal exists in the CMS author field and the schema Person node and nowhere an engine reading the page can see."
+        },
+        {
+          "category": "Distinctiveness",
+          "criterion": "GEO Distinctiveness",
+          "score": 3,
+          "max": 5,
+          "finding": "The post collides with two siblings on queries it does not need to contest. It links to the existing 'how many inboxes you need for cold email at scale' post in the intro and then answers that post's head question itself, twice: in the capacity section ('A team needing 300 cold sends a day needs about 10 mailboxes across 4 domains') and in a dedicated FAQ titled 'How many mailboxes do I need for outbound?'. It also duplicates the warm-up draft in this same batch on the ramp schedule and on the 0.1 / 0.3 percent Postmaster thresholds, without either post acknowledging the other. What it does own cleanly is the provider-cap-versus-practical-ceiling gap, which nothing else in the library covers."
+        }
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Excellent CTA, but the proof point is pluralised beyond the permitted single-client claim and a 33-mailbox plan is built with no cost attached.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Narrative",
+          "criterion": "Differentiation Narrative",
+          "score": 4,
+          "max": 5,
+          "finding": "The ownership argument is earned rather than asserted, because 2,500 words of infrastructure detail precede it: 'This is where cold email volume deliverability stops being a deliverability topic and becomes an infrastructure topic. Thirty mailboxes across thirteen domains, each with its own authentication, warmup and monitoring, is a system, and it should be owned like one.' The intro frames the same idea operationally ('we size capacity in mailboxes rather than sends before a sequence goes live'). Deducted one because the signal-based half of the DevCommX model never appears — nothing here connects volume planning to signal-triggered sending — so the positioning reads as owned infrastructure only."
+        },
+        {
+          "category": "Proof",
+          "criterion": "Proof Metrics & Evidence",
+          "score": 3,
+          "max": 5,
+          "finding": "The permitted claim appears once, in the closing sentence, but pluralised past what it licenses: 'The systems DevCommX builds have produced 40+ qualified demos in about 6 weeks for clients who own the infrastructure end to end.' 'The systems' and 'clients' both turn a single result into an implied pattern; the multichannel and BDR drafts in this same batch scope it correctly as 'One DevCommX client' and 'On one recent build'. It also carries no connection to the article's subject — no mailbox count, domain spread or send volume behind the number — in a post whose entire thesis is that capacity claims are meaningless without those figures."
+        },
+        {
+          "category": "Pricing",
+          "criterion": "Pricing Transparency",
+          "score": 2,
+          "max": 5,
+          "finding": "Effectively absent, and conspicuously so. The only cost framing in the post is a time cost — 'recovery means parking the domain and rebuilding warmup, which costs four to six weeks of capacity you already paid for' — and one passing note on monitoring overhead ('plus the overhead of monitoring 13 reputations'). The post walks a reader through provisioning 33 mailboxes across 13 domains and never mentions what that costs: no per-seat licence figure, no domain registration cost, no warmup tooling price, no comparison of that run rate against an agency retainer. A capacity-planning article that computes headcount in mailboxes and omits the invoice is the clearest pricing gap in the batch. Scored honestly per the rubric's instruction not to inflate."
+        },
+        {
+          "category": "CTA",
+          "criterion": "CTA Quality",
+          "score": 4,
+          "max": 5,
+          "finding": "The strongest CTA of the four in content, because it names the deliverable and includes a disqualifier: 'Give us your meeting target and we will work backwards to the mailbox count, domain spread and ramp schedule that supports it without pushing complaint rate toward the 0.3 percent line, and tell you honestly if the number you want is not reachable with the list you have', anchored on 'talk to the DevCommX team' pointing at /contact-us. Deducted one because it is the only CTA in the post and it sits inside a closing section that is a single paragraph, with no mid-body offer at the end of the capacity-planning section where the reader has just been handed a 33-mailbox build to execute."
+        },
+        {
+          "category": "Slot",
+          "criterion": "Content Differentiation",
+          "score": 3,
+          "max": 5,
+          "finding": "The provider-cap-versus-deliverability-ceiling frame is a genuinely distinct slot, and the table comparing published limits against practical ceilings exists nowhere else in the library. But the post also re-answers the mailbox-count question that 'how many inboxes you need for cold email at scale' already owns — including a dedicated FAQ on it — and re-covers the ramp schedule and Postmaster thresholds that the warm-up draft in this same batch covers. Three posts in one library answering 'how many mailboxes do I need' is a slot problem, not a linking problem."
+        }
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "No in-body image or diagram at all, and the closing section is a single paragraph.",
+      "flag_type": "critical",
+      "criteria": [
+        {
+          "category": "Headings",
+          "criterion": "Heading Architecture",
+          "score": 5,
+          "max": 5,
+          "finding": "No skipped levels: seven H2s, then three H3s (Further Reading, References, FAQ), then six H4 questions under the FAQ H3, giving the sequence 2,2,2,2,2,2,2,3,3,3,4,4,4,4,4,4. The H2 order is a clean argument — the answer, then why the published caps are the wrong ceiling, then the real ceiling, then the second ceiling nobody expects, then the failure mode, then how to build capacity — so a reader who reads only the headings gets the thesis."
+        },
+        {
+          "category": "Visuals",
+          "criterion": "Visual Elements",
+          "score": 2,
+          "max": 5,
+          "finding": "Zero <img>, zero <svg>, zero <figure> in the body. The only visual asset is the seven-row limits table, and the only image attached to the post is the shared OG banner used by every draft in this batch. This is the rubric's ceiling for image-less drafts. The gap is especially visible here because the post's central claim is a magnitude comparison it states numerically and never draws — 'Every published limit in that table is between 12 and 500 times higher than the practical one' — and because the four-week ramp schedule is a step chart described in a sentence."
+        },
+        {
+          "category": "Scannability",
+          "criterion": "Scannability",
+          "score": 3,
+          "max": 5,
+          "finding": "The table and the 'Twenty to forty.' opener do a lot of work, and most paragraphs lead with a usable thesis ('Capacity planning runs backwards from meetings, not forwards from limits', 'There is a second ceiling that has nothing to do with filters, and most teams hit it first'). Below that the page is undifferentiated: seven <strong> tags across seven sections and all of them keyword bolding, with no body bullets anywhere. The ramp schedule and the three-instrument diagnostic — the two passages a reader will come back to implement — are both buried mid-paragraph."
+        },
+        {
+          "category": "Flow",
+          "criterion": "Reading Level & Flow",
+          "score": 5,
+          "max": 5,
+          "finding": "Clear and concrete, with the distinction the whole article rests on made in one sentence in the intro: 'That number is a rate limiter: it tells you when the provider stops accepting your mail, not when Gmail starts filing it under Spam.' Sections open by reframing rather than announcing, and the reply-decay explanation is a genuinely good piece of causal writing: 'To send more you widen the list. Wider means looser fit, so the personalisation that made the first tranche work stops applying, copy gets generic to cover more cases, it converts worse, and you send more to compensate.'"
+        },
+        {
+          "category": "Length",
+          "criterion": "Content Length & Density",
+          "score": 4,
+          "max": 5,
+          "finding": "2,756 words across seven sections, declared a 12 minute read, squarely inside the commissioned band and the tightest of the four drafts. Density is high and there is no padding. The one imbalance is the close: 'Plan Your Sending Capacity Before You Scale Volume' is a single three-sentence paragraph, thinner than any other section and than the closing sections of the three sibling drafts, so the post ends abruptly after its densest section rather than consolidating what the reader should do."
+        }
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Byte-identical across both locations with word-for-word FAQ alignment; publisher.logo still points at the blog OG banner.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Article",
+          "criterion": "Article Type Completeness",
+          "score": 5,
+          "max": 5,
+          "finding": "The BlogPosting node carries all twelve expected properties: @id, @type, headline, description, url, datePublished, dateModified, keywords, image, author, publisher and mainEntityOfPage. The headline reproduces the 96-character CMS name field exactly, and the five keywords ('how many cold emails per day, cold email sending limits, cold email frequency, cold email volume deliverability, bulk sender requirements') are precisely the primary plus the four bolded secondaries in the body."
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQPage Structure",
+          "score": 5,
+          "max": 5,
+          "finding": "Six entries under a distinct '#faq' @id, each a proper @type Question with an acceptedAnswer of @type Answer carrying a text property. Answer texts run 327 to 381 characters, the right length for an answer-box lift, and double the three-question minimum."
+        },
+        {
+          "category": "Alignment",
+          "criterion": "Schema-to-Content Alignment",
+          "score": 5,
+          "max": 5,
+          "finding": "Checked mechanically rather than by eye. The schema-markup field and the <script type=\"application/ld+json\"> embed at the foot of post-body are byte-identical once surrounding whitespace is stripped. All six visible H4 questions match the FAQPage mainEntity names word for word, and all six visible answer paragraphs match their acceptedAnswer.text word for word. The schema description ('per mailbox and per domain limits, the 0.3 percent spam rate ceiling, and how to size mailbox capacity') is an accurate summary of the delivered article rather than a stale draft brief."
+        },
+        {
+          "category": "Graph",
+          "criterion": "@graph Implementation",
+          "score": 5,
+          "max": 5,
+          "finding": "A proper @graph array with two nodes, each carrying a distinct fragment @id anchored to the canonical URL ('...how-many-cold-emails-per-day#article' and '...#faq'), so a parser can address the article and the FAQ separately rather than inferring the relationship."
+        },
+        {
+          "category": "Rich results",
+          "criterion": "Rich Result Eligibility",
+          "score": 3,
+          "max": 5,
+          "finding": "The article ImageObject is correct with explicit width 1200 and height 630, and dateModified is present and legitimately equal to datePublished (both 2026-09-08), matching the CMS last-updated field for a draft that has not been revised. The defect is the publisher node: Organization.logo is an ImageObject whose url is the same '..._imresizer-DevCommX-Blog-OG.png' banner used as the article image, with no width or height properties. A 1200x630 article banner standing in for a publisher logo is the mismatch that quietly disqualifies the node from rich-result treatment."
+        }
+      ]
+    }
+  ],
+  "top_fixes": [
+    "Repair the Microsoft citation URL. It is 'strengthening-email-ecosystem-outlook%E2%80%99s-new-requirements-for-high%E2%80%90volume-senders' — smart-quote (U+2019) and non-breaking hyphen (U+2010) percent-encoded into the slug — and it appears three times (body, Further Reading, References). The sibling warm-up draft links the same article with the correct plain-ASCII slug 'outlooks-new-requirements-for-highvolume-senders'.",
+    "Reconcile 30 versus 33 mailboxes. The opening answer says 1,000 sends a day means 'roughly 30 warmed mailboxes', while the capacity section and the 'How many mailboxes do I need for outbound?' FAQ both say roughly 33. In a post whose whole value is the arithmetic, the headline figure should match the worked one.",
+    "Correct the proof point back to a single client. 'The systems DevCommX builds have produced 40+ qualified demos in about 6 weeks for clients who own the infrastructure end to end' pluralises a single permitted result; the multichannel and BDR drafts correctly say 'One DevCommX client' and 'On one recent build'.",
+    "Resolve the overlap with the mailbox-count post. This draft links to 'how many inboxes you need for cold email at scale' and then answers its head question twice, including in a dedicated FAQ, and also duplicates the warm-up draft's ramp schedule and 0.1/0.3 percent thresholds. Cut the mailbox FAQ and defer, or decide which post owns that query.",
+    "Add an in-body figure, cost the 33-mailbox build, and thicken the close. Visual Elements sits at 2/5 with zero images and zero SVG, and the '12 to 500 times higher' magnitude gap and the four-week ramp are both charts described in sentences. Separately the post provisions 33 mailboxes across 13 domains without naming a licence, domain or warmup-tool cost anywhere, and the closing section is a single three-sentence paragraph."
+  ]
+}
