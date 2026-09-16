@@ -1,0 +1,278 @@
+{
+  "slug": "managing-multiple-lead-generation-vendors",
+  "title": "Managing Multiple Lead Generation Vendors: Territory Splits, Attribution Rules and When It Backfires",
+  "words": 2801,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "The deepest operational content in the batch; the two weakest citations are a paywalled Gartner document ID and a second-hand HBR figure.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Sources",
+          "criterion": "Stat Accuracy & Source Quality",
+          "score": 4,
+          "max": 5,
+          "finding": "Every quantitative claim is inline-linked at the claim with its sample stated where one exists: The Bridge Group's 2025 report 'drawn from more than 350 B2B companies' for the 'roughly three to five months before a rep produces at plan', and Touchstone BPO for 'roughly $2,000 to $10,000 a month on three month minimums that commonly extend to twelve'. Two weak links. The 2 to 7 percent territory design gain is sourced to 'Xactly's territory planning guide, citing Harvard Business Review research', so the post cites a vendor blog citing HBR and never links HBR itself. And the Gartner citation is 'gartner.com/en/documents/3956180', a bare paywalled document ID with no descriptive slug, which no reader or engine can open to verify."
+        },
+        {
+          "category": "Depth",
+          "criterion": "Practitioner Depth",
+          "score": 5,
+          "max": 5,
+          "finding": "This is an operator's document. The registration rule is specified in five enforceable clauses (account level not contact level, in your CRM not a vendor spreadsheet, a sixty or ninety day window, automatic lapse back to the pool, earlier CRM timestamp as tie-break), and then the enforcement is specified per platform: 'Set the lead rule to block rather than alert on an exact domain match inside a protected window, and add a cooling off period so vendor B cannot reopen an account vendor A worked six weeks ago.' The merge-policy point is the kind of detail that only comes from having lost data: 'for first touch the correct survivor is almost always the older record.' The six reported fields name the two that vendor decks omit, held-to-booked and second-call rate."
+        },
+        {
+          "category": "Attribution",
+          "criterion": "Data Attribution",
+          "score": 5,
+          "max": 5,
+          "finding": "The brief's must-include was 'the minimum pipeline volume that justifies a second vendor', a number the author did not have, and the post says so and hands over a method instead: 'Calculate your own volume floor rather than borrowing a benchmark. No published constant exists, so run three numbers', then names the three. The FAQ repeats the refusal rather than quietly inventing a figure: 'There is no published constant, so calculate it.' The comparison table is explicitly qualitative and reads as judgement, not as measurement."
+        },
+        {
+          "category": "Accuracy",
+          "criterion": "Technical Accuracy",
+          "score": 5,
+          "max": 5,
+          "finding": "The CRM detail is correct for 2026 and correctly differentiated between platforms: HubSpot 'deduplicates contacts automatically on email address and companies on domain', while 'Salesforce splits the job into matching rules, which decide what counts as a duplicate, and duplicate rules, which decide what happens next, with standard rules shipped for leads'. Deal registration is described accurately as the channel mechanism it is, including the exclusivity effect once approved. The sourced-versus-influenced distinction is stated the way a RevOps team would implement it, as separate fields with separate consequences."
+        },
+        {
+          "category": "Delivery",
+          "criterion": "Completeness",
+          "score": 5,
+          "max": 5,
+          "finding": "All seven H2s deliver, and every brief must-include lands: three concrete split models with trade-offs, plus a fourth 'No split, same list' anti-pattern row the brief did not ask for; a duplicate lead resolution rule specified to clause level; and a method for the volume floor. The four backfire modes named in the brief (ICP bleed, brand inconsistency, rep poaching, reporting theatre) all appear as bolded subsections with a detection signal for each."
+        }
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Best comparison table in the batch; the schema description is a different text from the meta description.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Keywords",
+          "criterion": "Primary Keyword Targeting",
+          "score": 5,
+          "max": 5,
+          "finding": "'managing multiple lead generation vendors' is a five-word phrase and it still appears seven times without straining: the H1/name, the 55-character meta-title, the first two words of the body, the slug, two H2s ('Three ways to split territory when managing multiple lead generation vendors' and 'Four ways managing multiple lead generation vendors backfires') and one FAQ question. All three secondaries appear, each defined in place rather than dropped in: 'A lead generation vendor territory split is the contractual line that says which accounts each vendor may touch.'"
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQ / People Also Ask",
+          "score": 5,
+          "max": 5,
+          "finding": "The brief's three targets appear verbatim ('Can you use two lead generation agencies at once?', 'How do you split territories between sales vendors?', 'Who owns a duplicate lead?') and all six are real high-intent queries at the decision point this post serves. 'Who owns a duplicate lead?' is answered in the first clause with a rule rather than a preamble: 'Whichever vendor registered the account first in your CRM, for a fixed protection window you set in advance, usually sixty to ninety days.'"
+        },
+        {
+          "category": "Tables",
+          "criterion": "Comparison / Featured Snippet Tables",
+          "score": 5,
+          "max": 5,
+          "finding": "Four rows by four columns with columns 'Split model', 'Where the line is drawn', 'Works best when' and 'Where it breaks'. The design decision that makes it good is the fourth row, 'No split, same list', whose 'Works best when' cell reads 'Never' and whose 'Where it breaks' cell reads 'Immediately, in reply rates and spam complaints'. That gives an engine a liftable anti-pattern alongside the three options, and every cell is a specific consequence rather than a label."
+        },
+        {
+          "category": "Links",
+          "criterion": "Internal & External Link Structure",
+          "score": 5,
+          "max": 5,
+          "finding": "Nine internal links, and I verified each against the brief's verified-published menu: all nine are on it, including both service pages (/revenue-operations and the /contact-us CTA). Seventeen external links across nine distinct hosts, the widest spread in the batch, and the sourcing is appropriately mixed between research (Bridge Group, Gartner), pricing (Touchstone BPO, SalesHive) and vendor documentation (HubSpot Knowledge Base, Salesforce Trailhead). Every one is inline with a descriptive anchor."
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical SEO",
+          "score": 3,
+          "max": 5,
+          "finding": "Meta-title is 55 characters and meta-description 155, both in range, schema is present in both required locations and byte-identical between them, and the slug matches the schema url and mainEntityOfPage @id. The defect is that the schema description runs 227 characters and is a completely different text from the CMS meta-description, so the structured data and the meta tag give a crawler two different summaries. It is also the longest of the four, well past the length a description field should carry."
+        }
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness",
+      "weight": 0.2,
+      "flag": "Highly extractable rules throughout; the conflict-of-interest disclosure never reaches the FAQ answers, which are the units an engine lifts standalone.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Definitions",
+          "criterion": "Direct Definitions",
+          "score": 5,
+          "max": 5,
+          "finding": "Core concepts are defined in single liftable sentences at first use. 'A lead generation vendor territory split is the contractual line that says which accounts each vendor may touch, expressed as a rule your CRM can enforce rather than a paragraph in a kickoff deck.' 'Sourced has one owner and drives payment. Influenced can be many and drives nothing except your own understanding.' And the opening rule: 'Managing multiple lead generation vendors works only when each vendor owns a hard boundary: a region, a segment, or a channel.'"
+        },
+        {
+          "category": "Structure",
+          "criterion": "Structured Data for AI Parsing",
+          "score": 5,
+          "max": 5,
+          "finding": "Four bolded justifications for a second vendor (capacity ceiling, coverage gap, controlled benchmark, concentration risk), a four-row table, a five-clause registration rule with each clause bolded inside the sentence, an explicit six-field reporting list, four named backfire modes as bolded subsections, and a six-question FAQ. Twenty-four strong tags across the body. Nearly every section resolves to a rule an engine can quote without the surrounding prose."
+        },
+        {
+          "category": "Authority",
+          "criterion": "Statistical Authority",
+          "score": 4,
+          "max": 5,
+          "finding": "Seven named, re-citable organisations carry the claims: The Bridge Group, Touchstone BPO, TechTarget, HubSpot, Salesforce Trailhead, Xactly and Gartner, and the References block states what each is the source for. The deduction is the two citations an engine cannot follow: the Gartner territory-planning research is a paywalled document ID, and the 2 to 7 percent figure is Xactly's rendering of HBR research rather than HBR directly, so the most quotable number in the post is second-hand."
+        },
+        {
+          "category": "Entity",
+          "criterion": "Entity Association",
+          "score": 3,
+          "max": 5,
+          "finding": "DevCommX appears six times and the disclosure binds the entity to the topic in an unusually credible way: 'DevCommX is itself a vendor in this category, so nothing here is a neutral verdict.' Two gaps. The author is absent from the page entirely, with 'Sumit Nautiyal' appearing zero times in visible prose and only inside the JSON-LD, and no bio block. More seriously for citation readiness, none of the six FAQ answers carries any disclosure, and those answers are exactly what the FAQPage schema exposes for standalone extraction, so 'Can you use two lead generation agencies at once?' can be lifted and answered by an engine with no indication that the answering party sells the service."
+        },
+        {
+          "category": "Distinctiveness",
+          "criterion": "GEO Distinctiveness",
+          "score": 5,
+          "max": 5,
+          "finding": "Cleanly fenced as the post-decision operating manual and it says so in the intro: 'This is written for the leader who has already decided, or who has signed and is discovering that two vendors is not twice one vendor.' Selection queries are routed to the best-B2B-lead-generation-company post, diagnosis queries to why-lead-generation-campaigns-fail ('come back once you are sure the answer is capacity'), and the in-house question to the RevOps hire post. Nothing in the library competes for territory splits or duplicate lead attribution."
+        }
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "The conflict-of-interest disclosure is honest and well placed in the intro but is unstyled and absent from the FAQ; the proof point is reframed as a benchmark rather than an outcome.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Narrative",
+          "criterion": "Differentiation Narrative",
+          "score": 4,
+          "max": 5,
+          "finding": "The disclosure is adequate and prominent enough for the body: it opens the second paragraph as its own sentence, before any argument is made, and states the limitation rather than hedging it: 'A disclosure first: DevCommX is itself a vendor in this category, so nothing here is a neutral verdict on whether you should add a second one.' It is then earned at the close, where the ownership model is the stated reason the advice can be trusted: 'clients own the system rather than renting a managed campaign, which is why we are comfortable saying when the answer is one vendor rather than two.' Two reservations. The disclosure is plain unstyled prose in a post where 24 other phrases are bolded, so a reader who skims the H2s and the table never sees it. And the brief's stated rationale for this topic was that a post-decision angle 'removes the conflict of interest', which it does not; it reduces it, and the post is more honest about that than the brief was."
+        },
+        {
+          "category": "Proof",
+          "criterion": "Proof Metrics & Evidence",
+          "score": 3,
+          "max": 5,
+          "finding": "The permitted claim is present but is the vaguest of the four renderings in this batch: 'Our benchmark for a properly instrumented system is 40+ qualified demos in ~6 weeks.' Calling it a benchmark rather than a result the company produced makes it a target, not evidence, and it sits badly in a post whose entire argument is that vendors must be judged on measured denominators from your own CRM rather than on claims. No client, segment, baseline or vendor count is attached."
+        },
+        {
+          "category": "Pricing",
+          "criterion": "Pricing Transparency",
+          "score": 4,
+          "max": 5,
+          "finding": "Genuine cost framing, cited, and used to drive a decision rather than decorate one: retainers 'at roughly $2,000 to $10,000 a month on three month minimums that commonly extend to twelve', summarised as 'A second vendor is a five figure commitment that will not report meaningful results for a full quarter', plus the hidden cost argument in reporting theatre ('If you spend more hours normalising spreadsheets than on message quality, the second vendor costs more than its retainer') and the 2 to 7 percent upside on territory design. No DevCommX-side price or engagement band appears anywhere, which is the gap between this and a 5."
+        },
+        {
+          "category": "CTA",
+          "criterion": "CTA Quality",
+          "score": 4,
+          "max": 5,
+          "finding": "Specific, qualifying and unusually concrete about what to bring: 'For the scorecard template and a review of how your split is actually running, book a GTM strategy call and bring both statements of work.' It links /contact-us correctly and offers a second route via /revenue-operations. The deduction is that the brief commissioned the vendor scorecard as the asset; the post describes its six contents precisely enough that a reader could rebuild it, but the template itself is only obtainable through the call."
+        },
+        {
+          "category": "Slot",
+          "criterion": "Content Differentiation",
+          "score": 5,
+          "max": 5,
+          "finding": "Occupies a slot nothing else in the library holds, the operational manual for a buyer who has already signed, and it defines that slot against its neighbours in the first two paragraphs. It hands selection traffic to the selection post and diagnosis traffic to the campaign-failure post rather than competing with either."
+        }
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "The most scannable post in the batch, still capped by having one table and no figures.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Headings",
+          "criterion": "Heading Architecture",
+          "score": 5,
+          "max": 5,
+          "finding": "Seven H2s following the brief's outline order, from justification and volume floor, to the three splits, to the duplicate rule, to attribution, to SLA and reporting, to the four backfires, to the scorecard, then H3s for Further Reading, References and FAQ and H4s for the six questions. No skipped levels, and the sequence mirrors the order a buyer actually faces these decisions in."
+        },
+        {
+          "category": "Visuals",
+          "criterion": "Visual Elements",
+          "score": 2,
+          "max": 5,
+          "finding": "Zero img tags, zero svg tags, zero figure elements; the four-row split-model table is the only in-body visual asset. The brief asked only for a comparison table, which was delivered, but the five-clause registration rule and the duplicate-resolution flow are both decision logic that a simple flow figure would carry better than a paragraph, and the rubric's ceiling for a draft with no in-body figure applies regardless of what the brief asked for."
+        },
+        {
+          "category": "Scannability",
+          "criterion": "Scannability",
+          "score": 5,
+          "max": 5,
+          "finding": "24 bolded lead-ins, the highest useful density in the batch, and they are placed where a skimmer needs them: the four justifications ('capacity ceiling', 'coverage gap', 'controlled benchmark', 'concentration risk'), the three split models as paragraph openers, each of the five registration clauses bolded inside its own sentence ('account level', 'in your CRM', 'fixed window', 'Lapsed accounts return to the pool'), and the four backfire modes as bolded headings. A reader can extract the entire operating model from the bold text alone."
+        },
+        {
+          "category": "Flow",
+          "criterion": "Reading Level & Flow",
+          "score": 5,
+          "max": 5,
+          "finding": "Consistently concrete, with transitions that advance the argument rather than announce it: 'Everything else used as a reason is impatience, because the ramp does not fit inside a quarter', 'A vendor who will not accept that in writing is telling you how the invoice conversation goes in month four', 'If you cannot make them comparable, you are buying coverage, not running a test.' Terms are defined at first use and the register stays level throughout."
+        },
+        {
+          "category": "Length",
+          "criterion": "Content Length & Density",
+          "score": 5,
+          "max": 5,
+          "finding": "2,801 words, at the top of the brief's 2,300 to 2,800 band, with no padding. Every section carries a rule or a decision, and the closing scorecard section compresses the whole post into six named artefacts rather than restating it."
+        }
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Byte-identical across both locations with an exact FAQ match, but the description diverges from the meta description and both dates predate the draft's creation.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Article",
+          "criterion": "Article Type Completeness",
+          "score": 5,
+          "max": 5,
+          "finding": "The BlogPosting node carries @id, @type, headline, description, url, datePublished, dateModified, keywords, image, author, publisher and mainEntityOfPage. The headline matches the name field exactly, and keywords cover the primary and all three secondaries plus 'vendor scorecard', which tracks the post's own closing artefact."
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQPage Structure",
+          "score": 5,
+          "max": 5,
+          "finding": "Six entries under a distinct #faq @id, each a proper @type Question with an acceptedAnswer of @type Answer carrying a text property, double the three-question minimum. Answer text runs 310 to 342 characters, the tightest and most consistent spread in the batch, which is the right size for standalone extraction."
+        },
+        {
+          "category": "Alignment",
+          "criterion": "Schema-to-Content Alignment",
+          "score": 3,
+          "max": 5,
+          "finding": "Verified mechanically: the schema-markup field and the post-body script embed are byte-identical, and all six visible H4 questions and their answer paragraphs match the FAQPage name and acceptedAnswer.text word for word after whitespace normalisation. The defect is the description property, which at 227 characters is both over length and an entirely different text from the 155-character CMS meta-description, so the structured data and the meta tag describe the article differently."
+        },
+        {
+          "category": "Graph",
+          "criterion": "@graph Implementation",
+          "score": 5,
+          "max": 5,
+          "finding": "A proper @graph array with two nodes, each carrying its own fragment @id anchored to the canonical URL, '...managing-multiple-lead-generation-vendors#article' and '...#faq', so a parser can address the article and the FAQ independently."
+        },
+        {
+          "category": "Rich results",
+          "criterion": "Rich Result Eligibility",
+          "score": 2,
+          "max": 5,
+          "finding": "ImageObject with explicit width 1200 and height 630 and a publisher Organization with a logo are both correct. The dates are not: datePublished and dateModified both read '2026-09-08', while the repository shows this draft first committed on 2026-09-10 (30b6602) and trimmed again on 2026-09-11 (5b11290, 'Commit topic 5's final trim'). The schema therefore claims the article was published two days before it was written and never modified after two recorded edits, and the identical pair also breaks the program's own dateModified rule."
+        }
+      ]
+    }
+  ],
+  "top_fixes": [
+    "Carry the conflict-of-interest disclosure into the FAQ block. The intro disclosure is honest and well positioned, but the six FAQ answers are the units the FAQPage schema exposes for standalone lifting, and 'Can you use two lead generation agencies at once?' currently answers a vendor-selection question with no indication that the answering party is a vendor. One clause in that first answer fixes it, applied identically in the H4 body text and the schema so the two stay word for word.",
+    "Make the intro disclosure visually as prominent as it is honest. It is plain prose in a post with 24 bolded phrases, so a reader who skims headings and the table never encounters it; bolding the sentence or setting it as its own short paragraph costs nothing.",
+    "Correct both dates. datePublished and dateModified are both 2026-09-08 for a draft first committed 2026-09-10 and trimmed 2026-09-11, so the schema dates predate the article. Set datePublished to the real publish date, dateModified to 2026-09-11, and mirror into the CMS date and last-updated fields.",
+    "Replace or supplement the two weak citations. Gartner is cited as 'gartner.com/en/documents/3956180', a paywalled document ID nobody can open, and the 2 to 7 percent territory gain is taken from Xactly citing Harvard Business Review rather than from HBR; link the primary source or drop the figure.",
+    "Reframe the proof point as an outcome rather than a benchmark. 'Our benchmark for a properly instrumented system is 40+ qualified demos in ~6 weeks' reads as a target in a post arguing that vendors must be judged on measured results; the permitted claim is stronger stated as what a build produced."
+  ]
+}
