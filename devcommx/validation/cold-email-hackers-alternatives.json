@@ -1,0 +1,278 @@
+{
+  "slug": "cold-email-hackers-alternatives",
+  "title": "Cold Email Hackers Alternatives: 6 B2B Outbound Agencies Compared (2026)",
+  "words": 2198,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "I re-ran the adversarial check and found no quality judgement about any named firm; the eleven empty cells are correct, but DevCommX is the only row with a filled ICP cell and it is the only cell in the table with no source behind it.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Sources",
+          "criterion": "Stat Accuracy & Source Quality",
+          "score": 4,
+          "max": 5,
+          "finding": "Given that all five vendor domains were egress-blocked, this is the right outcome rather than a research failure, and the post says so on the page rather than hiding it: 'Most vendor domains, including saleshive.com, cleverly.co, cience.com and clutch.co, were unreachable from the research environment used here, and every direct fetch returned a blocked response.' The one firm with real figures is Cleverly, and VERIFICATION.md confirms the published tiers at $397, $697 and $997 with cold email from $1,995. It also records the caveat this post does not carry: a second source shows the top tier as a $891 to $997 range rather than a flat $997. The post's own mitigation is sound ('the pricing column is preparation for a procurement call, not a quote') but the single hardest number on the page is stated as a point when a source shows a range."
+        },
+        {
+          "category": "Depth",
+          "criterion": "Practitioner Depth",
+          "score": 5,
+          "max": 5,
+          "finding": "The five selection questions are the work of someone who has been on both sides of these contracts. 'What is the exit state? Ask which assets you keep the day after cancellation: domains, warmed inboxes, sequences, the enriched list, the CRM records.' 'What is the qualification bar, in writing? A meeting is not a unit until the definition is written down: title seniority, company size, stated problem, showed up. Without it you will argue about invoices in month three.' 'Which ICP would you decline?' is the sharpest question in the batch. The week one to four answer names the real constraint, 'Domain purchase, DNS authentication, inbox provisioning and warmup take calendar time before volume is safe.'"
+        },
+        {
+          "category": "Attribution",
+          "criterion": "Data Attribution",
+          "score": 4,
+          "max": 5,
+          "finding": "I counted the table cells directly: eleven read 'Not publicly stated', and every one matches an entry in DATA_GAPS_topic4.md explaining which vendor has not published that fact. That is the correct outcome, and the methodology states the rule before the table ('if it was not published, it is not in the cell') and again after it ('Read the empty cells as information'). The References block attributes each filled cell to a named source. The deduction is a breach of the post's own rule. The disclosure promises 'DevCommX is held to the same evidence standard as every other row', yet DevCommX is the only one of six firms with a filled 'Publicly stated ICP' cell ('B2B teams that want to own the system, not rent a campaign'), and I confirmed there is no devcommx.com entry anywhere in References, so it is the one cell in the table with no citation behind it, in the column the post itself calls 'the most useful pattern here'."
+        },
+        {
+          "category": "Accuracy",
+          "criterion": "Technical Accuracy",
+          "score": 4,
+          "max": 5,
+          "finding": "The distinctions that matter commercially are drawn precisely and consistently between table, profile and FAQ: Cleverly at 'Three months on LinkedIn plans; cold email month to month', Martal at 'Three month pilot, then a monthly subscription', SalesHive at 'no setup fee and no long term contract', CIENCE at 'month to month terms stated'. The separation between publishing a pricing structure and publishing a price is handled correctly for both Martal and CIENCE. One inconsistency: Cleverly's 'cold calling from $3,995 a month' appears in the profile and in References but not in the table's pricing cell, so the summary row is narrower than the profile it summarises."
+        },
+        {
+          "category": "Delivery",
+          "criterion": "Completeness",
+          "score": 5,
+          "max": 5,
+          "finding": "All six brief H2s appear in order plus a closing checklist section, and every 'must include' is delivered. The methodology note states what was compared and from which sources, the competitor disclosure gets its own visible H2 rather than a footnote ('DevCommX sells B2B outbound services and appears in the comparison below. Read everything with that conflict in mind'), and the six profiles are genuinely parallel in structure and length. I re-ran the adversarial judgement-word check across every sentence naming a firm and got one hit, the FAQ question 'What are the best Cold Email Hackers alternatives?', which is the brief's own mandated PAA phrasing and whose answer opens by refusing it: 'This comparison does not rank agencies, because no public dataset supports a quality ranking.' There is no quality verdict on any named firm anywhere."
+        }
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Best keyword and table execution in the batch, undercut by zero inline external citations and a 163-character meta-description.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Keywords",
+          "criterion": "Primary Keyword Targeting",
+          "score": 5,
+          "max": 5,
+          "finding": "This is the only draft of the five where the brief-mandated H1 actually contains the primary keyword verbatim: 'Cold Email Hackers Alternatives: 6 B2B Outbound Agencies Compared (2026)'. The phrase is also bolded as the first four words of the body, opens the 52-character meta-title, is the slug and the first schema keyword, and appears verbatim in two H2s ('Methodology: how these Cold Email Hackers alternatives were compared' and 'How to choose between Cold Email Hackers alternatives: five questions') and one FAQ. All four secondaries land naturally, including 'best cold email agencies 2026' used inside a critique of that query's typical results rather than stuffed."
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQ / People Also Ask",
+          "score": 5,
+          "max": 5,
+          "finding": "All three PAA targets appear word for word ('What are the best cold email agencies?', 'How much does a cold email agency cost?', 'Should you outsource cold email?'), plus the primary-keyword variant and a procurement question, 'What contract minimum should a B2B outbound agency state?'. Answers run 53 to 60 words. The cost answer is the single most extractable passage in the batch because it carries real figures with the firms named: 'Cleverly publishes LinkedIn tiers at $397, $697 and $997 a month and cold email from $1,995 a month... Where a firm does not publish, treat third party ranges as hearsay until you hold a written quote.'"
+        },
+        {
+          "category": "Tables",
+          "criterion": "Comparison / Featured Snippet Tables",
+          "score": 5,
+          "max": 5,
+          "finding": "Six data rows by six columns (Agency, Stated service scope, Pricing model, Contract minimum, Channel coverage, Publicly stated ICP), with all six th cells carrying the required color:#1f2937. This is the largest and best-formed table across the five drafts and it is exactly the shape an engine lifts for an '[X] alternatives' query, because each row is a complete vendor record and the column headers are the comparison axes a buyer searches on. The post also teaches the extraction rule immediately above it: 'if it was not published, it is not in the cell.'"
+        },
+        {
+          "category": "Links",
+          "criterion": "Internal & External Link Structure",
+          "score": 2,
+          "max": 5,
+          "finding": "The internal half is good: seven links, correct /contact-us, descriptive anchors, and the best anchor in the batch as the CTA itself ('send us the shortlist you are already considering'). The external half fails the criterion. I split the markup at the Further Reading heading and counted anchors in the article body: seven, all internal, zero external. Every vendor claim in the table and in all six profiles, including Cleverly's dollar figures, is unlinked at the point it is made; the eleven external anchors across cleverly.co, saleshive.com, cience.com, belkins.io, clutch.co, g2.com and salesforge.ai all sit in the Further Reading and References footers. On the batch's highest-risk post, where the whole proposition is 'published facts, attributed', a reader checking a cell has to scroll to a footer and match it by hand."
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical SEO",
+          "score": 3,
+          "max": 5,
+          "finding": "Meta-title is 52 characters, schema is present in both required locations and byte-identical between them, the slug matches the schema url and mainEntityOfPage @id, the body correctly carries no h1, and there are no em or en dashes, no HTML comments and no bare-URL anchors. The defect is the meta-description at 163 characters, past the truncation point: 'A cold email agency comparison of six B2B outbound agencies on published scope, pricing model, contract minimum, channels and stated ICP. No rankings, no verdicts.' The tail that will be cut is 'No rankings, no verdicts', which is the differentiator against every affiliate page competing for this query."
+        }
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness",
+      "weight": 0.2,
+      "flag": "Strongest structured-data profile in the batch thanks to the ItemList node and six parallel profiles; the author is still absent from the visible text.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Definitions",
+          "criterion": "Direct Definitions",
+          "score": 5,
+          "max": 5,
+          "finding": "The first sentence is a complete, liftable answer to the head query, naming all six firms: 'The Cold Email Hackers alternatives with enough public information to compare are Belkins, CIENCE, Cleverly, Martal Group and SalesHive, alongside DevCommX.' The scope of the piece is then defined in one line an engine can quote as a caveat ('This cold email agency comparison ranks nothing and rates nothing'), and the FAQ supplies a definitional refusal that is itself highly citable: 'There is no objective answer, because the outcome data that would settle it is private to each vendor and client.'"
+        },
+        {
+          "category": "Structure",
+          "criterion": "Structured Data for AI Parsing",
+          "score": 4,
+          "max": 5,
+          "finding": "The densest machine-readable structure of the five: a six by six table, six H3 vendor profiles of parallel shape and length, five numbered selection questions, three named category red flags, a five-question FAQPage, and a third schema node, an ItemList of six Organization entries with numberOfItems and itemListOrder. The deduction is the same as across the batch: no <ul> or <ol> anywhere in the article body, both list elements being the Further Reading and References blocks, so the five questions and three red flags are bolded paragraphs rather than marked-up lists."
+        },
+        {
+          "category": "Authority",
+          "criterion": "Statistical Authority",
+          "score": 4,
+          "max": 5,
+          "finding": "Every factual claim is attributed to a named, re-citable entity in the prose, and the post is unusually explicit about the limits of that attribution ('Where a vendor publishes no figure, the cell reads \"Not publicly stated\" rather than a range borrowed from a competitor'). The figures that exist, Cleverly's tiers, are the most citable numbers in the batch because they are a primary-source published price rather than a survey statistic. It is held at 4 because none of those attributions carries an href at the claim, so an engine reusing a cell has the vendor name but no link to resolve it against."
+        },
+        {
+          "category": "Entity",
+          "criterion": "Entity Association",
+          "score": 4,
+          "max": 5,
+          "finding": "The strongest brand-to-topic binding of the five drafts, and it earns it through structure rather than assertion: DevCommX has its own disclosure H2, its own row in the table, its own H3 profile alongside five real competitors, an Organization node in the ItemList schema, and a positioning stated in its own words ('AI SDR systems, revenue operations, GTM engineering, delivered on domains, inboxes and CRM records the client owns'). It also refuses to overclaim: 'our own AI SDR systems clients own outright positioning is a claim too, not evidence.' The author is absent: 'Sumit' does not appear anywhere in the post-body outside the JSON-LD author node, and there is no About the author block."
+        },
+        {
+          "category": "Distinctiveness",
+          "criterion": "GEO Distinctiveness",
+          "score": 5,
+          "max": 5,
+          "finding": "Owns the 'Cold Email Hackers alternatives' and 'cold email agency comparison' clusters outright with no sibling competing for them, and it routes every adjacent question elsewhere rather than absorbing it: economics to true-cost-of-outbound-ai-vs-agency-vs-in-house, software pricing structure to ai-sdr-pricing, delivery model to best-fractional-sdr-services, metric definitions to outbound-sales-kpis-metrics-2026, and the build-versus-buy decision to the cold email services versus DIY post."
+        }
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "The ownership argument is built into the selection framework itself, but the single permitted performance claim is used twice where the batch gate allows one.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Narrative",
+          "criterion": "Differentiation Narrative",
+          "score": 5,
+          "max": 5,
+          "finding": "The owned-infrastructure model is not asserted, it is built into the framework the reader is handed. Question one is 'What is the exit state? Ask which assets you keep the day after cancellation: domains, warmed inboxes, sequences, the enriched list, the CRM records... price it as rental, not as a channel', which makes the differentiator a procurement criterion a buyer will apply to everyone. It is reinforced in the table ('on client owned domains and inboxes') and in the ICP cell, and then held to the same sceptical standard as everything else: 'our own AI SDR systems clients own outright positioning is a claim too, not evidence.'"
+        },
+        {
+          "category": "Proof",
+          "criterion": "Proof Metrics & Evidence",
+          "score": 3,
+          "max": 5,
+          "finding": "The permitted claim appears twice in the body, at character offsets 3235 and 11177, where the batch gate allows it at most once. Both uses are honestly framed, in the disclosure ('the only performance figure asserted anywhere in this post is one DevCommX result, 40+ qualified demos in ~6 weeks, because no comparable figure for another named firm was published in a checkable form') and in the DevCommX profile ('The one published result referenced here is 40+ qualified demos in ~6 weeks'). The problem is specific to this post: it is the only draft whose credibility rests on evidentiary symmetry with five named competitors who are allowed no performance figure at all, and the one asymmetry it permits itself is stated twice."
+        },
+        {
+          "category": "Pricing",
+          "criterion": "Pricing Transparency",
+          "score": 4,
+          "max": 5,
+          "finding": "Carries more real pricing than anything else in the library: a dedicated pricing-model column across six firms, Cleverly's published tiers at $397, $697 and $997 with cold email from $1,995 and cold calling from $3,995, SalesHive's flat-fee-no-setup-fee model, Martal's pilot-then-subscription structure, and a full FAQ answer on what a cold email agency costs. It also frames how to use a price rather than just listing one ('Ask every shortlisted firm for the same scope, channel mix and contract length, then compare written quotes, not pitches'). Held at 4 because DevCommX's own pricing and contract minimum cells both read 'Not publicly stated', which is honest and consistent but leaves the one firm the reader might hire as the least transparent row in its own table."
+        },
+        {
+          "category": "CTA",
+          "criterion": "CTA Quality",
+          "score": 4,
+          "max": 5,
+          "finding": "The closing CTA is the best-constructed in the batch because it asks for something and gives something specific back, and the anchor text is the offer: 'If you want that grid as a working document, send us the shortlist you are already considering and we will send the checklist back filled in for your scope.' It also inverts the usual comparison-page move by inviting the reader to score DevCommX on the same grid ('run every vendor through the same grid, us included'). The deduction is placement: it is the only conversion point in 2,198 words, and the natural second spot, immediately after the five questions, is left empty."
+        },
+        {
+          "category": "Slot",
+          "criterion": "Content Differentiation",
+          "score": 5,
+          "max": 5,
+          "finding": "Fills a slot no other page in the library occupies, the named-competitor comparison, and differentiates on method rather than on claims: 'Most \"best cold email agencies 2026\" lists are affiliate pages wearing a comparison table, asserting reply rates nobody can audit. This piece is deliberately less satisfying: published facts, attributed, with an empty cell wherever the vendor has not said.' A visible competitor-disclosure H2 is itself a differentiator in this category."
+        }
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "The only draft with real content H3s nested under an argument H2, but still no in-body image or diagram.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Headings",
+          "criterion": "Heading Architecture",
+          "score": 5,
+          "max": 5,
+          "finding": "The only draft of the five with genuine content-level H3s: six vendor profiles (Belkins, CIENCE, Cleverly, Martal Group, SalesHive, DevCommX) nested correctly under the 'Six agency profiles, published facts only' H2, alongside the three apparatus H3s and five FAQ H4s. Seven H2s cover the brief's six-part outline plus a closing checklist section, with no skipped levels anywhere. The result is a document a reader can navigate to a single vendor, which the flat sibling drafts cannot offer."
+        },
+        {
+          "category": "Visuals",
+          "criterion": "Visual Elements",
+          "score": 2,
+          "max": 5,
+          "finding": "I counted zero <img>, zero <svg> and zero <figure> elements in the body. The only in-body visual asset is the six by six table, and the OG image never appears in the article. This is the rubric's ceiling for a draft with no in-body image or diagram. The table does more work here than in any sibling, but a comparison post is also the format where readers most expect a visual, and the one genuinely visual finding in the piece, that the ICP column is empty for five of six firms while pricing is published by most, is argued in a sentence rather than shown."
+        },
+        {
+          "category": "Scannability",
+          "criterion": "Scannability",
+          "score": 4,
+          "max": 5,
+          "finding": "Thirteen <strong> elements structure the methodology and the selection framework as scannable ledes ('Where the facts come from.', 'What could not be verified directly.', 'What was not assessed.', '1. What is the exit state?', 'Guaranteed meeting counts.', 'Pricing that only appears on a call.'), and the six parallel H3 profiles plus the table carry the rest of the skim. The deduction is that the five questions and three red flags have no list markup, so what reads as a checklist in the prose is eight separate paragraphs in the HTML."
+        },
+        {
+          "category": "Flow",
+          "criterion": "Reading Level & Flow",
+          "score": 5,
+          "max": 5,
+          "finding": "The neutral register required by the brief is sustained for 2,198 words without becoming lifeless, because the energy goes into the framework rather than into adjectives: 'the fix for a bad vendor decision is usually a better checklist, not a better shortlist', 'Read the empty cells as information', 'Publishing a price and a contract minimum makes a firm easy to compare, which is a procurement fact, not praise.' The six profiles are deliberately uniform in shape and length, which reads as discipline rather than repetition because the methodology explained the rule first."
+        },
+        {
+          "category": "Length",
+          "criterion": "Content Length & Density",
+          "score": 5,
+          "max": 5,
+          "finding": "2,198 words against the brief's 1,800 to 2,200 band, inside it at the top, with a 10-minute reading time in the CMS. Density is high with no padding: six profiles in roughly 60 words each, and the adjacent topics that would have inflated it, outbound economics, AI SDR pricing structure, fractional SDR delivery and KPI definitions, are all linked out rather than restated."
+        }
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Three well-formed nodes including a correctly nested ItemList, but the ItemList declares an alphabetical order the visible table does not follow.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Article",
+          "criterion": "Article Type Completeness",
+          "score": 5,
+          "max": 5,
+          "finding": "The BlogPosting node carries all twelve expected properties: @id, @type, headline, description, url, datePublished, dateModified, keywords, image, author, publisher and mainEntityOfPage. The headline matches the CMS name field character for character including the '(2026)' suffix, and keywords carries the brief's primary plus all four mandated secondaries ('Cold Email Hackers alternatives, cold email agency comparison, best cold email agencies 2026, outsourced cold email pricing, B2B outbound agency')."
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQPage Structure",
+          "score": 5,
+          "max": 5,
+          "finding": "Five entries against the three-question minimum. I parsed each: every one is @type Question with an acceptedAnswer of @type Answer carrying a text property, answers running 53 to 60 words, all under a distinct '...#faq' @id."
+        },
+        {
+          "category": "Alignment",
+          "criterion": "Schema-to-Content Alignment",
+          "score": 3,
+          "max": 5,
+          "finding": "The mechanical checks pass: the schema-markup field and the post-body embed are byte-identical at 4,942 characters each, and all five visible H4 questions and all five visible answer paragraphs match their FAQPage entries exactly. Two misalignments. First, the ItemList description asserts 'The order is alphabetical and is not a ranking' and places DevCommX at position 4 between Cleverly and Martal Group, but the visible table runs Belkins, CIENCE, Cleverly, Martal Group, SalesHive, DevCommX, putting DevCommX last, so the schema describes an ordering the page does not use. Second, the schema description is not the CMS meta-description, so the page presents two different descriptions to a parser."
+        },
+        {
+          "category": "Graph",
+          "criterion": "@graph Implementation",
+          "score": 5,
+          "max": 5,
+          "finding": "The richest graph in the batch: three nodes, each with a distinct fragment @id ('#article', '#agencies', '#faq'). The ItemList is built correctly, with numberOfItems 6, itemListOrder set to schema.org/ItemListUnordered, and each ListItem wrapping an Organization under the 'item' property with a name and url rather than putting name directly on the ListItem, which is the right pattern and the one VERIFICATION.md records as a false positive in its own checking."
+        },
+        {
+          "category": "Rich results",
+          "criterion": "Rich Result Eligibility",
+          "score": 4,
+          "max": 5,
+          "finding": "ImageObject with explicit width 1200 and height 630 and a publisher Organization with url and logo are present, dates are honest and internally consistent at 2026-09-15 for both datePublished and dateModified, matching the actual commit date (996841c), and the ItemList node adds a second rich-result surface that no sibling draft has. The one defect is the publisher logo, which reuses the same 1200x630 blog OG image file rather than a logo asset, so it is neither a brand mark nor a valid logo aspect ratio."
+        }
+      ]
+    }
+  ],
+  "top_fixes": [
+    "Source or empty the DevCommX ICP cell. The disclosure promises 'DevCommX is held to the same evidence standard as every other row', but DevCommX is the only firm of six with a filled 'Publicly stated ICP' cell and there is no devcommx.com entry in References to support it, in the exact column the post calls 'the most useful pattern here'. Either cite the published page that states it or set the cell to 'Not publicly stated' like the rest.",
+    "Cut the permitted performance claim to one use. '40+ qualified demos in ~6 weeks' appears twice, in the disclosure H2 and again in the DevCommX profile, where the batch gate allows one. Keep the disclosure instance, which explains why the asymmetry exists, and drop it from the profile.",
+    "Link the vendor sources inline. The article body contains seven anchors and all seven are internal; Cleverly's $397, $697, $997 and $1,995 figures and every other vendor fact are unlinked at the point of claim, with all eleven external anchors pooled in the footers. On the batch's highest-risk named-competitor post, a per-cell or per-profile citation is what makes the 'published facts, attributed' promise checkable.",
+    "Reconcile the ItemList order with the table, and cut the meta-description. The schema states 'The order is alphabetical' and places DevCommX at position 4, while the table places it sixth; and the meta-description is 163 characters, truncating away 'No rankings, no verdicts', which is the differentiator for this query.",
+    "Carry VERIFICATION.md's Cleverly caveat onto the page and add a visual. A second source shows the top LinkedIn tier as a $891 to $997 range rather than a flat $997, and the human factual-accuracy review this post requires should confirm the live page; separately, Visual Elements is at the rubric floor with zero images and zero SVGs, and the empty-ICP-column pattern is the obvious figure."
+  ]
+}
