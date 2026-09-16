@@ -1,0 +1,278 @@
+{
+  "slug": "multichannel-sales-outreach-channels-compared",
+  "title": "Multichannel Sales Outreach: Response Rates and Cost Per Meeting Across 6 Channels",
+  "words": 2843,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Every benchmark is named and linked at the claim, but most of the load-bearing sources are lead-gen vendor blogs and the Gong/Cognism figures are cited second hand through Martal.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Sources",
+          "criterion": "Stat Accuracy & Source Quality",
+          "score": 3,
+          "max": 5,
+          "finding": "Attribution discipline is good: every number carries a named source inline at the claim (Belkins 3%-5% average / 15%-25% top quartile, ANA and DMA 2%-4.4% prospect lists, Boomerang 11% vs 2.3%). The problem is source tier. Five of the six body citations are commercial lead-gen or agency blogs (belkins.io, martal.ca, cleverly.co, directmail.io, getboomerang.ai), not primary research. The two strongest-sounding figures are worse than they look: 'Gong data reported by Martal Group cold calling statistics puts the average rep at 5.4% connect' and 'Cognism's State of Cold Calling, built on more than 200,000 analysed calls, puts conversation to meeting at 2.7%' are both routed through the Martal link, and Cognism is named without a link of its own. The Boomerang URL is a /glossaries/ page being cited as if it were a published report."
+        },
+        {
+          "category": "Depth",
+          "criterion": "Practitioner Depth",
+          "score": 5,
+          "max": 5,
+          "finding": "This is operator arithmetic, not a summary. The phone section refuses the received wisdom and does the multiplication: 'A 5.4% connect rate and a 2.7% conversation to meeting rate imply roughly 0.15% of dials produce a meeting, about 680 dials each. The repeated rule of thumb of one meeting per 200 dials only holds if your conversation to meeting rate runs three or four times the Cognism figure.' The LinkedIn section runs the ceiling the same way ('One hundred invitations per week per seat is at most 5,200 a year... extra seats add linear cost with no economy of scale'), and the cold email section gives concrete infrastructure numbers ('roughly 20 to 30 sends per inbox per day, a three to six week warmup, and hard suppression of anything that bounces')."
+        },
+        {
+          "category": "Attribution",
+          "criterion": "Data Attribution",
+          "score": 5,
+          "max": 5,
+          "finding": "Four of six table rows carry the source name inside the cell itself — '(Belkins)', '(Gong, Cognism)', '(ANA and DMA)', '(Boomerang)' — so a row lifted out of context stays attributable. More importantly the post marks its gaps instead of filling them: the entire cost-per-meeting column names a driver rather than a dollar figure, with the reason stated outright — 'No credible cross channel benchmark for cost per meeting by channel exists: vendors publish response rates because they flatter and omit cost because it does not' — and then hands the reader the method instead ('fully loaded channel spend for a period, divided by the meetings that channel sourced. Hold attribution constant across all six rows'). The paid social row does the same: 'Assisted lift on other channels, not a standalone reply rate.'"
+        },
+        {
+          "category": "Accuracy",
+          "criterion": "Technical Accuracy",
+          "score": 4,
+          "max": 5,
+          "finding": "The platform facts check out for 2026: the February 2024 Google and Yahoo bulk sender rules, the 5,000-messages-per-day definition and the 0.3% complaint ceiling are correctly stated and linked to support.google.com/a/answer/81126; the LinkedIn 'roughly 100 connection invitations per week on a rolling seven day window' with restricted profiles 'dropping near 50' is current. One gap for a post whose H2 is 'Cold Email: What Changed After the Bulk Sender Rules': Microsoft's May 2025 enforcement for high-volume Outlook senders is not mentioned at all, even though the sibling posts in this same batch cite it. The 'what changed' section is therefore a Google/Yahoo-only account of a three-party change."
+        },
+        {
+          "category": "Delivery",
+          "criterion": "Completeness",
+          "score": 5,
+          "max": 5,
+          "finding": "All nine H2s cash their cheques. 'The Multichannel Sales Outreach Comparison Table: 6 Channels, 5 Metrics' delivers exactly six channel rows against five metric columns. 'How to Choose Your Multichannel Sales Outreach Mix: A Decision Tree' delivers a real tree with three named ACV and ICP bands (under $25,000 with ICP above 5,000; $25,000 to $100,000 with 1,000 to 5,000 accounts; above $100,000 with under 1,000) plus an overriding capacity rule. 'The Response Rate Nobody Publishes Honestly' delivers the connect-rate versus conversation-to-meeting distinction that the heading implies."
+        }
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "Keyword placement, FAQ intent, table format and link structure are all clean; nothing material to fix.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Keywords",
+          "criterion": "Primary Keyword Targeting",
+          "score": 5,
+          "max": 5,
+          "finding": "'Multichannel sales outreach' opens the post as the first two words of the answer paragraph, and appears in the CMS name, the slug, the 48-character meta-title, the meta-description, three H2s ('The Multichannel Sales Outreach Comparison Table: 6 Channels, 5 Metrics', 'How to Choose Your Multichannel Sales Outreach Mix: A Decision Tree', 'Build a Multichannel Sales Outreach System You Own') and one FAQ question. Secondary variants are placed deliberately too: 'B2B outreach channel comparison' closes the last FAQ answer and 'best prospecting channels' lands in the decision-tree section."
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQ / People Also Ask",
+          "score": 5,
+          "max": 5,
+          "finding": "Six questions, all genuine PAA shapes rather than invented ones: 'What is the best outreach channel for B2B sales?', 'How many touches should a sales sequence have?', 'What is a good cold email response rate?', 'Which outreach channel ramps fastest?'. Each answer is self-contained and lands in the 50 to 60 word extractable band, and each opens with the answer rather than a wind-up — 'The phone. It needs no domain warmup, no audience match and no production lead time.'"
+        },
+        {
+          "category": "Tables",
+          "criterion": "Comparison / Featured Snippet Tables",
+          "score": 5,
+          "max": 5,
+          "finding": "One table, correctly built for extraction: a real <thead> with five <th> header cells (Channel, Published response rate, Cost per meeting: dominant driver, Ramp time to first meeting, Best fit ICP) over six <td> rows, 30 data cells in total. Every cell is a short liftable phrase rather than a sentence fragment, and the 'Best fit ICP' column carries quantified qualifiers ('ACV under $50k, TAM above 5,000', 'named account lists under 500') that make a single row useful on its own."
+        },
+        {
+          "category": "Links",
+          "criterion": "Internal & External Link Structure",
+          "score": 5,
+          "max": 5,
+          "finding": "Twelve internal links across eleven distinct destinations, all descriptive anchors placed where the reader would want the detour ('AI versus manual prospecting cost math' right after the cost-per-meeting formula, 'reverse ETL for outbound sales' at the audience-sync problem), plus the two commercial destinations /ai-sdr and the correct /contact-us. Eight external hosts, with six of them cited inline at the claim and repeated in a References block that states what each one sourced. No bare-URL anchors anywhere."
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical SEO",
+          "score": 5,
+          "max": 5,
+          "finding": "Meta-title is 48 characters and meta-description 157, both inside truncation limits. Schema is present in both required locations and the slug matches the schema url and the mainEntityOfPage @id exactly ('https://www.devcommx.com/blogs/multichannel-sales-outreach-channels-compared'). No <h1> in post-body, which is correct for this collection since Webflow renders the name field as the page H1; the heading sequence in the body starts cleanly at H2."
+        }
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness",
+      "weight": 0.2,
+      "flag": "Strong extractable openers and a clean table, but the post never defines its own head term and carries no in-body lists or numbered steps.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Definitions",
+          "criterion": "Direct Definitions",
+          "score": 4,
+          "max": 5,
+          "finding": "The opening is a textbook extractable answer: 'Multichannel sales outreach wins on cost per meeting, not on response rate.' The phone section supplies the single most citable definitional pair in the post — 'Connect rate is the share of dials that reach a human. Conversation to meeting is the share of those humans who book. Vendors quote whichever is higher.' The gap is that the head term itself is never defined. An engine asked 'what is multichannel sales outreach' finds no sentence of the form 'Multichannel sales outreach is...' anywhere in 2,843 words."
+        },
+        {
+          "category": "Structure",
+          "criterion": "Structured Data for AI Parsing",
+          "score": 3,
+          "max": 5,
+          "finding": "The six-row comparison table and the six-question FAQ are both well formed, but outside them the machine-parseable surface is thin. There are exactly two <ul> elements in the entire post and both sit in the footer (Further Reading and References) — zero bulleted lists in the body, zero <ol>, and only four <strong> tags across nine sections. The decision tree explicitly announces a numbered framework — 'Three inputs decide the mix, in order: average contract value, ICP size, and rep hours available' — and then delivers all three ACV bands as running prose rather than as a list an engine can lift band by band."
+        },
+        {
+          "category": "Authority",
+          "criterion": "Statistical Authority",
+          "score": 4,
+          "max": 5,
+          "finding": "Every quantitative claim names an organisation an LLM can re-cite: Belkins, Gong, Cognism, Cleverly, ANA, DMA, Boomerang and Google Workspace. There are no orphan statistics. The deduction is that the two most authoritative names in that list, Gong and Cognism, are reachable only through martal.ca, so a model tracing the 5.4% connect rate or the 2.7% conversation-to-meeting rate lands on an agency blog rather than on the research it re-cites."
+        },
+        {
+          "category": "Entity",
+          "criterion": "Entity Association",
+          "score": 3,
+          "max": 5,
+          "finding": "DevCommX appears only three times in 2,843 words. The intro binding is good and specific ('DevCommX builds and runs multichannel outbound systems for B2B teams, so the channel notes below come from operating them rather than from a vendor deck') and the close ties the model to the topic. But there is no author bio in the body at all: the H3s are only Further Reading, References and FAQ, so Sumit Nautiyal exists in the CMS author field and the schema Person node and nowhere on the page an engine reads. The sibling pillar post in this library carries an 'About the author' H3; this one dropped it."
+        },
+        {
+          "category": "Distinctiveness",
+          "criterion": "GEO Distinctiveness",
+          "score": 4,
+          "max": 5,
+          "finding": "The post owns a clean and otherwise unclaimed cluster: 'cost per meeting by channel', 'B2B outreach channel comparison', 'ramp time to first meeting'. It routes away from siblings rather than competing with them, deferring cadence design to the B2B outbound sales cadence guide and template craft to the cold email templates post. One leak: the FAQ 'What is a good cold email response rate?' restates the Belkins benchmark that the dedicated cold email posts in the same library also target, which puts this page into a query it does not want to win."
+        }
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "Cost framing is genuinely strong for once, but the whole DevCommX narrative and the single proof point are compressed into the last 90 words.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Narrative",
+          "criterion": "Differentiation Narrative",
+          "score": 4,
+          "max": 5,
+          "finding": "The owned-infrastructure, signal-based model is articulated precisely where it appears: 'signal based AI SDR infrastructure running email, phone, LinkedIn and referral paths from one data layer, instrumented so cost per meeting by channel is a query rather than a guess, and owned by you rather than rented.' That sentence does real work because the preceding 2,700 words established why cost per meeting is unknowable without instrumentation. The deduction is placement — the entire narrative lives in one closing paragraph, with nothing carrying it through the body."
+        },
+        {
+          "category": "Proof",
+          "criterion": "Proof Metrics & Evidence",
+          "score": 4,
+          "max": 5,
+          "finding": "The permitted claim is present and correctly hedged: 'One DevCommX client reached 40+ qualified demos in roughly 6 weeks on that model.' It appears exactly once, in the final paragraph, attached to the right mechanism. Deducted one because it is a bare assertion with no channel mix, ACV band or ICP size attached, in a post whose entire argument is that outcomes are meaningless without those qualifiers — the post holds every third-party benchmark to a standard it does not apply to its own number."
+        },
+        {
+          "category": "Pricing",
+          "criterion": "Pricing Transparency",
+          "score": 4,
+          "max": 5,
+          "finding": "Unusually strong for this library. Cost is the organising metric of the whole piece, not an afterthought: the table's third column is cost per meeting, the decision tree is built on explicit ACV thresholds ('Under $25,000 ACV with an ICP above 5,000 accounts', 'Above $100,000 ACV with an ICP under 1,000 accounts'), and the reader is handed the formula ('fully loaded channel spend for a fixed period, meaning rep salary at the time fraction spent there plus tooling, data and media, then divide by the meetings that channel sourced'). What is absent is any figure for what a DevCommX engagement costs or is worth, so the transparency is about the buyer's economics rather than the vendor's."
+        },
+        {
+          "category": "CTA",
+          "criterion": "CTA Quality",
+          "score": 4,
+          "max": 5,
+          "finding": "The single CTA is specific and tied to the artifact the reader just consumed: 'To have DevCommX rebuild the table above with your numbers, talk to us about your channel mix', pointing at /contact-us (the correct path, not /contact). It is a real offer rather than a generic demo ask. Deducted one for being the only CTA in 2,843 words, with no mid-body offer at the natural moment — the end of the comparison-table section, where the post has just told the reader they must build this themselves."
+        },
+        {
+          "category": "Slot",
+          "criterion": "Content Differentiation",
+          "score": 5,
+          "max": 5,
+          "finding": "Occupies the cross-channel comparison slot that sits above the per-channel posts and routes into them explicitly: prospecting tools, cost math, cold email templates, Clay vs Apollo vs Instantly, cadence guide, Outreach vs Salesloft, reverse ETL, enrichment tools and MSP outbound each get one inbound link at the moment the reader would want it. Nothing else in the library compares six channels on a single metric set."
+        }
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "No in-body image or diagram, and only four bold lead-ins across 2,843 words, so long stretches are unbroken prose.",
+      "flag_type": "critical",
+      "criteria": [
+        {
+          "category": "Headings",
+          "criterion": "Heading Architecture",
+          "score": 5,
+          "max": 5,
+          "finding": "Clean descent with no skipped levels: nine H2s, then three H3s (Further Reading, References, FAQ) and six H4 FAQ questions under the FAQ H3. The raw level sequence is 2,2,2,2,2,2,2,2,2,3,3,3,4,4,4,4,4,4. The H2 order also tracks a real argument — table first, then one section per channel in table order, then the decision tree, then the close — so a reader arriving at any heading knows where they are."
+        },
+        {
+          "category": "Visuals",
+          "criterion": "Visual Elements",
+          "score": 2,
+          "max": 5,
+          "finding": "Zero <img>, zero <svg>, zero <figure> in the body. The only visual asset is the six-row comparison table, and the only image on the page is the shared OG banner, which is the same file used by every other post in this batch. This is the rubric's ceiling case for image-less drafts. It is a particularly visible miss here: the decision tree section describes a branching structure in prose ('Three inputs decide the mix, in order... Then apply the capacity rule that overrides all of it') which is a diagram asking to be drawn."
+        },
+        {
+          "category": "Scannability",
+          "criterion": "Scannability",
+          "score": 3,
+          "max": 5,
+          "finding": "The table and the nine channel-named H2s carry the top-level skim, and most paragraphs open with a thesis sentence a skimmer can use ('Direct mail is the clearest illustration of why response rate alone is a bad decision metric'). Below that level there is nothing. Four <strong> tags and no body bullets across nine sections means each channel section is three to four solid paragraphs with no internal handholds, and the decision tree — the section most likely to be skimmed for a match — is the densest prose in the post."
+        },
+        {
+          "category": "Flow",
+          "criterion": "Reading Level & Flow",
+          "score": 5,
+          "max": 5,
+          "finding": "Concrete throughout and free of filler, with transitions that carry the argument rather than announce the next section: 'Read this table left to right, not top to bottom', 'Multiply those honestly and the arithmetic is uncomfortable', 'Run the ceiling math first'. Judgements land as short declaratives that earn their place — 'Mail without coordinated follow up is a gift, not a channel', 'LinkedIn cannot be your volume channel. It is a precision channel.'"
+        },
+        {
+          "category": "Length",
+          "criterion": "Content Length & Density",
+          "score": 5,
+          "max": 5,
+          "finding": "2,843 words for six channel sections plus a decision tree and a six-question FAQ, declared as a 13 minute read. That is roughly 300 words per channel with no padding: every section carries at least one number, one constraint and one operational consequence. Nothing here is detachable without losing a row of the table it supports."
+        }
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Byte-identical across both locations and FAQ text matches the body exactly; the one real defect is publisher.logo pointing at the 1200x630 blog OG banner.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Article",
+          "criterion": "Article Type Completeness",
+          "score": 5,
+          "max": 5,
+          "finding": "The BlogPosting node carries all twelve expected properties: @id, @type, headline, description, url, datePublished, dateModified, keywords, image, author, publisher and mainEntityOfPage. The headline matches the CMS name field exactly, and keywords list five terms that genuinely track the body ('multichannel sales outreach, sales outreach channels, B2B outreach channel comparison, cost per meeting by channel, best prospecting channels')."
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQPage Structure",
+          "score": 5,
+          "max": 5,
+          "finding": "Six entries under a distinct '#faq' @id, each a proper @type Question with an acceptedAnswer of @type Answer carrying a text property. Answer texts run 306 to 342 characters, which is the right size for an answer-box lift. Double the three-question minimum."
+        },
+        {
+          "category": "Alignment",
+          "criterion": "Schema-to-Content Alignment",
+          "score": 5,
+          "max": 5,
+          "finding": "Verified programmatically rather than by eye. The schema-markup field and the <script type=\"application/ld+json\"> embed at the end of post-body are byte-identical once surrounding whitespace is stripped. All six visible H4 questions match the FAQPage mainEntity names word for word, and all six visible answer paragraphs match their acceptedAnswer.text word for word. The schema description also matches the article's actual scope rather than being a stale draft summary."
+        },
+        {
+          "category": "Graph",
+          "criterion": "@graph Implementation",
+          "score": 5,
+          "max": 5,
+          "finding": "A proper @graph array with two nodes, each carrying a distinct fragment @id anchored to the canonical URL ('...#article' and '...#faq'), which is what lets a parser address the article and the FAQ separately rather than inferring the relationship."
+        },
+        {
+          "category": "Rich results",
+          "criterion": "Rich Result Eligibility",
+          "score": 3,
+          "max": 5,
+          "finding": "The article ImageObject is correct, with explicit width 1200 and height 630, and dateModified is present and legitimately equal to datePublished (2026-09-08) since the CMS last-updated field also reads 2026-09-08 and the post has not been revised. The defect is the publisher: the Organization logo is an ImageObject whose url is '...69ce06f820d4562027a83191_imresizer-DevCommX-Blog-OG.png' — the same 1200x630 blog OG banner used as the article image — with no width or height. Google expects a logo asset for publisher.logo, and reusing the article banner is the kind of mismatch that silently disqualifies the node."
+        }
+      ]
+    }
+  ],
+  "top_fixes": [
+    "Add a definitional sentence for the head term. In 2,843 words there is no sentence of the form 'Multichannel sales outreach is...', so the page cannot be lifted to answer the definitional query its own title targets. One extractable sentence in the opening block fixes it.",
+    "Fix publisher.logo. It currently points at the 1200x630 blog OG banner (69ce06f820d4562027a83191_imresizer-DevCommX-Blog-OG.png) with no width or height, which is the same asset used for the article image. Point it at a real logo file with dimensions, in both schema locations.",
+    "Cite Gong and Cognism directly. The 5.4% connect rate, the 13.3% top quartile and the 2.7% conversation-to-meeting rate are all currently reachable only through martal.ca, and Cognism's State of Cold Calling is named without a link at all. Link the primary research at the claim and keep Martal only as the secondary.",
+    "Add one in-body figure and break up the decision tree. Visual Elements is 2/5 with zero images, zero SVG and zero figures; the three ACV and ICP bands in 'How to Choose Your Multichannel Sales Outreach Mix' are already a branching structure delivered as prose and are the obvious candidate for the library's inline-SVG treatment.",
+    "Add an author bio and a mid-body CTA. There is no 'About the author' H3, so Sumit Nautiyal appears only in the CMS field and the schema Person node; and the single CTA sits in the final paragraph, with no offer at the end of the comparison-table section where the post has just told the reader they will have to build this themselves."
+  ]
+}
