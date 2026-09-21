@@ -1,0 +1,350 @@
+#################### TAB: 📊 Modified Overview
+AEO BATCH: 7 TOPICS MODIFIED (1 MERGE, 1 REFRAME)  ·  AVERAGE 3.26/5.0 → 4.37/5.0  ·  7/7 NOW VALID
+APPROACH: all six titles copied from competitors now have new titles, and each was checked against your live AEO pages. Topic 2 is MERGED into topic 5 (same article, same keyword, same collision with the city pages), so 8 topics become 7. Topic 6 was INVALID but is REFRAMED around AI search rather than dropped, because you asked for every topic to be drafted. It's the first to cut if calendar space is tight. Headlines are now in sentence case, per the DevCommX brand book.
+⚠️ TWO ARE BLOCKED ON THINGS ONLY YOU CAN PROVIDE. Topic 4 (Perplexity) needs your own citation-tracking data. Without it, it's the tenth near-identical guide in that SERP. Topic 7 (white label) is ON HOLD until you confirm DevCommX sells a white-label offer. I found none on the site, so the draft makes no claim that you do. Topic 8 also needs your own CAC figures from both channels.
+📋  OLD TITLE  →  NEW TITLE
+# | OLD TITLE (rejected) | NEW TITLE (modified) | WAS | NOW | PRIMARY KEYWORD
+1 | Competitor Gets Recommended by AI, You Don't: What It Means for Your Search Visibility in 2026 | Why ChatGPT recommends your competitor instead of you: a 30-minute diagnostic | 3.4 | 4.8 | why does ChatGPT recommend my competitor
+3 | EEAT Signals in Google vs LLMs – What You Need to Know to Make the Best Content in 2026? | Do LLMs use E-E-A-T? What Google rewards vs what AI search actually cites | 3.2 | 4.4 | E-E-A-T AI search
+4 | Perplexity SEO: How to Get Your Website Indexed, Cited, and Featured in AI Search | Perplexity SEO: how pages get cited, and why 'getting indexed' is the wrong goal | 3.6 | 4.4 | Perplexity SEO
+5 | AEO for Local Businesses: Showing Up in AI-Powered Local Search  (+ #2 'What Is The Best Way For Local Businesses To Get Mentioned By LLMs') | How local businesses get recommended by ChatGPT, Perplexity and Google AI: the local AEO playbook | 3.6 | 4.6 | AEO for local businesses
+6 | Technical SEO vs Content SEO: Features, Benefits & Differences | Technical SEO vs content SEO for AI search: which one gets you cited? | 2.4 | 4.0 | technical SEO for AI search
+7 | How to Choose the Right White Label SEO Outsourcing Partner for Your Agency | White label AEO for agencies: how to choose a partner to add AI search to your offer | 3.4 | 4.0 | white label AEO
+8 | SEO vs Google Ads in the Age of AI: Which Delivers Better ROI? | SEO vs Google Ads in 2026: when paid wins, when organic wins, and what AI search changes | 3.2 | 4.4 | SEO vs Google Ads
+🗺️  PUBLISHING ORDER — PILLARS FIRST, THEN SUPPORTING POSTS
+ORDER | TOPIC | ROLE | CLUSTER | WHY THIS POSITION
+1 | #1 Why ChatGPT recommends your competitor | SHIP NOW | AEO | Strongest sales trigger. Fully sourced, no data dependency. Publish first.
+2 | #5 Local AEO playbook (absorbs #2) | SHIP NOW | AEO: Local | The hub for the city pages. Publish early so the /aeo-services/{city} set has a parent to link up to.
+3 | #3 Do LLMs use E-E-A-T? | SUPPORT | AEO | Needs only a named author. Corrects a misconception most competing pages get wrong.
+4 | #8 SEO vs Google Ads in 2026 | DECISION | Budget | Add your own CAC data from both channels, then publish.
+5 | #6 Technical vs content SEO for AI search | SUPPORT | AEO | Lowest priority. First to cut if calendar space is tight.
+6 | #4 Perplexity SEO | DATA | AEO: Platform | Blocked until the prompt tracking is done. Start it now, since it takes a few weeks.
+7 | #7 White label AEO for agencies | ON HOLD | Agency | Only if a white-label offer exists. Otherwise don't publish.
+NOTES: Topic 2 has no tab. It's merged into topic 5, where its question becomes an H2 and an FAQ entry. Scores marked NOW are projections for the rewritten topic, not for a finished article. Topic 5 is written for local business owners because the /aeo-services/{city} pages sell to them, while the brand book names B2B SaaS leaders as the buyer, so confirm that split is intended. Search-demand judgements are directional, not volumes exported from a tool; confirm in Ahrefs or Semrush before locking the calendar.
+
+#################### TAB: 01 Why ChatGPT recommends your 
+TOPIC 1 — MODIFIED  |  Why ChatGPT recommends your competitor instead of you: a 30-minute diagnostic
+WAS 3.4/5.0  →  NOW 4.8/5.0  (+1.4)   ·   VALID   ·   ROLE: Top sales trigger: the AEO entry page   ·   CLUSTER: AEO: Diagnosis
+WHAT WAS BROKEN:  Scored 3.4/5. The headline copies a live PageTraffic post word for word, and the subtitle promised a diagnosis with no fix.
+🔄  BEFORE  →  AFTER
+ELEMENT | BEFORE  (rejected) | AFTER  (rewritten)
+Title | Competitor Gets Recommended by AI, You Don't: What It Means for Your Search Visibility in 2026 | Why ChatGPT recommends your competitor instead of you: a 30-minute diagnostic
+Primary keyword | No real query matches the phrasing | 'why does ChatGPT recommend my competitor': the question buyers type
+Angle | A 'visibility crisis' think piece | A five-step diagnostic the reader runs in 30 minutes, with fixes in priority order
+Reader | Anyone worried about AI search | A marketing or growth lead who just watched ChatGPT name a rival
+Originality | PageTraffic's headline, verbatim | New title, new format, and it links to the brand-mentions page instead of repeating it
+🛠️  PROBLEMS FIXED
+PROBLEM FLAGGED IN v1 | HOW THE MODIFICATION FIXES IT
+Verbatim copy of PageTraffic's live headline | Replaced with a question-led title in buyer language. The diagnostic format is also something PageTraffic's crisis piece doesn't offer.
+'What it means' promised no action | The page now gives a five-step method (prompts, logging, source sorting, access check, gap scoring) and a fix order: access, then pages, then listings, then mentions.
+Overlapped /blogs/brand-mentions-vs-backlinks-ai-search | That page owns the 'why mentions matter' explanation. This one links to it in cause #1 and owns the 'how to find out' method.
+Claims needed evidence | Every cause is backed by a named source: Ahrefs (75K brands), the GEO study (KDD 2024), Vercel (JS rendering), Yext (6.8M citations), BrightLocal (45% of consumers).
+📐  ARTICLE SPEC
+Word count | 1,800-2,000
+Format | Diagnostic how-to with a logging template and a gap-scoring table
+Must include | The 10-prompt method; the five-bucket source sort; a robots.txt and raw-HTML check; a fix order
+Schema | Article + HowTo + FAQPage
+Internal links | → /blogs/brand-mentions-vs-backlinks-ai-search · → /blogs/llmo-vs-seo-vs-geo-vs-aeo · → /aeo-services
+CTA | Free GTM audit: we run the diagnostic with you
+🧱  OUTLINE  (H2 structure)
+H2 · 1 | The short answer (an answer AI tools can quote on its own)
+H2 · 2 | Cause 1: they're mentioned more than you are
+H2 · 3 | Cause 2: their pages are easier to quote
+H2 · 4 | Cause 3: the AI can't read your site (robots.txt, JavaScript)
+H2 · 5 | Cause 4: they're on the sources the AI trusts for this query
+H2 · 6 | The 30-minute diagnostic, in five timed steps
+H2 · 7 | What to fix first
+H2 · 8 | How to measure progress
+H2 · 9 | FAQ
+🔑  KEYWORDS & AI-ANSWER TARGETS
+PRIMARY KEYWORD | why does ChatGPT recommend my competitor
+Secondary keywords | AI search competitor analysis; AI visibility gap; why am I not showing up in ChatGPT; competitor AI citations
+PAA / FAQ targets | Why does ChatGPT recommend my competitor? · Do backlinks help me get recommended by AI? · Can I pay to be recommended by ChatGPT?
+Consolidation note | DRAFTED. Confirm the 14.9k→97.2k and 6.5x proof points came from AI SEO work before publishing.
+📈  PROJECTED RE-SCORE
+CHECK | SCORE | MAX | RATING
+Clarity & Specificity | 5 | 5 | ✅ PASS
+Audience Relevance | 5 | 5 | ✅ PASS
+Search Demand & Keyword Fit | 4 | 5 | ✅ PASS
+Originality & Cannibalisation | 5 | 5 | ✅ PASS
+Value Depth | 5 | 5 | ✅ PASS
+TOTAL: 24/25 → 4.8/5.0 | VALID  (was 3.4)
+
+#################### TAB: 03 Do LLMs use E-E-A-T What Goo
+TOPIC 3 — MODIFIED  |  Do LLMs use E-E-A-T? What Google rewards vs what AI search actually cites
+WAS 3.2/5.0  →  NOW 4.4/5.0  (+1.2)   ·   VALID   ·   ROLE: Authority piece: corrects a common misconception   ·   CLUSTER: AEO: Content Quality
+WHAT WAS BROKEN:  Scored 3.2/5. The subtitle is a statement with a question mark, the acronym was written 'EEAT', and the premise implied LLMs score pages against E-E-A-T.
+🔄  BEFORE  →  AFTER
+ELEMENT | BEFORE  (rejected) | AFTER  (rewritten)
+Title | EEAT Signals in Google vs LLMs – What You Need to Know to Make the Best Content in 2026? | Do LLMs use E-E-A-T? What Google rewards vs what AI search actually cites
+Primary keyword | 'EEAT' (misspelled, vague 'best content') | 'E-E-A-T AI search', with 'does ChatGPT use EEAT' as a variant
+Angle | Treats E-E-A-T as a signal LLMs read | The correction: E-E-A-T isn't a direct ranking factor even in Google, and LLMs respond to proxies for it
+Reader | Content teams | Content and SEO leads deciding whether their Google-era work carries over
+Accuracy | Premise was wrong | Quotes Google's own documentation
+🛠️  PROBLEMS FIXED
+PROBLEM FLAGGED IN v1 | HOW THE MODIFICATION FIXES IT
+Malformed subtitle and misspelled acronym | A clean question for a title, and the correct spelling, E-E-A-T, throughout.
+The premise implied LLMs score E-E-A-T | Corrected with Google's own words: E-E-A-T 'itself isn't a specific ranking factor', trust is 'most important', and rater data 'is not used directly' in ranking.
+Crowded angle (Primary Position alone has five posts) | Differentiated by the correction and by a side-by-side table that shows what each system rewards, with a cited source in every row.
+No practical takeaway | Each of the four letters is translated into evidence an AI system can use, followed by a seven-step change to the content process.
+📐  ARTICLE SPEC
+Word count | 1,700-1,900
+Format | Explainer with a comparison table and a process checklist
+Must include | Google's three direct quotes; the Google-vs-AI signal table; the four letters translated; seven process changes
+Schema | Article + FAQPage + Person (named author, required)
+Internal links | → /blogs/llmo-vs-seo-vs-geo-vs-aeo · → /blogs/brand-mentions-vs-backlinks-ai-search · → /aeo-services
+CTA | Free GTM audit
+🧱  OUTLINE  (H2 structure)
+H2 · 1 | The short answer
+H2 · 2 | What E-E-A-T actually is (in Google's own words)
+H2 · 3 | What Google rewards vs what AI search cites (table)
+H2 · 4 | The four letters, translated for AI search
+H2 · 5 | What to change in your content process
+H2 · 6 | What stays the same
+H2 · 7 | FAQ
+🔑  KEYWORDS & AI-ANSWER TARGETS
+PRIMARY KEYWORD | E-E-A-T AI search
+Secondary keywords | EEAT LLM; does ChatGPT use EEAT; E-E-A-T vs AI citations; trust signals AI search
+PAA / FAQ targets | Does ChatGPT use E-E-A-T? · Is E-E-A-T a Google ranking factor? · Do backlinks still matter for AI search?
+Consolidation note | DRAFTED. Needs a named author with a bio before publishing, because a post about expertise signals without a byline undercuts itself.
+📈  PROJECTED RE-SCORE
+CHECK | SCORE | MAX | RATING
+Clarity & Specificity | 5 | 5 | ✅ PASS
+Audience Relevance | 4 | 5 | ✅ PASS
+Search Demand & Keyword Fit | 4 | 5 | ✅ PASS
+Originality & Cannibalisation | 4 | 5 | ✅ PASS
+Value Depth | 5 | 5 | ✅ PASS
+TOTAL: 22/25 → 4.4/5.0 | VALID  (was 3.2)
+
+#################### TAB: 04 Perplexity SEO
+TOPIC 4 — MODIFIED  |  Perplexity SEO: how pages get cited, and why 'getting indexed' is the wrong goal
+WAS 3.6/5.0  →  NOW 4.4/5.0  (+0.8)   ·   VALID   ·   ROLE: Best keyword in the batch, differentiated by accuracy and your own data   ·   CLUSTER: AEO: Platform
+WHAT WAS BROKEN:  Scored 3.6/5. Near-verbatim SEO Discovery title in a SERP with about nine same-pattern guides, and 'indexed' implies a submission process Perplexity doesn't offer.
+🔄  BEFORE  →  AFTER
+ELEMENT | BEFORE  (rejected) | AFTER  (rewritten)
+Title | Perplexity SEO: How to Get Your Website Indexed, Cited, and Featured in AI Search | Perplexity SEO: how pages get cited, and why 'getting indexed' is the wrong goal
+Primary keyword | 'Perplexity SEO' (kept, it's the best term in the batch) | Unchanged
+Angle | Generic how-to, same as nine competitors | Corrects the 'indexing' myth, then shows what gets cited, backed by your own citation tracking
+Accuracy | 'Indexed' implies Perplexity has a submission process | Cites Perplexity's docs: PerplexityBot crawls; no submission process is described
+Proof | None | A section built on DevCommX's own prompt tracking (DATA REQUIRED)
+🛠️  PROBLEMS FIXED
+PROBLEM FLAGGED IN v1 | HOW THE MODIFICATION FIXES IT
+Near-verbatim copy of SEO Discovery's title | The keyword stays and the promise changes. Correcting the indexing myth is an angle none of the ranking guides take.
+'Indexed' was technically loose | Replaced with how Perplexity actually finds pages: PerplexityBot 'surfaces and links websites', respects robots.txt, and isn't used for training. Perplexity-User 'generally ignores robots.txt'.
+Nothing separated it from the other guides | Adds a section based on your own prompt tracking. Until that data exists the page is BLOCKED: without it, this is guide number ten in a crowded SERP.
+Overlapped the LLMO checklist and the AEO playbook | Kept to Perplexity-specific behaviour only. It links to the checklist for general LLMO work.
+📐  ARTICLE SPEC
+Word count | 1,700-2,000
+Format | Platform guide plus an original citation-tracking section
+Must include | Quotes from Perplexity's crawler docs; a robots.txt snippet; the JS-rendering check; your own tracking results over N prompts
+Schema | Article + HowTo + FAQPage (+ Dataset once the tracking data is added)
+Internal links | → /blogs/llmo-checklist-best-llmo-tools-2026 · → /resources/seo-aeo-geo-playbook · → /aeo-services
+CTA | Free GTM audit
+🧱  OUTLINE  (H2 structure)
+H2 · 1 | The short answer: there's no Perplexity index to submit to
+H2 · 2 | How Perplexity finds pages: PerplexityBot vs Perplexity-User
+H2 · 3 | Step 1: make sure it can reach you
+H2 · 4 | Step 2: make pages easy to quote
+H2 · 5 | Step 3: be on the sources it cites
+H2 · 6 | Step 4: track your citations
+H2 · 7 | What we found tracking [N] prompts (DEVCOMMX DATA)
+H2 · 8 | FAQ
+🔑  KEYWORDS & AI-ANSWER TARGETS
+PRIMARY KEYWORD | Perplexity SEO
+Secondary keywords | how to get cited by Perplexity; Perplexity citations; PerplexityBot robots.txt; rank in Perplexity
+PAA / FAQ targets | Can I submit my website to Perplexity? · Does Perplexity respect robots.txt? · Is PerplexityBot used for AI training?
+Consolidation note | BLOCKED ON DATA. Run the prompt tracking before publishing. The draft marks exactly where the results go.
+📈  PROJECTED RE-SCORE
+CHECK | SCORE | MAX | RATING
+Clarity & Specificity | 5 | 5 | ✅ PASS
+Audience Relevance | 4 | 5 | ✅ PASS
+Search Demand & Keyword Fit | 4 | 5 | ✅ PASS
+Originality & Cannibalisation | 4 | 5 | ✅ PASS
+Value Depth | 5 | 5 | ✅ PASS
+TOTAL: 22/25 → 4.4/5.0 | VALID  (was 3.6)
+
+#################### TAB: 05 How local businesses get rec
+TOPIC 5 — MODIFIED + MERGED #2  |  How local businesses get recommended by ChatGPT, Perplexity and Google AI: the local AEO playbook
+WAS 3.6/5.0  →  NOW 4.6/5.0  (+1.0)   ·   VALID   ·   ROLE: HUB: the parent page the /aeo-services/{city} set links up to   ·   CLUSTER: AEO: Local
+WHAT WAS BROKEN:  #5 scored 3.6/5 and #2 scored 2.6/5 (INVALID). Both are verbatim competitor titles (ClientsNow and PageTraffic), they're the same article, and both collide with your /aeo-services/{city} pages.
+🔄  BEFORE  →  AFTER
+ELEMENT | BEFORE  (rejected) | AFTER  (rewritten)
+Title | Two pages: 'AEO for Local Businesses…' + 'What Is The Best Way For Local Businesses To Get Mentioned By LLMs' | One page: 'How local businesses get recommended by ChatGPT, Perplexity and Google AI: the local AEO playbook'
+Primary keyword | Split across two pages; 'LLMs' is jargon owners don't use | 'AEO for local businesses', plus 'how to get my business recommended by ChatGPT'
+Angle | Two generic guides | A seven-step playbook based on where AI tools actually get local answers (Yext, 6.8M citations)
+Reader | Written for SEO practitioners | Written for the business owner who pays for the service
+Role | Competed with the city pages | The hub the city pages link up to (the blog explains, the city pages sell)
+🛠️  PROBLEMS FIXED
+PROBLEM FLAGGED IN v1 | HOW THE MODIFICATION FIXES IT
+Two verbatim competitor titles | One new title in the owner's words ('get recommended by ChatGPT'), not SEO jargon ('get mentioned by LLMs').
+#2 and #5 were the same article | Merged. #2's question becomes an H2 with a direct answer and an FAQPage entry, and #2 is retired.
+Collided with the /aeo-services/{city} pages | Recast as their parent page. It stays at the strategy level, links down to the city pages, and they link back up, so the pages support each other instead of competing.
+Generic advice with no evidence | Built on data: Yext (86% of citations from brand-managed sources; OpenAI leans on listings at 48.7%; Gemini on websites at 52.1%) and BrightLocal (45% of consumers use AI for local recommendations).
+📐  ARTICLE SPEC
+Word count | 2,000-2,200
+Format | Playbook with a platform-difference table and a monthly test routine
+Must include | Yext and BrightLocal data; a platform table; the seven steps; the absorbed #2 question as an H2; LocalBusiness schema
+Schema | Article + HowTo + FAQPage
+Internal links | ↓ /aeo-services/{city} (hub role) · → /aeo-services · → the competitor diagnostic (#1)
+CTA | Free GTM audit
+🧱  OUTLINE  (H2 structure)
+H2 · 1 | The short answer
+H2 · 2 | What's the best way for a local business to get recommended by ChatGPT? (absorbed from #2)
+H2 · 3 | Where AI tools get local answers: the data
+H2 · 4 | How ChatGPT, Gemini and Perplexity differ (table)
+H2 · 5 | The seven-step local AEO playbook
+H2 · 6 | What matters less than people think
+H2 · 7 | Test it monthly
+H2 · 8 | FAQ
+🔑  KEYWORDS & AI-ANSWER TARGETS
+PRIMARY KEYWORD | AEO for local businesses
+Secondary keywords | how to get my business recommended by ChatGPT; local AI search optimization; local business AI visibility
+PAA / FAQ targets | How do I get my business recommended by ChatGPT? · Does Google Business Profile affect AI search? · Do reviews matter for AI recommendations?
+Consolidation note | Note: the brand book names B2B SaaS leaders as the buyer, but the city pages sell AEO to local businesses. This page follows the city pages. Confirm that's intended.
+📈  PROJECTED RE-SCORE
+CHECK | SCORE | MAX | RATING
+Clarity & Specificity | 5 | 5 | ✅ PASS
+Audience Relevance | 5 | 5 | ✅ PASS
+Search Demand & Keyword Fit | 4 | 5 | ✅ PASS
+Originality & Cannibalisation | 4 | 5 | ✅ PASS
+Value Depth | 5 | 5 | ✅ PASS
+TOTAL: 23/25 → 4.6/5.0 | VALID  (was 3.6)
+
+#################### TAB: 06 Technical SEO vs content SEO
+TOPIC 6 — REFRAMED (was INVALID)  |  Technical SEO vs content SEO for AI search: which one gets you cited?
+WAS 2.4/5.0  →  NOW 4.0/5.0  (+1.6)   ·   VALID   ·   ROLE: Budget-decision piece that points readers to the AEO line   ·   CLUSTER: AEO: Technical vs Content
+WHAT WAS BROKEN:  Scored 2.4/5 (INVALID). Generic evergreen head term, a template subtitle, and no AI-search angle. The third time this pattern has come in.
+🔄  BEFORE  →  AFTER
+ELEMENT | BEFORE  (rejected) | AFTER  (rewritten)
+Title | Technical SEO vs Content SEO: Features, Benefits & Differences | Technical SEO vs content SEO for AI search: which one gets you cited?
+Primary keyword | 'technical SEO vs content SEO' (saturated, beginner intent) | 'technical SEO for AI search', a narrower version of the same query with less competition
+Angle | A definitions explainer anyone could write | Where to spend when the goal is being cited by AI, plus the third factor neither discipline covers
+Reader | SEO beginners | Marketing leads deciding whether to fund technical fixes or content
+Positioning | No AI angle, off-positioning for an AEO line | Built around AI search, so it leads into the AEO service line
+🛠️  PROBLEMS FIXED
+PROBLEM FLAGGED IN v1 | HOW THE MODIFICATION FIXES IT
+'Features, Benefits & Differences' is a product template | Replaced with a decision question the reader actually has.
+No AI-search angle | Every comparison is judged by its effect on AI citation: JS rendering (Vercel), crawler access per bot, extractability (GEO study).
+Identical to every competing explainer | Adds the factor neither discipline owns, off-site mentions (Ahrefs: 0.664 correlation), and a way to diagnose which one to fund first.
+Why reframe rather than drop | The budget question is real and on-positioning once it's about AI search. Only the generic framing was the problem.
+📐  ARTICLE SPEC
+Word count | 1,500-1,700
+Format | Comparison piece with a decision table
+Must include | Vercel JS findings; the per-bot robots.txt check; a technical vs content vs mentions table; an 'if X, fund Y first' decision rule
+Schema | Article + FAQPage
+Internal links | → /blogs/llmo-vs-seo-vs-geo-vs-aeo · → the competitor diagnostic (#1) · → /aeo-services
+CTA | Free GTM audit
+🧱  OUTLINE  (H2 structure)
+H2 · 1 | The short answer
+H2 · 2 | What each one means for AI search
+H2 · 3 | Technical: can AI read you?
+H2 · 4 | Content: is it worth citing?
+H2 · 5 | The third factor neither covers: mentions
+H2 · 6 | Comparison table
+H2 · 7 | How to decide where to spend first
+H2 · 8 | FAQ
+🔑  KEYWORDS & AI-ANSWER TARGETS
+PRIMARY KEYWORD | technical SEO for AI search
+Secondary keywords | technical SEO vs content SEO; does technical SEO matter for LLMs; AI crawler JavaScript rendering
+PAA / FAQ targets | Does technical SEO matter for AI search? · Do AI crawlers render JavaScript? · Should I invest in technical SEO or content first?
+Consolidation note | Reframed rather than dropped because you asked for all drafts. If calendar space is tight, this is the first one to cut.
+📈  PROJECTED RE-SCORE
+CHECK | SCORE | MAX | RATING
+Clarity & Specificity | 5 | 5 | ✅ PASS
+Audience Relevance | 4 | 5 | ✅ PASS
+Search Demand & Keyword Fit | 3 | 5 | ⚠️ WARN
+Originality & Cannibalisation | 4 | 5 | ✅ PASS
+Value Depth | 4 | 5 | ✅ PASS
+TOTAL: 20/25 → 4.0/5.0 | VALID  (was 2.4)
+
+#################### TAB: 07 White label AEO for agencies
+TOPIC 7 — MODIFIED (ON HOLD)  |  White label AEO for agencies: how to choose a partner to add AI search to your offer
+WAS 3.4/5.0  →  NOW 4.0/5.0  (+0.6)   ·   VALID   ·   ROLE: Agency buyer's guide: held until the offer is confirmed   ·   CLUSTER: White Label / Agency
+WHAT WAS BROKEN:  Scored 3.4/5. Near-verbatim SEO Discovery title in a saturated white-label SEO SERP, and no white-label offer found on devcommx.com.
+🔄  BEFORE  →  AFTER
+ELEMENT | BEFORE  (rejected) | AFTER  (rewritten)
+Title | How to Choose the Right White Label SEO Outsourcing Partner for Your Agency | White label AEO for agencies: how to choose a partner to add AI search to your offer
+Primary keyword | 'white label SEO' (saturated with vendors) | 'white label AEO' (almost no competition yet)
+Angle | 'How to choose a partner (hint: us)' | A neutral buyer's guide with seven criteria and a red-flags list
+DevCommX claim | Implied an offer that may not exist | Makes no claim that DevCommX sells white-label. The CTA is left as a placeholder
+Status | Would be published regardless of the offer | ON HOLD until you confirm the offer exists
+🛠️  PROBLEMS FIXED
+PROBLEM FLAGGED IN v1 | HOW THE MODIFICATION FIXES IT
+Near-verbatim copy of SEO Discovery's title | Moved from white-label SEO, where vendors dominate, to white-label AEO, where there's little competition.
+Would attract agency buyers you may not serve | Written as a neutral buyer's guide that doesn't claim DevCommX offers white-label. If there's no offer, the page is still useful, but the CTA needs to change.
+'How to choose (us)' reads as self-serving | Seven criteria plus a red-flags section. It states plainly that nobody can guarantee an AI citation.
+No reason for an agency to act now | The demand is sourced: BrightLocal (45% of consumers use AI for recommendations) and Pew (clicks fall from 15% to 8% when an AI summary appears).
+📐  ARTICLE SPEC
+Word count | 1,500-1,700
+Format | Buyer's guide: criteria, questions to ask, red flags
+Must include | Seven criteria; first-call questions; red flags including 'guaranteed citations'; no claim about DevCommX's offer
+Schema | Article + FAQPage
+Internal links | → the competitor diagnostic (#1) · → /aeo-services
+CTA | [CONFIRM OFFER] placeholder
+🧱  OUTLINE  (H2 structure)
+H2 · 1 | The short answer
+H2 · 2 | Why clients are asking agencies about AI search now
+H2 · 3 | Seven criteria for choosing a white-label AEO partner
+H2 · 4 | Questions to ask on the first call
+H2 · 5 | Red flags
+H2 · 6 | FAQ
+🔑  KEYWORDS & AI-ANSWER TARGETS
+PRIMARY KEYWORD | white label AEO
+Secondary keywords | white label SEO; white label AI search optimization; AEO reseller; agency AI search services
+PAA / FAQ targets | What is white label AEO? · Can an agency offer AI search optimization? · Can anyone guarantee a ChatGPT citation?
+Consolidation note | ON HOLD. Confirm whether DevCommX sells white-label SEO or AEO. If not, don't publish, or rewrite the CTA to send agencies elsewhere.
+📈  PROJECTED RE-SCORE
+CHECK | SCORE | MAX | RATING
+Clarity & Specificity | 5 | 5 | ✅ PASS
+Audience Relevance | 3 | 5 | ⚠️ WARN
+Search Demand & Keyword Fit | 4 | 5 | ✅ PASS
+Originality & Cannibalisation | 4 | 5 | ✅ PASS
+Value Depth | 4 | 5 | ✅ PASS
+TOTAL: 20/25 → 4.0/5.0 | VALID  (was 3.4)
+
+#################### TAB: 08 SEO vs Google Ads in 2026
+TOPIC 8 — MODIFIED  |  SEO vs Google Ads in 2026: when paid wins, when organic wins, and what AI search changes
+WAS 3.2/5.0  →  NOW 4.4/5.0  (+1.2)   ·   VALID   ·   ROLE: Budget-decision piece, credible because it concedes where Ads wins   ·   CLUSTER: Budget Allocation
+WHAT WAS BROKEN:  Scored 3.2/5. Verbatim SEO Discovery headline, and an AEO seller asking 'SEO or Ads?' will be read as having decided the answer in advance.
+🔄  BEFORE  →  AFTER
+ELEMENT | BEFORE  (rejected) | AFTER  (rewritten)
+Title | SEO vs Google Ads in the Age of AI: Which Delivers Better ROI? | SEO vs Google Ads in 2026: when paid wins, when organic wins, and what AI search changes
+Primary keyword | 'SEO vs Google Ads' (kept, strong volume) | Unchanged
+Angle | Implies SEO wins | Gives Ads a full section on where it wins, with sourced 2026 CPC and CPL figures
+Evidence | None | LocaliQ 2026 benchmarks, Pew, Ahrefs CTR study, Google Marketing Live, and a worked example labelled illustrative
+Proof | None | Placeholders for DevCommX's own CAC figures from both channels
+🛠️  PROBLEMS FIXED
+PROBLEM FLAGGED IN v1 | HOW THE MODIFICATION FIXES IT
+Verbatim copy of SEO Discovery's headline | The new title names both outcomes and the AI-search shift, a structure no competing page uses.
+Seller bias: an AEO firm will be expected to say 'SEO' | A full 'when Google Ads wins' section comes first. Giving that ground is what makes the rest credible.
+No numbers | Paid: LocaliQ 2026 (CPC $5.42, rising; CPL $66.69, falling for the first time in five years). Organic: Pew (clicks 15%→8% with an AI summary) and Ahrefs (34.5% lower CTR for position one).
+Missed that AI search affects Ads too | Covers ads in AI Overviews and AI Mode (Google Marketing Live 2025) alongside the organic changes.
+📐  ARTICLE SPEC
+Word count | 1,800-2,000
+Format | Decision guide with a comparison table and a worked cost example
+Must include | An Ads-first section; sourced benchmarks; an illustrative worked example (labelled); DevCommX CAC placeholders; a budget split by stage
+Schema | Article + FAQPage
+Internal links | → the competitor diagnostic (#1) · → /aeo-services
+CTA | Free GTM audit
+🧱  OUTLINE  (H2 structure)
+H2 · 1 | The short answer
+H2 · 2 | What changed in 2025-2026 for both channels
+H2 · 3 | When Google Ads wins
+H2 · 4 | When SEO and AEO win
+H2 · 5 | Comparison table
+H2 · 6 | The maths: a worked example (illustrative)
+H2 · 7 | How to split budget by stage
+H2 · 8 | FAQ
+🔑  KEYWORDS & AI-ANSWER TARGETS
+PRIMARY KEYWORD | SEO vs Google Ads
+Secondary keywords | SEO vs PPC ROI; organic vs paid search 2026; AI search impact on Google Ads
+PAA / FAQ targets | Is SEO or Google Ads better for ROI? · How much does Google Ads cost per click in 2026? · Are there ads in AI Overviews?
+Consolidation note | Needs DevCommX's own CAC data from both channels, or a client example with permission, before publishing.
+📈  PROJECTED RE-SCORE
+CHECK | SCORE | MAX | RATING
+Clarity & Specificity | 5 | 5 | ✅ PASS
+Audience Relevance | 4 | 5 | ✅ PASS
+Search Demand & Keyword Fit | 4 | 5 | ✅ PASS
+Originality & Cannibalisation | 4 | 5 | ✅ PASS
+Value Depth | 5 | 5 | ✅ PASS
+TOTAL: 22/25 → 4.4/5.0 | VALID  (was 3.2)
