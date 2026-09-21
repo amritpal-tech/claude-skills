@@ -1,0 +1,278 @@
+{
+  "slug": "managing-hybrid-ai-sales-team",
+  "title": "Coaching a Hybrid Outbound Team: What Changes When Half Your Pipeline Comes From AI SDRs",
+  "words": 1990,
+  "dimensions": [
+    {
+      "key": "content_quality",
+      "title": "Content Quality & Accuracy",
+      "weight": 0.18,
+      "flag": "Every external figure is attributed inline to a named institution, and I re-verified the two Gartner next-best-actions figures and the McKinsey 65-versus-23 split at source; the deductions are the Bridge Group numbers coming from gated-report summaries and an added qualifier on the 67 percent figure.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Sources",
+          "criterion": "Stat Accuracy & Source Quality",
+          "score": 4,
+          "max": 5,
+          "finding": "Eleven distinct figures, each attributed to a named institution with an href at the point of claim rather than pooled in a footer, which is a material improvement on the sibling drafts. I re-verified two claims the batch VERIFICATION log does not cover: 'Gartner found sales organisations providing AI-enabled next best actions are 2.6 times more likely to achieve commercial growth' and 'organisations prioritising AI upskilling for sellers are 2.4 times more likely to achieve strong revenue growth' both come from the same 20 May 2026 press release the post links, which surveyed 227 chief sales officers from August to September 2025. The McKinsey 65-versus-23 human-in-the-loop split is also real. Two deductions. The Bridge Group figures ('351 sales development implementations... near 45 dials a day producing about five quality conversations, with median tenure around 1.9 years and roughly 63 percent hitting quota') carry the report's own URL as though read at source, but VERIFICATION.md open item 4 records that they come from public summary pages because the report is gated, and nothing on the page tells the reader that. The McKinsey citation points at the undated /the-state-of-ai hub, which is refreshed annually, so the 65-versus-23 figure becomes unresolvable the moment that page rolls to a new edition."
+        },
+        {
+          "category": "Depth",
+          "criterion": "Practitioner Depth",
+          "score": 5,
+          "max": 5,
+          "finding": "This is management practice written by someone who has had to run the review, not a summary of advice. The single most operational line in the batch is the rejection rule: 'every rejection must produce a change. A rejected draft becomes an edit to a message pattern. A disqualified account becomes a change to a targeting rule. A review that ends in feedback but no system change has taught one person what the system will keep getting wrong at volume.' The intervention-rate argument names the failure a manager would otherwise read as a win: 'A near zero rate is not efficiency, it is an unstaffed quality gate, and it surfaces in the first metric a month later.' The four handoff fields (signal, problem in the prospect's words, disqualifier, next commitment) come with the consequence attached, 'Answering honestly books fewer meetings and better pipeline', and the redeployment section opens by naming the political reality: 'Answer it directly, or the team reads the roadmap as a redundancy notice.'"
+        },
+        {
+          "category": "Attribution",
+          "criterion": "Data Attribution",
+          "score": 5,
+          "max": 5,
+          "finding": "This draft is the library's best example of declining to invent a number and saying so. The central artefact is labelled before the reader reaches it: 'The table below is a design, not a measurement. It sets out how a sales development week should be reallocated once an AI SDR carries first touch.' That matches DATA_GAPS_topic6.md item 1 exactly, where the agent records that no published benchmark exists for how hours redistribute and that only the 'five quality conversations against 45 dials' cell is sourced. The same discipline holds for the other three unsourceable blocks: the three review tempos are framed as an instruction ('Run three loops at three tempos'), the two promoted metrics are given as definitions rather than benchmarks, and the redeployment tracks as 'Offer three tracks and name them', with no median, distribution or lift claimed for any of them. The post also declares its own genre in the second paragraph, 'What follows is an operating model, not a case study', which is the correct honest framing for a piece with no client data behind it."
+        },
+        {
+          "category": "Accuracy",
+          "criterion": "Technical Accuracy",
+          "score": 4,
+          "max": 5,
+          "finding": "The reasoning about the statistics is sound and in two places better than the statistics themselves. The 67 percent figure is inverted rather than restated: 'Invert that: the moments buyers still want a person are the ones they could not self serve, the hardest in the funnel.' The Gartner 2028 forecast is quoted exactly as published, 'AI agents will outnumber sellers ten to one by 2028, yet fewer than 40 percent of sellers will say agents improved their productivity', and read correctly as 'a management gap' rather than a technology verdict. The distinction between a metric and telemetry is drawn precisely: 'Dials per day, emails sent, sequence enrollments and connect rate stop being performance measures the moment the system, not the rep, controls them. Keep them as telemetry.' One slip. The post writes that Gartner 'found 67 percent of B2B buyers prefer a rep-free experience for at least part of the purchase'; the published finding is that 67 percent of B2B buyers prefer a rep-free experience, with no partial-purchase qualifier. The addition hedges downward rather than inflating, which is the safe direction, but it is still an unsourced modification of a quoted statistic."
+        },
+        {
+          "category": "Delivery",
+          "criterion": "Completeness",
+          "score": 5,
+          "max": 5,
+          "finding": "All seven H2s in the brief's outline appear in order, followed by the CTA section, and every 'must include' is delivered as a discrete block: the before-and-after week as the mandated table, the review cadence that replaces call-listening as the three tempos, the metrics that stop mattering under 'Retire the activity set', and the redeployment question as its own H2. The batch-specific instruction is also honoured, and it is the only one of its kind in this library: 'Schema must include a Person node for the named author to carry the experience claim' is satisfied by a standalone Person node in the graph and, unusually, by a visible 'About the author' block in the body. Word count lands at 1,990 against the brief's 1,600 to 2,000 band."
+        }
+      ]
+    },
+    {
+      "key": "seo",
+      "title": "SEO Optimization",
+      "weight": 0.18,
+      "flag": "One mandated secondary keyword never appears in the body at all, only in the schema keywords string, and the meta-description is 167 characters, the longest in the batch.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Keywords",
+          "criterion": "Primary Keyword Targeting",
+          "score": 3,
+          "max": 5,
+          "finding": "The primary placement is thorough: 'Managing hybrid AI sales team' is bolded as the first four words of the body, opens the 52-character meta-title, is the slug, leads the schema keywords, and appears verbatim in two H2s ('Managing Hybrid AI Sales Team Reviews: Stop Counting Activity, Start Reviewing Judgement' and 'Managing Hybrid AI Sales Team Metrics: The Ones That Stop Mattering and the Two That Start') and in one FAQ ('What metrics matter when managing hybrid AI sales team performance?'), four body occurrences in total. Two problems. The H1 does not contain it, because the brief fixes the name field verbatim as 'Coaching a Hybrid Outbound Team...'; DATA_GAPS_topic6.md item 10 records this as a brief conflict resolved in favour of the title instruction, so it is a documented trade-off rather than an oversight. The genuine miss is the fourth secondary: I searched the body with the JSON-LD stripped out and 'AI and human sales team structure' has zero occurrences. It exists only inside the schema keywords string, where a reader never sees it, while the brief requires each secondary at least once in the body. The other three land naturally, one each ('This is where SDR coaching becomes legible', 'AI SDR human oversight is not a ritual bolted onto an automated system', 'most outbound team management plans skip')."
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQ / People Also Ask",
+          "score": 5,
+          "max": 5,
+          "finding": "All three PAA targets appear word for word as H4s ('Do you still need SDRs if you use AI?', 'How do you manage a team using AI SDRs?', 'What do SDRs do when AI does outreach?'), joined by three genuine search-shaped additions, one of which carries the primary keyword and one of which answers the highest-intent operational query in the topic, 'How often should managers review AI SDR output?'. Answers run 45 to 50 words, the tightest and most consistent band in the batch and comfortably inside the extractable range. The answers refuse the easy framing too: 'Yes, but fewer of them doing different work' opens the first, and 'A review with no system change is theatre' closes the second."
+        },
+        {
+          "category": "Tables",
+          "criterion": "Comparison / Featured Snippet Tables",
+          "score": 5,
+          "max": 5,
+          "finding": "Seven data rows across four columns (Where the week goes, Before: the volume SDR week, After: the hybrid week, Who owns it now). I checked the header styling with a tag regex rather than a substring count, because a naive search for the characters '<th' returns 5 here by also matching the single '<thead>': there are exactly four real th elements and all four carry color:#1f2937. Each row is independently liftable as a complete answer, for example 'Handoff to the account executive | A calendar invite and a few CRM fields. | Trigger, problem, risk and next commitment, in writing. | Human owned and coached'. The fourth column is the differentiator, because it converts a before-and-after comparison into an ownership map, and the post supplies the extraction key immediately above it ('Ownership ambiguity is where hybrid teams fail first, so treat the last column as a contract') and the generalisation immediately below ('almost every retained task is invisible from a dashboard, so the review cadence must change with the workload')."
+        },
+        {
+          "category": "Links",
+          "criterion": "Internal & External Link Structure",
+          "score": 4,
+          "max": 5,
+          "finding": "Twenty-one anchors, none of them a bare URL, and thirteen of them sit in the article body rather than in the footers, which is the batch's best inline-citation ratio. Seven internal links, all drawn from the brief's verified menu with none invented, all with descriptive anchors, and the CTA correctly points at /contact-us rather than /contact. Six external anchors are placed at the point of claim, so a reader checking the 2.6x figure or the 67 percent figure does not have to scroll to a footer. The deduction is concentration and duplication: the fourteen external anchors resolve to only three hosts and eight of them are gartner.com, and all three Further Reading entries (Bridge Group, McKinsey, Gartner 10x) are then listed again in References with fuller labels, so six of the fourteen are pure repetition. Five blog links from an eighteen-item menu also leaves the obvious economics neighbours (ai-sdr-pricing, true-cost-of-outbound-ai-vs-agency-vs-in-house, ai-sdr-roi-calculator-cost-per-meeting) unlinked."
+        },
+        {
+          "category": "Technical",
+          "criterion": "Technical SEO",
+          "score": 3,
+          "max": 5,
+          "finding": "Most checks pass and I ran them as code rather than by eye: meta-title 52 characters, no h1 in the body (correct, the Webflow template renders the name field), zero em dashes, zero en dashes, zero HTML comments, zero bare-URL anchors, no /contact, and the slug matches both the schema url and the mainEntityOfPage @id. The defect is the description pair. The CMS meta-description is 167 characters, the longest in the batch and well past the truncation point: 'How managing a hybrid AI sales team works in practice: the SDR week before and after, the review cadence that replaces call listening, and the two metrics that matter.' The tail that gets cut is 'the two metrics that matter', which is the post's actual differentiator. Worse, the schema description is a different 172-character string ('An operating model for managing a hybrid AI sales team: the rep week before and after...'), so the page hands a parser two competing descriptions."
+        }
+      ]
+    },
+    {
+      "key": "geo_aeo",
+      "title": "AI Citation Readiness",
+      "weight": 0.2,
+      "flag": "The most statistically citable draft in the batch and the only one with a visible author block backed by a Person node, but that node's url resolves to the company page rather than the author.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Definitions",
+          "criterion": "Direct Definitions",
+          "score": 5,
+          "max": 5,
+          "finding": "The opening sentence is a complete, liftable answer to the head query with the split stated in the next breath: 'Managing hybrid AI sales team performance means supervising judgement instead of counting activity. When AI SDRs own sourcing, sequencing and first touch, the human rep owns qualification, objection handling and the handoff to an account executive.' Both promoted metrics are given as textbook definitions an engine can quote whole: 'Account executive acceptance rate is the share of booked meetings the receiving AE agrees were qualified, scored by the AE rather than the booker' and 'Intervention rate is how often the rep edits, rejects or overrides the system.' The cadence is compressed into one citable line in the FAQ, 'Daily for exceptions, weekly for judgement, monthly for the system', and the boundary of the old role is stated as a rule: 'If your definition of what an SDR does in sales still centres on activity, the role has moved out from under it.'"
+        },
+        {
+          "category": "Structure",
+          "criterion": "Structured Data for AI Parsing",
+          "score": 4,
+          "max": 5,
+          "finding": "Dense parseable structure: a seven-by-four table, a six-question FAQPage, a three-node @graph including the Person node the brief mandated, three named review tempos, four named handoff fields, three named redeployment tracks, a named retired-metric set and eight bolded lead-ins that function as a skeleton. The deduction is the batch-wide one and it bites harder here than in the siblings, because this post is built almost entirely out of enumerations. I counted the list elements: there are exactly two ul elements in the markup and both are the Further Reading and References blocks, so the three tempos, the four handoff fields and the three tracks are all delivered as sentences inside paragraphs, leaving a parser to infer where each set begins and ends."
+        },
+        {
+          "category": "Authority",
+          "criterion": "Statistical Authority",
+          "score": 5,
+          "max": 5,
+          "finding": "By a wide margin the most re-citable post in the batch. Eleven figures from four named institutions, each with a live href at the claim rather than in a footer: 351 implementations, 45 dials a day, about five quality conversations, 1.9 year median tenure and roughly 63 percent attainment from The Bridge Group; 67 percent rep-free preference from Gartner's March 2026 survey; 65 percent against 23 percent human-in-the-loop validation from McKinsey; 2.6 times and 2.4 times from Gartner's May 2026 CSO survey; and ten-to-one agents by 2028 against under 40 percent reporting productivity gains. Every one is a named-institution primary or press-release figure rather than a vendor survey, and the References block restates which figure each source supports, so an engine reusing any single number can resolve it without guessing."
+        },
+        {
+          "category": "Entity",
+          "criterion": "Entity Association",
+          "score": 4,
+          "max": 5,
+          "finding": "This is the draft that fixes the author gap both sibling validations flag. Sumit Nautiyal appears in the visible text, not only in the JSON-LD: an 'About the author' H3 states 'Sumit Nautiyal is VP of Revenue Operations and GTM Engineering at DevCommX. He designs and runs AI SDR systems that operate alongside human sales development teams, and owns the review cadence, handoff standard and oversight model described above', which binds the person to this specific topic rather than to the company in general. The graph backs it with a Person node carrying jobTitle, worksFor and a knowsAbout array ('AI SDR operating models', 'outbound team management', 'SDR coaching', 'revenue operations', 'GTM engineering'). DevCommX itself is bound to the topic with a mechanism each time ('DevCommX builds the AI SDR systems that remove most of that work, and the management question arrives within weeks'). The deduction is that the Person node's url is https://www.linkedin.com/company/devcommx, an organisation page, with no sameAs, so the entity the brief required to carry the experience claim resolves to the employer rather than to the author."
+        },
+        {
+          "category": "Distinctiveness",
+          "criterion": "GEO Distinctiveness",
+          "score": 5,
+          "max": 5,
+          "finding": "Owns a cluster no sibling competes for, the manager's job rather than the buyer's or the operator's, and it declares that boundary in the second paragraph: 'What follows is an operating model, not a case study.' It then routes every adjacent question out instead of absorbing it: architecture to the definitive guide to AI SDRs, role definition to what an SDR does in sales, outcomes to AI SDR reply rates and ROI, metric definitions to outbound sales KPIs and metrics, and manual cadence mechanics to the B2B outbound cadence guide. The two promoted metrics, AE acceptance rate and intervention rate, are a genuinely distinctive pair that nothing else in the library defines."
+        }
+      ]
+    },
+    {
+      "key": "brand",
+      "title": "Brand Positioning",
+      "weight": 0.15,
+      "flag": "The permitted claim is used exactly once but generalised with 'Where DevCommX has run this model', and there is no economics content and only one generic conversion point in 1,990 words.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Narrative",
+          "criterion": "Differentiation Narrative",
+          "score": 4,
+          "max": 5,
+          "finding": "The strongest differentiation move is the reframe in the opening, which makes the category's blind spot the subject: 'Most outbound leaders inherit a coaching system built for a job that no longer exists... if the machine sends, what is the manager for?' The ownership model is stated in full at the close ('DevCommX builds autonomous, signal-based AI SDR systems that your team owns'), and the genuinely DevCommX-shaped claim follows it: 'we set the review cadence, handoff standard and metrics that keep a hybrid team honest.' The deduction is that unlike the account-safety sibling, where the owned-infrastructure model was the argument itself, here the argument is vendor-neutral management practice that would hold equally for any AI SDR product, and the differentiator only arrives in the final paragraph. The obvious structural hook, that a system the client owns is the one a manager can actually change when a review produces a rejection, is available in the rejection rule and never connected."
+        },
+        {
+          "category": "Proof",
+          "criterion": "Proof Metrics & Evidence",
+          "score": 4,
+          "max": 5,
+          "finding": "I counted the occurrences: '40+ qualified demos in ~6 weeks' appears exactly once, and no other DevCommX performance number, client, industry, percentage lift, deployment count or headcount figure appears anywhere in the post, which is exactly what the batch gate and DATA_GAPS_topic6.md require. It is also correctly subordinated to the post's argument rather than used as a trophy: 'the visible outcome has been volume of the right shape, for example 40+ qualified demos in ~6 weeks, but acceptance rate is what predicts it.' The deduction is the framing around it. 'Where DevCommX has run this model' and 'for example' both imply a population of deployments standing behind a single permitted data point, which reads as a generalisation the post has no basis to make and which DATA_GAPS explicitly says is not claimed. Rewriting it as one instance rather than an illustrative sample would cost nothing."
+        },
+        {
+          "category": "Pricing",
+          "criterion": "Pricing Transparency",
+          "score": 2,
+          "max": 5,
+          "finding": "There is no pricing, cost or economic content of any kind, and no quantity anywhere that is not a cited third-party statistic. The brief does not ask for pricing, and routing cost out is the right call, but this post does not route it out either: of the three cost-focused pages sitting in its own link menu (ai-sdr-pricing, true-cost-of-outbound-ai-vs-agency-vs-in-house, ai-sdr-roi-calculator-cost-per-meeting) none is linked. The one place the argument reaches for economics it stays qualitative: 'With median SDR tenure near 1.9 years, an ambiguous answer costs you the people you most need to keep.' That is a real cost argument with a borrowed statistic and no price attached, and a redeployment section is the natural place for a reader to ask what the headcount change is actually worth."
+        },
+        {
+          "category": "CTA",
+          "criterion": "CTA Quality",
+          "score": 3,
+          "max": 5,
+          "finding": "One conversion point in 1,990 words and it is the weakest anchor in the batch: 'Book a GTM strategy call to map this model to your pipeline and your headcount', pointing at /contact-us. The surrounding sentence does specify what DevCommX would do ('we set the review cadence, handoff standard and metrics'), but the offer is a call rather than an artefact, where the two sibling drafts both promise something concrete back. The post has just built two things a reader would want as a document, the four-column ownership contract and the four-field handoff standard, and neither is offered. The natural mid-body conversion point, immediately after the table where the reader is told to 'treat the last column as a contract', is left empty."
+        },
+        {
+          "category": "Slot",
+          "criterion": "Content Differentiation",
+          "score": 5,
+          "max": 5,
+          "finding": "Fills a slot nothing else in the library holds. Every adjacent page addresses the buyer, the operator or the economics; this is the only one addressed to the manager of a team, and the only one that treats the human rep's remaining job as the subject rather than as a residual. The reframe it sells, 'Call listening worked because the unit of work was a call. When the unit becomes a decision, the review has to sample decisions', is a genuinely reusable idea, and the before-and-after ownership table plus the two promoted metrics are assets no sibling post contains."
+        }
+      ]
+    },
+    {
+      "key": "structure",
+      "title": "Structure & Readability",
+      "weight": 0.14,
+      "flag": "Zero in-body images or diagrams and zero list markup, so a post made almost entirely of three-part and four-part enumerations delivers all of them as prose.",
+      "flag_type": "warn",
+      "criteria": [
+        {
+          "category": "Headings",
+          "criterion": "Heading Architecture",
+          "score": 4,
+          "max": 5,
+          "finding": "Eight H2s reproduce the brief's seven-part outline in order and add the CTA section, then four H3s (About the author, Further Reading, References, FAQ) and six H4s under the FAQ, with no skipped levels and correctly no h1 in the body. The deduction is flatness combined with keyword weight. Not one argument H2 carries an H3, so the three review tempos, the four handoff fields and the three redeployment tracks, all of which are exactly the enumerations a reader returns to, have no anchor to jump to. Two of the eight H2s are also visibly built for the keyword rather than the reader: 'Managing Hybrid AI Sales Team Metrics: The Ones That Stop Mattering and the Two That Start' runs fourteen words and states the section twice."
+        },
+        {
+          "category": "Visuals",
+          "criterion": "Visual Elements",
+          "score": 2,
+          "max": 5,
+          "finding": "I counted zero img, zero svg and zero figure elements in the body. The only in-body visual asset is the seven-row table, and the OG image never appears in the article. This is the rubric's ceiling for a draft with no in-body image or diagram, and it is the most costly instance in the batch because this post has three separately drawable ideas: the before-and-after reallocation of the week, which is a bar or flow comparison the table already holds the data for; the three review loops at three tempos, which is a nested cadence diagram; and the three redeployment tracks branching off the automated role."
+        },
+        {
+          "category": "Scannability",
+          "criterion": "Scannability",
+          "score": 4,
+          "max": 5,
+          "finding": "Eight strong elements act as paragraph ledes and read as a usable outline on their own: 'Three responsibilities survive automation intact.', 'Run three loops at three tempos.', 'every rejection must produce a change.', 'Coach the handoff note against four fields.', 'Retire the activity set.', 'Promote two.', 'Offer three tracks and name them.' With the table and the six-question FAQ, a skim reader gets the whole operating model. The deduction is that there is no list markup anywhere in the body, so each of those numbered promises is then paid off inside a run of sentences, and 'Coach the handoff note against four fields' is followed by four separate sentences a reader has to count for themselves."
+        },
+        {
+          "category": "Flow",
+          "criterion": "Reading Level & Flow",
+          "score": 5,
+          "max": 5,
+          "finding": "Short declarative sentences with the argument carried in the transitions rather than announced: 'That is a job description, not a scoreboard: most of a rep's effort produced no conversation, and that residue is what software absorbs.' The post repeatedly reframes rather than restates, 'Call listening worked because the unit of work was a call. When the unit becomes a decision, the review has to sample decisions', and it states the reader's objection before answering it, 'This is the question most outbound team management plans skip and the one reps ask first.' It also resists the category's tone on both sides, avoiding both automation triumphalism and scaremongering: 'That gap is a management gap.'"
+        },
+        {
+          "category": "Length",
+          "criterion": "Content Length & Density",
+          "score": 5,
+          "max": 5,
+          "finding": "1,990 words against the brief's 1,600 to 2,000 band, verified on the tag-stripped body, sitting just inside the top of the range, with a 9-minute reading time in the CMS. Density is high with no padding: seven H2 sections each carry a distinct, named deliverable, the table replaces what would otherwise be several hundred words of prose comparison, and the adjacent topics that would have inflated it are linked out rather than restated."
+        }
+      ]
+    },
+    {
+      "key": "schema",
+      "title": "JSON-LD Schema",
+      "weight": 0.15,
+      "flag": "Byte-identical across both locations, FAQ matches the visible block word for word, dates agree with both CMS fields, and the brief-mandated Person node is correctly built; the defects are its url and the publisher logo.",
+      "flag_type": "pass",
+      "criteria": [
+        {
+          "category": "Article",
+          "criterion": "Article Type Completeness",
+          "score": 5,
+          "max": 5,
+          "finding": "The BlogPosting node carries all twelve expected properties: @id, @type, headline, description, url, datePublished, dateModified, keywords, image, author, publisher and mainEntityOfPage. I compared the headline to the CMS name field programmatically and they are identical character for character, including the full 'Coaching a Hybrid Outbound Team: What Changes When Half Your Pipeline Comes From AI SDRs'. The keywords string carries the brief's primary plus all four mandated secondaries, and author is a reference to the same #author @id the standalone Person node uses rather than a duplicated inline object."
+        },
+        {
+          "category": "FAQ",
+          "criterion": "FAQPage Structure",
+          "score": 5,
+          "max": 5,
+          "finding": "Six entries against a three-question minimum. I parsed every one: each is @type Question with an acceptedAnswer of @type Answer carrying a text property, all under a distinct '...#faq' @id. Answer lengths run 45 to 50 words, the tightest spread of the three validated drafts, and all six sit inside the extractable band. The first three mirror the brief's PAA targets exactly."
+        },
+        {
+          "category": "Alignment",
+          "criterion": "Schema-to-Content Alignment",
+          "score": 4,
+          "max": 5,
+          "finding": "Verified mechanically, not by eye. The schema-markup field and the script embed inside post-body are byte-identical at 4,809 characters each. I extracted all six visible H4 and answer-paragraph pairs, unescaped the HTML entities, and compared them to the FAQPage entries: all six names and all six acceptedAnswer.text values match word for word with no drift. Dates are consistent in all four places, with datePublished and dateModified both reading 2026-09-15 and the CMS date and last-updated fields both reading 2026-09-15T00:00:00.000Z, which matches the actual draft date recorded in DATA_GAPS_topic6.md, so there is no stale-date defect. The Person node's name and jobTitle also match the author-name and author-title CMS fields exactly. The one misalignment is the description: the schema carries a different 172-character string from the 167-character CMS meta-description, so the page presents two descriptions rather than one."
+        },
+        {
+          "category": "Graph",
+          "criterion": "@graph Implementation",
+          "score": 5,
+          "max": 5,
+          "finding": "A proper @graph array with three nodes, each anchored to the canonical URL with a distinct fragment @id ('...managing-hybrid-ai-sales-team#article', '#author' and '#faq'), so a parser can address the article, the author and the FAQ independently. The author pattern is the correct one and the one the brief specifically demanded: BlogPosting.author is a Person object carrying the same #author @id as the standalone top-level Person node, which also adds worksFor, a five-entry knowsAbout array and a description, so the experience claim attaches to an addressable entity instead of a bare name string. mainEntityOfPage points at the bare canonical as a WebPage."
+        },
+        {
+          "category": "Rich results",
+          "criterion": "Rich Result Eligibility",
+          "score": 3,
+          "max": 5,
+          "finding": "ImageObject with explicit width 1200 and height 630 is present, the publisher Organization carries url and logo, and the dates are honest and internally consistent. Two defects, and the second is specific to this draft. The publisher logo reuses the 1200x630 blog OG image file rather than a logo asset, so it is neither square nor a brand mark, which is the batch-wide defect. More seriously for a post whose entire schema differentiator is the author entity, the Person node's url is 'https://www.linkedin.com/company/devcommx', a company page rather than a personal profile, and there is no sameAs array, so the node that exists specifically to carry an individual's experience claim resolves to the employer. A Person with no resolvable personal identifier is the weakest form of that node."
+        }
+      ]
+    }
+  ],
+  "top_fixes": [
+    "Put the missing secondary keyword in the body. The brief requires each secondary at least once in the body, and 'AI and human sales team structure' has zero occurrences outside the schema keywords string. The 'Three responsibilities survive automation intact' paragraph and the table lead-in are both natural homes for it, since both already describe exactly that structure.",
+    "Give the Person node a personal identifier. The brief mandated the Person node to carry the author's experience claim, but its url is https://www.linkedin.com/company/devcommx, an organisation page, with no sameAs. Point url at Sumit Nautiyal's own profile and add sameAs so the entity resolves to the author rather than the employer; the visible About-the-author block already does its half of the job.",
+    "Cut the meta-description to under 155 characters and reuse the same string in the schema. It is currently 167 characters and truncates at 'the two metrics that matter', the post's actual differentiator, and the schema carries a different 172-character description, so the page presents two competing summaries to a parser.",
+    "Fix two citation details. The post says Gartner 'found 67 percent of B2B buyers prefer a rep-free experience for at least part of the purchase'; the published finding carries no partial-purchase qualifier, so drop the addition. And VERIFICATION.md open item 4 records that the Bridge Group figures (351 implementations, 45 dials, 1.9 year tenure, 63 percent attainment) come from public summary pages rather than the gated report, which the page presents as read at source; the McKinsey link also points at the undated hub URL, so name the edition.",
+    "Add one diagram and list markup, and a second conversion point. Visual Elements is at the rubric floor with zero images and zero SVGs while three ideas are directly drawable, the body contains no ul or ol at all so the three tempos, four handoff fields and three tracks are all prose, and the only CTA is a generic 'Book a GTM strategy call' at the end. Offering the four-column ownership contract or the four-field handoff standard as a document, right after the table, fixes the last of those."
+  ]
+}
