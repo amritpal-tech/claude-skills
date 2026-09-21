@@ -65,6 +65,9 @@ def main():
     ap.add_argument("files", nargs="+")
     ap.add_argument("--apply", action="store_true")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--update", action="store_true",
+                    help="PATCH slugs that already exist instead of skipping them. "
+                         "Needed to carry a local correction to an item already in the CMS.")
     a = ap.parse_args()
 
     token = os.environ.get("WEBFLOW_TOKEN")
@@ -81,20 +84,47 @@ def main():
     have = existing_slugs(token)
     print(f"  {len(have)} items already in the collection\n")
 
-    todo, skip = [], []
+    todo, skip, upd = [], [], []
     for f, d in drafts:
-        (skip if d["fieldData"]["slug"] in have else todo).append((f, d))
+        slug = d["fieldData"]["slug"]
+        if slug not in have:
+            todo.append((f, d))
+        elif a.update:
+            upd.append((f, d, have[slug]))
+        else:
+            skip.append((f, d))
     for f, d in skip:
         print(f"  SKIP (already exists) {d['fieldData']['slug']}")
+    for f, d, _ in upd:
+        print(f"  UPDATE {d['fieldData']['slug']}")
     for f, d in todo:
         print(f"  PUSH {d['fieldData']['slug']}")
-    print(f"\n{len(todo)} to create, {len(skip)} already present")
+    print(f"\n{len(todo)} to create, {len(upd)} to update, {len(skip)} skipped")
 
     if not a.apply:
         print("\ndry run, nothing written. re-run with --apply")
         return
 
-    created, failed = [], []
+    updated, failed = [], []
+    # Updates run first and one at a time. A PATCH preserves fields the local
+    # file does not carry (Webflow-hosted main-image and thumbnail-image), so
+    # sending only our fields does not strip them.
+    for n, (f, d, item_id) in enumerate(upd, 1):
+        fd = d["fieldData"]
+        print(f"[u{n}/{len(upd)}] {fd['slug']}", flush=True)
+        req("PATCH", f"/collections/{COLLECTION}/items/{item_id}", token,
+            {"isDraft": True, "fieldData": fd})
+        back = req("GET", f"/collections/{COLLECTION}/items/{item_id}", token)["fieldData"]
+        # og-image never round-trips: Webflow re-hosts it and issues a new fileId.
+        bad = [k for k in fd if k != "og-image" and back.get(k) != fd[k]]
+        if bad:
+            print(f"    MISMATCH after update: {bad}", file=sys.stderr)
+            failed.append(fd["slug"])
+        else:
+            updated.append(fd["slug"])
+        time.sleep(1)
+
+    created = []
     for n, (f, d) in enumerate(todo, 1):
         fd = d["fieldData"]
         print(f"[{n}/{len(todo)}] {fd['slug']}", flush=True)
@@ -112,12 +142,16 @@ def main():
         else:
             created.append((fd["slug"], r["id"]))
 
-    print(f"\ncreated {len(created)}, failed {len(failed)}")
+    print(f"\nupdated {len(updated)}, created {len(created)}, failed {len(failed)}")
+    for s in updated:
+        print(f"  UPDATED {s}")
     for s, i in created:
         print(f"  {s}  id={i}")
     if failed:
         print("failed:", ", ".join(failed)); sys.exit(1)
-    print("\nAll created as DRAFTS. Publishing is a separate, explicit step.")
+    print("\nAll writes staged as DRAFTS. Publishing is a separate, explicit step.")
+    print("Note: an item published earlier keeps its lastPublished timestamp and stays\n"
+          "live until the site is republished or the item is explicitly unpublished.")
 
 
 if __name__ == "__main__":
