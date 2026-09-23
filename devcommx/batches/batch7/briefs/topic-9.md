@@ -20,9 +20,12 @@ sales workflow automation; automate B2B sales; sales process automation steps; B
 5. Where the process lives: tooling and ownership
 6. Measuring whether it actually worked
 7. The four ways a sales automation process fails
-8. FAQ
+8. Automate Your Sales Process With DevCommX
+9. FAQ
 
-At least two H2s must contain the primary keyword verbatim.
+At least two H2s must contain the primary keyword verbatim. The list above already
+satisfies this; do not weaken it. The final H2 before FAQ is the CTA section the
+draft spec requires, and its paragraph ends at /contact-us.
 
 ## FAQ / PAA targets, mirror exactly into the FAQPage schema
 What is the sales automation process? · What should you automate in sales? · What should you never automate in sales?

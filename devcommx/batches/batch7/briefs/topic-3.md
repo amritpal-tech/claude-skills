@@ -18,14 +18,17 @@ published posts. Link no service page. Commercial anchors point at `/contact-us`
 1. The short answer: citation share is measurable, citation cause is not
 2. Why your own visibility number tells you almost nothing on its own
 3. Building the prompt set that represents a real buying decision
-4. What to log per prompt, per engine, per competitor
+4. What to log for competitor AI citations: per prompt, per engine, per competitor
 5. Calculating competitor citation share
 6. Reading the result: the four patterns worth acting on
-7. Where the tools help, and where they stop
+7. Where the tools help with competitor AI citations, and where they stop
 8. Reporting it upward without overclaiming
-9. FAQ
+9. Measure Competitor AI Citations With DevCommX
+10. FAQ
 
-At least two H2s must contain the primary keyword verbatim.
+At least two H2s must contain the primary keyword verbatim. The list above already
+satisfies this; do not weaken it. The final H2 before FAQ is the CTA section the
+draft spec requires, and its paragraph ends at /contact-us.
 
 ## FAQ / PAA targets, mirror exactly into the FAQPage schema
 How do I track AI citations? · Can I see which sources ChatGPT uses? · How do I know if a competitor is cited more than me?

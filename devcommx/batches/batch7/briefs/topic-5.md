@@ -15,16 +15,19 @@ AEO services; SEO retainer; AEO vs SEO contract; comparing SEO proposals
 published posts. Link no service page. Commercial anchors point at `/contact-us`.
 
 ## H2 structure — follow exactly, in this order
-1. The short answer: two different deliverables sold with the same vocabulary
+1. The short answer: AEO services vs SEO services are two different deliverables sold with the same vocabulary
 2. What an SEO retainer actually contains
 3. What AEO services actually contain
 4. Side by side: scope, deliverables, reporting cadence, exit terms
-5. Where the two overlap, and why you are probably paying twice
+5. Where AEO services vs SEO services overlap, and why you are probably paying twice
 6. How to compare two proposals that use the same words for different work
 7. What to put in the contract that neither vendor will suggest
-8. FAQ
+8. Scope AEO Services vs SEO Services With DevCommX
+9. FAQ
 
-At least two H2s must contain the primary keyword verbatim.
+At least two H2s must contain the primary keyword verbatim. The list above already
+satisfies this; do not weaken it. The final H2 before FAQ is the CTA section the
+draft spec requires, and its paragraph ends at /contact-us.
 
 ## FAQ / PAA targets, mirror exactly into the FAQPage schema
 What is included in AEO services? · Do I need both SEO and AEO? · How do I compare SEO proposals?

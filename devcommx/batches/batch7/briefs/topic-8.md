@@ -17,12 +17,15 @@ marketing to sales handoff; RevOps consulting; lead handoff SLA; sales marketing
 2. The five failure points between marketing and sales
 3. Diagnose yours: the handoff audit
 4. Definitions first: what counts as a qualified handoff
-5. The SLA that makes the handoff enforceable
+5. The SLA that makes the sales and marketing handoff enforceable
 6. Instrumenting it so you can see the leak
 7. What RevOps consulting changes, and what it cannot
-8. FAQ
+8. Fix Your Sales and Marketing Handoff With DevCommX
+9. FAQ
 
-At least two H2s must contain the primary keyword verbatim.
+At least two H2s must contain the primary keyword verbatim. The list above already
+satisfies this; do not weaken it. The final H2 before FAQ is the CTA section the
+draft spec requires, and its paragraph ends at /contact-us.
 
 ## FAQ / PAA targets, mirror exactly into the FAQPage schema
 How do you fix sales and marketing alignment? · What is a lead handoff SLA? · Why do marketing leads get ignored by sales?

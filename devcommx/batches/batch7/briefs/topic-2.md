@@ -15,16 +15,19 @@ GEO vs SEO; generative engine optimization vs SEO; AI search workflow; SEO team 
 published posts. Link no service page. Commercial anchors point at `/contact-us`.
 
 ## H2 structure — follow exactly, in this order
-1. The short answer: most of the work is the same, three habits are not
+1. The short answer: GEO services vs SEO, most of the work is the same and three habits are not
 2. The Monday standup, before and after
 3. What a GEO services brief asks for that an SEO brief does not
 4. Keyword research becomes prompt research
 5. The reporting meeting: what you can and cannot show
-6. Who on the team actually changes what they do
+6. GEO services vs SEO: who on the team actually changes what they do
 7. What to stop doing, and what to keep doing unchanged
-8. FAQ
+8. Move Your SEO Team Onto GEO With DevCommX
+9. FAQ
 
-At least two H2s must contain the primary keyword verbatim.
+At least two H2s must contain the primary keyword verbatim. The list above already
+satisfies this; do not weaken it. The final H2 before FAQ is the CTA section the
+draft spec requires, and its paragraph ends at /contact-us.
 
 ## FAQ / PAA targets, mirror exactly into the FAQPage schema
 Is GEO different from SEO? · Do I need a separate GEO team? · Does SEO still work in 2026?

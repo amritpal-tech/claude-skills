@@ -15,14 +15,17 @@ demand gen scorecard; pipeline metrics; replacing MQL targets; lead volume targe
 ## H2 structure — follow exactly, in this order
 1. The short answer: you cannot drop the lead number until something replaces it
 2. Why lead volume survives every argument against it
-3. The four metrics that actually predict pipeline
-4. Building the scorecard
+3. The four demand generation metrics that actually predict pipeline
+4. Building the demand generation metrics scorecard
 5. The transition quarter: running both numbers at once
 6. How to present the change to a board that funded the old number
 7. What breaks in the first 60 days, and what to do about it
-8. FAQ
+8. Build Your Demand Gen Scorecard With DevCommX
+9. FAQ
 
-At least two H2s must contain the primary keyword verbatim.
+At least two H2s must contain the primary keyword verbatim. The list above already
+satisfies this; do not weaken it. The final H2 before FAQ is the CTA section the
+draft spec requires, and its paragraph ends at /contact-us.
 
 ## FAQ / PAA targets, mirror exactly into the FAQPage schema
 What metrics should demand generation be measured on? · Should we still track MQLs? · How do I change what marketing is measured on?

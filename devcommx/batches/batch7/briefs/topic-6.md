@@ -20,9 +20,12 @@ demand generation agency; B2B demand gen; demand generation services; hire a dem
 5. How a B2B demand generation agency is measured: pipeline, not MQLs
 6. Pricing models, and what drives the number
 7. When to hire one, and when to build in house
-8. FAQ
+8. Plan Your Demand Generation With DevCommX
+9. FAQ
 
-At least two H2s must contain the primary keyword verbatim.
+At least two H2s must contain the primary keyword verbatim. The list above already
+satisfies this; do not weaken it. The final H2 before FAQ is the CTA section the
+draft spec requires, and its paragraph ends at /contact-us.
 
 ## FAQ / PAA targets, mirror exactly into the FAQPage schema
 What does a B2B demand generation agency do? · How much does a demand generation agency cost? · Is demand generation the same as lead generation?

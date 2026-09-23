@@ -22,9 +22,12 @@ published posts. Link no service page. Commercial anchors point at `/contact-us`
 5. What the first 90 days look like
 6. Measuring AEO without a rank tracker
 7. Red flags, starting with guaranteed citations
-8. FAQ
+8. Run Answer Engine Optimization With DevCommX
+9. FAQ
 
-At least two H2s must contain the primary keyword verbatim.
+At least two H2s must contain the primary keyword verbatim. The list above already
+satisfies this; do not weaken it. The final H2 before FAQ is the CTA section the
+draft spec requires, and its paragraph ends at /contact-us.
 
 ## FAQ / PAA targets, mirror exactly into the FAQPage schema
 What does an answer engine optimization agency do? · Is AEO the same as GEO? · Can anyone guarantee a ChatGPT citation?

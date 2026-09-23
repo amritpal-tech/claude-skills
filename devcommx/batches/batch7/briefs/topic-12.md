@@ -3,9 +3,9 @@
 **Title (use verbatim as `name`):** Where AI Gets Its Brand Mentions: The Five Source Types and How to Earn a Place on Them
 **Slug:** `where-ai-gets-brand-mentions`
 **Primary keyword (verbatim in H1 + meta-title + first 100 words + 2 H2s + 1 FAQ + slug):**
-`earn brand mentions ai search`
+`brand mentions in AI search`
 **Secondary keywords (each at least once in the body):**
-brand mentions AI search; AI citations sources; get mentioned by ChatGPT; unlinked brand mentions
+earn brand mentions AI search; AI citation sources; get mentioned by ChatGPT; unlinked brand mentions
 
 **Reader:** A marketer who knows mentions matter and needs to know where to get them
 **Word count:** 2,300-2,800
@@ -15,18 +15,21 @@ brand mentions AI search; AI citations sources; get mentioned by ChatGPT; unlink
 published posts. Link no service page. Commercial anchors point at `/contact-us`.
 
 ## H2 structure — follow exactly, in this order
-1. The short answer: five source types carry most of the mentions
+1. The short answer: five source types carry most brand mentions in AI search
 2. Why a mention on a page you do not own beats a page you do
 3. Source type 1: review and comparison directories
 4. Source type 2: practitioner communities
 5. Source type 3: trade and analyst coverage
 6. Source type 4: partner and integration pages
 7. Source type 5: your own cited research
-8. The earning motion: what to do in what order
+8. The earning motion: how to earn brand mentions in AI search, in order
 9. How to tell whether it worked
-10. FAQ
+10. Earn Brand Mentions in AI Search With DevCommX
+11. FAQ
 
-At least two H2s must contain the primary keyword verbatim.
+At least two H2s must contain the primary keyword verbatim. The list above already
+satisfies this; do not weaken it. The final H2 before FAQ is the CTA section the
+draft spec requires, and its paragraph ends at /contact-us.
 
 ## FAQ / PAA targets, mirror exactly into the FAQPage schema
 How do I get my brand mentioned by AI? · Do backlinks matter for AI search? · Which sources do AI assistants cite most?

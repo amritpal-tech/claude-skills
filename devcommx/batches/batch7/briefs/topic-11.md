@@ -20,9 +20,12 @@ marketing automation setup; implement marketing automation; marketing automation
 5. Migrating from an existing platform
 6. Go-live and the first 30 days
 7. Where marketing automation implementation projects fail
-8. FAQ
+8. Run Your Marketing Automation Implementation With DevCommX
+9. FAQ
 
-At least two H2s must contain the primary keyword verbatim.
+At least two H2s must contain the primary keyword verbatim. The list above already
+satisfies this; do not weaken it. The final H2 before FAQ is the CTA section the
+draft spec requires, and its paragraph ends at /contact-us.
 
 ## FAQ / PAA targets, mirror exactly into the FAQPage schema
 How long does a marketing automation implementation take? · What comes first in marketing automation? · Why do marketing automation projects fail?

@@ -23,9 +23,12 @@ published posts. Link no service page. Commercial anchors point at `/contact-us`
 6. What it costs, and what actually drives the number
 7. Telling a real GEO agency from an SEO agency with a new deck
 8. The questions to ask before you sign
-9. FAQ
+9. Build Your GEO Programme With DevCommX
+10. FAQ
 
-At least two H2s must contain the primary keyword verbatim.
+At least two H2s must contain the primary keyword verbatim. The list above already
+satisfies this; do not weaken it. The final H2 before FAQ is the CTA section the
+draft spec requires, and its paragraph ends at /contact-us.
 
 ## FAQ / PAA targets, mirror exactly into the FAQPage schema
 What does a generative engine optimization agency do? · How much does GEO cost? · Is GEO different from SEO?

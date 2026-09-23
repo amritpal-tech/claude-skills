@@ -20,9 +20,12 @@ CRM automation; CRM workflow automation; automate CRM tasks; CRM automation for 
 5. Data hygiene as a precondition, not a phase two
 6. Build, buy, or bring in CRM automation services
 7. Measuring the time actually recovered
-8. FAQ
+8. Build Your CRM Automation Workflows With DevCommX
+9. FAQ
 
-At least two H2s must contain the primary keyword verbatim.
+At least two H2s must contain the primary keyword verbatim. The list above already
+satisfies this; do not weaken it. The final H2 before FAQ is the CTA section the
+draft spec requires, and its paragraph ends at /contact-us.
 
 ## FAQ / PAA targets, mirror exactly into the FAQPage schema
 What is CRM automation? · Which CRM workflows should you automate first? · Is CRM automation worth it?
