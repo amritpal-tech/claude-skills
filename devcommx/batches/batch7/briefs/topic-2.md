@@ -1,11 +1,11 @@
 # Batch 7 Brief — Topic #2
 
-**Title (use verbatim as `name`):** GEO Services vs Traditional SEO: What Actually Changes in an SEO Team's Week
+**Title (use verbatim as `name`):** GEO Services vs SEO: What Actually Changes in an SEO Team's Week
 **Slug:** `geo-services-vs-seo-team-week`
 **Primary keyword (verbatim in H1 + meta-title + first 100 words + 2 H2s + 1 FAQ + slug):**
 `geo services vs seo`
 **Secondary keywords (each at least once in the body):**
-GEO vs SEO; generative engine optimization vs SEO; AI search workflow; SEO team AI search
+GEO vs SEO; generative engine optimization vs SEO; AI search workflow
 
 **Reader:** An SEO lead who has been told to 'do GEO' and needs to know what changes on Monday
 **Word count:** 2,300-2,800

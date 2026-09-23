@@ -1,11 +1,11 @@
 # Batch 7 Brief — Topic #12
 
-**Title (use verbatim as `name`):** Where AI Gets Its Brand Mentions: The Five Source Types and How to Earn a Place on Them
-**Slug:** `where-ai-gets-brand-mentions`
+**Title (use verbatim as `name`):** Where Brand Mentions in AI Search Come From: The Five Source Types and How to Earn a Place on Them
+**Slug:** `brand-mentions-in-ai-search-sources`
 **Primary keyword (verbatim in H1 + meta-title + first 100 words + 2 H2s + 1 FAQ + slug):**
 `brand mentions in AI search`
 **Secondary keywords (each at least once in the body):**
-earn brand mentions AI search; AI citation sources; get mentioned by ChatGPT; unlinked brand mentions
+earn brand mentions in AI search; AI citation sources; get mentioned by ChatGPT; unlinked brand mentions
 
 **Reader:** A marketer who knows mentions matter and needs to know where to get them
 **Word count:** 2,300-2,800
