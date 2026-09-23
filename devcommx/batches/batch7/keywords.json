@@ -1,0 +1,42 @@
+{
+ "generative-engine-optimization-agency": {
+  "primary": "generative engine optimization agency",
+  "secondary": [
+   "GEO agency",
+   "GEO services",
+   "generative engine optimization services",
+   "hire a GEO agency"
+  ]
+ },
+ "answer-engine-optimization-agency": {
+  "primary": "answer engine optimization agency",
+  "secondary": [
+   "AEO agency",
+   "AEO services",
+   "answer engine optimization services",
+   "hire an AEO agency"
+  ]
+ },
+ "aeo-services-vs-seo-services-contracts": {
+  "primary": "aeo services vs seo services",
+  "secondary": [
+   "AEO services",
+   "SEO retainer",
+   "AEO vs SEO contract",
+   "comparing SEO proposals"
+  ],
+  "topic": 5,
+  "title": "AEO Services vs SEO Services: What You Are Actually Buying in Each Contract"
+ },
+ "competitor-citation-share-ai-search": {
+  "primary": "competitor ai citations",
+  "secondary": [
+   "AI citation tracking",
+   "competitor AI visibility",
+   "share of citation",
+   "who does ChatGPT recommend"
+  ],
+  "topic": 3,
+  "title": "Competitor Citation Share: How to Measure Competitor AI Citations and Who AI Recommends Instead of You"
+ }
+}
