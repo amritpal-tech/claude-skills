@@ -1,6 +1,6 @@
 # Batch 7 Brief — Topic #7
 
-**Title (use verbatim as `name`):** The Demand Gen Scorecard: Replacing Lead Volume Targets Without Losing the Board
+**Title (use verbatim as `name`):** The Demand Generation Metrics Scorecard: Replacing Lead Volume Targets Without Losing the Board
 **Slug:** `demand-generation-metrics-scorecard`
 **Primary keyword (verbatim in H1 + meta-title + first 100 words + 2 H2s + 1 FAQ + slug):**
 `demand generation metrics`

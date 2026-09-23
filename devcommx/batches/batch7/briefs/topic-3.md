@@ -1,7 +1,7 @@
 # Batch 7 Brief — Topic #3
 
 **Title (use verbatim as `name`):** Competitor Citation Share: How to Measure Who AI Recommends Instead of You
-**Slug:** `competitor-citation-share-ai-search`
+**Slug:** `competitor-ai-citations-share`
 **Primary keyword (verbatim in H1 + meta-title + first 100 words + 2 H2s + 1 FAQ + slug):**
 `competitor ai citations`
 **Secondary keywords (each at least once in the body):**

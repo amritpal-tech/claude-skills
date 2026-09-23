@@ -1,7 +1,7 @@
 # Batch 7 Brief — Topic #8
 
 **Title (use verbatim as `name`):** RevOps Consulting: How to Fix Broken Sales and Marketing Handoffs
-**Slug:** `sales-marketing-handoff-revops`
+**Slug:** `sales-and-marketing-handoff-revops`
 **Primary keyword (verbatim in H1 + meta-title + first 100 words + 2 H2s + 1 FAQ + slug):**
 `sales and marketing handoff`
 **Secondary keywords (each at least once in the body):**
