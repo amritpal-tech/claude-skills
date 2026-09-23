@@ -10,7 +10,9 @@ AEO agency; AEO services; answer engine optimization services; hire an AEO agenc
 **Reader:** A marketing leader comparing AEO providers
 **Word count:** 2,300-2,800
 **CTA link:** `https://www.devcommx.com/contact-us`  (never `/contact` — hard 404)
-**Service page to link in the body:** `https://www.devcommx.com/aeo-services`
+**Service page:** NONE. `/aeo-services` does not exist — it is absent from the site's
+34 static pages, absent from the Services CMS collection, and linked by zero of the 223
+published posts. Link no service page. Commercial anchors point at `/contact-us`.
 
 ## H2 structure — follow exactly, in this order
 1. The short answer: what an answer engine optimization agency does

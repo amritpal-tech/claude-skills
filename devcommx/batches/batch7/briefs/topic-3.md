@@ -10,7 +10,9 @@ AI citation tracking; competitor AI visibility; share of citation; who does Chat
 **Reader:** A growth lead who has seen a rival named in an AI answer
 **Word count:** 2,300-2,800
 **CTA link:** `https://www.devcommx.com/contact-us`  (never `/contact` — hard 404)
-**Service page to link in the body:** `https://www.devcommx.com/aeo-services`
+**Service page:** NONE. `/aeo-services` does not exist — it is absent from the site's
+34 static pages, absent from the Services CMS collection, and linked by zero of the 223
+published posts. Link no service page. Commercial anchors point at `/contact-us`.
 
 ## H2 structure — follow exactly, in this order
 1. The short answer: citation share is measurable, citation cause is not

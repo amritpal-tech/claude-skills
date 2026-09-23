@@ -10,7 +10,9 @@ GEO vs SEO; generative engine optimization vs SEO; AI search workflow; SEO team 
 **Reader:** An SEO lead who has been told to 'do GEO' and needs to know what changes on Monday
 **Word count:** 2,300-2,800
 **CTA link:** `https://www.devcommx.com/contact-us`  (never `/contact` — hard 404)
-**Service page to link in the body:** `https://www.devcommx.com/aeo-services`
+**Service page:** NONE. `/aeo-services` does not exist — it is absent from the site's
+34 static pages, absent from the Services CMS collection, and linked by zero of the 223
+published posts. Link no service page. Commercial anchors point at `/contact-us`.
 
 ## H2 structure — follow exactly, in this order
 1. The short answer: most of the work is the same, three habits are not
