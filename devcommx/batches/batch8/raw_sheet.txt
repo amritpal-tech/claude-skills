@@ -1,0 +1,391 @@
+#################### TAB: 📊 Modified Overview
+8 TOPICS → 7 PAGES  ·  AVERAGE 3.37/5.0 → 4.34/5.0  ·  7/7 NOW VALID
+APPROACH: 8 topics become 7 pages. Topic 3 is MERGED into topic 1. Topics 5 and 8 are REPLACED, because the comparisons they proposed are already published on your site (twice and three times respectively), so a rewrite of the same comparison would not have helped. The other four are modified and fenced against the specific pages they collided with. Every tab carries a full H1-H3 structure with what each section must do. Headlines are sentence case and 'AI-Powered' is gone from topic 4.
+📌 A CORRECTION TO MY LAST REPORT. Its tabs contradicted each other: topic 1's tab said fold topic 3 into topic 1, while topic 6's said fold topic 1 into topic 6. Resolved here on the basis that they answer different questions at different stages. Topic 6 is the COMMERCIAL page (what do I buy) and topic 1 is the TECHNICAL one (where does it sit), with topic 3's definitions absorbed into topic 1. If you would rather run one page instead of two, keep topic 6 and drop topic 1.
+📋  OLD TITLE  →  NEW TITLE
+# | OLD TITLE (rejected) | NEW TITLE (modified) | WAS | NOW | PRIMARY KEYWORD
+6 | Buying AI for B2B: Software, Agents or a Managed AI System? | AI SDR software, agents or a managed system: what each one actually buys you | 3.8 | 4.6 | managed AI SDR service
+1 | AI Sales Automation Tools vs AI SDR Systems: Where Each Fits in the GTM Stack  (+ topic 3, 'AI Sales Assistants vs AI SDRs') | Where AI sales tools, assistants and SDRs sit in your stack, and where they overlap | 3.6 | 4.4 | AI sales assistant vs AI SDR
+2 | AI Outreach Agents and Buying Signals: How to Trigger Outreach at the Right Moment | Signal to send: the trigger rules that decide when outreach actually goes out | 3.6 | 4.4 | trigger based outreach
+4 | Inside an AI-Powered Sales Platform: The 6 Layers Behind Automated Pipeline | Inside an AI SDR system: the six layers behind automated pipeline | 3.0 | 4.2 | AI SDR architecture
+5 | AI Automation Platforms vs Traditional Workflow Automation: What Changes With Agents? | Moving from Zapier to agents: what to rebuild, what to keep, and in what order | 3.0 | 4.2 | replace Zapier with AI agents
+7 | Startup GTM Bottlenecks: What Breaks Between ICP, Outreach and Pipeline | Why your GTM stalls: the three joins where ICP, outreach and pipeline come apart | 3.6 | 4.4 | why is my outbound not working
+8 | B2B SEO vs B2B AEO: What Changes When Buyers Search Through AI | What AI search does to a B2B buying committee: the touch you never see | 3.0 | 4.2 | B2B AEO
+🗺️  PUBLISHING ORDER — PILLARS FIRST, THEN SUPPORTING POSTS
+ORDER | TOPIC | ROLE | CLUSTER | WHY THIS POSITION
+1 | #6 AI SDR software, agents or managed | SHIP FIRST | Procurement | The page your sales team needs most. Bottom-funnel, nothing blocks it, and it frames your model as one of three legitimate options.
+2 | #1 Where tools, assistants and SDRs sit | SUPPORT | Stack | Publish after #6 so the commercial page exists to link to. Absorbs topic 3.
+3 | #7 Why your GTM stalls | DIAGNOSTIC | GTM | Strong sales trigger: readers arrive with a problem. Write the boundary with the approved startup GTM topic first.
+4 | #2 Signal to send: trigger rules | RULES | Signals | Confirm the boundary with speed-to-lead, then build the trigger table first and write around it.
+5 | #5 Moving from Zapier to agents | MIGRATION | Automation | Replaces a comparison you published twice. The migration sequence is the unoccupied part.
+6 | #8 AI search and the buying committee | BLOCKED | AEO | Check b2b-buyer-journey-ai-research first. It is close, and it came from an earlier batch of these recommendations.
+7 | #4 Inside an AI SDR system: six layers | BLOCKED | Architecture | Blocked until the 5 Layers of GTM pillar is live, because this page has to map itself against it.
+NOTES: topic 3 has no tab. It becomes an H2 inside topic 1 (marked ABSORBED in that heading structure) plus an FAQ entry on ai-sdr-sales-autopilot-vs-copilot. Scores marked NOW are projections for the rewritten topic, not for a finished article, and two depend on blockers listed above. Heading structures are for the recommended titles. The standing recommendation from the last two batches still holds: with roughly 55-60 posts live, refresh or consolidate two pages for every new one. Search-demand judgements are directional, not volumes exported from a tool; confirm in Ahrefs or Semrush before locking the calendar.
+
+#################### TAB: 06 AI SDR software, agents or a
+TOPIC 6 — MODIFIED (cluster survivor)  |  AI SDR software, agents or a managed system: what each one actually buys you
+WAS 3.8/5.0  →  NOW 4.6/5.0  (+0.8)   ·   VALID   ·   ROLE: The commercial page for the category cluster   ·   CLUSTER: Procurement
+WHAT WAS BROKEN:  Scored 3.8/5. The strongest framing in the batch behind a title nobody searches: 'Buying AI for B2B' is not a phrase anyone types.
+🔄  BEFORE  →  AFTER
+ELEMENT | BEFORE  (rejected) | AFTER  (rewritten)
+Title | Buying AI for B2B: Software, Agents or a Managed AI System? | AI SDR software, agents or a managed system: what each one actually buys you
+Primary keyword | 'Buying AI for B2B', a framing rather than a search | 'managed AI SDR service', with 'AI SDR vs agency' as the secondary
+Angle | Three purchase modes, described | What each mode actually buys, in the format that already works for your AEO contracts page
+Role | One of four competing category pages | The commercial survivor. Placement moves to topic 1, definitions move with it
+Credibility | No concession | A required 'when a managed system is wrong' section
+🛠️  PROBLEMS FIXED
+PROBLEM FLAGGED IN v1 | HOW THE MODIFICATION FIXES IT
+The title targeted no real query | Retitled around 'managed AI SDR service' and 'AI SDR vs agency', both of which buyers actually type. The three-mode framing stays, it just moves into the subtitle and the H2s.
+Four topics competed for one cluster | This is the survivor on commercial grounds: it is bottom-funnel, it frames your own model as one of three legitimate options, and it reuses a format that already performs for you.
+Overlapped ai-sdr-pricing and bdr-outsourcing-cost | Fenced by question. ai-sdr-pricing answers what it costs, bdr-outsourcing-cost answers whether outsourcing works, and this answers what each purchase mode includes. Link to both, restate neither.
+A vendor comparing itself needs a concession | The 'when a managed system is wrong' section is mandatory. Without it the page reads as a brochure, which is the same problem flagged on the Cold Email Hackers and SEO-vs-Ads topics.
+📐  ARTICLE SPEC
+Word count | 2,000-2,400
+Format | Procurement guide with a what-each-buys table
+Must include | Cost structure per mode; who owns the outcome; what happens when it stops working; the internal time cost nobody quotes; a readiness test; the disqualification section
+Schema | Article + FAQPage
+Internal links | -> ai-sdr-pricing · -> bdr-outsourcing-cost-when-it-works · -> best-ai-sdr-agencies · -> topic 1 for stack placement
+CTA | Free GTM audit
+🔑  KEYWORDS & AI-ANSWER TARGETS
+PRIMARY KEYWORD | managed AI SDR service
+Secondary keywords | AI SDR vs agency; buy AI software vs managed service; AI SDR procurement; what does a managed AI system include
+PAA / FAQ targets | Should I buy AI SDR software or hire an agency? · What is a managed AI system? · What does an AI SDR service include?
+Consolidation note | Ship this first of the seven. It is the page your sales team needs most, and nothing blocks it.
+🧱  HEADING STRUCTURE  (H1 → H3, with what each section must do)
+LVL | HEADING | WHAT THIS SECTION MUST DO
+H1 | AI SDR software, agents or a managed system: what each one actually buys you | Three modes, one decision
+H2 | The short answer | One line per mode and who it suits. 40-60 words, quotable
+H2 | Mode 1: software you run yourself | Cost, internal owner, and the ceiling you hit
+H2 | Mode 2: agents you configure | Where work shifts from using a tool to operating a system
+H2 | Mode 3: a managed system | What is included, and what stays yours to do
+H2 | What each one actually buys: side by side | The table. Copy the format from the AEO contracts page
+H3 | Who owns the outcome in each mode | The question that decides most purchases
+H3 | What happens when it stops working | Support, accountability, escalation
+H2 | The internal cost nobody quotes | Your team's hours, in all three modes
+H2 | How to tell which mode you are ready for | A short readiness test the reader can apply
+H2 | When a managed system is the wrong answer | Required. This is what makes the rest credible
+H2 | Frequently asked questions | PAA targets, FAQPage schema
+H2 | Your next step | One CTA
+📈  PROJECTED RE-SCORE
+CHECK | SCORE | MAX | RATING
+Clarity & Specificity | 5 | 5 | ✅ PASS
+Audience Relevance | 5 | 5 | ✅ PASS
+Search Demand & Keyword Fit | 4 | 5 | ✅ PASS
+Originality & Cannibalisation | 4 | 5 | ✅ PASS
+Value Depth | 5 | 5 | ✅ PASS
+TOTAL: 23/25 → 4.6/5.0 | VALID  (was 3.8)
+
+#################### TAB: 01 Where AI sales tools, assist
+TOPIC 1 — MODIFIED (absorbs topic 3)  |  Where AI sales tools, assistants and SDRs sit in your stack, and where they overlap
+WAS 3.6/5.0  →  NOW 4.4/5.0  (+0.8)   ·   VALID   ·   ROLE: The technical page for the category cluster   ·   CLUSTER: Stack placement
+WHAT WAS BROKEN:  Scored 3.6/5, and topic 3 scored 3.2/5. Both are definitional comparisons, and my own report contradicted itself on which absorbed which. Resolved here: this page owns placement and definitions, topic 6 owns the purchase decision.
+🔄  BEFORE  →  AFTER
+ELEMENT | BEFORE  (rejected) | AFTER  (rewritten)
+Pages | Two: topic 1 (placement) and topic 3 (assistant vs SDR) | One page covering placement and the definitions it needs
+Title | AI Sales Automation Tools vs AI SDR Systems: Where Each Fits in the GTM Stack | Where AI sales tools, assistants and SDRs sit in your stack, and where they overlap
+Angle | A comparison of two categories | A placement map of three, plus the overlap that wastes budget
+Boundary with topic 6 | Both were category comparisons | This answers 'where does it sit', topic 6 answers 'what do I buy'
+Relationship to autopilot-vs-copilot | Topic 3 duplicated it | That page keeps the copilot-autopilot framing; this one maps all three to stack layers and links to it
+🛠️  PROBLEMS FIXED
+PROBLEM FLAGGED IN v1 | HOW THE MODIFICATION FIXES IT
+My previous report gave contradictory merge advice | Resolved: topic 6 is the commercial page and this is the technical one. They answer different questions at different stages, so both can exist if the boundary holds.
+Topic 3 duplicated ai-sdr-sales-autopilot-vs-copilot | Its content becomes one H2 here, framed as placement rather than definition, plus an FAQ entry added to the autopilot-vs-copilot page. No new URL for it.
+Overlapped five live tool pages | Fenced hard: no tool names, no rankings, no stack lists. This page is about layers and overlap only, and links down to the tool pages for anyone choosing a vendor.
+'Tools' and 'systems' were your words, not the market's | The article now defines all three categories in the first 100 words, so the comparison is usable by someone who has never heard your framing.
+📐  ARTICLE SPEC
+Word count | 1,800-2,100
+Format | Placement map with an overlap table
+Must include | A layer diagram; the three categories defined; the overlap that wastes budget; when one replaces another; a three-question placement test
+Schema | Article + FAQPage
+Internal links | -> ai-sdr-sales-autopilot-vs-copilot · -> best-ai-sdr-platforms · -> gtm-engineering-stack · -> topic 6 for the purchase decision
+CTA | Free GTM audit
+🔑  KEYWORDS & AI-ANSWER TARGETS
+PRIMARY KEYWORD | AI sales assistant vs AI SDR
+Secondary keywords | AI sales automation vs AI SDR; GTM stack layers; do I need both an AI SDR and sales automation; AI sales stack overlap
+PAA / FAQ targets | What is the difference between an AI sales assistant and an AI SDR? · Do AI SDRs replace sales automation tools? · Which layer does an AI SDR sit in?
+Consolidation note | Topic 3 has no tab of its own. It becomes the H2 marked ABSORBED above, plus an FAQ entry on ai-sdr-sales-autopilot-vs-copilot.
+🧱  HEADING STRUCTURE  (H1 → H3, with what each section must do)
+LVL | HEADING | WHAT THIS SECTION MUST DO
+H1 | Where AI sales tools, assistants and SDRs sit in your stack, and where they overlap | Placement, not vendor selection
+H2 | The short answer | Name the dividing line: who designs the steps, and who owns the outcome
+H2 | The three categories, defined so the map holds | Short. Definitions exist to make the rest usable
+H2 | AI sales assistants vs AI SDRs: what's the difference? | ABSORBED FROM TOPIC 3. Target the PAA question directly
+H3 | An assistant works alongside a rep | Drafting, research, summarising. The human sends
+H3 | An SDR system owns the motion end to end | Targets, sequences, books. The human reviews
+H3 | The test: who owns the outcome? | The one-line distinction worth quoting
+H2 | The stack map: which layer each one occupies | The core diagram
+H2 | Where they overlap, and what that overlap costs | The section vendors will not write
+H2 | When you need both, and when one replaces the other | Be honest. Often the answer is not both
+H2 | A three-question placement test | So the reader leaves with a decision
+H2 | Frequently asked questions | PAA targets, FAQPage schema
+H2 | Your next step | One CTA
+📈  PROJECTED RE-SCORE
+CHECK | SCORE | MAX | RATING
+Clarity & Specificity | 5 | 5 | ✅ PASS
+Audience Relevance | 5 | 5 | ✅ PASS
+Search Demand & Keyword Fit | 3 | 5 | ⚠️ WARN
+Originality & Cannibalisation | 4 | 5 | ✅ PASS
+Value Depth | 5 | 5 | ✅ PASS
+TOTAL: 22/25 → 4.4/5.0 | VALID  (was 3.6)
+
+#################### TAB: 02 Signal to send
+TOPIC 2 — MODIFIED  |  Signal to send: the trigger rules that decide when outreach actually goes out
+WAS 3.6/5.0  →  NOW 4.4/5.0  (+0.8)   ·   VALID   ·   ROLE: The rules layer for the signals cluster   ·   CLUSTER: Signals
+WHAT WAS BROKEN:  Scored 3.6/5. A good mechanism inside a crowded cluster: four live signal pages plus the approved watchlist topic already surround it.
+🔄  BEFORE  →  AFTER
+ELEMENT | BEFORE  (rejected) | AFTER  (rewritten)
+Title | AI Outreach Agents and Buying Signals: How to Trigger Outreach at the Right Moment | Signal to send: the trigger rules that decide when outreach actually goes out
+Scope | Agents and signals, which touches four live pages | Trigger rules and suppression only
+Primary keyword | 'AI outreach agents', a coined category | 'trigger based outreach', plus the timing long-tails people search
+Boundary with speed-to-lead | Undefined and overlapping | speed-to-lead covers inbound response time; this covers outbound trigger rules
+Deliverable | An explanation | A trigger table teams can copy into their own playbook
+🛠️  PROBLEMS FIXED
+PROBLEM FLAGGED IN v1 | HOW THE MODIFICATION FIXES IT
+Four live pages plus one approved already cover signals | Cut to the rules nobody publishes: which signal earns which response, the delay window per signal type, and suppression so one account is not hit by three plays.
+speed-to-lead-b2b-follow-up was the closest page | Split by direction: that page is about responding fast to inbound, this is about deciding when outbound fires on a signal. State the boundary in the intro and link across.
+The 'and' joined two separate subjects | The subtitle now leads and the mechanism is the title. One intent, one promise.
+Nothing copyable | The trigger table is the asset: signal, delay window, response, suppression rule. That is the block AI systems quote and teams paste into a playbook.
+📐  ARTICLE SPEC
+Word count | 1,700-2,000
+Format | Rules guide built around a trigger table
+Must include | The trigger table; precedence when two signals fire; suppression rules; what an agent decides versus what a human approves; reply rate by delay window
+Schema | Article + FAQPage
+Internal links | -> speed-to-lead-b2b-follow-up · -> signal-based-prospecting-guide · -> intent-data-buying-signals · -> the approved watchlist topic
+CTA | Free GTM audit
+🔑  KEYWORDS & AI-ANSWER TARGETS
+PRIMARY KEYWORD | trigger based outreach
+Secondary keywords | buying signals outreach timing; how soon to contact after a buying signal; signal to sequence rules; intent data response time
+PAA / FAQ targets | How quickly should you reach out after a buying signal? · Which buying signals are worth acting on? · What is trigger-based outreach?
+Consolidation note | Confirm the boundary with speed-to-lead before commissioning. If that page already covers outbound triggers, add a section there instead.
+🧱  HEADING STRUCTURE  (H1 → H3, with what each section must do)
+LVL | HEADING | WHAT THIS SECTION MUST DO
+H1 | Signal to send: the trigger rules that decide when outreach actually goes out | Rules, not another signals overview
+H2 | The short answer | Response should match signal strength and recency. Say it in 40-60 words
+H2 | Why most teams act on signals badly | Three failure modes: too fast, too slow, wrong message
+H2 | The trigger table: signal, delay window, response | The core asset. Build this first
+H3 | High-intent signals that deserve a same-day response | Pricing page visits, demo abandons, competitor comparisons
+H3 | Medium signals that deserve a play, not a call | Hiring, funding, leadership change
+H3 | Weak signals that should only update a score | The ones teams over-react to
+H2 | Suppression: stopping three plays hitting one account | The rule most teams lack
+H2 | When two signals fire at once | Precedence rules
+H2 | What an agent decides, and what a human still approves | Ties the page to the AI SDR cluster
+H2 | How to measure whether your timing is right | Reply rate by delay window
+H2 | Frequently asked questions | PAA targets, FAQPage schema
+H2 | Your next step | One CTA
+📈  PROJECTED RE-SCORE
+CHECK | SCORE | MAX | RATING
+Clarity & Specificity | 5 | 5 | ✅ PASS
+Audience Relevance | 5 | 5 | ✅ PASS
+Search Demand & Keyword Fit | 3 | 5 | ⚠️ WARN
+Originality & Cannibalisation | 4 | 5 | ✅ PASS
+Value Depth | 5 | 5 | ✅ PASS
+TOTAL: 22/25 → 4.4/5.0 | VALID  (was 3.6)
+
+#################### TAB: 04 Inside an AI SDR system
+TOPIC 4 — MODIFIED  |  Inside an AI SDR system: the six layers behind automated pipeline
+WAS 3.0/5.0  →  NOW 4.2/5.0  (+1.2)   ·   VALID   ·   ROLE: Technical teardown, and the inside view of one GTM layer   ·   CLUSTER: Architecture
+WHAT WAS BROKEN:  Scored 3.0/5. Two self-inflicted problems: 'AI-Powered' is on your banned list for the second batch running, and a 6-layer framework collides with the approved 5 Layers of GTM pillar.
+🔄  BEFORE  →  AFTER
+ELEMENT | BEFORE  (rejected) | AFTER  (rewritten)
+Title | Inside an AI-Powered Sales Platform: The 6 Layers Behind Automated Pipeline | Inside an AI SDR system: the six layers behind automated pipeline
+Brand compliance | Opens with banned filler | Names the system instead
+Framework conflict | 6 layers competing with the approved 5 Layers of GTM | Positioned as the inside view of the GTM execution layer, with an explicit mapping section
+Search expectation | Unset | Set deliberately: this wins through sales use and citation, not search volume
+Sentence case | Title Case | Sentence case, per the brand book
+🛠️  PROBLEMS FIXED
+PROBLEM FLAGGED IN v1 | HOW THE MODIFICATION FIXES IT
+'AI-Powered' breaks the brand book, again | Removed. This is the second batch it has appeared, so the banned-words list belongs in the topic intake form, not only the writing brief.
+Two rival layer frameworks on one site | Resolved by nesting rather than competing: these six layers are the inside of the GTM pillar's execution layer. A mandatory H2 states that mapping, so a reader meeting both knows how they relate.
+Overlapped gtm-engineering-stack and b2b-outbound-tool-stack | Those pages list tools. This one explains layers and failure modes with no tool names, which is a different job for a different reader.
+No search demand for a coined framework | Accepted and planned for. Judge it on sales usage, backlinks and citations. Do not put it in a traffic report and call it a failure.
+📐  ARTICLE SPEC
+Word count | 2,000-2,400
+Format | Teardown with a layer diagram and a failure mode per layer
+Must include | All six layers named in the first 100 words; what breaks at each; the mapping to the 5 Layers of GTM; no tool names
+Schema | Article + FAQPage
+Internal links | up to the 5 Layers of GTM pillar · -> gtm-engineering-stack · -> the GTM data layer post · -> the signals cluster
+CTA | Free GTM audit
+🔑  KEYWORDS & AI-ANSWER TARGETS
+PRIMARY KEYWORD | AI SDR architecture
+Secondary keywords | how AI SDRs work; AI sales stack layers; automated pipeline architecture; what is inside an AI SDR
+PAA / FAQ targets | How does an AI SDR actually work? · What is in an AI sales stack? · What data does an AI SDR need?
+Consolidation note | BLOCKED until the 5 Layers pillar is published, because this page has to reference it. Publish the pillar first.
+🧱  HEADING STRUCTURE  (H1 → H3, with what each section must do)
+LVL | HEADING | WHAT THIS SECTION MUST DO
+H1 | Inside an AI SDR system: the six layers behind automated pipeline | Teardown, banned filler removed
+H2 | The short answer | Name all six layers here so the framework is extractable in one block
+H2 | Layer 1: data | Sources, coverage, decay. Link to the GTM data layer post
+H2 | Layer 2: enrichment | Waterfall logic and what it costs per record
+H2 | Layer 3: signals | Link to the signals cluster, do not restate it
+H2 | Layer 4: decisioning | The layer that separates an agent from a workflow
+H2 | Layer 5: execution | Sending infrastructure, deliverability, channel rules
+H2 | Layer 6: measurement | What to instrument, and which metrics mislead
+H2 | Where systems break, layer by layer | Your delivery experience shows here. One failure mode each
+H2 | How these six layers sit inside the 5 Layers of GTM | MANDATORY. Resolves the framework conflict for the reader
+H2 | Frequently asked questions | PAA targets, FAQPage schema
+H2 | Your next step | One CTA
+📈  PROJECTED RE-SCORE
+CHECK | SCORE | MAX | RATING
+Clarity & Specificity | 5 | 5 | ✅ PASS
+Audience Relevance | 4 | 5 | ✅ PASS
+Search Demand & Keyword Fit | 3 | 5 | ⚠️ WARN
+Originality & Cannibalisation | 4 | 5 | ✅ PASS
+Value Depth | 5 | 5 | ✅ PASS
+TOTAL: 21/25 → 4.2/5.0 | VALID  (was 3.0)
+
+#################### TAB: 05 Moving from Zapier to agents
+TOPIC 5 — REPLACED (comparison already published twice)  |  Moving from Zapier to agents: what to rebuild, what to keep, and in what order
+WAS 3.0/5.0  →  NOW 4.2/5.0  (+1.2)   ·   VALID   ·   ROLE: The migration path neither live page covers   ·   CLUSTER: Automation
+WHAT WAS BROKEN:  Scored 3.0/5. The comparison is already published twice: agentic-builder-vs-static-workflow makes it directly, and first-gen-automation makes the same argument.
+🔄  BEFORE  →  AFTER
+ELEMENT | BEFORE  (rejected) | AFTER  (rewritten)
+Title | AI Automation Platforms vs Traditional Workflow Automation: What Changes With Agents? | Moving from Zapier to agents: what to rebuild, what to keep, and in what order
+Angle | A comparison you have published twice | A migration path neither live page covers
+Reader | Someone learning the difference | Someone with a working Zapier build deciding what to do about it
+Primary keyword | 'workflow automation vs AI agents', already targeted | 'replace Zapier with AI agents' and migration long-tails
+Stance | Agents are better | Hybrid. Name what should stay deterministic
+🛠️  PROBLEMS FIXED
+PROBLEM FLAGGED IN v1 | HOW THE MODIFICATION FIXES IT
+The comparison exists twice on your own site | Replaced rather than modified. A third version would split the traffic three ways, which is the exact saturation problem flagged last batch.
+No migration guidance anywhere in the cluster | This is the gap. Teams with working automations want a sequence that does not break production, and none of the three live pages provides one.
+Over-claiming for agents would undercut you | The article opens by naming what deterministic workflows are still better at. A migration guide that admits some things should not move is far more credible.
+Tool-level queries are already covered | n8n-vs-make-vs-zapier keeps the tool comparison. This page never ranks tools, it sequences a migration.
+📐  ARTICLE SPEC
+Word count | 1,700-2,000
+Format | Migration guide with a sequence and a worked example
+Must include | What stays deterministic; the three signs a workflow should become an agent; the observe-shadow-swap-retire sequence; failure modes in migration; one worked before and after
+Schema | Article + HowTo + FAQPage
+Internal links | -> agentic-builder-vs-static-workflow · -> first-gen-automation-gtm-teams-agentic-replacement · -> n8n-vs-make-vs-zapier
+CTA | Free GTM audit
+🔑  KEYWORDS & AI-ANSWER TARGETS
+PRIMARY KEYWORD | replace Zapier with AI agents
+Secondary keywords | workflow automation to agent migration; when to rebuild GTM automation; agentic automation migration
+PAA / FAQ targets | Should I replace Zapier with an AI agent? · When is an agent better than a workflow? · How do you migrate an automation to an AI agent?
+Consolidation note | If you would rather not add a URL, this becomes a migration section inside agentic-builder-vs-static-workflow. Standalone is better: the migration query is distinct from the comparison query.
+🧱  HEADING STRUCTURE  (H1 → H3, with what each section must do)
+LVL | HEADING | WHAT THIS SECTION MUST DO
+H1 | Moving from Zapier to agents: what to rebuild, what to keep, and in what order | Migration, since the comparison is published
+H2 | The short answer | Most builds should end up hybrid. Name what stays deterministic
+H2 | What deterministic workflows are still better at | Credibility first. Do not overclaim for agents
+H2 | The three signs a workflow should become an agent | Branching complexity, judgement calls, changing inputs
+H2 | A migration order that does not break production | Observe, shadow, swap, retire. The core sequence
+H3 | Step 1: observe what the current workflow actually does | Including the edge cases nobody documented
+H3 | Step 2: run the agent in shadow mode | No sends. Compare decisions
+H3 | Step 3: swap one branch at a time | Never the whole build at once
+H3 | Step 4: retire the old build, and keep the logs | What to archive and why
+H2 | What breaks in migration, and how to catch it | Error handling, runaway cost, silent failures
+H2 | A worked example: one workflow, migrated | One concrete before and after
+H2 | Frequently asked questions | PAA targets, FAQPage schema
+H2 | Your next step | One CTA
+📈  PROJECTED RE-SCORE
+CHECK | SCORE | MAX | RATING
+Clarity & Specificity | 5 | 5 | ✅ PASS
+Audience Relevance | 4 | 5 | ✅ PASS
+Search Demand & Keyword Fit | 3 | 5 | ⚠️ WARN
+Originality & Cannibalisation | 5 | 5 | ✅ PASS
+Value Depth | 4 | 5 | ✅ PASS
+TOTAL: 21/25 → 4.2/5.0 | VALID  (was 3.0)
+
+#################### TAB: 07 Why your GTM stalls
+TOPIC 7 — MODIFIED  |  Why your GTM stalls: the three joins where ICP, outreach and pipeline come apart
+WAS 3.6/5.0  →  NOW 4.4/5.0  (+0.8)   ·   VALID   ·   ROLE: Diagnostic companion to the approved startup GTM planning page   ·   CLUSTER: GTM diagnosis
+WHAT WAS BROKEN:  Scored 3.6/5. A strong diagnostic idea behind a title nobody searches, sharing a reader with the approved startup GTM topic.
+🔄  BEFORE  →  AFTER
+ELEMENT | BEFORE  (rejected) | AFTER  (rewritten)
+Title | Startup GTM Bottlenecks: What Breaks Between ICP, Outreach and Pipeline | Why your GTM stalls: the three joins where ICP, outreach and pipeline come apart
+Primary keyword | 'GTM bottlenecks', rarely searched | Symptom phrases people actually type, carried in the H3s
+Framing | Bottleneck, which is a constraint | Break, which is what the subtitle actually promises
+Boundary | Overlapped the approved startup GTM topic | That page builds the plan, this one diagnoses the break
+Ending | An explanation | A 20-minute diagnostic and an audit CTA
+🛠️  PROBLEMS FIXED
+PROBLEM FLAGGED IN v1 | HOW THE MODIFICATION FIXES IT
+Nobody searches 'GTM bottlenecks' | The title keeps the framing, and the H3s carry the symptom phrases buyers actually search: no replies, replies but no meetings, meetings that do not convert.
+Shared a reader with the approved startup GTM topic | Boundary written down: the approved page is for a founder planning GTM, this is for a founder whose GTM is already failing. Different moment, different intent, one cross-link.
+'Bottleneck' was the wrong word | A bottleneck slows throughput; a break stops it. The article is about breaks, so the title now says so.
+No natural conversion path | It ends in a diagnosis, which makes the audit CTA a genuine next step rather than a bolt-on.
+📐  ARTICLE SPEC
+Word count | 1,800-2,100
+Format | Symptom-led diagnostic with a test per join
+Must include | Three joins, each with symptom, cause and test; why fixing them out of order wastes work; a 20-minute diagnostic
+Schema | Article + FAQPage
+Internal links | -> the approved Startup GTM strategy topic · -> the SDR-to-AE handoff topic · -> ai-gtm-strategy-startups
+CTA | Free GTM audit
+🔑  KEYWORDS & AI-ANSWER TARGETS
+PRIMARY KEYWORD | why is my outbound not working
+Secondary keywords | GTM bottlenecks; pipeline stalls B2B; ICP outreach mismatch; replies but no meetings
+PAA / FAQ targets | Why is my outbound not generating pipeline? · How do I know if my ICP is wrong? · Why do my meetings not convert?
+Consolidation note | Write the boundary with the approved startup GTM topic before either is commissioned. Same reader, different moment.
+🧱  HEADING STRUCTURE  (H1 → H3, with what each section must do)
+LVL | HEADING | WHAT THIS SECTION MUST DO
+H1 | Why your GTM stalls: the three joins where ICP, outreach and pipeline come apart | Diagnosis, symptom-led
+H2 | The short answer | Most failures happen at a join, not inside a stage
+H2 | Join 1: ICP to outreach | Right list, wrong message, or the reverse
+H3 | The symptom: sends go up, replies stay flat | Search phrasing in the H3
+H3 | The test: does your message name a problem only this ICP has? | A concrete check
+H2 | Join 2: outreach to meeting | Replies that never become calendar time
+H3 | The symptom: replies but no meetings booked | Search phrasing
+H3 | The test: read your last 20 positive replies | A method, not advice
+H2 | Join 3: meeting to pipeline | Meetings that do not convert
+H3 | The symptom: meetings happen, opportunities do not | Search phrasing
+H3 | The test: show rate and show-to-opportunity | Links to the SDR-to-AE handoff topic
+H2 | Fixing them in order, and why order matters | Fixing join 3 first wastes the work
+H2 | The 20-minute diagnostic | Copyable. Ends with an action
+H2 | Frequently asked questions | PAA targets, FAQPage schema
+H2 | Your next step | One CTA
+📈  PROJECTED RE-SCORE
+CHECK | SCORE | MAX | RATING
+Clarity & Specificity | 5 | 5 | ✅ PASS
+Audience Relevance | 5 | 5 | ✅ PASS
+Search Demand & Keyword Fit | 3 | 5 | ⚠️ WARN
+Originality & Cannibalisation | 4 | 5 | ✅ PASS
+Value Depth | 5 | 5 | ✅ PASS
+TOTAL: 22/25 → 4.4/5.0 | VALID  (was 3.6)
+
+#################### TAB: 08 What AI search does to a B2B
+TOPIC 8 — REPLACED (three live pages cover the comparison)  |  What AI search does to a B2B buying committee: the touch you never see
+WAS 3.0/5.0  →  NOW 4.2/5.0  (+1.2)   ·   VALID   ·   ROLE: The one unclaimed B2B angle in the AEO cluster   ·   CLUSTER: AEO
+WHAT WAS BROKEN:  Scored 3.0/5. It would be your fourth page on one distinction: LLMO vs SEO vs GEO vs AEO, AEO vs GEO, and AEO Services vs SEO Services are all live.
+🔄  BEFORE  →  AFTER
+ELEMENT | BEFORE  (rejected) | AFTER  (rewritten)
+Title | B2B SEO vs B2B AEO: What Changes When Buyers Search Through AI | What AI search does to a B2B buying committee: the touch you never see
+Angle | A fourth comparison of the same two disciplines | What changes for a multi-stakeholder buying committee
+Primary keyword | 'SEO vs AEO', which you already target on three URLs | 'B2B AEO' and buying-committee long-tails
+Overlap | Three live pages | None, once checked against b2b-buyer-journey-ai-research
+Reader | Someone learning the difference | A B2B marketer who cannot see where pipeline now starts
+🛠️  PROBLEMS FIXED
+PROBLEM FLAGGED IN v1 | HOW THE MODIFICATION FIXES IT
+Three live pages already draw this distinction | Replaced rather than modified. A fourth page would divide ranking signals four ways for one query cluster, and aeo-services-vs-seo-services already covers the commercial angle.
+The B2B angle was the only unclaimed part | Taken as the whole article: long cycles, committees, and stakeholders who read an AI answer and never visit your site. That is genuinely different from a definitions piece.
+Risk of overlapping b2b-buyer-journey-ai-research | Check this first, it is the closest page and it went live from an earlier batch. If it already covers committees, add a section there instead of publishing.
+Nothing measurable | Added a measurement section: branded search lift, self-reported attribution, and citation share as proxies for touches you cannot track.
+📐  ARTICLE SPEC
+Word count | 1,700-2,000
+Format | Analysis with a per-role content table
+Must include | How each committee role researches; the invisible-stakeholder argument; content implications per role; three measurement proxies; what has not changed
+Schema | Article + FAQPage
+Internal links | -> b2b-buyer-journey-ai-research (check overlap first) · -> llmo-vs-seo-vs-geo-vs-aeo · -> aeo-services-vs-seo-services-contracts
+CTA | Free GTM audit
+🔑  KEYWORDS & AI-ANSWER TARGETS
+PRIMARY KEYWORD | B2B AEO
+Secondary keywords | AI search B2B buying committee; how B2B buyers use AI search; SEO vs AEO B2B; invisible touchpoints B2B
+PAA / FAQ targets | How do B2B buyers use AI search? · Does AEO replace SEO for B2B? · How do you track leads from ChatGPT?
+Consolidation note | BLOCKED until you check b2b-buyer-journey-ai-research. It is the closest live page and it came from an earlier batch of these recommendations.
+🧱  HEADING STRUCTURE  (H1 → H3, with what each section must do)
+LVL | HEADING | WHAT THIS SECTION MUST DO
+H1 | What AI search does to a B2B buying committee: the touch you never see | The unclaimed angle, not a fourth comparison
+H2 | The short answer | The first touch now happens in an answer, to people you cannot identify
+H2 | How a committee researches now, role by role | Champion, economic buyer, technical evaluator
+H2 | The stakeholders who never visit your site | The core argument of the piece
+H2 | What this changes about content for each role | A table. Per-role implications
+H2 | Measuring a touch you cannot see | Branded search lift, self-reported attribution, citation share
+H2 | What has not changed | Do not overclaim. SEO fundamentals still apply
+H2 | Frequently asked questions | PAA targets, FAQPage schema
+H2 | Your next step | One CTA
+📈  PROJECTED RE-SCORE
+CHECK | SCORE | MAX | RATING
+Clarity & Specificity | 5 | 5 | ✅ PASS
+Audience Relevance | 4 | 5 | ✅ PASS
+Search Demand & Keyword Fit | 3 | 5 | ⚠️ WARN
+Originality & Cannibalisation | 5 | 5 | ✅ PASS
+Value Depth | 4 | 5 | ✅ PASS
+TOTAL: 21/25 → 4.2/5.0 | VALID  (was 3.0)
