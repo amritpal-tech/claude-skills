@@ -133,3 +133,34 @@ batch use `scripts/push_drafts.py` with a Webflow site token. It is idempotent, 
 re-run after a partial push resumes rather than duplicating. Note that
 `api.webflow.com` is blocked by the egress proxy in Claude Code web sessions, so the
 script has to run somewhere with plain internet access.
+
+## Live CMS content can be AHEAD of the local draft files
+
+Discovered 2026-09-29 on batch7. Eight published posts had been edited in the
+Webflow UI after our push. The live copy was better than ours in ways that
+mattered: an invented "$4,000" figure removed, survey sizes added to citations
+("December 2022, from a survey of 7,775 sales professionals"), the OpenAI
+crawler claims corrected ("ChatGPT-User is user triggered, and OpenAI states
+rules may not apply to it, so no vendor can promise you robots.txt control over
+it"), a house-rule caveat added ("which is our house rule rather than a
+published standard"), and a hand-written CTA button on every post
+("👉 Compare Your AEO Strategy").
+
+PATCHing post-body from the local file would have destroyed all of it. This is
+the same failure that cost nine hand-written CTA blocks on an earlier batch.
+
+**Before any update to an item that is already live:**
+1. Pull the live item and snapshot it under `devcommx/cms_snapshots/`.
+2. Diff live post-body against what git says you last pushed. Compare the
+   *prose* (strip tags and the JSON-LD block) — Webflow reorders `href`/`rel`/
+   `target` attributes on every write, so a raw string diff is almost all noise.
+3. If there is drift, it is a human edit. Do not overwrite. Apply your change on
+   top of the live text, or hand the decision back.
+
+**Do not blanket-sync local from live either.** The same batch showed the
+divergence runs both ways: six of the eight live posts had lost their
+`<h3>References</h3>` and `<h3>Further Reading</h3>` sections and their
+`author-name` / `author-title` values, all of which the draft spec and the
+client's standing instruction require. Syncing local from live dropped
+check_draft.py from 12/12 to 4/12. Neither copy is authoritative as a whole;
+reconcile field by field.
