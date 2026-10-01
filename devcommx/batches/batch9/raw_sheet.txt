@@ -1,0 +1,120 @@
+SHEETS: ['📊 Exec Summary', '01 Demystifying UX and UI', '02 Enterprise SEO Platforms vs', '03 Beyond a Pretty Website', '04 Unlocking Digital Success', '05 How to Create Pillar Pages f', '06 How to Rank Your Business in', '07 Is your SEO strategy missing', '08 AI Virtual Assistant vs AI A', '09 Marketing Agencies Struggle', '10 How to get your content cite']
+
+========================================================================
+SHEET: 📊 Exec Summary 79 x 6
+DEVCOMMX BLOG TOPIC VALIDATION — 10 TOPICS — OVERALL 2.78/5.0 → REVISE
+VERDICT SPLIT:   ✅ VALID 1    ⚠️ NEEDS MODIFICATION 4    ❌ INVALID 5      |  5 checks × 5 pts per topic. VALID ≥3.9/5 · NEEDS MODIFICATION ≥2.75 · INVALID <2.75.
+🚨 SEVEN OF TEN TITLES ARE VERBATIM COPIES OF LIVE COMPETITOR POSTS, FROM FOUR DIFFERENT SITES. Topics 1, 3 and 4 are grm.digital's. Topics 7 and 10 are specbee.com's. Topic 2 is BrightEdge's, and topic 6 is searchbrand.ai's. After three clean batches this is a full regression to the problem in the very first 15-topic list, and the spread across four sources suggests the list was assembled by scraping several agency blogs rather than from keyword research.
+🚩 THREE TOPICS BELONG TO A DIFFERENT BUSINESS. Topics 1 and 3 are web design pieces and topic 2 is enterprise SEO tooling, all taken from agencies in other verticals. You sell AI SDR, GTM engineering and AEO. Publishing these would attract readers you cannot serve and weaken the topical signal your AI SDR and AEO pages depend on. Topic 2 is worse than off-topic: it is BrightEdge arguing for the category BrightEdge sells.
+⚠️ A BANNED WORD AGAIN, AND A QUESTION FOR THE THIRD TIME. Topic 4 opens with 'Unlocking', which your brand book bans, making it three consecutive batches with a banned word in a title. Topic 8 is the third appearance of the assistant-versus-agent question, already answered live and merged once already. Each tab carries a recommended title, keywords, PAA targets and a full H1-H3 structure with what each section must do.
+📋 TOPIC-BY-TOPIC VERDICTS
+# | TOPIC | SCORE | VERDICT | PRIMARY KEYWORD | RECOMMENDED ACTION
+1 | Demystifying UX and UI: Why User Experience is Crucial for Conversions | 2.0 | INVALID | — not recommended at all | DROP. Off-ICP, copied, and unwinnable. If conversion work matters, write it about AI-referred traffic so it supports the AEO line.
+2 | Enterprise SEO Platforms vs SEO Tools: Choosing the Right Solution for Scale | 2.6 | INVALID | — not recommended at all | DROP. If you want a tooling page, write about AI visibility tools you actually use. Overlaps llmo-checklist-best-llmo-tools-2026, so check that first.
+3 | Beyond a Pretty Website: Why a Strong Digital Strategy is Your Business's Backbone | 1.6 | INVALID | — none | DROP entirely. Nothing in this topic survives a rewrite.
+4 | Unlocking Digital Success: SEO, AEO, and GEO Explained! | 2.2 | INVALID | — merge into the existing acronym page | DROP as a page. Spend the slot refreshing the existing acronym guide and absorbing topic 7's question into its FAQ.
+5 | How to Create Pillar Pages for AI Search Visibility | 4.4 | VALID | pillar pages for AI search | APPROVE AND SHIP FIRST. Use your own library as the worked example, which also starts the consolidation work the last two validations recommended.
+6 | How to Rank Your Business in ChatGPT (AEO/GEO Applied)? | 3.2 | NEEDS MODIFICATION | how to rank in ChatGPT | RETITLE and scope to ChatGPT mechanics only. Settle the boundary with the approved competitor diagnostic first: that page is the pain angle, this is the mechanism.
+7 | Is your SEO strategy missing AEO and GEO? Here's how to keep up | 2.6 | INVALID | — absorb into the existing acronym page | DROP. Fold the question into the acronym page's FAQ as part of the topic 4 consolidation.
+8 | AI Virtual Assistant vs AI Agent: What Should B2B Revenue Teams Use? | 3.0 | NEEDS MODIFICATION | AI agent vs virtual assistant B2B | Do not publish as a page. Fold the vocabulary into the approved stack placement page. If this question keeps recurring at intake, add it to a 'already answered' list.
+9 | Marketing Agencies Struggle With Lead Quality—and How to Fix the Handoff | 2.8 | NEEDS MODIFICATION | lead quality agency | Fix the title first. Then settle the agency-audience question that has been open since the white-label topic: if you do not sell to agencies, this and that topic should both be dropped.
+10 | How to get your content cited by Google AI Overviews, ChatGPT, Perplexity & Claude | 3.4 | NEEDS MODIFICATION | how to get cited by AI search | RETITLE and rebuild as the AEO cluster pillar rather than a tenth guide. Publish it after topic 5, which explains the structure this page would use.
+🔎 DUPLICATE-TITLE CHECK: WHERE EACH HEADLINE ALREADY EXISTS
+# | TOPIC | STATUS | SOURCE
+1 | Demystifying UX and UI: Why User Experience is Crucial for Conversions | VERBATIM | grm.digital
+2 | Enterprise SEO Platforms vs SEO Tools: Choosing the Right Solution for Scale | VERBATIM | BrightEdge
+3 | Beyond a Pretty Website: Why a Strong Digital Strategy is Your Business's Backbone | VERBATIM | grm.digital
+4 | Unlocking Digital Success: SEO, AEO, and GEO Explained! | VERBATIM | grm.digital
+5 | How to Create Pillar Pages for AI Search Visibility | Original | —
+6 | How to Rank Your Business in ChatGPT (AEO/GEO Applied)? | VERBATIM | searchbrand.ai
+7 | Is your SEO strategy missing AEO and GEO? Here's how to keep up | VERBATIM | specbee.com
+8 | AI Virtual Assistant vs AI Agent: What Should B2B Revenue Teams Use? | Original title | but 3rd occurrence of the question
+9 | Marketing Agencies Struggle With Lead Quality—and How to Fix the Handoff | Original | —
+10 | How to get your content cited by Google AI Overviews, ChatGPT, Perplexity & Claude | VERBATIM | specbee.com
+🔗 INTERNAL CANNIBALISATION MAP
+# | TOPIC | CONFLICTS WITH | SEVERITY
+1 | Demystifying UX and UI: Why User Experience is Crucial for Conversions | NONE, and that is the problem: no design cluster exists to link it to | ORPHAN
+2 | Enterprise SEO Platforms vs SEO Tools: Choosing the Right Solution for Scale | NONE: enterprise SEO tooling is not a cluster you have or should start | ORPHAN
+3 | Beyond a Pretty Website: Why a Strong Digital Strategy is Your Business's Backbone | NONE: the GTM cluster already makes this argument for the right reader | ORPHAN
+4 | Unlocking Digital Success: SEO, AEO, and GEO Explained! | SEVERE: llmo-vs-seo-vs-geo-vs-aeo · aeo-vs-geo · aeo-services-vs-seo-services · duplicates topic 7 | SEVERE
+5 | How to Create Pillar Pages for AI Search Visibility | LOW: llmo-checklist · how-to-rank-in-google-ai-overviews (different angle) | LOW
+6 | How to Rank Your Business in ChatGPT (AEO/GEO Applied)? | SEVERE: how-to-rank-in-google-ai-overviews · approved competitor diagnostic · llmo-checklist | SEVERE
+7 | Is your SEO strategy missing AEO and GEO? Here's how to keep up | SEVERE: duplicates topic 4 · three live acronym pages | SEVERE
+8 | AI Virtual Assistant vs AI Agent: What Should B2B Revenue Teams Use? | SEVERE (3rd occurrence): ai-sdr-sales-autopilot-vs-copilot · what-is-agentic-marketing · approved stack placement page | SEVERE
+9 | Marketing Agencies Struggle With Lead Quality—and How to Fix the Handoff | LOW: the approved SDR-to-AE handoff topic (different handoff) | LOW
+10 | How to get your content cited by Google AI Overviews, ChatGPT, Perplexity & Claude | SEVERE (5 live + 2 approved): the entire AEO cluster | SEVERE
+📚 LIVE DEVCOMMX PAGES THESE TOPICS COLLIDE WITH
+URL PATH | PAGE TITLE | RELEVANCE TO THIS BATCH
+/blogs/llmo-vs-seo-vs-geo-vs-aeo | LLMO vs SEO vs GEO vs AEO: Key Differences in 2026 | Topics 4 and 7 both duplicate it
+/blogs/aeo-vs-geo-difference-strategy-guide | AEO vs GEO: The Difference and Which You Need | Second acronym page
+/blogs/aeo-services-vs-seo-services-contracts | AEO Services vs SEO Services: What Each Contract Buys | Third acronym page, commercial angle
+/blogs/how-to-rank-in-google-ai-overviews | How to Rank in Google AI Overviews (2026) | Collides with topics 6 and 10
+/blogs/brand-mentions-vs-backlinks-ai-search | Brand Mentions vs Backlinks in AI Search | Collides with topic 10
+/blogs/llmo-checklist-best-llmo-tools-2026 | The LLMO Checklist + Best LLMO Tools for 2026 | Collides with topics 2, 6 and 10
+/blogs/generative-engine-optimization-agency | Generative Engine Optimization Agency: What They Do | Collides with topic 10
+/resources/seo-aeo-geo-playbook | SEO AEO GEO Playbook | Collides with topics 4, 7 and 10
+/blogs/ai-sdr-sales-autopilot-vs-copilot | AI SDR Showdown: Sales Autopilots vs Sales Copilots | Answers topic 8, for the third time
+/blogs/what-is-agentic-marketing-b2b-guide | What Is Agentic Marketing? Complete B2B Guide | Also covers topic 8's ground
+🔁 RECURRING PROBLEMS ACROSS THIS BATCH
+PATTERN | EVIDENCE | FIX
+1. REGRESSION: copied titles are back (7 of 10) | grm.digital x3, specbee x2, BrightEdge x1, searchbrand.ai x1. Three batches ran clean before this one, so the sourcing process changed. | Find out where this list came from and go back to whatever produced the last three. Search every title in quotes before it reaches the calendar.
+2. Three topics are from another vertical | UX/UI, 'pretty website' digital strategy, and enterprise SEO platforms. All belong to web design or enterprise SEO agencies, not to an AI SDR and AEO firm. | Add one intake question: which of our services does this topic help someone buy? If there is no answer, it is not our topic.
+3. The AEO cluster is being duplicated again | Topics 4, 6, 7 and 10 all land on pages you already have. Topics 4 and 7 are the same question as each other, and both are the fourth version of a live page. | Three live acronym pages is already too many. The next AEO slot should consolidate them, not add a fifth.
+4. REPEAT: a banned word in a title (3rd batch) | 'Unlocking' in topic 4, after 'AI-Powered' in each of the last two batches. | The banned-words list belongs in the intake form. This is a 10-second check that has now been missed three times running.
+5. REPEAT: a question already answered twice | Topic 8 is the assistant-versus-agent question for the third time. It is live on your site and was merged into another topic one batch ago. | Keep an 'already answered' list of questions and the page that owns each. Check new topics against it.
+6. An open audience question keeps resurfacing | Topic 9 targets marketing agencies. The white-label topic raised the same question three batches ago and it is still unanswered. | Decide whether agencies are a buyer. Until then, agency-facing topics should not be commissioned.
+7. The two originals are the two best topics | Topics 5 and 9 are the only ones not copied, and topic 5 scores highest in the batch at 4.4. Original thinking outperformed scraped titles by a wide margin. | That is the argument for fixing the sourcing. The in-house ideas are better than the borrowed ones.
+🎯 FIXES BEFORE THIS BATCH ENTERS THE CALENDAR
+# | FIX | WHY / HOW | PRIORITY
+1 | Drop topics 1, 2 and 3 entirely. | Off-ICP, copied, and unwinnable. They serve web design and enterprise SEO buyers, dilute your topical signal, and would be orphan pages with nothing to link to. | P0
+2 | Drop topics 4 and 7, and consolidate instead. | Both are copied, both duplicate each other, and both are the fourth version of a live page. Spend the slot refreshing llmo-vs-seo-vs-geo-vs-aeo and folding topic 7's question into its FAQ. | P0
+3 | Find out where this list came from. | Seven titles from four competitor sites after three clean batches. Whatever changed in sourcing needs reverting, because the two original topics here are the two best. | P0
+4 | Ship topic 5 first. | The only clean topic, and the one that addresses the saturation problem flagged in the last two validations. Use your own library as the worked example. | P1
+5 | Rebuild topic 10 as the AEO pillar. | As titled it competes with five live pages and two approved topics. As the pillar they all link up to, it makes the cluster work. Publish it after topic 5. | P1
+6 | Fold topic 8 into the approved stack placement page. | Third occurrence of one question. Add 'virtual assistant' to that page's vocabulary section so it captures this phrasing too. | P1
+7 | Settle the agency-audience question. | Topic 9 and the earlier white-label topic both depend on it. If agencies are not a buyer, drop both and stop commissioning agency content. | P1
+METHOD: each topic scored on 5 checks (5 pts each, 25 max, normalised to /5.0): Clarity & Specificity · Audience Relevance · Search Demand & Keyword Fit · Originality & Cannibalisation · Value Depth. An override applied twice before is applied again here: a topic scoring in the VALID band but with Originality 2 or lower is capped at NEEDS MODIFICATION, which is why topic 3 (4.0/5) is not marked VALID. Collisions were found by searching site:devcommx.com, so a full sitemap export may surface more. Heading structures are for the RECOMMENDED title on each tab, not the original. Search-demand judgements are directional, not volumes exported from a tool; confirm in Ahrefs or Semrush before locking the calendar.
+
+========================================================================
+SHEET: 01 Demystifying UX and UI 27 x 6
+TOPIC 1: Demystifying UX and UI: Why User Experience is Crucial for Conversions  —  INVALID  (2.0/5.0)
+VALIDATION CHECK | WHAT WE LOOKED FOR | FINDING | SCORE | MAX | RATING
+VERBATIM COPY, AND THE WRONG BUSINESS. This is grm.digital's live headline word for word. GRM is a web design agency. You sell AI SDR, GTM engineering and AEO. Nothing about this topic belongs on your blog.
+🔍 Topic validation — Web design (off-ICP)
+Clarity & Specificity | Is the topic unambiguous, narrow enough to execute, and does the title promise a definable outcome? | 'Demystifying' signals a beginner explainer, which sets the level low before the reader starts. The UX-to-conversion link is a real subject, but the title promises a definition rather than a result, and that framing has been published thousands of times. | 3 | 5 | ⚠️ WARN
+Audience Relevance | Does this match a real pain for DevCommX's buyer, a B2B revenue leader buying AI SDR, GTM engineering or AEO? | The weakest fit of any topic across nine batches. Your buyer has a pipeline problem. This page serves someone commissioning a website redesign, which is a different person, a different budget and a different agency. It would also dilute the topical signal your AI SDR and AEO pages depend on. | 1 | 5 | ❌ FAIL
+Search Demand & Keyword Fit | Does the title target a keyword people actually search, with intent that matches the article? | 'UX vs UI' has large volume and essentially no commercial value to you. The SERP is owned by design schools, Adobe, Figma and design agencies with years of topical authority in a category where you have none. | 2 | 5 | ❌ FAIL
+Originality & Cannibalisation | Is it differentiated, and does it collide with anything already live? | Verbatim copy of grm.digital/insights/design-development. No internal collision, because you have no design content, which is precisely the problem: the page would be an orphan with nothing on the site to link it to. | 1 | 5 | ❌ FAIL
+Value Depth | Is there enough substance to justify a dedicated article rather than a section elsewhere? | The subject has depth in the hands of a design agency with case studies. You would be writing it from research, competing against firms writing it from practice. That is the wrong fight. | 3 | 5 | ⚠️ WARN
+TOTAL: 10/25 points → 2.0/5.0 | Topic 1 verdict: INVALID
+✏️  RECOMMENDED CHANGES, KEYWORDS & ACTION
+Suggested title / rewrite | Do not publish. If conversion is the real interest, the on-ICP version is: 'Why your demo page loses AI-referred visitors' — which connects to the AEO line you actually sell.
+PRIMARY KEYWORD | — not recommended at all
+Secondary keywords | If rebuilt on-ICP: AI referred traffic conversion; demo page conversion B2B
+Duplicate-title source | VERBATIM — grm.digital
+PAA / FAQ targets | — not applicable: topic recommended for drop or consolidation
+Internal cannibalisation | NONE, and that is the issue: no design content exists to link it to. It would be an orphan page in the wrong category
+Recommended action | DROP. Off-ICP, copied, and unwinnable. If conversion work matters, write it about AI-referred traffic so it supports the AEO line.
+🧱  RECOMMENDED HEADING STRUCTURE
+LVL | HEADING | WHAT THIS SECTION MUST DO
+H1 | Do not publish this topic | No heading structure supplied: the subject is off-ICP and the title is copied
+H2 | If you want the on-ICP version instead | Why your demo page loses AI-referred visitors
+H3 | What changes about a visitor who arrived from an AI answer | They arrive later in the decision and better informed
+H3 | What that visitor needs on the page that a search visitor does not | Specifics, pricing, proof, no re-education
+H3 | How to measure it | Self-reported attribution, AI-referral segments
+
+========================================================================
+SHEET: 02 Enterprise SEO Platforms vs 27 x 6
+TOPIC 2: Enterprise SEO Platforms vs SEO Tools: Choosing the Right Solution for Scale  —  INVALID  (2.6/5.0)
+VALIDATION CHECK | WHAT WE LOOKED FOR | FINDING | SCORE | MAX | RATING
+VERBATIM COPY FROM A VENDOR WHOSE PRODUCT IS THE ANSWER. This is BrightEdge's live headline. BrightEdge sells an enterprise SEO platform, so the article exists to argue for the category they sell. Copying it means arguing their case, not yours.
+🔍 Topic validation — Enterprise SEO (off-ICP)
+Clarity & Specificity | Is the topic unambiguous, narrow enough to execute, and does the title promise a definable outcome? | Well built as a title, with a clear comparison and a stated decision criterion in 'for scale'. The construction is fine. The problem is whose argument it is. | 4 | 5 | ✅ PASS
+Audience Relevance | Does this match a real pain for DevCommX's buyer, a B2B revenue leader buying AI SDR, GTM engineering or AEO? | Enterprise SEO platform buyers are in-house SEO teams at large companies with six-figure tooling budgets. That is not your buyer, and it is not who your AEO service is sold to. You would attract readers you cannot serve. | 2 | 5 | ❌ FAIL
+Search Demand & Keyword Fit | Does the title target a keyword people actually search, with intent that matches the article? | Real volume with strong commercial intent, but the intent is to buy a platform. The SERP is the platform vendors themselves: BrightEdge, Conductor, seoClarity, Semrush Enterprise. You cannot win a category page against the companies that are the category. | 3 | 5 | ⚠️ WARN
+Originality & Cannibalisation | Is it differentiated, and does it collide with anything already live? | Verbatim BrightEdge headline. No internal collision, because enterprise SEO tooling is not a cluster you have, and on current positioning it is not one you should start. | 1 | 5 | ❌ FAIL
+Value Depth | Is there enough substance to justify a dedicated article rather than a section elsewhere? | You have no first-hand position here. You do not sell, resell or implement enterprise SEO platforms, so the article would be assembled from vendor marketing. That is the thin-content failure flagged on the Cold Email Hackers review. | 3 | 5 | ⚠️ WARN
+TOTAL: 13/25 points → 2.6/5.0 | Topic 2 verdict: INVALID
+✏️  RECOMMENDED CHANGES, KEYWORDS & ACTION
+Suggested title / rewrite | Do not publish. The adjacent on-ICP question you can answer first-hand is: 'What AI visibility tooling is actually worth paying for' — tools you use, with what each one tells you.
+PRIMARY KEYWORD | — not recommended at all
