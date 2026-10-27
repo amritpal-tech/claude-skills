@@ -21,7 +21,7 @@
   "drafts": {
     "palette": { "bg": "#061820", "fg": "#f3f7f6", "accent": "#2cc4b3" },
     "sections": [
-      { "name": "Hook", "beats": [["cloud", "Missing the sounds you love?|Conversations|Laughter|Music|Birdsong|Your name|Rain"]] },
+      { "name": "Hook", "beats": [["cloud", "Missing the sounds?|Conversations|Laughter|Music|Birdsong|Your name|Rain"]] },
       { "name": "Clarity", "beats": [["burst"], ["text", "Hear life again."]] },
       { "name": "Brand", "beats": [["logo", "Sound for Life", { "mark": ")))", "markSize": 52, "size": 42, "sub": "Complete hearing care, by certified audiologists" }]] },
       { "name": "Hearing test", "beats": [["chart", "Audiogram"], ["notify", "Your hearing report is ready"]] },

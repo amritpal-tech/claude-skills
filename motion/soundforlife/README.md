@@ -12,6 +12,7 @@ and CTA pill/click (01, 18).
 | `out/soundforlife-promo-1080p.webm` | Same film as VP9 + Opus (smaller); offer it first in `<video>`. |
 | `out/soundforlife-hero-720p-muted.mp4` | Light, silent copy for an autoplaying hero background. |
 | `out/poster.jpg` | `poster` image shown before playback. |
+| `out/soundforlife-nullmotion-breakdown.mp4` | NullMotion's breakdown: the film over its section-by-section HyperFrames drafts. For pitching or a "how it's made" post, not for the site itself. |
 
 ## The story (96 bpm, every cut on a bar line)
 
@@ -92,7 +93,8 @@ node nullmotion/install.mjs ./NullMotion      # writes only to NullMotion's igno
 cd NullMotion && npm start                    # open http://127.0.0.1:4343/?v=soundforlife
 ```
 
-In Chrome or Edge, **Download → Whole preview** exports the film-over-drafts breakdown as an MP4.
+In Chrome or Edge, **Download → Whole preview** exports the film-over-drafts breakdown as an MP4
+(that's how `out/soundforlife-nullmotion-breakdown.mp4` was made).
 
 ## Credits
 
