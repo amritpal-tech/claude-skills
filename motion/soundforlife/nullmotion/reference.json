@@ -1,0 +1,33 @@
+{
+  "catalog": {
+    "id": "soundforlife",
+    "name": "Sound for Life · Hear life again",
+    "duration": 30,
+    "width": 1920,
+    "height": 1080,
+    "src": "/media/references/soundforlife.mp4",
+    "poster": "/references/soundforlife-0.jpg"
+  },
+  "sections": [
+    { "start": 0, "end": 5 },
+    { "start": 5, "end": 10 },
+    { "start": 10, "end": 12.5 },
+    { "start": 12.5, "end": 17.5 },
+    { "start": 17.5, "end": 22.5 },
+    { "start": 22.5, "end": 25 },
+    { "start": 25, "end": 30 }
+  ],
+  "cuts": [6.85, 15.9],
+  "drafts": {
+    "palette": { "bg": "#061820", "fg": "#f3f7f6", "accent": "#2cc4b3" },
+    "sections": [
+      { "name": "Hook", "beats": [["cloud", "Missing the sounds you love?|Conversations|Laughter|Music|Birdsong|Your name|Rain"]] },
+      { "name": "Clarity", "beats": [["burst"], ["text", "Hear life again."]] },
+      { "name": "Brand", "beats": [["logo", "Sound for Life", { "mark": ")))", "markSize": 52, "size": 42, "sub": "Complete hearing care, by certified audiologists" }]] },
+      { "name": "Hearing test", "beats": [["chart", "Audiogram"], ["notify", "Your hearing report is ready"]] },
+      { "name": "Care", "beats": [["list", "Expert consultation|Trial & fitting|Lifelong aftercare"]] },
+      { "name": "Network", "beats": [["hub", "40+ clinics · 15+ cities"]] },
+      { "name": "End card", "beats": [["logo", "Sound for Life", { "mark": ")))", "markSize": 44, "size": 32, "sub": "BOOK A HEARING TEST · SOUNDFORLIFE.IN" }]] }
+    ]
+  }
+}

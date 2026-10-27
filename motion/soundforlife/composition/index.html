@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="hyperframes" content="duration:30,fps:30,width:1920,height:1080,transparent:false">
+  <meta name="duration" content="30000">
+  <meta name="fps" content="30">
+  <meta name="width" content="1920">
+  <meta name="height" content="1080">
+  <title>Sound for Life · Hear life again</title>
+  <script src="vendor/gsap.min.js"></script>
+  <style>
+    /* ---- Brand tokens. Swap these for the official Sound for Life palette. ---- */
+    :root {
+      --ink: #061820;        /* deepest background */
+      --deep: #0c2a35;       /* background mid-tone */
+      --teal: #2cc4b3;       /* primary */
+      --teal-soft: #8fe6da;  /* primary, light */
+      --amber: #ffb866;      /* warm accent */
+      --coral: #ff7a59;      /* right-ear marker */
+      --paper: #f3f7f6;      /* text */
+      --muted: rgba(243, 247, 246, .62);
+      --line: rgba(243, 247, 246, .12);
+      --glass: linear-gradient(160deg, rgba(28, 64, 76, .62) 0%, rgba(10, 32, 41, .72) 100%);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { width: 1920px; height: 1080px; overflow: hidden; background: var(--ink); }
+    body { color: var(--paper); font-family: Inter, -apple-system, "Segoe UI", Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+    #root { position: absolute; inset: 0; overflow: hidden; background: radial-gradient(ellipse 120% 90% at 50% 38%, #0f3240 0%, var(--ink) 58%, #030f15 100%); }
+    .abs { position: absolute; }
+    .display { font-family: "Inter Display", Inter, Arial, sans-serif; }
+    .mono { font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace; }
+
+    /* ---- Atmosphere ---- */
+    .glow { position: absolute; border-radius: 50%; pointer-events: none; will-change: transform, opacity; }
+    #glow-teal { left: -380px; top: -460px; width: 1500px; height: 1300px; background: radial-gradient(closest-side, rgba(44,196,179,.30), rgba(44,196,179,0)); }
+    #glow-amber { right: -420px; bottom: -560px; width: 1500px; height: 1300px; background: radial-gradient(closest-side, rgba(255,184,102,.22), rgba(255,184,102,0)); }
+    #vignette { inset: 0; background: radial-gradient(ellipse 85% 75% at 50% 50%, transparent 55%, rgba(0,0,0,.55) 100%); pointer-events: none; }
+    #grain { inset: 0; opacity: .07; mix-blend-mode: overlay; pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+
+    /* ---- Signature waveform (drawn every frame from the timeline clock) ---- */
+    #wave { left: 0; top: 0; width: 1920px; height: 1080px; overflow: visible; pointer-events: none; }
+    #wave-muffled { filter: blur(3px); }
+    #spark { left: 0; top: 0; width: 16px; height: 16px; margin: -8px 0 0 -8px; border-radius: 50%; opacity: 0;
+      background: #fff8e8; box-shadow: 0 0 14px rgba(255,248,232,.95), 0 0 46px rgba(255,184,102,.85), 0 0 120px rgba(44,196,179,.55); }
+
+    /* ---- Shared scene parts ---- */
+    .scene { position: absolute; inset: 0; visibility: hidden; }
+    .index { position: absolute; left: 120px; top: 104px; display: flex; align-items: center; gap: 14px; color: rgba(243,247,246,.58);
+      font: 500 17px/1 "JetBrains Mono", monospace; letter-spacing: .2em; text-transform: uppercase; }
+    .index i { width: 26px; height: 2px; background: var(--amber); box-shadow: 0 0 16px rgba(255,184,102,.6); }
+    .mask { display: inline-block; overflow: hidden; vertical-align: top; padding: .08em .03em .26em; margin: -.08em -.03em -.26em; }
+    .mask > span { display: inline-block; will-change: transform, opacity, filter; }
+    .silver { background: linear-gradient(180deg, #ffffff 0%, #e7f1ef 48%, #a9c2bd 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+    /* ---- 01 The quiet ---- */
+    .muffled { position: absolute; transform: translate(-50%, -50%); white-space: nowrap; font-weight: 500; letter-spacing: -.02em; color: #b9c9c6; }
+    #s1-head { left: 0; right: 0; top: 400px; text-align: center; font-size: 132px; font-weight: 650; line-height: 1.02; letter-spacing: -.045em; }
+
+    /* ---- 02 Clarity (kinetic headline, after template 22) ---- */
+    #s2-line { left: 0; right: 0; top: 410px; display: flex; align-items: center; justify-content: center; gap: 40px; white-space: nowrap; perspective: 1400px; }
+    #s2-line .word { font-size: 168px; font-weight: 720; letter-spacing: -.05em; line-height: .9; padding: .04em .02em .24em; margin: -.04em -.02em -.24em; }
+    .pill-wrap { position: relative; padding: 30px 0; }
+    #pill { position: relative; padding: 28px 70px 40px; border-radius: 999px; overflow: hidden;
+      background: linear-gradient(180deg, rgba(31,96,96,.98) 0%, rgba(12,52,58,.99) 58%, rgba(6,30,36,1) 100%);
+      border: 1px solid rgba(143,230,218,.38);
+      box-shadow: inset 0 2px rgba(255,255,255,.22), inset 0 -2px rgba(255,184,102,.22), 0 0 70px rgba(44,196,179,.32), 0 28px 60px rgba(0,0,0,.45); }
+    #pill::before { content: ""; position: absolute; inset: 1px 34px auto; height: 44%; border-radius: 999px; background: linear-gradient(180deg, rgba(255,255,255,.14), transparent); }
+    #pill .word { position: relative; z-index: 2; display: block; background: linear-gradient(180deg, #ffffff 0%, #d9fbf5 50%, #8fe6da 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    #sheen { position: absolute; z-index: 3; top: -20%; left: -40%; width: 26%; height: 140%; opacity: 0; transform: skewX(-16deg);
+      background: linear-gradient(105deg, transparent, rgba(255,255,255,.75), rgba(255,184,102,.35), transparent); }
+    #pill-shadow { position: absolute; left: 12%; right: 12%; bottom: 8px; height: 30px; border-radius: 50%; background: rgba(0,0,0,.55); filter: blur(18px); }
+    #s2-micro { left: 0; right: 0; top: 700px; text-align: center; color: rgba(243,247,246,.55); font: 500 20px/1 "JetBrains Mono", monospace; letter-spacing: .26em; }
+    #s2-micro b { color: var(--amber); font-weight: 500; }
+
+    /* ---- 03 Brand ---- */
+    #logo { left: 0; right: 0; top: 380px; display: flex; align-items: center; justify-content: center; gap: 44px; }
+    #mark { width: 168px; height: 168px; overflow: visible; }
+    #mark .arc { fill: none; stroke-width: 11; stroke-linecap: round; }
+    #wordmark { font-size: 138px; font-weight: 700; letter-spacing: -.045em; line-height: 1; white-space: nowrap; }
+    #wordmark em { font-style: normal; font-weight: 300; color: var(--amber); -webkit-text-fill-color: var(--amber); }
+    #s3-sub { left: 0; right: 0; top: 640px; text-align: center; font-size: 36px; font-weight: 400; color: var(--muted); letter-spacing: -.005em; }
+
+    /* ---- 04 Hearing test (chart after template 16, toast after 06) ---- */
+    #s4-copy { left: 120px; top: 250px; width: 700px; }
+    #s4-copy h2 { font-size: 92px; font-weight: 680; line-height: 1.0; letter-spacing: -.045em; }
+    #s4-copy p { margin-top: 34px; width: 620px; font-size: 30px; line-height: 1.45; color: var(--muted); font-weight: 400; }
+    .card { border-radius: 30px; background: var(--glass); border: 1px solid rgba(143,230,218,.16);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.10), 0 40px 90px rgba(0,0,0,.45); }
+    #chart-card { left: 880px; top: 150px; width: 920px; height: 660px; padding: 38px 44px; }
+    #chart-head { display: flex; align-items: center; justify-content: space-between; }
+    #chart-head h3 { font-size: 34px; font-weight: 600; letter-spacing: -.02em; }
+    #chart-head .legend { display: flex; gap: 28px; font: 500 18px/1 "JetBrains Mono", monospace; color: var(--muted); letter-spacing: .08em; }
+    .legend span { display: inline-flex; align-items: center; gap: 10px; }
+    #audiogram { position: absolute; left: 44px; top: 112px; width: 832px; height: 510px; overflow: visible; }
+    #audiogram text { font: 500 19px "JetBrains Mono", monospace; fill: rgba(243,247,246,.5); }
+    #toast { left: 800px; top: 770px; width: 640px; display: flex; align-items: center; gap: 22px; padding: 24px 28px; border-radius: 26px;
+      background: linear-gradient(180deg, rgba(22,52,62,.97), rgba(9,30,38,.97)); border: 1px solid rgba(143,230,218,.22);
+      box-shadow: 0 30px 70px rgba(0,0,0,.55), inset 0 1px 0 rgba(255,255,255,.08); }
+    #toast .ico { width: 62px; height: 62px; flex: none; border-radius: 18px; display: grid; place-items: center; background: var(--teal); box-shadow: 0 0 30px rgba(44,196,179,.5); }
+    #toast .t { font-size: 27px; font-weight: 600; letter-spacing: -.01em; }
+    #toast .s { margin-top: 6px; font-size: 21px; color: var(--muted); }
+    #toast .time { margin-left: auto; align-self: flex-start; font-size: 18px; color: rgba(243,247,246,.45); }
+
+    /* ---- 05 Care journey (after template 02) ---- */
+    #s5-head { left: 0; right: 0; top: 150px; text-align: center; }
+    #s5-head h2 { font-size: 88px; font-weight: 680; letter-spacing: -.045em; line-height: 1; }
+    #s5-index { left: 0; right: 0; top: 98px; justify-content: center; }
+    #steps { left: 0; right: 0; top: 340px; display: flex; justify-content: center; gap: 48px; }
+    .step { position: relative; width: 488px; height: 470px; padding: 42px 42px 40px; display: flex; flex-direction: column; will-change: transform, opacity; }
+    .step .num { font: 500 20px/1 "JetBrains Mono", monospace; letter-spacing: .22em; color: rgba(143,230,218,.75); }
+    .step .ico { margin-top: 30px; width: 92px; height: 92px; border-radius: 26px; display: grid; place-items: center;
+      background: linear-gradient(140deg, rgba(44,196,179,.28), rgba(44,196,179,.06)); border: 1px solid rgba(143,230,218,.28); }
+    .step .ico svg { width: 56px; height: 56px; overflow: visible; }
+    .step .ico path, .step .ico circle { fill: none; stroke: var(--teal-soft); stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
+    .step h3 { margin-top: 36px; font-size: 40px; font-weight: 640; letter-spacing: -.025em; line-height: 1.08; }
+    .step p { margin-top: 16px; font-size: 24px; line-height: 1.45; color: var(--muted); }
+    .step .bar { margin-top: auto; height: 7px; width: 100%; border-radius: 99px; background: rgba(243,247,246,.08); overflow: hidden; }
+    .step .bar i { display: block; height: 100%; width: 100%; border-radius: 99px; background: linear-gradient(90deg, var(--teal), var(--amber)); transform-origin: left center; }
+
+    /* ---- 06 Network ---- */
+    #s6-copy { left: 120px; top: 230px; width: 860px; }
+    .stats { display: flex; gap: 90px; }
+    .stat .n { font-size: 210px; font-weight: 720; letter-spacing: -.06em; line-height: .9; }
+    .stat .l { margin-top: 10px; font: 500 22px/1 "JetBrains Mono", monospace; letter-spacing: .24em; color: var(--muted); text-transform: uppercase; }
+    #s6-tag { margin-top: 64px; font-size: 54px; font-weight: 600; letter-spacing: -.03em; }
+    #ticker-mask { left: 120px; top: 700px; width: 860px; height: 64px; overflow: hidden;
+      -webkit-mask-image: linear-gradient(90deg, transparent, #000 14%, #000 80%, transparent); mask-image: linear-gradient(90deg, transparent, #000 14%, #000 80%, transparent); }
+    #ticker { display: flex; gap: 22px; white-space: nowrap; font-size: 26px; font-weight: 500; color: rgba(243,247,246,.78); }
+    #ticker span { padding: 12px 24px; border-radius: 99px; border: 1px solid rgba(143,230,218,.22); background: rgba(44,196,179,.08); }
+    #map { left: 1080px; top: 120px; width: 720px; height: 840px; }
+    .city { position: absolute; transform: translate(-50%, -50%); }
+    .city .dot { width: 22px; height: 22px; border-radius: 50%; background: var(--amber); box-shadow: 0 0 22px rgba(255,184,102,.8); }
+    .city .ping { position: absolute; left: 50%; top: 50%; width: 22px; height: 22px; margin: -11px; border-radius: 50%; border: 2px solid rgba(143,230,218,.8); opacity: 0; }
+    .city .name { position: absolute; left: 34px; top: 50%; transform: translateY(-50%); white-space: nowrap; font: 500 21px/1 "JetBrains Mono", monospace; letter-spacing: .1em; color: rgba(243,247,246,.82); }
+    .city.hub .name { left: 44px; color: #fff; }
+    .city .name { text-shadow: 0 2px 12px rgba(3,15,21,.9); }
+    .city.hub .dot { width: 30px; height: 30px; background: var(--teal); box-shadow: 0 0 34px rgba(44,196,179,.9); }
+    #routes { left: 0; top: 0; width: 720px; height: 840px; overflow: visible; }
+    #routes path { fill: none; stroke: rgba(143,230,218,.42); stroke-width: 2; stroke-dasharray: 3 9; stroke-linecap: round; }
+
+    /* ---- 07 End card (CTA after templates 01 + 18) ---- */
+    #end-logo { left: 0; right: 0; top: 196px; display: flex; align-items: center; justify-content: center; gap: 22px; }
+    #end-logo svg { width: 78px; height: 78px; overflow: visible; }
+    #end-logo svg .arc { fill: none; stroke-width: 11; stroke-linecap: round; }
+    #end-logo .wm { font-size: 58px; font-weight: 700; letter-spacing: -.04em; }
+    #end-logo .wm em { font-style: normal; font-weight: 300; color: var(--amber); }
+    #end-head { left: 0; right: 0; top: 356px; text-align: center; font-size: 100px; font-weight: 680; letter-spacing: -.05em; line-height: 1.02; }
+    #cta-wrap { left: 50%; top: 588px; transform: translateX(-50%); }
+    #cta-ring { position: absolute; left: 50%; top: 50%; width: 760px; height: 200px; transform: translate(-50%, -50%); border-radius: 999px; border: 1.5px solid rgba(255,184,102,.28); }
+    #cta { position: relative; display: flex; align-items: center; gap: 22px; padding: 34px 66px 36px 74px; border-radius: 999px; overflow: hidden; white-space: nowrap;
+      background: linear-gradient(180deg, #ffd29a 0%, #ffb866 52%, #f39a3d 100%); color: #0a2028;
+      box-shadow: inset 0 2px 1px rgba(255,255,255,.7), inset 0 -3px 6px rgba(160,80,10,.45), 0 0 80px rgba(255,184,102,.35), 0 28px 60px rgba(0,0,0,.5); }
+    #cta::before { content: ""; position: absolute; inset: 2px 30px 54% 30px; border-radius: 999px; background: linear-gradient(180deg, rgba(255,255,255,.5), rgba(255,255,255,0)); }
+    #cta span { position: relative; font-size: 50px; font-weight: 700; letter-spacing: -.02em; }
+    #cta svg { position: relative; width: 44px; height: 44px; }
+    #cta-glint { position: absolute; top: 0; left: -60%; width: 40%; height: 100%; transform: skewX(-18deg); background: linear-gradient(105deg, transparent, rgba(255,255,255,.75), transparent); }
+    #ripple { position: absolute; left: 50%; top: 50%; width: 40px; height: 40px; margin: -20px; border-radius: 50%; background: rgba(255,255,255,.45); transform: scale(0); }
+    #contact { left: 0; right: 0; top: 806px; display: flex; justify-content: center; gap: 36px; align-items: center; font-size: 34px; font-weight: 500; color: rgba(243,247,246,.85); letter-spacing: -.005em; }
+    #contact i { width: 8px; height: 8px; border-radius: 50%; background: var(--amber); }
+    #cursor { left: 0; top: 0; width: 48px; height: 48px; z-index: 20; opacity: 0; }
+    #cursor svg { width: 100%; height: 100%; filter: drop-shadow(0 6px 10px rgba(0,0,0,.55)); }
+  </style>
+</head>
+<body>
+  <div id="root" data-composition-id="root" data-start="0" data-duration="30" data-track-index="0" data-width="1920" data-height="1080">
+    <!-- Atmosphere -->
+    <div class="glow" id="glow-teal"></div>
+    <div class="glow" id="glow-amber"></div>
+
+    <!-- Signature waveform: grey and blurred behind the sweep, clear and in colour after it -->
+    <svg id="wave" class="abs" viewBox="0 0 1920 1080">
+      <defs>
+        <linearGradient id="wave-color" x1="0" y1="0" x2="1920" y2="0" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#2cc4b3" stop-opacity="0"/>
+          <stop offset=".18" stop-color="#2cc4b3"/>
+          <stop offset=".55" stop-color="#8fe6da"/>
+          <stop offset=".82" stop-color="#ffb866"/>
+          <stop offset="1" stop-color="#ffb866" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="wave-grey" x1="0" y1="0" x2="1920" y2="0" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#7d8f8c" stop-opacity="0"/>
+          <stop offset=".2" stop-color="#7d8f8c"/>
+          <stop offset=".8" stop-color="#7d8f8c"/>
+          <stop offset="1" stop-color="#7d8f8c" stop-opacity="0"/>
+        </linearGradient>
+        <clipPath id="clip-clear"><rect id="clip-clear-rect" x="0" y="0" width="0" height="1080"/></clipPath>
+        <clipPath id="clip-muffled"><rect id="clip-muffled-rect" x="0" y="0" width="1920" height="1080"/></clipPath>
+        <filter id="wave-glow" x="-10%" y="-50%" width="120%" height="200%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <g id="wave-group">
+        <g id="wave-muffled" clip-path="url(#clip-muffled)" stroke="url(#wave-grey)" fill="none" stroke-linecap="round">
+          <path id="wm0" stroke-width="3" opacity=".75"/>
+          <path id="wm1" stroke-width="2" opacity=".4"/>
+          <path id="wm2" stroke-width="1.5" opacity=".25"/>
+        </g>
+        <g id="wave-clear" clip-path="url(#clip-clear)" stroke="url(#wave-color)" fill="none" stroke-linecap="round" filter="url(#wave-glow)">
+          <path id="wc0" stroke-width="4"/>
+          <path id="wc1" stroke-width="2.2" opacity=".55"/>
+          <path id="wc2" stroke-width="1.6" opacity=".32"/>
+        </g>
+      </g>
+    </svg>
+    <div id="spark" class="abs"></div>
+
+    <!-- 01 · The quiet -->
+    <section class="scene" id="s1">
+      <div class="index" id="s1-index"><i></i><span>01 / The quiet</span></div>
+      <div class="muffled display" style="left:330px;top:240px;font-size:56px">Conversations</div>
+      <div class="muffled display" style="left:960px;top:176px;font-size:44px">Your name</div>
+      <div class="muffled display" style="left:1580px;top:262px;font-size:62px">Laughter</div>
+      <div class="muffled display" style="left:286px;top:690px;font-size:52px">Birdsong</div>
+      <div class="muffled display" style="left:1640px;top:700px;font-size:68px">Music</div>
+      <div class="muffled display" style="left:620px;top:950px;font-size:42px">Temple bells</div>
+      <div class="muffled display" style="left:1340px;top:956px;font-size:46px">Rain</div>
+      <h1 class="abs display" id="s1-head">
+        <span class="mask"><span>Missing</span></span> <span class="mask"><span>the</span></span> <span class="mask"><span>sounds</span></span><br>
+        <span class="mask"><span>you</span></span> <span class="mask"><span>love?</span></span>
+      </h1>
+    </section>
+
+    <!-- 02 · Clarity -->
+    <section class="scene" id="s2">
+      <div class="index" id="s2-index"><i></i><span>02 / Clarity</span></div>
+      <div class="abs display" id="s2-line">
+        <span class="mask"><span class="word silver" id="w-hear">Hear</span></span>
+        <div class="pill-wrap">
+          <div id="pill-shadow"></div>
+          <div id="pill"><span class="word">life</span><span id="sheen"></span></div>
+        </div>
+        <span class="mask"><span class="word silver" id="w-again">again.</span></span>
+      </div>
+      <p class="abs" id="s2-micro">EVERY CONVERSATION <b>·</b> EVERY LAUGH <b>·</b> EVERY NOTE</p>
+    </section>
+
+    <!-- 03 · Brand -->
+    <section class="scene" id="s3">
+      <div class="index" id="s3-index"><i></i><span>03 / Meet</span></div>
+      <div class="abs" id="logo">
+        <svg id="mark" viewBox="0 0 150 150">
+          <circle id="mark-dot" cx="40" cy="75" r="15" fill="#2cc4b3"/>
+          <path class="arc" id="arc1" stroke="#8fe6da" d="M64.4 45.9 A38 38 0 0 1 64.4 104.1"/>
+          <path class="arc" id="arc2" stroke="#2cc4b3" d="M79.9 27.5 A62 62 0 0 1 79.9 122.5"/>
+          <path class="arc" id="arc3" stroke="#ffb866" d="M95.3 9.1 A86 86 0 0 1 95.3 140.9"/>
+        </svg>
+        <div id="wordmark" class="display silver">Sound <em>for</em> Life</div>
+      </div>
+      <p class="abs" id="s3-sub">Complete hearing care, by certified audiologists</p>
+    </section>
+
+    <!-- 04 · Hearing test -->
+    <section class="scene" id="s4">
+      <div class="index" id="s4-index"><i></i><span>04 / Step one</span></div>
+      <div class="abs" id="s4-copy">
+        <h2 class="display"><span class="mask"><span>Start</span></span> <span class="mask"><span>with</span></span> <span class="mask"><span>a</span></span><br><span class="mask"><span>precise</span></span><br><span class="mask"><span>hearing</span></span> <span class="mask"><span>test</span></span></h2>
+        <p id="s4-p">A detailed audiometry check shows exactly how you hear, across every frequency, in both ears.</p>
+      </div>
+      <div class="abs card" id="chart-card">
+        <div id="chart-head">
+          <h3>Your audiogram</h3>
+          <div class="legend">
+            <span><svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="6.5" fill="none" stroke="#ff7a59" stroke-width="3"/></svg>RIGHT</span>
+            <span><svg width="18" height="18" viewBox="0 0 18 18"><path d="M3 3 L15 15 M15 3 L3 15" stroke="#8fe6da" stroke-width="3" stroke-linecap="round"/></svg>LEFT</span>
+          </div>
+        </div>
+        <svg id="audiogram" viewBox="0 0 832 510"></svg>
+      </div>
+      <div class="abs" id="toast">
+        <div class="ico"><svg width="34" height="34" viewBox="0 0 24 24"><path d="M5 12.5 L10 17 L19 7.5" fill="none" stroke="#061820" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div><div class="t">Your hearing report is ready</div><div class="s">Explained by your audiologist</div></div>
+        <div class="time">now</div>
+      </div>
+    </section>
+
+    <!-- 05 · Care journey -->
+    <section class="scene" id="s5">
+      <div class="index" id="s5-index"><i></i><span>05 / Then</span></div>
+      <div class="abs" id="s5-head"><h2 class="display"><span class="mask"><span>Care</span></span> <span class="mask"><span>that</span></span> <span class="mask"><span>stays</span></span> <span class="mask"><span>with</span></span> <span class="mask"><span>you</span></span></h2></div>
+      <div class="abs" id="steps">
+        <div class="step card">
+          <div class="num">02</div>
+          <div class="ico"><svg viewBox="0 0 56 56"><path d="M8 12 H36 a6 6 0 0 1 6 6 V30 a6 6 0 0 1 -6 6 H22 L13 44 V36 H8 a6 6 0 0 1 -6 -6 V18 a6 6 0 0 1 6 -6 Z"/><path d="M42 22 H48 a6 6 0 0 1 6 6 V38 a6 6 0 0 1 -6 6 H46 V51 L38 44 H30"/></svg></div>
+          <h3>Expert consultation</h3>
+          <p>Certified audiologists walk you through your results and options.</p>
+          <div class="bar"><i></i></div>
+        </div>
+        <div class="step card">
+          <div class="num">03</div>
+          <div class="ico"><svg viewBox="0 0 56 56"><path d="M30 6 C43 6 50 17 46 30 C43 39 36 43 31 38 C26 33 23 24 24 16 C25 10 27 6 30 6 Z"/><path d="M31 38 C30 45 25 50 18 49"/><circle cx="14" cy="48" r="5"/></svg></div>
+          <h3>Trial &amp; fitting</h3>
+          <p>Try hearing aids first, then get them precisely tuned to you.</p>
+          <div class="bar"><i></i></div>
+        </div>
+        <div class="step card">
+          <div class="num">04</div>
+          <div class="ico"><svg viewBox="0 0 56 56"><path d="M28 48 C14 38 5 30 5 19 C5 12 10 7 17 7 C22 7 26 10 28 14 C30 10 34 7 39 7 C46 7 51 12 51 19 C51 30 42 38 28 48 Z"/><path d="M12 26 H20 L24 19 L30 33 L34 26 H44"/></svg></div>
+          <h3>Lifelong aftercare</h3>
+          <p>Follow-ups, fine-tuning and servicing whenever you need it.</p>
+          <div class="bar"><i></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 · Network -->
+    <section class="scene" id="s6">
+      <div class="index" id="s6-index"><i></i><span>06 / Near you</span></div>
+      <div class="abs" id="s6-copy">
+        <div class="stats">
+          <div class="stat"><div class="n display silver"><span id="count-clinics">0</span>+</div><div class="l">Clinics</div></div>
+          <div class="stat"><div class="n display silver"><span id="count-cities">0</span>+</div><div class="l">Cities</div></div>
+        </div>
+        <div id="s6-tag" class="display">Hearing care, close to home.</div>
+      </div>
+      <div class="abs" id="ticker-mask"><div id="ticker"></div></div>
+      <div class="abs" id="map">
+        <svg id="routes" viewBox="0 0 720 840"></svg>
+      </div>
+    </section>
+
+    <!-- 07 · End card -->
+    <section class="scene" id="s7">
+      <div class="abs" id="end-logo">
+        <svg viewBox="0 0 150 150">
+          <circle cx="40" cy="75" r="15" fill="#2cc4b3"/>
+          <path class="arc" stroke="#8fe6da" d="M64.4 45.9 A38 38 0 0 1 64.4 104.1"/>
+          <path class="arc" stroke="#2cc4b3" d="M79.9 27.5 A62 62 0 0 1 79.9 122.5"/>
+          <path class="arc" stroke="#ffb866" d="M95.3 9.1 A86 86 0 0 1 95.3 140.9"/>
+        </svg>
+        <div class="wm display">Sound <em>for</em> Life</div>
+      </div>
+      <h2 class="abs display" id="end-head"><span class="mask"><span>Rediscover</span></span> <span class="mask"><span>the</span></span> <span class="mask"><span>sounds</span></span> <span class="mask"><span>you</span></span> <span class="mask"><span>love.</span></span></h2>
+      <div class="abs" id="cta-wrap">
+        <div id="cta-ring"></div>
+        <div id="cta"><span>Book a hearing test</span>
+          <svg viewBox="0 0 24 24"><path d="M5 12 H19 M13 6 L19 12 L13 18" fill="none" stroke="#0a2028" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div id="cta-glint"></div><div id="ripple"></div>
+        </div>
+      </div>
+      <div class="abs" id="contact"><span>soundforlife.in</span><i></i><span>+91 90154 01540</span></div>
+      <div class="abs" id="cursor"><svg viewBox="0 0 24 24"><path d="M4 2 4 20 9 15 12.5 22 15 21 11.5 14 18 14 Z" fill="#fff" stroke="#061820" stroke-width=".8" stroke-linejoin="round"/></svg></div>
+    </section>
+
+    <div class="abs" id="vignette"></div>
+    <div class="abs" id="grain"></div>
+  </div>
+
+  <script>
+    // ---------------------------------------------------------------------------------------
+    // Copy and figures that are likely to change. Verify the numbers against soundforlife.in.
+    // ---------------------------------------------------------------------------------------
+    const CONFIG = {
+      clinics: 40,
+      cities: 15,
+      tickerCities: ['Delhi', 'Noida', 'Gurugram', 'Faridabad', 'Mumbai', 'Bengaluru', 'Chandigarh', 'Lucknow'],
+      // Mapped cities: [label, latitude, longitude, isHub]
+      mapCities: [['Chandigarh', 30.73, 76.78], ['Delhi NCR', 28.61, 77.21, true], ['Lucknow', 26.85, 80.95], ['Mumbai', 19.08, 72.88], ['Bengaluru', 12.97, 77.59]],
+      // Audiogram thresholds (dB HL) at 250, 500, 1k, 2k, 4k, 8k Hz: a typical age-related, high-frequency loss.
+      rightEar: [15, 20, 25, 40, 55, 65],
+      leftEar: [20, 25, 35, 45, 60, 70]
+    };
+
+    // Scene starts in seconds. The score runs at 96 bpm, so a bar is 2.5 s and every cut lands on a bar line.
+    const T = { quiet: 0, clarity: 5, brand: 10, test: 12.5, care: 17.5, network: 22.5, end: 25, out: 30 };
+    const NS = 'http://www.w3.org/2000/svg';
+    const $ = s => document.querySelector(s);
+    const $$ = s => Array.from(document.querySelectorAll(s));
+    const svgEl = (parent, tag, attrs) => { const n = document.createElementNS(NS, tag); for (const k in attrs) n.setAttribute(k, attrs[k]); parent.append(n); return n; };
+
+    // ---- Build the audiogram (dB HL runs downward, as on a clinical audiogram) ----
+    const AG = { x0: 92, x1: 800, y0: 22, y1: 452, freqs: ['250', '500', '1k', '2k', '4k', '8k'] };
+    const agX = i => AG.x0 + 40 + i * ((AG.x1 - AG.x0 - 80) / 5);
+    const agY = db => AG.y0 + (db / 100) * (AG.y1 - AG.y0);
+    (function buildAudiogram() {
+      const svg = $('#audiogram');
+      svgEl(svg, 'rect', { id: 'ag-normal', x: AG.x0, y: agY(-10) < AG.y0 ? AG.y0 : agY(-10), width: AG.x1 - AG.x0, height: agY(25) - AG.y0, fill: 'rgba(44,196,179,.10)' });
+      svgEl(svg, 'text', { id: 'ag-normal-label', x: AG.x1 - 12, y: AG.y0 + 30, 'text-anchor': 'end', style: 'fill:rgba(143,230,218,.75)' }).textContent = 'NORMAL RANGE';
+      for (let db = 0; db <= 100; db += 20) {
+        svgEl(svg, 'line', { class: 'ag-grid', x1: AG.x0, x2: AG.x1, y1: agY(db), y2: agY(db), stroke: 'rgba(243,247,246,.08)', 'stroke-width': 2 });
+        svgEl(svg, 'text', { class: 'ag-label', x: AG.x0 - 18, y: agY(db) + 6, 'text-anchor': 'end' }).textContent = db;
+      }
+      AG.freqs.forEach((f, i) => {
+        svgEl(svg, 'line', { class: 'ag-grid', x1: agX(i), x2: agX(i), y1: AG.y0, y2: AG.y1, stroke: 'rgba(243,247,246,.06)', 'stroke-width': 2 });
+        svgEl(svg, 'text', { class: 'ag-label', x: agX(i), y: AG.y1 + 40, 'text-anchor': 'middle' }).textContent = f;
+      });
+      svgEl(svg, 'text', { class: 'ag-label', x: AG.x0 - 18, y: AG.y1 + 40, 'text-anchor': 'end' }).textContent = 'Hz';
+      const line = (values, id, color) => svgEl(svg, 'path', { id, d: values.map((v, i) => (i ? 'L' : 'M') + agX(i) + ' ' + agY(v)).join(' '), fill: 'none', stroke: color, 'stroke-width': 4, 'stroke-linejoin': 'round', 'stroke-linecap': 'round', opacity: .9 });
+      line(CONFIG.rightEar, 'ag-right', '#ff7a59');
+      line(CONFIG.leftEar, 'ag-left', '#8fe6da');
+      CONFIG.rightEar.forEach((v, i) => svgEl(svg, 'circle', { class: 'ag-r', cx: agX(i), cy: agY(v), r: 13, fill: '#0b2a34', stroke: '#ff7a59', 'stroke-width': 4.5 }));
+      CONFIG.leftEar.forEach((v, i) => {
+        const at = svgEl(svg, 'g', { transform: `translate(${agX(i)} ${agY(v)})` });
+        const g = svgEl(at, 'g', { class: 'ag-l' });
+        svgEl(g, 'path', { d: 'M-11 -11 L11 11 M11 -11 L-11 11', stroke: '#8fe6da', 'stroke-width': 4.5, 'stroke-linecap': 'round' });
+      });
+    })();
+
+    // ---- Build the network map: an equirectangular sketch of where the clinics are ----
+    (function buildMap() {
+      const map = $('#map'), routes = $('#routes');
+      const px = (lat, lon) => [(lon - 70.2) * 42 + 110, (33.2 - lat) * 40];
+      const spots = CONFIG.mapCities.map(([name, lat, lon, hub]) => {
+        const [x, y] = px(lat, lon);
+        const city = document.createElement('div');
+        city.className = 'city' + (hub ? ' hub' : '');
+        city.style.left = x + 'px'; city.style.top = y + 'px';
+        city.innerHTML = '<div class="ping"></div><div class="ping"></div><div class="dot"></div><div class="name">' + name.toUpperCase() + '</div>';
+        map.append(city);
+        return { x, y, hub };
+      });
+      const hub = spots.find(s => s.hub);
+      // A borderless dot grid radiating from the hub: reads as "a network across the country" without drawing borders.
+      const defs = svgEl(routes, 'defs', {});
+      const dots = svgEl(defs, 'pattern', { id: 'dotgrid', width: 26, height: 26, patternUnits: 'userSpaceOnUse' });
+      svgEl(dots, 'circle', { cx: 13, cy: 13, r: 2.2, fill: 'rgba(143,230,218,.42)' });
+      const fade = svgEl(defs, 'radialGradient', { id: 'grid-fade' });
+      svgEl(fade, 'stop', { offset: '0', 'stop-color': '#fff' });
+      svgEl(fade, 'stop', { offset: '.55', 'stop-color': '#fff', 'stop-opacity': '.55' });
+      svgEl(fade, 'stop', { offset: '1', 'stop-color': '#fff', 'stop-opacity': '0' });
+      const mask = svgEl(defs, 'mask', { id: 'grid-reveal', maskUnits: 'userSpaceOnUse', x: -400, y: -400, width: 1600, height: 1700 });
+      svgEl(mask, 'circle', { id: 'grid-reveal-circle', cx: hub.x, cy: hub.y, r: 0, fill: 'url(#grid-fade)' });
+      svgEl(routes, 'rect', { x: -400, y: -400, width: 1600, height: 1700, fill: 'url(#dotgrid)', mask: 'url(#grid-reveal)' });
+      spots.filter(s => !s.hub).forEach(s => {
+        const mx = (hub.x + s.x) / 2 + (s.y - hub.y) * .18, my = (hub.y + s.y) / 2 - (s.x - hub.x) * .18;
+        svgEl(routes, 'path', { class: 'route', d: `M${hub.x} ${hub.y} Q${mx} ${my} ${s.x} ${s.y}` });
+      });
+      const ticker = $('#ticker');
+      [...CONFIG.tickerCities, ...CONFIG.tickerCities].forEach(c => { const s = document.createElement('span'); s.textContent = c; ticker.append(s); });
+    })();
+
+    // ---- The waveform is procedural: the timeline tweens its parameters, draw() renders them ----
+    const wave = { y: 800, muffledAmp: 0, clearAmp: 0, reveal: 0, pulse: 0, opacity: 1 };
+    const counters = { clinics: 0, cities: 0 };
+    const wavePaths = { m: ['#wm0', '#wm1', '#wm2'].map($), c: ['#wc0', '#wc1', '#wc2'].map($) };
+    function waveY(u, t, layer, amp, clarity) {
+      const env = Math.pow(Math.sin(Math.PI * Math.min(1, Math.max(0, u))), 1.4);
+      const low = Math.sin(u * 8.6 + t * 1.5 + layer * .9) * .62 + Math.sin(u * 4.1 - t * .85 + layer * 1.3) * .38;
+      const high = Math.sin(u * 27 + t * 3.6 + layer * 1.7) * .5 + Math.sin(u * 49 - t * 4.7 + layer * 2.3) * .28;
+      const front = Math.exp(-Math.pow((u - wave.reveal) / .06, 2)) * wave.pulse;
+      return wave.y + (amp * env * (low + clarity * high) + front * 90 * Math.sin(u * 60 - t * 9 + layer)) * (1 - layer * .2);
+    }
+    function pathFor(t, layer, amp, clarity) {
+      let d = '';
+      for (let i = 0; i <= 192; i++) {
+        const u = i / 192, x = -20 + u * 1960;
+        d += (i ? 'L' : 'M') + x.toFixed(1) + ' ' + waveY(u, t, layer, amp, clarity).toFixed(1);
+      }
+      return d;
+    }
+    function draw(t) {
+      wavePaths.m.forEach((p, i) => p.setAttribute('d', pathFor(t, i, wave.muffledAmp, 0)));
+      wavePaths.c.forEach((p, i) => p.setAttribute('d', pathFor(t, i, wave.clearAmp, 1)));
+      const edge = wave.reveal * 1960 - 20;
+      $('#clip-clear-rect').setAttribute('width', Math.max(0, edge));
+      $('#clip-muffled-rect').setAttribute('x', Math.max(0, edge));
+      $('#wave-group').setAttribute('opacity', wave.opacity);
+      $('#spark').style.transform = `translate(${edge}px, ${waveY(wave.reveal, t, 0, wave.clearAmp, 1)}px)`;
+      $('#count-clinics').textContent = Math.round(counters.clinics);
+      $('#count-cities').textContent = Math.round(counters.cities);
+    }
+
+    // ---- Timeline ----
+    window.__timelines = window.__timelines || {};
+    window.startRender = function startRender() {
+      if (window.__timelines.root) return window.__timelines.root;
+      const tl = gsap.timeline({ paused: true, defaults: { ease: 'power4.out' }, onUpdate() { draw(this.time()); } });
+      const show = (id, at) => tl.set(id, { visibility: 'visible' }, at);
+      const hide = (id, at) => tl.set(id, { visibility: 'hidden' }, at);
+      const rise = (targets, at, opts = {}) => tl.fromTo(targets, { yPercent: 110, opacity: 0, filter: 'blur(6px)' }, { yPercent: 0, opacity: 1, filter: 'blur(0px)', duration: .8, stagger: .07, ...opts }, at);
+      const exit = (targets, at, d = .4) => tl.to(targets, { y: -36, opacity: 0, filter: 'blur(10px)', duration: d, ease: 'power2.in' }, at);
+      const index = (id, at) => tl.fromTo(id, { opacity: 0, x: -14 }, { opacity: 1, x: 0, duration: .6, ease: 'power3.out' }, at);
+
+      // Atmosphere: dim and cold while the world is muffled, warm after the sweep.
+      tl.fromTo('#root', { opacity: 0 }, { opacity: 1, duration: .9, ease: 'sine.out' }, 0);
+      tl.fromTo('#glow-teal', { opacity: .25, scale: .9 }, { opacity: .35, scale: 1, duration: 5, ease: 'sine.inOut' }, 0);
+      tl.fromTo('#glow-amber', { opacity: .1 }, { opacity: .14, duration: 5, ease: 'sine.inOut' }, 0);
+      tl.to('#glow-teal', { opacity: 1, duration: 1.6, ease: 'power2.out' }, T.clarity);
+      tl.to('#glow-amber', { opacity: .9, duration: 2, ease: 'power2.out' }, T.clarity + .3);
+      tl.to('#glow-teal', { x: 260, y: 120, duration: T.out - T.clarity - 1.6, ease: 'sine.inOut' }, T.clarity + 1.6);
+      tl.to('#glow-amber', { x: -300, y: -80, duration: T.out - T.clarity - 2.3, ease: 'sine.inOut' }, T.clarity + 2.3);
+
+      // ---------- 01 · The quiet ----------
+      show('#s1', 0);
+      index('#s1-index', .35);
+      const muffled = $$('.muffled');
+      muffled.forEach((w, i) => {
+        tl.fromTo(w, { opacity: 0, filter: 'blur(16px)', y: 14 }, { opacity: .3 + (i % 3) * .06, filter: 'blur(9px)', y: 0, duration: 1.6, ease: 'sine.out' }, .25 + i * .22);
+        tl.to(w, { y: -18, x: (i % 2 ? 10 : -10), duration: 3.2, ease: 'none' }, 1.85 + i * .22);
+      });
+      tl.to(wave, { muffledAmp: 22, duration: 1.6, ease: 'sine.out' }, .2);
+      rise('#s1-head .mask > span', 1.3, { stagger: .1 });
+      exit('#s1-head', 4.35, .45);
+      exit('#s1-index', 4.4, .4);
+      tl.to(wave, { muffledAmp: 5, duration: .55, ease: 'power2.in' }, 4.35); // a held breath before the sweep
+
+      // ---------- 02 · Clarity: the sweep ----------
+      show('#s2', T.clarity);
+      tl.set('#spark', { opacity: 1 }, T.clarity - .02);
+      tl.to(wave, { reveal: 1, duration: 1.35, ease: 'power2.inOut' }, T.clarity);
+      tl.fromTo(wave, { pulse: 0 }, { pulse: 1, duration: .25, ease: 'power2.out', immediateRender: false }, T.clarity);
+      tl.to(wave, { pulse: 0, duration: .5, ease: 'power2.in' }, T.clarity + .95);
+      tl.to(wave, { clearAmp: 64, duration: .7, ease: 'power3.out' }, T.clarity);
+      tl.to(wave, { clearAmp: 40, duration: 1.4, ease: 'sine.inOut' }, T.clarity + .9);
+      tl.to('#spark', { opacity: 0, duration: .25, ease: 'sine.out' }, T.clarity + 1.25);
+      // Each muffled word snaps into focus as the sweep passes it, then drifts away.
+      muffled.forEach(w => {
+        const at = T.clarity + .1 + (parseFloat(w.style.left) / 1920) * 1.15;
+        tl.to(w, { filter: 'blur(0px)', opacity: .95, color: '#ffffff', scale: 1.06, duration: .35, ease: 'power3.out' }, at);
+        tl.to(w, { opacity: 0, scale: 1.18, filter: 'blur(6px)', duration: .6, ease: 'power2.in' }, T.clarity + 1.5);
+      });
+      hide('#s1', T.clarity + 2.4);
+
+      // Kinetic headline (template 22): words slide in, the pill squashes and settles, a sheen and spark cross it.
+      const kinetic = T.clarity + 1.85;
+      index('#s2-index', kinetic - .1);
+      tl.fromTo('#w-hear', { x: -130, opacity: 0, filter: 'blur(8px)' }, { x: 0, opacity: 1, filter: 'blur(0px)', duration: .8 }, kinetic);
+      tl.fromTo('#w-again', { x: 130, opacity: 0, filter: 'blur(8px)' }, { x: 0, opacity: 1, filter: 'blur(0px)', duration: .8 }, kinetic + .1);
+      tl.fromTo('#pill', { scaleX: .9, scaleY: 1.08, y: 16, opacity: 0, filter: 'blur(6px)' }, { scaleX: 1.08, scaleY: .94, y: -4, opacity: 1, filter: 'blur(0px)', duration: .42, ease: 'power3.out' }, kinetic + .2);
+      tl.to('#pill', { scaleX: 1, scaleY: 1, y: 0, duration: .36, ease: 'back.out(1.6)' }, kinetic + .62);
+      tl.fromTo('#pill-shadow', { opacity: 0, scaleX: .5 }, { opacity: 1, scaleX: 1, duration: .6 }, kinetic + .23);
+      tl.fromTo('#sheen', { left: '-40%', opacity: 0 }, { left: '125%', opacity: .85, duration: .8, ease: 'power3.inOut' }, kinetic + 1.05);
+      tl.to('#sheen', { opacity: 0, duration: .2 }, kinetic + 1.7);
+      tl.fromTo('#s2-micro', { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: .6, ease: 'power2.out' }, kinetic + .7);
+      tl.to('#s2-line', { scale: 1.03, duration: 2.4, ease: 'sine.inOut' }, kinetic + .8);
+      exit(['#s2-line', '#s2-micro', '#s2-index'], T.brand - .45, .45);
+      hide('#s2', T.brand);
+
+      // ---------- 03 · Brand ----------
+      show('#s3', T.brand);
+      tl.to(wave, { clearAmp: 22, y: 840, duration: 1.4, ease: 'sine.inOut' }, T.brand - .4);
+      index('#s3-index', T.brand + .15);
+      tl.fromTo('#mark-dot', { scale: 0, transformOrigin: '50% 50%' }, { scale: 1, duration: .55, ease: 'back.out(2.2)' }, T.brand);
+      ['#arc1', '#arc2', '#arc3'].forEach((arc, i) => {
+        const len = $(arc).getTotalLength();
+        tl.fromTo(arc, { strokeDasharray: len, strokeDashoffset: len, opacity: 0 }, { strokeDashoffset: 0, opacity: 1, duration: .5, ease: 'power3.out' }, T.brand + .18 + i * .15);
+      });
+      tl.fromTo('#wordmark', { clipPath: 'inset(0 100% 0 0)', x: -24 }, { clipPath: 'inset(0 0% 0 0)', x: 0, duration: .9, ease: 'power3.out' }, T.brand + .35);
+      tl.fromTo('#s3-sub', { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: .6, ease: 'power2.out' }, T.brand + .85);
+      tl.to('#logo', { scale: 1.035, duration: 2, ease: 'sine.inOut' }, T.brand + .5);
+      tl.to(['#logo', '#s3-sub', '#s3-index'], { opacity: 0, scale: .97, filter: 'blur(10px)', duration: .4, ease: 'power2.in' }, T.test - .4);
+      hide('#s3', T.test);
+
+      // The wave settles into a quiet baseline for the information scenes.
+      tl.to(wave, { y: 1000, clearAmp: 14, opacity: .55, duration: 1.2, ease: 'power2.inOut' }, T.test - .4);
+
+      // ---------- 04 · Hearing test ----------
+      show('#s4', T.test);
+      index('#s4-index', T.test + .05);
+      rise('#s4-copy h2 .mask > span', T.test + .1, { stagger: .06 });
+      tl.fromTo('#s4-p', { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: .7, ease: 'power2.out' }, T.test + .6);
+      tl.fromTo('#chart-card', { opacity: 0, y: 70, scale: .97 }, { opacity: 1, y: 0, scale: 1, duration: 1, ease: 'expo.out' }, T.test + .25);
+      tl.fromTo('#audiogram .ag-grid', { opacity: 0 }, { opacity: 1, duration: .5, stagger: .03, ease: 'sine.out' }, T.test + .6);
+      tl.fromTo('#audiogram .ag-label', { opacity: 0 }, { opacity: 1, duration: .5, stagger: .03, ease: 'sine.out' }, T.test + .7);
+      tl.fromTo('#ag-normal', { opacity: 0 }, { opacity: 1, duration: .6 }, T.test + .9);
+      tl.fromTo('#ag-normal-label', { opacity: 0 }, { opacity: 1, duration: .6 }, T.test + 1);
+      // One test tone per point: right ear first, then left. The score plays the matching frequencies.
+      const toneGap = .2, rightAt = T.test + 1.3, leftAt = rightAt + 6 * toneGap + .2;
+      const lenR = $('#ag-right').getTotalLength(), lenL = $('#ag-left').getTotalLength();
+      tl.fromTo('#ag-right', { strokeDasharray: lenR, strokeDashoffset: lenR }, { strokeDashoffset: 0, duration: 5 * toneGap + .1, ease: 'none' }, rightAt);
+      tl.fromTo('#ag-left', { strokeDasharray: lenL, strokeDashoffset: lenL }, { strokeDashoffset: 0, duration: 5 * toneGap + .1, ease: 'none' }, leftAt);
+      tl.fromTo('#audiogram .ag-r', { scale: 0, transformOrigin: '50% 50%' }, { scale: 1, duration: .4, stagger: toneGap, ease: 'back.out(2.4)' }, rightAt);
+      tl.fromTo('#audiogram .ag-l', { scale: 0, opacity: 0, transformOrigin: '50% 50%' }, { scale: 1, opacity: 1, duration: .4, stagger: toneGap, ease: 'back.out(2.4)' }, leftAt);
+      // Notification (template 06).
+      const toastAt = leftAt + 6 * toneGap + .25;
+      tl.fromTo('#toast', { opacity: 0, y: 60, scale: .95 }, { opacity: 1, y: 0, scale: 1, duration: .75, ease: 'back.out(1.5)' }, toastAt);
+      tl.to('#chart-card', { y: -10, duration: 2.5, ease: 'sine.inOut' }, T.test + 1.3);
+      exit(['#s4-copy', '#s4-index'], T.care - .45, .4);
+      tl.to(['#chart-card', '#toast'], { opacity: 0, y: '-=40', filter: 'blur(10px)', duration: .45, ease: 'power2.in', stagger: .05 }, T.care - .5);
+      hide('#s4', T.care);
+
+      // ---------- 05 · Care journey (template 02) ----------
+      show('#s5', T.care);
+      index('#s5-index', T.care + .05);
+      rise('#s5-head .mask > span', T.care + .05, { stagger: .06 });
+      $$('.step').forEach((card, i) => {
+        const at = T.care + .35 + i * .35;
+        tl.fromTo(card, { opacity: 0, y: 60, scaleY: .92, transformOrigin: 'bottom center' }, { opacity: 1, y: 0, scaleY: 1, duration: 1, ease: 'power4.out' }, at);
+        card.querySelectorAll('.ico path, .ico circle').forEach(p => {
+          const len = p.getTotalLength();
+          tl.fromTo(p, { strokeDasharray: len, strokeDashoffset: len }, { strokeDashoffset: 0, duration: .9, ease: 'power2.inOut' }, at + .25);
+        });
+        tl.fromTo(card.querySelector('.bar i'), { scaleX: 0 }, { scaleX: 1, duration: 1.6, ease: 'expo.out' }, at + .45);
+      });
+      tl.to('#steps', { y: -14, duration: 3.4, ease: 'sine.inOut' }, T.care + 1.3);
+      exit(['#s5-head', '#s5-index'], T.network - .45, .4);
+      tl.to('.step', { opacity: 0, y: '-=40', filter: 'blur(10px)', duration: .42, stagger: .05, ease: 'power2.in' }, T.network - .5);
+      hide('#s5', T.network);
+
+      // ---------- 06 · Network ----------
+      show('#s6', T.network);
+      index('#s6-index', T.network + .05);
+      tl.fromTo('.stat', { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: .7, stagger: .12, ease: 'power3.out' }, T.network + .05);
+      tl.fromTo(counters, { clinics: 0, cities: 0 }, { clinics: CONFIG.clinics, cities: CONFIG.cities, duration: 1.2, ease: 'power3.out', immediateRender: false }, T.network + .1);
+      tl.fromTo('#s6-tag', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: .6, ease: 'power2.out' }, T.network + .5);
+      tl.fromTo('#ticker-mask', { opacity: 0 }, { opacity: 1, duration: .5 }, T.network + .6);
+      tl.fromTo('#ticker', { x: 0 }, { x: -520, duration: T.end - T.network + .5, ease: 'none' }, T.network);
+      $$('.city').forEach((city, i) => {
+        const at = T.network + .15 + i * .1;
+        tl.fromTo(city.querySelector('.dot'), { scale: 0 }, { scale: 1, duration: .5, ease: 'back.out(2.4)' }, at);
+        tl.fromTo(city.querySelector('.name'), { opacity: 0, x: -10 }, { opacity: 1, x: 0, duration: .5, ease: 'power2.out' }, at + .15);
+        city.querySelectorAll('.ping').forEach((ping, k) => tl.fromTo(ping, { scale: 1, opacity: .85 }, { scale: 5, opacity: 0, duration: 1.3, ease: 'power2.out' }, at + .2 + k * .6));
+      });
+      tl.fromTo('#grid-reveal-circle', { attr: { r: 0 } }, { attr: { r: 680 }, duration: 1.8, ease: 'power2.out' }, T.network + .05);
+      $$('#routes .route').forEach((r, i) => {
+        tl.fromTo(r, { opacity: 0 }, { opacity: 1, duration: .4 }, T.network + .45 + i * .08);
+        tl.fromTo(r, { strokeDashoffset: 0 }, { strokeDashoffset: -72, duration: 2.4, ease: 'none' }, T.network + .3);
+      });
+      tl.to(['#s6-copy', '#ticker-mask', '#s6-index', '#map'], { opacity: 0, filter: 'blur(10px)', y: -30, duration: .4, ease: 'power2.in', stagger: .03 }, T.end - .45);
+      hide('#s6', T.end);
+
+      // ---------- 07 · End card (templates 01 + 18) ----------
+      show('#s7', T.end);
+      tl.to(wave, { y: 960, clearAmp: 34, opacity: 1, duration: 1.4, ease: 'power2.inOut' }, T.end - .4);
+      tl.fromTo('#end-logo', { opacity: 0, y: 20, scale: .96 }, { opacity: 1, y: 0, scale: 1, duration: .8, ease: 'power3.out' }, T.end + .05);
+      rise('#end-head .mask > span', T.end + .25, { stagger: .07 });
+      tl.fromTo('#cta', { y: 70, opacity: 0, scale: .95 }, { y: 0, opacity: 1, scale: 1, duration: .9, ease: 'expo.out' }, T.end + .8);
+      tl.fromTo('#cta-ring', { opacity: 0, scale: .9 }, { opacity: 1, scale: 1, duration: .9, ease: 'expo.out' }, T.end + .95);
+      tl.fromTo('#contact', { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: .7, ease: 'power2.out' }, T.end + 1.2);
+      // Cursor glides in and presses the button.
+      const press = T.end + 2.3;
+      tl.fromTo('#cursor', { x: 1420, y: 900, opacity: 0 }, { opacity: 1, duration: .3, ease: 'sine.out' }, T.end + 1.3);
+      tl.to('#cursor', { x: 1150, y: 668, duration: 1, ease: 'power3.inOut' }, T.end + 1.3);
+      tl.to('#cta', { scale: .95, duration: .12, ease: 'power2.in' }, press);
+      tl.to('#cursor', { scale: .86, duration: .12, ease: 'power2.in' }, press);
+      tl.to('#cta', { scale: 1, duration: .4, ease: 'back.out(2.2)' }, press + .12);
+      tl.to('#cursor', { scale: 1, duration: .3, ease: 'power2.out' }, press + .12);
+      tl.fromTo('#ripple', { scale: 0, opacity: .6 }, { scale: 22, opacity: 0, duration: .8, ease: 'power2.out' }, press + .05);
+      tl.fromTo('#cta-ring', { boxShadow: '0 0 0 rgba(255,184,102,0)' }, { boxShadow: '0 0 60px rgba(255,184,102,.45)', borderColor: 'rgba(255,184,102,.7)', duration: .3, ease: 'power2.out' }, press + .05);
+      tl.to('#cta-ring', { boxShadow: '0 0 0 rgba(255,184,102,0)', borderColor: 'rgba(255,184,102,.28)', scale: 1.06, duration: 1, ease: 'power2.out' }, press + .35);
+      tl.fromTo('#cta-glint', { left: '-60%' }, { left: '140%', duration: .9, ease: 'power2.inOut' }, press + .6);
+      tl.to('#cursor', { x: 1240, y: 760, opacity: 0, duration: .8, ease: 'power2.in' }, press + 1.1);
+      tl.fromTo('#cta-glint', { left: '-60%' }, { left: '140%', duration: .9, ease: 'power2.inOut', immediateRender: false }, T.out - 1.3);
+      tl.to('#end-logo', { y: -6, duration: 4, ease: 'sine.inOut' }, T.end + 1);
+
+      tl.to({}, { duration: T.out - tl.duration() });
+      window.__timelines.root = tl;
+      return tl;
+    };
+
+    // Seek used by the renderer: positions every tween, then draws the procedural layers for that exact time.
+    window.__seek = function seek(time) {
+      const tl = window.startRender();
+      tl.seek(time, false);
+      draw(time);
+    };
+
+    const timeline = window.startRender();
+    window.__seek(0);
+    if (location.hash === '#play') timeline.play(0);
+  </script>
+</body>
+</html>

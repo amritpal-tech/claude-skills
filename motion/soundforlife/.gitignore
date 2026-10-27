@@ -1,0 +1,5 @@
+# Intermediates: rebuilt by render.mjs, score.py and encode.sh
+out/video-master.mp4
+out/score.wav
+out/stills*/
+out/*.log
