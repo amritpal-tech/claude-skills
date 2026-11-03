@@ -76,7 +76,12 @@ def first_sentence(body):
     return ""
 
 
-def check_post(body, profile, fmt, ask, typ, comment):
+def ngrams(text, n=6):
+    toks = re.findall(r"[a-z0-9$%']+", text.lower().replace("’", "'"))
+    return {" ".join(toks[i:i + n]) for i in range(len(toks) - n + 1)}
+
+
+def check_post(body, profile, fmt, ask, typ, comment, bank_grams=None):
     errs, warns = [], []
     E, W = errs.append, warns.append
     text = body.strip()
@@ -203,7 +208,13 @@ def check_post(body, profile, fmt, ask, typ, comment):
         if not comment or not re.search(r"https?://", comment):
             E("news post with no source URL in the first comment")
 
-    # 15 first comment hygiene
+    # 15 hook bank: borrow the mechanic, never the words
+    if bank_grams:
+        shared = sorted(ngrams(text) & bank_grams)
+        if shared:
+            E(f"shares {len(shared)} six-word run(s) with the Scripe hook bank, e.g. \"{shared[0]}\". Rewrite in the profile's own words.")
+
+    # 16 first comment hygiene
     if comment:
         if len(comment) > 1250:
             W(f"first comment is {len(comment)} characters; keep it tight")
@@ -239,7 +250,9 @@ def main():
     ap.add_argument("--ask", choices=sorted(ASKS))
     ap.add_argument("--type", dest="typ", choices=sorted(TYPES), default="news")
     ap.add_argument("--comment")
+    ap.add_argument("--bank", help="text export of the Scripe hook bank; fails any post sharing a six-word run with it")
     a = ap.parse_args()
+    bank_grams = ngrams(open(a.bank, encoding="utf-8").read()) if a.bank else None
 
     raw = open(a.file, encoding="utf-8").read()
     jobs = run_brief(raw)
@@ -259,7 +272,7 @@ def main():
             problems.append(f"unknown format '{fmt}'")
         if ask not in ASKS:
             problems.append(f"missing or unknown ask '{ask}' (one of {sorted(ASKS)})")
-        errs, warns = check_post(body, profile, fmt, ask, typ, comment)
+        errs, warns = check_post(body, profile, fmt, ask, typ, comment, bank_grams)
         errs = problems + errs
         status = "FAIL" if errs else ("PASS with warnings" if warns else "PASS")
         failed |= bool(errs)

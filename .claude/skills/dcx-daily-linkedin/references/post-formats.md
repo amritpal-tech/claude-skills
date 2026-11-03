@@ -146,6 +146,28 @@ lines, questions as hooks unless they are sharp, "it's not X, it's Y".
 
 Write **three hook options** in the brief, pick one, and say why in one line.
 
+### Using the Scripe hook bank
+
+The hook bank is engagement evidence from other creators in the same niches. It tells us
+which *shapes* of first line are stopping the scroll this fortnight. It is never a source
+of words, facts or numbers.
+
+1. **Read by niche.** Marketing/SEO/AEO hooks inform Amritpal, GTM leadership hooks inform
+   Sumit, RevOps/GTM engineering hooks inform Pankaj. Last 14 days only.
+2. **Name the mechanic** behind the hooks with the most comments (comments outrank
+   reactions): the odd number, the reversal ("I was wrong about"), the flat statement of
+   a change, the confession, the specific stake, the "X vs Y" split, the one-line verdict.
+   Note the format that carried it (carousel, text, image).
+3. **Rebuild it from today's story** in the profile's voice. The shape travels; the words,
+   claims and numbers come only from our research and cleared DevCommX facts.
+4. **Filter what the house bans** even when it trends: "not X, it's Y", emoji-led lines,
+   soft wind-ups, engagement bait, fake urgency, borrowed statistics.
+5. **Log it** in the brief's Strategy block: "mechanic: <name>, seen in <n> top hooks this
+   week". This builds a record of which mechanics win for us.
+
+The gate enforces step 3: `check_post.py --bank` fails any post that shares a six-word run
+with any line in the hook bank.
+
 ## Asks (exactly one per post)
 
 | Ask | Use on | Close with |

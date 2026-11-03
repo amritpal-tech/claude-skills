@@ -77,8 +77,16 @@ from the mapping table in `post-formats.md`, then check the last 10 days so the 
 week trends toward ~70% visual and no ask runs three days in a row.
 
 ### 5. Draft
+First read the **hook bank**: the Google Doc "Hook bank · Scripe trending (paste weekly)"
+(`1uL_4WUNV8JLd6x1MRriknLWZzKewn3JM1Rt1v5lx-4Y`, same Drive folder). The team pastes trending
+LinkedIn hooks from Scripe there each week. Use only batches from the last 14 days, split
+by niche, and follow "Using the Scripe hook bank" in `post-formats.md`. Save the doc's text to
+`$SCRATCH/hook-bank.txt` for the gate. If the bank is empty or stale, say so in the brief
+and draft from the house hook formulas.
+
 For each profile, in its voice from `profiles.md`, using the format skeleton:
-- three hook options, pick one, say why
+- three hook options, at least one adapted from a trending mechanic in the bank when one
+  fits; pick one, say why, and name the mechanic it borrows
 - the body, 1,200-1,900 characters, blank line between lines
 - facts attributed to the source; the honesty gate in `profiles.md` held
 - creative spec in full for visual formats, per `devcommx-brand`
@@ -88,9 +96,9 @@ For each profile, in its voice from `profiles.md`, using the format skeleton:
 ### 6. Gate
 Write the brief to `devcommx/linkedin-daily/YYYY-MM-DD.md` using the template, then:
 ```bash
-python3 .claude/skills/dcx-daily-linkedin/scripts/check_post.py devcommx/linkedin-daily/YYYY-MM-DD.md
+python3 .claude/skills/dcx-daily-linkedin/scripts/check_post.py devcommx/linkedin-daily/YYYY-MM-DD.md --bank "$SCRATCH/hook-bank.txt"
 ```
-Fix every ERROR and re-run until it passes. Read every WARN and fix it unless the brief
+(drop `--bank` only when the hook bank was empty). Fix every ERROR and re-run until it passes. Read every WARN and fix it unless the brief
 says why it stays. Then do one human-eye pass per post: "what still reads like AI or like a
 brand?" Fix it. If anything stubborn remains, run the `dcx-humanizer` skill on that post.
 Paste the final gate lines into each profile's Gate block and the summary table.
