@@ -15,6 +15,7 @@ Imported from the `claude-skills-2026-09-03` export.
 | `devcommx/` | working corpus for the DevCommX blog operation (53 drafts, validation findings, workbooks) |
 | `plugins/` | reference copies of 3 plugin bundles (install via the plugin system) |
 | `install.sh` | copy skills into `~/.claude` for use outside this repo |
+| `install-video-tools.sh` | install ffmpeg, yt-dlp, Whisper and Remotion's prerequisites (see [Video tools](#video-tools)) |
 | `package-for-upload.sh` | build per-skill zips for uploading to your claude.ai account |
 | `INVENTORY.md` | full list with descriptions |
 
@@ -71,6 +72,35 @@ Companion skills already in the library: `devcommx-brand` (visual system) and
 
 The blog program needs the **Webflow MCP connector authorized on the account** —
 nothing in the push, audit or status flow works without it.
+
+## Video tools
+
+`install-video-tools.sh` installs the command-line tools the video skills
+(`effects`, `video`) lean on. It is idempotent. Cloud sessions start from a clean
+container, so to have the tools in every session add this line to the
+environment's setup script (cloud environment menu → Edit → Setup script):
+
+```bash
+cd claude-skills && bash install-video-tools.sh
+```
+
+| Tool | Installed as | Needs network access to |
+|---|---|---|
+| ffmpeg / ffprobe | apt (already in the cloud image) | — |
+| yt-dlp | `uv tool install "yt-dlp[default]"`, with `--js-runtimes node` in `~/.config/yt-dlp/config` for YouTube's challenge solver | the site you download from (YouTube: `www.youtube.com`, `*.googlevideo.com`) |
+| Whisper | `uv tool install openai-whisper`; uses the CPU build of PyTorch when `download.pytorch.org` is reachable, otherwise PyPI's ~3 GB CUDA build | `openaipublic.azureedge.net` (models download on first use) |
+| Remotion | per project: `npx create-video@latest` (Node 22 is in the image) | `remotion.media` for its own headless Chrome; without it, see below |
+
+**Remotion without `remotion.media`.** The cloud image ships Playwright's
+`chrome-headless-shell`, which Remotion can render with:
+
+```bash
+npx remotion render src/index.ts <CompositionId> out.mp4 \
+  --browser-executable="$(ls -d /opt/pw-browsers/chromium_headless_shell-*/*/chrome-headless-shell | head -1)"
+```
+
+**Whisper on CPU.** The CLI's default model, `turbo`, is slow without a GPU.
+Use `--model base` or `--model small` for drafts.
 
 ## Plugin skills
 
