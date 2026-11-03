@@ -1,6 +1,6 @@
 # claude-skills
 
-Account skill library for Claude Code — 151 skills and 27 namespaced commands,
+Account skill library for Claude Code — 153 skills and 27 namespaced commands,
 kept in version control so they load in every session on this repo and can be
 restored anywhere else.
 
@@ -10,7 +10,7 @@ Imported from the `claude-skills-2026-09-03` export.
 
 | Path | Purpose |
 |---|---|
-| `.claude/skills/` | 152 skills — **auto-loaded** in any Claude Code session on this repo |
+| `.claude/skills/` | 153 skills — **auto-loaded** in any Claude Code session on this repo |
 | `.claude/commands/` | 35 commands in 9 namespaces — auto-loaded, invoked as `/namespace:command` |
 | `devcommx/` | working corpus for the DevCommX blog operation (53 drafts, validation findings, workbooks) |
 | `plugins/` | reference copies of 3 plugin bundles (install via the plugin system) |
@@ -39,7 +39,7 @@ fresh container each time and a fresh clone of the repo — anything written to
   this repo as a second source for the session.
 - **Every chat, everywhere (including claude.ai)** — upload to your account:
   ```bash
-  ./package-for-upload.sh          # writes dist/<skill>.zip x151
+  ./package-for-upload.sh          # writes dist/<skill>.zip x153
   ```
   Then claude.ai → Settings → Capabilities → Skills → Upload skill. Account
   skills sync down to `~/.claude/skills/synced/` on every device.
@@ -92,5 +92,12 @@ Claude already syncs to the account. Install them as plugins instead:
 - **Duplicate-looking pairs are intentional.** Several skills exist in both short
   and long form (`ads`/`paid-ads`, `emails`/`email-sequence`, `cro`/`page-cro`,
   `competitors`/`competitor-alternatives`). Both were on the source account.
+- **`effects` is third-party.** Vendored from
+  [Vibha-Ramprakash/claude-video-effects](https://github.com/Vibha-Ramprakash/claude-video-effects)
+  at `93140a9` (MIT; fonts and models keep their own licences, see the skill's
+  `fonts/` and `models/NOTICE.md`). Invoke with `/effects <name>`. It needs
+  `ffmpeg` and Python 3.10+; on first use it runs `scripts/setup.sh`, which builds
+  a `.venv/` inside the skill folder (gitignored there). To update, re-copy the
+  upstream repo over `.claude/skills/effects/` without its `.git/`.
 - **Built-in skills are not included.** `artifact-design`, `code-review`,
   `dataviz`, `simplify`, `loop` and friends ship inside the Claude Code binary.

@@ -65,6 +65,7 @@ Exported 2026-09-03 from this machine's Claude configuration.
 - **directory-submissions** — When the user wants to submit their product to startup, SaaS, AI, agent, MCP, no-code, or review directories for backlinks, domain rating, and discovery. Also use when the user mentions "directory sub
 - **documentation-template** — Generate structured documentation templates for components, patterns, or guidelines within a design system.
 - **durable-objects** — Create and review Cloudflare Durable Objects. Use when building stateful coordination (chat rooms, multiplayer games, booking systems), implementing RPC methods, SQLite storage, alarms, WebSockets, or
+- **effects** — Add any of 51 video effects to a talking-head video (orbit, spotlight, glass widgets, timeline, checklist, headline wall, comment box, phone fan, liquid glass graph, match-cut, iPhone toggles, LED sig
 - **email-sequence** — When the user wants to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email program. Also use when the user mentions "email sequence," "drip campaign," "nurtur
 - **emails** — When the user wants to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email program. Also use when the user mentions "email sequence," "drip campaign," "nurtur
 - **empathy-map** — Build a 4-quadrant empathy map (Says, Thinks, Does, Feels) to synthesize user research into actionable insights. Use when you need to quickly capture and share user understanding across the team.
