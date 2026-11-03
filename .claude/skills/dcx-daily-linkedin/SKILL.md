@@ -51,7 +51,10 @@ research window. Produce a post for **all three** profiles every run. A profile 
 off slot today gets its post marked for its next slot, so the bank never runs dry.
 
 ### 2. Memory
-Read the last 10 daily briefs from the delivery target (or `devcommx/linkedin-daily/`).
+Read the last 10 daily briefs. They live in the Google Drive folder
+**LinkedIn Daily Desk (DevCommX)** (`1WRfTiJfxCMJmQ339waVco2DEqva91j3q`): list it with
+`search_files` (`parentId = '1WRfTiJfxCMJmQ339waVco2DEqva91j3q'`), read the newest ten with
+`read_file_content`. Fall back to `devcommx/linkedin-daily/*.md` if Drive is unavailable.
 List per profile: stories used, formats, asks. You will need it for novelty scoring and
 format rotation.
 
@@ -93,15 +96,23 @@ brand?" Fix it. If anything stubborn remains, run the `dcx-humanizer` skill on t
 Paste the final gate lines into each profile's Gate block and the summary table.
 
 ### 7. Deliver
-Write to whatever target the run was given (the scheduled prompt names it):
-- **Notion (default for this team):** under the page "DevCommX — LinkedIn HQ"
-  (`37f2cf02-3ebe-818d-8d3f-cb3e408b12eb`), find or create a child page
-  "📰 Daily Post Desk"; add one child page per day titled
-  `YYYY-MM-DD · {Weekday} · daily posts`, containing the brief without the HTML comment
-  markers. Never edit or delete other HQ pages.
-- **Google Doc / email draft:** same content, same title.
-- **Repo:** the file from step 6. Commit and push only when the run's instructions name
-  the branch.
+**Configured target: one Google Doc per day** (chosen by Amritpal, 2026-11-04).
+```bash
+python3 .claude/skills/dcx-daily-linkedin/scripts/to_doc.py devcommx/linkedin-daily/YYYY-MM-DD.md > "$SCRATCH/YYYY-MM-DD.doc.md"
+```
+Then Google Drive `create_file` with:
+- `title`: `YYYY-MM-DD · {Ddd} · LinkedIn daily desk` (e.g. `2026-11-04 · Wed · LinkedIn daily desk`)
+- `parentId`: `1WRfTiJfxCMJmQ339waVco2DEqva91j3q` (folder "LinkedIn Daily Desk (DevCommX)")
+- `contentMimeType`: `text/markdown`, `textContent`: the file's full contents
+
+Drive converts it to a Google Doc with working tables and links. Before creating, search
+the folder for a doc with today's title; if one exists, do not create a duplicate, add
+" (rerun)" to the new title instead. Confirm with `get_file_metadata` that `fileSize` is
+well above 1 KB (conversion finished). Never edit or delete other files in Drive.
+
+Other targets, only if a run's instructions say so: a Notion child page under
+"DevCommX — LinkedIn HQ" (`37f2cf02-3ebe-818d-8d3f-cb3e408b12eb`), a Gmail draft, or the
+repo file committed to a named branch.
 
 End with a short summary: the three stories, slots, gate results, open flags, and the link
 to the delivered page.
