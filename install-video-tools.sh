@@ -41,7 +41,7 @@ grep -qs -- '--js-runtimes' "$HOME/.config/yt-dlp/config" \
 
 # Whisper. Prefer the CPU build of PyTorch from download.pytorch.org (~200 MB);
 # if the network policy blocks that host, fall back to PyPI's default build
-# (~3 GB, most of it CUDA libraries a CPU-only container never uses).
+# (~5 GB, ~6 min; most of it CUDA libraries a CPU-only container never uses).
 # Models download on first use from openaipublic.azureedge.net.
 if ! command -v whisper >/dev/null 2>&1; then
   say "whisper"

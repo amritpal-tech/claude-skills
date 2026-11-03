@@ -88,7 +88,7 @@ cd claude-skills && bash install-video-tools.sh
 |---|---|---|
 | ffmpeg / ffprobe | apt (already in the cloud image) | — |
 | yt-dlp | `uv tool install "yt-dlp[default]"`, with `--js-runtimes node` in `~/.config/yt-dlp/config` for YouTube's challenge solver | the site you download from (YouTube: `www.youtube.com`, `*.googlevideo.com`) |
-| Whisper | `uv tool install openai-whisper`; uses the CPU build of PyTorch when `download.pytorch.org` is reachable, otherwise PyPI's ~3 GB CUDA build | `openaipublic.azureedge.net` (models download on first use) |
+| Whisper | `uv tool install openai-whisper`; uses the CPU build of PyTorch when `download.pytorch.org` is reachable, otherwise PyPI's CUDA build (~5 GB, ~6 min to install) | `openaipublic.azureedge.net` (models download on first use) |
 | Remotion | per project: `npx create-video@latest` (Node 22 is in the image) | `remotion.media` for its own headless Chrome; without it, see below |
 
 **Remotion without `remotion.media`.** The cloud image ships Playwright's
