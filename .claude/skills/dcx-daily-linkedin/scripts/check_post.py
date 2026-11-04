@@ -199,17 +199,12 @@ def check_post(body, profile, fmt, ask, typ, comment, bank_grams=None):
     if len(paras) < 6:
         W(f"only {len(paras)} blocks. House format is a blank line between lines.")
 
-    # 11 casing by voice
-    starts = [l.strip()[0] for l in text.splitlines() if l.strip() and l.strip()[0].isalpha()]
-    if starts:
-        lower_ratio = sum(1 for c in starts if c.islower()) / len(starts)
-        if profile == "sumit" and lower_ratio < 0.8:
-            E(f"Sumit writes lowercase. Only {lower_ratio:.0%} of lines start lowercase.")
-    if profile in ("amritpal", "pankaj"):
+    # 11 casing: sentence case for every profile (Amritpal's call, 2026-11-04)
+    if profile in ("amritpal", "sumit", "pankaj"):
         misses = sentence_case_misses(text)
         if misses:
             msg = f"sentence case: {len(misses)} line/sentence start(s) in lowercase, e.g. {misses[:3]}"
-            (E if profile == "amritpal" else W)(msg)
+            (W if profile == "pankaj" else E)(msg)
 
     # 12 exactly one explicit ask, matching the declared type
     last = paras[-1].lower() if paras else ""

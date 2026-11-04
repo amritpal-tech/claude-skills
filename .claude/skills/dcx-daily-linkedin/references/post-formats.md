@@ -17,9 +17,9 @@ engine registry, and `dcx-humanizer`. `scripts/check_post.py` enforces the mecha
 8. **Exactly one explicit ask** at the end (see Asks). Never "thoughts?", never "like if".
 9. **No emoji-led lines.** No engagement bait.
 10. **1,200-1,900 characters** for the body (2.9x reach vs short posts).
-11. **Casing follows the profile.** Sumit is lowercase, always. Amritpal is sentence case,
-    always: a capital at the start of every line and every sentence (his call, 2026-11-04).
-    Pankaj is sentence case.
+11. **Sentence case for all three.** A capital at the start of every line and every
+    sentence, proper nouns capitalised. Amritpal and Sumit switched from lowercase on
+    2026-11-04 (Amritpal's call); Pankaj already wrote this way.
 
 ## Format menu
 
@@ -98,7 +98,7 @@ The brand book's fixed frame (`devcommx-brand` → references/applications.md): 
 - **08 · Close, Signal Red `#FF3B1F`:** white logo, the post's closing rule, and the one
   brand offer (the free GTM Audit) as a ghost CTA pill. The caption still carries the
   post's single ask.
-Slide copy is sentence case even for lowercase voices. Write every slide's copy in full
+Slide copy is sentence case too. Write every slide's copy in full
 in the brief. The designer should not have to invent text.
 
 ### E · Single image (stat or quote card) · `format:single-image`

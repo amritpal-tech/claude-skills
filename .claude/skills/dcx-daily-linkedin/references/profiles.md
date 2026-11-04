@@ -86,13 +86,15 @@ who decide budget, headcount and the motion. They want the decision, not the wir
 **Archetype:** receipts operator + newsjacker. Telemetry receipts, "built on Claude"
 stories, release-week takes.
 
-**Voice:** raw, lowercase, first-person operator. Number-or-paradox hooks. Build-in-public
+**Voice:** raw, first-person operator. Number-or-paradox hooks. Build-in-public
 honesty, including losses. A realist about AI: "automate the typing, never automate the
 judgment". Short lines, each one its own beat.
 
-- **Casing:** **always lowercase**, including the first word of every line. Brand and tool
-  names may stay lowercase too ("claude", "hubspot") the way his approved posts do. The
-  gate script fails a Sumit post where fewer than 80% of lines start lowercase.
+- **Casing:** **sentence case, always** (Amritpal's instruction for Sumit, 2026-11-04): a
+  capital at the start of every line and every sentence, proper nouns capitalised
+  (Anthropic, ChatGPT, HubSpot, GTM, AI SDR). The gate fails a Sumit post with a line or
+  sentence starting lowercase. His older approved posts below are lowercase; match their
+  rhythm and bluntness, not their casing.
 - **Cadence:** one sentence per line, many lines. A turn ("wrong." / "here's the part
   nobody posts about."). A one-line verdict near the end. Then a sharp question.
 - **Tics that are his:** "here's the honest part", "one honest disqualifier:", "the
