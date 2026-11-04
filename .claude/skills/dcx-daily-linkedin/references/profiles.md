@@ -30,9 +30,12 @@ newsjack SLA for AI-search releases with Sumit.
 change happens (extractability, citation sources, entity consistency), then gives the
 steps. Calm, precise, never hype. Teaches.
 
-- **Casing:** lowercase by default (proper nouns keep capitals: Google, Claude, AI Mode,
-  Search Console). Some approved posts run sentence case; never Title Case, never ALL CAPS
-  outside a carousel slide.
+- **Casing:** **sentence case, always** (Amritpal's instruction, 2026-11-04): the first
+  word of every line and every sentence starts with a capital, and proper nouns keep theirs
+  (Google, Claude, AI Mode, Search Console). Never Title Case, never ALL CAPS outside a
+  carousel slide. The gate fails an Amritpal post with a line or sentence starting
+  lowercase. His older approved posts below are lowercase; match their rhythm, not their
+  casing.
 - **Cadence:** short declarative lines. A numbered playbook in the middle. One-line
   aphorism to close the body ("Ranking earns you the crawl. Structure earns you the
   citation.").

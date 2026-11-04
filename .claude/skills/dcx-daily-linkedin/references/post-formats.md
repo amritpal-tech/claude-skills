@@ -17,7 +17,9 @@ engine registry, and `dcx-humanizer`. `scripts/check_post.py` enforces the mecha
 8. **Exactly one explicit ask** at the end (see Asks). Never "thoughts?", never "like if".
 9. **No emoji-led lines.** No engagement bait.
 10. **1,200-1,900 characters** for the body (2.9x reach vs short posts).
-11. **Lowercase voices stay lowercase** (Sumit always, Amritpal by default).
+11. **Casing follows the profile.** Sumit is lowercase, always. Amritpal is sentence case,
+    always: a capital at the start of every line and every sentence (his call, 2026-11-04).
+    Pankaj is sentence case.
 
 ## Format menu
 

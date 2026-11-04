@@ -76,6 +76,40 @@ def first_sentence(body):
     return ""
 
 
+LOWERCASE_OK = {"n8n", "iphone", "ios", "ebay", "macos"}
+ABBREV = {"vs", "e.g", "i.e", "etc", "approx", "no"}
+
+
+def sentence_case_misses(text):
+    """Line starts and sentence starts that begin with a lowercase letter.
+
+    List markers (1. / ↳ / → / - / •) are skipped. Domains (chatgpt.com) and a few
+    brands that are lowercase by design (n8n) are allowed.
+    """
+    def ok(word):
+        w = word.strip("\"'“‘(")
+        if not w[:1].isalpha() or w[:1].isupper():
+            return True
+        bare = w.lower().rstrip(".,:;!?")
+        return bare in LOWERCASE_OK or bool(re.match(r"^[a-z0-9-]+\.[a-z]{2,}", bare))
+
+    misses = []
+    for line in text.splitlines():
+        s = re.sub(r"^\s*(\d+[.)]|↳|→|-|•)\s*", "", line).strip()
+        if not s:
+            continue
+        first = s.split()[0]
+        if not ok(first):
+            misses.append(first)
+        for m in re.finditer(r"(\S+)[.?!]\s+(\S+)", s):
+            prev, nxt = m.group(1).lower().rstrip("."), m.group(2)
+            if prev in ABBREV or re.search(r"\.[a-z]{2,}$", m.group(1).lower()):
+                continue
+            if not ok(nxt):
+                misses.append(nxt)
+    return misses
+
+
 def ngrams(text, n=6):
     toks = re.findall(r"[a-z0-9$%']+", text.lower().replace("’", "'"))
     return {" ".join(toks[i:i + n]) for i in range(len(toks) - n + 1)}
@@ -171,8 +205,11 @@ def check_post(body, profile, fmt, ask, typ, comment, bank_grams=None):
         lower_ratio = sum(1 for c in starts if c.islower()) / len(starts)
         if profile == "sumit" and lower_ratio < 0.8:
             E(f"Sumit writes lowercase. Only {lower_ratio:.0%} of lines start lowercase.")
-        if profile == "amritpal" and lower_ratio < 0.6:
-            W(f"Amritpal's default is lowercase. Only {lower_ratio:.0%} of lines start lowercase.")
+    if profile in ("amritpal", "pankaj"):
+        misses = sentence_case_misses(text)
+        if misses:
+            msg = f"sentence case: {len(misses)} line/sentence start(s) in lowercase, e.g. {misses[:3]}"
+            (E if profile == "amritpal" else W)(msg)
 
     # 12 exactly one explicit ask, matching the declared type
     last = paras[-1].lower() if paras else ""

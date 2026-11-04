@@ -40,7 +40,7 @@ If a profile is named, humanize INTO that profile's voice. If not, ask which pro
 5. **High whitespace: one blank line between every line.** No walls of text.
 6. **CTA goes in the FIRST COMMENT, never the post body.** If a draft ends in a pitch or a link, move it to `firstComment` with `[TOOL_LINK]`.
 7. **Close on a genuine discussion question. Zero hashtags. No engagement bait** ("comment X for the resource" is forbidden).
-8. **Lowercase-voice profiles stay lowercase** (e.g. Sumit, Amritpal). Do not "correct" their casing into title-case brand voice.
+8. **Lowercase-voice profiles stay lowercase** (e.g. Sumit). Do not "correct" their casing into title-case brand voice. Amritpal switched to sentence case on 2026-11-04: capitalise the first word of every line and sentence in his drafts.
 
 ## The honesty gate (humanizing must never break this)
 
