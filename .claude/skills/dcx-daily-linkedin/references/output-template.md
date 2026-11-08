@@ -49,7 +49,7 @@ be cleared first.
 ### Research brief
 - **What happened:** {2-4 facts, verbatim where it matters}
 - **Source:** [{publisher, title}]({url}), published {date}. {Primary / secondary, and the primary link if secondary.}
-- **Why it matters to his reader:** {2 lines}
+- **Why it matters to the reader:** {2 lines}
 - **What the source does not say:** {rollout, pricing, regions; so the post doesn't either}
 - **Angle:** {the one take only this profile would write}
 
