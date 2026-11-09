@@ -219,7 +219,7 @@ def check_post(body, profile, fmt, ask, typ, comment, bank_grams=None):
         E("ask is comment-gate but the close never names the comment action")
     asks_found = sum([
         "save this" in low or "save it" in low,
-        "repost" in low,
+        bool(re.search(r"\brepost (if|this|it)\b", low)),  # "reposts" as a metric name is not an ask
         bool(re.search(r"\bcomment (the word |your |[A-Z]{3,})", text, flags=re.I)),
         bool(re.search(r"\bfollow (me|for)\b", low)),
     ])
