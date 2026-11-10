@@ -77,12 +77,32 @@ from the mapping table in `post-formats.md`, then check the last 10 days so the 
 week trends toward ~70% visual and no ask runs three days in a row.
 
 ### 5. Draft
-First read the **hook bank**: the Google Doc "Hook bank · Scripe trending (paste weekly)"
-(`1uL_4WUNV8JLd6x1MRriknLWZzKewn3JM1Rt1v5lx-4Y`, same Drive folder). The team pastes trending
-LinkedIn hooks from Scripe there each week. Use only batches from the last 14 days, split
-by niche, and follow "Using the Scripe hook bank" in `post-formats.md`. Save the doc's text to
-`$SCRATCH/hook-bank.txt` for the gate. If the bank is empty or stale, say so in the brief
-and draft from the house hook formulas.
+First read the **hook bank**. It has two sources:
+
+1. **The Scripe sheet** (the team's "Top 100 Hooks" pull, first one 2026-11-10): the newest
+   `references/hook-bank/YYYY-MM-DD-scripe-top100.md`. Hooks by niche with pattern,
+   engagement, comments and a Fresh flag (posted within 14 days of the pull), a pattern
+   scoreboard per niche, and fill-in formulas. When the team shares a new sheet (uploaded in
+   chat, or an .xlsx / Sheet with "Hooks" in its title in the Drive folder that is newer than
+   the newest file here), convert it and commit both outputs with the day's brief:
+   ```bash
+   python3 -I .claude/skills/dcx-daily-linkedin/scripts/hook_bank.py SHEET.xlsx
+   ```
+   In a headless run, fetch a newer Drive sheet with `download_file_content`; if that fails,
+   read it with `read_file_content`, save the text to `$SCRATCH`, use it for today, and flag
+   in the brief that the sheet still needs converting.
+2. **The Google Doc** "Hook bank · Scripe trending (paste weekly)"
+   (`1uL_4WUNV8JLd6x1MRriknLWZzKewn3JM1Rt1v5lx-4Y`, same Drive folder), for ad-hoc pastes.
+
+Build the gate file from both. Every sheet ever pulled stays in the gate:
+```bash
+cat .claude/skills/dcx-daily-linkedin/references/hook-bank/*.txt > "$SCRATCH/hook-bank.txt"
+# then append the Doc's batches (if any) to the same file
+```
+A sheet pulled in the last 14 days is this fortnight's trend evidence; older sheets count
+only as proven patterns. Follow "Using the Scripe hook bank" in `post-formats.md`, including
+its house filters. If the newest sheet is older than 14 days and the Doc has no fresh
+batch, say so in the brief and lean on the proven patterns and house hook formulas.
 
 For each profile, in its voice from `profiles.md`, using the format skeleton:
 - three hook options, at least one adapted from a trending mechanic in the bank when one

@@ -154,21 +154,35 @@ The hook bank is engagement evidence from other creators in the same niches. It 
 which *shapes* of first line are stopping the scroll this fortnight. It is never a source
 of words, facts or numbers.
 
-1. **Read by niche.** Marketing/SEO/AEO hooks inform Amritpal, GTM leadership hooks inform
-   Sumit, RevOps/GTM engineering hooks inform Pankaj. Last 14 days only.
-2. **Name the mechanic** behind the hooks with the most comments (comments outrank
-   reactions): the odd number, the reversal ("I was wrong about"), the flat statement of
-   a change, the confession, the specific stake, the "X vs Y" split, the one-line verdict.
-   Note the format that carried it (carousel, text, image).
+1. **Read by niche.** In the sheet: `SEO / AEO` informs Amritpal, `GTM` informs Sumit,
+   `RevOps` informs Pankaj (GTM hooks about Clay, Claude Code or the stack inform Pankaj
+   too). Fresh hooks (posted within 14 days of the pull) are this fortnight's trend; the
+   rest are proven patterns.
+2. **Pick the pattern, not the hook.** Start from the niche's pattern scoreboard. Comments
+   outrank reactions, so weigh the comment ratio: a pattern that starts arguments beats one
+   that collects likes. Name it as the sheet does (Shift statement, Myth-bust, Expectation
+   vs reality, Number + gap, Contrarian truth, Then vs now, Dialogue, 90/10 split...).
 3. **Rebuild it from today's story** in the profile's voice. The shape travels; the words,
    claims and numbers come only from our research and cleared DevCommX facts.
-4. **Filter what the house bans** even when it trends: "not X, it's Y", emoji-led lines,
-   soft wind-ups, engagement bait, fake urgency, borrowed statistics.
-5. **Log it** in the brief's Strategy block: "mechanic: <name>, seen in <n> top hooks this
-   week". This builds a record of which mechanics win for us.
+4. **Filter what the house bans** even when it trends (see the table below).
+5. **Log it** in the brief's Strategy block: "pattern: <name> (sheet #<n>, <engagement>
+   eng., <fresh or proven>)". This builds a record of which patterns win for us.
+
+**House filters for the sheet's patterns:**
+
+| Pattern in the sheet | How we may use it |
+|---|---|
+| Expectation vs reality, Then vs now, Number + gap, Contrarian truth, Bold one-liner, Common mistake, Reframe, Gap statement, Comparison | Free to use. Fill with our facts. |
+| Myth-bust "[A], [B] and [C] are NOT the same thing" | Fine, in sentence case: no ALL CAPS "NOT" in a post (carousel slides only). |
+| Shift statement "[X] is no longer just [old]. The focus will be on [new]" | Too close to the banned "not just X, but Y". State the change flat: "AI answers now decide which brands get named." |
+| 90/10 split, Shock stat, Data study, Data claim | Only with a number from today's sourced research. Never "90% of brands" without a source; write "most brands" instead. |
+| Experience / Authority (years in the job, big-name clients, "my biggest win"), Proof + framework, Counter-intuitive result, Before / after with AI, Insider room, Story + proof | Need a real first-person fact recorded in the brief or a cleared DevCommX number (18/100, ~$380K). Otherwise a `[NEEDS:]` flag, never an invented year, client, dinner or result. |
+| Dialogue (CEO / Me) | Only as a labelled composite ("The question I hear most from CEOs:"), or a real conversation the brief records. Never a quoted exchange presented as real. |
+| Lead magnet (comment-to-get), Steal this SOP, Resource / roadmap | Only as `comment-gate` with a finished, existing asset (the AI visibility checker counts: "comment your domain"), 1-2 per profile per week, DM owner named. No "Free access 👇". |
+| Breaking news "🚨" | Keep the urgency, drop the emoji: no emoji-led lines. |
 
 The gate enforces step 3: `check_post.py --bank` fails any post that shares a six-word run
-with any line in the hook bank.
+with any hook or formula in the bank (sheet `.txt` files plus the Doc's batches).
 
 ## Asks (exactly one per post)
 
