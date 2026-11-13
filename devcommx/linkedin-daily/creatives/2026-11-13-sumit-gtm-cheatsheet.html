@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1080">
+<title>Sumit · AI GTM cheat sheet · animated</title>
+<!-- Animated cheat sheet for Sumit, 1080 x 1350, 12-second loop.
+     Format inspired by a multi-panel "GTM cheat sheet" infographic Amritpal shared;
+     every panel's content here is original (DevCommX / Sumit), and the news panel only
+     carries items sourced in this week's briefs (Nov 4-13, 2026).
+     window.render(t) draws the frame at t seconds for deterministic capture. -->
+<style>
+  :root {
+    --bg: #EEF4EE; --grid: rgba(30,107,71,.05); --card: #FFFFFF; --line: #DCE7DE;
+    --ink: #15241C; --muted: #5C6E64; --soft: #8A9A90;
+    --g: #1E6B47; --g2: #2E8A5E; --gl: #CFEBD8; --gx: #E8F5EC;
+    --warm: #E58A4E; --warmL: #FCE9DC;
+    --sans: "Inter", Arial, sans-serif; --disp: "Inter Display", "Inter", Arial, sans-serif;
+    --mono: "JetBrains Mono", monospace;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); }
+  .sheet { position: relative; width: 1080px; height: 1350px; overflow: hidden; color: var(--ink); font-family: var(--sans); -webkit-font-smoothing: antialiased;
+    background-color: var(--bg);
+    background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 24px 24px; }
+
+  /* header */
+  .brand { position: absolute; left: 28px; top: 26px; display: flex; align-items: center; gap: 10px; font: 700 19px/1 var(--sans); letter-spacing: -.2px; }
+  .mark { width: 34px; height: 34px; border-radius: 9px; background: var(--g); color: #fff; display: grid; place-items: center; font: 800 15px/1 var(--disp); }
+  .pill { position: absolute; top: 26px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 8px; padding: 7px 16px; border-radius: 999px; background: #fff; border: 1.5px solid var(--g); font: 600 12.5px/1 var(--mono); letter-spacing: 1.4px; color: var(--g); white-space: nowrap; }
+  .pill i { width: 7px; height: 7px; border-radius: 50%; background: var(--g2); }
+  .author { position: absolute; right: 28px; top: 22px; display: flex; align-items: center; gap: 10px; text-align: right; }
+  .author b { display: block; font: 700 16px/1.2 var(--sans); }
+  .author span { font: 400 12.5px/1.2 var(--sans); color: var(--muted); }
+  .av { width: 42px; height: 42px; border-radius: 50%; background: var(--warm); color: #fff; display: grid; place-items: center; font: 700 15px/1 var(--sans); }
+  h1 { position: absolute; top: 72px; left: 0; right: 0; margin: 0; text-align: center; font: 800 54px/1.1 var(--disp); letter-spacing: -1.8px; }
+  h1 .hl { position: relative; padding: 0 12px; }
+  h1 .hl::before { content: ""; position: absolute; inset: 6px 0 4px; background: var(--gl); border-radius: 10px; z-index: -1; }
+  h1 .hl { z-index: 0; }
+
+  /* panels */
+  .panel { position: absolute; background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 14px 16px; }
+  .ring { position: absolute; inset: -3px; border-radius: 18px; border: 2.5px solid var(--g2); box-shadow: 0 6px 26px rgba(30,107,71,.22); opacity: 0; pointer-events: none; }
+  .ph { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+  .num { position: relative; width: 26px; height: 26px; border-radius: 7px; background: var(--gx); color: var(--g); display: grid; place-items: center; font: 700 13px/1 var(--mono); flex: none; }
+  .num .on { position: absolute; inset: 0; border-radius: 7px; background: var(--g); color: #fff; display: grid; place-items: center; opacity: 0; }
+  .ph h2 { margin: 0; font: 700 18px/1.15 var(--sans); letter-spacing: -.3px; }
+  .sub { font: 400 12px/1.35 var(--sans); color: var(--muted); margin: -4px 0 8px; }
+  .kick { font: 600 10px/1 var(--mono); letter-spacing: 1.2px; color: var(--soft); text-transform: uppercase; }
+
+  /* 1 motions table */
+  .tbl { position: relative; width: 100%; border-collapse: collapse; }
+  .tbl th { text-align: left; font: 600 9.5px/1 var(--mono); letter-spacing: 1px; color: var(--soft); padding: 6px 4px 7px; border-bottom: 1px solid var(--line); text-transform: uppercase; background: var(--gx); }
+  .tbl td { vertical-align: top; font: 400 11.6px/1.3 var(--sans); color: var(--muted); padding: 7px 4px; border-bottom: 1px solid #EEF3EF; }
+  .tbl td:first-child { font-weight: 700; color: var(--ink); white-space: nowrap; }
+  .tbl tr:last-child td { border-bottom: 0; }
+  .bar { position: absolute; left: 0; right: 0; border-radius: 8px; background: var(--warmL); border-left: 3px solid var(--warm); opacity: 0; z-index: 0; }
+  .zrel { position: relative; z-index: 1; }
+
+  /* 3 ICP steps */
+  .steps { margin: 2px 0 0; padding: 0; list-style: none; }
+  .steps li { display: flex; gap: 10px; align-items: flex-start; padding: 9px 0; border-bottom: 1px dashed var(--line); font: 400 12.4px/1.35 var(--sans); color: var(--ink); }
+  .steps li:last-child { border-bottom: 0; }
+  .ck { position: relative; flex: none; width: 20px; height: 20px; border-radius: 50%; border: 1.5px solid var(--gl); color: var(--g); display: grid; place-items: center; font: 700 10px/1 var(--mono); margin-top: -1px; }
+  .ck .t { position: absolute; inset: -1.5px; border-radius: 50%; background: var(--g2); display: grid; place-items: center; opacity: 0; }
+  .ck .t svg { width: 12px; height: 12px; stroke: #fff; stroke-width: 3; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .test { margin-top: 14px; padding: 10px 12px; border-radius: 12px; background: var(--g); color: #fff; font: 400 12.2px/1.4 var(--sans); }
+  .test b { display: block; font: 600 10px/1 var(--mono); letter-spacing: 1.2px; color: #BFE8CC; margin-bottom: 5px; }
+
+  /* 4 loop */
+  .cards { position: relative; display: flex; gap: 16px; margin-top: 4px; }
+  .card { position: relative; width: 120px; height: 212px; border-radius: 12px; background: #F6FAF7; border: 1px solid var(--line); padding: 10px 10px; }
+  .card .glow { position: absolute; inset: -1px; border-radius: 12px; border: 2px solid var(--warm); background: rgba(252,233,220,.45); opacity: 0; }
+  .card .n { position: relative; width: 26px; height: 26px; border-radius: 50%; background: var(--g); color: #fff; display: grid; place-items: center; font: 700 12px/1 var(--mono); margin-bottom: 8px; }
+  .card h3 { position: relative; margin: 0 0 5px; font: 700 14.5px/1.15 var(--sans); }
+  .card p { position: relative; margin: 0 0 8px; font: 400 11.2px/1.32 var(--sans); color: var(--ink); }
+  .card .why { position: relative; font: 400 10.6px/1.3 var(--sans); color: var(--g); border-top: 1px dashed var(--gl); padding-top: 6px; }
+  .card .why b { font: 600 9px/1 var(--mono); letter-spacing: 1px; display: block; margin-bottom: 3px; color: var(--soft); }
+  .loopsvg { position: absolute; left: 0; top: 0; overflow: visible; pointer-events: none; }
+  .rule { position: absolute; left: 16px; right: 16px; bottom: 14px; height: 40px; border-radius: 10px; background: var(--ink); color: #fff; display: flex; align-items: center; justify-content: center; gap: 10px; font: 600 14px/1 var(--sans); letter-spacing: -.1px; }
+  .rule i { font: 600 9.5px/1 var(--mono); letter-spacing: 1.2px; color: #9FD9B4; font-style: normal; }
+
+  /* 5 prompts */
+  .ptbl { position: relative; }
+  .prow { position: relative; display: grid; grid-template-columns: 92px 1fr; gap: 10px; padding: 9px 6px; border-bottom: 1px solid #EEF3EF; }
+  .prow:last-child { border-bottom: 0; }
+  .prow .job { font: 700 12px/1.25 var(--sans); }
+  .prow .job span { display: block; font: 500 9.5px/1.2 var(--mono); color: var(--soft); letter-spacing: .6px; margin-top: 4px; text-transform: uppercase; }
+  .prow .pr { font: 400 11.6px/1.4 var(--mono); color: #33473C; letter-spacing: -.25px; }
+  .copied { position: absolute; left: 6px; bottom: 8px; padding: 4px 8px; border-radius: 6px; background: var(--g); color: #fff; font: 600 9.5px/1 var(--mono); letter-spacing: .8px; opacity: 0; }
+  .phead { display: grid; grid-template-columns: 92px 1fr; gap: 10px; padding: 6px 6px 7px; background: var(--gx); border-radius: 6px 6px 0 0; border-bottom: 1px solid var(--line); }
+  .phead span { font: 600 9.5px/1 var(--mono); letter-spacing: 1px; color: var(--soft); text-transform: uppercase; }
+
+  /* 6 renewal questions */
+  .qs { list-style: none; margin: 0; padding: 0; }
+  .qs li { display: flex; gap: 10px; align-items: flex-start; padding: 6px 0; border-bottom: 1px dashed var(--line); }
+  .qs li:last-child { border-bottom: 0; }
+  .qs .q { font: 600 12.6px/1.3 var(--sans); }
+  .qs .src { display: inline-block; margin-top: 4px; padding: 3px 7px; border-radius: 5px; background: var(--gx); font: 500 9.6px/1.2 var(--mono); color: var(--g); letter-spacing: .2px; }
+
+  /* 7 news */
+  .news { list-style: none; margin: 0; padding: 0; }
+  .news li { position: relative; display: grid; grid-template-columns: 74px 1fr; gap: 10px; align-items: start; padding: 10px 0; border-bottom: 1px solid #EEF3EF; }
+  .news li:last-child { border-bottom: 0; }
+  .date { padding: 4px 0; border-radius: 6px; background: var(--ink); color: #fff; text-align: center; font: 600 10px/1.2 var(--mono); letter-spacing: .5px; }
+  .news .tx { font: 400 12.2px/1.35 var(--sans); color: var(--ink); padding-right: 40px; }
+  .news .tx b { font-weight: 700; }
+  .new { position: absolute; right: 0; top: 8px; padding: 3px 6px; border-radius: 5px; background: var(--warm); color: #fff; font: 700 9px/1 var(--mono); letter-spacing: 1px; opacity: 0; }
+  .srcnote { position: absolute; right: 16px; top: 18px; font: 500 10px/1 var(--mono); color: var(--soft); letter-spacing: .4px; }
+
+  /* footer */
+  .foot { position: absolute; left: 28px; right: 28px; bottom: 22px; height: 52px; display: flex; align-items: center; justify-content: space-between; }
+  .foot .who { display: flex; align-items: center; gap: 10px; }
+  .foot .who b { display: block; font: 700 15px/1.2 var(--sans); }
+  .foot .who span { font: 400 12px/1.2 var(--sans); color: var(--muted); }
+  .save { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); display: flex; align-items: center; gap: 8px; padding: 12px 26px; border-radius: 999px; background: #fff; border: 2px solid var(--ink); font: 700 14px/1 var(--mono); letter-spacing: 1.6px; }
+  .save svg { width: 15px; height: 15px; stroke: var(--ink); stroke-width: 2.4; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .site { font: 600 14px/1 var(--sans); color: var(--ink); display: flex; align-items: center; gap: 8px; }
+  .site .mark { width: 28px; height: 28px; border-radius: 7px; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="brand"><div class="mark">dx</div>DevCommX</div>
+  <div class="pill"><i></i>GTM · NOVEMBER 2026 EDITION</div>
+  <div class="author"><div><b>Sumit Nautiyal</b><span>GTM at DevCommX</span></div><div class="av">SN</div></div>
+  <h1>The 2026 <span class="hl">AI GTM</span> cheat sheet</h1>
+
+  <!-- 1 -->
+  <div class="panel" id="p1" style="left:28px; top:150px; width:332px; height:384px;">
+    <div class="ring"></div>
+    <div class="ph"><div class="num">1<div class="on">1</div></div><h2>GTM motions at a glance</h2></div>
+    <div style="position:relative">
+      <div class="bar" id="bar1"></div>
+      <table class="tbl zrel" id="tbl1">
+        <tr><th>Motion</th><th>How it works</th><th>Best when</th></tr>
+        <tr><td>Product-led</td><td>Users try it first; sales joins on usage</td><td>Value shows up fast</td></tr>
+        <tr><td>Inbound</td><td>Buyers find you in search, AI answers, content</td><td>Demand already exists</td></tr>
+        <tr><td>Outbound</td><td>You reach the right accounts first, on a signal</td><td>ICP is sharp</td></tr>
+        <tr><td>Sales-led</td><td>A seller runs a long, multi-buyer deal</td><td>Deals are big</td></tr>
+        <tr><td>Partner-led</td><td>Partners sell, bundle or refer you</td><td>Partners own the buyer</td></tr>
+        <tr><td>Community</td><td>Users bring in other users</td><td>Users talk to each other</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="panel" id="p2" style="left:374px; top:150px; width:332px; height:384px;">
+    <div class="ring"></div>
+    <div class="ph"><div class="num">2<div class="on">2</div></div><h2>The AI GTM iceberg</h2></div>
+    <div class="sub">Buyers see the top. Deals are won under the line.</div>
+    <svg id="ice" width="300" height="296" viewBox="0 0 300 296"></svg>
+  </div>
+
+  <!-- 3 -->
+  <div class="panel" id="p3" style="left:720px; top:150px; width:332px; height:384px;">
+    <div class="ring"></div>
+    <div class="ph"><div class="num">3<div class="on">3</div></div><h2>A sharp ICP in 5 steps</h2></div>
+    <ul class="steps" id="steps3">
+      <li><div class="ck">1<div class="t"><svg viewBox="0 0 12 12"><path d="M2.5 6.3l2.3 2.2 4.7-5"/></svg></div></div><div>Start with your best 20 closed-won deals.</div></li>
+      <li><div class="ck">2<div class="t"><svg viewBox="0 0 12 12"><path d="M2.5 6.3l2.3 2.2 4.7-5"/></svg></div></div><div>Write their pain in their own words, from call notes.</div></li>
+      <li><div class="ck">3<div class="t"><svg viewBox="0 0 12 12"><path d="M2.5 6.3l2.3 2.2 4.7-5"/></svg></div></div><div>Add the fit: size, stack, region, buying team.</div></li>
+      <li><div class="ck">4<div class="t"><svg viewBox="0 0 12 12"><path d="M2.5 6.3l2.3 2.2 4.7-5"/></svg></div></div><div>Add one live signal: hiring, funding, a new tool.</div></li>
+      <li><div class="ck">5<div class="t"><svg viewBox="0 0 12 12"><path d="M2.5 6.3l2.3 2.2 4.7-5"/></svg></div></div><div>Re-check it against new wins every quarter.</div></li>
+    </ul>
+    <div class="test" id="test3"><b>THE SHARPNESS TEST</b>Can a new SDR build a list of 100 accounts from it in an hour? If not, it isn't sharp yet.</div>
+  </div>
+
+  <!-- 4 -->
+  <div class="panel" id="p4" style="left:28px; top:548px; width:560px; height:356px;">
+    <div class="ring"></div>
+    <div class="ph"><div class="num">4<div class="on">4</div></div><h2>The AI GTM loop</h2></div>
+    <div class="cards" id="cards">
+      <div class="card"><div class="glow"></div><div class="n">1</div><h3>Define</h3><p>Define pipeline, qualified and attribution. Name an owner for each.</p><div class="why"><b>WHY</b>Agents repeat your data.</div></div>
+      <div class="card"><div class="glow"></div><div class="n">2</div><h3>Target</h3><p>ICP plus one live signal for every account you work.</p><div class="why"><b>WHY</b>Timing beats volume.</div></div>
+      <div class="card"><div class="glow"></div><div class="n">3</div><h3>Engage</h3><p>One story on email, LinkedIn and calls. One owner per account.</p><div class="why"><b>WHY</b>The buyer hears one voice.</div></div>
+      <div class="card"><div class="glow"></div><div class="n">4</div><h3>Learn</h3><p>Feed won and lost reasons back into targeting.</p><div class="why"><b>WHY</b>Each round makes the next one sharper.</div></div>
+    </div>
+    <svg class="loopsvg" id="loop" width="560" height="356" viewBox="0 0 560 356"></svg>
+    <div class="rule"><i>THE RULE</i>Automate the typing. Never automate the judgment.</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="panel" id="p5" style="left:602px; top:548px; width:450px; height:356px;">
+    <div class="ring"></div>
+    <div class="ph"><div class="num">5<div class="on">5</div></div><h2>Claude prompts for GTM teams</h2></div>
+    <div class="phead"><span>Job</span><span>Prompt to copy</span></div>
+    <div class="ptbl" id="ptbl">
+      <div class="bar" id="bar5"></div>
+      <div class="prow zrel"><div class="job">ICP check<span>CRM</span></div><div class="pr">"Compare our last 20 won and 20 lost deals. What separates them? Give me a sharper ICP in three lines."</div><div class="copied">COPIED ✓</div></div>
+      <div class="prow zrel"><div class="job">Account brief<span>Web + notes</span></div><div class="pr">"Read this account's site, recent news and our call notes. Give me their top priority and one opening question."</div><div class="copied">COPIED ✓</div></div>
+      <div class="prow zrel"><div class="job">Deal review<span>CRM</span></div><div class="pr">"List deals stuck in one stage for 30+ days: who has signed off, who hasn't, next step with a date."</div><div class="copied">COPIED ✓</div></div>
+      <div class="prow zrel"><div class="job">Trial plan<span>Docs</span></div><div class="pr">"Draft a 14-day trial on the buyer's own data, with one success measure agreed before it starts."</div><div class="copied">COPIED ✓</div></div>
+    </div>
+  </div>
+
+  <!-- 6 -->
+  <div class="panel" id="p6" style="left:28px; top:918px; width:490px; height:328px;">
+    <div class="ring"></div>
+    <div class="ph"><div class="num">6<div class="on">6</div></div><h2>Ask before you renew an AI tool</h2></div>
+    <ul class="qs" id="qs6">
+      <li><div class="ck">1<div class="t"><svg viewBox="0 0 12 12"><path d="M2.5 6.3l2.3 2.2 4.7-5"/></svg></div></div><div><div class="q">Which outcome would you price on, and how is it measured?</div><span class="src">Gainsight's reported move to value-based pricing</span></div></li>
+      <li><div class="ck">2<div class="t"><svg viewBox="0 0 12 12"><path d="M2.5 6.3l2.3 2.2 4.7-5"/></svg></div></div><div><div class="q">Who owns our account: a named person or an agent?</div><span class="src">Gainsight's one-owner-per-customer model</span></div></li>
+      <li><div class="ck">3<div class="t"><svg viewBox="0 0 12 12"><path d="M2.5 6.3l2.3 2.2 4.7-5"/></svg></div></div><div><div class="q">Can we trial it on our own data first?</div><span class="src">HubSpot Q3: buyers test AI on their own data</span></div></li>
+      <li><div class="ck">4<div class="t"><svg viewBox="0 0 12 12"><path d="M2.5 6.3l2.3 2.2 4.7-5"/></svg></div></div><div><div class="q">Who else on our side has to sign off?</div><span class="src">HubSpot Q3: bigger buying committees</span></div></li>
+      <li><div class="ck">5<div class="t"><svg viewBox="0 0 12 12"><path d="M2.5 6.3l2.3 2.2 4.7-5"/></svg></div></div><div><div class="q">What's our plan if your service is down for a day?</div><span class="src">Microsoft 365 outage, Nov 12-13</span></div></li>
+    </ul>
+  </div>
+
+  <!-- 7 -->
+  <div class="panel" id="p7" style="left:532px; top:918px; width:520px; height:328px;">
+    <div class="ring"></div>
+    <div class="srcnote">SOURCES IN THE COMMENTS</div>
+    <div class="ph"><div class="num">7<div class="on">7</div></div><h2>GTM news, Nov 4-13</h2></div>
+    <ul class="news" id="news7">
+      <li><div class="date">NOV 12</div><div class="tx"><b>HubSpot:</b> co-founder Brian Halligan is back as CEO and calls it a "re-founding".</div><div class="new">NEW</div></li>
+      <li><div class="date">NOV 12</div><div class="tx"><b>Gainsight:</b> reported shift from seat-based to value-based pricing.</div><div class="new">NEW</div></li>
+      <li><div class="date">NOV 12-13</div><div class="tx"><b>Microsoft 365:</b> Outlook and Teams outage disrupts organisations in several countries.</div><div class="new">NEW</div></li>
+      <li><div class="date">NOV 10</div><div class="tx"><b>OpenAI:</b> Businesses in ChatGPT beta. Claim a profile, see your mentions.</div><div class="new">NEW</div></li>
+      <li><div class="date">NOV 4</div><div class="tx"><b>Salesforce:</b> Agentforce Coworker at $50 per user per month.</div><div class="new">NEW</div></li>
+    </ul>
+  </div>
+
+  <div class="foot">
+    <div class="who"><div class="av" style="width:40px;height:40px">SN</div><div><b>Sumit Nautiyal</b><span>Go-to-market, made simple</span></div></div>
+    <div class="save" id="save"><svg viewBox="0 0 16 16"><path d="M8 2v10M3.5 7.5L8 12l4.5-4.5M3 14.5h10"/></svg>SAVE THIS</div>
+    <div class="site">devcommx.com <div class="mark">dx</div></div>
+  </div>
+</div>
+
+<script>
+const LOOP = 12;
+const $ = id => document.getElementById(id);
+const clamp = x => Math.min(1, Math.max(0, x));
+const ramp = (t, a, b) => clamp((t - a) / (b - a));
+const ease = x => { x = clamp(x); return x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2; };
+const NS = 'http://www.w3.org/2000/svg';
+const el = (tag, attrs, parent) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; };
+
+// ---------- 2: iceberg ----------
+const ice = $('ice');
+el('text', { x: 4, y: 11, 'font-family': 'JetBrains Mono', 'font-size': 9.5, 'font-weight': 600, 'letter-spacing': 1, fill: '#8A9A90' }, ice).textContent = 'WHAT BUYERS SEE';
+const chips = [['Emails', 50], ['Posts', 44], ['Ads', 36], ['Demos', 48], ['AI answers', 74]];
+let cx = (300 - (chips.reduce((s, c) => s + c[1], 0) + 4 * 8)) / 2;
+chips.forEach(([label, w]) => {
+  el('rect', { x: cx, y: 19, width: w, height: 24, rx: 12, fill: '#fff', stroke: '#CFEBD8', 'stroke-width': 1.5 }, ice);
+  el('text', { x: cx + w / 2, y: 35, 'text-anchor': 'middle', 'font-family': 'Inter', 'font-size': 11.5, 'font-weight': 600, fill: '#15241C' }, ice).textContent = label;
+  cx += w + 8;
+});
+el('path', { d: 'M150 50 L122 78 L178 78 Z', fill: '#E8F5EC', stroke: '#CFEBD8', 'stroke-width': 1.2 }, ice);
+const water = el('path', { fill: 'none', stroke: '#6FB9D6', 'stroke-width': 2.2, 'stroke-linecap': 'round' }, ice);
+const waterFill = el('path', { fill: 'rgba(111,185,214,.10)' }, ice);
+el('text', { x: 296, y: 76, 'text-anchor': 'end', 'font-family': 'JetBrains Mono', 'font-size': 8.5, 'font-weight': 600, 'letter-spacing': 1, fill: '#5BA5C2' }, ice).textContent = 'WATERLINE';
+el('text', { x: 4, y: 104, 'font-family': 'JetBrains Mono', 'font-size': 9.5, 'font-weight': 600, 'letter-spacing': 1, fill: '#8A9A90' }, ice).textContent = 'WHAT WINS';
+const LAYERS = ['Offer and message', "Proof on the buyer's data", 'Signals and timing', 'A sharp ICP', 'Shared definitions', 'Clean CRM data'];
+const LCOL = ['#DDF0E3', '#C6E6D0', '#A6D6B7', '#5FAE84', '#2E8A5E', '#1E6B47'];
+const layerEls = [];
+LAYERS.forEach((label, i) => {
+  const y0 = 112 + i * 30, y1 = y0 + 26, w0 = 284 - i * 26, w1 = 284 - (i + 1) * 26 + 6;
+  const d = `M${150 - w0 / 2} ${y0} L${150 + w0 / 2} ${y0} L${150 + w1 / 2} ${y1} L${150 - w1 / 2} ${y1} Z`;
+  const p = el('path', { d, fill: LCOL[i], stroke: 'none', 'stroke-width': 0, 'stroke-linejoin': 'round' }, ice);
+  const hi = el('path', { d, fill: 'none', stroke: '#E58A4E', 'stroke-width': 2.6, 'stroke-linejoin': 'round', opacity: 0 }, ice);
+  el('text', { x: 150, y: y0 + 17.5, 'text-anchor': 'middle', 'font-family': 'Inter', 'font-size': 11.6, 'font-weight': 600, fill: i >= 3 ? '#fff' : '#15241C' }, ice).textContent = label;
+  layerEls.push(hi);
+});
+
+// ---------- 4: loop arrows ----------
+const loop = $('loop');
+const cardEls = [...document.querySelectorAll('#cards .card')];
+const P4 = $('p4').getBoundingClientRect();
+const cardBox = cardEls.map(c => { const r = c.getBoundingClientRect(); return { x: r.left - P4.left, y: r.top - P4.top, w: r.width, h: r.height }; });
+const defs = el('defs', {}, loop);
+const mk = el('marker', { id: 'ah', viewBox: '0 0 10 10', refX: 7, refY: 5, markerWidth: 7, markerHeight: 7, orient: 'auto-start-reverse' }, defs);
+el('path', { d: 'M1 1L9 5L1 9z', fill: '#2E8A5E' }, mk);
+for (let i = 0; i < 3; i++) {
+  const a = cardBox[i], b = cardBox[i + 1], y = a.y + 23;
+  el('line', { x1: a.x + a.w + 1, y1: y, x2: b.x - 3, y2: y, stroke: '#2E8A5E', 'stroke-width': 2, 'marker-end': 'url(#ah)' }, loop);
+}
+const last = cardBox[3], first = cardBox[0], by = first.y + first.h, ry = by + 21;
+const backD = `M${last.x + last.w / 2} ${by + 1} L${last.x + last.w / 2} ${ry - 8} Q${last.x + last.w / 2} ${ry} ${last.x + last.w / 2 - 8} ${ry} L${first.x + first.w / 2 + 8} ${ry} Q${first.x + first.w / 2} ${ry} ${first.x + first.w / 2} ${ry - 8} L${first.x + first.w / 2} ${by + 5}`;
+el('path', { d: backD, fill: 'none', stroke: '#2E8A5E', 'stroke-width': 2, 'stroke-dasharray': '5 4', 'marker-end': 'url(#ah)' }, loop);
+const lab = el('g', {}, loop);
+const labW = 236, labX = (first.x + last.x + last.w) / 2;
+el('rect', { x: labX - labW / 2, y: ry - 10, width: labW, height: 20, rx: 10, fill: '#fff', stroke: '#CFEBD8' }, lab);
+el('text', { x: labX, y: ry + 4, 'text-anchor': 'middle', 'font-family': 'JetBrains Mono', 'font-size': 9.6, 'font-weight': 600, 'letter-spacing': .6, fill: '#1E6B47' }, lab).textContent = 'EVERY WEEK: WHAT WON, WHAT LOST';
+// the travelling dot follows: top edge across the cards, then the dashed return path
+const topD = `M${first.x + 13} ${first.y + 23} L${last.x + last.w / 2} ${first.y + 23} L${last.x + last.w / 2} ${by + 1}`;
+const pathTop = el('path', { d: topD, fill: 'none', stroke: 'none' }, loop);
+const pathBack = el('path', { d: backD, fill: 'none', stroke: 'none' }, loop);
+const dot = el('circle', { r: 6.5, fill: '#E58A4E', stroke: '#fff', 'stroke-width': 2.5, opacity: 0 }, loop);
+const LTop = pathTop.getTotalLength(), LBack = pathBack.getTotalLength();
+
+// ---------- row geometry for the sweeping highlight bars ----------
+function rowBoxes(container, rows) {
+  const c = container.getBoundingClientRect();
+  return rows.map(r => { const b = r.getBoundingClientRect(); return { y: b.top - c.top, h: b.height }; });
+}
+const rows1 = rowBoxes($('tbl1').parentElement, [...$('tbl1').querySelectorAll('tr')].slice(1));
+const prows = [...document.querySelectorAll('#ptbl .prow')];
+const rows5 = rowBoxes($('ptbl'), prows);
+const copied = prows.map(r => r.querySelector('.copied'));
+const ticks3 = [...document.querySelectorAll('#steps3 .t')];
+const ticks6 = [...document.querySelectorAll('#qs6 .t')];
+const news = [...document.querySelectorAll('#news7 .new')];
+const panels = [1, 2, 3, 4, 5, 6, 7].map(i => $('p' + i));
+const rings = panels.map(p => p.querySelector('.ring'));
+const nums = panels.map(p => p.querySelector('.num .on'));
+const glows = cardEls.map(c => c.querySelector('.glow'));
+
+// spotlight windows (seconds): each panel gets its turn, then the whole sheet rests
+const WIN = [[0.3, 1.6], [1.6, 3.0], [3.0, 4.5], [4.5, 6.6], [6.6, 8.3], [8.3, 9.8], [9.8, 11.2]];
+const END = 1 - 0; // placeholder
+
+function sweep(bar, rows, p, n) {
+  const k = Math.min(n - 1, Math.floor(p * n)), local = p * n - k;
+  const nxt = Math.min(n - 1, k + 1), m = k < n - 1 ? ease(ramp(local, .72, 1)) : 0;
+  const y = rows[k].y + (rows[nxt].y - rows[k].y) * m, h = rows[k].h + (rows[nxt].h - rows[k].h) * m;
+  bar.style.top = (y - 1) + 'px'; bar.style.height = (h + 2) + 'px';
+  return { k, local };
+}
+
+window.render = function (t) {
+  t = ((t % LOOP) + LOOP) % LOOP;
+  const reset = 1 - ease(ramp(t, 11.45, 11.95));   // persistent states fade back before the loop restarts
+
+  WIN.forEach(([s, e], i) => {
+    const a = ease(ramp(t, s, s + .25)) * (1 - ease(ramp(t, e - .2, e)));
+    rings[i].style.opacity = a;
+    nums[i].style.opacity = Math.max(a, 0);
+  });
+
+  // 1: highlight sweeps down the motions
+  { const [s, e] = WIN[0], a = rings[0].style.opacity; const p = ramp(t, s + .15, e - .15);
+    sweep($('bar1'), rows1, p, rows1.length); $('bar1').style.opacity = a; }
+
+  // 2: waterline moves; layers light up from the bottom
+  { let d = 'M0 82', f = 'M0 82';
+    for (let x = 0; x <= 300; x += 6) { const y = 82 + 2.2 * Math.sin(2 * Math.PI * (x / 75 + t / LOOP * 6)); d += ` L${x} ${y.toFixed(2)}`; f += ` L${x} ${y.toFixed(2)}`; }
+    water.setAttribute('d', d); waterFill.setAttribute('d', f + ' L300 296 L0 296 Z');
+    const [s, e] = WIN[1], p = ramp(t, s + .15, e - .15), on = t > s && t < e;
+    const k = 5 - Math.min(5, Math.floor(p * 6));
+    layerEls.forEach((h, i) => h.setAttribute('opacity', on && i === k ? +rings[1].style.opacity : 0)); }
+
+  // 3: steps tick one by one, then the test box gets a nudge
+  { const [s, e] = WIN[2];
+    ticks3.forEach((tk, i) => tk.style.opacity = ease(ramp(t, s + .2 + i * .2, s + .32 + i * .2)) * reset);
+    const nudge = Math.sin(Math.PI * ramp(t, e - .5, e - .1));
+    $('test3').style.transform = `scale(${1 + .025 * nudge})`; }
+
+  // 4: a dot runs the loop; the card it passes lights up
+  { const [s, e] = WIN[3], p = ramp(t, s + .2, e - .2), on = t > s + .1 && t < e - .05;
+    let pt, active = -1;
+    if (p < .72) { const q = p / .72, L = q * LTop; pt = pathTop.getPointAtLength(L);
+      for (let i = 0; i < 4; i++) if (pt.x >= cardBox[i].x - 4 && pt.x <= cardBox[i].x + cardBox[i].w + 4) active = i; }
+    else { pt = pathBack.getPointAtLength(ramp(p, .72, 1) * LBack); }
+    dot.setAttribute('cx', pt.x.toFixed(1)); dot.setAttribute('cy', pt.y.toFixed(1));
+    dot.setAttribute('opacity', on ? ease(ramp(t, s + .1, s + .3)) * (1 - ease(ramp(t, e - .25, e - .05))) : 0);
+    glows.forEach((g, i) => g.style.opacity = on && i === active ? 1 : 0); }
+
+  // 5: highlight steps through the prompts; each one gets "copied"
+  { const [s, e] = WIN[4], a = +rings[4].style.opacity, p = ramp(t, s + .15, e - .15);
+    const { k, local } = sweep($('bar5'), rows5, p, rows5.length); $('bar5').style.opacity = a;
+    copied.forEach((c, i) => c.style.opacity = (t > s && t < e && i === k) ? ease(ramp(local, .25, .4)) * (1 - ramp(local, .85, 1)) : 0); }
+
+  // 6: questions tick one by one
+  { const [s] = WIN[5];
+    ticks6.forEach((tk, i) => tk.style.opacity = ease(ramp(t, s + .2 + i * .24, s + .34 + i * .24)) * reset); }
+
+  // 7: a NEW tag walks down the news
+  { const [s, e] = WIN[6], p = ramp(t, s + .1, e - .1), on = t > s && t < e;
+    const k = Math.min(4, Math.floor(p * 5)), local = p * 5 - k;
+    news.forEach((n, i) => n.style.opacity = on && i === k ? Math.sin(Math.PI * clamp(local)) * 1.4 : 0); }
+
+  // footer: the save button pulses while the sheet rests
+  { const q = ramp(t, 11.2, 11.95), s = 1 + .07 * Math.sin(Math.PI * q) * (q > 0 && q < 1);
+    $('save').style.transform = `translate(-50%,-50%) scale(${s.toFixed(3)})`;
+    $('save').style.background = q > .15 && q < .85 ? '#CFEBD8' : '#fff'; }
+};
+
+window.render(0);
+if (!location.hash.includes('capture')) {
+  const t0 = performance.now();
+  (function tick() { window.render((performance.now() - t0) / 1000); requestAnimationFrame(tick); })();
+}
+</script>
+</body>
+</html>
