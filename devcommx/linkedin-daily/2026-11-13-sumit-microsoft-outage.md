@@ -54,7 +54,11 @@ What did your team do in the first hour?
 <!-- /post -->
 
 ## Creative
-Text only. Optional card (Ink ground, `devcommx-brand`): kicker `MICROSOFT 365 · NOV 12-13`, three rows in JetBrains Mono with Signal Red dots: `OUTLOOK · down` / `TEAMS · down` / `SHAREPOINT · down`, then one row in Mint: `PHONE · still works`. Line: "Write the hour-one plan." Footer: `SUMIT NAUTIYAL · DEVCOMMX`.
+**Image card (made 13 Nov, on request):** `creatives/2026-11-13-sumit-microsoft-outage.png` (1080x1350, for upload) and `...@2x.png` (2160x2700, sharper). Source: `...-microsoft-outage.html`.
+
+- **Style:** the warm illustrated look chosen for Sumit's Fable 5.2 animation (cream, terracotta, teal panel), not the dark DevCommX surface.
+- **What it shows:** headline "One vendor outage shouldn't stop your whole pipeline." A teal status board, "What went down": Outlook, Teams, SharePoint and Copilot marked Disrupted, "from ~1 PM ET Thu · into Fri", and "~150,000 Outlook problem reports across the US and Canada, per outage trackers", with a small scene of a rep on the phone next to an offline laptop. A cream card, "The hour-one plan", with the post's three steps. Footer: Sumit's initials (headshot to drop in), the pill "Resilience is a GTM decision, too." and the source line.
+- **Claims on the card:** service names and the ~150,000 figure only, both from news coverage; no Microsoft logos or marks.
 
 ## First comment
 <!-- comment:sumit -->
