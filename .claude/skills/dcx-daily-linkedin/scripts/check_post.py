@@ -130,10 +130,16 @@ def check_post(body, profile, fmt, ask, typ, comment, bank_grams=None):
         if n:
             E(f"{label}: {n} em/en dash(es). Rewrite with a period, comma or parentheses.")
 
-    # 2 banned vocabulary
+    # 2 banned vocabulary. A source's exact words inside double quotes can't be
+    # reworded (e.g. HubSpot's "customer relationship harness"), so a banned word
+    # that appears only inside quotes is a warning to check, not an error.
+    unquoted = re.sub(r'"[^"\n]*"|“[^”\n]*”', " ", low)
     for w in BANNED_WORDS:
-        if re.search(r"(?<![a-z])" + re.escape(w) + r"(?![a-z])", low):
+        pat = r"(?<![a-z])" + re.escape(w) + r"(?![a-z])"
+        if re.search(pat, unquoted):
             E(f"banned word/phrase: '{w}'")
+        elif re.search(pat, low):
+            W(f"banned word '{w}' appears only inside a quote: fine if it's the source's exact words")
 
     # 3 symmetrical negation
     for pat in NEGATION:

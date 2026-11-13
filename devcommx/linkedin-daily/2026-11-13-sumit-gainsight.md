@@ -2,7 +2,7 @@
 
 Requested by Amritpal: a stronger topic for Sumit, replacing the shared-definitions post (parked: "topic isn't strong"). Not part of the scheduled run.
 
-**Slot:** **Mon 16 Nov 19:30 IST** (09:00 ET), while it's fresh. Reshuffled queue: Fri 13 Microsoft outage (today) · Mon 16 Gainsight (this) · Tue 17 HBR / Seismic · Thu 19 Morningscore (kept two days apart from this one, since both are about software turning into outcomes).
+**Slot:** **Wed 18 Nov 19:30 IST** (09:00 ET; moved from Mon 16 so the HubSpot post can go first). Queue: Fri 13 Microsoft outage · Mon 16 HubSpot · Tue 17 HBR / Seismic · Wed 18 Gainsight (this) · Morningscore to next week.
 **Pillar:** GTM market moves · **Archetype:** newsjacker, leader lens · **Rung:** 1 (reported Nov 12)
 
 ## Research brief
