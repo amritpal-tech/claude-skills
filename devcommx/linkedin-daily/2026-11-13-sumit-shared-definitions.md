@@ -53,7 +53,12 @@ Repost if your marketing and sales teams report different pipeline numbers.
 <!-- /post -->
 
 ## Creative
-Text only. Optional card (warm illustrated style, as used for his other cards this week): two speech bubbles, "Marketing: Pipeline is up." / "Sales: Which pipeline?", with a small robot between them holding two different reports. Below: three definition cards, `PIPELINE · owner ·  reviewed`, `QUALIFIED · owner · reviewed`, `ATTRIBUTION · owner · reviewed`. Footer: Sumit's name and "An agent is only as consistent as your definitions."
+**Animated GIF (made 13 Nov, on request):** `creatives/2026-11-13-sumit-shared-definitions.gif`, 1080x1350, about 10-second seamless loop, 150 frames, about 0.7 MB. Also as MP4 (three loops) and a still poster (`...-poster.png`). Source: `...-shared-definitions.html`.
+
+- **Style:** the warm illustrated look used for Sumit's Fable factory animation and outage card.
+- **Story:** headline "One question. Two answers." / "Until someone owns the definition." In the "Revenue room", Marketing says "Pipeline is up.", Sales asks "Which pipeline?", and the AI agent between them gets the question "What's our pipeline?" and shows a puzzled "?". Below, two different answers (bars) with a red "≠". Then a stamp signs off three definition cards in turn (Pipeline, Qualified, Attribution: meaning written, owner named, reviewed dated, "SIGNED OFF"). The two answers merge into one green "One answer", the agent smiles, and Sales' bubble turns into "Same pipeline." Then it loops back to the argument.
+- **Footer:** Sumit's initials (headshot to drop in), the pill "Only as consistent as your definitions", and "Point from Snowflake's Expedition 2026 recap".
+- **Claims on the image:** none beyond the post's point; the charts carry no numbers and are labelled "Illustrative".
 
 ## First comment
 <!-- comment:sumit -->
