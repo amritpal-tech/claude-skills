@@ -2,7 +2,9 @@
 
 Requested by Amritpal: a post for Sumit on a new topic. Not part of the scheduled run.
 
-**Slot:** **Wed 18 Nov 19:30 IST** (09:00 ET). His queue: Fri 13 Microsoft outage (today), Mon 16 HBR / Seismic, Tue 17 Morningscore, Wed 18 this one.
+> **Parked (13 Nov):** Amritpal judged the topic not strong enough. Replaced by `2026-11-13-sumit-gainsight.md` (Mon 16 Nov). Keep the copy and GIF for a later week if a stronger news hook on revenue definitions comes up.
+
+**Slot:** none (parked). Was Wed 18 Nov 19:30 IST.
 **Pillar:** the realist take · **Archetype:** realist, leader lens · **Rung:** 2 (Snowflake Expedition recap and launch coverage, around Nov 12)
 
 ## Research brief
