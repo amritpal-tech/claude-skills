@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1080">
+<title>Sumit · Microsoft 365 outage · image card</title>
+<!-- Single-image card for Sumit's Microsoft 365 outage post, 1080 x 1350.
+     Warm editorial style (the look chosen for his Fable 5.2 factory animation).
+     Facts on the card: services affected and the ~150,000 Outlook problem reports
+     (US and Canada, outage trackers), both from news coverage of Nov 12-13.
+     No Microsoft logos or marks: service names in plain text only. -->
+<style>
+  :root {
+    --bg: #F5E9DE; --ink: #2B211C; --muted: #8C7768; --terra: #B4533A; --terraD: #8A3D2C;
+    --card: #FFFDF9; --line: #E8D9C8; --red: #D8573B; --redBg: #FBE3DC; --green: #2F9E5B; --greenBg: #DDF1E4;
+    --teal: #2F5F5C; --tealD: #264D4A;
+    --sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  }
+  html, body { margin: 0; padding: 0; background: var(--bg); }
+  .card { position: relative; width: 1080px; height: 1350px; overflow: hidden; background: var(--bg); color: var(--ink); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
+
+  .pill-top { position: absolute; top: 46px; left: 50%; transform: translateX(-50%); padding: 8px 22px; border: 1.5px solid var(--terra); border-radius: 999px; font: 500 17px/1.2 var(--sans); color: var(--terra); white-space: nowrap; }
+  h1 { position: absolute; top: 108px; left: 70px; right: 70px; margin: 0; text-align: center; font: 300 58px/1.1 var(--sans); letter-spacing: -1.6px; }
+  h1 b { font-weight: 500; color: var(--terra); }
+
+  /* status board */
+  .board { position: absolute; top: 278px; left: 70px; width: 940px; height: 418px; border-radius: 18px; background: var(--teal); box-sizing: border-box; padding: 26px 30px; color: #fff; }
+  .board-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+  .board-head .t { display: flex; align-items: center; gap: 12px; font: 500 25px/1 var(--sans); letter-spacing: -0.3px; }
+  .num { display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--terra); color: #fff; font: 600 15px/1 var(--sans); }
+  .board-head .when { font: 500 15px/1 var(--mono); letter-spacing: 1.2px; color: #BFD9D4; }
+  .rows { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 16px; }
+  .row { display: flex; align-items: center; justify-content: space-between; height: 64px; padding: 0 18px; border-radius: 12px; background: var(--tealD); }
+  .row .svc { display: flex; align-items: center; gap: 14px; font: 500 23px/1 var(--sans); }
+  .row svg { width: 28px; height: 28px; fill: none; stroke: #DCEDEA; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .tag { display: inline-flex; align-items: center; gap: 8px; padding: 7px 12px; border-radius: 8px; font: 600 14px/1 var(--mono); letter-spacing: 1.2px; text-transform: uppercase; }
+  .tag.down { background: var(--redBg); color: var(--red); }
+  .tag.down i { width: 9px; height: 9px; border-radius: 50%; background: var(--red); }
+  .stat { display: flex; align-items: baseline; gap: 16px; margin-top: 24px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.16); }
+  .stat .n { font: 600 52px/1 var(--mono); letter-spacing: -1px; color: #FFE9D6; }
+  .stat .l { font: 400 19px/1.35 var(--sans); color: #CFE3DF; max-width: 330px; }
+  .scene { position: absolute; right: 26px; bottom: 18px; width: 250px; height: 150px; }
+
+  /* hour-one plan */
+  .plan { position: absolute; top: 728px; left: 70px; width: 940px; height: 428px; border-radius: 18px; background: var(--card); border: 1px solid var(--line); box-sizing: border-box; padding: 26px 30px; }
+  .plan-head { display: flex; align-items: center; gap: 12px; font: 500 25px/1 var(--sans); letter-spacing: -0.3px; margin-bottom: 8px; }
+  .plan-sub { font: 400 18px/1.3 var(--sans); color: var(--muted); margin: 0 0 18px 42px; }
+  .step { display: flex; align-items: center; gap: 20px; height: 94px; padding: 0 20px; border-radius: 12px; background: #FBF4EC; margin-bottom: 12px; }
+  .step:last-child { margin-bottom: 0; }
+  .ico { flex: none; display: grid; place-items: center; width: 56px; height: 56px; border-radius: 14px; background: var(--greenBg); }
+  .ico svg { width: 30px; height: 30px; fill: none; stroke: var(--green); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .step h3 { margin: 0; font: 600 22px/1.2 var(--sans); letter-spacing: -0.2px; }
+  .step p { margin: 4px 0 0; font: 400 17.5px/1.3 var(--sans); color: var(--muted); }
+
+  /* footer */
+  .foot { position: absolute; left: 70px; right: 70px; bottom: 48px; display: flex; align-items: center; justify-content: space-between; }
+  .who { display: flex; align-items: center; gap: 14px; }
+  .avatar { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; background: var(--terra); color: #fff; font: 600 17px/1 var(--sans); }
+  .who b { display: block; font: 500 21px/1.2 var(--sans); }
+  .who span { font: 400 14px/1.2 var(--sans); color: var(--muted); }
+  .cta { padding: 14px 24px; border-radius: 999px; background: var(--terra); color: #fff; font: 400 19px/1 var(--sans); }
+  .cta b { font-weight: 700; }
+  .src { font: 400 12.5px/1.35 var(--sans); color: var(--muted); text-align: right; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="pill-top">Microsoft 365 outage · Nov 12-13, 2026</div>
+  <h1>One vendor outage shouldn't stop your <b>whole pipeline.</b></h1>
+
+  <div class="board">
+    <div class="board-head">
+      <div class="t"><span class="num">1</span>What went down</div>
+      <div class="when">FROM ~1 PM ET THU · INTO FRI</div>
+    </div>
+    <div class="rows">
+      <div class="row"><span class="svc"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>Outlook</span><span class="tag down"><i></i>Disrupted</span></div>
+      <div class="row"><span class="svc"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3"/></svg>Teams</span><span class="tag down"><i></i>Disrupted</span></div>
+      <div class="row"><span class="svc"><svg viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></svg>SharePoint</span><span class="tag down"><i></i>Disrupted</span></div>
+      <div class="row"><span class="svc"><svg viewBox="0 0 24 24"><path d="M12 3l2.2 5.2L19.5 9l-4 3.7 1.1 5.3L12 15.4 7.4 18l1.1-5.3-4-3.7 5.3-.8z"/></svg>Copilot</span><span class="tag down"><i></i>Disrupted</span></div>
+    </div>
+    <div class="stat">
+      <span class="n">~150,000</span>
+      <span class="l">Outlook problem reports across the US and Canada, per outage trackers</span>
+    </div>
+    <svg class="scene" viewBox="0 0 250 150" aria-hidden="true">
+      <!-- desk -->
+      <rect x="6" y="122" width="238" height="10" rx="4" fill="#E3BE99"/>
+      <rect x="14" y="131" width="222" height="19" rx="3" fill="#F2DCC4"/>
+      <!-- laptop, offline -->
+      <rect x="18" y="64" width="92" height="58" rx="6" fill="#1B2725"/>
+      <rect x="23" y="69" width="82" height="48" rx="3" fill="#24403C"/>
+      <circle cx="64" cy="93" r="14" fill="#D8573B"/>
+      <rect x="62" y="84" width="4" height="11" rx="2" fill="#fff"/>
+      <circle cx="64" cy="99.5" r="2.3" fill="#fff"/>
+      <rect x="8" y="118" width="112" height="6" rx="3" fill="#9FB8B3"/>
+      <!-- rep on the phone -->
+      <rect x="146" y="84" width="62" height="40" rx="16" fill="#E08A4F"/>
+      <rect x="171" y="76" width="12" height="11" fill="#C68E65"/>
+      <circle cx="177" cy="62" r="20" fill="#C68E65"/>
+      <path d="M156.5 60 a20.5 20.5 0 0 1 41 0 q-20.5 -13 -41 0z" fill="#2E211B"/>
+      <circle cx="170" cy="64" r="2.2" fill="#2B211C"/><circle cx="184" cy="64" r="2.2" fill="#2B211C"/>
+      <path d="M171 72 q6 4 12 0" stroke="#2B211C" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <rect x="196" y="50" width="12" height="24" rx="3.5" fill="#2F9E5B"/>
+      <path d="M190 104 q14 -10 12 -32" stroke="#E08A4F" stroke-width="9" fill="none" stroke-linecap="round"/>
+      <path d="M214 52 q7 9 0 18 M221 46 q11 15 0 30" stroke="#7EE692" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <div class="plan">
+    <div class="plan-head"><span class="num">2</span>The hour-one plan</div>
+    <p class="plan-sub">Write it down this week, before the next one.</p>
+    <div class="step">
+      <div class="ico"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></div>
+      <div><h3>A backup channel for live deals</h3><p>Phone numbers and a second meeting link, stored outside the inbox.</p></div>
+    </div>
+    <div class="step">
+      <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M10 9v6M14 9v6"/></svg></div>
+      <div><h3>One owner pauses sequences</h3><p>Until email is back, so nobody cleans up afterwards.</p></div>
+    </div>
+    <div class="step">
+      <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4z"/><path d="M8 10h8"/></svg></div>
+      <div><h3>A short note to customers</h3><p>Everyone with a meeting that day, from whatever still works.</p></div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="who"><div class="avatar">SN</div><div><b>Sumit Nautiyal</b><span>DevCommX</span></div></div>
+    <div class="cta">Resilience is a <b>GTM decision</b>, too.</div>
+    <div class="src">Source: news coverage of<br>Microsoft 365 status updates</div>
+  </div>
+</div>
+</body>
+</html>
