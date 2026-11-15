@@ -52,6 +52,7 @@ NEGATION = [
     r"\bit'?s not [^.\n?!]{1,60}?[.;] ?it'?s\b",
     r"\bit is not [^.\n?!]{1,60}?[.;] ?it is\b",
     r"\bisn'?t (about )?[^.\n?!]{1,50}?, it'?s (about )?\b",
+    r"\bisn'?t (about )?[^.\n?!]{1,50}?\. ?it'?s (about )?\b",   # "The fix isn't a new tool. It's a field."
     r"\b(this|that) is not [^.\n?!]{1,50}?\. (this|that|it) is\b",
 ]
 

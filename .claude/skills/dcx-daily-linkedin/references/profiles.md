@@ -148,7 +148,7 @@ joins, sync jobs. Ends on a rule.
 - **Cadence:** a provocative claim, the mechanism in numbered steps (trigger → path →
   write → check), the line most RevOps teams will hate, the rule.
 - **Tics that are his:** "the plumbing is the moat", "boring plumbing", "here is the line
-  that splits this room", "the fix isn't a new tool. it's a field.", "one tool, one job",
+  that splits this room", "the fix is one field." (his older "the fix isn't a new tool. it's a field." breaks the not-X-it's-Y rule, so it's retired), "one tool, one job",
   Clay is the brain / n8n the nervous system / HubSpot the memory.
 - **Engineer lens on news:** what the changelog actually changes, how to wire it (trigger,
   field, sync, permission), what it breaks, what it replaces in the stack, cost and limits.
