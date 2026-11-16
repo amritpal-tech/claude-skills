@@ -73,4 +73,4 @@ The field I'd add first: a signal date on every account. It's the one most stack
 - First hour: Pankaj online 22:30-23:30 IST, 3 teammates comment by 23:30.
 
 ## Gate
-`PASS · 1,379 chars · 0 errors · 0 warnings · no six-word overlap with the Scripe sheet or any November post; zero 4-word overlap with the reference post`
+`PASS · 1,377 chars · 0 errors · 0 warnings · no six-word overlap with the Scripe sheet or any November post; zero 4-word overlap with the reference post`
