@@ -53,9 +53,9 @@ Three things I'd change in an AI sales motion this quarter:
 2. Find out early who else signs off. Security, IT, finance.
 3. Give AI deals a longer cycle in the forecast until the proof lands.
 
-If you run on HubSpot, nothing changes on Monday.
+If you run on HubSpot, nothing changes this week.
 
-Halligan says he'll share why he came back and what he plans in the next few days. Read that before you touch your stack.
+Halligan said he'd post why he came back and what he plans "in the next few days". Read that before you touch your stack.
 
 One honest disqualifier: nobody outside HubSpot knows yet what the "harness" means in product terms.
 
