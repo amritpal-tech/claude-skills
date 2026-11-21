@@ -1,6 +1,6 @@
 # claude-skills
 
-Account skill library for Claude Code — 153 skills and 27 namespaced commands,
+Account skill library for Claude Code — 154 skills and 27 namespaced commands,
 kept in version control so they load in every session on this repo and can be
 restored anywhere else.
 
@@ -10,7 +10,7 @@ Imported from the `claude-skills-2026-09-03` export.
 
 | Path | Purpose |
 |---|---|
-| `.claude/skills/` | 153 skills — **auto-loaded** in any Claude Code session on this repo |
+| `.claude/skills/` | 154 skills — **auto-loaded** in any Claude Code session on this repo |
 | `.claude/commands/` | 35 commands in 9 namespaces — auto-loaded, invoked as `/namespace:command` |
 | `devcommx/` | working corpus for the DevCommX blog operation (53 drafts, validation findings, workbooks) |
 | `plugins/` | reference copies of 3 plugin bundles (install via the plugin system) |
@@ -39,7 +39,7 @@ fresh container each time and a fresh clone of the repo — anything written to
   this repo as a second source for the session.
 - **Every chat, everywhere (including claude.ai)** — upload to your account:
   ```bash
-  ./package-for-upload.sh          # writes dist/<skill>.zip x153
+  ./package-for-upload.sh          # writes dist/<skill>.zip x154
   ```
   Then claude.ai → Settings → Capabilities → Skills → Upload skill. Account
   skills sync down to `~/.claude/skills/synced/` on every device.
@@ -71,6 +71,17 @@ Companion skills already in the library: `devcommx-brand` (visual system) and
 
 The blog program needs the **Webflow MCP connector authorized on the account** —
 nothing in the push, audit or status flow works without it.
+
+## DevCommX LinkedIn daily desk
+
+**`.claude/skills/dcx-daily-linkedin/`** researches the last 48 hours of real updates
+each morning and drafts one complete post package per profile: Amrit Pal Singh
+(marketing, SEO, AEO, AI tools for marketers), Sumit Nautiyal (GTM leader) and Pankaj
+Kumar (GTM engineer). Voices, pillars, slots and house rules are distilled from the Notion
+"DevCommX — LinkedIn HQ". Each package carries the research brief and sources, pillar,
+format, hook options, final copy, carousel/image spec, first comment, ask and a gate
+result from `scripts/check_post.py`. Briefs land in `devcommx/linkedin-daily/`. Nothing
+publishes without a human.
 
 ## Plugin skills
 

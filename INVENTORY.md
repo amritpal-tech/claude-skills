@@ -45,6 +45,7 @@ Exported 2026-09-03 from this machine's Claude configuration.
 - **customer-research** — When the user wants to conduct, analyze, or synthesize customer research. Use when the user mentions "customer research," "ICP research," "talk to customers," "analyze transcripts," "customer intervie
 - **dark-mode-design** — Design effective dark mode interfaces with proper color adaptation, contrast, and elevation.
 - **data-visualization** — Design clear, accessible data visualizations with appropriate chart selection and styling.
+- **dcx-daily-linkedin** — The DevCommX daily LinkedIn desk: researches fresh, verifiable updates per lane and drafts a full post package (research brief, pillar, format, hooks, copy, creative spec, first comment, gate) for Amrit Pal Singh, Sumit Nautiyal and Pankaj Kumar.
 - **dcx-humanizer** — Rewrite any DevCommX draft (LinkedIn post, carousel, DM, bio, email) so it reads like a real operator wrote it: strips AI-tells AND enforces the DevCommX house style + honesty gate in one pass. Use wh
 - **design** — Comprehensive design skill: brand identity, design tokens, UI styling, logo generation (55 styles, Gemini AI), corporate identity program (50 deliverables, CIP mockups), HTML presentations (Chart.js),
 - **design-brief** — Write a comprehensive design brief that defines the problem space, constraints, audience, and success criteria.
