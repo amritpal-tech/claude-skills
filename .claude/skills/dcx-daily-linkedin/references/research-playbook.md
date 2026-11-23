@@ -134,6 +134,30 @@ Wizard of Ops, Hacker News (for dev tooling), The Pipeline.
 - `cold email deliverability change {year}`, `Microsoft Outlook bulk sender requirements`
 - `RevOps tool launch {month} {year}`, `GTM engineering tool new`
 
+### Vignesh W. · co-founder, GTM operating model (Europe)
+
+He shares the GTM lane with Sumit and Pankaj; run their sweep once, then look for the
+board-level read. Add the Europe checks below every run.
+
+**Primary sources**
+- European Commission AI Office and the EU AI Act timeline (digital-strategy.ec.europa.eu),
+  plus any "digital omnibus" changes to dates or obligations
+- EDPB guidelines and national regulators on direct marketing (ICO for the UK, CNIL),
+  and the UK Data (Use and Access) Act's changes to marketing rules
+- Analyst and consultancy research: Gartner and Forrester press releases, McKinsey, BCG,
+  Bain and Deloitte studies on B2B sales, AI adoption and operating models
+- Earnings calls and investor days of the GTM platforms (Salesforce, HubSpot, Microsoft,
+  SAP, ServiceNow) and enterprise AI announcements on pricing, agent identity and governance
+- European funding and M&A: Sifted, Tech.eu, EU-Startups; TechCrunch for the rest
+
+**Query bank**
+- `EU AI Act obligations {month} {year}`, `EU AI Act delay omnibus`, `AI Office guidance`
+- `GDPR B2B cold email legitimate interest {year}`, `ICO direct marketing guidance {year}`
+- `Gartner CEO survey {year} AI`, `McKinsey state of AI {year}`, `board AI governance survey`
+- `revenue operating model AI {year}`, `CRO survey {year}`, `B2B sales org design AI`
+- `European SaaS funding {month} {year}`, `B2B software acquisition Europe {month} {year}`
+- `enterprise AI pricing seats credits {month} {year}`, `AI agents governance enterprise`
+
 ## Scoring a candidate (0-3 each)
 
 | Criterion | 3 | 0 |

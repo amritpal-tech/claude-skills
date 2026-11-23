@@ -50,6 +50,14 @@ PROFILES = {
         "market_time": (9, 0),
         "days": ["Mon", "Tue", "Wed", "Thu"],
     },
+    "vignesh": {
+        "name": "Vignesh W.",
+        "lane": "Co-founder / GTM operating model",
+        "market": "Europe (CET 09:00, UK 08:00)",
+        "market_tz": "Europe/Paris",
+        "market_time": (9, 0),
+        "days": ["Mon", "Wed", "Fri"],
+    },
 }
 
 WEEKDAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]

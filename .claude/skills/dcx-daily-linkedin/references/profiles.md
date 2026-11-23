@@ -1,11 +1,11 @@
-# The three profiles: lane, voice, pillars
+# The four profiles: lane, voice, pillars
 
 Distilled from Notion **DevCommX — LinkedIn HQ** (each profile's page, the approved
 Week 1-8 posts, the 360Brew Playbook archetype map, Posting Schedule v2) and the
 `dcx-humanizer` skill. The approved posts are the voice reference. When this file and
 a newer approved post disagree, the post wins. Update this file when it does.
 
-All three post for **DevCommX**, a B2B firm that builds agentic GTM systems (signal-based
+All four post for **DevCommX**, a B2B firm that builds agentic GTM systems (signal-based
 outbound, RevOps, Clay, cold email) and AEO (being the brand AI assistants name). The
 reader is a B2B operator in the US, Europe or the Gulf, usually more senior than the post.
 
@@ -177,7 +177,88 @@ the US West window alone.
 
 ---
 
-## Keeping Sumit and Pankaj apart
+## 4. Vignesh W. · Co-founder (GTM operating model, the board-level voice)
+
+**Added 2026-11-23** at Amritpal's request: a daily post for this profile's niche and
+experience level, in an **authoritative, professional tone, like a leader**.
+
+**Who he is** (Notion: DevCommX LinkedIn HQ, his "Founder" page and Week 1-8 plans; the
+Profile Optimisation Tracker, v1.11, 2026-09-02; Posting Schedule v2): Vignesh Waram,
+shown on LinkedIn as **Vignesh W.** (linkedin.com/in/vigneshw), **Co-founder, DevCommX**.
+His own headline: "Co-Founder DevCommX | Turn GTM Chaos → Revenue Flow | 23 Yrs B2B
+Systems | RevOps • AI • Digital Transform". Based in London; about 17,249 followers (Sep).
+Tracker track: **GTM**.
+
+**Not this desk:** his government policy and economy positioning (Drive,
+"Vignesh-Content-Strategy.pdf", June 2026) is a separate track. Notion's standing note:
+"GTM-founder track (govt strategy stays separate, never mixed)". The daily desk writes the
+GTM track only.
+
+**Reader:** CEOs, founders, COOs, CROs and board members at B2B companies, Series A to
+enterprise, mostly in the UK and Europe (his slot lands at 09:00 CET), plus the US leaders
+who follow him. They decide the operating model, the GTM budget, the order of investment
+and the build-vs-buy call. They want judgment and a decision framework, not tools or wiring.
+
+**Designation:** Co-founder (Posting Schedule v2). Headline frame (tracker's recommended
+rewrite): outcome first, "I turn GTM chaos into revenue flow for B2B teams", then
+Co-Founder @ DevCommX and the 23 years of RevOps and AI systems.
+
+**Archetype:** the systems authority and board-level strategist. Reads every story for what
+it changes in the operating model, the org chart, governance and the order of investment.
+His thesis from the approved posts: systems before sellers; order matters more than tools.
+
+**Voice:** authoritative, measured and professional. A leader writing to peers and boards.
+Complete sentences in short paragraphs of one to three lines, fewer single-line beats than
+Sumit. Calm certainty: name the decision, the trade-off, and the condition that would change
+his mind. No hype, no slang, no motivational tone, no "founder-raw" lowercase (his June
+posts were lowercase; the house sentence-case rule now applies).
+
+- **Casing:** **sentence case, always**, like the rest of the fleet. The gate fails a
+  Vignesh post with a line or sentence starting lowercase.
+- **Cadence:** the decision or the reframe in line one; the evidence in two to four
+  attributed lines; "the decision underneath it" (the operating-model read); three or four
+  decisions for leaders as a numbered or ↳ list; the trade-off or the honest exception; a
+  principle line; the ask.
+- **Tics that are his** (from Weeks 2-8; use sparingly, one per post at most): "wrong
+  question by one position", "systems before sellers", "memory first, infrastructure before
+  volume, automation after proof", "the job doesn't exist yet as a job; it exists as a
+  person", "can you hold it in your head".
+- **The experience frame:** "23 years of building B2B systems" is his own public claim and
+  may be used as a lens ("after 23 years of building B2B systems, I read this as..."). Never
+  attach an invented anecdote to it.
+- **Avoid:** the roster's About template "Most [ICP] [do X]. They have a [Y] problem. I fix
+  it." (Profile OS v1.11 flagged it as an AI-slop pattern), and any not-X-it's-Y line.
+- **Leader lens on news:** what it changes for the operating model (who owns what), the
+  order of investment, the board conversation, risk and governance (especially in the EU and
+  UK), and the few numbers a leader should watch.
+
+**Real hooks from approved posts** (rhythm only; several carried unconfirmed specifics):
+- "Founders keep asking when to hire the first rep. Wrong question by one position."
+- "We built our GTM in a specific order. Half the pain came from the two things we built too early."
+- "I stopped reading our dashboard weekly. I read four numbers instead, and one of them is a sentence."
+- "Hiring senior to fix a process you cannot explain is just expensive guessing."
+
+**Pillars (daily desk):**
+| Pillar | Share | What a post does |
+|---|---|---|
+| GTM operating model & build order | 30% | how revenue systems should be structured, owned and sequenced; what to build first and what to stop |
+| AI transformation, the leadership read | 25% | enterprise AI releases, pricing and platform shifts read for budget, org design and governance |
+| Europe: regulation & market | 20% | EU AI Act, GDPR / ePrivacy and outbound, UK data law, European B2B buying and funding, read for revenue teams |
+| Market moves & research for boards | 25% | M&A, earnings, analyst studies (Gartner, Forrester, McKinsey, BCG), read as a board would |
+
+**First-party numbers he may use:** the fleet's two cleared numbers only, with their exact
+framing (our site's 18/100; the ~$380K a Claude agent resurfaced from our own HubSpot
+closed-lost). The ~$380K is Sumit's line first: never in the same week as Sumit, at most
+once a month. Every other figure in his older drafts ($40K, $55K, $110K+ pipeline, "a
+quarter of credits", hiring order, the "four numbers") was marked CONFIRM in Notion and
+stays a `[NEEDS:]` until he confirms it.
+
+**Slot:** Mon, Wed, Fri. 09:00 CET (12:30 IST in summer time, 13:30 IST in winter). Serves
+Europe and the UK.
+
+---
+
+## Keeping Sumit, Pankaj and Vignesh apart
 
 They share the GTM beat. On the same day:
 1. Prefer **different stories**.
@@ -185,8 +266,13 @@ They share the GTM beat. On the same day:
    (budget, team, buyer, hype vs value), **Pankaj = the wiring** (fields, triggers, limits,
    what breaks). Different hook, different format, different ask.
 3. Never the same tool list in both posts in the same week.
+4. **Vignesh = the operating model and the board question** (who owns it, what order to
+   build in, governance, Europe). When a story is big enough for Sumit and Vignesh too,
+   Sumit takes the motion and the budget line, Vignesh the operating model and the risk.
+   Different hook, format and ask, and ideally different days. Never the same study's
+   numbers in both posts in the same week.
 
-## Rules that hold for all three (the honesty gate)
+## Rules that hold for all four (the honesty gate)
 
 - **Never invent first-person experience.** A daily post built on news cannot say "we
   tested this last week" unless the brief records that it happened. Write "here's how I'd

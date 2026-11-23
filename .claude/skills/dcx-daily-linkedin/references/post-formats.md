@@ -17,7 +17,7 @@ engine registry, and `dcx-humanizer`. `scripts/check_post.py` enforces the mecha
 8. **Exactly one explicit ask** at the end (see Asks). Never "thoughts?", never "like if".
 9. **No emoji-led lines.** No engagement bait.
 10. **1,200-1,900 characters** for the body (2.9x reach vs short posts).
-11. **Sentence case for all three.** A capital at the start of every line and every
+11. **Sentence case for all four.** A capital at the start of every line and every
     sentence, proper nouns capitalised. Amritpal and Sumit switched from lowercase on
     2026-11-04 (Amritpal's call); Pankaj already wrote this way.
 
@@ -129,6 +129,10 @@ the week's map slot is open.
 | Pankaj | Stack curation | B (carousel) | save-this |
 | Pankaj | Data truth & RevOps mechanics | C or A (single image checklist) | save-this |
 | Pankaj | Agentic GTM builds | A (text) | repost-if |
+| Vignesh | GTM operating model & build order | E (single-image framework) or A (text) | save-this |
+| Vignesh | AI transformation, the leadership read | A or C (text) | sharp-question |
+| Vignesh | Europe: regulation & market | A (text; carousel when there are 5+ steps) | save-this |
+| Vignesh | Market moves & research for boards | C (single image stat card) | repost-if |
 
 ## Hooks
 
@@ -154,7 +158,7 @@ The hook bank is engagement evidence from other creators in the same niches. It 
 which *shapes* of first line are stopping the scroll this fortnight. It is never a source
 of words, facts or numbers.
 
-1. **Read by niche.** In the sheet: `SEO / AEO` informs Amritpal, `GTM` informs Sumit,
+1. **Read by niche.** In the sheet: `SEO / AEO` informs Amritpal, `GTM` informs Sumit and Vignesh,
    `RevOps` informs Pankaj (GTM hooks about Clay, Claude Code or the stack inform Pankaj
    too). Fresh hooks (posted within 14 days of the pull) are this fortnight's trend; the
    rest are proven patterns.

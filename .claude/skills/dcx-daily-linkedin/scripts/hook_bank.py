@@ -30,7 +30,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_OUT = os.path.normpath(os.path.join(HERE, "..", "references", "hook-bank"))
 
 # niche in the sheet -> desk profile
-PROFILE_FOR = {"SEO / AEO": "Amritpal", "GTM": "Sumit", "RevOps": "Pankaj"}
+PROFILE_FOR = {"SEO / AEO": "Amritpal", "GTM": "Sumit + Vignesh", "RevOps": "Pankaj"}
 NICHE_ORDER = ["SEO / AEO", "GTM", "RevOps"]
 MONTHS = {m: i for i, m in enumerate(
     ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"], 1)}

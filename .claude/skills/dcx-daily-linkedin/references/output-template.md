@@ -20,6 +20,7 @@ Run at {HH:MM} IST · research window: last {48|72}h · DST: US {on|off}, Europe
 | Amrit Pal Singh | {on slot 14:00 IST / next: Thu 14:00} | {one line} | {pillar} | {format} | {ask} | {PASS / PASS w/ warnings / FAIL} |
 | Sumit Nautiyal | ... |
 | Pankaj Kumar | ... |
+| Vignesh W. | ... |
 
 Publish only after a human review. Every [NEEDS:] flag and every "verify" line below must
 be cleared first.
@@ -34,7 +35,7 @@ be cleared first.
 | 1 | ... | [publisher](url) · Nov 3 | 15 | ✅ Amritpal |
 | 2 | ... | ... | 11 | held: {why} |
 
-### GTM lane (Sumit + Pankaj)
+### GTM lane (Sumit + Pankaj + Vignesh)
 | ... |
 
 {One line on anything the scan could not verify, or a lane that came up thin.}
@@ -91,6 +92,11 @@ be cleared first.
 
 ## Pankaj Kumar · GTM engineer
 {same blocks, marker post:pankaj}
+
+---
+
+## Vignesh W. · Co-founder
+{same blocks, marker post:vignesh}
 
 ---
 

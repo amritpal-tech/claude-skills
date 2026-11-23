@@ -4,14 +4,16 @@ version: 1.0.0
 description: |
   The DevCommX daily LinkedIn desk. Every morning: research the last 48 hours of real,
   verifiable updates in each profile's lane, pick one educational story per profile,
-  and produce a complete post package for three profiles in their locked voices:
+  and produce a complete post package for four profiles in their locked voices:
   Amrit Pal Singh (marketing, SEO, AEO, AI search, AI tools for marketers), Sumit
-  Nautiyal (GTM leader: agentic GTM, AI for GTM, market moves) and Pankaj Kumar (GTM
-  engineer: RevOps, Clay/n8n/HubSpot changelogs, the stack). Each package carries the
+  Nautiyal (GTM leader: agentic GTM, AI for GTM, market moves), Pankaj Kumar (GTM
+  engineer: RevOps, Clay/n8n/HubSpot changelogs, the stack) and Vignesh W. (co-founder:
+  the GTM operating model, AI transformation and Europe, in an authoritative leader's
+  voice). Each package carries the
   research brief with sources, pillar, archetype, format (text, listicle, carousel,
   single image), three hook options, the final copy, full creative spec, first comment,
   ask, posting slot and a hard-rules gate. Use for "today's LinkedIn posts", "daily
-  post desk", "research a post for Sumit/Pankaj/Amritpal", "newsjack this for
+  post desk", "research a post for Sumit/Pankaj/Amritpal/Vignesh", "newsjack this for
   LinkedIn", or when a scheduled run invokes it.
 license: MIT
 allowed-tools:
@@ -28,7 +30,7 @@ allowed-tools:
 
 # DevCommX daily LinkedIn desk
 
-One run produces one dated brief with three ready-to-review posts. Nothing publishes
+One run produces one dated brief with four ready-to-review posts. Nothing publishes
 itself: a human approves every post (the content engine's law: "human gate is absolute").
 
 | Read | When |
@@ -47,7 +49,7 @@ itself: a human approves every post (the content engine's law: "human gate is ab
 python3 .claude/skills/dcx-daily-linkedin/scripts/daily_context.py
 ```
 It gives the IST date, each profile's slot (DST-aware), who is on slot today, and the
-research window. Produce a post for **all three** profiles every run. A profile that is
+research window. Produce a post for **all four** profiles every run. A profile that is
 off slot today gets its post marked for its next slot, so the bank never runs dry.
 
 ### 2. Memory
@@ -60,19 +62,20 @@ format rotation.
 
 ### 3. Research (per lane)
 Follow `research-playbook.md`. Two lanes: **marketing/SEO/AEO** (Amritpal) and **GTM**
-(Sumit and Pankaj share it, then split). Run the lane's source checks and query bank
+(Sumit, Pankaj and Vignesh share it, then split; Vignesh adds the Europe checks). Run the lane's source checks and query bank
 with WebSearch, open every candidate with WebFetch, confirm its date on the page, and
 find the primary source. Collect 4-8 candidates per lane, score them, record them in the
 brief's research scan table, including the ones you held and why.
 
-Run the three lanes' searches in parallel where the tools allow. Do not stop at the first
+Run the lanes' searches in parallel where the tools allow. Do not stop at the first
 plausible headline: the best story is the one that teaches the reader something they can
 act on this week.
 
 ### 4. Pick
 One story per profile, scoring 10+ on the rubric. Sumit and Pankaj get different stories
 when possible; if one release is too big to skip, Sumit takes the decision and Pankaj the
-wiring (`profiles.md`, "Keeping Sumit and Pankaj apart"). Choose pillar, format and ask
+wiring, and Vignesh the operating model and the board question (`profiles.md`, "Keeping
+Sumit, Pankaj and Vignesh apart"). Choose pillar, format and ask
 from the mapping table in `post-formats.md`, then check the last 10 days so the profile's
 week trends toward ~70% visual and no ask runs three days in a row.
 

@@ -27,7 +27,7 @@ import re
 import sys
 import unicodedata
 
-PROFILES = {"amritpal", "sumit", "pankaj"}
+PROFILES = {"amritpal", "sumit", "pankaj", "vignesh"}
 FORMATS = {"text", "listicle", "carousel", "single-image", "reference-map", "video", "document"}
 ASKS = {"save-this", "repost-if", "sharp-question", "comment-gate"}
 TYPES = {"news", "evergreen", "receipts", "curation"}
@@ -207,7 +207,7 @@ def check_post(body, profile, fmt, ask, typ, comment, bank_grams=None):
         W(f"only {len(paras)} blocks. House format is a blank line between lines.")
 
     # 11 casing: sentence case for every profile (Amritpal's call, 2026-11-04)
-    if profile in ("amritpal", "sumit", "pankaj"):
+    if profile in ("amritpal", "sumit", "pankaj", "vignesh"):
         misses = sentence_case_misses(text)
         if misses:
             msg = f"sentence case: {len(misses)} line/sentence start(s) in lowercase, e.g. {misses[:3]}"
