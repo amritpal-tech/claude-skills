@@ -131,6 +131,13 @@ def check_post(body, profile, fmt, ask, typ, comment, bank_grams=None):
         if n:
             E(f"{label}: {n} em/en dash(es). Rewrite with a period, comma or parentheses.")
 
+    # 1b Vignesh never names DevCommX or ÖSEL (Amritpal's rule, 2026-11-23)
+    if profile == "vignesh":
+        for label, s in (("post", text), ("first comment", comment or "")):
+            hit = re.search(r"\b(devcommx|[öo]sel)\b", s, flags=re.I)
+            if hit:
+                E(f"{label}: names '{hit.group(0)}'. Vignesh's posts never mention DevCommX or ÖSEL (no company names, links or 'we' for either).")
+
     # 2 banned vocabulary. A source's exact words inside double quotes can't be
     # reworded (e.g. HubSpot's "customer relationship harness"), so a banned word
     # that appears only inside quotes is a warning to check, not an error.

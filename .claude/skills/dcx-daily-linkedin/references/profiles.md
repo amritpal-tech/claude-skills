@@ -223,7 +223,8 @@ posts were lowercase; the house sentence-case rule now applies).
   question by one position", "systems before sellers", "memory first, infrastructure before
   volume, automation after proof", "the job doesn't exist yet as a job; it exists as a
   person", "can you hold it in your head".
-- **The experience frame:** "23 years of building B2B systems" is his own public claim and
+- **The experience frame:** "23 years of building B2B systems" is his own public claim (it
+  names no company, so it stays) and
   may be used as a lens ("after 23 years of building B2B systems, I read this as..."). Never
   attach an invented anecdote to it.
 - **Avoid:** the roster's About template "Most [ICP] [do X]. They have a [Y] problem. I fix
@@ -246,12 +247,22 @@ posts were lowercase; the house sentence-case rule now applies).
 | Europe: regulation & market | 20% | EU AI Act, GDPR / ePrivacy and outbound, UK data law, European B2B buying and funding, read for revenue teams |
 | Market moves & research for boards | 25% | M&A, earnings, analyst studies (Gartner, Forrester, McKinsey, BCG), read as a board would |
 
-**First-party numbers he may use:** the fleet's two cleared numbers only, with their exact
-framing (our site's 18/100; the ~$380K a Claude agent resurfaced from our own HubSpot
-closed-lost). The ~$380K is Sumit's line first: never in the same week as Sumit, at most
-once a month. Every other figure in his older drafts ($40K, $55K, $110K+ pipeline, "a
-quarter of credits", hiring order, the "four numbers") was marked CONFIRM in Notion and
-stays a `[NEEDS:]` until he confirms it.
+**No company names (Amritpal's rule, 2026-11-23):** his posts, first comments and creatives
+never mention **DevCommX** or **ÖSEL** (ÖSEL Devices Limited, his other listed employer).
+That also means:
+- no "we" or "our" that stands for either company ("we build", "our CRM", "our team");
+  write as an individual leader ("I'd ask", "in the companies I've worked with" only when
+  the brief records it);
+- no DevCommX numbers: the fleet's cleared 18/100 and ~$380K are company claims, so they
+  don't appear in his posts;
+- no DevCommX checker link (ai.devcommx.com) in his first comments;
+- no logo, brand palette name or company footer on his cards: the footer is "Vignesh W."
+  alone, with an optional title "Co-founder" and no company.
+The gate fails a Vignesh post or first comment that names DevCommX or ÖSEL.
+
+**First-party numbers he may use:** none. Every figure in his older drafts ($40K, $55K,
+$110K+ pipeline, "a quarter of credits", hiring order, the "four numbers") was marked
+CONFIRM in Notion and was company content; leave them out.
 
 **Slot:** Mon, Wed, Fri. 09:00 CET (12:30 IST in summer time, 13:30 IST in winter). Serves
 Europe and the UK.
