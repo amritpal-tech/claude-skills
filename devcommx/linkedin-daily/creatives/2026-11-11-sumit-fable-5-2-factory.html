@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1080">
+<title>Sumit · Fable 5.2 · long-job factory (animated)</title>
+<!-- Illustrated "factory floor" flow for LinkedIn, 1080 x 1350, 6 s seamless loop.
+     Warm editorial palette on request (not the dark DevCommX brand surface).
+     Original illustration: six stations joined by conveyor belts.
+       1 Ops desk -> 2 Budget office -> 3 Fable 5.2 lead agent -> 4 Subagent floor
+       -> 5 Check-in (a named person signs off) -> 6 Team floor
+     window.render(t) draws the frame at t seconds so frames can be captured
+     deterministically. Opened in a browser, it plays in real time. -->
+<style>
+  html, body { margin: 0; padding: 0; background: #F5E9DE; }
+  svg { display: block; }
+  text { font-family: "Inter", "Helvetica Neue", Arial, sans-serif; }
+  .mono { font-family: "JetBrains Mono", ui-monospace, Menlo, monospace; }
+</style>
+</head>
+<body>
+<svg id="s" xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350"></svg>
+<script>
+const K = {
+  bg:'#F5E9DE', ink:'#2B211C', muted:'#8C7768', terra:'#B4533A', terraD:'#8A3D2C', wall:'#A64B36',
+  brick:'#BC5F45', brickL:'#A34F3A', floor:'#EFE2D3', tile:'#E4D4C1', card:'#FFFDF9', cardB:'#E8D9C8',
+  rail:'#C4826C', belt:'#F3D3C4', roller:'#E0AC98', wood:'#E3BE99', woodD:'#C99A72', woodL:'#F2DCC4', dark:'#3A2019'
+};
+const V = 70, SP = 2, LOOP = 6;           // belt speed px/s, seconds between parcels, loop length
+
+const rr = (x,y,w,h,r,fill,ex='') => `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${r}" fill="${fill}" ${ex}/>`;
+const ci = (x,y,r,fill,ex='') => `<circle cx="${x}" cy="${y}" r="${r}" fill="${fill}" ${ex}/>`;
+const tx = (x,y,s,size,fill,ex='') => `<text x="${x}" y="${y}" font-size="${size}" fill="${fill}" ${ex}>${s}</text>`;
+
+function rpath(p, r = 24) {
+  let d = `M${p[0][0]},${p[0][1]}`;
+  for (let i = 1; i < p.length - 1; i++) {
+    const [x0,y0] = p[i-1], [x1,y1] = p[i], [x2,y2] = p[i+1];
+    const u = (a,b,c,e) => { const l = Math.hypot(c-a, e-b); return [(c-a)/l, (e-b)/l]; };
+    const [ux,uy] = u(x1,y1,x0,y0), [vx,vy] = u(x1,y1,x2,y2);
+    d += ` L${x1+ux*r},${y1+uy*r} Q${x1},${y1} ${x1+vx*r},${y1+vy*r}`;
+  }
+  const l = p[p.length-1];
+  return d + ` L${l[0]},${l[1]}`;
+}
+
+// ---------- reusable pieces ----------
+function card(x, y, w, n, title, desc, chips) {
+  const h = chips ? 92 : 66;
+  let s = rr(x, y, w, h, 10, K.card, `stroke="${K.cardB}" stroke-width="1"`);
+  s += ci(x+23, y+24, 11, K.terra) + tx(x+23, y+28.5, n, 13, '#fff', 'text-anchor="middle" font-weight="600"');
+  s += tx(x+42, y+31.5, title, 22, K.ink, 'font-weight="500" letter-spacing="-0.3"');
+  s += tx(x+14, y+53, desc, 15, K.muted);
+  if (chips) { let cx = x+14; chips.forEach(c => { const cw = c.length*6.3+16;
+    s += rr(cx, y+64, cw, 19, 9.5, '#ECE7FA') + tx(cx+cw/2, y+77.5, c, 11, '#5A47A8', 'text-anchor="middle" font-weight="500"'); cx += cw+6; }); }
+  return s;
+}
+function human(id, cx, hy, skin, hair, shirt, o = {}) {
+  let s = `<g id="${id}">`;
+  s += rr(cx-21, hy+14, 42, 36, 12, shirt);
+  s += `<rect x="${cx-4}" y="${hy+8}" width="8" height="9" fill="${skin}"/>`;
+  if (o.bun) s += ci(cx, hy-15, 5.5, hair);
+  s += ci(cx, hy, 13, skin);
+  s += `<path d="M${cx-13.5},${hy-1} a13.5,13.5 0 0 1 27,0 q-13.5,-9 -27,0z" fill="${hair}"/>`;
+  s += ci(cx-4.5, hy+2, 1.6, K.ink) + ci(cx+4.5, hy+2, 1.6, K.ink);
+  s += `<path d="M${cx-3.5},${hy+7} q3.5,2.6 7,0" stroke="${K.ink}" stroke-width="1.3" fill="none" stroke-linecap="round"/>`;
+  if (o.glasses) s += `<g fill="none" stroke="${K.ink}" stroke-width="1.2"><circle cx="${cx-4.5}" cy="${hy+2}" r="4"/><circle cx="${cx+4.5}" cy="${hy+2}" r="4"/></g>`;
+  return s + '</g>';
+}
+function bot(id, cx, hy, body, accent) {       // small subagent bot; hy = top of head
+  let s = `<g id="${id}">`;
+  s += rr(cx-17, hy+27, 34, 34, 9, body);
+  s += `<line x1="${cx}" y1="${hy}" x2="${cx}" y2="${hy-7}" stroke="${K.dark}" stroke-width="2"/>` + ci(cx, hy-9, 3.2, accent, `class="ant"`);
+  s += rr(cx-19, hy+9, 4, 9, 2, '#C9D3EC') + rr(cx+15, hy+9, 4, 9, 2, '#C9D3EC');
+  s += rr(cx-15, hy, 30, 26, 9, '#F7F9FF');
+  s += rr(cx-11, hy+6, 22, 13, 5, '#26355F');
+  s += rr(cx-7, hy+10, 4, 5, 1.5, '#A9ECFF', 'class="eye"') + rr(cx+3, hy+10, 4, 5, 1.5, '#A9ECFF', 'class="eye"');
+  return s + '</g>';
+}
+function desk(x, y, w, frontH, plate) {          // y = desk top
+  let s = rr(x+3, y+8, w-6, frontH, 3, K.woodL) + rr(x, y, w, 9, 3, K.wood);
+  if (plate) s += rr(x+w/2-20, y+16, 40, 13, 3, '#fff', `stroke="${K.cardB}"`) + tx(x+w/2, y+26, plate, 8.5, K.muted, 'text-anchor="middle" class="mono"');
+  return s;
+}
+function monitor(x, y, w, h, screen, inner = '') {
+  return rr(x+w/2-4, y+h-1, 8, 5, 1, K.dark) + rr(x, y, w, h, 4, K.dark) + rr(x+3, y+3, w-6, h-7, 2, screen) + inner;
+}
+
+// ---------- belts ----------
+const PA = rpath([[150,528],[150,1150],[520,1150],[520,886]]);
+const PB = rpath([[370,672],[370,588],[900,588],[900,1150],[626,1150]]);
+function belt(id) {
+  return `<use href="#${id}" stroke="#DCC8B3" stroke-width="38" transform="translate(0,4)"/>
+          <use href="#${id}" stroke="${K.rail}" stroke-width="34"/>
+          <use href="#${id}" stroke="${K.belt}" stroke-width="26"/>
+          <use href="#${id}" id="roll_${id}" stroke="${K.roller}" stroke-width="26" stroke-dasharray="4 16"/>`;
+}
+
+// ---------- parcels ----------
+const ENVELOPE = `${rr(-15,-11,30,22,3,'#FFFDF9',`stroke="#D7C1AA" stroke-width="1.2"`)}
+  <path d="M-15,-10.5 L0,2.5 L15,-10.5" fill="none" stroke="#D7C1AA" stroke-width="1.2"/>${ci(0,4,3,K.terra)}
+  <g class="tag">${ci(12,-10,7.5,'#EDBE4E','stroke="#C8962F" stroke-width="1.2"')}${tx(12,-6.6,'$',10,'#7A5A12','text-anchor="middle" font-weight="700"')}</g>`;
+const BOX = `${rr(-14,-13,28,26,3,'#D9A871','stroke="#B98650" stroke-width="1.2"')}${rr(-3.5,-13,7,26,0,'#ECCD9F')}
+  <path d="M-14,-5 H14" stroke="#B98650" stroke-width="1"/>
+  <g class="tick">${ci(11,-11,8.5,'#3FAE63','stroke="#fff" stroke-width="1.6"')}<path d="M7,-11 l3,3 l5.5,-6" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>`;
+const NA = 12, NB = 14;
+
+// ---------- scene ----------
+let S = '';
+S += `<defs>
+  <path id="pA" d="${PA}" fill="none"/><path id="pB" d="${PB}" fill="none"/>
+  <pattern id="bricks" width="44" height="28" patternUnits="userSpaceOnUse">
+    <rect width="44" height="28" fill="${K.brick}"/>
+    <path d="M0,0 H44 M0,14 H44 M0,0 V14 M22,14 V28" stroke="${K.brickL}" stroke-width="1.6"/></pattern>
+  <pattern id="tiles" width="56" height="56" patternUnits="userSpaceOnUse">
+    <rect width="56" height="56" fill="${K.floor}"/><path d="M0,0 H56 M0,0 V56" stroke="${K.tile}" stroke-width="1.5"/></pattern>
+  <clipPath id="floorclip"><rect x="92" y="206" width="896" height="1024"/></clipPath>
+</defs>`;
+S += rr(0,0,1080,1350,0,K.bg);
+
+// header
+S += rr(385,30,310,34,17,'none',`stroke="${K.terra}" stroke-width="1.3"`) + tx(540,52.5,'Claude Fable 5.2 · long jobs in GTM',15,K.terra,'text-anchor="middle" font-weight="500"');
+S += `<text x="540" y="132" font-size="62" font-weight="300" letter-spacing="-1.8" fill="${K.ink}" text-anchor="middle">The <tspan fill="${K.terra}" font-weight="400">Fable 5.2</tspan> long-job factory</text>`;
+S += `<text x="540" y="178" font-size="24" fill="${K.muted}" text-anchor="middle">Agents that work for days <tspan fill="${K.terra}" font-weight="600">need managers, too.</tspan></text>`;
+
+// building
+S += rr(36,206,1008,1024,20,K.wall);
+S += rr(84,206,8,1024,0,K.terraD) + rr(988,206,8,1024,0,K.terraD);
+S += `<g clip-path="url(#floorclip)">` + rr(92,206,896,1024,0,'url(#tiles)') + rr(92,206,896,120,0,'url(#bricks)') + rr(92,206,896,12,0,'#4A241B') + rr(92,320,896,7,0,K.terraD) + `</g>`;
+// windows (day and night pass outside) and the wall sign
+[122,270,680,828].forEach((x,i) => {
+  S += rr(x-5,236,140,74,5,K.dark) + rr(x,241,130,64,3,'#FDF3E1',`class="pane"`);
+  S += `<g class="stars" opacity="0">${ci(x+22,258,1.5,'#fff')}${ci(x+58,250,1.3,'#fff')}${ci(x+96,266,1.5,'#fff')}${ci(x+74,288,1.2,'#fff')}${ci(x+36,284,1.2,'#fff')}</g>`;
+  S += `<path d="M${x+43.3},241 V305 M${x+86.6},241 V305 M${x},273 H${x+130}" stroke="${K.dark}" stroke-width="4"/>`;
+});
+S += rr(436,236,208,74,8,K.dark) + rr(442,242,196,62,5,'#4A2A20');
+S += tx(540,270,'LONG-JOB FACTORY',16,'#F6E7D4','text-anchor="middle" class="mono" font-weight="600" letter-spacing="1.5"');
+S += tx(540,291,'DAYS, NOT MINUTES',10.5,'#D9A48F','text-anchor="middle" class="mono" letter-spacing="2"');
+
+// floor mats
+S += rr(108,410,214,152,10,'#D4E4CC');      // 1 ops
+S += rr(350,410,600,140,10,'#D5E0F5');      // 4 subagents
+S += rr(770,704,216,166,10,'#DCD3F5');      // 5 check-in
+S += rr(108,1040,372,162,10,'#F5D3D2');     // 2 budget
+S += rr(600,1040,386,162,10,'#C9E6DC');     // 6 team
+
+// belts, the inspection plate, parcels
+S += `<g fill="none">${belt('pA')}${belt('pB')}</g>`;
+S += rr(881,757,38,38,5,'#FFFDF9','opacity=".75" stroke="#B9A9E8" stroke-width="1.5"');
+S += `<g id="parcels">`;
+for (let j = 0; j < NA; j++) S += `<g id="a${j}">${ENVELOPE}</g>`;
+for (let j = 0; j < NB; j++) S += `<g id="b${j}">${BOX}</g>`;
+S += `</g>`;
+
+// ---- 1 · ops desk ----
+S += rr(176,416,140,62,6,'#B7D0AD');
+S += human('h_ops', 222, 446, '#C68E65', '#2E211B', '#5F8F6B');
+S += monitor(262,462,38,30,'#FFFDF9',`<g id="briefdoc" stroke="#B8A592" stroke-width="2" stroke-linecap="round"><path d="M270,472 h20"/><path d="M270,478 h16"/><path d="M270,484 h19"/></g>`);
+S += desk(180,492,130,34,'OPS');
+S += rr(127,498,46,52,6,K.card,`stroke="${K.cardB}"`) + rr(135,538,30,4,2,K.dark) + tx(150,522,'OUT',10,K.muted,'text-anchor="middle" class="mono" font-weight="600"');
+
+// ---- 4 · subagent floor ----
+const BODIES = ['#7C98E0','#6B86D6','#8AA4E8','#6B86D6','#7C98E0','#8AA4E8','#6B86D6'];
+for (let i = 0; i < 7; i++) {
+  const ux = 356 + i*84, cx = ux + 30;
+  S += rr(ux+3,416,78,62,6,'#B4C7EA');
+  S += bot('bot'+i, cx, 432, BODIES[i], i%2 ? '#F2B84B' : '#FF7A59');
+  S += monitor(ux+44,464,32,26,'#1F2B4D',`<g id="scr${i}" fill="#8FE3FF">${rr(ux+50,476,4,8,1,'#8FE3FF')}${rr(ux+57,472,4,12,1,'#8FE3FF')}${rr(ux+64,478,4,6,1,'#8FE3FF')}</g>`);
+  S += desk(ux+5,490,74,36,'S-0'+(i+1));
+}
+
+// ---- 3 · lead agent room (drawn over the belt ends) ----
+S += rr(250,646,390,254,12,'#2F5F5C') + rr(258,654,374,96,7,'#264D4A');
+S += ci(279,678,11,K.terra) + tx(279,682.5,'3',13,'#fff','text-anchor="middle" font-weight="600"');
+S += tx(298,685.5,'Fable 5.2, lead agent',23,'#fff','font-weight="500" letter-spacing="-0.3"');
+S += tx(268,708,'plans the job, runs it for days',15,'#BFD9D4');
+// wall calendar
+S += rr(558,664,66,76,8,K.card) + `<path d="M558,684 v-12 a8,8 0 0 1 8,-8 h50 a8,8 0 0 1 8,8 v12z" fill="#D8573B"/>`;
+S += tx(591,679,'DAY',10.5,'#fff','text-anchor="middle" class="mono" font-weight="600" letter-spacing="1.5"');
+S += `<text id="daynum" x="591" y="726" font-size="36" font-weight="700" fill="${K.ink}" text-anchor="middle">1</text>`;
+// plant
+S += ci(280,800,13,'#6FB28A') + ci(296,790,12,'#8CC9A0') + ci(291,808,11,'#5C9E78') + rr(273,814,30,32,6,'#FFF7EC');
+// the lead bot
+S += `<g id="lead">`;
+S += rr(388,806,84,60,18,'#D9683F') + rr(416,818,28,6,3,'#F0A27F');
+S += `<line x1="430" y1="742" x2="430" y2="731" stroke="#FFF7EC" stroke-width="3"/>` + ci(430,728,5.5,'#F2B84B','id="leadant"');
+S += rr(379,764,8,20,3,'#E5D8C8') + rr(473,764,8,20,3,'#E5D8C8');
+S += rr(386,740,88,68,24,'#FFF7EC') + rr(398,753,64,40,14,'#16302E');
+S += rr(414,765,9,14,4,'#9BF0D0','id="eyeL"') + rr(437,765,9,14,4,'#9BF0D0','id="eyeR"');
+S += `<path d="M422,785 q8,5 16,0" stroke="#9BF0D0" stroke-width="2" fill="none" stroke-linecap="round"/>`;
+S += `</g>`;
+// plan monitor
+let plan = '';
+for (let i = 0; i < 4; i++) plan += rr(504,801+i*10,7,7,1.5,'#fff','stroke="#9DB7B2" stroke-width="1.2"') + `<path id="pl${i}" d="M505.5,${804.5+i*10} l2,2 l3.5,-4" fill="none" stroke="#2F9E5B" stroke-width="1.8" stroke-linecap="round"/>` + rr(516,803+i*10,[46,38,50,32][i],3,1.5,'#9DB7B2');
+S += monitor(492,790,88,58,'#F4FBF9',plan);
+S += rr(306,858,278,36,4,K.woodL) + rr(300,846,290,13,4,K.wood);
+S += rr(322,832,15,15,3,'#FFF7EC') + `<path d="M337,836 q7,3 0,8" fill="none" stroke="#FFF7EC" stroke-width="2.5"/>` + rr(346,840,30,7,1.5,'#FFFDF9') + rr(349,836,30,7,1.5,'#F3E6D6');
+
+// ---- 5 · check-in ----
+S += rr(778,710,98,56,6,'#C3B6EC');
+S += human('h_mgr', 824, 738, '#8D5B3F', '#1E1714', '#6C55B8', { glasses: true });
+S += desk(784,784,86,28,'SIGN-OFF');
+S += `<g id="stamp">${rr(-4,-20,8,13,3,'#4B3A8C')}${rr(-9,-8,18,9,3,'#6C55B8')}</g>`;
+S += rr(955,744,6,60,2,K.dark) + rr(945,702,26,48,7,K.dark) + ci(958,716,7.5,'#6B2A20','id="lampR"') + ci(958,736,7.5,'#2A5A3A','id="lampG"');
+S += `<g id="barrier">${rr(872,804,66,7,3.5,'#FFFDF9','stroke="#B4533A" stroke-width="1"')}${rr(880,804,10,7,0,K.terra)}${rr(900,804,10,7,0,K.terra)}${rr(920,804,10,7,0,K.terra)}</g>`;
+S += rr(931,798,12,30,3,K.dark) + ci(937,807.5,4,'#F2B84B');
+
+// ---- 2 · budget office ----
+S += rr(238,1046,130,58,6,'#EDB9BC');
+S += human('h_fin', 300, 1074, '#F1C9A5', '#7A3E2A', '#C2566A', { bun: true });
+S += monitor(330,1088,28,24,'#FFF4F3',`<g fill="#C2566A">${rr(336,1102,3.5,5,1,'#C2566A')}${rr(342,1098,3.5,9,1,'#C2566A')}${rr(348,1095,3.5,12,1,'#C2566A')}</g>`);
+S += rr(249,1122,110,11,3,K.woodL) + rr(246,1114,116,9,3,K.wood);
+// tag gantry over the belt
+S += rr(286,1125,30,15,5,'#C2566A') + ci(301,1132.5,4.5,'#EDBE4E','stroke="#C8962F" stroke-width="1"') + rr(298,1140,6,5,1,'#A8455A');
+// coin stacks
+[[196,1100],[196,1094],[196,1088],[214,1100],[214,1094]].forEach(([x,y]) => { S += `<ellipse cx="${x}" cy="${y}" rx="9" ry="4" fill="#EDBE4E" stroke="#C8962F" stroke-width="1"/>`; });
+// spend meter
+S += rr(386,1054,84,62,8,K.card,`stroke="${K.cardB}"`) + tx(396,1073,'SPEND',10,K.muted,'class="mono" font-weight="600" letter-spacing="1"');
+S += rr(396,1082,64,9,4.5,'#F3DEDD') + `<rect id="meter" x="396" y="1082" width="10" height="9" rx="4.5" fill="#C2566A"/>` + tx(396,1106,'per job',10.5,K.muted);
+
+// ---- 6 · team floor ----
+const TEAM = [['#F1C9A5','#5B3A29','#2F8F83'],['#8D5B3F','#1E1714','#E08A4F'],['#C68E65','#3B2A22','#3F7FBF']];
+TEAM.forEach(([skin,hair,shirt],i) => {
+  const ux = 656 + i*76, cx = ux + 26;
+  S += rr(ux+2,1046,72,58,6,'#A9D5C7');
+  S += human('h_t'+i, cx, 1074, skin, hair, shirt, i===0 ? { bun: true } : {});
+  S += monitor(ux+44,1090,26,22,'#F2FBF7',`<path d="M${ux+51},${1100} l3,3 l6,-7" fill="none" stroke="#2F9E5B" stroke-width="2" stroke-linecap="round"/>`);
+  S += rr(ux+5,1122,66,11,3,K.woodL) + rr(ux+2,1114,72,9,3,K.wood);
+});
+S += rr(603,1122,46,56,6,K.card,`stroke="${K.cardB}"`) + rr(611,1130,30,4,2,K.dark) + tx(626,1162,'IN',10,K.muted,'text-anchor="middle" class="mono" font-weight="600"');
+
+// floor dressing
+S += rr(690,838,34,30,3,'#D9A871','stroke="#B98650"') + rr(704,838,6,30,0,'#ECCD9F') + rr(712,850,30,26,3,'#E2B783','stroke="#B98650"') + rr(696,812,28,26,3,'#E2B783','stroke="#B98650"');
+S += ci(204,640,13,'#6FB28A') + ci(218,630,11,'#8CC9A0') + ci(213,648,10,'#5C9E78') + rr(197,652,28,28,6,'#FFF7EC',`stroke="${K.cardB}"`);
+
+S += `<path d="M103,344 V1222 M977,344 V1222" stroke="#E9B949" stroke-width="3" stroke-dasharray="14 10" opacity=".85"/>`;
+S += ci(574,1010,12,'#6FB28A') + ci(587,1001,10,'#8CC9A0') + ci(582,1018,9,'#5C9E78') + rr(567,1020,26,26,6,'#FFF7EC',`stroke="${K.cardB}"`);
+
+// label cards
+S += card(108,338,222,'1','Ops desk','writes the outcome brief');
+S += card(498,338,304,'4','Subagent floor','hundreds of subagents, in parallel');
+S += card(656,614,224,'5','Check-in','a named person signs off',['pricing','contracts','customer']);
+S += card(180,962,222,'2','Budget office','one budget per job');
+S += card(600,962,270,'6','Team floor','everyone else uses the output');
+
+// footer
+S += ci(74,1290,25,K.terra) + tx(74,1296,'SN',16,'#fff','text-anchor="middle" font-weight="600"');
+S += tx(112,1287,'Sumit Nautiyal',22,K.ink,'font-weight="500"') + tx(112,1309,'DevCommX',14,K.muted);
+S += rr(326,1260,438,58,29,K.terra) + tx(352,1296,'Fewer check-ins need',20,'#fff','font-weight="400"');
+S += rr(566,1269,184,40,20,K.card) + tx(658,1296,'better ones',21,K.terra,'text-anchor="middle" font-weight="700"');
+S += tx(1044,1284,'Source: Anthropic,',12.5,K.muted,'text-anchor="end"') + tx(1044,1301,'Claude Fable 5.2 model page',12.5,K.muted,'text-anchor="end"');
+
+document.getElementById('s').innerHTML = S;
+
+// ---------- animation ----------
+const $ = id => document.getElementById(id);
+const clamp = x => Math.min(1, Math.max(0, x));
+const ramp = (t,a,b) => clamp((t-a)/(b-a));
+const ease = x => { x = clamp(x); return x < .5 ? 4*x*x*x : 1 - Math.pow(-2*x+2,3)/2; };
+const mix = (a,b,k) => { const p = h => [1,3,5].map(i => parseInt(h.slice(i,i+2),16)); const A = p(a), B = p(b);
+  return '#' + A.map((v,i) => Math.round(v+(B[i]-v)*k).toString(16).padStart(2,'0')).join(''); };
+
+const pA = $('pA'), pB = $('pB'), LA = pA.getTotalLength(), LB = pB.getTotalLength();
+let sTag = 0, sG = 0;
+for (let q = 0; q < LA; q += 1) { const p = pA.getPointAtLength(q); if (p.y > 1140 && p.x >= 300) { sTag = q; break; } }
+for (let q = 0; q < LB; q += 1) { const p = pB.getPointAtLength(q); if (p.x > 890 && p.y >= 776) { sG = q; break; } }
+const uG = sG / V, PAUSE = 0.9, TB = LB / V + PAUSE;
+const envs = [...Array(NA)].map((_,j) => $('a'+j)), boxes = [...Array(NB)].map((_,j) => $('b'+j));
+const panes = [...document.querySelectorAll('.pane')], stars = [...document.querySelectorAll('.stars')];
+
+window.render = function (t) {
+  t = ((t % LOOP) + LOOP) % LOOP;
+  const ph = t % SP;
+
+  // belts roll in the direction of travel
+  const off = -((V * t) % 20);
+  $('roll_pA').setAttribute('stroke-dashoffset', off); $('roll_pB').setAttribute('stroke-dashoffset', off);
+
+  // briefs: ops -> budget (gets a budget tag) -> lead agent
+  envs.forEach((g, j) => {
+    const s = V * (ph + SP * j);
+    if (s > LA) { g.setAttribute('display', 'none'); return; }
+    const p = pA.getPointAtLength(s);
+    g.removeAttribute('display'); g.setAttribute('transform', `translate(${p.x.toFixed(2)},${p.y.toFixed(2)})`);
+    g.querySelector('.tag').setAttribute('display', s > sTag ? 'inline' : 'none');
+  });
+  // work packages: lead agent -> subagent floor -> check-in (held, then signed off) -> team
+  boxes.forEach((g, j) => {
+    const u = ph + SP * j;
+    if (u > TB) { g.setAttribute('display', 'none'); return; }
+    const s = u < uG ? V * u : u < uG + PAUSE ? sG : sG + V * (u - uG - PAUSE);
+    const p = pB.getPointAtLength(Math.min(s, LB));
+    g.removeAttribute('display'); g.setAttribute('transform', `translate(${p.x.toFixed(2)},${p.y.toFixed(2)})`);
+    g.querySelector('.tick').setAttribute('display', u > uG + 0.42 ? 'inline' : 'none');
+    g.setAttribute('opacity', 1 - ramp(s, LB - 40, LB - 22));
+  });
+
+  // check-in: stamp, light and barrier, once per package
+  const f = (((t - uG) % SP) + SP) % SP;
+  const go = ease(ramp(f, .2, .4)) * (1 - ease(ramp(f, .52, .78)));
+  const press = (f > .4 && f < .52) ? 3 : 0;
+  $('stamp').setAttribute('transform', `translate(${864 + 36 * go},${776 - 4 * go + press})`);
+  const green = f >= .45 && f < 1.75;
+  $('lampG').setAttribute('fill', green ? '#6EDC8C' : '#2A5A3A'); $('lampR').setAttribute('fill', green ? '#6B2A20' : '#FF5A3C');
+  const up = ease(ramp(f, .5, .8)) * (1 - ease(ramp(f, 1.7, 1.9)));
+  $('barrier').setAttribute('transform', `rotate(${78 * up} 937 807.5)`);
+
+  // days pass: calendar, windows, plan progress, spend
+  const day = Math.floor(t / 2) + 1, dph = (t % 2) / 2;
+  const dn = $('daynum'), out = ramp(dph, .88, .94), inn = ramp(dph, .94, 1);
+  dn.textContent = dph < .94 ? day : (day % 3) + 1;
+  dn.setAttribute('opacity', dph < .94 ? 1 - out : inn);
+  dn.setAttribute('y', dph < .94 ? 726 - 9 * ease(out) : 726 + 9 * (1 - ease(inn)));
+  const night = .5 - .5 * Math.cos(2 * Math.PI * dph);
+  panes.forEach(p => p.setAttribute('fill', mix('#FDF3E1', '#33406B', night)));
+  stars.forEach(s => s.setAttribute('opacity', clamp((night - .55) / .3)));
+  for (let i = 0; i < 4; i++) $('pl'+i).setAttribute('opacity', (1 - ramp(t, 5.75, 5.95)) * ramp(t, 1.1 * (i + 1), 1.1 * (i + 1) + .2));
+  const spend = (10 + 50 * (t / 5.7)) * (1 - ease(ramp(t, 5.7, 5.98))) + 10 * ease(ramp(t, 5.7, 5.98));
+  $('meter').setAttribute('width', Math.min(64, spend));
+
+  // characters
+  for (let i = 0; i < 7; i++) {
+    const b = $('bot'+i), k = t / 2 + i * .17;
+    b.setAttribute('transform', `translate(0,${(1.6 * Math.sin(2 * Math.PI * k)).toFixed(2)})`);
+    b.querySelector('.ant').setAttribute('opacity', Math.sin(2 * Math.PI * (t + i * .31)) > 0 ? 1 : .35);
+    [...$('scr'+i).children].forEach((r, n) => { const h = 5 + 7 * (.5 + .5 * Math.sin(2 * Math.PI * (t * 1.5 + i * .23 + n * .37)));
+      r.setAttribute('height', h.toFixed(1)); r.setAttribute('y', (484 - h).toFixed(1)); });
+  }
+  ['h_ops','h_mgr','h_fin','h_t0','h_t1','h_t2'].forEach((id, i) =>
+    $(id).setAttribute('transform', `translate(0,${(1.2 * Math.sin(2 * Math.PI * (t / 3 + i * .21))).toFixed(2)})`));
+  $('lead').setAttribute('transform', `rotate(${(1.4 * Math.sin(2 * Math.PI * t / 3)).toFixed(2)} 430 850)`);
+  const blink = (Math.abs(t - 1.5) < .09 || Math.abs(t - 4.5) < .09) ? .15 : 1;
+  ['eyeL','eyeR'].forEach(id => { $(id).setAttribute('height', 14 * blink); $(id).setAttribute('y', 765 + 7 * (1 - blink)); });
+  $('leadant').setAttribute('fill', Math.sin(2 * Math.PI * t) > 0 ? '#F2B84B' : '#FFE08A');
+  [...$('briefdoc').children].forEach((l, n) => l.setAttribute('opacity', ramp(ph, .3 * n + .1, .3 * n + .35)));
+};
+
+window.render(0);
+if (!location.hash.includes('capture')) {
+  const t0 = performance.now();
+  (function tick() { window.render((performance.now() - t0) / 1000); requestAnimationFrame(tick); })();
+}
+</script>
+</body>
+</html>
